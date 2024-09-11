@@ -5,6 +5,9 @@ export default defineConfig({
   lang: 'zh-cn',
   title: "神岛使用手册",
   description: "为创作者所有✨ 由创作者共建⚖️ 因创作者而生🎉",
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
