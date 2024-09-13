@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-cn',
-  title: "神岛Arena编辑器",
+  title: "Arena编辑器用户手册",
   description: "为创作者所有✨ 由创作者共建⚖️ 因创作者而生🎉",
   markdown: {
     lineNumbers: true
@@ -21,15 +21,23 @@ export default defineConfig({
         text: '基础知识',
         collapsed: false,
         items: [
-          { text: '前言', link: '/index' },
+          {
+            text: '新手上路', link: '/index',
+            collapsed: false,
+            items: [
+              { text: '创建第一个地图', link: '/getting-started/create' },
+              { text: 'Hello World 项目', link: '/getting-started/helloWorld' },
+              { text: '发布第一个地图', link: '/getting-started/publish' },
+            ]
+          },
           {
             text: '编辑器界面', link: '/editor/index',
             collapsed: false,
             items: [
               { text: '场景编辑器', link: '/editor/scene' },
+              { text: 'UI编辑器', link: '/editor/ui' },
               { text: '层级管理器', link: '/editor/hierarchy' },
               { text: '资源管理器', link: '/editor/assets' },
-              { text: 'UI编辑器', link: '/editor/ui' },
               { text: '代码编辑器', link: '/editor/code' },
             ]
           }
