@@ -3,12 +3,12 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-cn',
-  title: "神岛使用手册",
+  title: "神岛Arena编辑器",
   description: "为创作者所有✨ 由创作者共建⚖️ 因创作者而生🎉",
   markdown: {
     lineNumbers: true
   },
-  base: '/box3/',
+  base: '/arena/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -17,29 +17,27 @@ export default defineConfig({
     search: {
       provider: 'local',
     },
-    sidebar: [
-      {
-        text: '前言',
+    sidebar: [{
+        text: '基础知识',
         collapsed: false,
         items: [
-          { text: '来自CEO的信', link: '/index' }
-        ]
-      }, {
-        text: 'Arena编辑器',
-        collapsed: false,
-        items: [
-          { text: '简介', link: '/arena/index' }
-        ]
-      }, {
-        text: 'Voxa编辑器',
-        collapsed: false,
-        items: [
-          { text: '简介', link: '/voxa/index' }
+          { text: '前言', link: '/index' },
+          {
+            text: '编辑器界面', link: '/editor/index',
+            collapsed: false,
+            items: [
+              { text: '场景编辑器', link: '/editor/scene' },
+              { text: '层级管理器', link: '/editor/hierarchy' },
+              { text: '资源管理器', link: '/editor/assets' },
+              { text: 'UI编辑器', link: '/editor/ui' },
+              { text: '代码编辑器', link: '/editor/code' },
+            ]
+          }
         ]
       }
     ],
     editLink: {
-      pattern: 'https://gitee.com/box3lab/box3-product-document/blob/master/box3/:path',
+      pattern: 'https://gitee.com/box3lab/box3-product-document/blob/master/arena/:path',
       text: '在 Gitee 上编辑此界面'
     },
     lastUpdated: {
