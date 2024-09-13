@@ -3,9 +3,9 @@
     "vitepress": "^1.3.4"
   },
   "scripts": {
-    "box3:dev": "vitepress dev box3",
-    "box3:build": "vitepress build box3",
-    "box3:preview": "vitepress preview box3"
+    "arena:dev": "vitepress dev arena",
+    "arena:build": "vitepress build arena",
+    "arena:preview": "vitepress preview arena"
   },
   "dependencies": {
     "pagefind": "^1.1.1",
