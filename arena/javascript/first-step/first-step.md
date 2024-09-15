@@ -1,6 +1,6 @@
 # 什么是 JavaScript？
 
-**JavaScript**， 简称 **JS**，是 [Arena 编辑器](/editor) 所使用的编程语言。
+**JavaScript**， 简称 **JS**，是 [Arena 编辑器](/editor/index) 所使用的编程语言。
 
 JavaScript 就像胶水，将木板等原料联结起来，构造出你心中所思所想。
 
