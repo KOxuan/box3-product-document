@@ -43,7 +43,7 @@ export default defineConfig({
         },
         {
           text: '代码编写第一步', link: '/javascript/first-step/first-step',
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: 'Hello World!', link: '/javascript/first-step/hello-world' },
           ]
