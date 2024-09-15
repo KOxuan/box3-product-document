@@ -12,45 +12,81 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' }
+      { text: 'API参考', link: 'https://www.yuque.com/box3lab/api' }
     ],
     search: {
       provider: 'local',
     },
-    sidebar: [
-      {
-        text: '基础知识',
-        collapsed: false,
-        items: [
-          {
-            text: '新手上路', link: '/index',
-            collapsed: false,
-            items: [
-              { text: '创建第一个地图', link: '/getting-started/create' },
-              { text: 'Hello World 项目', link: '/getting-started/helloWorld' },
-              { text: '发布第一个地图', link: '/getting-started/publish' },
-            ]
-          },
-          {
-            text: '编辑器界面', link: '/editor/index',
-            collapsed: false,
-            items: [
-              { text: '场景编辑器', link: '/editor/scene' },
-              { text: 'UI编辑器', link: '/editor/ui' },
-              { text: '层级管理器', link: '/editor/hierarchy' },
-              { text: '资源管理器', link: '/editor/assets' },
-              { text: '代码编辑器', link: '/editor/code' },
-            ]
-          },
-          {
-            text: '代码编写第一步', link: '/javascript/first-step/first-step',
-            collapsed: false,
-            items: [
-              { text: 'Hello World!', link: '/javascript/first-step/hello-world' },
-            ]
-          }
-        ]
-      }
+    sidebar: [{
+      text: '基础知识',
+      collapsed: false,
+      items: [
+        {
+          text: '新手上路', link: '/index',
+          collapsed: true,
+          items: [
+            { text: '创建第一个地图', link: '/getting-started/create' },
+            { text: 'Hello World 项目', link: '/getting-started/helloWorld' },
+            { text: '发布第一个地图', link: '/getting-started/publish' },
+          ]
+        },
+        {
+          text: '编辑器界面', link: '/editor/index',
+          collapsed: true,
+          items: [
+            { text: '场景编辑器', link: '/editor/scene' },
+            { text: 'UI编辑器', link: '/editor/ui' },
+            { text: '层级管理器', link: '/editor/hierarchy' },
+            { text: '资源管理器', link: '/editor/assets' },
+            { text: '代码编辑器', link: '/editor/code' },
+          ]
+        },
+        {
+          text: '代码编写第一步', link: '/javascript/first-step/first-step',
+          collapsed: false,
+          items: [
+            { text: 'Hello World!', link: '/javascript/first-step/hello-world' },
+          ]
+        }
+      ]
+    }, {
+      text: '功能模块',
+      collapsed: false,
+      items: [
+        {
+          text: '地形系统', link: '/features/terrain',
+          collapsed: true,
+          items: [
+            { text: '方块', link: '/features/terrain/box' },
+            {
+              text: '模型系统',
+              collapsed: true,
+              items: [
+                { text: '模型', link: '/features/terrain/model/' },
+                { text: '资源树', link: '/features/terrain/model/tree' },
+                { text: '属性', link: '/features/terrain/model/attribute' },
+              ]
+            },
+            { text: '场景', link: '/features/terrain/scene' },
+          ]
+        }, {
+          text: '玩家系统', link: '/features/player',
+          collapsed: true,
+          items: [
+            { text: '皮肤', link: '/features/player/skin' },
+            { text: '虚拟按键', link: '/features/player/key' },
+          ]
+        }, {
+          text: '2DUI系统', link: '/features/ui',
+          collapsed: true,
+          items: [
+            { text: '屏幕', link: '/features/ui/screen' },
+            { text: '元素', link: '/features/ui/element' },
+            { text: '资源树', link: '/features/ui/tree' },
+          ]
+        }
+      ]
+    }
     ],
     editLink: {
       pattern: 'https://gitee.com/box3lab/box3-product-document/blob/master/arena/:path',
