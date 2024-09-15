@@ -17,7 +17,8 @@ export default defineConfig({
     search: {
       provider: 'local',
     },
-    sidebar: [{
+    sidebar: [
+      {
         text: '基础知识',
         collapsed: false,
         items: [
@@ -39,6 +40,13 @@ export default defineConfig({
               { text: '层级管理器', link: '/editor/hierarchy' },
               { text: '资源管理器', link: '/editor/assets' },
               { text: '代码编辑器', link: '/editor/code' },
+            ]
+          },
+          {
+            text: '代码编写第一步', link: '/javascript/first-step/first-step',
+            collapsed: false,
+            items: [
+              { text: 'Hello World!', link: '/javascript/first-step/hello-world' },
             ]
           }
         ]
