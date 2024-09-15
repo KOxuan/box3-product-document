@@ -1,54 +1,56 @@
 ### Hello World 项目
-体验如何在控制台打印一个简单的"Hello World"，以及使用神岛API实现一个小案例。
 
-关于编辑器各个面板，具体的内容请参考 [编辑器界面](/editor/index)。
-
+体验如何在控制台打印一个简单的"Hello World"，并使用神岛API实现一个小案例，让玩家在进入游戏时接收到个性化的欢迎信息。
 
 #### 1. 进入代码编辑器
 
-在Arena地图编辑器工具区，找到“代码”按钮，点击进入代码编辑界面。
+在Arena地图编辑器中，寻找工具区的“代码”按钮，点击以进入代码编辑界面。
+关于编辑器各个面板，具体的内容请参考 [编辑器界面](/editor/index)。
 
 ![](/QQ20240913-152031.png)
 
 #### 2. 编写第一行代码
 
-我们在服务端脚本下的“index.js”中写以下代码。
+在服务端脚本的“index.js”文件中，编写以下代码以在控制台输出"Hello World"。
+
 ```js
 console.log("Hello World");
 ```
-效果：
-![](/QQ20240913-152221.png)
+
+运行此代码后，你将在控制台看到"Hello World"的输出。
 
 #### 3. 运行地图
-点击右上角的“运行”按钮，和“运行”左边的调试模式（小虫子）按钮，即可打开控制台，看到输出。
+
+点击右上角的“运行”按钮，并开启左侧的调试模式（小虫子图标），以在控制台查看输出。
 
 ![](/QQ20240913-152456.png)
 
-![](/QQ20240913-152523.png)
+#### 4. 使用神岛API向玩家发送信息
 
-#### 4. 向大家发送信息
-掌握JS基础很棒，但了解神岛API也关键。
+接下来，我们将利用神岛API实现在玩家加入游戏时发送个性化欢迎信息的功能。
 
-现在需要有玩家加入游戏后，系统向该玩家发送一条消息。
+在`index.js`文件中，添加以下代码段以在玩家加入游戏时发送一条欢迎私信：
 
-我们在服务端脚本下的“index.js”中写以下代码。
 ```js{3-5}
 console.log("Hello World");
 
-world.onPlayerJoin(({ entity }) => {
-    entity.player.directMessage("Hello World");
-})
+world.onPlayerJoin(({entity}) => {
+    entity.player.directMessage(`你好，${entity.player.name}，欢迎来到神奇代码岛！`);
+});
 ```
-效果：
-![](/QQ20240913-153153.png)
+
+这段代码将监听玩家加入事件，并使用`directMessage`方法向每位新加入的玩家发送一条包含其用户昵称的欢迎私信。
 
 > [!NOTE]
 > [**world.onPlayerJoin**](https://www.yuque.com/box3lab/api/ok49sqk24sfmx46u#KgCvN)： 当玩家加入游戏时触发。
 >
 > [**entity.player.directMessage**](https://www.yuque.com/box3lab/api/vyz9axw1n5g8smti#ItFKd)： 向玩家发送一条消息。
 
-#### 5. 恭喜你！
 
-你已经成功编写并运行了第一个JavaScript Hello World项目。
+#### 5. 测试效果
 
-通过不断地实践和探索，你将能够编写更复杂、功能更丰富的JavaScript代码。
+重新运行地图，你将在游戏内收到包含用户昵称的个性化欢迎私信。
+
+这章中，我们不仅学会了如何使用js语言在控制台输出"Hello World"，还掌握了如何使用神岛API增强游戏的交互性和个性化体验。
+
+希望这对你的神奇代码岛之旅有所帮助！
