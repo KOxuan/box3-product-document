@@ -1,3 +1,7 @@
+<script setup>
+import '/style.css'
+</script>
+# 副本地图传送
 :::warning
 **💡值得注意的是：**
 
@@ -5,16 +9,16 @@
 
 同时，由于该功能会消耗一定的服务资源，因此仅对**认证创作者/年度创作者**开放。
 
-若你希望获得使用本API的权限，请前往QQ群：**478041977 **，联系群主吉吉喵进行申请认证/年度。
-:::
+若你希望获得使用本API的权限，请前往QQ群：**478041977**，联系群主吉吉喵进行申请认证/年度。
+
 [如何成为认证创作者](https://box3.yuque.com/staff-khn556/wupvz3/rhzqoa7ddnfamcyx?view=doc_embed)
 > 普通创作者可以通过调用[entity.player.link()](https://www.yuque.com/box3lab/api/adcaxagmhfgf7ivh)方法实现传送至副图的功能，但请注意，这并非开启一个独立的房间，而是直接进行地图间的跳转。
-
+:::
 
 ### **方法**
 
-#### teleport(mapId: string,players:[GameEntity](https://www.yuque.com/box3lab/api/inriuuvzg5yb54kv)[]) : Promise‹void›
-**地图组内传送能力，能够让玩家被传送到指定地图中。且单独开一个地图服务容器（房间），非传送玩家不可见。**
+#### <font id="API" />teleport(<font id="Type">mapId: string,players:[GameEntity](https://www.yuque.com/box3lab/api/inriuuvzg5yb54kv)[]</font>) <font id="Type">: Promise‹void›</font>
+地图组内传送能力，能够让玩家被传送到指定地图中。且单独开一个地图服务容器（房间），非传送玩家不可见。
 
 **此能力受权限影响，无权限账户调用后会导致报错。**
 
@@ -23,8 +27,19 @@
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
 | mapId | 是 | | string | 目标地图id |
-| players | 是 | | [GameEntity](https://www.yuque.com/box3lab/api/inriuuvzg5yb54kv)[] | 被传送的玩家entity数组 |
+| players | 是 | | GameEntity[] | 被传送的玩家entity数组 |
 
+> 定义于 [#L9919](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9919)
+
+
+:::info
+需注意：
+
+- 传送进入的地图为独立服务器，因此同一张目标地图，分批次传送不同的人，所进入的是不同服务器。
+- 只能在已发布地图中生效
+- players的长度不能超过50个
+- players中不能存在游客（没有UserID）
+:::
 
 ::: details 点击查看示例代码
 
@@ -44,12 +59,3 @@ world.say('传送成功 ')
 ```
 :::
 
-
-:::info
-需注意：
-
-- 传送进入的地图为独立服务器，因此同一张目标地图，分批次传送不同的人，所进入的是不同服务器。
-- 只能在已发布地图中生效
-- players的长度不能超过50个
-- players中不能存在游客（没有UserID）
-:::
