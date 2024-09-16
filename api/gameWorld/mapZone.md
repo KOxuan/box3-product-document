@@ -135,7 +135,7 @@ allZones.forEach((zone) => {
 | skyFrontLight | [GameRGBColor](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz) | 环境光在-Z轴方向的颜色亮度。仅在光照模式为manual自定义模式时生效。颜色值大于0时，颜色越亮。 |
 | skyLeftLight | [GameRGBColor](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz) | 环境光在-X轴方向的亮度。仅在光照模式为manual自定义模式时生效。颜色值大于0时，颜色越亮。 |
 | skyLunarPhase | number | 月亮的相位，数值在0和1之间。若大于0.5时，为上弦月。 |
-| skyMode | "natural" or "manual" | 作用于天空和环境光的照明类型。目前有提供2种光照模式，'manual'(自定义)或'natural'(动态)。默认为 'natural'。 |
+| skyMode | "natural" &#124; "manual" | 作用于天空和环境光的照明类型。目前有提供2种光照模式，'manual'(自定义)或'natural'(动态)。默认为 'natural'。 |
 | skyRightLight | [GameRGBColor](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz) | 环境光在+X轴方向的颜色亮度。仅在光照模式为manual自定义模式时生效。颜色值大于0时，颜色越亮。 |
 | skySunDirection | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 太阳光照明方向。仅在光照模式为manual自定义模式时生效。 |
 | skySunFrequency | number | 太阳运动的频率，数值越大，昼夜交替越快。 |

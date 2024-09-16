@@ -24,7 +24,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '地图信息', link: '/gameWorld/mapInfo' },
-            { text: '玩家进出地图', link: '/gameWorld/playerJL' },
+            { text: '玩家进入/离开地图', link: '/gameWorld/playerJL' },
             {
               text: '聊天频道',
               collapsed: true,
@@ -49,6 +49,10 @@ export default defineConfig({
                 { text: '光照', link: '/gameWorld/weather/illumination' },
               ]
             },
+            { text: '音乐音效', link: '/gameWorld/music' },
+            { text: '动画', link: '/gameWorld/animate' },
+            { text: '副本传送', link: '/gameWorld/teleport' },
+            { text: '小鱼干商城', link: '/gameWorld/shopping' },
           ]
         },
       ]
