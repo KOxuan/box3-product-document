@@ -1,3 +1,7 @@
+<script setup>
+import '/style.css'
+</script>
+# 战斗与生命值
 :::info
 若实体开启了允许伤害的属性 (enableDamage = true) ，可以通过 hurt() 方法对该实体造成生命值伤害。
 
@@ -12,8 +16,8 @@
 
 ## 方法
 
-#### <font id="Event">事件</font> onTakeDamage(handler:(event:[GameDamageEvent](#anWjP))=>void) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
-**当实体受到伤害时触发**
+#### <font id="API" /><font id="Event">事件</font> onTakeDamage(<font id="Type">handler:(event:[GameDamageEvent](./fight#gamedamageevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+当实体受到伤害时触发
 
 **输入参数**
 
@@ -21,26 +25,23 @@
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到有实体受到伤害时的处理函数 |
 
+> 定义于 [#L9790](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9790)
+
 ::: details 点击查看示例代码
 ```javascript
 /* 受到伤害时，向玩家发送私信，提示战斗信息 */
 world.onTakeDamage(({ entity, attacker, damage}) => {
   if (!entity.isPlayer) return;
   const attackerName = attacker.isPlayer ? attacker.player.name : attacker.id;
-  entity.player.directMessage(`[剩余HP: 
-
-$$
-{entity.hp}]: 你受到了 ${damage} 点来自 
-$$
-{attackerName} 的伤害`);
+  entity.player.directMessage(`[剩余HP: {entity.hp}]: 你受到了 ${damage} 点来自 {attackerName} 的伤害`);
 });
 ```
 :::
 ---
 
 
-#### <font id="Event">事件</font> onDie(handler:(event:[GameDieEvent](#Fo2sk))=>void) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
-**当实体死亡时触发**
+#### <font id="API" /><font id="Event">事件</font> onDie(<font id="Type">handler:(event:[GameDieEvent](./fight#gamedieevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+当实体死亡时触发
 
 **输入参数**
 
@@ -48,18 +49,14 @@ $$
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到有实体死亡时的处理函数 |
 
+> 定义于 [#L9796](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9796)
+
 ::: details 点击查看示例代码
 ```javascript
 // 一名玩家被其他玩家击杀时，广播一条消息
 world.onDie(({ entity, attacker }) => {
   if (!attacker || !entity.isPlayer) return;
-  world.say(`
-
-$$
-{attacker.player.name}击杀了
-$$
-{entity.player.name}`);
-
+  world.say(`{attacker.player.name}击杀了{entity.player.name}`);
 });
 ```
 ---
@@ -76,14 +73,24 @@ world.onDie(async({ entity }) => { // 等待事件需要用 async
 ---
 
 
-#### <font id="Event">事件</font> onRespawn(handler:(event:[GameRespawnEvent](#QCH3t))=>void) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
-**当实体复活时触发**
+#### <font id="API" /><font id="Event">事件</font> onRespawn(<font id="Type">handler:(event:[GameRespawnEvent](./fight#gamerespawnevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+当实体复活时触发
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到有实体复活时的处理函数 |
+
+> 定义于 [#L9693](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9693)
+
+:::info
+GameWorld 和 GameEntity 拥有相同的触发事件。 他们的区别是
+
+- **GameWorld** 会触发世界所有的实体事件。
+- **GameEntity** 只触发实体本身的事件。
+:::
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -93,17 +100,12 @@ world.onRespawn(({ entity }) => {
   world.say(`${entity.player.name} 复活了`);
 });
 ```
-:::info
-GameWorld 和 GameEntity 拥有相同的触发事件。 他们的区别是
+:::
 
-- **GameWorld** 会触发世界所有的实体事件。
-- **GameEntity** 只触发实体本身的事件。
-:::
-:::
 ## 接口
 
-#### GameDamageEvent
-**当实体收到伤害时触发的事件**
+#### <font id="API" />GameDamageEvent
+当实体收到伤害时触发的事件
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
@@ -113,12 +115,13 @@ GameWorld 和 GameEntity 拥有相同的触发事件。 他们的区别是
 | damageType | string | 伤害类型 |
 | tick | number | 事件发生时间 |
 
+> 定义于 [#L12553](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12553)
 
 ---
 
 
-#### GameDieEvent
-**当实体死亡时触发的事件**
+#### <font id="API" />GameDieEvent
+当实体死亡时触发的事件
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
@@ -127,15 +130,16 @@ GameWorld 和 GameEntity 拥有相同的触发事件。 他们的区别是
 | damageType | string | 伤害类型 |
 | tick | number | 事件发生时间 |
 
-
+> 定义于 [#L12604](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12604)
 ---
 
 
-#### GameRespawnEvent
-**当实体复活时触发的事件**
+#### <font id="API" />GameRespawnEvent
+当实体复活时触发的事件
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
 | entity | [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | 死亡的实体 |
 | tick | number | 事件发生时间 |
 
+> 定义于 [#L12646](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12646)

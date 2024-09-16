@@ -1,14 +1,17 @@
-
+<script setup>
+import '/style.css'
+</script>
+# 地图区域
 ## 方法
 
-#### addZone(config:Partial‹[GameZoneConfig](#wOD86)>) : GameZone
-**创建一个区域，用于检测实体进入或离开某个区域。 也可以用来设置环境参数，如雾、雨、天、雪、风、重力等定义区域内的环境参数。**
+#### <font id="API" />addZone(<font id="Type">config:Partial‹[GameZoneConfig](./mapZone#gamezoneconfig)›</font>) <font id="Type">: [GameZone](https://box3.yuque.com/org-wiki-box3-ev7rl4/wupvz3/puh5iyu2e8s1lar8)</font>  
+创建一个区域，用于检测实体进入或离开某个区域。 也可以用来设置环境参数，如雾、雨、天、雪、风、重力等定义区域内的环境参数。
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| config | _是_ | | Partial‹[GameZoneConfig](#wOD86)› | 指定区域的一组初始参数值 |
+| config | _是_ | | Partial‹GameZoneConfig› | 指定区域的一组初始参数值 |
 
 **返回值**
 
@@ -16,6 +19,7 @@
 | --- | --- |
 | GameZone | 区域对象 |
 
+> 定义于 [#L9893](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9893)
 
 ::: details 点击查看示例代码
 
@@ -45,14 +49,16 @@ area.onLeave(({ entity }) => {
 ---
 
 
-#### removeZone(zone:[GameZone](https://box3.yuque.com/org-wiki-box3-ev7rl4/wupvz3/puh5iyu2e8s1lar8)) `:  void`
-**删除区域**
+#### <font id="API" />removeZone(<font id="Type">trigger:[GameZone](https://box3.yuque.com/org-wiki-box3-ev7rl4/wupvz3/puh5iyu2e8s1lar8)</font>) <font id="Type">:  void</font>  
+删除指定区域
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| zone | _是_ | | [GameZone](https://box3.yuque.com/org-wiki-box3-ev7rl4/wupvz3/puh5iyu2e8s1lar8) | 要删除的区域 |
+| trigger | _是_ | | GameZone | 要删除的区域 |
+
+> 定义于 [#L9894](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9894)
 
 ::: details 点击查看示例代码
 
@@ -74,8 +80,8 @@ world.removeZone(area);
 ---
 
 
-#### zones() : GameZone[]
-**返回所有的区域列表**
+#### <font id="API" />zones() <font id="Type">: [GameZone](https://box3.yuque.com/org-wiki-box3-ev7rl4/wupvz3/puh5iyu2e8s1lar8)[]</font> 
+返回所有的区域列表
 
 **返回值**
 
@@ -83,6 +89,7 @@ world.removeZone(area);
 | --- | --- |
 | GameZone[] | 所有的区域 |
 
+> 定义于 [#L9892](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9892)
 
 ::: details 点击查看示例代码
 
@@ -98,13 +105,13 @@ allZones.forEach((zone) => {
 
 ## 接口
 
-#### GameZoneConfig
-**用于区域的参数**
+#### <font id="API" />GameZoneConfig
+用于区域的参数
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
 | bounds | [GameBounds3](https://www.yuque.com/box3lab/api/qcs07pc87u5iyfn7) | 区域的所指定的检测区域 |
-| selector | [GameSelectorString](https://www.yuque.com/box3lab/api/ur5fw9xs38ztuvck#wOD86) | 触发区域事件的实体搜索条件 |
+| selector | [GameSelectorString](./querySelectorEntity#gameselectorstring) | 触发区域事件的实体搜索条件 |
 | force | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 对实体施加的力的大小 |
 | massScale | number | 控制实体的质量对力的影响程度。 0 = 像重力一样; 1 = 像风一样 |
 | fogColor | [GameRGBColor](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz) | 雾的颜色 |
@@ -143,3 +150,5 @@ allZones.forEach((zone) => {
 | snowSizeLo | number | 雪花最小直径 |
 | snowSpinSpeed | number | 雪花自旋速度 |
 | snowTexture | string | 雪花纹理 |
+
+> 定义于 [#L9481](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9481)

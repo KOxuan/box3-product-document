@@ -1,27 +1,34 @@
-
+<script setup>
+import '/style.css'
+</script>
+# 实体的创建/销毁
 ## 方法
 
-#### createEntity(config:Partial<[GameEntityConfig](#FctKw)>) : GameEntity`
-**创建一个新实体 GameEntity 或复制一个现有的实体，若实体数量(entityQuota)达到上限，则返回 null**
+#### <font id="API" />createEntity(<font id="Type">config:Partial<[GameEntityConfig](./entityCD#gameentityconfig)></font>) <font id="Type">: GameEntity | null</font>
+创建一个新实体 GameEntity 或复制一个现有的实体，若实体数量(entityQuota)达到上限，则返回 null
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| config | _是_ | | `Partial<[GameEntityConfig](#FctKw)>` | 指定实体的一组初始配置 |
+| config | _是_ | | `Partial<GameEntityConfig>` | 指定实体的一组初始配置 |
 
 **返回值**
 
 | **类型** | **说明** |
 | --- | --- |
-| GameEntity | 根据指定参数创建的一个新实体对象 |
+| GameEntity &#124; null | 根据指定参数创建的一个新实体对象，如达到上限将无法创建 |
 
-::: details 点击查看示例代码
-:::warning
+> 定义于 [#L9702](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9702)
+
+::: warning
 需要提前在编辑器中添加'花'的模型。
 
 添加后可以在地图中删除 (只需确保 设置-文件 页面中已加载 花.vb 模型文件)。
 :::
+
+::: details 点击查看示例代码
+
 ```javascript
 /* 在地图中央随机位置创建50朵花。*/
 for(let i=0;i<50;i++){
@@ -39,14 +46,16 @@ for(let i=0;i<50;i++){
 ---
 
 
-#### entityQuota()  <font id="Type">: number</font>
-**返回脚本当前仍可创建的实体数量**
+#### <font id="API" />entityQuota()  <font id="Type">: number</font>
+返回脚本当前仍可创建的实体数量
 
 **返回值**
 
 | **类型** | **说明** |
 | --- | --- |
 | number | 当前仍可创建的实体数量 |
+
+> 定义于 [#L10147](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10147)
 
 ::: details 点击查看示例代码
 ```javascript
@@ -57,8 +66,8 @@ console.log(`还可以创建 ${world.entityQuota()} 个实体`)
 ---
 
 
-#### <font id="Event">事件</font> onEntityCreate(handler:(event:GameEntityEvent)=>void) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
-**当实体被创建时触发**
+#### <font id="API" /><font id="Event">事件</font> onEntityCreate(<font id="Type">handler:(event:[GameEntityEvent](./entityCD#gameentityevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+当实体被创建时触发
 
 **输入参数**
 
@@ -66,31 +75,30 @@ console.log(`还可以创建 ${world.entityQuota()} 个实体`)
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到有实体创建时的处理函数 |
 
+> 定义于 [#L10263](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10263)
+
 ::: details 点击查看示例代码
 ```javascript
 // 非玩家的实体被创建时，广播一条消息
 world.onEntityCreate(({ entity }) => {
   if (entity.isPlayer) { return }  // 如果实体是玩家类型则跳过
-  entity.say(`我是 
-
-$$
-{entity.id}，我在这个位置：
-$$
-{JSON.stringify(entity.position)}`)
+  entity.say(`我是 {entity.id}，我在这个位置：{JSON.stringify(entity.position)}`)
 })
 ```
 :::
 ---
 
 
-#### <font id="Event">事件</font> onEntityDestroy(handler:(event:GameEntityEvent)=>void) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
-**当实体被销毁时触发**
+#### <font id="API" /><font id="Event">事件</font> onEntityDestroy(<font id="Type">handler:(event:[GameEntityEvent](./entityCD#gameentityevent))=>void</font>) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
+当实体被销毁时触发
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到有实体销毁时的处理函数 |
+
+> 定义于 [#L10268](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10268)
 
 ::: details 点击查看示例代码
 ```javascript
@@ -104,20 +112,21 @@ world.onEntityDestroy(({ entity }) => {
 
 ## 接口
 
-#### GameEntityEvent
-**实体创建与销毁事件**
+#### <font id="API" />GameEntityEvent
+实体创建与销毁事件
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
 | entity | [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | 销毁的实体 |
 | tick | number | 事件发生时间 |
 
+> 定义于 [#L12500](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12500)
 
 ---
 
 
-#### GameEntityConfig
-**用于控制实体的参数组**
+#### <font id="API" />GameEntityConfig
+用于控制实体的参数组
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
@@ -159,3 +168,4 @@ world.onEntityDestroy(({ entity }) => {
 | hurtSound | [GameSoundEffect](https://www.yuque.com/box3lab/api/gm9rzlrl95wryhs8#Oby5f) | 实体触发受伤事件时播放的音效 |
 | dieSound | [GameSoundEffect](https://www.yuque.com/box3lab/api/gm9rzlrl95wryhs8#Oby5f) | 实体触发死亡事件时播放的音效 |
 
+> 定义于 [#L10493](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10493)

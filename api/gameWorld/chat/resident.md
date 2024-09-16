@@ -6,7 +6,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API"></font> say(`message: string`)`:  void`
+#### <font id="API" /> say(<font id="Type">message: string</font>)<font id="Type">:  void</font>
 向所有玩家广播一条消息
 
 **输入参数**
@@ -69,7 +69,7 @@ startTimer()  // 调用方法
 ---
 
 
-#### <font id="API"></font><font id="Event">事件</font> onChat(<font id="Type">handler:(event:[GameChatEvent](./resident#gamechatevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+#### <font id="API" /><font id="Event">事件</font> onChat(<font id="Type">handler:(event:[GameChatEvent](./resident#gamechatevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
 当玩家在聊天窗口说话时触发
 
 **输入参数**
@@ -161,7 +161,7 @@ world.onChat(({ entity, message }) => {
 
 ## 接口
 
-#### <font id="API"></font> GameChatEvent
+#### <font id="API" /> GameChatEvent
 由聊天触发的事件
 
 | **参数** | **类型** | **说明** |

@@ -3,7 +3,7 @@
 
 ## 方法
 
-#### <font id="API"></font>createTempChat(`chatId:string[]`)`: Promise<string>`
+#### <font id="API" />createTempChat(<font id="Type">chatId:string[]</font>)<font id="Type">: Promise‹string›</font>
 创建临时聊天频道
 
 **输入参数**
@@ -16,7 +16,7 @@
 
 | **类型** | **说明** |
 | --- | --- |
-| `Promise<string>` | 创建临时频道后的频道id |
+| Promise‹string› | 创建临时频道后的频道id |
 
 > 定义于 [#L9923](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9923)
 
@@ -31,20 +31,20 @@ world.createTempChat().then(chatId => {
 ---
 
 
-#### <font id="API"></font>destroyTempChat(`id:string[]`)`: Promise<string[]>`
+#### <font id="API" />destroyTempChat(<font id="Type">chatId:string[]</font>)<font id="Type">: Promise‹string[]›</font>
 批量销毁临时聊天频道
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| id | _是_ | | string[] | 需要销毁的临时频道id数组 |
+| chatId | _是_ | | string[] | 需要销毁的临时频道id数组 |
 
 **返回值**
 
 | **类型** | **说明** |
 | --- | --- |
-| `Promise<string[]>` | 删除失败的临时频道id数组 |
+| Promise‹string[]› | 删除失败的临时频道id数组 |
 
 > 定义于 [#L9927](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9927)
 
@@ -62,7 +62,7 @@ world.destroyTempChat(['chatId1','chatId2']).then(failedChatIds => {
 ---
 
 
-#### <font id="API"></font>addTempChatPlayer(`chatId:string,player:string[]`)`: Promise<string[]>`
+#### <font id="API" />addTempChatPlayer(<font id="Type">chatId:string,player:string[]</font>)<font id="Type">: Promise‹string[]›</font>
 向临时聊天频道添加玩家
 
 **输入参数**
@@ -76,7 +76,7 @@ world.destroyTempChat(['chatId1','chatId2']).then(failedChatIds => {
 
 | **类型** | **说明** |
 | --- | --- |
-| `Promise<string[]>` | 添加成功的玩家id数组 |
+| Promise‹string[]› | 添加成功的玩家id数组 |
 
 > 定义于 [#L9931](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9931)
 
@@ -92,7 +92,7 @@ world.createTempChat().then(chatId => {
 ---
 
 
-#### <font id="API"></font>removeTempChatPlayer(`chatId:string,player:string[]`)`: Promise<string[]>`
+#### <font id="API" />removeTempChatPlayer(<font id="Type">chatId:string,player:string[]</font>)<font id="Type">: Promise‹string[]›</font>
 向临时聊天频道移除玩家
 
 **输入参数**
@@ -106,7 +106,7 @@ world.createTempChat().then(chatId => {
 
 | **类型** | **说明** |
 | --- | --- |
-| `Promise<string[]>` | 移除成功的玩家id数组 |
+| Promise‹string[]› | 移除成功的玩家id数组 |
 
 > 定义于 [#L9935](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9935)
 
@@ -122,14 +122,14 @@ world.createTempChat(['userId1','userId2']).then(chatId => {
 ---
 
 
-#### <font id="API"></font>getTempChats()`: Promise<string[]>`
+#### <font id="API" />getTempChats()<font id="Type">: Promise‹string[]›</font>
 获取当前地图存在的临时聊天频道
 
 **返回值**
 
 | **类型** | **说明** |
 | --- | --- |
-| `Promise<string[]>` | 当前地图存在的临时聊天频道id数组 |
+| Promise‹string[]› | 当前地图存在的临时聊天频道id数组 |
 
 > 定义于 [#L9939](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9939)
 
@@ -143,7 +143,7 @@ world.getTempChats().then(chatIds => {
 ---
 
 
-#### <font id="API"></font>getTempChatUsers(`chatId:string`)`: Promise<string[]>`
+#### <font id="API" />getTempChatUsers(<font id="Type">chatId:string</font>)<font id="Type">: Promise‹string[]›</font>
 获取临时聊天频道中的玩家
 
 **输入参数**
@@ -156,7 +156,7 @@ world.getTempChats().then(chatIds => {
 
 | **类型** | **说明** |
 | --- | --- |
-| `Promise<string[]>` | 在临时聊天频道中的玩家id数组 |
+| Promise‹string[]› | 在临时聊天频道中的玩家id数组 |
 
 > 定义于 [#L9943](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9943)
 

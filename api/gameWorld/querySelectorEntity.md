@@ -1,21 +1,12 @@
-> 搜索方式类似[jQuery选择器](https://www.runoob.com/jquery/jquery-ref-selectors.html)的语法，例如：
-> - 搜索所有实体: *
-> - 搜索名称叫**hibox**的实体: #hibox
-> - 搜索标签叫**hibox**的实体: .hibox
-> - 搜索同时包含多个实体标签: .tag1 .tag2
-> - 搜索所有玩家: player
-
-```javascript
-const entities = world.querySelectorAll('*');  // 搜索世界中的全部实体
-const players = world.querySelectorAll('player'); // 搜索地图中的全部玩家，注意，不带.
-const boxes = world.querySelectorAll('.盒子'); // 搜索带有"盒子"标签的全部实体
-const redBoxes = world.querySelectorAll('.盒子 .红色'); // 搜索同时带有"盒子"、"红色"标签的全部实体
-```
+<script setup>
+import '/style.css'
+</script>
+# 搜索实体
 
 ## 方法
 
-#### querySelector(selector:GameSelectorString) : [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | null
-**搜索满足条件的第一个实体。**
+#### <font id="API" />querySelector(<font id="Type">selector:[GameSelectorString](./querySelectorEntity#gameselectorstring)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | null</font>
+搜索满足条件的第一个实体。
 
 **输入参数**
 
@@ -27,7 +18,9 @@ const redBoxes = world.querySelectorAll('.盒子 .红色'); // 搜索同时带�
 
 | **类型** | **说明** |
 | --- | --- |
-| [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) &#124; null | 如有，返回搜索到的实体对象，反之为空 |
+| GameEntity &#124; null | 如有，返回搜索到的实体对象，反之为空 |
+
+> 定义于 [#L9711](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9711)
 
 ::: details 点击查看示例代码
 ```javascript
@@ -46,8 +39,8 @@ world.onPlayerJoin(({ entity }) => {
 ---
 
 
-#### querySelectorAll(selector:GameSelectorString) : [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[] 
-**搜索满足条件的所有实体，返回一个列表。**
+#### <font id="API" />querySelectorAll(<font id="Type">selector:[GameSelectorString](./querySelectorEntity#gameselectorstring)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[] </font> 
+搜索满足条件的所有实体，返回一个列表。
 
 **输入参数**
 
@@ -59,26 +52,9 @@ world.onPlayerJoin(({ entity }) => {
 
 | **类型** | **说明** |
 | --- | --- |
-| [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[] | 如有，返回搜索到的实体对象列表，反之为空列表 |
+| GameEntity | 如有，返回搜索到的实体对象列表，反之为空列表 |
 
-::: details 点击查看示例代码
-```javascript
-// 按下左键，在控制台输出当前所有玩家的生命状态
-world.onRelease(({ button }) => {
-  if (button === 'action0'){
-    world.querySelectorAll('player').forEach((user)=>{
-      console.log(`
-
-$$
-{user.player.name} : 
-$$
-{user.hp}`)
-    })
-    console.log('---------------------------')
-  }
-})
-```
-:::
+> 定义于 [#L9720](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9720)
 :::info
 **💡提示**
 
@@ -89,23 +65,40 @@ $$
 **querySelectorAll** 搜索满足条件的所有实体，返回是一个数组，如果没有搜索到实体，则返回空的数组。
 :::
 
+
+::: details 点击查看示例代码
+```javascript
+// 按下左键，在控制台输出当前所有玩家的生命状态
+world.onRelease(({ button }) => {
+  if (button === 'action0'){
+    world.querySelectorAll('player').forEach((user)=>{
+      console.log(`{user.player.name} : {user.hp}`)
+    })
+    console.log('---------------------------')
+  }
+})
+```
+:::
+
 ---
 
 
-#### searchBox(bounds:[GameBounds3](https://www.yuque.com/box3lab/api/qcs07pc87u5iyfn7)) : [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[]
-**搜索指定范围中的全部实体**
+#### <font id="API" />searchBox(<font id="Type">bounds:[GameBounds3](https://www.yuque.com/box3lab/api/qcs07pc87u5iyfn7)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[]</font>
+搜索指定范围中的全部实体
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| bounds | _是_ | | [GameBounds3](https://www.yuque.com/box3lab/api/qcs07pc87u5iyfn7) | 要搜索的范围边界 |
+| bounds | _是_ | | GameBounds3 | 要搜索的范围边界 |
 
 **返回值**
 
 | **类型** | **说明** |
 | --- | --- |
-| [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[] | 范围内的全部实体 |
+| GameEntity[] | 范围内的全部实体 |
+
+> 定义于 [#L9772](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9772)
 
 ::: details 点击查看示例代码
 ```javascript
@@ -124,22 +117,24 @@ world.searchBox(bounds).forEach( (entityInBounds) => {
 ---
 
 
-#### raycast(origin:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v),direction:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v),options?:Partial<[GameRaycastOptions](#Oby5f)>) : [GameRaycastResult](#U0fcD)`
-**射线检测，从 origin原点位置向 direction 方向投射一条隐形的射线，返回碰到的实体或方块。**
+#### <font id="API" />raycast(<font id="Type">origin:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v),direction:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v),options?:Partial<[GameRaycastOptions](./querySelectorEntity#gameraycastoptions)></font>) <font id="Type">: [GameRaycastResult](./querySelectorEntity#gameraycastresult)</font>
+射线检测，从 origin原点位置向 direction 方向投射一条隐形的射线，返回碰到的实体或方块。
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| origin | _是_ | | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 射线的起点 |
-| direction | _是_ | | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 射线的方向 |
-| options | | | `Partial<[GameRaycastOptions](#Oby5f)>` | 选项配置参数 |
+| origin | _是_ | | GameVector3 | 射线的起点 |
+| direction | _是_ | | GameVector3 | 射线的方向 |
+| options | | | `Partial<GameRaycastOptions>` | 选项配置参数 |
 
 **返回值**
 
 | **类型** | **说明** |
 | --- | --- |
-| [GameRaycastResult](#U0fcD) | 发射射线后的结果 |
+| GameRaycastResult | 发射射线后的结果 |
+
+> 定义于 [#L9766](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9766)
 
 ::: details 点击查看示例代码
 ```javascript
@@ -156,8 +151,10 @@ world.onPress(({ button, entity }) => {
 
 ## 接口
 
-#### GameSelectorString
-**选择器(Selectors)可以方便搜索游戏内的全部对象。选择器接口是参照 DOM APIs 而设。**
+#### <font id="API" />GameSelectorString
+选择器(Selectors)可以方便搜索游戏内的全部对象。选择器接口是参照 DOM APIs 而设。
+
+搜索方式类似[jQuery选择器](https://www.runoob.com/jquery/jquery-ref-selectors.html)的语法，例如：
 
 | **标识前缀** | **类型** | **说明** |
 | --- | --- | --- |
@@ -165,6 +162,8 @@ world.onPress(({ button, entity }) => {
 | # | string | 搜索该模型名称的实体 |
 | . | string | 搜索该模型标签实体 |
 | player | string | 搜索游戏中的全部玩家 |
+
+> 定义于 [#L13108](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13108)
 
 ```javascript
 const entities = world.querySelector('*'); // 世界中的全部实体
@@ -177,8 +176,8 @@ const redBox = world.querySelector('.box .red');// 标签同时带有"box"和“
 ---
 
 
-#### GameRaycastOptions 
-**进行射线检测的参数配置**
+#### <font id="API" />GameRaycastOptions 
+进行射线检测的参数配置
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
@@ -188,12 +187,13 @@ const redBox = world.querySelector('.box .red');// 标签同时带有"box"和“
 | ignoreEntities | boolean | 如果为真，则射线无视实体 |
 | ignoreSelector | GameSelectorString | 被射线检测忽略的实体选择器 |
 
+> 定义于 [#L12350](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12350)
 
 ---
 
 
-#### GameRaycastResult 
-**射线检测(raycast)的结果，包含射线和所击中目标的信息。**
+#### <font id="API" />GameRaycastResult 
+射线检测(raycast)的结果，包含射线和所击中目标的信息。
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
@@ -207,3 +207,4 @@ const redBox = world.querySelector('.box .red');// 标签同时带有"box"和“
 | voxelIndex | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 如果射线击中的是方块，则返回所击中方块的网格坐标。 |
 | normal | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 射线所击中平面的法向量 |
 
+> 定义于 [#L12269](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12269)

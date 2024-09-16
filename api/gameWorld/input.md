@@ -1,12 +1,15 @@
-
+<script setup>
+import '/style.css'
+</script>
+# 点击与互动
 ## 方法
 
-#### <font id="Event">事件</font> onInteract(handler:(event:[GameInteractEvent](#jneYE))=>void) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
-**若实体开启了互动功能enableInteract = true，则玩家与实体进行互动时触发。**
+#### <font id="API" /><font id="Event">事件</font> onInteract(<font id="Type">handler:(event:[GameInteractEvent](./input#gameinteractevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+若实体开启了互动功能enableInteract = true，则玩家与实体进行互动时触发。
 
-**当玩家走进实体的互动范围，实体身上就会出现按键提示，玩家按下互动按钮(默认为键盘 E 按键)与该实体进行互动。**
+当玩家走进实体的互动范围，实体身上就会出现按键提示，玩家按下互动按钮(默认为键盘 E 按键)与该实体进行互动。
 
-**触发onInteract事件同时还会触发实体默认的互动音效**
+触发onInteract事件同时还会触发实体默认的互动音效
 
 **输入参数**
 
@@ -14,12 +17,12 @@
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到互动时的处理函数 |
 
-::: details 点击查看示例代码
-:::warning
-想要和实体进行互动，需要先在编辑器中放置一个模型，并给他取一个名字。
 
-这里的示范，将名字改为了'NPC'。
-:::
+> 定义于 [#L9898](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9898)
+
+
+::: details 点击查看示例代码
+
 ```javascript
 /* 在场景中搜索名称为 NPC 的模型，允许和它进行互动 */
 const npc = world.querySelector('#NPC');
@@ -37,14 +40,17 @@ world.onInteract( ({entity, targetEntity}) => {
 ---
 
 
-#### <font id="Event">事件</font> onClick(handler:(event:GameInputEvent)=>void) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
-**当玩家用鼠标点击实体时触发**
+#### <font id="API" /><font id="Event">事件</font> onClick(<font id="Type">handler:(event:[GameInputEvent](./input#gameinputevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+当玩家用鼠标点击实体时触发
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到鼠标点击时的处理函数 |
+
+> 定义于 [#L9838](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9838)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -58,14 +64,16 @@ world.onClick(({ entity }) => {
 ---
 
 
-#### <font id="Event">事件</font> onPress(handler**:(**event**:**GameInputEvent**)=>void**) **: **[GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
-**当玩家按下按钮时触发**
+#### <font id="API" /><font id="Event">事件</font> onPress(<font id="Type">handler:(event:[GameInputEvent](./input#gameinputevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+当玩家按下按钮时触发
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到鼠标按下时的处理函数 |
+
+> 定义于 [#L9844](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9844)
 
 ::: details 点击查看示例代码
 ```javascript
@@ -103,8 +111,8 @@ world.onPress(({ button, raycast }) => {
 ---
 
 
-#### <font id="Event">事件</font> onRelease(handler**:(**event**:**GameInputEvent**)=>void**) **: **[GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
-**当玩家松开按钮时触发**
+####  <font id="API" /><font id="Event">事件</font> onRelease(<font id="Type">handler:(event:[GameInputEvent](./input#gameinputevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+当玩家松开按钮时触发
 
 **输入参数**
 
@@ -112,18 +120,7 @@ world.onPress(({ button, raycast }) => {
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到鼠标松开时的处理函数 |
 
-::: details 点击查看示例代码
-```javascript
-world.onRelease(({ button, position }) => {
-  console.log(`press: 
-
-$$
-{button} 
-$$
-{position}`)
-})
-```
-:::
+> 定义于 [#L9850](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9850)
 
 :::info
 **💡提示**
@@ -134,10 +131,19 @@ $$
 - **GamePlayer** 只监听玩家本身的事件
 :::
 
+::: details 点击查看示例代码
+```javascript
+world.onRelease(({ button, position }) => {
+  console.log(`press: {button} {position}`)
+})
+```
+:::
+
+
 ## 接口
 
-#### GameInteractEvent
-**当实体互动时触发的事件**
+#### <font id="API" />GameInteractEvent
+当实体互动时触发的事件
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
@@ -149,19 +155,19 @@ $$
 ---
 
 
-#### GameInputEvent
-**输入事件，在玩家按下或松开按钮时触发**
+#### <font id="API" />GameInputEvent
+输入事件，在玩家按下或松开按钮时触发
 
-**事件发生的时刻，即为玩家按下/松开按钮的同一刻**
+事件发生的时刻，即为玩家按下/松开按钮的同一刻
 
 | **参数** | **类型** | **说明** | **补充** |
 | --- | --- | --- | --- |
 | entity | [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | 被点击的实体 / 按下按钮的玩家 | **onClick()前，onPress()onRelease()后** |
 | clicker | [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | 发起点击事件的玩家 | **onPress()onRelease()不可用** |
-| button | [GameButtonType](#cgPTQ) | 点击的按钮，ACTION0 = 左键，ACTION1 = 右键 | |
+| button | [GameButtonType](./input#gamebuttontype) | 点击的按钮，ACTION0 = 左键，ACTION1 = 右键 | |
 | distance | number | 玩家到被点击实体的距离 | **onPress()onRelease()不可用** |
 | clickerPosition | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 点击鼠标的瞬间玩家所在位置 | **onPress()onRelease()不可用** |
-| raycast | [GameRaycastResult](https://www.yuque.com/box3lab/api/ur5fw9xs38ztuvck#U0fcD) | 按下按钮瞬间，从玩家视角投射的射线检测结果 | |
+| raycast | [GameRaycastResult](./querySelectorEntity#gameraycastresult) | 按下按钮瞬间，从玩家视角投射的射线检测结果 | |
 | tick | number | 事件发生时间 | |
 | position | number | 按下按钮瞬间，玩家的位置 | **onClick()不可用** |
 | pressed | boolean | 是否按下了按钮。若为 true，则为按下了按钮。 | **onClick()不可用** |
@@ -170,8 +176,8 @@ $$
 
 ## 枚举
 
-#### GameButtonType
-**玩家按下的按钮类型**
+#### <font id="API" />GameButtonType
+玩家按下的按钮类型
 
 | **属性** | **说明** |
 | --- | --- |

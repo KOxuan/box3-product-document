@@ -59,7 +59,7 @@
 ---
 
 
-#### ui.visible **: boolean**
+#### ui.visible **<font id="Type">: boolean</font>**
 > 默认值：true
 
 **节点的可见性。**
