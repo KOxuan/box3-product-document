@@ -43,9 +43,10 @@ export default defineConfig({
         },
         {
           text: '代码编写第一步', link: '/javascript/first-step/first-step',
-          collapsed: false,
+          collapsed: true,
           items: [
-            { text: 'Hello World!', link: '/javascript/first-step/hello-world' },
+            { text: '世界，你好!', link: '/javascript/first-step/hello-world' },
+            { text: '存储我们的信息', link: '/javascript/first-step/data-storage' }
           ]
         }
       ]
