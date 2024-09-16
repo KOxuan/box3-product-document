@@ -1,7 +1,7 @@
 <script setup>
 import '/style.css'
 </script>
-# 玩家出入地图
+# 玩家进入/离开地图
 ## 方法
 
 #### <font id="API" /><font id="Event">事件</font> onPlayerJoin(<font id="Type">handler:(event:[GameEntityEvent](./playerJL#gameentityevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>

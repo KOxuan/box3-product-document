@@ -1,21 +1,29 @@
+<script setup>
+import '/style.css'
+</script>
+# 小鱼干商城
 :::warning
 **💡值得注意的是：**
 
 由于小鱼干商城功能涉及商业化，因此仅对**年度创作者**开放。
 
-若你希望获得使用本API的权限，请前往QQ群：**478041977 **，联系群主吉吉喵进行申请年度创作者。
+若你希望获得使用本API的权限，请前往QQ群：**478041977**，联系群主吉吉喵进行申请年度创作者。
 :::
 
 ### **方法**
 
-#### <font id="Event">事件</font> onPlayerPurchaseSuccess(handler:(event:[GamePurchaseSuccessEvent](#jneYE))=>void) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
-**当玩家成功购买物品时触发**
+#### <font id="API" /><font id="Event">事件</font> onPlayerPurchaseSuccess(<font id="Type">handler:(event:[GamePurchaseSuccessEvent](./shopping#gamepurchasesuccessevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font> 
+当玩家成功购买物品时触发
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到玩家购买后的处理函数 |
+
+
+> 定义于 [#L9904](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9904)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -34,7 +42,7 @@ world.onPlayerPurchaseSuccess(({ userId, productId, orderId }) => {
 
 ## 接口
 
-#### GamePurchaseSuccessEvent
+#### <font id="API" />GamePurchaseSuccessEvent
 **当玩家成功购买物品时触发的事件**
 
 | **参数** | **类型** | **说明** |
@@ -44,3 +52,4 @@ world.onPlayerPurchaseSuccess(({ userId, productId, orderId }) => {
 | productId | number | 购买商品的ID |
 | orderId | number | 购买成功的订单号 |
 
+> 定义于 [#L12867](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12867)

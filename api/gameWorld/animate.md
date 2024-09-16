@@ -1,24 +1,28 @@
+<script setup>
+import '/style.css'
+</script>
+# 动画
+### 方法
 
-### **方法**
-
-#### animate(keyframes:Partial<[GameWorldKeyframe](#jneYE)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](#ipI8a)>) : [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)`
-**创建一个关键帧动画**
-
+#### <font id="API" /> animate(<font id="Type">keyframes:Partial<[GameWorldKeyframe](./animate#gameworldkeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](./animate#gameanimationplaybackconfig)></font>) <font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)</font>
+创建一个关键帧动画
 **输入参数**
 
 | _**参数**_ | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
-| keyframes | _是_ | | `Partial<[GameWorldKeyframe](#jneYE)[]>` | 关键帧的数据 |
-| playbackInfo | | | `Partial<[GameAnimationPlaybackConfig](#ipI8a)>` | 动画播放参数 |
+| keyframes | _是_ | | Partial‹GameWorldKeyframe[]› | 关键帧的数据 |
+| playbackInfo | | | Partial‹GameAnimationPlaybackConfig› | 动画播放参数 |
 
 **返回值**
 
 | **类型** | **说明** |
 | --- | --- |
-| [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek) | 创建出来的动画对象 |
+| GameAnimation | 创建出来的动画对象 |
+
+> 定义于 [#L9776](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9776)
 
 
-:: details 点击查看示例代码
+::: details 点击查看示例代码
 
 ```javascript
 const ani = world.animate([
@@ -42,14 +46,14 @@ world.onPress(({ button }) => {
 
 ## 接口
 
-#### GameWorldKeyframe
-**World世界动画关键帧参数，可对World的大部分属性做动画效果，例如重力、雨、雾、雪、光照等等**
+#### <font id="API" /> GameWorldKeyframe
+World世界动画关键帧参数，可对World的大部分属性做动画效果，例如重力、雨、雾、雪、光照等等
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
 | duration | number | 播放时长 |
-| easeIn | [GameEasing](#Id5nB) | 缓入效果 |
-| easeOut | [GameEasing](#Id5nB) | 缓出效果 |
+| easeIn | [GameEasing](./animate#gameeasing) | 缓入效果 |
+| easeOut | [GameEasing](./animate#gameeasing) | 缓出效果 |
 | gravity | number | 世界重力 |
 | airFriction | number | 空气阻力 |
 | maxFog | number | 最大雾量 |
@@ -85,29 +89,29 @@ world.onPress(({ button }) => {
 | skyFrontLight | number | 环境光在+Z轴方向的颜色亮度 |
 | skyBackLight | number | 环境光在-Z轴方向的颜色亮度 |
 
-
+> 定义于 [#L9629](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9629)
 ---
 
 
-#### GameAnimationPlaybackConfig
-**用于动画播放配置的参数组**
+#### <font id="API" /> GameAnimationPlaybackConfig
+用于动画播放配置的参数组
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
 | delay | number | 播放延迟 |
-| direction | [GameAnimationDirection](#Qiiz9) | 播放方向 |
+| direction | [GameAnimationDirection](./animate#gameanimationdirection) | 播放方向 |
 | duration | number | 播放时长 |
 | endDelay | number | 结束延迟 |
 | iterationStart | number | 反复播放开始时间 |
 | iterations | number | 反复播放次数 |
 | startTick | number | 开始时间 |
 
-
+> 定义于 [#L9629](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9629)
 
 ## 枚举
 
-#### GameEasing
-**动画的缓动效果**
+#### <font id="API" /> GameEasing
+动画的缓动效果
 
 | 属性 | 说明 |
 | --- | --- |
@@ -121,11 +125,11 @@ world.onPress(({ button }) => {
 | QUADRATIC | 二次方 |
 | SINE | 正弦波 |
 
-
+> 定义于 [#L9536](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9536)
 ---
 
 
-#### GameAnimationDirection
+#### <font id="API" /> GameAnimationDirection
 **动画的缓动效果**
 
 | 属性 | 说明 |
@@ -137,3 +141,4 @@ world.onPress(({ button }) => {
 | WRAP | 循环 |
 | WRAP_REVERSE | 循环倒放 |
 
+> 定义于 [#L9528](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9528)
