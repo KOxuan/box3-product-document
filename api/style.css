@@ -55,7 +55,13 @@ font[id='Type'] {
   color: #707070;
   background-color: unset !important;
 }
-
+font[id='API'] {
+  padding: 2px 2px;
+  border-radius: 2px;
+  font-size: 15px !important;
+  margin-right: 6px;
+  background-color: #ffdb00;
+}
 code {
   user-select: none;
   font-size: 15px !important;

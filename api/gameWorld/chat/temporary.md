@@ -3,7 +3,7 @@
 
 ## 方法
 
-#### createTempChat(`chatId:string[]`)`: Promise<string>`
+#### <font id="API"></font>createTempChat(`chatId:string[]`)`: Promise<string>`
 创建临时聊天频道
 
 **输入参数**
@@ -31,7 +31,7 @@ world.createTempChat().then(chatId => {
 ---
 
 
-#### destroyTempChat(`id:string[]`)`: Promise<string[]>`
+#### <font id="API"></font>destroyTempChat(`id:string[]`)`: Promise<string[]>`
 批量销毁临时聊天频道
 
 **输入参数**
@@ -62,7 +62,7 @@ world.destroyTempChat(['chatId1','chatId2']).then(failedChatIds => {
 ---
 
 
-#### addTempChatPlayer(`chatId:string,player:string[]`)`: Promise<string[]>`
+#### <font id="API"></font>addTempChatPlayer(`chatId:string,player:string[]`)`: Promise<string[]>`
 向临时聊天频道添加玩家
 
 **输入参数**
@@ -92,7 +92,7 @@ world.createTempChat().then(chatId => {
 ---
 
 
-#### removeTempChatPlayer(`chatId:string,player:string[]`)`: Promise<string[]>`
+#### <font id="API"></font>removeTempChatPlayer(`chatId:string,player:string[]`)`: Promise<string[]>`
 向临时聊天频道移除玩家
 
 **输入参数**
@@ -122,7 +122,7 @@ world.createTempChat(['userId1','userId2']).then(chatId => {
 ---
 
 
-#### getTempChats()`: Promise<string[]>`
+#### <font id="API"></font>getTempChats()`: Promise<string[]>`
 获取当前地图存在的临时聊天频道
 
 **返回值**
@@ -143,7 +143,7 @@ world.getTempChats().then(chatIds => {
 ---
 
 
-#### getTempChatUsers(`chatId:string`)`: Promise<string[]>`
+#### <font id="API"></font>getTempChatUsers(`chatId:string`)`: Promise<string[]>`
 获取临时聊天频道中的玩家
 
 **输入参数**
