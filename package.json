@@ -5,7 +5,10 @@
   "scripts": {
     "arena:dev": "vitepress dev arena",
     "arena:build": "vitepress build arena",
-    "arena:preview": "vitepress preview arena"
+    "arena:preview": "vitepress preview arena",
+    "api:dev": "vitepress dev api",
+    "api:build": "vitepress build api",
+    "api:preview": "vitepress preview api"
   },
   "dependencies": {
     "pagefind": "^1.1.1",
