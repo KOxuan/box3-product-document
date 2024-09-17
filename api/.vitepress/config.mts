@@ -67,6 +67,14 @@ export default defineConfig({
             { text: '副本传送', link: '/GameWorld/teleport' },
             { text: '小鱼干商城', link: '/GameWorld/shopping' },
           ]
+        }, {
+          text: '🧱游戏方块',
+          link: '/GameVoxels/index',
+          collapsed: true,
+          items: [
+            { text: '操作方块', link: '/GameVoxels/operate' },
+            { text: '方块信息', link: '/GameVoxels/info' },
+          ]
         },
       ]
     },
