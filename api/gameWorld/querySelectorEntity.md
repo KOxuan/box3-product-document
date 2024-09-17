@@ -5,7 +5,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" />querySelector(<font id="Type">selector:[GameSelectorString](./querySelectorEntity#gameselectorstring)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | null</font>
+#### <font id="API" />querySelector(<font id="Type">selector:[GameSelectorString](./querySelectorEntity#GameSelectorString)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | null</font>{#querySelector}
 搜索满足条件的第一个实体。
 
 **输入参数**
@@ -39,7 +39,7 @@ world.onPlayerJoin(({ entity }) => {
 ---
 
 
-#### <font id="API" />querySelectorAll(<font id="Type">selector:[GameSelectorString](./querySelectorEntity#gameselectorstring)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[] </font> 
+#### <font id="API" />querySelectorAll(<font id="Type">selector:[GameSelectorString](./querySelectorEntity#GameSelectorString)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[] </font> {#querySelectorAll}
 搜索满足条件的所有实体，返回一个列表。
 
 **输入参数**
@@ -83,7 +83,7 @@ world.onRelease(({ button }) => {
 ---
 
 
-#### <font id="API" />searchBox(<font id="Type">bounds:[GameBounds3](https://www.yuque.com/box3lab/api/qcs07pc87u5iyfn7)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[]</font>
+#### <font id="API" />searchBox(<font id="Type">bounds:[GameBounds3](https://www.yuque.com/box3lab/api/qcs07pc87u5iyfn7)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[]</font>{#searchBox}
 搜索指定范围中的全部实体
 
 **输入参数**
@@ -117,7 +117,7 @@ world.searchBox(bounds).forEach( (entityInBounds) => {
 ---
 
 
-#### <font id="API" />raycast(<font id="Type">origin:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v),direction:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v),options?:Partial<[GameRaycastOptions](./querySelectorEntity#gameraycastoptions)></font>) <font id="Type">: [GameRaycastResult](./querySelectorEntity#gameraycastresult)</font>
+#### <font id="API" />raycast(<font id="Type">origin:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v),direction:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v),options?:Partial<[GameRaycastOptions](./querySelectorEntity#GameRaycastOptions)></font>) <font id="Type">: [GameRaycastResult](./querySelectorEntity#GameRaycastResult)</font>{#raycast}
 射线检测，从 origin原点位置向 direction 方向投射一条隐形的射线，返回碰到的实体或方块。
 
 **输入参数**
@@ -151,7 +151,7 @@ world.onPress(({ button, entity }) => {
 
 ## 接口
 
-#### <font id="API" />GameSelectorString
+#### <font id="API" />GameSelectorString{#GameSelectorString}
 选择器(Selectors)可以方便搜索游戏内的全部对象。选择器接口是参照 DOM APIs 而设。
 
 搜索方式类似[jQuery选择器](https://www.runoob.com/jquery/jquery-ref-selectors.html)的语法，例如：
@@ -176,7 +176,7 @@ const redBox = world.querySelector('.box .red');// 标签同时带有"box"和“
 ---
 
 
-#### <font id="API" />GameRaycastOptions 
+#### <font id="API" />GameRaycastOptions {#GameRaycastOptions}
 进行射线检测的参数配置
 
 | **参数** | **类型** | **说明** |
@@ -192,7 +192,7 @@ const redBox = world.querySelector('.box .red');// 标签同时带有"box"和“
 ---
 
 
-#### <font id="API" />GameRaycastResult 
+#### <font id="API" />GameRaycastResult {#GameRaycastResult}
 射线检测(raycast)的结果，包含射线和所击中目标的信息。
 
 | **参数** | **类型** | **说明** |
