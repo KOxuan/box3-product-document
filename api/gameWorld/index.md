@@ -81,7 +81,7 @@ declare class GameWorld {
 - [`animate`](./animate#animate) : 创建一个关键帧动画
 - [`teleport`](./teleport#teleport) : 地图组内传送能力，能够让玩家被传送到指定地图中
 
-### 监听类型
+### 监听方法
 - [`onTick`](./mapInfo#onTick) : 这是世界的计时事件，每64毫秒触发一次，Tick计数加1
 - [`onPlayerJoin`](./playerJL#onPlayerJoin) : 当玩家加入地图时触发
 - [`onPlayerLeave`](./playerJL#onPlayerLeave) : 当玩家离开地图时触发
