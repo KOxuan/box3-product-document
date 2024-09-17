@@ -1,35 +1,41 @@
+<script setup>
+import '/style.css'
+</script>
+# 方块的操作
+
 > 如果你想要地图**在非运行状态**，通过脚本在场景中**快速建造**，可以尝试以下操作：
 > 1. 开启编辑器右上角的调试模式(小虫子图标)
 > 2. 使用窗口底部的控制台，输入对应的代码。
 > 
-即使游戏没有运行，也能使部分代码直接生效。
-> **使用控制台执行脚本前，请务必要小心，提前做好项目备份工作。一旦代码生效后，有可能造成无法恢复的情况。
-
-要操作方块时，建议先使用空白地图对代码进行充分测试，效果满意后，再操作正式的地图。**
+>即使游戏没有运行，也能使部分代码直接生效。
+> 使用控制台执行脚本前，请务必要小心，提前做好项目备份工作。一旦代码生效后，有可能造成无法恢复的情况。
+>要操作方块时，建议先使用空白地图对代码进行充分测试，效果满意后，再操作正式的地图。
 
 
 ## 属性
 
-#### 只读voxels**.**shape : GameVector3     
+#### <font id="API" /><font id="ReadOnly">只读</font> shape <font id="Type">: GameVector3     </font>{#shape}
 > 默认值：当前地图尺寸
 
-**当前世界地形最大尺寸。**
+当前世界地形最大尺寸。
+
+> 定义于 [#L10385](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10385)
 
 ---
 
 
-#### 只读voxels**.**VoxelTypes  <font id="Type">: string</font>[] 
+#### <font id="API" /><font id="ReadOnly">只读</font> VoxelTypes  <font id="Type">: string[] </font>{#VoxelTypes}
 > 默认值：方块数组
 
-**返回包含所有方块名称的数组。**
+返回包含所有方块名称的数组。
 
-
-## **方法**
+> 定义于 [#L10390](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10390)
+## 方法
 
 ### 方块ID<互转>方块名称
 
-#### **voxels.**id(name<font id="Type">: string</font>)  <font id="Type">: number</font>
-**将方块id转换为方块名称**
+#### <font id="API" />id(<font id="Type">name: string</font>)  <font id="Type">: number</font>{#id}
+将方块id转换为方块名称
 
 **输入参数**
 
@@ -43,12 +49,12 @@
 | --- | --- |
 | number | 方块ID |
 
-
+> 定义于 [#L10396](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10396)
 ---
 
 
-#### **voxels.**name(id:number)  <font id="Type">: string</font>
-**将方块名称转换为方块id**
+#### <font id="API" />name(<font id="Type">id:number</font>)  <font id="Type">: string</font>{#name}
+将方块名称转换为方块id
 
 **输入参数**
 
@@ -62,14 +68,14 @@
 | --- | --- |
 | string | 方块名称 |
 
-
+> 定义于 [#L10402](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10402)
 ---
 
 
 ### 放置方块
 
-#### **voxels.**setVoxel(x:number,y:number,z:number,voxel:number | string,rotation?:number | string)  <font id="Type">: number</font>
-**在指定的坐标位置放置一个方块。**
+#### <font id="API" />setVoxel(<font id="Type">x:number,y:number,z:number,voxel:number | string,rotation?:number | string</font>)  <font id="Type">: number</font>{#setVoxel}
+在指定的坐标位置放置一个方块。
 
 **输入参数**
 
@@ -87,8 +93,11 @@
 | --- | --- |
 | number | 新的方块id |
 
-> 💡**提示**
-> 若方块名称为'**air**' 或者方块id为**0**，则会打破
+> 定义于 [#L10409](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10409)
+
+::: warning 
+若方块名称为'**air**' 或者方块id为**0**，则会打破
+:::
 
 ::: details 点击查看示例代码
 ```javascript
@@ -96,7 +105,7 @@
 for(let x=0; x<127; x++){
   for(let z=0; z<127; z++){
     for(let y=9; y<127; y++){
-      voxels.setVoxel(x, y, z, 'air')
+      setVoxel(x, y, z, 'air')
     }}}
 ```
 ---
@@ -104,7 +113,7 @@ for(let x=0; x<127; x++){
 // 利用循环批量设置方块
 for(let x=0; x<127; x++){
   for(let z=0; z<127; z++){
-    voxels.setVoxel(x, 8, z, 'snow')
+    setVoxel(x, 8, z, 'snow')
   }}
 ```
 ---
@@ -113,7 +122,7 @@ for(let x=0; x<127; x++){
 for(let x=0; x<127; x++){
   for(let z=0; z<127; z++){
     for(let y=9; y<127; y++){
-      voxels.setVoxel(x, y, z, 'air')
+      setVoxel(x, y, z, 'air')
     }}}
 ```
 ---
@@ -121,10 +130,10 @@ for(let x=0; x<127; x++){
 // 根据地面的方块铺设，将方块往上增长5格高度的墙。
 for(let x=0; x<127; x++){ 
   for(let z=0; z<127; z++){ 
-    let vox = voxels.getVoxelId(x,9,z);
+    let vox = getVoxelId(x,9,z);
     if (!vox) continue // 如果没有方块则跳过
     for(let y = 10; y < 10+5; y++){ // 从y=10的位置开始增长5格
-      voxels.setVoxel(x, y, z, vox);
+      setVoxel(x, y, z, vox);
     }
   }}
 ```
@@ -135,7 +144,7 @@ function voxelAlhpabet(str, x, y, z) {
   str = str.toUpperCase()  // 将字母转换为大写
   for(var i = 0; i < str.length; i++){
     var char = str[i]
-    voxels.setVoxel(x+i, y, z, char);
+    setVoxel(x+i, y, z, char);
   }
 }
 
@@ -191,9 +200,9 @@ function voxelText(str, x, y, z) {
     var char = str[i].toUpperCase()
     var name = char_table[char]
     if (name) {
-      voxels.setVoxel(x+i, y, z, name)
+      setVoxel(x+i, y, z, name)
     } else {
-      voxels.setVoxel(x+i, y, z, char)
+      setVoxel(x+i, y, z, char)
     }
   }
 }
@@ -212,10 +221,10 @@ voxelTextWall(['HELLO BOX3.0','2333'], 64, 13, 64)
 ```javascript
 // 棋盘方块
 const B = {
-  '+': voxels.id('board1'),
-  'T': voxels.id('board4'),
-  'L': voxels.id('board3'),
-  '.': voxels.id('board2'),
+  '+': id('board1'),
+  'T': id('board4'),
+  'L': id('board3'),
+  '.': id('board2'),
 }
 
 // 方块旋转码
@@ -253,7 +262,7 @@ function createBoard(originX, originY, originZ, size) {
         p = B['T'] | R['N'];
       }
       // 放置方块
-      voxels.setVoxelId(x + originX, originY, z + originZ, p);
+      setVoxelId(x + originX, originY, z + originZ, p);
     }
   }
 }
@@ -266,8 +275,8 @@ createBoard(32, 9, 32, 19)
 ---
 
 
-#### **voxels.**setVoxelId(x:number,y:number,z:number,voxel:number)  <font id="Type">: number</font>
-**使用方块ID，直接在指定的坐标位置放置方块。执行效率比 **[**voxels.setVoxel()**](https://box3.yuque.com/staff-khn556/wupvz3/gkz7g1wazf5izpfy#kuAQe)** 更快。**
+#### <font id="API" />setVoxelId(<font id="Type">x:number,y:number,z:number,voxel:number</font>)  <font id="Type">: number</font>{#setVoxelId}
+使用方块ID，直接在指定的坐标位置放置方块。
 
 **输入参数**
 
@@ -284,15 +293,14 @@ createBoard(32, 9, 32, 19)
 | --- | --- |
 | number | 新的方块id |
 
-
+> 定义于 [#L10424](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10424)
 ---
 
 
 ### 获取方块
 
-#### 🚫已弃用**voxels.**getVoxel(x:number,y:number,z:number)  <font id="Type">: number</font>
-**获取某个坐标位置的方块id**
-> 该属性已不推荐使用，建议使用 **world.getVoxelId() **
+#### <font id="API" />getVoxelId(<font id="Type">x:number,y:number,z:number</font>)  <font id="Type">: number</font>{#getVoxelId}
+直接获取指定位置的方块ID。
 
 **输入参数**
 
@@ -308,33 +316,12 @@ createBoard(32, 9, 32, 19)
 | --- | --- |
 | number | 返回指定位置的方块id |
 
-
+> 定义于 [#L10429](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10429)
 ---
 
 
-#### **voxels.**getVoxelId(x:number,y:number,z:number)  <font id="Type">: number</font>
-**直接获取指定位置的方块ID。执行效率比 **[**voxels.getVoxel()**](https://box3.yuque.com/staff-khn556/wupvz3/gkz7g1wazf5izpfy#JvOpR)** 更快。**
-
-**输入参数**
-
-| _**参数**_ | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| x | _是_ | | number | 获取位置的x坐标 |
-| y | _是_ | | number | 获取位置的y坐标 |
-| z | _是_ | | number | 获取位置的z坐标 |
-
-**返回值**
-
-| **类型** | **说明** |
-| --- | --- |
-| number | 返回指定位置的方块id |
-
-
----
-
-
-#### **voxels.**getVoxelRotation(x:number,y:number,z:number)  <font id="Type">: number</font>
-**获取某个坐标位置的方块旋转码**
+#### <font id="API" />getVoxelRotation(<font id="Type">x:number,y:number,z:number</font>)  <font id="Type">: number</font>{#getVoxelRotation}
+获取某个坐标位置的方块旋转码
 
 **输入参数**
 
@@ -350,5 +337,4 @@ createBoard(32, 9, 32, 19)
 | --- | --- |
 | number | 返回指定位置的方块旋转码(0,1,2,3) |
 
-
-### 
+> 定义于 [#L10471](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10471)
