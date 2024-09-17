@@ -173,3 +173,5 @@ console.log(fruits); // 输出：['Apple', 'Orange', 'Cherry', 'Grape']
 ## 总结
 
 了解如何在JavaScript中存储数据是编写有效代码的关键。通过使用变量和数据类型，你可以更好地控制和管理你的数据，写出各种各样的功能。
+
+<p style="opacity:0.5; text-align: right;">声明：使用AI辅助创作</p>
