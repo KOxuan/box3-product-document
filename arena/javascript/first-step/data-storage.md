@@ -49,9 +49,11 @@ var job = 'Developer';
 ### 我应该使用哪个关键字？
 - `let`：用于定义一个可以被重新赋值的变量。这个变量的值可以变化。
 - `const`：用于定义一个不会被重新赋值的变量，也就是常量。
-- `var`：是早期JavaScript的关键字，现在更推荐使用`let`和`const`。
+- `var`：是早期JavaScript的关键字，现在已经不建议使用。
 
-::: details 为什么不推荐使用 `var`？
+一般来说，如果这个值可以变化，用`let`，如果这个值不会被重新赋值，就用`const`。
+
+<!-- ::: details 为什么不推荐使用 `var`？
 不推荐使用var关键字的原因主要有以下几点：
 
 作用域问题：var关键字定义的变量具有函数作用域，这意味着如果在函数内部定义了一个var变量，它可以在函数外部被访问。这可能导致变量名的冲突和意外的行为。
@@ -71,7 +73,7 @@ const用于定义常量，即不能被重新赋值的变量。这有助于防止
 因此，为了编写更清晰、更安全、更容易维护的代码，现在更推荐使用let和const而不是var。
 
 参见 [MDN Docs: var](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/var)
-:::
+::: -->
 
 ### 当心 undefined
 如果你定义了一个变量但没有给它赋值，那么它的值将会是`undefined`。
@@ -85,7 +87,7 @@ console.log(something);
 // 实际上，这是因为undefined被代码岛的控制台抛弃了。
 ```
 
-请注意，如果你使用了`var`定义变量，在定义变量之前，这个变量是有值的，这个值是`undefined`。
+<!-- 请注意，如果你使用了`var`定义变量，在定义变量之前，这个变量是有值的，这个值是`undefined`。
 ```javascript
 console.log(a); // 这里输出 undefined
 var a = 114514;
@@ -96,7 +98,7 @@ console.log(a); // 这里输出 114514
 console.log(a); // 错误！
 let a = 114514;
 ```
-由此可见，使用let会比var更加安全，它可以保证你不会傻傻地试图从一个「空盒子」里取出东西。
+由此可见，使用let会比var更加安全，它可以保证你不会傻傻地试图从一个「空盒子」里取出东西。 -->
 
 ## 数据类型
 ### 为什么需要数据类型？
@@ -107,7 +109,7 @@ JavaScript是一种很灵活的语言，它不会强迫你在盒子（变量）�
 ### js 中的基本数据类型
 JavaScript有几种基本数据类型：
 - `Number`：用于表示数字。
-- `String`：用于表示文本。
+- `String`：用于表示字符串。
 - `Boolean`：用于表示真（`true`）或假（`false`）。
 - `Undefined`：用于表示未定义的值。
 - `Null`：用于表示空值。
@@ -122,7 +124,7 @@ let person = {
 };
 
 console.log(person.name); // Alice
-console.log(person.job); // Developer
+console.log(person.job);  // Developer
 ```
 在这个例子中，`person`就是一个对象。它有三个“抽屉”（属性）：`name`、`age`和`job`。每个“抽屉”里都放着对应的信息，比如`name`抽屉里放着名字`'Alice'`。这样，我们就可以很容易地找到和管理这些信息了。
 
