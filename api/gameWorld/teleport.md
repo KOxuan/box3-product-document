@@ -17,7 +17,7 @@ import '/style.css'
 
 ### **方法**
 
-#### <font id="API" />teleport(<font id="Type">mapId: string,players:[GameEntity](https://www.yuque.com/box3lab/api/inriuuvzg5yb54kv)[]</font>) <font id="Type">: Promise‹void›</font>
+#### <font id="API" />teleport(<font id="Type">mapId: string,players:[GameEntity](https://www.yuque.com/box3lab/api/inriuuvzg5yb54kv)[]</font>) <font id="Type">: Promise‹void›</font>{#teleport}
 地图组内传送能力，能够让玩家被传送到指定地图中。且单独开一个地图服务容器（房间），非传送玩家不可见。
 
 **此能力受权限影响，无权限账户调用后会导致报错。**

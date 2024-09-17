@@ -3,7 +3,7 @@
 
 ## 方法
 
-#### <font id="API" />createTempChat(<font id="Type">chatId:string[]</font>)<font id="Type">: Promise‹string›</font>
+#### <font id="API" />createTempChat(<font id="Type">chatId:string[]</font>)<font id="Type">: Promise‹string›</font>{#createTempChat}
 创建临时聊天频道
 
 **输入参数**
@@ -31,7 +31,7 @@ world.createTempChat().then(chatId => {
 ---
 
 
-#### <font id="API" />destroyTempChat(<font id="Type">chatId:string[]</font>)<font id="Type">: Promise‹string[]›</font>
+#### <font id="API" />destroyTempChat(<font id="Type">chatId:string[]</font>)<font id="Type">: Promise‹string[]›</font>{#destroyTempChat}
 批量销毁临时聊天频道
 
 **输入参数**
@@ -62,7 +62,7 @@ world.destroyTempChat(['chatId1','chatId2']).then(failedChatIds => {
 ---
 
 
-#### <font id="API" />addTempChatPlayer(<font id="Type">chatId:string,player:string[]</font>)<font id="Type">: Promise‹string[]›</font>
+#### <font id="API" />addTempChatPlayer(<font id="Type">chatId:string,player:string[]</font>)<font id="Type">: Promise‹string[]›</font>{#addTempChatPlayer}
 向临时聊天频道添加玩家
 
 **输入参数**
@@ -92,7 +92,7 @@ world.createTempChat().then(chatId => {
 ---
 
 
-#### <font id="API" />removeTempChatPlayer(<font id="Type">chatId:string,player:string[]</font>)<font id="Type">: Promise‹string[]›</font>
+#### <font id="API" />removeTempChatPlayer(<font id="Type">chatId:string,player:string[]</font>)<font id="Type">: Promise‹string[]›</font>{#removeTempChatPlayer}
 向临时聊天频道移除玩家
 
 **输入参数**
@@ -122,7 +122,7 @@ world.createTempChat(['userId1','userId2']).then(chatId => {
 ---
 
 
-#### <font id="API" />getTempChats()<font id="Type">: Promise‹string[]›</font>
+#### <font id="API" />getTempChats()<font id="Type">: Promise‹string[]›</font>{#getTempChats}
 获取当前地图存在的临时聊天频道
 
 **返回值**
@@ -143,7 +143,7 @@ world.getTempChats().then(chatIds => {
 ---
 
 
-#### <font id="API" />getTempChatUsers(<font id="Type">chatId:string</font>)<font id="Type">: Promise‹string[]›</font>
+#### <font id="API" />getTempChatUsers(<font id="Type">chatId:string</font>)<font id="Type">: Promise‹string[]›</font>{#getTempChatUsers}
 获取临时聊天频道中的玩家
 
 **输入参数**

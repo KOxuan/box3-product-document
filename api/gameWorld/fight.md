@@ -16,7 +16,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" /><font id="Event">事件</font> onTakeDamage(<font id="Type">handler:(event:[GameDamageEvent](./fight#gamedamageevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+#### <font id="API" /><font id="Event">事件</font> onTakeDamage(<font id="Type">handler:(event:[GameDamageEvent](./fight#GameDamageEvent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onTakeDamage}
 当实体受到伤害时触发
 
 **输入参数**
@@ -40,7 +40,7 @@ world.onTakeDamage(({ entity, attacker, damage}) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font> onDie(<font id="Type">handler:(event:[GameDieEvent](./fight#gamedieevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+#### <font id="API" /><font id="Event">事件</font> onDie(<font id="Type">handler:(event:[GameDieEvent](./fight#GameDieEvent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onDie}
 当实体死亡时触发
 
 **输入参数**
@@ -73,7 +73,7 @@ world.onDie(async({ entity }) => { // 等待事件需要用 async
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font> onRespawn(<font id="Type">handler:(event:[GameRespawnEvent](./fight#gamerespawnevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+#### <font id="API" /><font id="Event">事件</font> onRespawn(<font id="Type">handler:(event:[GameRespawnEvent](./fight#GameRespawnEvent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onRespawn}
 当实体复活时触发
 
 **输入参数**
@@ -104,7 +104,7 @@ world.onRespawn(({ entity }) => {
 
 ## 接口
 
-#### <font id="API" />GameDamageEvent
+#### <font id="API" />GameDamageEvent{#GameDamageEvent}
 当实体收到伤害时触发的事件
 
 | **参数** | **类型** | **说明** |
@@ -120,7 +120,7 @@ world.onRespawn(({ entity }) => {
 ---
 
 
-#### <font id="API" />GameDieEvent
+#### <font id="API" />GameDieEvent{#GameDieEvent}
 当实体死亡时触发的事件
 
 | **参数** | **类型** | **说明** |
@@ -134,7 +134,7 @@ world.onRespawn(({ entity }) => {
 ---
 
 
-#### <font id="API" />GameRespawnEvent
+#### <font id="API" />GameRespawnEvent{#GameRespawnEvent}
 当实体复活时触发的事件
 
 | **参数** | **类型** | **说明** |
