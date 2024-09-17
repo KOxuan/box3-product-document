@@ -144,16 +144,16 @@ world.onPlayerJoin(({entity}) => {
 ::: tip 你可能需要知道……
 请注意，`entity.player.dialog`的行为非常特殊。它并不会等待玩家关闭输入框才继续执行后续代码。因此，我们需要一些特殊的东西来等待玩家输入。
 
-在这里，我们使用`async/await`。这部分内容对于初学者理解起来可能比较困难，因此简单掠过。在后续的中、高级教程中，我们会详细介绍它们。现在，你只需要知道，用`await`可以等待输入框关闭，同时这个函数应该加上`async`修饰符。
+在这里，我们使用`async/await`。这部分内容对于初学者理解起来可能比较困难，因此简单掠过。在后续的中、高级教程中，我们会详细介绍它们。现在，你只需要知道，用`await`可以等待输入框关闭，同时包含`await`关键字的函数应该加上`async`修饰符。`await`只能在函数内部使用。
 ```javascript
-world.onPlayerJoin(async({entity}) => { 
+world.onPlayerJoin(async({entity}) => {// [!code focus]
   const number = Math.floor(Math.random()*100);
   let retTime = 10;
   await entity.player.dialog({       // [!code focus]
-    type: GameDialogType.TEXT,       // [!code focus]
-    title: "猜数字",                  // [!code focus]
-    content: "我在等你关闭输入框"       // [!code focus]
-  });                                // [!code focus]
+    type: GameDialogType.TEXT,       
+    title: "猜数字",                  
+    content: "我在等你关闭输入框"       
+  });                                
   console.log("玩家关闭了弹窗");       // [!code focus]
 })
 ```
@@ -199,6 +199,8 @@ world.onPlayerJoin(async({entity}) => {
 我们需要判断玩家输入的数字是否正确。相信你注意到了，我们在上面的代码里已经用一个叫`input`的变量保存了玩家的输入结果。
 
 但是，这里的`input`是一个**字符串**。因此，我们需要将其转换成一个数字，才能和答案进行比较。
+
+幸运的是，js内置的`parseInt`函数能帮我们进行转换。
 ```javascript
 world.onPlayerJoin(async({entity}) => { 
   const number = Math.floor(Math.random()*100);
@@ -314,6 +316,9 @@ let name = 'Alice';
 let host = 'surfish';
 console.log(`hello, ${name}!
 I am ${host}`);
+// 输出：
+// hello, Alice!
+// I am surfish
 ```
 :::
 
@@ -341,6 +346,7 @@ I am ${host}`);
     }else{
       alert('恭喜，猜对了');
       init();
+      return;
     }
     retTime.value -= 1;
     if(retTime.value <= 0){
