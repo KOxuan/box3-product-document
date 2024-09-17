@@ -4,7 +4,7 @@ import '/style.css'
 # 地图区域
 ## 方法
 
-#### <font id="API" />addZone(<font id="Type">config:Partial‹[GameZoneConfig](./mapZone#gamezoneconfig)›</font>) <font id="Type">: [GameZone](https://box3.yuque.com/org-wiki-box3-ev7rl4/wupvz3/puh5iyu2e8s1lar8)</font>  
+#### <font id="API" />addZone(<font id="Type">config:Partial‹[GameZoneConfig](./mapZone#GameZoneConfig)›</font>) <font id="Type">: [GameZone](https://box3.yuque.com/org-wiki-box3-ev7rl4/wupvz3/puh5iyu2e8s1lar8)</font>  {#addZone}
 创建一个区域，用于检测实体进入或离开某个区域。 也可以用来设置环境参数，如雾、雨、天、雪、风、重力等定义区域内的环境参数。
 
 **输入参数**
@@ -49,7 +49,7 @@ area.onLeave(({ entity }) => {
 ---
 
 
-#### <font id="API" />removeZone(<font id="Type">trigger:[GameZone](https://box3.yuque.com/org-wiki-box3-ev7rl4/wupvz3/puh5iyu2e8s1lar8)</font>) <font id="Type">:  void</font>  
+#### <font id="API" />removeZone(<font id="Type">trigger:[GameZone](https://box3.yuque.com/org-wiki-box3-ev7rl4/wupvz3/puh5iyu2e8s1lar8)</font>) <font id="Type">:  void</font>  {#removeZone}
 删除指定区域
 
 **输入参数**
@@ -80,7 +80,7 @@ world.removeZone(area);
 ---
 
 
-#### <font id="API" />zones() <font id="Type">: [GameZone](https://box3.yuque.com/org-wiki-box3-ev7rl4/wupvz3/puh5iyu2e8s1lar8)[]</font> 
+#### <font id="API" />zones() <font id="Type">: [GameZone](https://box3.yuque.com/org-wiki-box3-ev7rl4/wupvz3/puh5iyu2e8s1lar8)[]</font>{#zones} 
 返回所有的区域列表
 
 **返回值**
@@ -105,7 +105,7 @@ allZones.forEach((zone) => {
 
 ## 接口
 
-#### <font id="API" />GameZoneConfig
+#### <font id="API" />GameZoneConfig{#GameZoneConfig}
 用于区域的参数
 
 | **参数** | **类型** | **说明** |

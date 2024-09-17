@@ -4,7 +4,7 @@ import '/style.css'
 # 实体的创建/销毁
 ## 方法
 
-#### <font id="API" />createEntity(<font id="Type">config:Partial<[GameEntityConfig](./entityCD#gameentityconfig)></font>) <font id="Type">: GameEntity | null</font>
+#### <font id="API" />createEntity(<font id="Type">config:Partial<[GameEntityConfig](./entityCD#GameEntityConfig)></font>) <font id="Type">: GameEntity | null</font>{#createEntity}
 创建一个新实体 GameEntity 或复制一个现有的实体，若实体数量(entityQuota)达到上限，则返回 null
 
 **输入参数**
@@ -46,7 +46,7 @@ for(let i=0;i<50;i++){
 ---
 
 
-#### <font id="API" />entityQuota()  <font id="Type">: number</font>
+#### <font id="API" />entityQuota()  <font id="Type">: number</font>{#entityQuota}
 返回脚本当前仍可创建的实体数量
 
 **返回值**
@@ -66,7 +66,7 @@ console.log(`还可以创建 ${world.entityQuota()} 个实体`)
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font> onEntityCreate(<font id="Type">handler:(event:[GameEntityEvent](./entityCD#gameentityevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>
+#### <font id="API" /><font id="Event">事件</font> onEntityCreate(<font id="Type">handler:(event:[GameEntityEvent](./entityCD#GameEntityEvent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onEntityCreate}
 当实体被创建时触发
 
 **输入参数**
@@ -89,7 +89,7 @@ world.onEntityCreate(({ entity }) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font> onEntityDestroy(<font id="Type">handler:(event:[GameEntityEvent](./entityCD#gameentityevent))=>void</font>) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)
+#### <font id="API" /><font id="Event">事件</font> onEntityDestroy(<font id="Type">handler:(event:[GameEntityEvent](./entityCD#GameEntityEvent))=>void</font>) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0){#onEntityDestroy}
 当实体被销毁时触发
 
 **输入参数**
@@ -112,7 +112,7 @@ world.onEntityDestroy(({ entity }) => {
 
 ## 接口
 
-#### <font id="API" />GameEntityEvent
+#### <font id="API" />GameEntityEvent{#GameEntityEvent}
 实体创建与销毁事件
 
 | **参数** | **类型** | **说明** |
@@ -125,7 +125,7 @@ world.onEntityDestroy(({ entity }) => {
 ---
 
 
-#### <font id="API" />GameEntityConfig
+#### <font id="API" />GameEntityConfig{#GameEntityConfig}
 用于控制实体的参数组
 
 | **参数** | **类型** | **说明** |
