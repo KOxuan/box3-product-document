@@ -43,9 +43,15 @@ export default defineConfig({
         },
         {
           text: '代码编写第一步', link: '/javascript/first-step/first-step',
-          collapsed: false,
+          collapsed: true,
           items: [
-            { text: 'Hello World!', link: '/javascript/first-step/hello-world' },
+            { text: '世界，你好!', link: '/javascript/first-step/hello-world' },
+            { text: '存储我们的信息', link: '/javascript/first-step/data-storage' },
+            { text: '数字和操作符', link: '/javascript/first-step/operators' },
+            { text: '做决定：流程控制（一）', link: '/javascript/first-step/if' },
+            { text: '循环：流程控制（二）', link: '/javascript/first-step/loop' },
+            { text: '函数和方法', link: '/javascript/first-step/function' },
+            { text: '猜数字游戏', link: '/javascript/first-step/guess-number' }
           ]
         }
       ]
