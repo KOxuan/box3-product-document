@@ -17,4 +17,11 @@
 
 此外，为维持代码兼容性，ui对象均默认指向此默认屏幕。
 
-关于代码相关请看：[UI屏幕](https://www.yuque.com/box3lab/api/gf1w9fbrx0zghewc)
+
+
+## UiScreen 属性
+此元素继承至 [UiNode](/features/ui/element/UiNode)。
+| 属性        |      解释      | 
+| ------------- | ----------- | 
+| visible      | 屏幕是否可见。 | 
+| zIndex      |   屏幕层级，层级越高的屏幕会显示在顶部，遮盖住层级较低的屏幕。  |   
