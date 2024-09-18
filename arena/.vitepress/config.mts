@@ -26,7 +26,9 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '创建第一个地图', link: '/getting-started/create' },
-            { text: 'Hello World 项目', link: '/getting-started/helloWorld' },
+            { text: '地形搭建', link: '/getting-started/helloWorld-models' },
+            { text: '代码编写', link: '/getting-started/helloWorld-code' },
+            { text: '邀请协助', link: '/getting-started/helloWorld-assist' },
             { text: '发布第一个地图', link: '/getting-started/publish' },
           ]
         },
@@ -39,19 +41,6 @@ export default defineConfig({
             { text: '层级管理器', link: '/editor/hierarchy' },
             { text: '资源管理器', link: '/editor/assets' },
             { text: '代码编辑器', link: '/editor/code' },
-          ]
-        },
-        {
-          text: '代码编写第一步', link: '/javascript/first-step/first-step',
-          collapsed: true,
-          items: [
-            { text: '世界，你好!', link: '/javascript/first-step/hello-world' },
-            { text: '存储我们的信息', link: '/javascript/first-step/data-storage' },
-            { text: '数字和操作符', link: '/javascript/first-step/operators' },
-            { text: '做决定：流程控制（一）', link: '/javascript/first-step/if' },
-            { text: '循环：流程控制（二）', link: '/javascript/first-step/loop' },
-            { text: '函数和方法', link: '/javascript/first-step/function' },
-            { text: '猜数字游戏', link: '/javascript/first-step/guess-number' }
           ]
         }
       ]
@@ -87,9 +76,41 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '屏幕', link: '/features/ui/screen' },
-            { text: '元素', link: '/features/ui/element' },
             { text: '资源树', link: '/features/ui/tree' },
+            {
+              text: '元素',
+              link: '/features/ui/element',
+              collapsed: true,
+              items: [
+                { text: 'UiNode 参考', link: '/features/ui/element/UiNode' },
+                { text: 'UiRenderable 参考', link: '/features/ui/element/UiRenderable' },
+                { text: 'UiBox 参考', link: '/features/ui/element/UiBox' },
+                { text: 'UiText 参考', link: '/features/ui/element/UiText' },
+                { text: 'UiInput 参考', link: '/features/ui/element/UiInput' },
+                { text: 'UiImage 参考', link: '/features/ui/element/UiImage' },
+                { text: 'UiScrollBox 参考', link: '/features/ui/element/UiScrollBox' },
+                { text: 'UiScreen 参考', link: '/features/ui/screen' },
+              ]
+            },
+
           ]
+        }
+      ]
+    }, {
+      text: 'JavaScript语言基础',
+      collapsed: true,
+      items: [
+        { text: '认识JS语言', link: '/javascript/first-step/hi' },
+        {
+          text: '第一章：初识',
+          collapsed: true,
+          items: [
+            { text: '你好，世界！', link: '/javascript/first-step/helloWorld' },
+            { text: '变量与数据类型（一）', link: '/javascript/first-step/variablesAndTypes1' },
+            { text: '操作符与表达式（一）', link: '/javascript/first-step/operator1' },
+            { text: '条件判断与数据类型（二）', link: '/javascript/first-step/ifAndTypes2' },
+            { text: '实践：抽奖游戏', link: '/javascript/first-step/lottery' },
+          ] 
         }
       ]
     }
