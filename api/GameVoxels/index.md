@@ -1,12 +1,12 @@
 # 🧱游戏方块
 
-- **GameVoxels** 是控制Box3所有方块的接口，你可以控制地形变化，利用循环语法批量生成/销毁方块，获取某个方块的类型、名称、旋转角度等。
+- **GameVoxels** 是控制游戏方块的接口，你可以控制地形变化，利用循环语法批量生成/销毁方块，获取某个方块的类型、名称、旋转角度等。
 - 可以通过全局对象 `voxels` 来使用它。
 
 ## 类
 
 ```typescript
-declare const voxels:GameVoxels;
+declare const voxels: GameVoxels;
 declare class GameVoxels {
     //...
 }
