@@ -6,21 +6,15 @@
 
 你可以使用`let`关键字告诉程序，我要设置一个变量啦！然后给它分配一个值。
 
-#### 注意事项
-
-- 变量名区分大小写。
-- 变量名不能包含空格、特殊字符（除了下划线和美元符号）。
-- 变量名不能是JavaScript的保留字（如`var`, `let`, `const`, `function`等）。
-
 
 ```javascript
-// 设置name（名字）为吉吉喵
+// 定义name（名字）为吉吉喵
 let name = "吉吉喵";
 
-// 设置age（年龄）为10
+// 定义age（年龄）为10
 let age = 10;
 
-// 设置grade（年级）为4
+// 定义grade（年级）为4
 let grade = 4;
 
 // 在控制台打印自我介绍信息
@@ -31,6 +25,35 @@ console.log("我叫" + name + "，我今年" + age + "岁啦！在读" + grade +
 ![](/QQ20240918-155714.png)
 
 瞧，是不是很神奇？它打印出了吉吉喵的自我介绍。
+
+#### 注意事项
+
+- 变量名区分大小写。
+```javascript
+let name = "吉吉喵";
+
+console.log(name); // 会在控制台输出 吉吉喵
+console.log(Name); // 会在控制台输出 Name is not defined （Name变量名没有被定义）
+```
+- 变量名不能包含空格、特殊字符（除了下划线和美元符号）。
+```javascript
+let name = "吉吉喵";  //√
+let Name = "美术喵";  //√
+let nameAndAge = "搬砖喵 6岁";  //√
+let _name = "美术喵";  //√
+let $name = "吉吉喵";  //√
+let ……*name￥……e = "搬砖喵";  //❌
+let nam e = "美术喵";  //❌
+```
+- 变量名不能是JavaScript的关键字（如`var`, `let`, `const`, `function`等）。
+
+关于`var`, `const`, `function`的意思，后面的章节会讲。
+```javascript
+let let = "吉吉喵";  //❌
+let var = "吉吉喵";  //❌
+let function = "吉吉喵";  //❌
+let for = "吉吉喵";  //❌
+```
 
 注意哦，吉吉喵两边的`""`别删除哦！不然，程序会报错，无法正常运行。
 
