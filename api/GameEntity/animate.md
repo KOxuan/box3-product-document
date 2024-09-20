@@ -1,8 +1,17 @@
 <script setup>
 import '/style.css'
 </script>
-# 动画
-### 方法
+# 动画&模型动作
+## 属性
+
+#### <font id="API" />motion<font id="Type">: [GameMotionController](/GameMotionController/index)</font>{#motion} 
+
+索引与模型动作相关的全部状态和方法
+
+> 定义于 [#L10703](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10703)
+
+
+## 方法
 
 #### <font id="API" />animate(<font id="Type">keyframes:Partial<[GameEntityKeyframe](./animate#GameEntityKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](/GameWorld/animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)</font>{#animate}
 创建一个关键帧动画
