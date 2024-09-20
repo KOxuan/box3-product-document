@@ -16,7 +16,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" /><font id="Event">事件</font> onTakeDamage(<font id="Type">handler:(event:[GameDamageEvent](./fight#GameDamageEvent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onTakeDamage}
+#### <font id="API" /><font id="Event">事件</font>onTakeDamage(<font id="Type">handler:(event:[GameDamageEvent](./fight#GameDamageEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onTakeDamage}
 当实体受到伤害时触发
 
 **输入参数**
@@ -40,7 +40,7 @@ world.onTakeDamage(({ entity, attacker, damage}) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font> onDie(<font id="Type">handler:(event:[GameDieEvent](./fight#GameDieEvent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onDie}
+#### <font id="API" /><font id="Event">事件</font>onDie(<font id="Type">handler:(event:[GameDieEvent](./fight#GameDieEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onDie}
 当实体死亡时触发
 
 **输入参数**
@@ -73,7 +73,7 @@ world.onDie(async({ entity }) => { // 等待事件需要用 async
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font> onRespawn(<font id="Type">handler:(event:[GameRespawnEvent](./fight#GameRespawnEvent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onRespawn}
+#### <font id="API" /><font id="Event">事件</font>onRespawn(<font id="Type">handler:(event:[GameRespawnEvent](./fight#GameRespawnEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onRespawn}
 当实体复活时触发
 
 **输入参数**
@@ -109,8 +109,8 @@ world.onRespawn(({ entity }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | 受到伤害的实体 |
-| attacker | [GameEntity ](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)&#124; null | 攻击者 |
+| entity | [GameEntity](/GameEntity/index) | 受到伤害的实体 |
+| attacker | [GameEntity](/GameEntity/index) &#124; null | 攻击者 |
 | damage | number | 伤害值 |
 | damageType | string | 伤害类型 |
 | tick | number | 事件发生时间 |
@@ -125,8 +125,8 @@ world.onRespawn(({ entity }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | 死亡的实体 |
-| attacker | [GameEntity ](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)&#124; null | 击杀者 |
+| entity | [GameEntity](/GameEntity/index) | 死亡的实体 |
+| attacker | [GameEntity](/GameEntity/index) &#124; null | 击杀者 |
 | damageType | string | 伤害类型 |
 | tick | number | 事件发生时间 |
 
@@ -139,7 +139,7 @@ world.onRespawn(({ entity }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | 死亡的实体 |
+| entity | [GameEntity](/GameEntity/index) | 死亡的实体 |
 | tick | number | 事件发生时间 |
 
 > 定义于 [#L12646](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12646)

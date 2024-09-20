@@ -1,21 +1,24 @@
+<script setup>
+import '/style.css'
+</script>
+# 动画
+### 方法
 
-### **方法**
-
-#### `**entity.**animate(keyframes:Partial<[GameEntityKeyframe](#jneYE)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](https://www.yuque.com/box3lab/api/uclt6lp7syrd5v00#ipI8a)>) : [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)`
-**创建一个关键帧动画**
+#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GameEntityKeyframe](./animate#GameEntityKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](/GameWorld/animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)</font>{#animate}
+创建一个关键帧动画
 
 **输入参数**
 
 | _**参数**_ | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
-| keyframes | _是_ | | `Partial<[GameEntityKeyframe](#jneYE)[]>` | 关键帧的数据 |
-| playbackInfo | | | `Partial<[GameAnimationPlaybackConfig](https://www.yuque.com/box3lab/api/uclt6lp7syrd5v00#ipI8a)>` | 动画播放参数 |
+| keyframes | 是 | | Partial‹GameEntityKeyframe[]› | 关键帧的数据 |
+| playbackInfo | | | Partial‹GameAnimationPlaybackConfig› | 动画播放参数 |
 
 **返回值**
 
 | **类型** | **说明** |
 | --- | --- |
-| [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek) | 创建出来的动画对象 |
+| GameAnimation | 创建出来的动画对象 |
 
 ::: details 点击查看示例代码
 ```javascript
@@ -46,14 +49,14 @@ ani.onFinish(() => {//当动画结束播放时
 
 ## 接口
 
-#### **GameEntityKeyframe **
-**Entity实体动画关键帧参数，可对Entity除音效外的大部分属性做动画效果，例如位移、大小、模型、颜色等等**
+#### <font id="API" />GameEntityKeyframe{#GameEntityKeyframe}
+Entity实体动画关键帧参数，可对Entity除音效外的大部分属性做动画效果，例如位移、大小、模型、颜色等等
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
 | duration | number | 播放时长 |
-| easeIn | [GameEasing](https://www.yuque.com/box3lab/api/uclt6lp7syrd5v00#Id5nB) | 缓入效果 |
-| easeOut | [GameEasing](https://www.yuque.com/box3lab/api/uclt6lp7syrd5v00#Id5nB) | 缓出效果 |
+| easeIn | [GameEasing](/GameWorld/animate#GameEasing) | 缓入效果 |
+| easeOut | [GameEasing](/GameWorld/animate#GameEasing) | 缓出效果 |
 | velocity | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 实体朝向某个方向运动的作用力 |
 | collides | boolean | 实体是否可碰撞 |
 | mesh | string | mesh决定了实体的外形。'mesh/*.vb' |

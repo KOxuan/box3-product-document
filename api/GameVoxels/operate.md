@@ -14,7 +14,7 @@ import '/style.css'
 
 ## 属性
 
-#### <font id="API" /><font id="ReadOnly">只读</font> shape <font id="Type">: GameVector3     </font>{#shape}
+#### <font id="API" /><font id="ReadOnly">只读</font>shape<font id="Type">: GameVector3     </font>{#shape}
 > 默认值：当前地图尺寸
 
 当前世界地形最大尺寸。
@@ -24,7 +24,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="ReadOnly">只读</font> VoxelTypes  <font id="Type">: string[] </font>{#VoxelTypes}
+#### <font id="API" /><font id="ReadOnly">只读</font>VoxelTypes<font id="Type">: string[] </font>{#VoxelTypes}
 > 默认值：方块数组
 
 返回包含所有方块名称的数组。
@@ -34,7 +34,7 @@ import '/style.css'
 
 ### 方块ID<互转>方块名称
 
-#### <font id="API" />id(<font id="Type">name: string</font>)  <font id="Type">: number</font>{#id}
+#### <font id="API" />id(<font id="Type">name: string</font>)<font id="Type">: number</font>{#id}
 将方块id转换为方块名称
 
 **输入参数**
@@ -53,7 +53,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" />name(<font id="Type">id:number</font>)  <font id="Type">: string</font>{#name}
+#### <font id="API" />name(<font id="Type">id:number</font>)<font id="Type">: string</font>{#name}
 将方块名称转换为方块id
 
 **输入参数**
@@ -74,7 +74,7 @@ import '/style.css'
 
 ### 放置方块
 
-#### <font id="API" />setVoxel(<font id="Type">x:number,y:number,z:number,voxel:number | string,rotation?:number | string</font>)  <font id="Type">: number</font>{#setVoxel}
+#### <font id="API" />setVoxel(<font id="Type">x:number,y:number,z:number,voxel:number | string,rotation?:number | string</font>)<font id="Type">: number</font>{#setVoxel}
 在指定的坐标位置放置一个方块。
 
 **输入参数**
@@ -275,7 +275,7 @@ createBoard(32, 9, 32, 19)
 ---
 
 
-#### <font id="API" />setVoxelId(<font id="Type">x:number,y:number,z:number,voxel:number</font>)  <font id="Type">: number</font>{#setVoxelId}
+#### <font id="API" />setVoxelId(<font id="Type">x:number,y:number,z:number,voxel:number</font>)<font id="Type">: number</font>{#setVoxelId}
 使用方块ID，直接在指定的坐标位置放置方块。
 
 **输入参数**
@@ -299,7 +299,7 @@ createBoard(32, 9, 32, 19)
 
 ### 获取方块
 
-#### <font id="API" />getVoxelId(<font id="Type">x:number,y:number,z:number</font>)  <font id="Type">: number</font>{#getVoxelId}
+#### <font id="API" />getVoxelId(<font id="Type">x:number,y:number,z:number</font>)<font id="Type">: number</font>{#getVoxelId}
 直接获取指定位置的方块ID。
 
 **输入参数**
@@ -320,7 +320,7 @@ createBoard(32, 9, 32, 19)
 ---
 
 
-#### <font id="API" />getVoxelRotation(<font id="Type">x:number,y:number,z:number</font>)  <font id="Type">: number</font>{#getVoxelRotation}
+#### <font id="API" />getVoxelRotation(<font id="Type">x:number,y:number,z:number</font>)<font id="Type">: number</font>{#getVoxelRotation}
 获取某个坐标位置的方块旋转码
 
 **输入参数**

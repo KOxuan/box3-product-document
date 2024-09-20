@@ -37,9 +37,9 @@ let randomNum = Math.floor(Math.random() * 101); // 生成 1 到 100 的随机�
 ##  代码流程图
 ![](/QQ20240918-200535.png)
 
-
 ##  游戏参考代码
 
+::: details 点击查看参考答案
 ```javascript
 let randomNum = Math.floor(Math.random() * 101); 
 let guessNum = 10; // 中奖数值
@@ -60,7 +60,12 @@ if (guessNum >= randomNum) {
     }
 }
 ```
+---
 ![](/QQ20240918-201428.png)
+
+::: 
+
+
 
 
 
