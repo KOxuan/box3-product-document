@@ -1,0 +1,20 @@
+<script setup>
+import '/style.css'
+</script>
+# 是否为玩家
+## 属性
+
+#### <font id="API" /><font id="ReadOnly">只读</font>isPlayer<font id="Type">: boolean</font>{#isPlayer} 
+
+如果为真，则实体为玩家。
+
+> 定义于 [#L10837](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10837)
+
+---
+
+
+#### <font id="API" />player<font id="Type">: [GamePlayer](https://www.yuque.com/box3lab/api/inriuuvzg5yb54kv) | undefined</font>{#player} 
+
+如果是玩家，可以访问此属性。索引与玩家相关的全部状态和方法
+
+> 定义于 [#L10842](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10842)

@@ -1,4 +1,5 @@
 font[id='ReadOnly'] {
+  margin-right: 5px;
   background: #F8CED3;
   color: #70000D;
   white-space: nowrap;
@@ -8,7 +9,7 @@ font[id='ReadOnly'] {
   font-size: 12px;
   line-height: 1.1;
   padding: 0 .2em;
-  margin: 0 .2em;
+  margin: 0 .5em 0 0;
   border: 2px solid transparent;
 }
 
@@ -22,7 +23,7 @@ font[id='Default'] {
   font-size: 12px;
   line-height: 1.1;
   padding: 0 .2em;
-  margin: 0 .2em;
+  margin: 0 .5em 0 0;
   border: 2px solid transparent;
 }
 
@@ -36,7 +37,7 @@ font[id='Event'] {
   font-size: 12px;
   line-height: 1.1;
   padding: 0 .2em;
-  margin: 0 .2em;
+  margin: 0 .5em 0 0;
   border: 2px solid transparent;
 }
 
