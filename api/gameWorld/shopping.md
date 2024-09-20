@@ -12,7 +12,7 @@ import '/style.css'
 
 ### **方法**
 
-#### <font id="API" /><font id="Event">事件</font> onPlayerPurchaseSuccess(<font id="Type">handler:(event:[GamePurchaseSuccessEvent](./shopping#gamepurchasesuccessevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font> {#onPlayerPurchaseSuccess}
+#### <font id="API" /><font id="Event">事件</font>onPlayerPurchaseSuccess(<font id="Type">handler:(event:[GamePurchaseSuccessEvent](./shopping#GamePurchaseSuccessEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font> {#onPlayerPurchaseSuccess}
 当玩家成功购买物品时触发
 
 **输入参数**

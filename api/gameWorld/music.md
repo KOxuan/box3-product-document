@@ -4,7 +4,7 @@ import '/style.css'
 # 音乐音效
 ## 属性
 
-#### <font id="API" />ambientSound <font id="Type">: [GameSoundEffect](./music#gamesoundeffect)</font>{#ambientSound}
+#### <font id="API" />ambientSound<font id="Type">: [GameSoundEffect](./music#gamesoundeffect)</font>{#ambientSound}
 > 默认值：无
 
 改变地图背景音乐，从地图运行开始循环播放。
@@ -24,7 +24,7 @@ world.ambientSound.sample = 'audio/rain.mp3';
 ---
 
 
-#### <font id="API" />playerJoinSound <font id="Type">: [GameSoundEffect](./music#gamesoundeffect)</font>{#playerJoinSound}
+#### <font id="API" />playerJoinSound<font id="Type">: [GameSoundEffect](./music#gamesoundeffect)</font>{#playerJoinSound}
 > 默认值：无
 
 当玩家进入地图时，播放的音效。通过world.onPlayerJoin()触发。
@@ -36,7 +36,7 @@ world.ambientSound.sample = 'audio/rain.mp3';
 ---
 
 
-#### <font id="API" />playerLeaveSound <font id="Type">: [GameSoundEffect](./music#gamesoundeffect)</font>{#playerLeaveSound}
+#### <font id="API" />playerLeaveSound<font id="Type">: [GameSoundEffect](./music#gamesoundeffect)</font>{#playerLeaveSound}
 > 默认值：无
 
 当玩家离开地图时，播放的音效。通过world.onPlayerLeave()触发。
@@ -47,7 +47,7 @@ world.ambientSound.sample = 'audio/rain.mp3';
 ---
 
 
-#### <font id="API" />placeVoxelSound <font id="Type">: [GameSoundEffect](./music#gamesoundeffect)</font>{#placeVoxelSound}
+#### <font id="API" />placeVoxelSound<font id="Type">: [GameSoundEffect](./music#gamesoundeffect)</font>{#placeVoxelSound}
 > 默认值："audio/place_block.mp3"
 
 方块被放置时，播放的音效。通过voxels.setVoxel()触发。
@@ -58,7 +58,7 @@ world.ambientSound.sample = 'audio/rain.mp3';
 ---
 
 
-#### <font id="API" />breakVoxelSound <font id="Type">: [GameSoundEffect](./music#gamesoundeffect)</font>{#breakVoxelSound}
+#### <font id="API" />breakVoxelSound<font id="Type">: [GameSoundEffect](./music#gamesoundeffect)</font>{#breakVoxelSound}
 > 默认值："audio/break_block.mp3"
 
 方块被销毁时，播放的音效。通过voxels.setVoxel()触发。
@@ -115,7 +115,7 @@ world.sound({
 
 ## 接口
 
-#### <font id="API" />GameSoundEffect  {#GameSoundEffect}
+#### <font id="API" />GameSoundEffect{#GameSoundEffect}
 使用 Sound()方法播放声音时，传入的参数。
 
 | **参数** | **类型** | **说明** |

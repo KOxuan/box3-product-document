@@ -4,7 +4,7 @@ import '/style.css'
 # 动画
 ### 方法
 
-#### <font id="API" /> animate(<font id="Type">keyframes:Partial<[GameWorldKeyframe](./animate#GameWorldKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](./animate#GameAnimationPlaybackConfig)></font>) <font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)</font>{#animate}
+#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GameWorldKeyframe](./animate#GameWorldKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](./animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)</font>{#animate}
 创建一个关键帧动画
 
 **输入参数**
@@ -47,7 +47,7 @@ world.onPress(({ button }) => {
 
 ## 接口
 
-#### <font id="API" /> GameWorldKeyframe{#GameWorldKeyframe}
+#### <font id="API" />GameWorldKeyframe{#GameWorldKeyframe}
 World世界动画关键帧参数，可对World的大部分属性做动画效果，例如重力、雨、雾、雪、光照等等
 
 | **参数** | **类型** | **说明** |
@@ -94,7 +94,7 @@ World世界动画关键帧参数，可对World的大部分属性做动画效果�
 ---
 
 
-#### <font id="API" /> GameAnimationPlaybackConfig{#GameAnimationPlaybackConfig}
+#### <font id="API" />GameAnimationPlaybackConfig{#GameAnimationPlaybackConfig}
 用于动画播放配置的参数组
 
 | **参数** | **类型** | **说明** |
@@ -111,7 +111,7 @@ World世界动画关键帧参数，可对World的大部分属性做动画效果�
 
 ## 枚举
 
-#### <font id="API" /> GameEasing{#GameEasing}
+#### <font id="API" />GameEasing{#GameEasing}
 动画的缓动效果
 
 | 属性 | 说明 |
@@ -130,7 +130,7 @@ World世界动画关键帧参数，可对World的大部分属性做动画效果�
 ---
 
 
-#### <font id="API" /> GameAnimationDirection{#GameAnimationDirection}
+#### <font id="API" />GameAnimationDirection{#GameAnimationDirection}
 **动画的缓动效果**
 
 | 属性 | 说明 |

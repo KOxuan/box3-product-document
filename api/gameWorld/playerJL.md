@@ -4,7 +4,7 @@ import '/style.css'
 # 玩家进入/离开地图
 ## 方法
 
-#### <font id="API" /><font id="Event">事件</font> onPlayerJoin(<font id="Type">handler:(event:[GameEntityEvent](./playerJL#gameentityevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font> {#onPlayerJoin}
+#### <font id="API" /><font id="Event">事件</font>onPlayerJoin(<font id="Type">handler:(event:[GameEntityEvent](./playerJL#GameEntityEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font> {#onPlayerJoin}
 当玩家加入地图时触发
 
 **输入参数**
@@ -42,7 +42,7 @@ world.onPlayerJoin(({ entity }) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font> onPlayerLeave(<font id="Type">handler:(event:[GameEntityEvent](./playerJL#gameentityevent))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onPlayerLeave}
+#### <font id="API" /><font id="Event">事件</font>onPlayerLeave(<font id="Type">handler:(event:[GameEntityEvent](./playerJL#GameEntityEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onPlayerLeave}
 当玩家离开地图时触发
 
 **输入参数**
@@ -64,10 +64,10 @@ world.onPlayerLeave(({ entity }) => {
 
 ## 接口
 
-#### <font id="API" />GameEntityEvent {#GameEntityEvent}
+#### <font id="API" />GameEntityEvent{#GameEntityEvent}
 当创建或销毁实体时触发的事件
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | 创建的实体 |
+| entity | [GameEntity](/GameEntity/index) | 创建的实体 |
 | tick | number | 事件发生时间 |

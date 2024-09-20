@@ -22,7 +22,7 @@ export default defineConfig({
         {
           text: '🌏游戏世界',
           link: '/GameWorld/index',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: '地图信息', link: '/GameWorld/mapInfo' },
             { text: '地图区域', link: '/GameWorld/mapZone' },
@@ -55,7 +55,7 @@ export default defineConfig({
               ]
             },
             {
-              text: '🛋实体',
+              text: '🛋实体操作',
               collapsed: true,
               items: [
                 { text: '实体创建与销毁', link: '/GameWorld/entityCD' },
@@ -70,10 +70,31 @@ export default defineConfig({
         }, {
           text: '🧱游戏方块',
           link: '/GameVoxels/index',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: '操作方块', link: '/GameVoxels/operate' },
             { text: '方块信息', link: '/GameVoxels/info' },
+          ]
+        }, {
+          text: '🏠游戏实体',
+          link: '/GameEntity/index',
+          collapsed: false,
+          items: [
+            { text: '是否为玩家', link: '/GameEntity/isPlayer' },
+            {
+              text: '🏕环境与视觉',
+              collapsed: true,
+              items: [
+                { text: '外观', link: '/GameEntity/appearance' },
+                { text: '动画', link: '/GameEntity/animate' },
+                { text: '物理', link: '/GameEntity/physics' },
+                { text: '音乐音效', link: '/GameEntity/music' },
+                { text: '粒子效果', link: '/GameEntity/particle' },
+              ]
+            },
+            { text: '标签', link: '/GameEntity/label' },
+            { text: '点击与互动', link: '/GameEntity/input' },
+            { text: '销毁与生命值', link: '/GameEntity/fight' }
           ]
         },
       ]
