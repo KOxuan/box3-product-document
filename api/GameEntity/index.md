@@ -23,6 +23,7 @@ declare class GameEntity {
 - [`meshMetalness`](./appearance#meshMetalness) : 实体的金属感
 - [`meshShininess`](./appearance#meshShininess) : 实体的反光度
 - [`meshOffset`](./appearance#meshOffset) : 实体的位移
+- [`motion`](./animate#motion) : 索引与模型动作相关的全部状态和方法
 - [`bounds`](./physics#bounds) : 实体边界框的半径
 - [`collides`](./physics#collides) : 实体是否碰撞
 - [`fixed`](./physics#fixed) : 实体是否移动

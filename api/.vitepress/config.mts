@@ -86,7 +86,7 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: '外观', link: '/GameEntity/appearance' },
-                { text: '动画', link: '/GameEntity/animate' },
+                { text: '动画与模型动作', link: '/GameEntity/animate' },
                 { text: '物理', link: '/GameEntity/physics' },
                 { text: '音乐音效', link: '/GameEntity/music' },
                 { text: '粒子效果', link: '/GameEntity/particle' },
@@ -95,6 +95,14 @@ export default defineConfig({
             { text: '标签', link: '/GameEntity/label' },
             { text: '点击与互动', link: '/GameEntity/input' },
             { text: '销毁与生命值', link: '/GameEntity/fight' }
+          ]
+        }, {
+          text: '🕺游戏模型动作',
+          link: '/GameMotionController/index',
+          collapsed: false,
+          items: [
+            { text: '控制器', link: '/GameMotionController/controller' },
+            { text: '处理器', link: '/GameMotionController/handler' },
           ]
         },
       ]
