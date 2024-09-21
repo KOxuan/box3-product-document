@@ -69,5 +69,5 @@ world.onPlayerLeave(({ entity }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 创建的实体 |
+| entity | [GameEntity](/GameEntity/) | 创建的实体 |
 | tick | number | 事件发生时间 |

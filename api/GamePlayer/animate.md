@@ -1,21 +1,27 @@
+<script setup>
+import '/style.css'
+</script>
+# 动画
+## 方法
 
-### **方法**
-
-#### `**entity.player.**animate(keyframes:Partial<[**GamePlayerKeyframe**](#jneYE)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](https://www.yuque.com/box3lab/api/uclt6lp7syrd5v00#ipI8a)>) : [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)`
-**创建一个关键帧动画**
+#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GamePlayerKeyframe](./animate#GamePlayerKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](/GameWorld/animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)</font>{#animate}
+创建一个关键帧动画
 
 **输入参数**
 
-| _**参数**_ | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| keyframes | _是_ | | `Partial<[GamePlayerKeyframe](#jneYE)[]>` | 关键帧的数据 |
-| playbackInfo | | | `Partial<[GameAnimationPlaybackConfig](https://www.yuque.com/box3lab/api/uclt6lp7syrd5v00#ipI8a)>` | 动画播放参数 |
+| keyframes | 是 | | Partial‹GamePlayerKeyframe[]› | 关键帧的数据 |
+| playbackInfo | | | Partial‹GameAnimationPlaybackConfig› | 动画播放参数 |
 
 **返回值**
 
 | **类型** | **说明** |
 | --- | --- |
-| [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek) | 创建出来的动画对象 |
+| GameAnimation | 创建出来的动画对象 |
+
+
+> 定义于 [#L11712](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11712)
 
 ::: details 点击查看示例代码
 ```javascript
@@ -54,19 +60,33 @@ world.onPlayerJoin(({ entity }) => {
 })
 ```
 :::
+---
+#### <font id="API" />getAnimations()<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)[]</font>{#getAnimations}
+获取玩家的所有已创建的动画
+
+
+**返回值**
+
+| **类型** | **说明** |
+| --- | --- |
+| GameAnimation[] | 创建出来的动画对象列表 |
+
+
+> 定义于 [#L11713](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11713)
+
 
 
 ## 接口
 
-#### GamePlayerKeyframe
-**Player玩家动画关键帧参数，可对Player的大部分属性做动画效果，例如尺寸、颜色、隐身等等**
+#### <font id="API" />GamePlayerKeyframe{#GamePlayerKeyframe}
+Player玩家动画关键帧参数，可对Player的大部分属性做动画效果，例如尺寸、颜色、隐身等等
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
 | duration | number | 播放时长 |
-| easeIn | [GameEasing](https://www.yuque.com/box3lab/api/uclt6lp7syrd5v00#Id5nB) | 缓入效果 |
-| easeOut | [GameEasing](https://www.yuque.com/box3lab/api/uclt6lp7syrd5v00#Id5nB) | 缓出效果 |
-| cameraEntity | [GameEntity](/GameEntity/index) | 在第一人称视角(FPS)或第三人称跟随视角(FOLLOW)下，玩家视角所跟随的实体 |
+| easeIn | [GameEasing](/GameWorld/animate#GameEasing) | 缓入效果 |
+| easeOut | [GameEasing](/GameWorld/animate#GameEasing) | 缓出效果 |
+| cameraEntity | [GameEntity](/GameEntity/) | 在第一人称视角(FPS)或第三人称跟随视角(FOLLOW)下，玩家视角所跟随的实体 |
 | cameraMode | [GameCameraMode](https://www.yuque.com/box3lab/api/zombb5wu40fet60k#TzBdh) | 视角模式 |
 | cameraPosition | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 固定视角(FIXED)下，镜头的眼睛位置 |
 | cameraTarget | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 固定视角(FIXED)下镜头所朝向的目标点 |
@@ -79,4 +99,7 @@ world.onPlayerJoin(({ entity }) => {
 | metalness | number | 玩家的金属感 |
 | shininess | number | 玩家的反光度 |
 | showName | boolean | 玩家名字是否显示 |
+
+
+> 定义于 [#L11577](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11577)
 

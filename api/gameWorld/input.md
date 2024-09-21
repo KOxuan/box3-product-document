@@ -147,8 +147,8 @@ world.onRelease(({ button, position }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 发起互动的实体 |
-| targetEntity | [GameEntity](/GameEntity/index) | 收到互动请求的实体 |
+| entity | [GameEntity](/GameEntity/) | 发起互动的实体 |
+| targetEntity | [GameEntity](/GameEntity/) | 收到互动请求的实体 |
 | tick | number | 事件发生时间 |
 
 
@@ -162,8 +162,8 @@ world.onRelease(({ button, position }) => {
 
 | **参数** | **类型** | **说明** | **补充** |
 | --- | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 被点击的实体 / 按下按钮的玩家 | **onClick()前，onPress()onRelease()后** |
-| clicker | [GameEntity](/GameEntity/index) | 发起点击事件的玩家 | **onPress()onRelease()不可用** |
+| entity | [GameEntity](/GameEntity/) | 被点击的实体 / 按下按钮的玩家 | **onClick()前，onPress()onRelease()后** |
+| clicker | [GameEntity](/GameEntity/) | 发起点击事件的玩家 | **onPress()onRelease()不可用** |
 | button | [GameButtonType](./input#gamebuttontype) | 点击的按钮，ACTION0 = 左键，ACTION1 = 右键 | |
 | distance | number | 玩家到被点击实体的距离 | **onPress()onRelease()不可用** |
 | clickerPosition | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 点击鼠标的瞬间玩家所在位置 | **onPress()onRelease()不可用** |

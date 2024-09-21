@@ -207,8 +207,8 @@ setInterval(() => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 发起互动的实体 |
-| targetEntity | [GameEntity](/GameEntity/index) | 收到互动请求的实体 |
+| entity | [GameEntity](/GameEntity/) | 发起互动的实体 |
+| targetEntity | [GameEntity](/GameEntity/) | 收到互动请求的实体 |
 | tick | number | 事件发生时间 |
 
 > 定义于 [#L12909](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12909)
@@ -221,8 +221,8 @@ setInterval(() => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 碰撞中的第一个实体 |
-| other | [GameEntity](/GameEntity/index) | 碰撞中的第二个实体 |
+| entity | [GameEntity](/GameEntity/) | 碰撞中的第一个实体 |
+| other | [GameEntity](/GameEntity/) | 碰撞中的第二个实体 |
 | axis | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 碰撞的分离轴，也就是碰撞后物体弹飞的方向 |
 | tick | number | 两个实体碰撞的时间 |
 | force | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 碰撞所产生的力 |
@@ -237,7 +237,7 @@ setInterval(() => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 触碰液体的实体 |
+| entity | [GameEntity](/GameEntity/) | 触碰液体的实体 |
 | voxel | number | 液体方块id |
 | tick | number | 实体进入或离开液体的时间 |
 
@@ -251,7 +251,7 @@ setInterval(() => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 触碰到方块的实体 |
+| entity | [GameEntity](/GameEntity/) | 触碰到方块的实体 |
 | voxel | number | 液体方块id |
 | tick | number | 实体触碰方块的时间 |
 | axis | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 触碰的分离轴，也就是触碰后物体弹飞的方向 |

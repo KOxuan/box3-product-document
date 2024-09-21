@@ -166,7 +166,7 @@ world.onChat(({ entity, message }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 发起聊天的实体 |
+| entity | [GameEntity](/GameEntity/) | 发起聊天的实体 |
 | message | string | 聊天事件中说话的内容 |
 | tick | number | 聊天事件发生时间 |
 

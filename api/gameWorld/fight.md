@@ -109,8 +109,8 @@ world.onRespawn(({ entity }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 受到伤害的实体 |
-| attacker | [GameEntity](/GameEntity/index) &#124; null | 攻击者 |
+| entity | [GameEntity](/GameEntity/) | 受到伤害的实体 |
+| attacker | [GameEntity](/GameEntity/) &#124; null | 攻击者 |
 | damage | number | 伤害值 |
 | damageType | string | 伤害类型 |
 | tick | number | 事件发生时间 |
@@ -125,8 +125,8 @@ world.onRespawn(({ entity }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 死亡的实体 |
-| attacker | [GameEntity](/GameEntity/index) &#124; null | 击杀者 |
+| entity | [GameEntity](/GameEntity/) | 死亡的实体 |
+| attacker | [GameEntity](/GameEntity/) &#124; null | 击杀者 |
 | damageType | string | 伤害类型 |
 | tick | number | 事件发生时间 |
 
@@ -139,7 +139,7 @@ world.onRespawn(({ entity }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 死亡的实体 |
+| entity | [GameEntity](/GameEntity/) | 死亡的实体 |
 | tick | number | 事件发生时间 |
 
 > 定义于 [#L12646](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12646)

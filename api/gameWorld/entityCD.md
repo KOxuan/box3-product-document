@@ -117,7 +117,7 @@ world.onEntityDestroy(({ entity }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 销毁的实体 |
+| entity | [GameEntity](/GameEntity/) | 销毁的实体 |
 | tick | number | 事件发生时间 |
 
 > 定义于 [#L12500](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12500)

@@ -65,7 +65,7 @@ export default defineConfig({
             { text: '点击与互动', link: '/GameWorld/input' },
             { text: '战斗与生命值', link: '/GameWorld/fight' },
             { text: '副本传送', link: '/GameWorld/teleport' },
-            { text: '小鱼干商城', link: '/GameWorld/shopping' },
+            { text: '商城', link: '/GameWorld/shopping' },
           ]
         }, {
           text: '🧱游戏方块',
@@ -103,6 +103,29 @@ export default defineConfig({
           items: [
             { text: '控制器', link: '/GameMotionController/controller' },
             { text: '处理器', link: '/GameMotionController/handler' },
+          ]
+        },{
+          text: '👤游戏玩家',
+          link: '/GamePlayer/index',
+          collapsed: false,
+          items: [
+            { text: '玩家信息', link: '/GamePlayer/info' },
+            {
+              text: '🏕环境与视觉',
+              collapsed: true,
+              items: [
+                { text: '外观', link: '/GamePlayer/appearance' },
+                { text: '动画', link: '/GamePlayer/animate' },
+                { text: '摄像机视角', link: '/GamePlayer/camera' },
+                { text: '音乐音效', link: '/GamePlayer/music' },
+                { text: '画面滤镜', link: '/GamePlayer/colorLUT' },
+              ]
+            },
+            { text: '战斗与生命值', link: '/GamePlayer/fight' },
+            { text: '按键与行动', link: '/GamePlayer/input' },
+            { text: '对话与互动', link: '/GamePlayer/chat' },
+            { text: '挑转网站', link: '/GamePlayer/link' },
+            { text: '商城与投喂', link: '/GamePlayer/shopping' },
           ]
         },
       ]

@@ -129,7 +129,7 @@ import '/style.css'
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| attacker | [GameEntity](/GameEntity/index) | 发出攻击的实体 |
+| attacker | [GameEntity](/GameEntity/) | 发出攻击的实体 |
 | damageType | string | 伤害类型，可自行定义 |
 
 > 定义于 [#L10537](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10537)
@@ -143,9 +143,9 @@ import '/style.css'
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 受到伤害的实体 |
+| entity | [GameEntity](/GameEntity/) | 受到伤害的实体 |
 | damage | number | 伤害值的大小 |
-| attacker | [GameEntity](/GameEntity/index) &#124; null | 攻击者 |
+| attacker | [GameEntity](/GameEntity/) &#124; null | 攻击者 |
 | damageType | string | 伤害的类型 |
 | tick | number | 事件发生的时间 |
 
@@ -160,8 +160,8 @@ import '/style.css'
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 死亡的实体 |
-| attacker | [GameEntity](/GameEntity/index) &#124; null | 击杀者 |
+| entity | [GameEntity](/GameEntity/) | 死亡的实体 |
+| attacker | [GameEntity](/GameEntity/) &#124; null | 击杀者 |
 | damageType | string | 伤害的类型 |
 | tick | number | 事件发生的时间 |
 

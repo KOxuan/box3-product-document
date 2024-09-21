@@ -69,6 +69,7 @@ declare class GameEntity {
 ## 方法
 - [`lookAt`](./appearance#lookAt) : 将实体旋转至面向指定位置的方向。
 - [`animate`](./animate#animate) : 创建一个关键帧动画
+- [`getAnimations`](./animate#getAnimations) : 获取实体的所有已创建的动画
 - [`sound`](./music#sound) : 在实体所在的位置播放声音
 - [`addTag`](./label#addTag) : 为实体添加一个新标签
 - [`hasTag`](./label#hasTag) : 判断实体是否带有某个标签

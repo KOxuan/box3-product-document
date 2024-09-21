@@ -55,6 +55,21 @@ ani.onFinish(() => {//当动画结束播放时
 })
 ```
 :::
+---
+#### <font id="API" />getAnimations()<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)[]</font>{#getAnimations}
+获取实体的所有已创建的动画
+
+
+**返回值**
+
+| **类型** | **说明** |
+| --- | --- |
+| GameAnimation[] | 创建出来的动画对象列表 |
+
+
+> 定义于 [#L10641](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10641)
+
+
 
 ## 接口
 
