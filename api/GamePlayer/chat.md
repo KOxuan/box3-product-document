@@ -105,7 +105,7 @@ npc.onInteract(async ({entity}) => {
 ---
 
 
-#### <font id="API" /><font id="Event" >事件</font>onChat(<font id="Type">handler:(event:[GameChatEvent](/GameWorld/chat/resident#GameChatEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onChat}
+#### <font id="API" /><font id="Event" >事件</font>onChat(<font id="Type">handler:(event:[GameChatEvent](/GameWorld/chat/resident#GameChatEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onChat}
 当前玩家发起聊天时调用
 
 **输入参数**

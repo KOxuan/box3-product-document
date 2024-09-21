@@ -29,7 +29,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onRespawn(<font id="Type">handler:(event:[GameRespawnEvent](/GameWorld/fight#GameRespawnEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onRespawn}
+#### <font id="API" /><font id="Event">事件</font>onRespawn(<font id="Type">handler:(event:[GameRespawnEvent](/GameWorld/fight#GameRespawnEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onRespawn}
 玩家复活时调用的事件
 
 **输入参数**

@@ -4,7 +4,7 @@ import '/style.css'
 # 动画
 ## 方法
 
-#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GamePlayerKeyframe](./animate#GamePlayerKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](/GameWorld/animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)</font>{#animate}
+#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GamePlayerKeyframe](./animate#GamePlayerKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](/GameWorld/animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](/GameAnimation/)</font>{#animate}
 创建一个关键帧动画
 
 **输入参数**
@@ -61,7 +61,7 @@ world.onPlayerJoin(({ entity }) => {
 ```
 :::
 ---
-#### <font id="API" />getAnimations()<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)[]</font>{#getAnimations}
+#### <font id="API" />getAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getAnimations}
 获取玩家的所有已创建的动画
 
 

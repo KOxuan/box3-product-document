@@ -66,7 +66,7 @@ console.log(`还可以创建 ${world.entityQuota()} 个实体`)
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onEntityCreate(<font id="Type">handler:(event:[GameEntityEvent](./entityCD#GameEntityEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onEntityCreate}
+#### <font id="API" /><font id="Event">事件</font>onEntityCreate(<font id="Type">handler:(event:[GameEntityEvent](./entityCD#GameEntityEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntityCreate}
 当实体被创建时触发
 
 **输入参数**
@@ -89,7 +89,7 @@ world.onEntityCreate(({ entity }) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onEntityDestroy(<font id="Type">handler:(event:[GameEntityEvent](./entityCD#GameEntityEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onEntityDestroy}
+#### <font id="API" /><font id="Event">事件</font>onEntityDestroy(<font id="Type">handler:(event:[GameEntityEvent](./entityCD#GameEntityEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntityDestroy}
 当实体被销毁时触发
 
 **输入参数**

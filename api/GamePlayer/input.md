@@ -311,7 +311,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" /><font id="Event">事件</font>onPress(<font id="Type">handler:(event:[GameInputEvent](/GameWorld/input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onPress}
+#### <font id="API" /><font id="Event">事件</font>onPress(<font id="Type">handler:(event:[GameInputEvent](/GameWorld/input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onPress}
 当玩家按下按钮时调用
 
 **输入参数**
@@ -325,7 +325,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onRelease(<font id="Type">handler:(event:[GameInputEvent](/GameWorld/input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onRelease}
+#### <font id="API" /><font id="Event">事件</font>onRelease(<font id="Type">handler:(event:[GameInputEvent](/GameWorld/input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onRelease}
 当玩家松开按钮时调用
 
 **输入参数**
@@ -339,7 +339,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onKeyDown(<font id="Type">handler:(event:[GameKeyBoardEvent](./input#GameKeyBoardEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onKeyDown}
+#### <font id="API" /><font id="Event">事件</font>onKeyDown(<font id="Type">handler:(event:[GameKeyBoardEvent](./input#GameKeyBoardEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onKeyDown}
 当玩家按下键盘时调用
 
 **输入参数**
@@ -353,7 +353,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onKeyUp(<font id="Type">handler:(event:[GameKeyBoardEvent](./input#GameKeyBoardEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onKeyUp}
+#### <font id="API" /><font id="Event">事件</font>onKeyUp(<font id="Type">handler:(event:[GameKeyBoardEvent](./input#GameKeyBoardEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onKeyUp}
 当玩家松开键盘时调用
 
 **输入参数**

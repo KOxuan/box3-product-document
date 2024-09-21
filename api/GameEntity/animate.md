@@ -13,7 +13,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GameEntityKeyframe](./animate#GameEntityKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](/GameWorld/animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)</font>{#animate}
+#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GameEntityKeyframe](./animate#GameEntityKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](/GameWorld/animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](/GameAnimation/)</font>{#animate}
 创建一个关键帧动画
 
 **输入参数**
@@ -28,6 +28,10 @@ import '/style.css'
 | **类型** | **说明** |
 | --- | --- |
 | GameAnimation | 创建出来的动画对象 |
+
+
+> 定义于 [#L10640](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10640)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -56,7 +60,7 @@ ani.onFinish(() => {//当动画结束播放时
 ```
 :::
 ---
-#### <font id="API" />getAnimations()<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)[]</font>{#getAnimations}
+#### <font id="API" />getAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getAnimations}
 获取实体的所有已创建的动画
 
 

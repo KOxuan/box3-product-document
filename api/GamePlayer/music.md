@@ -134,7 +134,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" />sound(<font id="Type">config:[GameSoundEffect](/GameWorld/music#GameSoundEffect) | string</font>)<font id="Type">: [GameSound](https://www.yuque.com/box3lab/api/baptwu286416qyd6)</font>{#sound}
+#### <font id="API" />sound(<font id="Type">config:[GameSoundEffect](/GameWorld/music#GameSoundEffect) | string</font>)<font id="Type">: [Sound](/Sound/)</font>{#sound}
 
 为指定的玩家播放声音，此声音仅该玩家能听见，其他玩家无法听到。
 

@@ -4,7 +4,7 @@ import '/style.css'
 # 动画
 ### 方法
 
-#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GameWorldKeyframe](./animate#GameWorldKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](./animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)</font>{#animate}
+#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GameWorldKeyframe](./animate#GameWorldKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](./animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](/GameAnimation/)</font>{#animate}
 创建一个关键帧动画
 
 **输入参数**
@@ -45,7 +45,7 @@ world.onPress(({ button }) => {
 :::
 
 ---
-#### <font id="API" />getAnimations()<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)[]</font>{#getAnimations}
+#### <font id="API" />getAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getAnimations}
 获取当前世界的所有已创建的动画
 
 
@@ -60,7 +60,7 @@ world.onPress(({ button }) => {
 
 
 ---
-#### <font id="API" />getEntityAnimations()<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)[]</font>{#getEntityAnimations}
+#### <font id="API" />getEntityAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getEntityAnimations}
 获取实体的所有已创建的动画
 
 
@@ -73,7 +73,7 @@ world.onPress(({ button }) => {
 
 > 定义于 [#L9778](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9778)
 ---
-#### <font id="API" />getPlayerAnimations()<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)[]</font>{#getPlayerAnimations}
+#### <font id="API" />getPlayerAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getPlayerAnimations}
 获取玩家的所有已创建的动画
 
 

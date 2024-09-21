@@ -69,7 +69,7 @@ startTimer()  // 调用方法
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onChat(<font id="Type">handler:(event:[GameChatEvent](./resident#GameChatEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onChat}
+#### <font id="API" /><font id="Event">事件</font>onChat(<font id="Type">handler:(event:[GameChatEvent](./resident#GameChatEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onChat}
 当玩家在聊天窗口说话时触发
 
 **输入参数**

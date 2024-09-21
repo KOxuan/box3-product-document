@@ -69,7 +69,7 @@ world.onPress(({ button }) => {
 
 ### **方法**
 
-#### <font id="API" /><font id="Event">事件</font> onEntityContact(<font id="Type">handler:(event:[GameEntityContactEvent](./physics#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onEntityContact}
+#### <font id="API" /><font id="Event">事件</font> onEntityContact(<font id="Type">handler:(event:[GameEntityContactEvent](./physics#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntityContact}
 当实体与实体发生碰撞时触发。
 
 **输入参数**
@@ -126,7 +126,7 @@ function fakeObject(player, object) {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onEntitySeparate(<font id="Type">handler:(event:[GameEntityContactEvent](./physics#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onEntitySeparate}
+#### <font id="API" /><font id="Event">事件</font>onEntitySeparate(<font id="Type">handler:(event:[GameEntityContactEvent](./physics#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntitySeparate}
 当实体与实体结束碰撞时触发。
 
 **输入参数**
@@ -186,7 +186,7 @@ world.onEntityContact(({ entity, other }) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onVoxelContact(<font id="Type">handler:(event:[GameVoxelContactEvent](./physics#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onVoxelContact}
+#### <font id="API" /><font id="Event">事件</font>onVoxelContact(<font id="Type">handler:(event:[GameVoxelContactEvent](./physics#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelContact}
 当实体与方块发生碰撞时触发。
 
 **输入参数**
@@ -239,7 +239,7 @@ world.onEntityContact(({ entity, other }) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onVoxelSeparate(<font id="Type">handler:(event:[GameVoxelContactEvent](./physics#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onVoxelSeparate}
+#### <font id="API" /><font id="Event">事件</font>onVoxelSeparate(<font id="Type">handler:(event:[GameVoxelContactEvent](./physics#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelSeparate}
 当实体与方块结束碰撞时触发。
 
 **输入参数**
@@ -273,7 +273,7 @@ world.onVoxelSeparate(({ entity, voxel }) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onFluidEnter(<font id="Type">handler:(event:[GameFluidContactEvent](./physics#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onFluidEnter}
+#### <font id="API" /><font id="Event">事件</font>onFluidEnter(<font id="Type">handler:(event:[GameFluidContactEvent](./physics#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidEnter}
 当实体进入水里/液体时触发。
 
 **输入参数**
@@ -303,7 +303,7 @@ world.onFluidEnter(({ entity, voxel})=>{
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onFluidLeave(<font id="Type">handler:(event:[GameFluidContactEvent](./physics#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onFluidLeave}
+#### <font id="API" /><font id="Event">事件</font>onFluidLeave(<font id="Type">handler:(event:[GameFluidContactEvent](./physics#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidLeave}
 当实体离开水里/液体时触发。
 
 **输入参数**

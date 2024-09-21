@@ -16,6 +16,13 @@ export default defineConfig({
       provider: 'local',
     },
     sidebar: [{
+      text: '编写须知',
+      collapsed: true,
+      items: [
+        { text: '多文件互导方式', link: '/notice/exportAndImport' },
+        { text: '事件函数与异步处理机制', link: '/notice/eventDiff' },
+      ]
+    }, {
       text: '服务端脚本',
       collapsed: false,
       items: [
@@ -73,7 +80,6 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '操作方块', link: '/GameVoxels/operate' },
-            { text: '方块信息', link: '/GameVoxels/info' },
           ]
         }, {
           text: '🏠游戏实体',
@@ -104,7 +110,7 @@ export default defineConfig({
             { text: '控制器', link: '/GameMotionController/controller' },
             { text: '处理器', link: '/GameMotionController/handler' },
           ]
-        },{
+        }, {
           text: '👤游戏玩家',
           link: '/GamePlayer/index',
           collapsed: false,
@@ -127,7 +133,18 @@ export default defineConfig({
             { text: '挑转网站', link: '/GamePlayer/link' },
             { text: '商城与投喂', link: '/GamePlayer/shopping' },
           ]
+        }, {
+          text: '📈游戏数据存储',
+          link: '/GameDataStorage/index',
+          collapsed: false,
+          items: [
+            { text: '获取数据空间', link: '/GameDataStorage/getSpace' },
+            { text: '操作数据', link: '/GameDataStorage/setSpace' },
+          ]
         },
+        { text: '音乐对象', link: '/Sound/' },
+        { text: '动画对象', link: '/GameAnimation/' },
+        { text: '事件监听', link: '/GameEventHandlerToken/' },
       ]
     },
     ],

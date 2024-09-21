@@ -1,73 +1,84 @@
+<script setup>
+import '/style.css'
+</script>
+# 动画对象
 :::info
-GameAnimation，作为 **animate()** 方法的统一返回类型，支持后续的动画操作。 
+**GameAnimation**，作为 `animate()` 方法的统一返回类型，支持后续的动画操作。 
 
-**Animation 动画，可对World世界、Entity实体及Player玩家等对象添加动画。动画将在本地播放运行，获得更好的性能，播放更流畅、平滑。**
+Animation 动画，可对World世界、Entity实体及Player玩家等对象添加动画。动画将在本地播放运行，获得更好的性能，播放更流畅、平滑。
 :::
 
 
 ## 属性
 
-#### **currentTime **: number 
+#### <font id="API" />currentTime<font id="Type">: number </font>
 > 默认值：0
 
-**动画的当前播放时间（多少动画帧）**
+动画的当前播放时间（多少动画帧）
+
+> 定义于 [#L9586](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9586)
 
 ---
 
 
-#### 只读**playState **: [GameAnimationPlaybackState ](#krLiY)
+#### <font id="API" /><font id="ReadOnly">只读</font>playState<font id="Type">: [GameAnimationPlaybackState](./#GameAnimationPlaybackState)</font>
 > 默认值：GameAnimationPlaybackState.PENDING
 
-**当前动画播放状态**
+当前动画播放状态
 
+> 定义于 [#L9594](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9594)
 ---
 
 
-#### **playbackRate **: number 
+#### <font id="API" />playbackRate<font id="Type">: number </font>
 > 默认值：1
 
-**每tick动画播放速度**
+每tick动画播放速度
 
+> 定义于 [#L9598](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9598)
 ---
 
 
-#### **startTime **: number 
+#### <font id="API" />startTime<font id="Type">: number </font>
 > 默认值：0
 
-**动画开始的时间tick**
+动画开始的时间tick
 
+> 定义于 [#L9590](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9590)
 ---
 
 
-#### 只读**target **: TargetType 
-> 默认值：无
+#### <font id="API" /><font id="ReadOnly">只读</font>target<font id="Type">: [GameWorld](/GameWorld/) | [GameEntity](/GameEntity/) | [GamePlayer](/GamePlayer/)</font> 
 
-**动画作用的对象（可为world、player或entity）**
+动画作用的对象
 
+> 定义于 [#L9560](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9560)
 
 ## 方法
 
-#### `**play**(playback?:Partial<[GameAnimationPlaybackConfig](#lhaax)>) `:  void``
-**播放或者恢复动画的播放**
+#### <font id="API" />play(<font id="Type">playback?:Partial‹[GameAnimationPlaybackConfig](./#GameAnimationPlaybackConfig)›</font>)<font id="Type">:  void</font>
+播放或者恢复动画的播放
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| playback | 否 ||`Partial<[GameAnimationPlaybackConfig](#lhaax)>`|播放的参数|
+| playback | 否 || Partial‹GameAnimationPlaybackConfig›|播放的参数|
 
-
----
-
-
-#### **cancel**() `:  void`
-**暂停动画的播放**
+> 定义于 [#L9568](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9568)
 
 ---
 
 
-#### **keyframes**() : Partial‹KeyframeType›[]
-**获取所有的动画关键帧**
+#### <font id="API" />cancel()<font id="Type">:  void</font>
+暂停动画的播放
+
+> 定义于 [#L9572](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9572)
+---
+
+
+#### <font id="API" />keyframes()<font id="Type">: Partial‹KeyframeType›[]</font>
+获取所有的动画关键帧
 
 **返回值**
 
@@ -75,35 +86,39 @@ GameAnimation，作为 **animate()** 方法的统一返回类型，支持后续�
 | --- | --- |
 | Partial‹KeyframeType›[] | 已配置的动画关键帧列表 |
 
+> 定义于 [#L9564](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9564)
 
 ---
 
 
-#### 事件**onFinish**(handler:(event:GameAnimationEvent)=>void) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)
-**当动画结束播放时触发**
+#### <font id="API" /><font id="Event" >事件</font>onFinish(<font id="Type">handler:(event:[GameAnimationEvent](./#GameAnimationEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>
+当动画结束播放时触发
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ ||function|监听到动画播放完毕时的处理函数|
+| handler | 是 ||function|监听到动画播放完毕时的处理函数|
 
 
+> 定义于 [#L9581](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9581)
 ---
 
 
-#### 事件**onReady**(handler:(event:[GameAnimationEvent](#anWjP))=>void) : [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)
-**当动画开始播放时触发**
+#### <font id="API" /><font id="Event" >事件</font>onReady(<font id="Type">handler:(event:[GameAnimationEvent](./#GameAnimationEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>
+当动画开始播放时触发
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ ||function|监听到动画开始播放时的处理函数|
+| handler | 是 ||function|监听到动画开始播放时的处理函数|
+
+> 定义于 [#L9576](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9576)
 
 ## 接口
 
-#### GameAnimationEvent
+#### <font id="API" />GameAnimationEvent{#GameAnimationEvent}
 **动画事件**
 
 | **参数** | **类型** | **说明** |
@@ -113,12 +128,13 @@ GameAnimation，作为 **animate()** 方法的统一返回类型，支持后续�
 | cancelled | boolean | 动画是否被取消 |
 | tick | number | 事件发生时间 |
 
+> 定义于 [#L13087](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13087)
 
 ---
 
 
-#### GameAnimationPlaybackConfig
-**用于动画播放配置的参数组**
+#### <font id="API" />GameAnimationPlaybackConfig{#GameAnimationPlaybackConfig}
+用于动画播放配置的参数组
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
@@ -130,12 +146,13 @@ GameAnimation，作为 **animate()** 方法的统一返回类型，支持后续�
 | iterations | number | 反复播放次数 |
 | startTick | number | 开始时间 |
 
+> 定义于 [#L9547](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9547)
 
 ---
 
 
-#### GameAnimationPlaybackState
-**动画播放状态**
+#### <font id="API" />GameAnimationPlaybackState{#GameAnimationPlaybackState}
+动画播放状态
 
 | **属性** | **说明** |
 | --- | --- |
@@ -143,6 +160,7 @@ GameAnimation，作为 **animate()** 方法的统一返回类型，支持后续�
 | PENDING | 挂起等待 |
 | RUNNING | 播放中 |
 
+> 定义于 [#L9523](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9523)
 
 ### 示例代码
 ```javascript

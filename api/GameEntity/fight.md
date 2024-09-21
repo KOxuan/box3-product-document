@@ -78,7 +78,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onDestroy(<font id="Type">handler:(event:[GameEntityEvent](/GameWorld/playerJL#GameEntityEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onDestroy}
+#### <font id="API" /><font id="Event">事件</font>onDestroy(<font id="Type">handler:(event:[GameEntityEvent](/GameWorld/playerJL#GameEntityEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onDestroy}
 当实体被销毁时触发
 
 **输入参数**
@@ -93,7 +93,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onTakeDamage(<font id="Type">handler:(event:[GameDamageEvent](./fight#GameDamageEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onTakeDamage}
+#### <font id="API" /><font id="Event">事件</font>onTakeDamage(<font id="Type">handler:(event:[GameDamageEvent](./fight#GameDamageEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onTakeDamage}
 实体受到伤害时触发的事件
 
 **输入参数**
@@ -108,7 +108,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onDie(<font id="Type">handler:(event:[GameDieEvent](./fight#GameDieEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onDie}
+#### <font id="API" /><font id="Event">事件</font>onDie(<font id="Type">handler:(event:[GameDieEvent](./fight#GameDieEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onDie}
 实体死亡时触发的事件
 
 **输入参数**

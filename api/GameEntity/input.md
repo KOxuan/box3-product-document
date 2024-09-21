@@ -90,7 +90,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameInputEvent](/GameWorld/input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onClick}
+#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameInputEvent](/GameWorld/input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onClick}
 当玩家用鼠标点击实体时触发
 
 **输入参数**
@@ -104,7 +104,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](./input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onInteract}
+#### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](./input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onInteract}
 当实体进行互动时触发
 
 **输入参数**
@@ -118,7 +118,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onEntityContact(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onEntityContact}
+#### <font id="API" /><font id="Event">事件</font>onEntityContact(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntityContact}
 当实体触碰另一个实体时触发
 
 **输入参数**
@@ -132,7 +132,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onEntitySeparate(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onEntitySeparate}
+#### <font id="API" /><font id="Event">事件</font>onEntitySeparate(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntitySeparate}
 当实体停止触碰另一个实体时触发
 
 **输入参数**
@@ -146,7 +146,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onFluidEnter(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onFluidEnter}
+#### <font id="API" /><font id="Event">事件</font>onFluidEnter(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidEnter}
 当实体进入液体时触发
 
 **输入参数**
@@ -160,7 +160,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onFluidLeave(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onFluidLeave}
+#### <font id="API" /><font id="Event">事件</font>onFluidLeave(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidLeave}
 当实体离开液体时触发
 
 **输入参数**
@@ -174,7 +174,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onVoxelContact(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onVoxelContact}
+#### <font id="API" /><font id="Event">事件</font>onVoxelContact(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelContact}
 当实体触碰方块时触发
 
 **输入参数**
@@ -188,7 +188,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onVoxelSeparate(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onVoxelSeparate}
+#### <font id="API" /><font id="Event">事件</font>onVoxelSeparate(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelSeparate}
 当实体停止触碰方块时触发
 
 **输入参数**

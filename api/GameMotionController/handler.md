@@ -36,7 +36,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onFinish(<font id="Type">handler:(event:[GameMotionEvent](./handler#GameMotionEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onFinish}
+#### <font id="API" /><font id="Event">事件</font>onFinish(<font id="Type">handler:(event:[GameMotionEvent](./handler#GameMotionEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFinish}
 响应结束状态的监听函数 
 
 **输入参数**

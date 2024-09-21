@@ -4,7 +4,7 @@ import '/style.css'
 # 点击与互动
 ## 方法
 
-#### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](./input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onInteract}
+#### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](./input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onInteract}
 若实体开启了互动功能enableInteract = true，则玩家与实体进行互动时触发。
 
 当玩家走进实体的互动范围，实体身上就会出现按键提示，玩家按下互动按钮(默认为键盘 E 按键)与该实体进行互动。fight
@@ -40,7 +40,7 @@ world.onInteract( ({entity, targetEntity}) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onClick}
+#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onClick}
 当玩家用鼠标点击实体时触发
 
 **输入参数**
@@ -64,7 +64,7 @@ world.onClick(({ entity }) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onPress(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onPress}
+#### <font id="API" /><font id="Event">事件</font>onPress(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onPress}
 当玩家按下按钮时触发
 
 **输入参数**
@@ -111,7 +111,7 @@ world.onPress(({ button, raycast }) => {
 ---
 
 
-####  <font id="API" /><font id="Event">事件</font>onRelease(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onRelease}
+####  <font id="API" /><font id="Event">事件</font>onRelease(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onRelease}
 当玩家松开按钮时触发
 
 **输入参数**
