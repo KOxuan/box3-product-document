@@ -4,7 +4,7 @@ import '/style.css'
 # 点击与互动
 ## 方法
 
-#### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](./input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onInteract}
+#### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](./input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onInteract}
 若实体开启了互动功能enableInteract = true，则玩家与实体进行互动时触发。
 
 当玩家走进实体的互动范围，实体身上就会出现按键提示，玩家按下互动按钮(默认为键盘 E 按键)与该实体进行互动。fight
@@ -40,7 +40,7 @@ world.onInteract( ({entity, targetEntity}) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onClick}
+#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onClick}
 当玩家用鼠标点击实体时触发
 
 **输入参数**
@@ -64,7 +64,7 @@ world.onClick(({ entity }) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onPress(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onPress}
+#### <font id="API" /><font id="Event">事件</font>onPress(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onPress}
 当玩家按下按钮时触发
 
 **输入参数**
@@ -111,7 +111,7 @@ world.onPress(({ button, raycast }) => {
 ---
 
 
-####  <font id="API" /><font id="Event">事件</font>onRelease(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0)</font>{#onRelease}
+####  <font id="API" /><font id="Event">事件</font>onRelease(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onRelease}
 当玩家松开按钮时触发
 
 **输入参数**
@@ -147,8 +147,8 @@ world.onRelease(({ button, position }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 发起互动的实体 |
-| targetEntity | [GameEntity](/GameEntity/index) | 收到互动请求的实体 |
+| entity | [GameEntity](/GameEntity/) | 发起互动的实体 |
+| targetEntity | [GameEntity](/GameEntity/) | 收到互动请求的实体 |
 | tick | number | 事件发生时间 |
 
 
@@ -162,8 +162,8 @@ world.onRelease(({ button, position }) => {
 
 | **参数** | **类型** | **说明** | **补充** |
 | --- | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 被点击的实体 / 按下按钮的玩家 | **onClick()前，onPress()onRelease()后** |
-| clicker | [GameEntity](/GameEntity/index) | 发起点击事件的玩家 | **onPress()onRelease()不可用** |
+| entity | [GameEntity](/GameEntity/) | 被点击的实体 / 按下按钮的玩家 | **onClick()前，onPress()onRelease()后** |
+| clicker | [GameEntity](/GameEntity/) | 发起点击事件的玩家 | **onPress()onRelease()不可用** |
 | button | [GameButtonType](./input#gamebuttontype) | 点击的按钮，ACTION0 = 左键，ACTION1 = 右键 | |
 | distance | number | 玩家到被点击实体的距离 | **onPress()onRelease()不可用** |
 | clickerPosition | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 点击鼠标的瞬间玩家所在位置 | **onPress()onRelease()不可用** |

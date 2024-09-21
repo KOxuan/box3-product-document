@@ -10,7 +10,7 @@ import '/style.css'
 
 ## 属性
 
-#### <font id="API" /><font id="ReadOnly">只读</font>target<font id="Type">: [GameEntity](/GameEntity/index) </font>{#target}
+#### <font id="API" /><font id="ReadOnly">只读</font>target<font id="Type">: [GameEntity](/GameEntity/) </font>{#target}
 
 
 得到当前entity对象
@@ -36,7 +36,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onFinish(<font id="Type">handler:(event:[GameMotionEvent](./handler#GameMotionEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onFinish}
+#### <font id="API" /><font id="Event">事件</font>onFinish(<font id="Type">handler:(event:[GameMotionEvent](./handler#GameMotionEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFinish}
 响应结束状态的监听函数 
 
 **输入参数**
@@ -57,7 +57,7 @@ import '/style.css'
 | --- | --- | --- |
 | cancelled | boolean | 动作是否被中途打断 |
 | tick | number | 事件发生时间 |
-| target | [GameEntity](/GameEntity/index) | entity对象 |
+| target | [GameEntity](/GameEntity/) | entity对象 |
 | motionHandler | [GameMotionHandler](./handler) | 本身的动作处理器 |
 
 > 定义于 [#L11166](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11166)

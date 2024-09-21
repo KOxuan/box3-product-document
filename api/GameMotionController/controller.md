@@ -54,7 +54,7 @@ motion.play()
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| motionName | 是 | | undefined &#124; string | 动作名称 |
+| motionName |  | | undefined &#124; string | 动作名称 |
 
 ```javascript
 const entity = world.querySelector('#npc')

@@ -4,14 +4,14 @@ import '/style.css'
 # 动画
 ### 方法
 
-#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GameWorldKeyframe](./animate#GameWorldKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](./animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)</font>{#animate}
+#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GameWorldKeyframe](./animate#GameWorldKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](./animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](/GameAnimation/)</font>{#animate}
 创建一个关键帧动画
 
 **输入参数**
 
-| _**参数**_ | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| keyframes | _是_ | | Partial‹GameWorldKeyframe[]› | 关键帧的数据 |
+| keyframes | 是 | | Partial‹GameWorldKeyframe[]› | 关键帧的数据 |
 | playbackInfo | | | Partial‹GameAnimationPlaybackConfig› | 动画播放参数 |
 
 **返回值**
@@ -44,6 +44,47 @@ world.onPress(({ button }) => {
 ```
 :::
 
+---
+#### <font id="API" />getAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getAnimations}
+获取当前世界的所有已创建的动画
+
+
+**返回值**
+
+| **类型** | **说明** |
+| --- | --- |
+| GameAnimation[] | 创建出来的动画对象列表 |
+
+
+> 定义于 [#L9777](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9777)
+
+
+---
+#### <font id="API" />getEntityAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getEntityAnimations}
+获取实体的所有已创建的动画
+
+
+**返回值**
+
+| **类型** | **说明** |
+| --- | --- |
+| GameAnimation[] | 创建出来的动画对象列表 |
+
+
+> 定义于 [#L9778](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9778)
+---
+#### <font id="API" />getPlayerAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getPlayerAnimations}
+获取玩家的所有已创建的动画
+
+
+**返回值**
+
+| **类型** | **说明** |
+| --- | --- |
+| GameAnimation[] | 创建出来的动画对象列表 |
+
+
+> 定义于 [#L9779](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9779)
 
 ## 接口
 
