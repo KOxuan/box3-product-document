@@ -16,6 +16,13 @@ export default defineConfig({
       provider: 'local',
     },
     sidebar: [{
+      text: '编写须知',
+      collapsed: true,
+      items: [
+        { text: '多文件互导方式', link: '/notice/exportAndImport' },
+        { text: '事件函数与异步处理机制', link: '/notice/eventDiff' },
+      ]
+    }, {
       text: '服务端脚本',
       collapsed: false,
       items: [
@@ -65,7 +72,7 @@ export default defineConfig({
             { text: '点击与互动', link: '/GameWorld/input' },
             { text: '战斗与生命值', link: '/GameWorld/fight' },
             { text: '副本传送', link: '/GameWorld/teleport' },
-            { text: '小鱼干商城', link: '/GameWorld/shopping' },
+            { text: '商城', link: '/GameWorld/shopping' },
           ]
         }, {
           text: '🧱游戏方块',
@@ -73,7 +80,6 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '操作方块', link: '/GameVoxels/operate' },
-            { text: '方块信息', link: '/GameVoxels/info' },
           ]
         }, {
           text: '🏠游戏实体',
@@ -104,7 +110,41 @@ export default defineConfig({
             { text: '控制器', link: '/GameMotionController/controller' },
             { text: '处理器', link: '/GameMotionController/handler' },
           ]
+        }, {
+          text: '👤游戏玩家',
+          link: '/GamePlayer/index',
+          collapsed: false,
+          items: [
+            { text: '玩家信息', link: '/GamePlayer/info' },
+            {
+              text: '🏕环境与视觉',
+              collapsed: true,
+              items: [
+                { text: '外观', link: '/GamePlayer/appearance' },
+                { text: '动画', link: '/GamePlayer/animate' },
+                { text: '摄像机视角', link: '/GamePlayer/camera' },
+                { text: '音乐音效', link: '/GamePlayer/music' },
+                { text: '画面滤镜', link: '/GamePlayer/colorLUT' },
+              ]
+            },
+            { text: '战斗与生命值', link: '/GamePlayer/fight' },
+            { text: '按键与行动', link: '/GamePlayer/input' },
+            { text: '对话与互动', link: '/GamePlayer/chat' },
+            { text: '挑转网站', link: '/GamePlayer/link' },
+            { text: '商城与投喂', link: '/GamePlayer/shopping' },
+          ]
+        }, {
+          text: '📈游戏数据存储',
+          link: '/GameDataStorage/index',
+          collapsed: false,
+          items: [
+            { text: '获取数据空间', link: '/GameDataStorage/getSpace' },
+            { text: '操作数据', link: '/GameDataStorage/setSpace' },
+          ]
         },
+        { text: '音乐对象', link: '/Sound/' },
+        { text: '动画对象', link: '/GameAnimation/' },
+        { text: '事件监听', link: '/GameEventHandlerToken/' },
       ]
     },
     ],

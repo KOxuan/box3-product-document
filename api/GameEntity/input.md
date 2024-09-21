@@ -90,7 +90,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameInputEvent](/GameWorld/input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onClick}
+#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameInputEvent](/GameWorld/input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onClick}
 当玩家用鼠标点击实体时触发
 
 **输入参数**
@@ -104,7 +104,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](./input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onInteract}
+#### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](./input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onInteract}
 当实体进行互动时触发
 
 **输入参数**
@@ -118,7 +118,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onEntityContact(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onEntityContact}
+#### <font id="API" /><font id="Event">事件</font>onEntityContact(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntityContact}
 当实体触碰另一个实体时触发
 
 **输入参数**
@@ -132,7 +132,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onEntitySeparate(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onEntitySeparate}
+#### <font id="API" /><font id="Event">事件</font>onEntitySeparate(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntitySeparate}
 当实体停止触碰另一个实体时触发
 
 **输入参数**
@@ -146,7 +146,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onFluidEnter(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onFluidEnter}
+#### <font id="API" /><font id="Event">事件</font>onFluidEnter(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidEnter}
 当实体进入液体时触发
 
 **输入参数**
@@ -160,7 +160,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onFluidLeave(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onFluidLeave}
+#### <font id="API" /><font id="Event">事件</font>onFluidLeave(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidLeave}
 当实体离开液体时触发
 
 **输入参数**
@@ -174,7 +174,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onVoxelContact(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onVoxelContact}
+#### <font id="API" /><font id="Event">事件</font>onVoxelContact(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelContact}
 当实体触碰方块时触发
 
 **输入参数**
@@ -188,7 +188,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onVoxelSeparate(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>{#onVoxelSeparate}
+#### <font id="API" /><font id="Event">事件</font>onVoxelSeparate(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelSeparate}
 当实体停止触碰方块时触发
 
 **输入参数**
@@ -207,8 +207,8 @@ setInterval(() => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 发起互动的实体 |
-| targetEntity | [GameEntity](/GameEntity/index) | 收到互动请求的实体 |
+| entity | [GameEntity](/GameEntity/) | 发起互动的实体 |
+| targetEntity | [GameEntity](/GameEntity/) | 收到互动请求的实体 |
 | tick | number | 事件发生时间 |
 
 > 定义于 [#L12909](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12909)
@@ -221,8 +221,8 @@ setInterval(() => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 碰撞中的第一个实体 |
-| other | [GameEntity](/GameEntity/index) | 碰撞中的第二个实体 |
+| entity | [GameEntity](/GameEntity/) | 碰撞中的第一个实体 |
+| other | [GameEntity](/GameEntity/) | 碰撞中的第二个实体 |
 | axis | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 碰撞的分离轴，也就是碰撞后物体弹飞的方向 |
 | tick | number | 两个实体碰撞的时间 |
 | force | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 碰撞所产生的力 |
@@ -237,7 +237,7 @@ setInterval(() => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 触碰液体的实体 |
+| entity | [GameEntity](/GameEntity/) | 触碰液体的实体 |
 | voxel | number | 液体方块id |
 | tick | number | 实体进入或离开液体的时间 |
 
@@ -251,7 +251,7 @@ setInterval(() => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/index) | 触碰到方块的实体 |
+| entity | [GameEntity](/GameEntity/) | 触碰到方块的实体 |
 | voxel | number | 液体方块id |
 | tick | number | 实体触碰方块的时间 |
 | axis | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 触碰的分离轴，也就是触碰后物体弹飞的方向 |

@@ -69,7 +69,7 @@ world.ambientSound.sample = 'audio/rain.mp3';
 
 ## 方法
 
-#### <font id="API" />sound(<font id="Type">config:[GameSoundEffect](./music#gamesoundeffect) | string</font>) <font id="Type">: [GameSound](https://www.yuque.com/box3lab/api/baptwu286416qyd6)</font>{#sound}
+#### <font id="API" />sound(<font id="Type">config:[GameSoundEffect](./music#gamesoundeffect) | string</font>) <font id="Type">: [Sound](/Sound/)</font>{#sound}
 
 播放一段声音，所有玩家都能听到。在[文件管理]窗口右下角[上传音频]，通过 .sound()方法传入声音文件的路径。
 

@@ -79,6 +79,9 @@ declare class GameWorld {
 - [`testSelector`](./physics#testSelector) : 测试实体是否符合某个选择器的条件
 - [`sound`](./music#sound) : 播放一段声音，所有玩家都能听到
 - [`animate`](./animate#animate) : 创建一个关键帧动画
+- [`getAnimations`](./animate#getAnimations) : 获取当前世界所有已创建的动画
+- [`getEntityAnimations`](./animate#getEntityAnimations) : 获取实体所有已创建的动画
+- [`getPlayerAnimations`](./animate#getPlayerAnimations) : 获取玩家所有已创建的动画
 - [`teleport`](./teleport#teleport) : 地图组内传送能力，能够让玩家被传送到指定地图中
 
 ### 监听方法
