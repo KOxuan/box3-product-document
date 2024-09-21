@@ -1,4 +1,4 @@
-swapInputDirectionenableJumpGamePlayerWalkState<script setup>
+<script setup>
 import '/style.css'
 </script>
 # 按键与行动
