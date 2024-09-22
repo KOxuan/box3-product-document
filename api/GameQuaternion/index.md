@@ -6,7 +6,7 @@ import '/style.css'
 
 四元数是一种用于描述物体在三维空间中旋转的量。四元数由四个分量组成：`x`, `y`, `z` 和 `w`。虽然比起欧拉角、矩阵等方式，四元数略显晦涩，但由于四元数的运算更加高效、造成的数值误差更低，在 3D 游戏领域发挥着很大作用。
 
-更多有关的数学知识可以观看[3Blue1Brown的这个视频](https://www.bilibili.com/video/BV1SW411y7W1/)。当然这不是必需的，因为该类已经提供了一些常用的方法，例如 [fromAxisAngle](#fromaxisangle-axis-gamevector3-rad-number-gamequaternion)，并且这一数学内容本身的理解难度较大。
+更多有关的数学知识可以观看[3Blue1Brown相关视频](https://www.bilibili.com/video/BV1SW411y7W1/)。
 
 ## 构造函数
 

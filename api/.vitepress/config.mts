@@ -104,6 +104,13 @@ export default defineConfig({
             { text: '销毁与生命值', link: '/GameEntity/fight' }
           ]
         }, {
+          text: '💾游戏资产管理',
+          link: '/GameAssetListEntry/index',
+          collapsed: false,
+          items: [
+            { text: '资产树', link: '/GameAssetListEntry/ls' },
+          ]
+        },{
           text: '🕺游戏模型动作',
           link: '/GameMotionController/index',
           collapsed: false,
@@ -143,11 +150,12 @@ export default defineConfig({
             { text: '操作数据', link: '/GameDataStorage/setSpace' },
           ]
         }, {
-          text: '🖼️游戏用户界面',
-          link: '/GameUI/server',
+          text: '🔊游戏跨端通讯',
+          link: '/RemoteChannel/Server/index',
           collapsed: false,
           items: [
-            { text: '通信', link: '/GameUI/remoteChannel/server' },
+            { text: '服务端->客户端', link: '/RemoteChannel/Server/serverToClient' },
+            { text: '客户端->服务端', link: '/RemoteChannel/Server/clientToServer' },
           ]
         }, {
           text: '🔗游戏外部数据请求',
@@ -186,20 +194,29 @@ export default defineConfig({
       collapsed: false,
       items: [
         {
+          text: '🔊游戏跨端通讯',
+          link: '/RemoteChannel/Client/index',
+          collapsed: false,
+          items: [
+            { text: '服务端->客户端', link: '/RemoteChannel/Client/serverToClient' },
+            { text: '客户端->服务端', link: '/RemoteChannel/Client/clientToServer' },
+          ]
+        },
+        {
           text: '🖼️游戏用户界面',
-          link: '/GameUI/client',
+          link: '/GameUI/index',
           collapsed: false,
           items: [
             {
               text: '🔱UI元素',
-              collapsed: false,
+              collapsed: true,
               items: [
                 { text: 'UI父类', link: '/GameUI/UiNode' },
                 { text: 'UI屏幕', link: '/GameUI/UiScreen' },
                 { text: 'UI可渲染基类', link: '/GameUI/UiRenderable' },
                 {
                   text: '🔱界面可见元素',
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     { text: '框架', link: '/GameUI/node/UiBox' },
                     { text: '图片', link: '/GameUI/node/UiImage' },
@@ -210,7 +227,6 @@ export default defineConfig({
               ]
             },
             { text: '导航器', link: '/GameUI/navigator' },
-            { text: '通信', link: '/GameUI/remoteChannel/client' },
             { text: '监听输入事件', link: '/GameUI/input' },
             { text: '事件监听处理', link: '/GameUI/UiEvent' },
             {
