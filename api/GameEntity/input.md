@@ -33,7 +33,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" />interactColor<font id="Type">: [GameRGBColor](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz)</font>{#interactColor} 
+#### <font id="API" />interactColor<font id="Type">: [GameRGBColor](/GameRGBColor/)</font>{#interactColor} 
 > 默认值：GameRGBColor(1, 1, 1)
 
 进入实体互动范围时，提示文本的颜色。
@@ -104,7 +104,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](./input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onInteract}
+#### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](/GameWorld/input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onInteract}
 当实体进行互动时触发
 
 **输入参数**
@@ -202,18 +202,6 @@ setInterval(() => {
 
 ## 接口
 
-#### <font id="API" />GameInteractEvent{#GameInteractEvent}
-当实体互动时触发的事件
-
-| **参数** | **类型** | **说明** |
-| --- | --- | --- |
-| entity | [GameEntity](/GameEntity/) | 发起互动的实体 |
-| targetEntity | [GameEntity](/GameEntity/) | 收到互动请求的实体 |
-| tick | number | 事件发生时间 |
-
-> 定义于 [#L12909](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12909)
-
----
 
 
 #### <font id="API" />GameEntityContactEvent{#GameEntityContactEvent}
@@ -223,9 +211,9 @@ setInterval(() => {
 | --- | --- | --- |
 | entity | [GameEntity](/GameEntity/) | 碰撞中的第一个实体 |
 | other | [GameEntity](/GameEntity/) | 碰撞中的第二个实体 |
-| axis | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 碰撞的分离轴，也就是碰撞后物体弹飞的方向 |
+| axis | [GameVector3](/GameVector3/) | 碰撞的分离轴，也就是碰撞后物体弹飞的方向 |
 | tick | number | 两个实体碰撞的时间 |
-| force | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 碰撞所产生的力 |
+| force | [GameVector3](/GameVector3/) | 碰撞所产生的力 |
 
 > 定义于 [#L12673](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12673)
 
@@ -254,8 +242,8 @@ setInterval(() => {
 | entity | [GameEntity](/GameEntity/) | 触碰到方块的实体 |
 | voxel | number | 液体方块id |
 | tick | number | 实体触碰方块的时间 |
-| axis | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 触碰的分离轴，也就是触碰后物体弹飞的方向 |
-| force | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 碰撞力 |
+| axis | [GameVector3](/GameVector3/) | 触碰的分离轴，也就是触碰后物体弹飞的方向 |
+| force | [GameVector3](/GameVector3/) | 碰撞力 |
 | voxel | number | 被触碰的方块id |
 | x | number | 被触碰方块的x坐标 |
 | y | number | 被触碰方块的y坐标 |

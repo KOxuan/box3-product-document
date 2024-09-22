@@ -14,7 +14,7 @@
 ---
 
 
-#### <font id="API" />rainColor : <font id="Type">[GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e)</font>{#rainColor}
+#### <font id="API" />rainColor : <font id="Type">[GameRGBAColor](/GameRGBAColor/)</font>{#rainColor}
 > 默认值：GameRGBAColor(1, 1, 1, 1)
 
 雨的颜色。
@@ -25,7 +25,7 @@
 ---
 
 
-#### <font id="API" />rainDirection : <font id="Type">[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#rainDirection}
+#### <font id="API" />rainDirection : <font id="Type">[GameVector3](/GameVector3/)</font>{#rainDirection}
 > 默认值：GameVector3(0, 1, 0)
 
 雨的方向。

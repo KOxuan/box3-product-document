@@ -64,7 +64,7 @@ world.onPlayerJoin(({ entity }) => {
 ---
 
 
-#### <font id="API" />movementBounds<font id="Type">: [GameBounds3 ](https://www.yuque.com/box3lab/api/qcs07pc87u5iyfn7)</font>{#movementBounds}
+#### <font id="API" />movementBounds<font id="Type">:[GameBounds3](/GameBounds3/)</font>{#movementBounds}
 > 默认值：new GameBounds3(new GameVector3(-50, -50, -50), new GameVector3(178, 178, 178))
 
 玩家的活动范围限制，如超出此范围，则传回出生点

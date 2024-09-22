@@ -5,7 +5,7 @@ import '/style.css'
 
 ### 属性
 
-#### <font id="API" />snowColor <font id="Type">: [GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e) </font> {#snowColor}
+#### <font id="API" />snowColor <font id="Type">: [GameRGBAColor](/GameRGBAColor/) </font> {#snowColor}
 > 默认值：GameRGBAColor(1, 1, 1, 1)
 
 雪花颜色。
@@ -41,7 +41,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" />snowSpinSpeed <font id="Type">: [GameVector3   ](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) </font>{#snowSpinSpeed}
+#### <font id="API" />snowSpinSpeed <font id="Type">: [GameVector3](/GameVector3/) </font>{#snowSpinSpeed}
 > 默认值：GameVector3(0, 0, 0)
 
 雪花自旋速度。

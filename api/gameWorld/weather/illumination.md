@@ -56,7 +56,7 @@
 ---
 
 
-#### <font id="API" />sunDirection :<font id="Type">:  [GameVector3   ](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font> {#sunDirection}
+#### <font id="API" />sunDirection :<font id="Type">:  [GameVector3](/GameVector3/)</font> {#sunDirection}
 > 默认值：GameVector3(0, -1, 0)
 
 太阳光照明方向。仅在光照模式为manual自定义模式时生效。
@@ -67,7 +67,7 @@
 ---
 
 
-#### <font id="API" />sunLight : <font id="Type">:  [GameRGBColor    ](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz)</font> {#sunLight}
+#### <font id="API" />sunLight : <font id="Type">:  [GameRGBColor](/GameRGBColor/)</font> {#sunLight}
 > 默认值：GameRGBColor(1000, 1000, 1000)
 
 太阳光颜色亮度。仅在光照模式为manual自定义模式时生效。
@@ -80,7 +80,7 @@
 ---
 
 
-#### <font id="API" />skyLeftLight <font id="Type">: [GameRGBColor   ](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz) </font>{#skyLeftLight}
+#### <font id="API" />skyLeftLight <font id="Type">: [GameRGBColor](/GameRGBColor/) </font>{#skyLeftLight}
 > 默认值：GameRGBColor(0, 0, 0)
 
 环境光在-X轴方向的亮度。仅在光照模式为manual自定义模式时生效。
@@ -93,7 +93,7 @@
 ---
 
 
-#### <font id="API" />skyRightLight  <font id="Type">: [GameRGBColor   ](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz) </font>{#skyRightLight}
+#### <font id="API" />skyRightLight  <font id="Type">: [GameRGBColor](/GameRGBColor/) </font>{#skyRightLight}
 > 默认值：GameRGBColor(0, 0, 0)
 
 环境光在+X轴方向的亮度。仅在光照模式为manual自定义模式时生效。
@@ -106,7 +106,7 @@
 ---
 
 
-#### <font id="API" />skyBottomLight <font id="Type">: [GameRGBColor    ](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz)</font>{#skyBottomLight}
+#### <font id="API" />skyBottomLight <font id="Type">: [GameRGBColor](/GameRGBColor/)</font>{#skyBottomLight}
 > 默认值：GameRGBColor(0, 0, 0)
 
 环境光在-Y轴方向的亮度。仅在光照模式为manual自定义模式时生效。
@@ -119,7 +119,7 @@
 ---
 
 
-#### <font id="API" />skyTopLight <font id="Type"> ：[GameRGBColor   ](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz) </font>{#skyTopLight}
+#### <font id="API" />skyTopLight <font id="Type"> ：[GameRGBColor](/GameRGBColor/) </font>{#skyTopLight}
 > 默认值：GameRGBColor(0, 0, 0)
 
 环境光在+X轴方向的亮度。仅在光照模式为manual自定义模式时生效。
@@ -131,7 +131,7 @@
 ---
 
 
-#### <font id="API" />skyFrontLight : <font id="Type">:  [GameRGBColor    ](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz)</font>{#skyFrontLight}
+#### <font id="API" />skyFrontLight : <font id="Type">:  [GameRGBColor](/GameRGBColor/)</font>{#skyFrontLight}
 > 默认值：GameRGBColor(0, 0, 0)
 
 环境光在-Z轴方向的亮度。仅在光照模式为manual自定义模式时生效。
@@ -144,7 +144,7 @@
 ---
 
 
-#### <font id="API" />skyBackLight <font id="Type">: [GameRGBColor   ](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz)</font> {#skyBackLight}
+#### <font id="API" />skyBackLight <font id="Type">: [GameRGBColor](/GameRGBColor/)</font> {#skyBackLight}
 > 默认值：GameRGBColor(0, 0, 0)
 
 环境光在+Z轴方向的亮度。仅在光照模式为manual自定义模式时生效。

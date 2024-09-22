@@ -4,7 +4,7 @@ import '/style.css'
 # 物理
 ## 属性
 
-#### <font id="API" /><font id="ReadOnly">只读</font>bounds<font id="Type">: [GameVector3 ](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#bounds}
+#### <font id="API" /><font id="ReadOnly">只读</font>bounds<font id="Type">: [GameVector3](/GameVector3/)</font>{#bounds}
 > 默认值：GameVector3(1, 1, 1)
 
 实体边界框的半径，沿着x/y/z方向，每帧都会重新计算
@@ -31,7 +31,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" />meshScale<font id="Type">: [GameVector3 ](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#meshScale}
+#### <font id="API" />meshScale<font id="Type">: [GameVector3](/GameVector3/)</font>{#meshScale}
 实体的缩放比例。
 
 > 定义于 [#L10757](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10757)
@@ -80,7 +80,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" />velocity<font id="Type">: [GameVector3 ](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#velocity}
+#### <font id="API" />velocity<font id="Type">: [GameVector3](/GameVector3/)</font>{#velocity}
 > 默认值：GameVector3(0, 0, 0)
 
 实体的速度。
@@ -101,7 +101,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" />contactForce<font id="Type">: [GameVector3 ](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#contactForce}
+#### <font id="API" />contactForce<font id="Type">: [GameVector3](/GameVector3/)</font>{#contactForce}
 > 默认值：GameVector3(0, 0, 0)
 
 实体受到的碰撞力。
@@ -110,7 +110,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" />entityContacts<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)[]</font>{#entityContacts}
+#### <font id="API" />entityContacts<font id="Type">: [GameVector3](/GameVector3/)[]</font>{#entityContacts}
 > 默认值：[]
 
 返回正在和玩家/实体发生碰撞的全部实体列表。
@@ -119,7 +119,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" />voxelContacts<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)[]</font>{#voxelContacts}
+#### <font id="API" />voxelContacts<font id="Type">: [GameVector3](/GameVector3/)[]</font>{#voxelContacts}
 > 默认值：[]
 
 返回正在和玩家/实体发生碰撞的全部方块列表。
@@ -128,7 +128,7 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" />fluidContacts<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)[]</font>{#fluidContacts}
+#### <font id="API" />fluidContacts<font id="Type">: [GameVector3](/GameVector3/)[]</font>{#fluidContacts}
 > 默认值：[]
 
 返回正在被玩家/实体触碰的全部液体方块列表。
