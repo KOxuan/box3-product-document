@@ -3,7 +3,7 @@ import '/style.css'
 </script>
 # RGBA颜色
 
-RGBA颜色在RGB颜色之外补充了一个alpha通道，用来表示颜色的透明度。
+RGBA颜色基于RGB颜色新增alpha通道，用来表示颜色的透明度。
 
 ## 构造函数
 

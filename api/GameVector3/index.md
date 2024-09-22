@@ -5,7 +5,7 @@ import '/style.css'
 # 三维向量
 三维向量是数学和物理学中非常重要的一个概念，它用于描述三维空间中的一个点相对于另一个点的位置变化，或者表示一个物体在三维空间中的速度、加速度、力等物理量的方向和大小。简单来说，三维向量是一个有三个分量的量，这些分量分别对应三维空间中的X轴、Y轴和Z轴。
 
-更多有关的数学知识，可以观看[3Blue1Brown的这些视频](https://www.bilibili.com/video/BV1ys411472E)。
+更多有关的数学知识，可以观看[3Blue1Brown相关视频](https://www.bilibili.com/video/BV1ys411472E)。
 ## 构造函数
 
 #### <font id="API" />GameVector3(<font id="Type">x: number, y: number, z: number</font>)<font id="Type">: GameVector3</font>{#GameVector3} 

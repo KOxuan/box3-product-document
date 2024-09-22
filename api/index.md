@@ -31,16 +31,23 @@
 
 - **GamePlayer** 是整个游戏世界的可由玩家自主控制的实体，玩家指的是进入游戏的用户，此接口可用定义游戏中的玩家属性、操作等等。玩家属于一种特殊的实体。
 
+## 💾[资产管理](/GameAssetListEntry/)
+- **GameAssetListEntry** 是控制游戏中的资产对象，用于获取游戏内模型、图片、音频等资产。
+- 可以通过**全局对象** `resources` 来使用它。
+
 ## 📈[数据存储](/GameDataStorage/)
 
 - **GameDataStorage** 代表数据存储空间的类，能控制单地图或组地图数据库，能够以键值对的形式存储数据，提供方法处理空间内键值对相关的操作。
 - 可以通过全局对象 `storage` 来使用它。
 
-## 🖼️用户界面
-- [【服务端】](/GameUI/server) | [【客户端】](/GameUI/client) 
-- **GameUI** 是管理游戏界面的对象，用于对玩家界面UI的操作。
-- 在`客户端脚本`中，可以通过全局对象 `ui`，`remoteChannel`，`input`，`navigator` ，`screenWidth` ，`screenHeight` 来使用它。
-- 在`服务端脚本`中，可以通过全局对象 `remoteChannel` 来使用它。
+## 🖼️[用户界面](/GameUI/index)
+- **GameUI** 是`客户端`管理游戏界面的对象，用于对玩家界面UI的操作。
+- 在`客户端脚本`中，可以通过全局对象 `ui`，`input`，`navigator` ，`screenWidth` ，`screenHeight` 来使用它。
+
+## 🔊游戏跨端通讯
+- [【服务端】](/RemoteChannel/Server/) | [【客户端】](/RemoteChannel/Client/) 
+- **RemoteChannel** 是管理`客户端`与`服务端`通讯的对象，用于对跨端传递信息的操作。
+- 可以通过全局对象 `remoteChannel` 来使用它。
 
 ## 🔗[数据请求](/GameHttpAPI/)
 
