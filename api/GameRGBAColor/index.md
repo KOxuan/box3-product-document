@@ -2,6 +2,9 @@
 import '/style.css'
 </script>
 # RGBA颜色
+
+RGBA颜色在RGB颜色之外补充了一个alpha通道，用来表示颜色的透明度。
+
 ## 构造函数
 
 #### <font id="API" />GameRGBAColor(<font id="Type">r: number, g: number, b: number, a: number</font>)<font id="Type">: GameRGBAColor</font>
