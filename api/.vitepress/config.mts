@@ -138,7 +138,7 @@ export default defineConfig({
             { text: '战斗与生命值', link: '/GamePlayer/fight' },
             { text: '按键与行动', link: '/GamePlayer/input' },
             { text: '对话与互动', link: '/GamePlayer/chat' },
-            { text: '挑转网站', link: '/GamePlayer/link' },
+            { text: '跳转网站', link: '/GamePlayer/link' },
             { text: '商城与投喂', link: '/GamePlayer/shopping' },
           ]
         }, {
