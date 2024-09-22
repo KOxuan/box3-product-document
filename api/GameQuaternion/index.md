@@ -1,0 +1,330 @@
+
+<script setup>
+import '/style.css'
+</script>
+# 四元数
+
+## 构造函数
+
+#### <font id="API" />GameQuaternion(<font id="Type">w: number,x: number, y: number, z: number</font>)<font id="Type">: GameQuaternion</font>
+实例化一个四元数对象
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| w | 是 | | number | w实部 |
+| x | 是 | | number | x虚部 |
+| y | 是 | | number | y虚部 |
+| z | 是 | | number | 
+
+> 定义于 [#L13263](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13263)
+
+
+## 属性
+
+#### <font id="API" />z<font id="Type">: number</font> 
+z实部
+
+---
+
+
+#### <font id="API" />x<font id="Type">: number</font> 
+x虚部
+
+---
+
+
+#### <font id="API" />y<font id="Type">: number</font>     
+y虚部
+
+---
+
+
+#### <font id="API" />z<font id="Type">: number</font>
+z虚部
+
+---
+
+
+## 方法
+
+#### <font id="API" />add(<font id="Type">v:GameQuaternion</font>)<font id="Type">: GameQuaternion</font>
+四元数加法
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| v | 是 | | GameQuate ||
+
+---
+
+
+#### <font id="API" />angle(<font id="Type">v:GameQuaternion</font>)<font id="Type">: number</font>
+得到两个四元数之间的角度
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| v | 是 | | GameQuate ||
+
+---
+
+#### <font id="API" />clone()<font id="Type">: GameQuaternion</font>
+克隆当前四元数
+
+---
+
+
+#### <font id="API" />copy(<font id="Type">v:GameQuaternion</font>)<font id="Type">: void</font>
+复制四元数到新的四元数上
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| v | 是 | | GameQuaternion | 四元数 |
+
+
+---
+### cross(<font id="Type">v:GameQuaternion</font>)<font id="Type">:GameQuaternion</font>
+
+四元数叉积
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| v | 是 | | GameQuaternion | 四元数 |
+
+
+---
+
+
+#### <font id="API" />div(<font id="Type">v:GameQuaternion</font>)<font id="Type">: number</font>
+四元数除法
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| v | 是 | | GameQuaternion | 四元数 |
+
+
+---
+
+
+#### <font id="API" />dot(<font id="Type">v:GameQuaternion</font>)<font id="Type">: number</font>
+四元数点积
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+|--- | --- | --- | --- | --- |
+| v | 是 | | GameQuaternion | 四元数 |
+
+
+---
+
+
+#### <font id="API" />equals(<font id="Type">v:GameQuaternion,tolerance: number</font>)<font id="Type">: boolean</font>
+ 两四元数的值在容差内是否近似相等
+
+**输入参数**
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+|--- | --- | --- | --- | --- |
+| v | 是 | | GameQuaternion | 四元数 |
+| tolerance | 是 | 0.0001 | number | 容差值 |
+
+
+---
+
+
+#### <font id="API" />inv()<font id="Type">: GameQuaternion</font>
+反转四元数
+
+---
+
+
+#### <font id="API" />slerp(<font id="Type">v:GameQuaternion,n: number</font>)<font id="Type">: GameQuaternion</font>
+四元数插值
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| v | 是 | | GameQuaternion | 目标四元数 |
+| n | 是 | | number | 插值百分比 |
+
+
+---
+
+
+#### <font id="API" />mag()<font id="Type">: number</font>
+得到该四元数的长度
+
+---
+
+
+#### <font id="API" />normalize()<font id="Type">: GameQuaternion</font>
+
+四元数归一化
+
+---
+
+
+#### <font id="API" />scale(<font id="Type">n:number</font>)<font id="Type">: GameQuaternion</font>
+四元数等比缩放
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| n | 是 | | number | 缩放值 |
+
+
+---
+
+
+#### <font id="API" />getAxisAngle(<font id="Type">_q:GameQuaternion</font>)<font id="Type">: {angle:number;axis:GameVector3}</font>
+获取四元数的旋转轴和旋转弧度
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| _q | 是 | | GameQuaternion | 四元数 |
+
+
+---
+
+
+#### <font id="API" />rotateX(<font id="Type">_rad: number</font>)<font id="Type">: GameQuaternion</font>
+四元数X虚部旋转
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| _rad | 是 | | number | 旋转弧度 |
+
+
+---
+
+
+#### <font id="API" />rotateY(<font id="Type">_rad: number</font>)<font id="Type">: GameQuaternion</font>
+四元数Y虚部旋转
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| _rad | 是 | | number | 旋转弧度 |
+
+
+---
+
+
+#### <font id="API" />rotateZ(<font id="Type">_rad: number</font>)<font id="Type">: GameQuaternion</font>
+四元数Z虚部旋转
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| _rad | 是 | | number | 旋转弧度 |
+
+
+---
+
+
+#### <font id="API" />set(<font id="Type">w: number ,x: number, y: number, z: number</font>)<font id="Type">: GameQuaternion</font>
+设置四元数值
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| w | 是 | | number | w实部 |
+| x | 是 | | number | x虚部 |
+| y | 是 | | number | y虚部 |
+| z | 是 | | number | z虚部 |
+
+
+---
+
+
+#### <font id="API" />sqrMag()<font id="Type">: number</font>
+得到四元数的平方长度
+
+---
+
+
+#### <font id="API" />sub(<font id="Type">v:GameQuaternion</font>)<font id="Type">: GameQuaternion</font>
+四元数相减
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| v | 是 | | GameQuaternion | 四元数 |
+
+
+---
+
+
+#### <font id="API" />mul(<font id="Type">v:GameQuaternion</font>)<font id="Type">: GameQuaternion</font>
+四元数相乘
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| v | 是 | | GameQuaternion | 四元数 |
+
+
+---
+
+
+#### <font id="API" />toString()<font id="Type">: string</font>
+四元数格式化的字符串
+
+
+### 静态方法
+
+#### <font id="API" />fromAxisAngle(<font id="Type">axis:GameVector3,rad:number</font>)<font id="Type">: GameQuaternion</font>
+根据旋转轴和旋转弧度计算四元数
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| axis | 是 | | GameVector3 | 三维向量 |
+| rad | 是 | | number | 旋转弧度 |
+
+
+---
+
+
+#### <font id="API" />fromEuler(<font id="Type">x:number,y:number,z:number</font>)<font id="Type">: GameQuaternion</font>
+根据欧拉角信息计算四元数，旋转顺序为 YZX，即先绕Y旋转，再绕Z，最后绕X旋转。
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| x | 是 | | number | x虚部 |
+| y | 是 | | number | y虚部 |
+| z | 是 | | number | z虚部 |
+
+
+---
+
+
+#### <font id="API" />rotationBetween(<font id="Type">a:GameVector3,b:GameVector3</font>)<font id="Type">: GameQuaternion</font>
+从两个向量计算并创建一个四元数。
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| a | 是 | | GameVector3 | 三维向量 |
+| b | 是 | | GameVector3 | 三维向量 |
+

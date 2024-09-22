@@ -5,7 +5,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" />querySelector(<font id="Type">selector:[GameSelectorString](./querySelectorEntity#GameSelectorString)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013) | null</font>{#querySelector}
+#### <font id="API" />querySelector(<font id="Type">selector:[GameSelectorString](./querySelectorEntity#GameSelectorString)</font>)<font id="Type">: [GameEntity](/GameEntity/) | null</font>{#querySelector}
 搜索满足条件的第一个实体。
 
 **输入参数**
@@ -39,7 +39,7 @@ world.onPlayerJoin(({ entity }) => {
 ---
 
 
-#### <font id="API" />querySelectorAll(<font id="Type">selector:[GameSelectorString](./querySelectorEntity#GameSelectorString)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[] </font> {#querySelectorAll}
+#### <font id="API" />querySelectorAll(<font id="Type">selector:[GameSelectorString](./querySelectorEntity#GameSelectorString)</font>)<font id="Type">: [GameEntity](/GameEntity/)[] </font> {#querySelectorAll}
 搜索满足条件的所有实体，返回一个列表。
 
 **输入参数**
@@ -83,7 +83,7 @@ world.onRelease(({ button }) => {
 ---
 
 
-#### <font id="API" />searchBox(<font id="Type">bounds:[GameBounds3](https://www.yuque.com/box3lab/api/qcs07pc87u5iyfn7)</font>) <font id="Type">: [GameEntity](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)[]</font>{#searchBox}
+#### <font id="API" />searchBox(<font id="Type">bounds:[GameBounds3](/GameBounds3/)</font>)<font id="Type">: [GameEntity](/GameEntity/)[]</font>{#searchBox}
 搜索指定范围中的全部实体
 
 **输入参数**
@@ -117,7 +117,7 @@ world.searchBox(bounds).forEach( (entityInBounds) => {
 ---
 
 
-#### <font id="API" />raycast(<font id="Type">origin:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v),direction:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v),options?:Partial<[GameRaycastOptions](./querySelectorEntity#GameRaycastOptions)></font>) <font id="Type">: [GameRaycastResult](./querySelectorEntity#GameRaycastResult)</font>{#raycast}
+#### <font id="API" />raycast(<font id="Type">origin:[GameVector3](/GameVector3/),direction:[GameVector3](/GameVector3/),options?:Partial<[GameRaycastOptions](./querySelectorEntity#GameRaycastOptions)></font>)<font id="Type">: [GameRaycastResult](./querySelectorEntity#GameRaycastResult)</font>{#raycast}
 射线检测，从 origin原点位置向 direction 方向投射一条隐形的射线，返回碰到的实体或方块。
 
 **输入参数**
@@ -126,7 +126,7 @@ world.searchBox(bounds).forEach( (entityInBounds) => {
 | --- | --- | --- | --- | --- |
 | origin | _是_ | | GameVector3 | 射线的起点 |
 | direction | _是_ | | GameVector3 | 射线的方向 |
-| options | | | `Partial<GameRaycastOptions>` | 选项配置参数 |
+| options | | | Partial‹GameRaycastOptions› | 选项配置参数 |
 
 **返回值**
 
@@ -176,7 +176,7 @@ const redBox = world.querySelector('.box .red');// 标签同时带有"box"和“
 ---
 
 
-#### <font id="API" />GameRaycastOptions {#GameRaycastOptions}
+#### <font id="API" />GameRaycastOptions{#GameRaycastOptions}
 进行射线检测的参数配置
 
 | **参数** | **类型** | **说明** |
@@ -192,19 +192,19 @@ const redBox = world.querySelector('.box .red');// 标签同时带有"box"和“
 ---
 
 
-#### <font id="API" />GameRaycastResult {#GameRaycastResult}
+#### <font id="API" />GameRaycastResult{#GameRaycastResult}
 射线检测(raycast)的结果，包含射线和所击中目标的信息。
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| origin | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 射线的起点 |
-| direction | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 射线的方向 |
+| origin | [GameVector3](/GameVector3/) | 射线的起点 |
+| direction | [GameVector3](/GameVector3/) | 射线的方向 |
 | distance | number | 射线穿越的距离 |
 | hit | boolean | 如果为真，则射线击中了目标 |
-| hitEntity | [GameEntity ](https://www.yuque.com/box3lab/api/crnsxu2gtymwx013)&#124; null | 射线所击中的实体 |
-| hitPosition | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 射线击中的位置 |
+| hitEntity | [GameEntity](/GameEntity/) &#124; null | 射线所击中的实体 |
+| hitPosition | [GameVector3](/GameVector3/) | 射线击中的位置 |
 | hitVoxel | number | 射线所击中的方块 id (如未击中方块，则为 0) |
-| voxelIndex | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 如果射线击中的是方块，则返回所击中方块的网格坐标。 |
-| normal | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 射线所击中平面的法向量 |
+| voxelIndex | [GameVector3](/GameVector3/) | 如果射线击中的是方块，则返回所击中方块的网格坐标。 |
+| normal | [GameVector3](/GameVector3/) | 射线所击中平面的法向量 |
 
 > 定义于 [#L12269](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12269)

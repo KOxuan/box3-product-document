@@ -4,14 +4,14 @@ import '/style.css'
 # 动画
 ### 方法
 
-#### <font id="API" /> animate(<font id="Type">keyframes:Partial<[GameWorldKeyframe](./animate#GameWorldKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](./animate#GameAnimationPlaybackConfig)></font>) <font id="Type">: [GameAnimation](https://www.yuque.com/box3lab/api/crd9b8smvgh8s0ek)</font>{#animate}
+#### <font id="API" />animate(<font id="Type">keyframes:Partial<[GameWorldKeyframe](./animate#GameWorldKeyframe)>[],playbackInfo?:Partial<[GameAnimationPlaybackConfig](./animate#GameAnimationPlaybackConfig)></font>)<font id="Type">: [GameAnimation](/GameAnimation/)</font>{#animate}
 创建一个关键帧动画
 
 **输入参数**
 
-| _**参数**_ | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| keyframes | _是_ | | Partial‹GameWorldKeyframe[]› | 关键帧的数据 |
+| keyframes | 是 | | Partial‹GameWorldKeyframe[]› | 关键帧的数据 |
 | playbackInfo | | | Partial‹GameAnimationPlaybackConfig› | 动画播放参数 |
 
 **返回值**
@@ -44,10 +44,51 @@ world.onPress(({ button }) => {
 ```
 :::
 
+---
+#### <font id="API" />getAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getAnimations}
+获取当前世界的所有已创建的动画
+
+
+**返回值**
+
+| **类型** | **说明** |
+| --- | --- |
+| GameAnimation[] | 创建出来的动画对象列表 |
+
+
+> 定义于 [#L9777](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9777)
+
+
+---
+#### <font id="API" />getEntityAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getEntityAnimations}
+获取实体的所有已创建的动画
+
+
+**返回值**
+
+| **类型** | **说明** |
+| --- | --- |
+| GameAnimation[] | 创建出来的动画对象列表 |
+
+
+> 定义于 [#L9778](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9778)
+---
+#### <font id="API" />getPlayerAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getPlayerAnimations}
+获取玩家的所有已创建的动画
+
+
+**返回值**
+
+| **类型** | **说明** |
+| --- | --- |
+| GameAnimation[] | 创建出来的动画对象列表 |
+
+
+> 定义于 [#L9779](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9779)
 
 ## 接口
 
-#### <font id="API" /> GameWorldKeyframe{#GameWorldKeyframe}
+#### <font id="API" />GameWorldKeyframe{#GameWorldKeyframe}
 World世界动画关键帧参数，可对World的大部分属性做动画效果，例如重力、雨、雾、雪、光照等等
 
 | **参数** | **类型** | **说明** |
@@ -58,19 +99,19 @@ World世界动画关键帧参数，可对World的大部分属性做动画效果�
 | gravity | number | 世界重力 |
 | airFriction | number | 空气阻力 |
 | maxFog | number | 最大雾量 |
-| fogColor | [GameRGBColor](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz) | 雾的颜色 |
+| fogColor | [GameRGBColor](/GameRGBColor/) | 雾的颜色 |
 | fogHeightFalloff | number | 雾衰减的速率 |
 | fogHeightOffset | number | 雾起始高度 |
 | fogStartDistance | number | 雾起始距离 |
 | fogUniformDensity | number | 雾均匀密度 |
-| rainColor | [GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e) | 雨的颜色 |
+| rainColor | [GameRGBAColor](/GameRGBAColor/) | 雨的颜色 |
 | rainDensity | number | 雨的密度 |
 | rainDirection | number | 雨的方向 |
 | rainInterference | number | 雨的扰动幅度 |
 | rainSizeHi | number | 雨滴的最大直径 |
 | rainSizeLo | number | 雨滴的最小直径 |
 | rainSpeed | number | 雨的速度 |
-| snowColor | [GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e) | 雪花颜色 |
+| snowColor | [GameRGBAColor](/GameRGBAColor/) | 雪花颜色 |
 | snowDensity | number | 雪花密度 |
 | snowFallSpeed | number | 雪花速度 |
 | snowSizeHi | number | 雪花最大直径 |
@@ -94,7 +135,7 @@ World世界动画关键帧参数，可对World的大部分属性做动画效果�
 ---
 
 
-#### <font id="API" /> GameAnimationPlaybackConfig{#GameAnimationPlaybackConfig}
+#### <font id="API" />GameAnimationPlaybackConfig{#GameAnimationPlaybackConfig}
 用于动画播放配置的参数组
 
 | **参数** | **类型** | **说明** |
@@ -111,7 +152,7 @@ World世界动画关键帧参数，可对World的大部分属性做动画效果�
 
 ## 枚举
 
-#### <font id="API" /> GameEasing{#GameEasing}
+#### <font id="API" />GameEasing{#GameEasing}
 动画的缓动效果
 
 | 属性 | 说明 |
@@ -130,7 +171,7 @@ World世界动画关键帧参数，可对World的大部分属性做动画效果�
 ---
 
 
-#### <font id="API" /> GameAnimationDirection{#GameAnimationDirection}
+#### <font id="API" />GameAnimationDirection{#GameAnimationDirection}
 **动画的缓动效果**
 
 | 属性 | 说明 |

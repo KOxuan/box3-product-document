@@ -4,7 +4,7 @@ import '/style.css'
 # 地图信息
 ## 属性
 
-#### <font id="API" /><font id="ReadOnly">只读</font> projectName <font id="Type">: string</font> {#projectName}
+#### <font id="API" /><font id="ReadOnly">只读</font>projectName<font id="Type">: string</font> {#projectName}
 > 默认值：当前地图名称
 
 本张地图名称，对应项目设置中的名称。
@@ -14,7 +14,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="ReadOnly">只读</font> currentTick <font id="Type">: number</font>   {#currentTick}
+#### <font id="API" /><font id="ReadOnly">只读</font>currentTick<font id="Type">: number</font>   {#currentTick}
 > 默认值：0
 
 世界当前的Tick计数。
@@ -24,7 +24,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" /><font id="ReadOnly">只读</font> url <font id="Type">: [URL](https://developer.mozilla.org/zh-CN/docs/Web/API/URL)</font>  {#url}
+#### <font id="API" /><font id="ReadOnly">只读</font>url<font id="Type">: [URL](https://developer.mozilla.org/zh-CN/docs/Web/API/URL)</font>{#url}
 > 默认值：当前地图链接
 
 获取当前地图所在的URL链接地址。
@@ -36,7 +36,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" /><font id="Event">事件</font> onTick(<font id="Type">handler:(event:[GameChatEvent](#jneYE))=>void</font>) <font id="Type">: [GameEventHandlerToken](https://www.yuque.com/box3lab/api/gll7mhwasgn9hoq0/edit)</font>  {#onTick}
+#### <font id="API" /><font id="Event">事件</font>onTick(<font id="Type">handler:(event:[GameChatEvent](/GameWorld/input#GameClickEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>  {#onTick}
 
 这是世界的计时事件，每64毫秒触发一次，Tick计数加1。
 
@@ -76,7 +76,7 @@ world.onPlayerJoin(({ entity }) => { // 每Tick的间隔向控制台输出提示
 
 ## 接口
 
-#### <font id="API" />GameTickEvent {#GameTickEvent}
+#### <font id="API" />GameTickEvent{#GameTickEvent}
 每一刻(tick)触发一次的事件
 
 | **参数** | **类型** | **说明** |

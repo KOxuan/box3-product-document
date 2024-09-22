@@ -79,10 +79,15 @@ declare class GameWorld {
 - [`testSelector`](./physics#testSelector) : 测试实体是否符合某个选择器的条件
 - [`sound`](./music#sound) : 播放一段声音，所有玩家都能听到
 - [`animate`](./animate#animate) : 创建一个关键帧动画
+- [`getAnimations`](./animate#getAnimations) : 获取当前世界所有已创建的动画
+- [`getEntityAnimations`](./animate#getEntityAnimations) : 获取实体所有已创建的动画
+- [`getPlayerAnimations`](./animate#getPlayerAnimations) : 获取玩家所有已创建的动画
 - [`teleport`](./teleport#teleport) : 地图组内传送能力，能够让玩家被传送到指定地图中
 
 ### 监听方法
 - [`onTick`](./mapInfo#onTick) : 这是世界的计时事件，每64毫秒触发一次，Tick计数加1
+- [`onEnter`](./mapZone#GameZone) : 当玩家进入该区域时触发
+- [`onLeave`](./mapZone#GameZone) : 当玩离开该区域时触发
 - [`onPlayerJoin`](./playerJL#onPlayerJoin) : 当玩家加入地图时触发
 - [`onPlayerLeave`](./playerJL#onPlayerLeave) : 当玩家离开地图时触发
 - [`onChat`](./chat/resident#onChat) : 当玩家在聊天窗口说话时触发
@@ -114,10 +119,13 @@ declare class GameWorld {
 - [`GameRaycastResult`](./querySelectorEntity#GameRaycastResult) : 射线检测的结果，包含射线和所击中目标的信息。
 - [`GameInteractEvent`](./input#GameInteractEvent) : 当实体互动时触发的事件
 - [`GameInputEvent`](./input#GameInputEvent) : 输入事件，在玩家按下或松开按钮时触发
+- [`GameClickEvent`](./input#GameClickEvent) : 游戏检查事件
 - [`GameDamageEvent`](./fight#GameDamageEvent) : 当实体收到伤害时触发的事件
 - [`GameDieEvent`](./fight#GameDieEvent) : 当实体死亡时触发的事件
 - [`GameRespawnEvent`](./fight#GameRespawnEvent) : 当实体复活时触发的事件
 - [`GameZoneConfig`](./mapZone#GameZoneConfig) : 用于区域的参数
+- [`GameZone`](./mapZone#GameZone) : 用于区域的配置
+- [`GameTriggerEvent`](./mapZone#GameTriggerEvent) : 当实体/玩家触发区域的事件
 - [`GameEntityContactEvent`](./physics#GameEntityContactEvent) : 当两个实体碰撞时触发的事件
 - [`GameVoxelContactEvent`](./physics#GameVoxelContactEvent) : 当实体触碰方块时触发的事件
 - [`GameFluidContactEvent`](./physics#GameFluidContactEvent) : 当实体进入或离开液体时触发的事件
