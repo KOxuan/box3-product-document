@@ -1,7 +1,7 @@
 # 脚本规范说明
 `客户端`和`服务端`脚本API和数据不互通，只能通过通讯模块传递信息。
 
-通讯方式：[【客户端】](/GameUI/remoteChannel/client)|[【服务端】](/GameUI/remoteChannel/server)
+通讯方式：[【客户端】](/RemoteChannel/Client/)|[【服务端】](/RemoteChannel/Server/)
 
 ## 服务端
 
