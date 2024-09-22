@@ -36,7 +36,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" /><font id="Event">事件</font>onTick(<font id="Type">handler:(event:[GameChatEvent](#jneYE))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>  {#onTick}
+#### <font id="API" /><font id="Event">事件</font>onTick(<font id="Type">handler:(event:[GameChatEvent](/GameWorld/input#GameClickEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>  {#onTick}
 
 这是世界的计时事件，每64毫秒触发一次，Tick计数加1。
 

@@ -141,20 +141,20 @@ entity.player.onChat(({ entity, message }) => {
 | --- | --- | --- |
 | type | [GameDialogType](./chat#GameDialogType) | **必选**，对话框的类型。 |
 | content | string | **必选**，对话框显示的正文内容。支持使用'\' 换行。 |
-| contentBackgroundColor | [GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e) | 对话框正文窗口的背景颜色。 |
-| contentTextColor | [GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e) | 对话框正文字体的颜色。 |
+| contentBackgroundColor | [GameRGBAColor](/GameRGBAColor/) | 对话框正文窗口的背景颜色。 |
+| contentTextColor | [GameRGBAColor](/GameRGBAColor/) | 对话框正文字体的颜色。 |
 | title | string | **必选**，对话框显示的标题名称。 |
-| titleBackgroundColor | [GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e) | 对话框显示的标题窗口背景颜色。 |
-| titleTextColor  | [GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e) | 对话框显示的标题字体颜色。 |
+| titleBackgroundColor | [GameRGBAColor](/GameRGBAColor/) | 对话框显示的标题窗口背景颜色。 |
+| titleTextColor  | [GameRGBAColor](/GameRGBAColor/) | 对话框显示的标题字体颜色。 |
 | hasArrow  | boolean | 如果接下来还有新的对话，在当前对话框中是否显示箭头提示。仅在**文本对话框**中使用。 |
 | confirmText | string | 仅在**输入对话框**使用。确认按钮显示的文本。如果为空，按钮文本默认显示为 '确认 &#124; Confirm'. |
 | options  | string[] | 仅在**选项对话框**中使用。在对话框中提供一些可供玩家选择的对话选项。 |
 | placeholder | string | 使相机镜头朝向指定实体或坐标的位置。 |
-| lookTarget  | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) &#124; [GameEntity](/GameEntity/) | 使相机镜头朝向指定实体或坐标的位置。 |
-| lookTargetOffset  | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 如果相机指定了注视目标，可以设置基于目标位置的偏移。 |
-| lookUp  | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 调整相机抬头向量。使画面上下左右颠倒。 |
-| lookEye  | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) &#124; [GameEntity](/GameEntity/) | 调整相机的位置。 |
-| lookEyeOffset  | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) |  如果相机位置指定了实体，可以设置基于目标位置的偏移。 |
+| lookTarget  | [GameVector3](/GameVector3/) &#124; [GameEntity](/GameEntity/) | 使相机镜头朝向指定实体或坐标的位置。 |
+| lookTargetOffset  | [GameVector3](/GameVector3/) | 如果相机指定了注视目标，可以设置基于目标位置的偏移。 |
+| lookUp  | [GameVector3](/GameVector3/) | 调整相机抬头向量。使画面上下左右颠倒。 |
+| lookEye  | [GameVector3](/GameVector3/) &#124; [GameEntity](/GameEntity/) | 调整相机的位置。 |
+| lookEyeOffset  | [GameVector3](/GameVector3/) |  如果相机位置指定了实体，可以设置基于目标位置的偏移。 |
 
 
 

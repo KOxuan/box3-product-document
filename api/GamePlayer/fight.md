@@ -13,7 +13,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" />spawnPoint<font id="Type">: [GameVector3 ](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#spawnPoint}
+#### <font id="API" />spawnPoint<font id="Type">: [GameVector3](/GameVector3/)</font>{#spawnPoint}
 > 默认值：new GameVector3(64, 140, 64)
 
 玩家复活后的出生点

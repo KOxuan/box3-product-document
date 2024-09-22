@@ -485,9 +485,9 @@ if (world.testSelector('#花朵', e1)) {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| axis | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 碰撞的分离轴，也就是碰撞后物体弹飞的方向 |
+| axis | [GameVector3](/GameVector3/) | 碰撞的分离轴，也就是碰撞后物体弹飞的方向 |
 | entity | [GameEntity](/GameEntity/) | 碰撞中的第一个实体 |
-| force | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 碰撞所产生的力 |
+| force | [GameVector3](/GameVector3/) | 碰撞所产生的力 |
 | other | [GameEntity](/GameEntity/) | 碰撞中的第二个实体 |
 | tick | number | 两个实体碰撞的时间 |
 
@@ -500,9 +500,9 @@ if (world.testSelector('#花朵', e1)) {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| axis | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 碰撞后物体弹飞的方向 |
+| axis | [GameVector3](/GameVector3/) | 碰撞后物体弹飞的方向 |
 | entity | [GameEntity](/GameEntity/) | 触碰方块的实体 |
-| force | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 碰撞所产生的力 |
+| force | [GameVector3](/GameVector3/) | 碰撞所产生的力 |
 | voxel | number | 被触碰的方块 id |
 | tick | number | 事件发生时间 |
 | x | number | 被触碰方块的 x 坐标 |
@@ -523,3 +523,4 @@ if (world.testSelector('#花朵', e1)) {
 | tick | number | 事件发生时间 |
 
 > 定义于 [#L12799](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12799)
+

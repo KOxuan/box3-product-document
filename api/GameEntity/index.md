@@ -95,7 +95,6 @@ declare class GameEntity {
 
 ## 接口
 - [`GameEntityKeyframe`](./animate#GameEntityKeyframe) : Entity实体动画关键帧参数
-- [`GameInteractEvent`](./input#GameInteractEvent) : 当实体互动时触发的事件
 - [`GameEntityContactEvent`](./input#GameEntityContactEvent) : 当两个实体碰撞时触发的事件
 - [`GameFluidContactEvent`](./input#GameFluidContactEvent) : 当实体进入或离开液体时触发的事件
 - [`GameVoxelContactEvent`](./input#GameVoxelContactEvent) : 当实体进入或离开液体时触发的事件当实体触碰方块时触发的事件

@@ -147,7 +147,7 @@ world.onRelease(({ button, position }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/) | 发起互动的实体 |
+| entity | [GamePlayerEntity](/GameEntity/isPlayer) | 发起互动的实体 |
 | targetEntity | [GameEntity](/GameEntity/) | 收到互动请求的实体 |
 | tick | number | 事件发生时间 |
 
@@ -162,17 +162,35 @@ world.onRelease(({ button, position }) => {
 
 | **参数** | **类型** | **说明** | **补充** |
 | --- | --- | --- | --- |
-| entity | [GameEntity](/GameEntity/) | 被点击的实体 / 按下按钮的玩家 | **onClick()前，onPress()onRelease()后** |
+| entity | [GamePlayerEntity](/GameEntity/isPlayer) | 被点击的实体 / 按下按钮的玩家 | **onClick()前，onPress()onRelease()后** |
 | clicker | [GameEntity](/GameEntity/) | 发起点击事件的玩家 | **onPress()onRelease()不可用** |
 | button | [GameButtonType](./input#gamebuttontype) | 点击的按钮，ACTION0 = 左键，ACTION1 = 右键 | |
 | distance | number | 玩家到被点击实体的距离 | **onPress()onRelease()不可用** |
-| clickerPosition | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 点击鼠标的瞬间玩家所在位置 | **onPress()onRelease()不可用** |
+| clickerPosition | [GameVector3](/GameVector3/) | 点击鼠标的瞬间玩家所在位置 | **onPress()onRelease()不可用** |
 | raycast | [GameRaycastResult](./querySelectorEntity#gameraycastresult) | 按下按钮瞬间，从玩家视角投射的射线检测结果 | |
 | tick | number | 事件发生时间 | |
 | position | number | 按下按钮瞬间，玩家的位置 | **onClick()不可用** |
 | pressed | boolean | 是否按下了按钮。若为 true，则为按下了按钮。 | **onClick()不可用** |
 
+> 定义于 [#L12959](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12959)
 
+---
+
+#### <font id="API" />GameClickEvent{#GameClickEvent}
+游戏检查事件
+
+| **参数** | **类型** | **说明** |
+| --- | --- | --- |
+| entity | [GameEntity](/GameEntity/) | 被点击的实体 |
+| clicker | [GamePlayerEntity](/GameEntity/isPlayer) | 发起点击事件的实体 |
+| tick | number | 事件发生时间 |
+| button | ACTION0 = 左键，ACTION1 = 右键 | 按下的按钮 |
+| distance |  number | 玩家到被点击实体的距离 |
+| clickerPosition |  [GameVector3](/GameVector3/) | 点击鼠标的瞬间玩家所在位置  |
+| raycast |  [GameRaycastResult](./querySelectorEntity#gameraycastresult) | 按下按钮瞬间，从玩家视角投射的射线检测结果 |
+
+
+> 定义于 [#L13013](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13013)
 
 ## 枚举
 

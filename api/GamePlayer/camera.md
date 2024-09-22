@@ -22,7 +22,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" />cameraPosition<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#cameraPosition}
+#### <font id="API" />cameraPosition<font id="Type">: [GameVector3](/GameVector3/)</font>{#cameraPosition}
 > 默认值：GameVector3(0, 0, 0)
 
 固定视角(FIXED)和相对视角(RELATIVE)下，摄像机本身所处的位置
@@ -30,14 +30,14 @@ import '/style.css'
 > 定义于 [#L11848](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11848)
 ---
 
-#### <font id="API" />cameraTarget<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#cameraTarget}
+#### <font id="API" />cameraTarget<font id="Type">: [GameVector3](/GameVector3/)</font>{#cameraTarget}
 > 默认值：GameVector3(0, 0, 0)
 
 固定视角(FIXED)和相对视角(RELATIVE)下，摄像机看向的目标点
 
 > 定义于 [#L11838](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11838)
 ---
-#### <font id="API" />cameraUp<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#cameraUp}
+#### <font id="API" />cameraUp<font id="Type">: [GameVector3](/GameVector3/)</font>{#cameraUp}
 > 默认值：GameVector3(0, 1, 0)
 
 固定视角(FIXED)和相对视角(RELATIVE)下，摄像机镜头向上的矢量
@@ -73,7 +73,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" />freezedForwardDirection<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | null</font>{#freezedForwardDirection}
+#### <font id="API" />freezedForwardDirection<font id="Type">: [GameVector3](/GameVector3/) | null</font>{#freezedForwardDirection}
 > 默认值：null
 
 如果不为null，眼睛看向指定方向且锁定左右旋转，只可以上下移动。

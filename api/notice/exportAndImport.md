@@ -1,4 +1,7 @@
-# 多文件导入导出方式
+# 脚本规范说明
+`客户端`和`服务端`脚本API和数据不互通，只能通过通讯模块传递信息。
+
+通讯方式：[【客户端】](/GameUI/remoteChannel/client)|[【服务端】](/GameUI/remoteChannel/server)
 
 ## 服务端
 

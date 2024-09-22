@@ -15,7 +15,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" />fogColor <font id="Type">: [GameRGBColor](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz)</font> {#fogColor}
+#### <font id="API" />fogColor <font id="Type">: [GameRGBColor](/GameRGBColor/)</font> {#fogColor}
 > 默认值：GameRGBColor(1, 1, 1)
 
 雾的颜色。

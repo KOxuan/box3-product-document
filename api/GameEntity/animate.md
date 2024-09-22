@@ -85,12 +85,12 @@ Entity实体动画关键帧参数，可对Entity除音效外的大部分属性�
 | duration | number | 播放时长 |
 | easeIn | [GameEasing](/GameWorld/animate#GameEasing) | 缓入效果 |
 | easeOut | [GameEasing](/GameWorld/animate#GameEasing) | 缓出效果 |
-| velocity | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 实体朝向某个方向运动的作用力 |
+| velocity | [GameVector3](/GameVector3/) | 实体朝向某个方向运动的作用力 |
 | collides | boolean | 实体是否可碰撞 |
 | mesh | string | mesh决定了实体的外形。'mesh/*.vb' |
-| meshColor | [GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e) | 实体的颜色 |
-| meshScale | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 实体的缩放比例 |
-| meshOrientation | [GameQuaternion](https://www.yuque.com/box3lab/api/fnpgxl0r4wrgl3rg) | 实体的旋转角度 |
+| meshColor | [GameRGBAColor](/GameRGBAColor/) | 实体的颜色 |
+| meshScale | [GameVector3](/GameVector3/) | 实体的缩放比例 |
+| meshOrientation | [GameQuaternion](/GameQuaternion/) | 实体的旋转角度 |
 | meshMetalness | number | 实体的金属感 |
 | meshEmissive | number | 实体的发光度 |
 | meshShininess | number | 实体的反光度 |
@@ -99,3 +99,4 @@ Entity实体动画关键帧参数，可对Entity除音效外的大部分属性�
 | mass | number | 实体质量 |
 | friction | number | 实体的粘性(0 = 滑，1 = 粘) |
 
+> 定义于 [#L10541](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10541)

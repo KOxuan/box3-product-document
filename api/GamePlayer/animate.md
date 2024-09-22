@@ -87,12 +87,12 @@ Player玩家动画关键帧参数，可对Player的大部分属性做动画效�
 | easeIn | [GameEasing](/GameWorld/animate#GameEasing) | 缓入效果 |
 | easeOut | [GameEasing](/GameWorld/animate#GameEasing) | 缓出效果 |
 | cameraEntity | [GameEntity](/GameEntity/) | 在第一人称视角(FPS)或第三人称跟随视角(FOLLOW)下，玩家视角所跟随的实体 |
-| cameraMode | [GameCameraMode](https://www.yuque.com/box3lab/api/zombb5wu40fet60k#TzBdh) | 视角模式 |
-| cameraPosition | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 固定视角(FIXED)下，镜头的眼睛位置 |
-| cameraTarget | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 固定视角(FIXED)下镜头所朝向的目标点 |
-| cameraUp | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 固定视角(FIXED)下，镜头向上的矢量 |
-| scale | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 玩家的缩放比例 |
-| color | [GameRGBColor](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz) | 玩家的颜色 |
+| cameraMode | [GameCameraMode](/GamePlayer/camera#GameCameraMode) | 视角模式 |
+| cameraPosition | [GameVector3](/GameVector3/) | 固定视角(FIXED)下，镜头的眼睛位置 |
+| cameraTarget | [GameVector3](/GameVector3/) | 固定视角(FIXED)下镜头所朝向的目标点 |
+| cameraUp | [GameVector3](/GameVector3/) | 固定视角(FIXED)下，镜头向上的矢量 |
+| scale | [GameVector3](/GameVector3/) | 玩家的缩放比例 |
+| color | [GameRGBColor](/GameRGBColor/) | 玩家的颜色 |
 | colorLUT | string | 用于渲染玩家所见游戏世界的色调 |
 | invisible | boolean | 玩家是否隐身 |
 | emissive | number | 玩家的发光度 |
