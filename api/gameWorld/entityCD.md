@@ -130,13 +130,13 @@ world.onEntityDestroy(({ entity }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| position | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 实体的位置 |
-| velocity | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 实体朝向某个方向运动的作用力 |
+| position | [GameVector3](/GameVector3/) | 实体的位置 |
+| velocity | [GameVector3](/GameVector3/) | 实体朝向某个方向运动的作用力 |
 | collides | boolean | 实体是否可碰撞 |
 | mesh | string | mesh决定了实体的外形。'mesh/*.vb' |
-| meshColor | [GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e) | 实体的颜色 |
-| meshScale | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 实体的缩放比例 |
-| meshOrientation | [GameQuaternion](https://www.yuque.com/box3lab/api/fnpgxl0r4wrgl3rg) | 实体的旋转角度 |
+| meshColor | [GameRGBAColor](/GameRGBAColor/) | 实体的颜色 |
+| meshScale | [GameVector3](/GameVector3/) | 实体的缩放比例 |
+| meshOrientation | [GameQuaternion](/GameQuaternion/) | 实体的旋转角度 |
 | meshMetalness | number | 实体的金属感 |
 | meshEmissive | number | 实体的发光度 |
 | meshShininess | number | 实体的反光度 |
@@ -148,7 +148,7 @@ world.onEntityDestroy(({ entity }) => {
 | enableInteract | boolean | 允许实体进行互动 |
 | interactRadius | number | 进入实体互动的范围。范围越小，需更靠近。 |
 | interactHint | string | 进入实体互动范围时，实体身上出现的提示文本 |
-| interactColor | [GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e) | 进入实体互动范围时，提示文本的字体颜色 |
+| interactColor | [GameRGBAColor](/GameRGBAColor/) | 进入实体互动范围时，提示文本的字体颜色 |
 | particleRate | number | 实体每秒产生粒子的数量 |
 | particleRateSpread | number | 增加实体每秒产生粒子数量的随机性 |
 | particleLimit | number | 实体可产生粒子总数的上限 |
@@ -156,16 +156,16 @@ world.onEntityDestroy(({ entity }) => {
 | particleLifetimeSpread | number | 增加实体所产生粒子存活时间的随机性 |
 | particleSize | number[] | 实体所产生粒子的大小变化 |
 | particleSizeSpread | number | 增加实体所产生粒子大小的随机性 |
-| particleColor | [GameRGBColor](https://www.yuque.com/box3lab/api/hahez5lgb10y38cz)[] | 实体所产生粒子的颜色变化 |
-| particleVelocity | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 实体所产生粒子的初始速度 |
-| particleVelocitySpread | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 增加实体所产生粒子初始速度的随机性 |
+| particleColor | [GameRGBColor](/GameRGBColor/)[] | 实体所产生粒子的颜色变化 |
+| particleVelocity | [GameVector3](/GameVector3/) | 实体所产生粒子的初始速度 |
+| particleVelocitySpread | [GameVector3](/GameVector3/) | 增加实体所产生粒子初始速度的随机性 |
 | particleDamping | number | 实体所产生粒子的阻尼系数 |
-| particleAcceleration | [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v) | 实体所产生粒子的加速度 |
+| particleAcceleration | [GameVector3](/GameVector3/) | 实体所产生粒子的加速度 |
 | particleNoise | number | 实体所产生粒子摆动的最大幅度 |
 | particleNoiseFrequency | number | 实体所产生粒子摆动的频率 |
-| chatSound | [GameSoundEffect](https://www.yuque.com/box3lab/api/gm9rzlrl95wryhs8#Oby5f) | 实体触发说话事件时播放的音效 |
-| interactSound | [GameSoundEffect](https://www.yuque.com/box3lab/api/gm9rzlrl95wryhs8#Oby5f) | 实体触发互动事件时播放的音效 |
-| hurtSound | [GameSoundEffect](https://www.yuque.com/box3lab/api/gm9rzlrl95wryhs8#Oby5f) | 实体触发受伤事件时播放的音效 |
-| dieSound | [GameSoundEffect](https://www.yuque.com/box3lab/api/gm9rzlrl95wryhs8#Oby5f) | 实体触发死亡事件时播放的音效 |
+| chatSound | [GameSoundEffect](/GameWorld/music#GameSoundEffect) | 实体触发说话事件时播放的音效 |
+| interactSound | [GameSoundEffect](/GameWorld/music#GameSoundEffect) | 实体触发互动事件时播放的音效 |
+| hurtSound | [GameSoundEffect](/GameWorld/music#GameSoundEffect) | 实体触发受伤事件时播放的音效 |
+| dieSound | [GameSoundEffect](/GameWorld/music#GameSoundEffect) | 实体触发死亡事件时播放的音效 |
 
 > 定义于 [#L10493](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10493)

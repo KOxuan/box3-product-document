@@ -144,7 +144,7 @@ world.onPlayerJoin(({ entity }) => {
 ---
 
 
-#### <font id="API" />particleColor<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)[]</font>{#particleColor}
+#### <font id="API" />particleColor<font id="Type">: [GameVector3](/GameVector3/)[]</font>{#particleColor}
 > 默认值：[ new GameRGBColor(1,1,1), new GameRGBColor(1,1,1), new GameRGBColor(1,1,1), new GameRGBColor(1,1,1), new GameRGBColor(1,1,1) ]
 
 类似 particleSize，该属性的值可以是一个长度为0至5的数组，数组里的每个值分别指定了粒子在各个阶段的颜色。类似地，可以通过该属性使粒子具有颜色渐变的效果
@@ -175,7 +175,7 @@ world.onPlayerJoin(({ entity }) => {
 ---
 
 
-#### <font id="API" />particleVelocity<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#particleVelocity}
+#### <font id="API" />particleVelocity<font id="Type">: [GameVector3](/GameVector3/)</font>{#particleVelocity}
 > 默认值：GameVector3(0, 0, 0)
 
 该实体产生的所有粒子的初始速度，如果将该属性设为new GameVector3(x, y, z)，x，y，z三个值分别指定粒子在对应三个方向上的速率
@@ -198,7 +198,7 @@ world.onPlayerJoin(({ entity }) => {
 ---
 
 
-#### <font id="API" />particleVelocitySpread<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#particleVelocitySpread}
+#### <font id="API" />particleVelocitySpread<font id="Type">: [GameVector3](/GameVector3/)</font>{#particleVelocitySpread}
 > 默认值：GameVector3(0, 0, 0)
 
 增加该实体产生的所有粒子初始速度的不确定性，如果将该属性设为new GameVector3(sx, sy, sz)，每产生一个粒子，会基于这三个值分别产生一个随机值加到 x/y/z 三个方向所对应的速率上。通过设定这个属性，可以使粒子具有向随机方向运动的效果
@@ -249,7 +249,7 @@ world.onPlayerJoin(({ entity }) => {
 ---
 
 
-#### <font id="API" />particleAcceleration<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#particleAcceleration}
+#### <font id="API" />particleAcceleration<font id="Type">: [GameVector3](/GameVector3/)</font>{#particleAcceleration}
 > 默认值：GameVector3(0, 0, 0)
 
 该实体所产生粒子的加速度

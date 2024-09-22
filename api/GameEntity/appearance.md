@@ -32,7 +32,7 @@ world.onPlayerJoin(async({ entity }) => {
 ---
 
 
-#### <font id="API" />position<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#position} 
+#### <font id="API" />position<font id="Type">: [GameVector3](/GameVector3/)</font>{#position} 
 
 实体的位置。
 
@@ -52,7 +52,7 @@ world.querySelectorAll('*').forEach((e) => {
 ---
 
 
-#### <font id="API" />meshOrientation<font id="Type">: [GameQuaternion ](https://www.yuque.com/box3lab/api/fnpgxl0r4wrgl3rg)</font>{#meshOrientation} 
+#### <font id="API" />meshOrientation<font id="Type">: [GameQuaternion](/GameQuaternion/)</font>{#meshOrientation} 
 
 实体的旋转角度。
 
@@ -61,7 +61,7 @@ world.querySelectorAll('*').forEach((e) => {
 ---
 
 
-#### <font id="API" />meshScale<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#meshScale} 
+#### <font id="API" />meshScale<font id="Type">: [GameVector3](/GameVector3/)</font>{#meshScale} 
 
 实体的缩放比例。
 
@@ -70,7 +70,7 @@ world.querySelectorAll('*').forEach((e) => {
 ---
 
 
-#### <font id="API" />meshColor<font id="Type">: [GameRGBAColor](https://www.yuque.com/box3lab/api/hlidmzg26mskni2e)</font>{#meshColor} 
+#### <font id="API" />meshColor<font id="Type">: [GameRGBAColor](/GameRGBAColor/)</font>{#meshColor} 
 
 实体的颜色。
 
@@ -121,7 +121,7 @@ world.querySelectorAll('*').forEach((e) => {
 ---
 
 
-#### <font id="API" />meshOffset<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#meshOffset} 
+#### <font id="API" />meshOffset<font id="Type">: [GameVector3](/GameVector3/)</font>{#meshOffset} 
 > 默认值：GameVector3(0, 0, 0)
 
 实体的位移。
@@ -130,7 +130,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 ## 方法
 
-#### <font id="API" />lookAt(<font id="Type">targetPosition:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v),meshFacing?:"X" | "Y" | "Z",up?:[GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>)<font id="Type">: void</font>{#lookAt} 
+#### <font id="API" />lookAt(<font id="Type">targetPosition:[GameVector3](/GameVector3/),meshFacing?:"X" | "Y" | "Z",up?:[GameVector3](/GameVector3/)</font>)<font id="Type">: void</font>{#lookAt} 
 
 将实体旋转至面向指定位置的方向。
 

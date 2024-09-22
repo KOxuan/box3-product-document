@@ -37,26 +37,32 @@
 - 可以通过全局对象 `storage` 来使用它。
 
 ## 🖼️用户界面
-
-- **GameUi** 是管理游戏界面的对象，用于对玩家界面UI的操作。
-- 在`客户端脚本`中，可以通过全局对象 `ui`，`remoteChannel`，`input` 来使用它。
+- [【服务端】](/GameUI/server) | [【客户端】](/GameUI/client) 
+- **GameUI** 是管理游戏界面的对象，用于对玩家界面UI的操作。
+- 在`客户端脚本`中，可以通过全局对象 `ui`，`remoteChannel`，`input`，`navigator` ，`screenWidth` ，`screenHeight` 来使用它。
 - 在`服务端脚本`中，可以通过全局对象 `remoteChannel` 来使用它。
 
-## 🔗数据请求
+## 🔗[数据请求](/GameHttpAPI/)
 
 - **GameHttpAPI** 是可以链接外部网站数据的对象，用于对接第三方平台接口的操作。
 - 可以通过全局对象 `http` 来使用它。
 
-## 🗣️实时语音通讯
+## 🗣️[实时语音通讯](/GameRTC/)
 
-- **注意**：此API是实验性的，因此，在使用时存在较高的风险，可能导致你的地图遭受不可逆的损坏。为了确保数据安全，我们强烈建议你在独立的新地图上进行测试，并务必保持谨慎的使用态度。
 - **GameRTC** 是实时通讯技术，用于与其他游戏玩家语音交流的操作。
 - 可以通过全局对象 `rtc` 来使用它。
 
-## 🟰数学
+## 🟰服务端数学
 
-- **三维向量**
-- **三维空间**
-- **四元数**
-- **RGBA颜色**
-- **RGB颜色**
+- [**三维向量**](/GameVector3/)
+- [**三维空间**](/GameBounds3/)
+- [**四元数**](/GameQuaternion/)
+- [**RGB颜色**](/GameRGBColor/)
+- [**RGBA颜色**](/GameRGBAColor/)
+
+## 🟰客户端数学
+
+- [**图像映射中区域的坐标**](/GameUI/maths/Coord2)
+- [**UI缩放**](/GameUI/maths/UiScale)
+- [**三维向量**](/GameUI/maths/Vec3)
+- [**二维向量**](/GameUI/maths/Vec2)

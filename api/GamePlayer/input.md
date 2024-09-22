@@ -104,7 +104,7 @@ import '/style.css'
 ---
 
 
-#### <font id="API" />facingDirection<font id="Type">: [GameVector3](https://www.yuque.com/box3lab/api/sug8utrs043aep5v)</font>{#facingDirection}
+#### <font id="API" />facingDirection<font id="Type">: [GameVector3](/GameVector3/)</font>{#facingDirection}
 > 默认值：GameVector3(1, 0, 0)
 
 玩家朝向

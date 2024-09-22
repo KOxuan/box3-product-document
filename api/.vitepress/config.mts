@@ -17,9 +17,10 @@ export default defineConfig({
     },
     sidebar: [{
       text: '编写须知',
-      collapsed: true,
+      collapsed: false,
       items: [
-        { text: '多文件互导方式', link: '/notice/exportAndImport' },
+        { text: '导读页', link: '/' },
+        { text: '脚本规范说明', link: '/notice/exportAndImport' },
         { text: '事件函数与异步处理机制', link: '/notice/eventDiff' },
       ]
     }, {
@@ -141,10 +142,89 @@ export default defineConfig({
             { text: '获取数据空间', link: '/GameDataStorage/getSpace' },
             { text: '操作数据', link: '/GameDataStorage/setSpace' },
           ]
+        }, {
+          text: '🖼️游戏用户界面',
+          link: '/GameUI/server',
+          collapsed: false,
+          items: [
+            { text: '通信', link: '/GameUI/remoteChannel/server' },
+          ]
+        }, {
+          text: '🔗游戏外部数据请求',
+          link: '/GameHttpAPI/index',
+          collapsed: false,
+          items: [
+            { text: '请求', link: '/GameHttpAPI/request' },
+            { text: '响应', link: '/GameHttpAPI/response' },
+          ]
+        }, {
+          text: '🗣️游戏实时语音通讯',
+          link: '/GameRTC/index',
+          collapsed: false,
+          items: [
+            { text: '新建通道', link: '/GameRTC/create' },
+            { text: '操作', link: '/GameRTC/operate' },
+          ]
+        },
+        {
+          text: '🟰游戏数学',
+          collapsed: false,
+          items: [
+            { text: '三维向量', link: '/GameVector3/index' },
+            { text: '三维空间', link: '/GameBounds3/index' },
+            { text: '四元数', link: '/GameQuaternion/index' },
+            { text: 'RGB颜色', link: '/GameRGBColor/index' },
+            { text: 'RGBA颜色', link: '/GameRGBAColor/index' },
+          ]
         },
         { text: '音乐对象', link: '/Sound/' },
         { text: '动画对象', link: '/GameAnimation/' },
         { text: '事件监听', link: '/GameEventHandlerToken/' },
+      ]
+    },   {
+      text: '客户端脚本',
+      collapsed: false,
+      items: [
+        {
+          text: '🖼️游戏用户界面',
+          link: '/GameUI/client',
+          collapsed: false,
+          items: [
+            {
+              text: '🔱UI元素',
+              collapsed: false,
+              items: [
+                { text: 'UI父类', link: '/GameUI/UiNode' },
+                { text: 'UI屏幕', link: '/GameUI/UiScreen' },
+                { text: 'UI可渲染基类', link: '/GameUI/UiRenderable' },
+                {
+                  text: '🔱界面可见元素',
+                  collapsed: false,
+                  items: [
+                    { text: '框架', link: '/GameUI/node/UiBox' },
+                    { text: '图片', link: '/GameUI/node/UiImage' },
+                    { text: '文字', link: '/GameUI/node/UiText' },
+                    { text: '输入', link: '/GameUI/node/UiInput' },
+                  ]
+                },
+              ]
+            },
+            { text: '导航器', link: '/GameUI/navigator' },
+            { text: '通信', link: '/GameUI/remoteChannel/client' },
+            { text: '监听输入事件', link: '/GameUI/input' },
+            { text: '事件监听处理', link: '/GameUI/UiEvent' },
+            {
+              text: '🟰游戏数学',
+              collapsed: false,
+              items: [
+                { text: '图像映射中区域的坐标', link: '/GameUI/maths/Coord2' },
+                { text: 'UI缩放', link: '/GameUI/maths/UiScale' },
+                { text: '三维向量', link: '/GameUI/maths/Vec3' },
+                { text: '二维向量', link: '/GameUI/maths/Vec2' },
+              ]
+            },
+          ]
+        }, 
       ]
     },
     ],
