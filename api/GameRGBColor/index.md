@@ -2,6 +2,9 @@
 import '/style.css'
 </script>
 # RGB颜色
+
+RGB颜色是计算机中表示颜色的常用方法，分别由红、绿、蓝三个颜色通道组成，每个颜色通道的值为0-1之间的浮点数，0表示无颜色，1表示纯色。例如，(1, 0, 0) 表示红色，(1, 1, 0) 表示黄色。
+
 ## 构造函数
 
 #### <font id="API" />GameRGBColor(<font id="Type">r: number, g: number, b: number</font>)<font id="Type">: GameRGBColor</font>
