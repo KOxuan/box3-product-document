@@ -90,14 +90,14 @@ setInterval(() => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameInputEvent](/GameWorld/input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onClick}
+#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameClickEvent](/GameWorld/input#GameClickEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onClick}
 当玩家用鼠标点击实体时触发
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到鼠标点击时的处理函数 |
+| handler | 是 | | function | 监听到鼠标点击时的处理函数 |
 
 > 定义于 [#L10645](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10645)
 
@@ -111,7 +111,7 @@ setInterval(() => {
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到互动时的处理函数 |
+| handler | 是 | | function | 监听到互动时的处理函数 |
 
 > 定义于 [#L10687](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10687)
 
@@ -125,7 +125,7 @@ setInterval(() => {
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到碰到另外的实体的处理函数 |
+| handler | 是 | | function | 监听到碰到另外的实体的处理函数 |
 
 > 定义于 [#L10651](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10651)
 
@@ -139,7 +139,7 @@ setInterval(() => {
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到停止碰到另外的实体的处理函数 |
+| handler | 是 | | function | 监听到停止碰到另外的实体的处理函数 |
 
 > 定义于 [#L10657](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10657)
 
@@ -153,7 +153,7 @@ setInterval(() => {
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到进入液体的实体的处理函数 |
+| handler | 是 | | function | 监听到进入液体的实体的处理函数 |
 
 > 定义于 [#L10675](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10675)
 
@@ -167,7 +167,7 @@ setInterval(() => {
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到离开液体的实体的处理函数 |
+| handler | 是 | | function | 监听到离开液体的实体的处理函数 |
 
 > 定义于 [#L10681](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10681)
 
@@ -181,7 +181,7 @@ setInterval(() => {
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到触碰方块的实体的处理函数 |
+| handler | 是 | | function | 监听到触碰方块的实体的处理函数 |
 
 > 定义于 [#L10663](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10663)
 
@@ -195,7 +195,7 @@ setInterval(() => {
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到停止触碰方块的实体的处理函数 |
+| handler | 是 | | function | 监听到停止触碰方块的实体的处理函数 |
 
 > 定义于 [#L10669](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10669)
 

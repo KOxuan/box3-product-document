@@ -11,7 +11,7 @@ import '/style.css'
 ## 属性
 
 #### <font id="API" /><font id="ReadOnly">只读</font>anchor<font id="Type">: [Vec2](/GameUI/maths/Vec2)</font>   {#anchor}
-> 默认值：`{x:0,y:0}`
+> 默认值：{}
 
 节点的锚点，用于确定节点的位置。
 
@@ -31,7 +31,7 @@ import '/style.css'
 
 
 #### <font id="API" /><font id="ReadOnly">只读</font>backgroundColor<font id="Type">: [Vec3](/GameUI/maths/Vec3)</font>   {#backgroundColor}
-> 默认值：#FFFFFF
+> 默认值：{}
 
 节点的背景颜色。
 
@@ -41,7 +41,7 @@ import '/style.css'
 
 
 #### <font id="API" />backgroundOpacity<font id="Type">: number</font>{#backgroundOpacity}
-> 默认值：100
+> 默认值：1
 
 节点的背景透明度。
 
@@ -101,48 +101,6 @@ import '/style.css'
 > 定义于 [#L145](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L145)
 
 
-### 事件
-
-#### <font id="API" />pointerdown<font id="Type">: [EventEmitter](/GameUI/UiEvent)‹events‹this››</font>   {#pointerdown}
-
-类似 Web 的 pointerdown 事件，会受到 `pointerEventBehavior` 的影响。
-
-> 定义于 [#L108](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L108)
-
----
-
-
-#### <font id="API" />pointerup<font id="Type">: [EventEmitter](/GameUI/UiEvent)‹events‹this››</font>   {#pointerup}
-类似 Web 的 pointerup 事件，会受到 `pointerEventBehavior` 的影响。
-
-> 定义于 [#L109](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L109)
-
-
-```javascript
-const img = UiImage.create(); // 静态方法，直接通过类上面的方法来使用。
-
-//当监听到鼠标按下该图片元素时
-img.events.add('pointerdown',(UiImage) => {
-    //xxx
-})
-
-//当监听到鼠标抬起该图片元素时
-img.events.add('pointerup', (UiImage) => {
-    //xxx
-})
-```
----
-```javascript
-//当监听到鼠标按下任意元素时
-input.onPointerDown.sub(({target}) => {
-  //xxx
-});
-
-//当监听到鼠标抬起任意元素时
-input.onPointerUp.sub(({target}) => {
-  //xxx
-});
-```
 
 ## 枚举
 
