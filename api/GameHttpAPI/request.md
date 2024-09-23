@@ -5,7 +5,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" />fetch(<font id="Type">url: string, options?:Partial<[GameHttpFetchRequestOptions](./request#GameHttpFetchRequestOptions)></font>)<font id="Type">: Promise<[GameHttpFetchResponse](/GameHttpAPI/response)></font>{#fetch}
+#### <font id="API" />fetch(<font id="Type">url: [URL](https://developer.mozilla.org/zh-CN/docs/Web/API/URL), options?:Partial<[GameHttpFetchRequestOptions](./request#GameHttpFetchRequestOptions)></font>)<font id="Type">: Promise<[GameHttpFetchResponse](/GameHttpAPI/response)></font>{#fetch}
 
 请求指定网站，获取响应数据
 
@@ -13,7 +13,7 @@ import '/style.css'
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| url | 是 | | string | 网址 |
+| url | 是 | | URL | 网址 |
 | options | | | Partial‹GameHttpFetchRequestOptions› | 请求配置 |
 
 **返回值**

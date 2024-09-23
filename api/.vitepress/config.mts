@@ -2,7 +2,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-cn',
-  title: "Arena编辑器 API手册",
+  title: "ArenaEdit API手册",
+  head: [['link', { rel: 'icon', href: '/arena.svg' }]],
   description: "为创作者所有✨ 由创作者共建⚖️ 因创作者而生🎉",
   base: '/api/',
   markdown: {
@@ -11,7 +12,7 @@ export default defineConfig({
   themeConfig: {
 
     // https://vitepress.dev/reference/default-theme-config
-
+    logo: '/arena.svg',
     search: {
       provider: 'local',
     },
