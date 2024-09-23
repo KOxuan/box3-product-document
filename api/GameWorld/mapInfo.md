@@ -5,7 +5,6 @@ import '/style.css'
 ## 属性
 
 #### <font id="API" /><font id="ReadOnly">只读</font>projectName<font id="Type">: string</font> {#projectName}
-> 默认值：当前地图名称
 
 本张地图名称，对应项目设置中的名称。
 
@@ -25,7 +24,6 @@ import '/style.css'
 
 
 #### <font id="API" /><font id="ReadOnly">只读</font>url<font id="Type">: [URL](https://developer.mozilla.org/zh-CN/docs/Web/API/URL)</font>{#url}
-> 默认值：当前地图链接
 
 获取当前地图所在的URL链接地址。
 

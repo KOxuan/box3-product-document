@@ -5,7 +5,7 @@ import '/style.css'
 ## 方法
 
 #### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](./input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onInteract}
-若实体开启了互动功能enableInteract = true，则玩家与实体进行互动时触发。
+若实体开启了互动功能`enableInteract = true`，则玩家与实体进行互动时触发。
 
 当玩家走进实体的互动范围，实体身上就会出现按键提示，玩家按下互动按钮(默认为键盘 E 按键)与该实体进行互动。fight
 
@@ -15,7 +15,7 @@ import '/style.css'
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到互动时的处理函数 |
+| handler | 是 | | function | 监听到互动时的处理函数 |
 
 
 > 定义于 [#L9898](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9898)
@@ -40,14 +40,14 @@ world.onInteract( ({entity, targetEntity}) => {
 ---
 
 
-#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onClick}
+#### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameClickEvent](./input#GameClickEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onClick}
 当玩家用鼠标点击实体时触发
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到鼠标点击时的处理函数 |
+| handler | 是 | | function | 监听到鼠标点击时的处理函数 |
 
 > 定义于 [#L9838](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9838)
 
@@ -71,7 +71,7 @@ world.onClick(({ entity }) => {
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到鼠标按下时的处理函数 |
+| handler | 是 | | function | 监听到鼠标按下时的处理函数 |
 
 > 定义于 [#L9844](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9844)
 
@@ -118,7 +118,7 @@ world.onPress(({ button, raycast }) => {
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| handler | _是_ | | function | 监听到鼠标松开时的处理函数 |
+| handler | 是 | | function | 监听到鼠标松开时的处理函数 |
 
 > 定义于 [#L9850](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9850)
 
@@ -147,8 +147,8 @@ world.onRelease(({ button, position }) => {
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
-| entity | [GamePlayerEntity](/GameEntity/isPlayer) | 发起互动的实体 |
-| targetEntity | [GameEntity](/GameEntity/) | 收到互动请求的实体 |
+| entity | GamePlayerEntity | 发起互动的实体 |
+| targetEntity | GameEntity | 收到互动请求的实体 |
 | tick | number | 事件发生时间 |
 
 
@@ -160,17 +160,14 @@ world.onRelease(({ button, position }) => {
 
 事件发生的时刻，即为玩家按下/松开按钮的同一刻
 
-| **参数** | **类型** | **说明** | **补充** |
-| --- | --- | --- | --- |
-| entity | [GamePlayerEntity](/GameEntity/isPlayer) | 被点击的实体 / 按下按钮的玩家 | **onClick()前，onPress()onRelease()后** |
-| clicker | [GameEntity](/GameEntity/) | 发起点击事件的玩家 | **onPress()onRelease()不可用** |
-| button | [GameButtonType](./input#gamebuttontype) | 点击的按钮，ACTION0 = 左键，ACTION1 = 右键 | |
-| distance | number | 玩家到被点击实体的距离 | **onPress()onRelease()不可用** |
-| clickerPosition | [GameVector3](/GameVector3/) | 点击鼠标的瞬间玩家所在位置 | **onPress()onRelease()不可用** |
-| raycast | [GameRaycastResult](./querySelectorEntity#gameraycastresult) | 按下按钮瞬间，从玩家视角投射的射线检测结果 | |
-| tick | number | 事件发生时间 | |
-| position | number | 按下按钮瞬间，玩家的位置 | **onClick()不可用** |
-| pressed | boolean | 是否按下了按钮。若为 true，则为按下了按钮。 | **onClick()不可用** |
+| **参数** | **类型** | **说明** | 
+| --- | --- | --- | 
+| entity | [GamePlayerEntity](/GameEntity/isPlayer) | 被点击的实体 / 按下按钮的玩家 |  
+| button | [GameButtonType](./input#gamebuttontype) | 点击的按钮，ACTION0 = 左键，ACTION1 = 右键 | 
+| raycast | [GameRaycastResult](./querySelectorEntity#gameraycastresult) | 按下按钮瞬间，从玩家视角投射的射线检测结果 | 
+| tick | number | 事件发生时间 | 
+| position | number | 按下按钮瞬间，玩家的位置 |
+| pressed | boolean | 是否按下了按钮。若为 true，则为按下了按钮。 | 
 
 > 定义于 [#L12959](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12959)
 

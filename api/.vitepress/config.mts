@@ -218,6 +218,7 @@ export default defineConfig({
                   text: '🔱界面可见元素',
                   collapsed: true,
                   items: [
+
                     { text: '框架', link: '/GameUI/node/UiBox' },
                     { text: '图片', link: '/GameUI/node/UiImage' },
                     { text: '文字', link: '/GameUI/node/UiText' },
@@ -229,18 +230,17 @@ export default defineConfig({
             { text: '导航器', link: '/GameUI/navigator' },
             { text: '监听输入事件', link: '/GameUI/input' },
             { text: '事件监听处理', link: '/GameUI/UiEvent' },
-            {
-              text: '🟰游戏数学',
-              collapsed: false,
-              items: [
-                { text: '图像映射中区域的坐标', link: '/GameUI/maths/Coord2' },
-                { text: 'UI缩放', link: '/GameUI/maths/UiScale' },
-                { text: '三维向量', link: '/GameUI/maths/Vec3' },
-                { text: '二维向量', link: '/GameUI/maths/Vec2' },
-              ]
-            },
           ]
-        }, 
+        },  {
+          text: '🟰游戏数学',
+          collapsed: false,
+          items: [
+            { text: '图像映射中区域的坐标', link: '/GameUI/maths/Coord2' },
+            { text: 'UI缩放', link: '/GameUI/maths/UiScale' },
+            { text: '三维向量', link: '/GameUI/maths/Vec3' },
+            { text: '二维向量', link: '/GameUI/maths/Vec2' },
+          ]
+        },
       ]
     },
     ],
