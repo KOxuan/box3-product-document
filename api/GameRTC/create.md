@@ -4,14 +4,14 @@ import '/style.css'
 # 新建通道
 
 ## 方法
-#### <font id="API" />createChannel(<font id="Type">channelId:string</font>)<font id="Type">: Promise‹[GameRTCChannel](/GameRTC/operate)›</font>{#createChannel}
+#### <font id="API" />createChannel(<font id="Type">channelId?:string</font>)<font id="Type">: Promise‹[GameRTCChannel](/GameRTC/operate)›</font>{#createChannel}
 新建一个rtc通道
 
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
-| channelId | 是 |  | string | 自定义通道标识 |
+| channelId |  |  | string | 自定义通道标识 |
 
 
 **返回值**
