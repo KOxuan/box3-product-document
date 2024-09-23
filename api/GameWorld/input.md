@@ -174,7 +174,7 @@ world.onRelease(({ button, position }) => {
 ---
 
 #### <font id="API" />GameClickEvent{#GameClickEvent}
-游戏检查事件
+游戏点击事件
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |
