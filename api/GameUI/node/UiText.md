@@ -5,6 +5,8 @@ import '/style.css'
 
 > UiText 是继承自 [UiRenderable](/GameUI/UiRenderable) 类
 
+![](/QQ20240923-102346.png)
+
 ## 属性
 
 #### <font id="API" />textContent<font id="Type">: string</font>{#textContent}  
@@ -33,7 +35,7 @@ import '/style.css'
 
 
 #### <font id="API" /><font id="ReadOnly">只读</font>textColor<font id="Type">: [Vec3](/GameUI/maths/Vec3)</font>{#textColor}  
-> 默认值：#000000
+> 默认值：{}
 
 节点显示的文本的颜色。
 

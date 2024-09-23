@@ -5,6 +5,8 @@ import '/style.css'
 
 > UiImage 是继承自 [UiRenderable](/GameUI/UiRenderable) 类
 
+![](/QQ20240923-102303.png)
+
 ## 属性
 
 #### <font id="API" />image<font id="Type">: string</font>   {#image} 
@@ -16,7 +18,7 @@ import '/style.css'
 
 
 #### <font id="API" />imageOpacity<font id="Type">: number</font>{#imageOpacity} 
-> 默认值：100
+> 默认值：1
  
 图片元素的透明度。
 

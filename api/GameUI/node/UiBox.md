@@ -5,6 +5,7 @@ import '/style.css'
 
 > UiBox 是继承自 [UiRenderable](/GameUI/UiRenderable) 类
 
+![](/QQ20240923-102204.png)
 
 ## 静态方法
 

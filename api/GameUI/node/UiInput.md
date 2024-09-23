@@ -5,6 +5,8 @@ import '/style.css'
 
 > UiInput 是继承自 [UiText](/GameUI/node/UiText) 类
 
+![](/QQ20240923-102409.png)
+
 ## 属性
 
 #### <font id="API" />placeholder<font id="Type">: string</font>{#placeholder}
@@ -18,7 +20,7 @@ import '/style.css'
 
 
 #### <font id="API" /><font id="ReadOnly">只读</font>placeholderColor<font id="Type">: [Vec3](/GameUI/maths/Vec3)</font>{#placeholderColor}
-> 默认值：#ACACA4
+> 默认值：{}
 
 输入框显示的占位文本的颜色。
 
@@ -28,7 +30,7 @@ import '/style.css'
 
 
 #### <font id="API" /><font id="ReadOnly">只读</font>placeholderOpacity<font id="Type">: number</font>{#placeholderOpacity}
-> 默认值：100
+> 默认值：1
 
 输入框提示文本的不透明度。
 
@@ -84,28 +86,28 @@ import '/style.css'
 
 
 
-## 事件
+## 单元素焦点变化监听事件
 
-#### <font id="API" />focus<font id="Type">: [EventEmitter](/GameUI/UiEvent)‹events‹thi››</font>
+#### <font id="API" />focus<font id="Type">: [UiEvent](/GameUI/UiEvent)‹UiInput›</font>
 使输入框聚焦。
 
 
 ---
 
 
-#### <font id="API" />blur<font id="Type">: [EventEmitter](/GameUI/UiEvent)‹events‹this››</font>
+#### <font id="API" />blur<font id="Type">: [UiEvent](/GameUI/UiEvent)‹UiInput›</font>
 使输入框失去焦点。
 
 ```javascript
-const input = UiInput.create(); // 静态方法，直接通过类上面的方法来使用。
+const inputDemo = UiInput.create(); // 静态方法，直接通过类上面的方法来使用。
 
 //当监听到该输入框得到焦点时
-input.events.add('focus',(uiInput) => {
+inputDemo.events.add('focus',(uiInput) => {
     //xxx
 })
 
 //当监听到该输入框失去焦点时
-input.events.add('blur', (uiInput) => {
+inputDemo.events.add('blur', (uiInput) => {
     //xxx
 })
 ```
