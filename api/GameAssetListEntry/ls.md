@@ -47,7 +47,7 @@ import '/style.css'
 | COLOR_LUT  |  颜色滤镜 |
 | JS_SCRIPT  | 脚本  |
 | IMAGE  |  图片 |
-| PARTICLE_TEXTURE  | 雪花贴图  |
+| PARTICLE_TEXTURE  | 雪花纹理  |
 | SOUND  | 音频  |
 | PICTURE   |  图片 |
 
