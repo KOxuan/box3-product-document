@@ -191,10 +191,10 @@ let prizeType = [
 
 //中奖信息配置，每个阶段提示都不一样
 let guessMsg = {
-    80: () => '运气超级爆棚，',
-    40: () => '运气爆棚，',
-    10: () => '运气还行，',
-    0: () => '厉害！刚刚过线，',
+    80: '运气超级爆棚，',
+    40: '运气爆棚，',
+    10: '运气还行，',
+    0: '厉害！刚刚过线，',
 };
 
 // 抽奖函数，传入中奖数值，不同等级的抽奖机名字，人名
@@ -213,7 +213,7 @@ function prizeDraw(guessNum, type, name) {
                 //当读取到差异值大于键时
                 if (diff > key) {
                     // 输出中奖信息
-                    console.log(name + '，[' + type + ']抽奖机里面的东西。' + guessMsg[key]() + '你中奖啦！生成的数字是' + randomNum);
+                    console.log(name + '，[' + type + ']抽奖机里面的东西。' + guessMsg[key] + '你中奖啦！生成的数字是' + randomNum);
                     // 跳出函数，不用继续循环了。
                     return;
                 }
