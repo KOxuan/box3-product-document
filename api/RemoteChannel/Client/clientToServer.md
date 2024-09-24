@@ -5,7 +5,7 @@ import '/style.css'
 ## 方法
 
 
-#### <font id="API" />sendServerEvent(<font id="Type">event:any</font>)<font id="Type">:  void{#sendServerEvent}</font>
+#### <font id="API" />sendServerEvent(<font id="Type">event:any</font>)<font id="Type">:  void</font>{#sendServerEvent}
 `客户端` 发送至 `服务端` 的事件。
 
 **输入参数**

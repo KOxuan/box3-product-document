@@ -21,7 +21,7 @@
   <p :class="$style.demo_title">抽奖游戏</p>
   <p :class="$style.demo_intro">系统随机生成数字。当大于等于中奖数值会中奖。</p>
   <div :class="$style.demo_input_box">
-    中奖数值：<input type="number" min="0" max="100" v-model="guessNum" @keyup.enter="ok" />
+    中奖数值（0-100）：<input type="number" min="0" max="100" v-model="guessNum" @keyup.enter="ok" />
   </div>
   <div :class="$style.demo_btns">
     <button :class="$style.demo_ok" @click="ok">抽奖</button>
@@ -44,19 +44,24 @@ let randomNum = Math.floor(Math.random() * 101); // 生成 1 到 100 的随机�
 let randomNum = Math.floor(Math.random() * 101); 
 let guessNum = 10; // 中奖数值
 
-if (guessNum >= randomNum) {
+if (guessNum >= randomNum) {  
+    // 当中奖数值大于等于随机数，则没中奖。
     console.log('运气差点，生成的数字是' + randomNum);
 } else {
-    // 计算差异值。
-    let diff = randomNum - guessNum;
-    if (diff > 80) {
-        console.log('运气超级爆棚，你中奖啦！生成的数字是' + randomNum);
-    } else if (diff > 40) {
-        console.log('运气爆棚，你中奖啦！生成的数字是' + randomNum);
-    } else if (diff > 10) {
-        console.log('运气还行，你中奖啦！生成的数字是' + randomNum);
-    } else {
-        console.log('厉害！刚刚过线，你中奖啦！生成的数字是' + randomNum);
+    // 中奖了，再细分判断。
+    let diff = randomNum - guessNum; // 计算随机数与中奖数值差多大。
+    if (diff > 80) {  
+      // 当差异值大于80的时候
+      console.log('运气超级爆棚，你中奖啦！生成的数字是' + randomNum);
+    } else if (diff > 40) {  
+      // 不满足大于80，再判断当差异值大于40的时候
+      console.log('运气爆棚，你中奖啦！生成的数字是' + randomNum);
+    } else if (diff > 10) {  
+      // 不满足大于40，再判断当差异值大于10的时候
+      console.log('运气还行，你中奖啦！生成的数字是' + randomNum);
+    } else {  
+      //以上情况都不满足
+      console.log('厉害！刚刚过线，你中奖啦！生成的数字是' + randomNum);
     }
 }
 ```
