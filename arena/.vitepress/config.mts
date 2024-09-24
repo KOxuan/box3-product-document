@@ -101,17 +101,33 @@ export default defineConfig({
       collapsed: true,
       items: [
         { text: '认识JS语言', link: '/javascript/first-step/hi' },
+        { text: '你好，世界！', link: '/javascript/first-step/helloWorld' },
         {
-          text: '第一章：初识',
+          text: '第一章：变量与判断',
           collapsed: true,
           items: [
-            { text: '你好，世界！', link: '/javascript/first-step/helloWorld' },
-            { text: '变量与数据类型（一）', link: '/javascript/first-step/variablesAndTypes1' },
-            { text: '操作符与表达式（一）', link: '/javascript/first-step/operator1' },
-            { text: '条件判断与数据类型（二）', link: '/javascript/first-step/ifAndTypes2' },
+            { text: '变量与数据类型', link: '/javascript/first-step/variablesAndTypes' },
+            { text: '操作符与表达式', link: '/javascript/first-step/operator' },
+            { text: '条件判断', link: '/javascript/first-step/if' },
             { text: '实践：抽奖游戏', link: '/javascript/first-step/lottery' },
           ] 
-        }
+        },{
+          text: '第二章：循环与函数',
+          collapsed: true,
+          items: [
+            { text: '循环', link: '/javascript/second-step/for' },
+            { text: '函数', link: '/javascript/second-step/function' },
+            { text: '数组', link: '/javascript/second-step/array' },
+            { text: '实践：多人抽奖游戏', link: '/javascript/second-step/comprehensiveTest' },
+          ] 
+        },{
+          text: '第三章：对象与类',
+          collapsed: true,
+          items: [
+            { text: 'JSON与对象', link: '/javascript/third-step/jsonObj' },
+            { text: '类', link: '/javascript/third-step/class' },
+          ] 
+        },   { text: '异步与同步', link: '/javascript/promise' },
       ]
     }
     ],
