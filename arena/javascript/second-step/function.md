@@ -185,21 +185,6 @@ console.log(sayHelloArrow2("美术喵")); // 输出: 你好, 美术喵!
 
 
 
-## 函数的作用域
-
-JavaScript函数有自己的作用域，这意味着在函数内部声明的变量不会影响到函数外部。
-
-```javascript
-function showScope() {
-  let localLet = "I'm local";
-  console.log(localLet); // 访问局部变量
-}
-
-showScope(); // 输出: I'm local
-console.log(localLet); // 抛出错误：localLet is not defined
-```
-
-
 ## 课后练习
 
 小朋友，根据学到的`函数`知识，完成开头留下的问题吧！

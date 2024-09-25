@@ -12,7 +12,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'API参考', link: 'https://www.yuque.com/box3lab/api' }
+      { text: 'API参考', link: 'https://docs.box3lab.com/api/' }
     ],
     search: {
       provider: 'local',
@@ -125,9 +125,12 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'JSON与对象', link: '/javascript/third-step/jsonObj' },
+            { text: '常量与作用域', link: '/javascript/third-step/variablesScope' },
             { text: '类', link: '/javascript/third-step/class' },
           ] 
-        },   { text: '异步与同步', link: '/javascript/promise' },
+        },   
+        { text: '异步与同步', link: '/javascript/promise' },
+        { text: '章末总结', link: '/javascript/summary' },
       ]
     }
     ],

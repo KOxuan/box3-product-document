@@ -11,9 +11,14 @@
 
 # 认识JSON与对象
 
-JSON（JavaScript Object Notation）是一种轻量级的数据交换格式，基于JavaScript对象语法但独立于语言。JavaScript对象是JavaScript中的核心数据结构，用于存储键值对。两者密切相关，但用途略有不同。
+JSON（JavaScript Object Notation）是一种轻量级的数据交换格式，基于JavaScript对象语法但独立于语言。JavaScript对象是JavaScript中的核心数据结构，用于存储`键值对`。两者密切相关，但用途略有不同。
+
 
 JSON 可以在很多编程语言中使用哦，例如 `JavaScript`、`Python`、`Java`、`C++`等。
+
+::: tip
+在JSON中，`键值对`就像小标签，一边是“名字”（键），另一边是“内容”（值）。这样，你就能通过“名字”快速找到“内容”了。简单吧！
+:::
 
 ## JSON基础
 
