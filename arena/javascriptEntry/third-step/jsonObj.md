@@ -11,9 +11,14 @@
 
 # 认识JSON与对象
 
-JSON（JavaScript Object Notation）是一种轻量级的数据交换格式，基于JavaScript对象语法但独立于语言。JavaScript对象是JavaScript中的核心数据结构，用于存储键值对。两者密切相关，但用途略有不同。
+JSON（JavaScript Object Notation）是一种轻量级的数据交换格式，基于JavaScript对象语法但独立于语言。JavaScript对象是JavaScript中的核心数据结构，用于存储`键值对`。两者密切相关，但用途略有不同。
+
 
 JSON 可以在很多编程语言中使用哦，例如 `JavaScript`、`Python`、`Java`、`C++`等。
+
+::: tip
+在JSON中，`键值对`就像小标签，一边是“名字”（键），另一边是“内容”（值）。这样，你就能通过“名字”快速找到“内容”了。简单吧！
+:::
 
 ## JSON基础
 
@@ -191,10 +196,10 @@ let prizeType = [
 
 //中奖信息配置，每个阶段提示都不一样
 let guessMsg = {
-    80: () => '运气超级爆棚，',
-    40: () => '运气爆棚，',
-    10: () => '运气还行，',
-    0: () => '厉害！刚刚过线，',
+    80: '运气超级爆棚，',
+    40: '运气爆棚，',
+    10: '运气还行，',
+    0: '厉害！刚刚过线，',
 };
 
 // 抽奖函数，传入中奖数值，不同等级的抽奖机名字，人名
@@ -213,7 +218,7 @@ function prizeDraw(guessNum, type, name) {
                 //当读取到差异值大于键时
                 if (diff > key) {
                     // 输出中奖信息
-                    console.log(name + '，[' + type + ']抽奖机里面的东西。' + guessMsg[key]() + '你中奖啦！生成的数字是' + randomNum);
+                    console.log(name + '，[' + type + ']抽奖机里面的东西。' + guessMsg[key] + '你中奖啦！生成的数字是' + randomNum);
                     // 跳出函数，不用继续循环了。
                     return;
                 }
