@@ -64,7 +64,7 @@ function testFunctionScope() {
 }
 
 testFunctionScope();
-// console.log(localVar); // 这里会抛出ReferenceError，因为localVar在函数外部不可见
+console.log(localVar); // 这里会抛出ReferenceError，因为localVar在函数外部不可见
 ```
 
 在这个例子中，`localVar`是在函数`testFunctionScope`内部声明的，因此它只能在函数内部被访问。

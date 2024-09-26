@@ -135,12 +135,24 @@ export default defineConfig({
         { text: '章末总结', link: '/javascriptEntry/summary' },
       ]
     },{
-      text: 'JS×神岛API入门',
+      text: 'JS×神岛API',
       collapsed: true,
       items: [
         { text: '如何阅读API', link: '/javascriptDaoAPI/apiUsage' },
       ] 
-    },  
+    },  {
+      text: '进阶主题',
+      collapsed: true,
+      items: [
+        {
+          text: 'TypeScript语言入门',
+          link:'https://typescript.p6p.net/typescript-tutorial/intro.html'
+        },  {
+          text: '使用VSCode开发',
+          link:'https://docs.box3lab.com/arenapro'
+        }, 
+      ] 
+    }, 
     ],
     editLink: {
       pattern: 'https://gitee.com/box3lab/box3-product-document/blob/master/arena/:path',
