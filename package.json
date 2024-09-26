@@ -8,7 +8,10 @@
     "arena:preview": "vitepress preview arena",
     "api:dev": "vitepress dev api",
     "api:build": "vitepress build api",
-    "api:preview": "vitepress preview api"
+    "api:preview": "vitepress preview api",
+    "arenapro:dev": "vitepress dev arenapro",
+    "arenapro:build": "vitepress build arenapro",
+    "arenapro:preview": "vitepress preview arenapro"
   },
   "dependencies": {
     "pagefind": "^1.1.1",
