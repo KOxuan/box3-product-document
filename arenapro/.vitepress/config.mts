@@ -13,18 +13,67 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/arena.svg',
     nav: [
-      { text: 'API手册', link: 'https://docs.box3lab.com/api/' }
+      { text: 'API手册', link: 'https://docs.box3lab.com/api/' },
+      { text: '创作者QQ群', link: 'https://qm.qq.com/cgi-bin/qm/qr?authKey=LteV6YzMX0xKmrQSp8%2BaNi6YUdonwyVMc44npCKlNymwnoWVZBmG5Y4S4N9RwxEP&k=JeZQYLLnherYW6pGlbODkErutSmbkzr-&noverify=0' }
     ],
 
     sidebar: [
       {
         text: '用户手册',
+        collapsed: false,
         items: [
           { text: '导读', link: '/' },
+          { text: '快速开始', link: '/guide/start' },
+          { text: '登录账号', link: '/guide/login' }, 
+          { text: '链接扩展地图', link: '/guide/linkMap' }, 
+          {
+            text: 'HelloWorld 项目',
+            collapsed: true,
+            items: [
+              { text: '编写代码',   link:'/guide/HelloWorld/one'},
+              { text: '打包上传',   link:'/guide/HelloWorld/two'},
+              { text: '运行测试',   link:'/guide/HelloWorld/three'},
+            ]
+          },
+          { text: 'debug模式',   link:'/guide/debug'},
+        ] 
+      },{
+        text: 'dao3Cfg配置',
+        collapsed: false,
+        items: [
+          { text: '脚手架架构',   link:'/dao3Cfg/file'},
+          { text: '属性',   link:'/dao3Cfg/attribute'},
+        ]
+      }, {
+        text: 'API差异',
+        collapsed: false,
+        items: [
+          { text: 'dialog',   link:'/codeDiff/dialog'},
+          { text: 'findChildByName',   link:'/codeDiff/findChildByName'},
         ]
       },{
-        text: 'TypeScript语言入门',
-        link:'https://typescript.p6p.net/typescript-tutorial/intro.html'
+        text: 'TypeScript学习资源',
+        collapsed: false,
+        items: [
+          { text: '系统学习',   link:'https://typescript.p6p.net/about/experience.html'},
+          { text: '20分钟速成',   link:'https://www.bilibili.com/video/BV1gX4y177Kf/'},
+          { text: '代码演练场',   link:'https://www.typescriptlang.org/zh/play/'},
+        ]
+      },{
+        text: '最佳实践',
+        collapsed: false,
+        items: [
+          {
+            text: '安装相关',
+            collapsed: false,
+            items: [
+              { text: 'VSCode安装', link: '/bestPractices/vscode' },
+              { text: '中文版VSCode', link: '/bestPractices/chineseVSCode' },
+              { text: 'NodeJS安装', link: '/bestPractices/nodejs' },
+              { text: 'NodeJS部署Ts问题', link: '/bestPractices/nodejsTest' },
+            ]
+          }, 
+        ]
       }, 
     ],
 

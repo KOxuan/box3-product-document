@@ -110,7 +110,7 @@ declare class GameWorld {
 
 ## 接口
 - [`GameTickEvent`](./mapInfo#GameTickEvent) : 每一刻(tick)触发一次的事件
-- [`GameEntityEvent`](./playerJL#GameEntityEvent) : 当创建或销毁实体时触发的事件
+- [`GamePlayerEntityEvent`](./playerJL#GamePlayerEntityEvent) : 当创建或销毁实体时触发的事件
 - [`GameChatEvent`](./chat/resident#GameChatEvent) : 由聊天触发的事件
 - [`GameEntityEvent`](./entityCD#GameEntityEvent) : 实体创建与销毁事件
 - [`GameEntityConfig`](./entityCD#GameEntityConfig) : 用于控制实体的参数组
