@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "ArenaPro Creator",
-  head: [['link', { rel: 'icon', href: '/arena.svg' }]],
+  head: [['link', { rel: 'icon', href: '/icon.png' }]],
   description: "支持VSCode与TypeScript的神岛游戏制作插件，是Arena编辑器专业版",
   base: '/arenapro/',
   markdown: {
@@ -11,7 +11,7 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/arena.svg',
+    logo: '/icon.png',
     nav: [
       { text: 'API手册', link: 'https://docs.box3lab.com/api/' },
       { text: '创作者QQ群', link: 'https://qm.qq.com/cgi-bin/qm/qr?authKey=LteV6YzMX0xKmrQSp8%2BaNi6YUdonwyVMc44npCKlNymwnoWVZBmG5Y4S4N9RwxEP&k=JeZQYLLnherYW6pGlbODkErutSmbkzr-&noverify=0' }
@@ -52,6 +52,14 @@ export default defineConfig({
           { text: 'findChildByName',   link:'/codeDiff/findChildByName'},
         ]
       },{
+        text: '组件式编程',
+        collapsed: false,
+        items: [
+          { text: '简介',   link:'/component/index'},
+          { text: '生命周期',   link:'/component/lifecycle'},
+          { text: '组件父类接口',   link:'/component/parent'},
+        ]
+      },{
         text: 'TypeScript学习资源',
         collapsed: false,
         items: [
@@ -71,6 +79,12 @@ export default defineConfig({
               { text: '中文版VSCode', link: '/bestPractices/chineseVSCode' },
               { text: 'NodeJS安装', link: '/bestPractices/nodejs' },
               { text: 'NodeJS部署Ts问题', link: '/bestPractices/nodejsTest' },
+            ]
+          },  {
+            text: '便利相关',
+            collapsed: false,
+            items: [
+              { text: '多桌面开发', link: '/bestPractices/multipleDesktops' },
             ]
           }, 
         ]
