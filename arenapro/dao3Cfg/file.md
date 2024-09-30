@@ -17,7 +17,9 @@ myArenaProject
 │   │       ├── Definition.ts       --组件父类
 │   │       └── Implement.ts		--组件实现
 │   └── /types/					   	--类型提示文件夹
-│       └── GameAPI.d.ts
+│       ├── GameEntity.d.ts
+│       ├── GamePlayer.d.ts
+│       └── GameAPI.d.ts            --类型提示
 └── /client/						--客户端脚本
     ├── tsconfig.json      			--ts配置文件
     ├── webpack.config.js   		--webpack配置文件
@@ -26,7 +28,7 @@ myArenaProject
     ├── /src/              			--源代码文件夹
     |   └── clientApp.ts   			--程序入口
     └── /types/            			--类型提示文件夹
-        └── ClientAPI.d.ts
+        └── ClientAPI.d.ts          --类型提示
 ```
 
 
@@ -44,4 +46,10 @@ myArenaProject
 
 :::
 
-### 
+::: tip
+⚠️以下文件**禁止修改**，因为有自动检测更新机制，导致自定义更改丢失。
+
+1. GameAPI.d.ts
+2. ClientAPI.d.ts
+
+:::
