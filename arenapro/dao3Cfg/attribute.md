@@ -19,9 +19,6 @@
           "webpack": "./client/webpack.config.js"
         }
       }
-      "experimental": {
-        "allowNodeModules": false
-      }
     },        
     "outputAndUpdate": [
       "bundle.js"
@@ -48,7 +45,6 @@
 | file.typescript.client.entry |  | string | clientApp.ts | Arena**客户端**项目入口文件 |
 | file.typescript.client.development |  | boolean | false | Arena**客户端**项目编译模式，默认为生产模式 |
 | file.typescript.client.webpack |  | string | ./端/webpack.config.js | Arena**端**项目webpack编译配置相对路径 |
-| file.experimental.allowNodeModules |  | boolean | false | 实验性，是否允许打包引入的node.js外部包，默认为不允许 |
 | outputAndUpdate |  | array | [] | 当前编译和上传的文件名列表，默认选择第一位文件名 |
 | map.id | √ | string | "" | 当前Arena项目对应的**扩展地图ID** |
 | map.editHash | √ | string | "" | 当前Arena项目对应的扩展地图**创作端Hash** |

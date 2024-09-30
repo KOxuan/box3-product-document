@@ -100,7 +100,7 @@ export default defineConfig({
       ]
     }, {
       text: 'JavaScript语言入门',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '认识JS语言', link: '/javascriptEntry/first-step/hi' },
         { text: '你好，世界！', link: '/javascriptEntry/first-step/helloWorld' },
@@ -136,13 +136,13 @@ export default defineConfig({
       ]
     },{
       text: 'JS×神岛API',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '如何阅读API', link: '/javascriptDaoAPI/apiUsage' },
       ] 
     },  {
       text: '进阶主题',
-      collapsed: true,
+      collapsed: false,
       items: [
         {
           text: 'TypeScript语言入门',
