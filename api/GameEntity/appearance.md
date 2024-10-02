@@ -136,7 +136,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 如果为真，则展示实体的默认名称。
 
-如果通过customName自定义了需要展示的名称，则展示customName。
+如果通过`customName`自定义了需要展示的名称，则展示`customName`。
 
 > 定义于 [#L10952](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_9_27.d.ts#L10952)
 
@@ -163,8 +163,8 @@ world.querySelectorAll('*').forEach((e) => {
 ---
 
 
-#### <font id="API" />nameColor<font id="Type">: [GameVector3](/GameVector3/)</font>{#nameColor} 
-> 默认值：GameVector3(1, 1, 1)
+#### <font id="API" />nameColor<font id="Type">: [GameRGBColor](/GameRGBColor/)</font>{#nameColor} 
+> 默认值：new GameRGBColor(1, 1, 1)
 
 进入实体名称展示范围时，实体名称的颜色。
 
