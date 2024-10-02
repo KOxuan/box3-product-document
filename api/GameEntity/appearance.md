@@ -128,6 +128,66 @@ world.querySelectorAll('*').forEach((e) => {
 
 > 定义于 [#L10800](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10800)
 
+---
+
+
+#### <font id="API" />showEntityName<font id="Type">: boolean</font>{#showEntityName} 
+> 默认值：false
+
+如果为真，则展示实体的默认名称。
+
+如果通过customName自定义了需要展示的名称，则展示customName。
+
+> 定义于 [#L10952](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_9_27.d.ts#L10952)
+
+---
+
+
+#### <font id="API" />customName<font id="Type">: string</font>{#customName} 
+> 默认值：''
+
+允许自定义需要展示的名称，默认为空。
+
+> 定义于 [#L10957](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_9_27.d.ts#L10957)
+
+---
+
+
+#### <font id="API" />nameRadius<font id="Type">: number</font>{#nameRadius} 
+> 默认值：16
+
+名称展示范围，数值越小，则需要靠近实体才会出现名称。
+
+> 定义于 [#L10962](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_9_27.d.ts#L10962)
+
+---
+
+
+#### <font id="API" />nameColor<font id="Type">: [GameVector3](/GameVector3/)</font>{#nameColor} 
+> 默认值：GameVector3(1, 1, 1)
+
+进入实体名称展示范围时，实体名称的颜色。
+
+> 定义于 [#L10967](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_9_27.d.ts#L10967)
+
+::: details 点击查看示例代码
+展示实体名称之前，在场景中必须先有一个实体。
+
+在模型列表中，挑选一个你喜欢的模型，将它放置在场景中，并记住模型的名字。
+```javascript
+// 先在场景中放置一个名称为 NPC 的实体。
+const npc = world.querySelector('#NPC');
+npc.showEntityName = true; // 允许展示实体名称
+npc.nameRadius = 16;   // 实体名称的展示范围
+npc.nameColor = new GameRGBColor(1,0,1);  // 互动提示的文字颜色
+// 此时没有通过 customName 自定义展示的名称，customName 为空字符串
+// 因此展示的实体名称为实体的默认名称 —— “NPC”
+
+// 如果通过 customName 指定自定义的名称， 则会展示 customName
+npc.customName = "Miss Miao"; // 显示自定义的名称
+```
+:::
+
 ## 方法
 
 #### <font id="API" />lookAt(<font id="Type">targetPosition:[GameVector3](/GameVector3/),meshFacing?:"X" | "Y" | "Z",up?:[GameVector3](/GameVector3/)</font>)<font id="Type">: void</font>{#lookAt} 
