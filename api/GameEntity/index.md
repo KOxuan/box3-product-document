@@ -23,6 +23,10 @@ declare class GameEntity {
 - [`meshMetalness`](./appearance#meshMetalness) : 实体的金属感
 - [`meshShininess`](./appearance#meshShininess) : 实体的反光度
 - [`meshOffset`](./appearance#meshOffset) : 实体的位移
+- [`showEntityName`](./appearance#showEntityName) : 是否展示实体的默认名称
+- [`customName`](./appearance#customName) : 自定义需要展示的名称
+- [`nameRadius`](./appearance#nameRadius) : 名称展示范围，数值越小，则需要靠近实体才会出现名称
+- [`nameColor`](./appearance#nameColor) : 进入实体名称展示范围时，实体名称的颜色
 - [`motion`](./animate#motion) : 索引与模型动作相关的全部状态和方法
 - [`bounds`](./physics#bounds) : 实体边界框的半径
 - [`collides`](./physics#collides) : 实体是否碰撞
