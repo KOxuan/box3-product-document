@@ -61,6 +61,15 @@ export default defineConfig({
           { text: '组件父类接口',   link:'/component/parent'},
         ]
       },{
+        text: '使用进阶',
+        collapsed: false,
+        items: [
+          { text: '导入JSON',   link:'/advanced/json'},
+          { text: '改变构建文件名',   link:'/advanced/buildFile'},
+          { text: '路径别名设置',   link:'/advanced/pathAliases'},
+          { text: '跨项目引用',   link:'/advanced/crossProject'},
+        ]
+      },{
         text: 'TypeScript学习资源',
         collapsed: false,
         items: [
@@ -86,6 +95,7 @@ export default defineConfig({
             collapsed: false,
             items: [
               { text: '多桌面开发', link: '/bestPractices/multipleDesktops' },
+              { text: 'ts与js混搭', link: '/bestPractices/allowJs' },
             ]
           }, 
         ]
