@@ -24,60 +24,75 @@ export default defineConfig({
         items: [
           { text: '导读', link: '/' },
           { text: '快速开始', link: '/guide/start' },
-          { text: '登录账号', link: '/guide/login' }, 
-          { text: '链接扩展地图', link: '/guide/linkMap' }, 
+          { text: '登录账号', link: '/guide/login' },
+          { text: '链接扩展地图', link: '/guide/linkMap' },
           {
             text: 'HelloWorld 项目',
             collapsed: true,
             items: [
-              { text: '编写代码',   link:'/guide/HelloWorld/one'},
-              { text: '打包上传',   link:'/guide/HelloWorld/two'},
-              { text: '运行测试',   link:'/guide/HelloWorld/three'},
+              { text: '编写代码', link: '/guide/HelloWorld/one' },
+              { text: '打包上传', link: '/guide/HelloWorld/two' },
+              { text: '运行测试', link: '/guide/HelloWorld/three' },
             ]
           },
-          { text: 'debug模式',   link:'/guide/debug'},
-        ] 
-      },{
+          { text: 'debug模式', link: '/guide/debug' },
+        ]
+      }, {
         text: 'dao3Cfg配置',
         collapsed: false,
         items: [
-          { text: '脚手架架构',   link:'/dao3Cfg/file'},
-          { text: '属性',   link:'/dao3Cfg/attribute'},
+          { text: '脚手架架构', link: '/dao3Cfg/file' },
+          { text: '属性', link: '/dao3Cfg/attribute' },
         ]
       }, {
         text: 'API差异',
         collapsed: false,
         items: [
-          { text: '自定义entity属性与方法',   link:'/codeDiff/customizeEntity'},
-          { text: 'dialog',   link:'/codeDiff/dialog'},
-          { text: 'findChildByName',   link:'/codeDiff/findChildByName'},
+          { text: '自定义entity属性与方法', link: '/codeDiff/customizeEntity' },
+          { text: 'dialog', link: '/codeDiff/dialog' },
+          { text: 'findChildByName', link: '/codeDiff/findChildByName' },
         ]
-      },{
+      }, {
         text: '组件式编程',
         collapsed: false,
         items: [
-          { text: '简介',   link:'/component/index'},
-          { text: '生命周期',   link:'/component/lifecycle'},
-          { text: '组件父类接口',   link:'/component/parent'},
+          { text: '简介', link: '/component/index' },
+          { text: '生命周期', link: '/component/lifecycle' },
+          { text: '组件父类接口', link: '/component/parent' },
         ]
-      },{
+      }, {
         text: '使用进阶',
         collapsed: false,
         items: [
-          { text: '导入JSON',   link:'/advanced/json'},
-          { text: '改变构建文件名',   link:'/advanced/buildFile'},
-          { text: '路径别名设置',   link:'/advanced/pathAliases'},
-          { text: '跨项目引用',   link:'/advanced/crossProject'},
+          { text: '导入JSON', link: '/advanced/json' },
+          { text: '改变构建文件名', link: '/advanced/buildFile' },
+          { text: '路径别名设置', link: '/advanced/pathAliases' },
+          { text: '跨项目引用', link: '/advanced/crossProject' },
         ]
-      },{
-        text: 'TypeScript学习资源',
+      }, {
+        text: '学习资源',
         collapsed: false,
-        items: [
-          { text: '系统学习',   link:'https://typescript.p6p.net/about/experience.html'},
-          { text: '20分钟速成',   link:'https://www.bilibili.com/video/BV1gX4y177Kf/'},
-          { text: '代码演练场',   link:'https://www.typescriptlang.org/zh/play/'},
+        items: [{
+          text: 'TypeScript语言',
+          collapsed: false,
+          items: [
+            { text: '系统学习', link: 'https://typescript.p6p.net/about/experience.html' },
+            { text: '20分钟速成', link: 'https://www.bilibili.com/video/BV1gX4y177Kf/' },
+            { text: '代码演练场', link: 'https://www.typescriptlang.org/zh/play/' },
+          ]
+        },
+        {
+          text: 'Git协同',
+          collapsed: false,
+          items: [
+            { text: '文字教学', link: 'https://liaoxuefeng.com/books/git/what-is-git/index.html' },
+            { text: '视频教学', link: 'https://www.bilibili.com/video/BV1HM411377j' },
+            { text: 'Git×VSCode综合', link: 'https://www.bilibili.com/video/BV1w14y1C7oi' },
+            { text: 'Git小乌龟可视化', link: 'https://blog.csdn.net/qq_43543789/article/details/105186322' },
+          ]
+        },
         ]
-      },{
+      }, {
         text: '最佳实践',
         collapsed: false,
         items: [
@@ -90,16 +105,16 @@ export default defineConfig({
               { text: 'NodeJS安装', link: '/bestPractices/nodejs' },
               { text: 'NodeJS部署Ts问题', link: '/bestPractices/nodejsTest' },
             ]
-          },  {
+          }, {
             text: '便利相关',
             collapsed: false,
             items: [
               { text: '多桌面开发', link: '/bestPractices/multipleDesktops' },
               { text: 'ts与js混搭', link: '/bestPractices/allowJs' },
             ]
-          }, 
+          },
         ]
-      }, 
+      },
     ],
 
     editLink: {
