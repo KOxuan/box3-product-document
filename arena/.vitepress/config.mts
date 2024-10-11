@@ -6,7 +6,17 @@ export default defineConfig({
   title: "Arena编辑器用户手册",
   description: "为创作者所有✨ 由创作者共建⚖️ 因创作者而生🎉",
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    container: {
+      tipLabel: '提示',
+      warningLabel: '警告',
+      dangerLabel: '危险',
+      infoLabel: '信息',
+      detailsLabel: '详细信息',
+      noteLabel: '信息',
+      importantLabel: '重要',
+      cautionLabel: '注意'
+    }
   },
   base: '/arena/',
   themeConfig: {
