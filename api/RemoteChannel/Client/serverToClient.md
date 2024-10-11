@@ -6,7 +6,7 @@ import '/style.css'
 ## 方法
 
 
-#### <font id="API" /><font id="Event" >事件</font>onClientEvent(<font id="Type">handler:(event:[ClientEvent](./serverToClient#ClientEvent))=>void</font>)<font id="Type">: void{#onClientEvent}</font>
+#### <font id="API" /><font id="Event" >事件</font>onClientEvent(<font id="Type">handler:(event:[ClientEvent](./serverToClient#ClientEvent))=>void</font>)<font id="Type">: void</font>{#onClientEvent}
 监听`服务端`发来的事件
 
 **输入参数**
@@ -20,7 +20,7 @@ import '/style.css'
 ## 接口
 
 #### <font id="API" />ClientEvent{#ClientEvent}
-`客户端` 发送至 `服务端`的自定义事件。
+`服务端` 发送至 `客户端`的自定义事件。
 
 | **参数** | **类型** | **说明** |
 | --- | --- | --- |

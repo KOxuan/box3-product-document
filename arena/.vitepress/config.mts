@@ -3,7 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-cn',
-  title: "Arena编辑器用户手册",
+  title: "ArenaEdit 用户手册",
+  head: [['link', { rel: 'icon', href: '/arena.svg' }]],
   description: "为创作者所有✨ 由创作者共建⚖️ 因创作者而生🎉",
   markdown: {
     lineNumbers: true,
@@ -21,8 +22,9 @@ export default defineConfig({
   base: '/arena/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/arena.svg',
     nav: [
-      { text: 'API参考', link: 'https://www.yuque.com/box3lab/api' }
+      { text: 'API手册', link: 'https://docs.box3lab.com/api/' }
     ],
     search: {
       provider: 'local',
@@ -107,23 +109,60 @@ export default defineConfig({
         }
       ]
     }, {
-      text: 'JavaScript语言基础',
-      collapsed: true,
+      text: 'JavaScript语言入门',
+      collapsed: false,
       items: [
-        { text: '认识JS语言', link: '/javascript/first-step/hi' },
+        { text: '认识JS语言', link: '/javascriptEntry/first-step/hi' },
+        { text: '你好，世界！', link: '/javascriptEntry/first-step/helloWorld' },
         {
-          text: '第一章：初识',
+          text: '第一章：变量与判断',
           collapsed: true,
           items: [
-            { text: '你好，世界！', link: '/javascript/first-step/helloWorld' },
-            { text: '变量与数据类型（一）', link: '/javascript/first-step/variablesAndTypes1' },
-            { text: '操作符与表达式（一）', link: '/javascript/first-step/operator1' },
-            { text: '条件判断与数据类型（二）', link: '/javascript/first-step/ifAndTypes2' },
-            { text: '实践：抽奖游戏', link: '/javascript/first-step/lottery' },
+            { text: '变量与数据类型', link: '/javascriptEntry/first-step/variablesAndTypes' },
+            { text: '操作符与表达式', link: '/javascriptEntry/first-step/operator' },
+            { text: '条件判断', link: '/javascriptEntry/first-step/if' },
+            { text: '实践：抽奖游戏', link: '/javascriptEntry/first-step/lottery' },
           ] 
-        }
+        },{
+          text: '第二章：循环与函数',
+          collapsed: true,
+          items: [
+            { text: '循环', link: '/javascriptEntry/second-step/for' },
+            { text: '函数', link: '/javascriptEntry/second-step/function' },
+            { text: '数组', link: '/javascriptEntry/second-step/array' },
+            { text: '实践：多人抽奖游戏', link: '/javascriptEntry/second-step/comprehensiveTest' },
+          ] 
+        },{
+          text: '第三章：对象与类',
+          collapsed: true,
+          items: [
+            { text: 'JSON与对象', link: '/javascriptEntry/third-step/jsonObj' },
+            { text: '常量与作用域', link: '/javascriptEntry/third-step/variablesScope' },
+            { text: '类', link: '/javascriptEntry/third-step/class' },
+          ] 
+        },   
+        { text: '异步与同步', link: '/javascriptEntry/promise' },
+        { text: '章末总结', link: '/javascriptEntry/summary' },
       ]
-    }
+    },{
+      text: 'JS×神岛API',
+      collapsed: false,
+      items: [
+        { text: '如何阅读API', link: '/javascriptDaoAPI/apiUsage' },
+      ] 
+    },  {
+      text: '进阶主题',
+      collapsed: false,
+      items: [
+        {
+          text: 'TypeScript语言入门',
+          link:'https://typescript.p6p.net/typescript-tutorial/intro.html'
+        },  {
+          text: '使用VSCode开发',
+          link:'https://docs.box3lab.com/arenapro'
+        }, 
+      ] 
+    }, 
     ],
     editLink: {
       pattern: 'https://gitee.com/box3lab/box3-product-document/blob/master/arena/:path',

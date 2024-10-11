@@ -2,7 +2,7 @@
 
 体验如何在控制台打印一个"Hello World"，并使用神岛API实现一个小案例，让玩家在进入游戏时接收到个性化的欢迎信息。
 
-学习JavaScript语言，具体的内容请参考 [JavaScript语言基础](/javascript/first-step/helloWorld)。
+学习JavaScript语言，具体的内容请参考 [JavaScript语言基础](/javascriptEntry/first-step/hi)。
 
 #### 1. 进入代码编辑器
 
@@ -47,9 +47,9 @@ world.onPlayerJoin(({entity}) => {
 这段代码将监听玩家加入事件，并使用`directMessage`方法向每位新加入的玩家发送一条包含其用户昵称的欢迎私信。
 
 > [!NOTE]
-> [**world.onPlayerJoin**](https://www.yuque.com/box3lab/api/ok49sqk24sfmx46u#KgCvN)： 当玩家加入游戏时触发。
+> [**world.onPlayerJoin**](https://docs.box3lab.com/api/GameWorld/playerJL.html#onPlayerJoin)： 当玩家加入游戏时触发。
 >
-> [**entity.player.directMessage**](https://www.yuque.com/box3lab/api/vyz9axw1n5g8smti#ItFKd)： 向玩家发送一条消息。
+> [**entity.player.directMessage**](https://docs.box3lab.com/api/GamePlayer/chat.html#directMessage)： 向玩家发送一条消息。
 
 
 #### 5. 测试效果

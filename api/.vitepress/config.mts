@@ -22,6 +22,9 @@ export default defineConfig({
   themeConfig: {
 
     // https://vitepress.dev/reference/default-theme-config
+    nav: [
+      { text: 'Arena用户手册', link: 'https://docs.box3lab.com/arena/' }
+    ],
     logo: '/arena.svg',
     search: {
       provider: 'local',
