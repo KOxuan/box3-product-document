@@ -171,7 +171,7 @@ z轴坐标
 ---
 
 
-#### <font id="API" />equals(<font id="Type">v:GameVector3,tolerance: number</font>)<font id="Type">: boolean</font>{#equals} 
+#### <font id="API" />equals(<font id="Type">v:GameVector3</font>)<font id="Type">: boolean</font>{#equals} 
 两向量的值在容差内是否近似相等
 
 **输入参数**
@@ -179,7 +179,6 @@ z轴坐标
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
 | v | 是 | | GameVector3 | 三维向量 |
-| tolerance | 是 | 0.0001 | number | 容差值 |
 
 
 ---
