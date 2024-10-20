@@ -193,21 +193,21 @@ alpha透明值，范围0~1
 
 
 
-#### <font id="API" />lerp(<font id="Type">v:GameRGBAColor,n: number</font>)<font id="Type">: GameRGBAColor</font>
+#### <font id="API" />lerp(<font id="Type">rgba: GameRGBAColor, n: number</font>)<font id="Type">: GameRGBAColor</font>
 颜色插值，返回新的颜色
 
 **输入参数**
 
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
-| v | 是 | | GameRGBAColor | 目标透明颜色 |
+| rgba | 是 | | GameRGBAColor | 目标透明颜色 |
 | n | 是 | | number(0-1) | 插值百分比 |
 
 
 ---
 
 
-#### <font id="API" />equals(<font id="Type">v:GameRGBAColor</font>)<font id="Type">: boolean</font>
+#### <font id="API" />equals(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: boolean</font>
 检测两颜色的值在容差内是否近似相等
 
 容差值：0.000001
@@ -216,7 +216,7 @@ alpha透明值，范围0~1
 
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
-| v | 是 | | GameRGBAColor | 透明颜色 |
+| rgba | 是 | | GameRGBAColor | 透明颜色 |
 
 
 ---

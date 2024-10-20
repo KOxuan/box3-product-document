@@ -63,14 +63,14 @@ import '/style.css'
 
 ---
 
-#### <font id="API" />copy(<font id="Type">v:GameBounds3</font>)<font id="Type">: GameBounds3</font>
+#### <font id="API" />copy(<font id="Type">b:GameBounds3</font>)<font id="Type">: GameBounds3</font>
 将三维空间复制到当前三维空间中，返回该三维空间
 
 **输入参数**
 
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
-| v | 是 | | GameBounds3 | 三维空间 |
+| b | 是 | | GameBounds3 | 三维空间 |
 
 ---
 
