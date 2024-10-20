@@ -39,6 +39,8 @@ Vec3的z坐标。
 #### <font id="API" />r<font id="Type">: number</font>
 > 默认值：0
 
+范围：0-255
+
 等同于x，是red红色通道，方便设置颜色时使用。
 
 > 定义于 [#L94](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L94)
@@ -48,6 +50,8 @@ Vec3的z坐标。
 #### <font id="API" />g<font id="Type">: number</font>
 > 默认值：0
 
+范围：0-255
+
 等同于y，是green绿色通道，方便设置颜色时使用。
 
 > 定义于 [#L95](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L95)
@@ -56,6 +60,8 @@ Vec3的z坐标。
 
 #### <font id="API" />b<font id="Type">: number</font>
 > 默认值：0
+
+范围：0-255
 
 等同于z，是blue蓝色通道，方便设置颜色时使用。
 

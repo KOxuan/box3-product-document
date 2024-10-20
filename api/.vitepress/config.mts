@@ -160,6 +160,7 @@ export default defineConfig({
           link: '/GameDataStorage/index',
           collapsed: false,
           items: [
+            { text: 'API讲解【教程版】', link: '/GameDataStorage/help' },
             { text: '获取数据空间', link: '/GameDataStorage/getSpace' },
             { text: '操作数据', link: '/GameDataStorage/setSpace' },
           ]

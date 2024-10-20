@@ -20,15 +20,15 @@ import '/style.css'
 | w | 是 | | number | w实部 |
 | x | 是 | | number | x虚部 |
 | y | 是 | | number | y虚部 |
-| z | 是 | | number | 
+| z | 是 | | number | z虚部 |
 
 > 定义于 [#L13263](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13263)
 
 
 ## 属性
 
-#### <font id="API" />z<font id="Type">: number</font> 
-z实部
+#### <font id="API" />w<font id="Type">: number</font> 
+w实部
 
 ---
 
@@ -72,7 +72,7 @@ z虚部
 
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
-| v | 是 | | GameQuate ||
+| v | 是 | | GameQuaternion |四元数|
 
 ---
 
@@ -128,15 +128,15 @@ z虚部
 ---
 
 
-#### <font id="API" />equals(<font id="Type">v:GameQuaternion,tolerance: number</font>)<font id="Type">: boolean</font>
- 两四元数的值在容差内是否近似相等
+#### <font id="API" />equals(<font id="Type">v:GameQuaternion</font>)<font id="Type">: boolean</font>
+两四元数的值在容差内是否近似相等
+
+容差值：0.000001
 
 **输入参数**
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 |--- | --- | --- | --- | --- |
 | v | 是 | | GameQuaternion | 四元数 |
-| tolerance | 是 | 0.0001 | number | 容差值 |
-
 
 ---
 
@@ -155,7 +155,7 @@ z虚部
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
 | v | 是 | | GameQuaternion | 目标四元数 |
-| n | 是 | | number | 插值百分比 |
+| n | 是 | | number(0-1) | 插值百分比 |
 
 
 ---
