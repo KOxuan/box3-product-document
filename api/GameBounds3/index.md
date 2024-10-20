@@ -32,7 +32,47 @@ import '/style.css'
 区域的低处顶点
 
 
+### 静态方法
+
+#### <font id="API" />fromPoints(<font id="Type">...points:GameVector3[]</font>)<font id="Type">: GameBounds3</font>
+任意数量的3d坐标点, 用来形成包围盒
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| ...points | 是 | | GameVector3[] | 三维向量列表 |
+
+
 ## 方法
+
+#### <font id="API" />set(<font id="Type">lox:number, loy:number, loz:number, hix:number, hiy:number, hiz:number</font>)<font id="Type">:  GameBounds3</font>
+设置空间值，返回该三维空间
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| lox | 是 | | number | 区域的低处顶点的X坐标 |
+| loy | 是 | | number | 区域的低处顶点的Y坐标 |
+| loz | 是 | | number | 区域的低处顶点的Z坐标 |
+| hix | 是 | | number | 区域的高处顶点的X坐标 |
+| hiy | 是 | | number | 区域的高处顶点的Y坐标 |
+| hiz | 是 | | number | 区域的高处顶点的Z坐标 |
+
+
+---
+
+#### <font id="API" />copy(<font id="Type">b:GameBounds3</font>)<font id="Type">: GameBounds3</font>
+将三维空间复制到当前三维空间中，返回该三维空间
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| b | 是 | | GameBounds3 | 三维空间 |
+
+---
 
 #### <font id="API" />intersect(<font id="Type">b:GameBounds3</font>)<font id="Type">: GameBounds3</font>
 计算与此包围盒相交的部分
@@ -86,49 +126,5 @@ import '/style.css'
 ---
 
 
-#### <font id="API" />copy(<font id="Type">v:GameBounds3</font>)<font id="Type">: GameBounds3</font>
-复制三维空间到新的空间上
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| v | 是 | | GameBounds3 | 三维空间 |
-
-
----
-
-
-#### <font id="API" />set(<font id="Type">lox:number, loy:number, loz:number, hix:number, hiy:number, hiz:number</font>)<font id="Type">:  void</font>
-设置空间值
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| lox | 是 | | number | 区域的低处顶点的X坐标 |
-| loy | 是 | | number | 区域的低处顶点的Y坐标 |
-| loz | 是 | | number | 区域的低处顶点的Z坐标 |
-| hix | 是 | | number | 区域的高处顶点的X坐标 |
-| hiy | 是 | | number | 区域的高处顶点的Y坐标 |
-| hiz | 是 | | number | 区域的高处顶点的Z坐标 |
-
-
----
-
-
 #### <font id="API" />toString()<font id="Type">: string</font>
 格式化的字符串
-
-
-### 静态方法
-
-#### <font id="API" />fromPoints(<font id="Type">...points:GameVector3[]</font>)<font id="Type">: GameBounds3</font>
-任意数量的3d坐标点, 用来形成包围盒
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| ...points | 是 | | GameVector3[] | 三维向量列表 |
-

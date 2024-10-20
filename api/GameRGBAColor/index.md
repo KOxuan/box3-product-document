@@ -3,7 +3,7 @@ import '/style.css'
 </script>
 # RGBA颜色
 
-RGBA颜色基于RGB颜色新增alpha通道，用来表示颜色的透明度。
+RGBA颜色基于RGB颜色新增alpha通道，用来表示颜色的不透明度。
 
 ## 构造函数
 
@@ -34,118 +34,31 @@ let red = rgba(255, 0, 0, 1)  // return GameRGBAColor(1, 0, 0, 1)
 ## 属性
 
 #### <font id="API" />r<font id="Type">: number</font> 
-red颜色值
+red颜色值，范围0~1
 
 ---
 
 
 #### <font id="API" />g<font id="Type">: number</font>     
-green颜色值
+green颜色值，范围0~1
 
 ---
 
 
 #### <font id="API" />b<font id="Type">: number</font>
-blue颜色值
+blue颜色值，范围0~1
 
 ---
 
 
 #### <font id="API" />a<font id="Type">: number</font>
-alpha透明值
+alpha透明值，范围0~1
 
 
 ## 方法
 
-#### <font id="API" />add(<font id="Type">v:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色加法
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| v | 是 | | GameRGBAColor | 透明颜色 |
-
-
----
-
-
-#### <font id="API" />mul(<font id="Type">v:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色相乘
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| v | 是 | | GameRGBAColor | 透明颜色 |
-
-
----
-
-
-#### <font id="API" />clone()<font id="Type">: GameRGBAColor</font>
-克隆当前透明颜色
-
----
-
-
-#### <font id="API" />copy(<font id="Type">v:GameRGBAColor</font>)<font id="Type">: void</font>
-复制透明颜色到新的颜色上
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| v | 是 | | GameRGBAColor | 透明颜色 |
-
-
----
-
-
-#### <font id="API" />div(<font id="Type">v:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色相除
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| v | 是 | | GameRGBAColor | 透明颜色 |
-
-
----
-
-
-#### <font id="API" />equals(<font id="Type">v:GameRGBAColor</font>)<font id="Type">: boolean</font>
-两颜色的值在容差内是否近似相等
-
-容差值：0.000001
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| v | 是 | | GameRGBAColor | 透明颜色 |
-
-
----
-
-
-#### <font id="API" />lerp(<font id="Type">v:GameRGBAColor,n: number</font>)<font id="Type">: GameRGBAColor</font>
-颜色插值
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| v | 是 | | GameRGBAColor | 目标透明颜色 |
-| n | 是 | | number(0-1) | 插值百分比 |
-
-
----
-
-
 #### <font id="API" />set(<font id="Type">r: number, g: number, b: number, a: number</font>)<font id="Type">: GameRGBAColor</font>
-设置颜色值
+设置透明颜色值，返回该透明颜色
 
 **输入参数**
 
@@ -160,14 +73,163 @@ alpha透明值
 ---
 
 
-#### <font id="API" />sub(<font id="Type">v:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色相减
+#### <font id="API" />copy(<font id="Type">c:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+将透明颜色复制到当前透明颜色中，返回该透明颜色
 
 **输入参数**
 
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
-| v | 是 | | GameRGBAColor | 透明颜色 |
+| c | 是 | | GameRGBAColor | 透明颜色 |
+
+
+---
+
+#### <font id="API" />clone()<font id="Type">: GameRGBAColor</font>
+克隆当前透明颜色
+
+---
+
+#### <font id="API" />add(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+颜色相加，返回新的颜色
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| rgba | 是 | | GameRGBAColor | 透明颜色 |
+
+
+---
+
+#### <font id="API" />sub(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+颜色相减，返回新的颜色
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| rgba | 是 | | GameRGBAColor | 透明颜色 |
+
+
+---
+
+
+#### <font id="API" />mul(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+颜色相乘，返回新的颜色
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| rgba | 是 | | GameRGBAColor | 透明颜色 |
+
+
+---
+
+
+#### <font id="API" />div(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+颜色相除，返回新的颜色
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| rgba | 是 | | GameRGBAColor | 透明颜色 |
+
+
+---
+
+
+#### <font id="API" />addEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+颜色相加，并覆盖当前颜色，返回该颜色
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| rgba | 是 | | GameRGBAColor | 透明颜色 |
+
+
+---
+
+#### <font id="API" />subEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+颜色相减，并覆盖当前颜色，返回该颜色
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| rgba | 是 | | GameRGBAColor | 透明颜色 |
+
+
+---
+
+
+#### <font id="API" />mulEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+颜色相乘，并覆盖当前颜色，返回该颜色
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| rgba | 是 | | GameRGBAColor | 透明颜色 |
+
+
+---
+
+
+#### <font id="API" />divEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+颜色相除，并覆盖当前颜色，返回该颜色
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| rgba | 是 | | GameRGBAColor | 透明颜色 |
+
+
+---
+
+
+
+#### <font id="API" />lerp(<font id="Type">rgba: GameRGBAColor, n: number</font>)<font id="Type">: GameRGBAColor</font>
+颜色插值，返回新的颜色
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| rgba | 是 | | GameRGBAColor | 目标透明颜色 |
+| n | 是 | | number(0-1) | 插值百分比 |
+
+
+---
+
+
+#### <font id="API" />equals(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: boolean</font>
+检测两颜色的值在容差内是否近似相等
+
+容差值：0.000001
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| rgba | 是 | | GameRGBAColor | 透明颜色 |
+
+
+---
+
+#### <font id="API" />blendEq(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
+将颜色混合到当前颜色中，返回新的颜色(RGB)
+
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| rgb | 是 | | GameRGBColor | 颜色 |
 
 
 ---
