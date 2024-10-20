@@ -76,15 +76,15 @@ input.pointerLockEvents.add('pointerlockerror', () => {
 
 
 ```javascript
-const img = UiImage.create(); // 静态方法，直接通过类上面的方法来使用。
+const play_btn = UiImage.create(); //创建一个元素或搜索一个元素均可。
 
 //当监听到鼠标按下该图片元素时
-img.events.add('pointerdown',(UiImage) => {
+play_btn.events.add('pointerdown',({ target }) => {
   //...
 })
 
 //当监听到鼠标抬起该图片元素时
-img.events.add('pointerup', (UiImage) => {
+play_btn.events.add('pointerup', ({ target }) => {
   //...
 })
 ```
@@ -93,14 +93,25 @@ img.events.add('pointerup', (UiImage) => {
 
 
 ```javascript
+// input为已定义的全局变量。
+
+// 方式一：（推荐）
 //当监听到鼠标按下任意元素时
-input.onPointerDown.sub(({ UiNode }) => {
+input.uiEvents.add('pointerdown',({ target }) => {
   //...
 });
 
 //当监听到鼠标抬起任意元素时
-input.onPointerUp.sub(({ UiNode }) => {
+input.uiEvents.add('pointerup',({ target }) => {
   //...
 });
+
+// 方式二：
+
+//当监听到鼠标按下任意元素时
+input.onPointerDown.sub(({ target }) => {
+  //...
+});
+
 
 ```

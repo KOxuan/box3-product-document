@@ -4,7 +4,7 @@
 - 在`客户端脚本`中，可以通过全局对象 `ui`，`input`，`navigator` ，`screenWidth` ，`screenHeight` 来使用它。
 
 ::: tip
-在推出此功能前，已有GUI功能，基于xml编写，但已不推荐使用，因有更优方案且不支持可视化编辑。推荐使用GameUI。
+在推出此功能前，已有GUI功能，基于xml编写。但已不推荐使用，因有更优方案且支持可视化编辑。推荐使用最新的GameUI。
 对旧版GUI感兴趣可查阅[d.ts文件](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13224)。
 :::
 
@@ -25,9 +25,6 @@ declare class Navigator {
     //...
 }
 declare class UiNode {
-    //...
-}
-declare class ClientRemoteChannel {
     //...
 }
 ```

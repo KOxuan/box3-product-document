@@ -115,15 +115,16 @@ alpha透明值
 ---
 
 
-#### <font id="API" />equals(<font id="Type">v:GameRGBAColor,tolerance: number</font>)<font id="Type">: boolean</font>
+#### <font id="API" />equals(<font id="Type">v:GameRGBAColor</font>)<font id="Type">: boolean</font>
 两颜色的值在容差内是否近似相等
+
+容差值：0.000001
 
 **输入参数**
 
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
 | v | 是 | | GameRGBAColor | 透明颜色 |
-| tolerance | 是 | 0.0001 | number | 容差值 |
 
 
 ---
@@ -137,7 +138,7 @@ alpha透明值
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
 | v | 是 | | GameRGBAColor | 目标透明颜色 |
-| n | 是 | | number | 插值百分比 |
+| n | 是 | | number(0-1) | 插值百分比 |
 
 
 ---

@@ -109,15 +109,16 @@ blue颜色值
 ---
 
 
-#### <font id="API" />equals(<font id="Type">v:GameRGBColor,tolerance: number</font>)<font id="Type">: boolean</font>
+#### <font id="API" />equals(<font id="Type">v:GameRGBColor</font>)<font id="Type">: boolean</font>
 两颜色的值在容差内是否近似相等
+
+容差值：0.000001
 
 **输入参数**
 
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
 | v | 是 | | GameRGBColor | 颜色 |
-| tolerance | 是 | 0.0001 | number | 容差值 |
 
 
 ---
@@ -131,7 +132,7 @@ blue颜色值
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
 | v | 是 | | GameRGBColor | 目标颜色 |
-| n | 是 | | number | 插值百分比 |
+| n | 是 | | number(0-1) | 插值百分比 |
 
 
 ---
