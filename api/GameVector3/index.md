@@ -172,7 +172,10 @@ z轴坐标
 
 
 #### <font id="API" />equals(<font id="Type">v:GameVector3</font>)<font id="Type">: boolean</font>{#equals} 
+
 两向量的值在容差内是否近似相等
+
+容差值：0.000001
 
 **输入参数**
 
@@ -185,7 +188,7 @@ z轴坐标
 
 
 #### <font id="API" />exactEquals(<font id="Type">v:GameVector3</font>)<font id="Type">: boolean</font>{#exactEquals} 
-两向量的值是否相等
+两向量的值是否完全相等
 
 **输入参数**
 
@@ -205,7 +208,7 @@ z轴坐标
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
 | v | 是 | | GameVector3 | 目标三维向量 |
-| n | 是 | | number | 插值百分比 |
+| n | 是 | | number(0-1) | 插值百分比 |
 
 
 ---
