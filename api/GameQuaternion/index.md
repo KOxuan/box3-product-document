@@ -50,7 +50,7 @@ z虚部
 
 ---
 
-### 静态方法
+## 静态方法
 
 #### <font id="API" />fromAxisAngle(<font id="Type">axis:GameVector3,rad:number</font>)<font id="Type">: GameQuaternion</font>
 根据旋转轴和旋转弧度计算四元数
@@ -97,7 +97,7 @@ z虚部
 
 
 #### <font id="API" />set(<font id="Type">w: number, x: number, y: number, z: number</font>)<font id="Type">: GameQuaternion</font>
-设置四元数值，返回该四元数
+设置四元数值，返回当前四元数
 
 **输入参数**
 
@@ -113,7 +113,7 @@ z虚部
 
 
 #### <font id="API" />copy(<font id="Type">v:GameQuaternion</font>)<font id="Type">: GameQuaternion</font>
-将四元数复制到当前四元数中，返回该四元数
+将四元数复制到当前四元数中，返回当前四元数
 
 **输入参数**
 
@@ -126,13 +126,7 @@ z虚部
 
 
 #### <font id="API" />clone()<font id="Type">: GameQuaternion</font>
-克隆当前四元数
-
----
-
-
-#### <font id="API" />inv()<font id="Type">: GameQuaternion</font>
-反转四元数，返回新的四元数
+克隆当前四元数，返回新的四元数
 
 ---
 
@@ -177,7 +171,7 @@ z虚部
 
 
 #### <font id="API" />add(<font id="Type">v:GameQuaternion</font>)<font id="Type">: GameQuaternion</font>
-四元数相加，返回新的四元数
+四元数加法，返回新的四元数
 
 **输入参数**
 
@@ -189,7 +183,7 @@ z虚部
 
 
 #### <font id="API" />sub(<font id="Type">v:GameQuaternion</font>)<font id="Type">: GameQuaternion</font>
-四元数相减，返回新的四元数
+四元数减法，返回新的四元数
 
 **输入参数**
 
@@ -202,7 +196,7 @@ z虚部
 
 
 #### <font id="API" />mul(<font id="Type">q:GameQuaternion</font>)<font id="Type">: GameQuaternion</font>
-四元数相乘，返回新的四元数
+四元数乘法，返回新的四元数
 
 **输入参数**
 
@@ -214,8 +208,14 @@ z虚部
 ---
 
 
+#### <font id="API" />inv()<font id="Type">: GameQuaternion</font>
+四元数转置，返回新的四元数
+
+---
+
+
 #### <font id="API" />div(<font id="Type">q:GameQuaternion</font>)<font id="Type">: GameQuaternion</font>
-四元数相除，返回新的四元数
+四元数除法，返回新的四元数
 
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
@@ -229,18 +229,6 @@ z虚部
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 |--- | --- | --- | --- | --- |
 | q | 是 | | GameQuaternion | 四元数 |
-
-
----
-
-#### <font id="API" />scale(<font id="Type">n:number</font>)<font id="Type">: GameQuaternion</font>
-四元数等比缩放
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| n | 是 | | number | 缩放值 |
 
 
 ---
@@ -259,9 +247,8 @@ z虚部
 ---
 
 
-
 #### <font id="API" />angle(<font id="Type">q:GameQuaternion</font>)<font id="Type">: number</font>
-得到两个四元数之间的角度
+返回两个四元数之间的角度
 
 **输入参数**
 
@@ -271,14 +258,26 @@ z虚部
 
 ---
 
+#### <font id="API" />getAxisAngle(<font id="Type">_q:GameQuaternion</font>)<font id="Type">: {angle:number;axis:GameVector3}</font>
+返回四元数的旋转弧度和旋转轴
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| --- | --- | --- | --- | --- |
+| _q | 是 | | GameQuaternion | 四元数 |
+
+
+---
+
 
 #### <font id="API" />mag()<font id="Type">: number</font>
-得到该四元数的长度
+返回该四元数的长度
 
 ---
 
 #### <font id="API" />sqrMag()<font id="Type">: number</font>
-得到四元数的平方长度
+返回四元数的平方长度
 
 ---
 
@@ -298,23 +297,10 @@ z虚部
 
 #### <font id="API" />normalize()<font id="Type">: GameQuaternion</font>
 
-四元数归一化
-
----
-
-
-#### <font id="API" />getAxisAngle(<font id="Type">_q:GameQuaternion</font>)<font id="Type">: {angle:number;axis:GameVector3}</font>
-获取四元数的旋转轴和旋转弧度
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| --- | --- | --- | --- | --- |
-| _q | 是 | | GameQuaternion | 四元数 |
-
+四元数归一化，返回新的四元数
 
 ---
 
 
 #### <font id="API" />toString()<font id="Type">: string</font>
-四元数格式化的字符串
+返回四元数格式化的字符串
