@@ -1,18 +1,13 @@
 # TS与JS混合使用
 ::: danger
-⚠ 不推荐完全依赖JavaScript进行地图开发，尽管这样可以避免TypeScript的类型检测及其复杂的语法结构，但在Visual Studio Code开发工具已经对TypeScript提供全面支持的背景下，继续使用JavaScript就像是拿着大牛刀去砍小蚂蚁——大材小用，且未能充分利用更先进的工具链。
+⚠️ 不建议纯用JavaScript开发地图，因为虽能避开TypeScript的复杂性和类型检查，但在VS Code全面支持TypeScript的今天，这样做显得不够高效且未充分利用先进工具链。
 
+混用JavaScript和TypeScript时，会遇到以下问题：
+- 代码风格和质量不一，增加审查和维护难度。
+- JavaScript的全局变量和副作用可能与TypeScript的模块化和类型推断冲突，需额外处理。
+- JavaScript的动态类型特性与TypeScript的静态类型检查不兼容，可能导致类型错误或需额外断言，降低开发效率和代码可读性。
 
-
-在混合使用JavaScript和TypeScript时，可能会遇到一系列问题：
-
-+ 尽管TypeScript的静态类型检查机制能够显著提升代码质量，但两种语言的混用却可能导致代码风格和质量上的不一致。这不仅会加大代码审查的难度，还会给后续的维护工作带来挑战。
-+ JavaScript代码中常见的全局变量和副作用问题，可能会与TypeScript的类型推断和模块封装机制产生冲突。TypeScript鼓励使用模块化和避免全局状态，但在与JavaScript代码交互时，可能需要额外处理这些全局变量和副作用，以确保类型安全和代码清晰。
-+ JavaScript的动态类型特性，如允许在运行时改变变量类型、添加或删除对象属性等，与TypeScript的静态类型检查机制存在本质差异。这可能导致在处理JavaScript代码时，TypeScript出现类型错误或需要额外的类型断言，从而降低了开发效率和代码可读性。
-
-
-
-对于大型项目或遗留代码库，建议采取逐步迁移的策略。可以将JavaScript代码逐步迁移到TypeScript，而不是一次性将整个代码库转换为TypeScript。这样不仅可以逐步引入类型安全性和其他TypeScript特性，还能有效减少迁移过程中的风险和工作量。
+对于大型项目或遗留代码库，建议逐步迁移JavaScript到TypeScript，以逐步引入类型安全和其他特性，同时减少迁移风险和工作量。
 
 :::
 
