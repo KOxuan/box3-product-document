@@ -64,7 +64,7 @@ z轴坐标
 ## 方法
 
 #### <font id="API" />set(<font id="Type">x: number, y: number, z: number</font>)<font id="Type">:  GameVector3</font>{#set} 
-设置向量值，返回该向量
+设置向量值，返回当前向量
 
 **输入参数**
 
@@ -78,7 +78,7 @@ z轴坐标
 ---
 
 #### <font id="API" />copy(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#copy} 
-将三维向量复制到当前三维向量中，返回该向量
+将三维向量复制到当前三维向量中，返回当前向量
 
 **输入参数**
 
@@ -91,14 +91,14 @@ z轴坐标
 
 
 #### <font id="API" />clone()<font id="Type">: GameVector3</font>{#clone} 
-克隆当前三维向量
+克隆当前三维向量，返回新的向量
 
 ---
 
 
 
 #### <font id="API" />add(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#add} 
-向量相加，返回新的向量
+向量加法，返回新的向量
 
 **输入参数**
 
@@ -110,7 +110,7 @@ z轴坐标
 ---
 
 #### <font id="API" />sub(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#sub} 
-向量相减，返回新的向量
+向量减法，返回新的向量
 
 **输入参数**
 
@@ -123,7 +123,7 @@ z轴坐标
 
 
 #### <font id="API" />mul(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#mul} 
-向量点乘，返回新的向量
+向量逐元素乘法，返回新的向量
 
 **输入参数**
 
@@ -147,7 +147,7 @@ z轴坐标
 ---
 
 #### <font id="API" />addEq(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#addEq} 
-向量相加，并覆盖当前向量，返回该向量
+向量加法，并覆盖当前向量，返回当前向量
 
 **输入参数**
 
@@ -159,7 +159,7 @@ z轴坐标
 ---
 
 #### <font id="API" />subEq(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#subEq} 
-向量相减，并覆盖当前向量，返回该向量
+向量减法，并覆盖当前向量，返回当前向量
 
 **输入参数**
 
@@ -172,7 +172,7 @@ z轴坐标
 
 
 #### <font id="API" />mulEq(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#mulEq} 
-向量点乘，并覆盖当前向量，返回该向量
+向量逐元素乘法，并覆盖当前向量，返回当前向量
 
 **输入参数**
 
@@ -184,7 +184,7 @@ z轴坐标
 ---
 
 #### <font id="API" />divEq(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#divEq} 
-向量相除，并覆盖当前向量，返回该向量
+向量相除，并覆盖当前向量，返回当前向量
 
 **输入参数**
 
@@ -352,7 +352,7 @@ z轴坐标
 
 
 #### <font id="API" />normalize()<font id="Type">: GameVector3</font>{#normalize} 
-向量归一化
+向量归一化，返回新的向量
 
 ---
 
