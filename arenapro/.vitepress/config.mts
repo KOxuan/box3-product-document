@@ -38,6 +38,16 @@ export default defineConfig({
           { text: 'debug模式', link: '/guide/debug' },
         ]
       }, {
+        text: '使用进阶',
+        collapsed: false,
+        items: [
+          { text: '跨端共享脚本', link: '/guide/shares' },
+          { text: '导入JSON', link: '/advanced/json' },
+          { text: '改变构建文件名', link: '/advanced/buildFile' },
+          { text: '路径别名设置', link: '/advanced/pathAliases' },
+          { text: '跨项目引用', link: '/advanced/crossProject' },
+        ]
+      },{
         text: 'dao3Cfg配置',
         collapsed: false,
         items: [
@@ -51,6 +61,8 @@ export default defineConfig({
           { text: '自定义entity属性与方法', link: '/codeDiff/customizeEntity' },
           { text: 'dialog', link: '/codeDiff/dialog' },
           { text: 'findChildByName', link: '/codeDiff/findChildByName' },
+          { text: 'GameDataStorage', link: '/codeDiff/storage' },
+          { text: 'RemoteChannel', link: '/codeDiff/remoteChannel' },
         ]
       }, {
         text: '组件式编程',
@@ -60,16 +72,7 @@ export default defineConfig({
           { text: '生命周期', link: '/component/lifecycle' },
           { text: '组件父类接口', link: '/component/parent' },
         ]
-      }, {
-        text: '使用进阶',
-        collapsed: false,
-        items: [
-          { text: '导入JSON', link: '/advanced/json' },
-          { text: '改变构建文件名', link: '/advanced/buildFile' },
-          { text: '路径别名设置', link: '/advanced/pathAliases' },
-          { text: '跨项目引用', link: '/advanced/crossProject' },
-        ]
-      }, {
+      },  {
         text: '学习资源',
         collapsed: false,
         items: [{

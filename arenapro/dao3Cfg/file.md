@@ -6,6 +6,7 @@ myArenaProject
 ├── package-lock.json			 	--node项目包信息文件
 ├── .gitignore			       		--Git忽略特定信息文件
 ├── /node_modules/				 	--node项目包文件夹
+├── /shares/						--共享脚本文件夹
 ├── /server/						--服务端脚本
 |   ├── tsconfig.json      			--ts配置文件
 |   ├── webpack.config.js   		--webpack配置文件
@@ -36,20 +37,21 @@ myArenaProject
 :::danger
 ⚠️以下文件**禁止移动/改名**，否则可能会出现不可预知的错误：
 
-1. GameAPI.d.ts
-2. ClientAPI.d.ts
-3. tsconfig.json
-4. package.json
-5. package-lock.json
-6. dao3.config.json
-7. .gitignore
+1. **GameAPI.d.ts**
+2. **ClientAPI.d.ts**
+3. **tsconfig.json**
+4. **package.json**
+5. **package-lock.json**
+6. **dao3.config.json**
+7. **.gitignore**
 
 :::
 
 ::: tip
-⚠️以下文件**禁止修改**，因为有自动检测更新机制，导致自定义更改丢失。
+⚠️**重要提示**：以下文件**严禁修改/移动**，因为内置了自动检测更新机制，任何自定义更改都可能导致数据丢失。
 
-1. GameAPI.d.ts
-2. ClientAPI.d.ts
+请注意，这些文件与Arena脚本编辑器内置的`.d.ts`文件存在差异。AP插件专为TypeScript语言定制了一份`.d.ts`文件，提供了更佳的适配性和代码提示功能。
 
+1. **GameAPI.d.ts**
+2. **ClientAPI.d.ts**
 :::
