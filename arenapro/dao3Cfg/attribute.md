@@ -9,13 +9,13 @@
         "server": {
           "base": "./server",
           "entry": "src/App.ts",
-          "development": false,
+          "development": true,
           "webpack": "./server/webpack.config.js"
         },
         "client": {
           "base": "./client",
           "entry": "src/clientApp.ts",
-          "development": false,
+          "development": true,
           "webpack": "./client/webpack.config.js"
         }
       }
@@ -45,11 +45,11 @@
 | file.typescript.server | √ | object |  | Arena**服务端**项目配置 |
 | file.typescript.server.base | √ | string | ./server | Arena**服务端**项目文件夹目录 |
 | file.typescript.server.entry |  | string | App.ts | Arena**服务端**项目入口文件 |
-| file.typescript.server.development |  | boolean | false | Arena**服务端**项目编译模式，默认为生产模式<br/>开发环境下打包后不压缩不混淆，方便在神岛Dubug |
+| file.typescript.server.development |  | boolean | true | Arena**服务端**项目编译模式，默认为开发模式<br/>开发环境下打包后不压缩不混淆，方便在神岛Dubug |
 | file.typescript.client | √ | object |  | Arena**客户端**项目配置 |
 | file.typescript.client.base | √ | string | ./client | Arena**客户端**项目文件夹目录 |
 | file.typescript.client.entry |  | string | clientApp.ts | Arena**客户端**项目入口文件 |
-| file.typescript.client.development |  | boolean | false | Arena**客户端**项目编译模式，默认为生产模式 |
+| file.typescript.client.development |  | boolean | true | Arena**客户端**项目编译模式，默认为开发模式 |
 | file.typescript.client.webpack |  | string | ./端/webpack.config.js | Arena**端**项目webpack编译配置相对路径 |
 | outputAndUpdate |  | object |  | 当前编译文件配置，默认选择第一位数据信息 |
 | outputAndUpdate.name | √ | string | bundle.js | 上传到神岛脚本编辑器的文件名称，必须带有`.js`后缀 |
