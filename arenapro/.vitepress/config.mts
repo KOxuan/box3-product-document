@@ -36,6 +36,7 @@ export default defineConfig({
             ]
           },
           { text: 'debug模式', link: '/guide/debug' },
+          { text: '模块热替换编译方式', link: '/guide/hmr' },
         ]
       }, {
         text: '使用进阶',
