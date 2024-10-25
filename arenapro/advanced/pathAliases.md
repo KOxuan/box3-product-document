@@ -13,13 +13,7 @@
 ![](/pathAliases3.webp)
 
 ## 第一步：webpackcfg设置路径别名
-我们可以通过在 `webpack.config.js` 文件中配置 `alias` 选项来设置路径别名，以便于打包。
+我们可以通过在 `webpack.config.js` 文件中配置 `alias` 选项来设置路径别名，以便于完整打包。
 
-![](/pathAliases4.webp)
-
-注意，这里要写具体的引用的值。才能打包成功。
-
-
-
-另外一种方式：[TypeScript 路径别名](https://developer.baidu.com/article/detail.html?id=2835325)
+![](/pathAliases4.png)
 
