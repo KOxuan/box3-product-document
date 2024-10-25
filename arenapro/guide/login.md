@@ -25,6 +25,8 @@
   
 > 获取当前浏览器**userAgent**方式：[https://passer-by.com/browser/](https://passer-by.com/browser/) ，找到用户代理。  
   
+![](https://static.codemao.cn/pickduck/r1MiBddxkg.gif?hash=FnDE12EtzYOF85UdIFU2tGZrPr-B)
+
 ![获取userAgent](/ua.webp)  
   
 接下来，复制所有文本并粘贴到插件中。  
@@ -35,6 +37,8 @@
   
 > 获取**账户Token**方式：[https://code-api-pc.dao3.fun/auth/user](https://code-api-pc.dao3.fun/auth/user) ，直接复制所有JSON文本或仅复制token一项。  
   
+![](https://static.codemao.cn/pickduck/Hkyxvu_ekg.gif?hash=FmIsFcjEF_1YO2HVd4xDNFZDT3pl)
+
 已登录状态下，界面如下：  
   
 ![获取Token](/token.webp)  
