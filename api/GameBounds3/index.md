@@ -32,7 +32,7 @@ import '/style.css'
 区域的低处顶点
 
 
-### 静态方法
+## 静态方法
 
 #### <font id="API" />fromPoints(<font id="Type">...points:GameVector3[]</font>)<font id="Type">: GameBounds3</font>
 任意数量的3d坐标点, 用来形成包围盒
@@ -64,7 +64,7 @@ import '/style.css'
 ---
 
 #### <font id="API" />copy(<font id="Type">b:GameBounds3</font>)<font id="Type">: GameBounds3</font>
-将三维空间复制到当前三维空间中，返回该三维空间
+将三维空间复制到当前三维空间中，返回当前三维空间
 
 **输入参数**
 
@@ -127,4 +127,4 @@ import '/style.css'
 
 
 #### <font id="API" />toString()<font id="Type">: string</font>
-格式化的字符串
+返回三维空间格式化的字符串

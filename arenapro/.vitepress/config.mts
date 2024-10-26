@@ -30,12 +30,27 @@ export default defineConfig({
             text: 'HelloWorld 项目',
             collapsed: true,
             items: [
-              { text: '编写代码', link: '/guide/HelloWorld/one' },
-              { text: '打包上传', link: '/guide/HelloWorld/two' },
-              { text: '运行测试', link: '/guide/HelloWorld/three' },
+              {
+                text: 'TypeScript版',
+                collapsed: true,
+                items: [
+                  { text: '编写代码', link: '/guide/HelloWorld/one' },
+                  { text: '打包上传', link: '/guide/HelloWorld/two' },
+                  { text: '运行测试', link: '/guide/HelloWorld/three' },
+                ]
+              }, {
+                text: 'JavaScript版',
+                collapsed: true,
+                items: [
+                  { text: '编写代码', link: '/guide/HelloWorld/one-js' },
+                  { text: '打包上传', link: '/guide/HelloWorld/two-js' },
+                  { text: '运行测试', link: '/guide/HelloWorld/three-js' },
+                ]
+              },
             ]
           },
           { text: 'debug模式', link: '/guide/debug' },
+          { text: '模块热替换编译方式', link: '/guide/hmr' },
         ]
       }, {
         text: '使用进阶',

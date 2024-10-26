@@ -49,7 +49,7 @@ green颜色值，范围0~1
 blue颜色值，范围0~1
 
 
-### 静态方法
+## 静态方法
 
 #### <font id="API" />random()<font id="Type">: GameRGBColor</font>
 返回随机颜色
@@ -58,7 +58,7 @@ blue颜色值，范围0~1
 ## 方法
 
 #### <font id="API" />set(<font id="Type">r: number, g: number, b: number</font>)<font id="Type">: GameRGBColor</font>
-设置颜色值，返回该颜色
+设置颜色值，返回当前颜色
 
 **输入参数**
 
@@ -72,7 +72,7 @@ blue颜色值，范围0~1
 ---
 
 #### <font id="API" />copy(<font id="Type">c:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
-将颜色复制到当前颜色中，返回该颜色
+将颜色复制到当前颜色中，返回当前颜色
 
 **输入参数**
 
@@ -84,7 +84,7 @@ blue颜色值，范围0~1
 ---
 
 #### <font id="API" />clone()<font id="Type">: GameRGBColor</font>
-克隆当前颜色
+克隆当前颜色，返回新的颜色
 
 ---
 
@@ -142,7 +142,7 @@ blue颜色值，范围0~1
 
 
 #### <font id="API" />addEq(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
-颜色相加，并覆盖当前颜色，返回该颜色
+颜色相加，并覆盖当前颜色，返回当前颜色
 
 **输入参数**
 
@@ -154,7 +154,7 @@ blue颜色值，范围0~1
 ---
 
 #### <font id="API" />subEq(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
-颜色相减，并覆盖当前颜色，返回该颜色
+颜色相减，并覆盖当前颜色，返回当前颜色
 
 **输入参数**
 
@@ -167,7 +167,7 @@ blue颜色值，范围0~1
 
 
 #### <font id="API" />mulEq(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
-颜色相乘，并覆盖当前颜色，返回该颜色
+颜色相乘，并覆盖当前颜色，返回当前颜色
 
 **输入参数**
 
@@ -180,7 +180,7 @@ blue颜色值，范围0~1
 
 
 #### <font id="API" />divEq(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
-颜色相除，并覆盖当前颜色，返回该颜色
+颜色相除，并覆盖当前颜色，返回当前颜色
 
 **输入参数**
 
@@ -220,11 +220,11 @@ blue颜色值，范围0~1
 
 
 #### <font id="API" />toRGBA()<font id="Type">: GameRGBAColor</font>
-将当前颜色 转换为 透明颜色（alpha透明值 为 1）
+将当前颜色 转换为 透明颜色（alpha透明值 为 1），返回新的透明颜色
 
 ---
 
 
 #### <font id="API" />toString()<font id="Type">: string</font>
-颜色格式化的字符串
+返回颜色格式化的字符串
 

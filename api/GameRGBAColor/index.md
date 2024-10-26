@@ -86,12 +86,12 @@ alpha透明值，范围0~1
 ---
 
 #### <font id="API" />clone()<font id="Type">: GameRGBAColor</font>
-克隆当前透明颜色
+克隆当前透明颜色，返回新的透明颜色
 
 ---
 
 #### <font id="API" />add(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色相加，返回新的颜色
+颜色相加，返回新的透明颜色
 
 **输入参数**
 
@@ -103,7 +103,7 @@ alpha透明值，范围0~1
 ---
 
 #### <font id="API" />sub(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色相减，返回新的颜色
+颜色相减，返回新的透明颜色
 
 **输入参数**
 
@@ -116,7 +116,7 @@ alpha透明值，范围0~1
 
 
 #### <font id="API" />mul(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色相乘，返回新的颜色
+颜色相乘，返回新的透明颜色
 
 **输入参数**
 
@@ -129,7 +129,7 @@ alpha透明值，范围0~1
 
 
 #### <font id="API" />div(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色相除，返回新的颜色
+颜色相除，返回新的透明颜色
 
 **输入参数**
 
@@ -142,7 +142,7 @@ alpha透明值，范围0~1
 
 
 #### <font id="API" />addEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色相加，并覆盖当前颜色，返回该颜色
+颜色相加，并覆盖当前颜色，返回当前透明颜色
 
 **输入参数**
 
@@ -154,7 +154,7 @@ alpha透明值，范围0~1
 ---
 
 #### <font id="API" />subEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色相减，并覆盖当前颜色，返回该颜色
+颜色相减，并覆盖当前颜色，返回当前透明颜色
 
 **输入参数**
 
@@ -167,7 +167,7 @@ alpha透明值，范围0~1
 
 
 #### <font id="API" />mulEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色相乘，并覆盖当前颜色，返回该颜色
+颜色相乘，并覆盖当前颜色，返回当前透明颜色
 
 **输入参数**
 
@@ -180,7 +180,7 @@ alpha透明值，范围0~1
 
 
 #### <font id="API" />divEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
-颜色相除，并覆盖当前颜色，返回该颜色
+颜色相除，并覆盖当前颜色，返回当前透明颜色
 
 **输入参数**
 
@@ -194,7 +194,7 @@ alpha透明值，范围0~1
 
 
 #### <font id="API" />lerp(<font id="Type">rgba: GameRGBAColor, n: number</font>)<font id="Type">: GameRGBAColor</font>
-颜色插值，返回新的颜色
+颜色插值，返回新的透明颜色
 
 **输入参数**
 
@@ -222,7 +222,7 @@ alpha透明值，范围0~1
 ---
 
 #### <font id="API" />blendEq(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
-将颜色混合到当前颜色中，返回新的颜色(RGB)
+基于给定的参数颜色作为背景，返回该背景颜色与当前透明颜色叠加后的最终显示颜色。
 
 
 **输入参数**
@@ -236,5 +236,5 @@ alpha透明值，范围0~1
 
 
 #### <font id="API" />toString()<font id="Type">: string</font>
-颜色格式化的字符串
+返回颜色格式化的字符串
 
