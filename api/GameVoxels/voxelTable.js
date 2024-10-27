@@ -51,7 +51,6 @@ function createTableRow(option, ...datas) {
       td.addEventListener('contextmenu', (ev) => {
         ev.preventDefault();
         navigator.clipboard.writeText(data);
-        alert$.next("复制成功：" + data);
       });
     }
     tr.appendChild(td);
