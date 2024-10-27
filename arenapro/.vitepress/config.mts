@@ -127,6 +127,7 @@ export default defineConfig({
             text: '便利相关',
             collapsed: false,
             items: [
+              { text: '单个上传js文件', link: '/bestPractices/upLoad-js' },
               { text: '多桌面开发', link: '/bestPractices/multipleDesktops' },
               { text: 'ts与js混搭', link: '/bestPractices/allowJs' },
             ]

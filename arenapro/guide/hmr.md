@@ -63,21 +63,16 @@ module.exports = {
 - 在各自工作区开启HMR服务器即可，会自动判断当前工作区，自动切换到对应工作区的配置文件。
 
 
-
-## 如何开启HMR服务器
+## 如何开启/重启/停止HMR服务器
 
 在VSCode中，按下`Shift+Ctrl+P`（Windows/Linux）或 `Shift+Cmd+P`（Mac）调出`命令面板（Command Palette）`。  
   
 ![命令面板](/commd.webp)  
   
-输入`arenapro`，找到 `启动模块热替换服务器[startHMR]`选项并点击。  
+输入`arenapro`，找到 `启动并加载配置[startHMR]`选项并点击。  
 
 ![命令面板](/01734c7b-4e5f-4756-920f-2becd8133bf4.png)  
 
 开启后就可以监听到文件修改了，会自动编译，并上传到神岛。
 
 ![命令面板](/QQ20241024-163837.png)  
-
-
-## 关于重启HMR服务器说明
-当前，由于技术问题，导致无法彻底关闭HMR服务器，所以需要重启vsc编辑器，然后再次开启服务器即可。（`ctrl+shift+p`输入`reload window`）
