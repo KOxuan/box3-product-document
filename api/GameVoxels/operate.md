@@ -1,11 +1,8 @@
 <script setup>
 import '/style.css'
-import './voxelTable.css'
-import './voxelTable.js'
+
 </script>
-<!--<link href="/style.css" rel="stylesheet" />
-<link href="./voxelTable.css" rel="stylesheet" />
--->
+
 # 方块的操作
 
 > 如果你想要地图**在非运行状态**，通过脚本在场景中**快速建造**，可以尝试以下操作：
@@ -397,18 +394,6 @@ createBoard(32, 9, 32, 19)
 
 > 定义于 [#L10471](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10471)
 
-
-## 方块id和名称对照表
-::: info
-  <span class="light">发光</span>表示该种方块可以发光（暂时不能体现光源颜色）  
-  <span class="fluidText">蓝色下划线</span>表示该种方块为液体方块（暂时不能体现液体颜色）  
-  <span class="animationText">左右边框</span>表示该种方块为动态方块  
-  若单元格左侧有绿色边框，代表该种方块为新增方块[^1]  
-  名称和id鼠标右键/触屏长按可复制其内容  
-  要是棋盘方块的描述看不懂，可以把描述里的制表符叠加起来看
-:::
-
-<span id="voxelTable"></span>
 
 ## 快速建造代码示例
 ```javascript
