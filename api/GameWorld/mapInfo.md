@@ -12,6 +12,15 @@ import '/style.css'
 
 ---
 
+#### <font id="API" />serverId<font id="Type">: string</font> {#serverId}
+
+当前服务器ID
+
+可通过[`teleport`](./teleport)生成服务器ID。
+
+> 定义于 [#L9950](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_10_28.d.ts#L9950)
+
+---
 
 #### <font id="API" /><font id="ReadOnly">只读</font>currentTick<font id="Type">: number</font>   {#currentTick}
 > 默认值：0

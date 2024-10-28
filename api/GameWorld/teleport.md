@@ -17,7 +17,7 @@ import '/style.css'
 
 ### **方法**
 
-#### <font id="API" />teleport(<font id="Type">mapId: string,players:[GameEntity](/GameEntity/)[]</font>)<font id="Type">: Promise‹void›</font>{#teleport}
+#### <font id="API" />teleport(<font id="Type">mapId: string,players: [GameEntity](/GameEntity/)[],serverId?: string</font>)<font id="Type">: Promise‹[TeleportResult](./teleport#TeleportResult)›</font>{#teleport}
 地图组内传送能力，能够让玩家被传送到指定地图中。且单独开一个地图服务容器（房间），非传送玩家不可见。
 
 **此能力受权限影响，无权限账户调用后会导致报错。**
@@ -28,8 +28,16 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | mapId | 是 | | string | 目标地图id |
 | players | 是 | | GameEntity[] | 被传送的玩家entity数组 |
+| serverId |  | | string | 自定义生成的服务器id，反之为系统随机生成 |
 
-> 定义于 [#L9919](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9919)
+
+**返回值**
+
+| **类型** | **说明** |
+| --- | --- |
+| Promise‹TeleportResult› | 异步返回传送结果 |
+
+> 定义于 [#L9922](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_10_28.d.ts#L9922)
 
 
 :::info
@@ -59,3 +67,16 @@ world.say('传送成功 ')
 ```
 :::
 
+
+
+
+## 接口
+
+#### <font id="API" />TeleportResult{#TeleportResult}
+传送结果
+
+| **参数** | **类型** | **说明** |
+| --- | --- | --- |
+| serverId | string | 生成的服务器id |
+
+> 定义于 [#L9335](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_10_28.d.ts#L9335)
