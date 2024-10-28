@@ -348,7 +348,7 @@ createBoard(32, 9, 32, 19)
 | --- | --- |
 | number | 返回指定位置的方块id，**不包含方块的旋转码** |
 
-> 定义于 [[待补充]](#)
+> 定义于 [#L10414](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10414)
 ---
 
 #### <font id="API" />getVoxelId(<font id="Type">x:number,y:number,z:number</font>)<font id="Type">: number</font>{#getVoxelId}
