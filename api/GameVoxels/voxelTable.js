@@ -50,7 +50,9 @@ function createTableRow(option, ...datas) {
       td.setAttribute("title", "右键单击可复制此处内容");
       td.addEventListener('contextmenu', (ev) => {
         ev.preventDefault();
-        navigator.clipboard.writeText(data);
+        navigator.clipboard.writeText(data).then(() => {
+          alert(data + '已复制到剪切板。');
+        });
       });
     }
     tr.appendChild(td);
@@ -58,9 +60,11 @@ function createTableRow(option, ...datas) {
   return tr;
 }
 
-document.addEventListener('scroll', () => {
-  if(rendered)
+export function createColGroup() {
+
+  if (rendered)
     return;
+  document.getElementById('voxBotten').remove();
   console.log('方块速查表 v2');
   let localVoxelTypes = localStorage.getItem('voxelTypes'), oldVoxelNames = [];
   if (localVoxelTypes !== null) {
@@ -149,4 +153,4 @@ document.addEventListener('scroll', () => {
     console.log('方块速查表渲染完成');
     rendered = true;
   }
-});
+};
