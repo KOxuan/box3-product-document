@@ -14,6 +14,7 @@ declare class GameWorld {
 
 ## 属性
 - [`projectName`](./mapInfo#projectName) : 本张地图名称，对应项目设置中的名称
+- [`serverId`](./mapInfo#serverId) : 当前服务器ID
 - [`currentTick`](./mapInfo#currentTick) : 世界当前的Tick计数
 - [`useOBB`](./mapInfo#useOBB) : 是否切换为OBB包围盒计算方式
 - [`gravity`](./physics#gravity) : 世界重力
@@ -133,6 +134,7 @@ declare class GameWorld {
 - [`GameWorldKeyframe`](./animate#GameWorldKeyframe) : World世界动画关键帧参数
 - [`GameAnimationPlaybackConfig`](./animate#GameAnimationPlaybackConfig) : 用于动画播放配置的参数组
 - [`GamePurchaseSuccessEvent`](./shopping#GamePurchaseSuccessEvent) : 当玩家成功购买物品时触发的事件
+- [`TeleportResult`](./teleport#TeleportResult) : 传送结果
 
 ## 枚举
 - [`GameButtonType`](./input#GameButtonType) : 玩家按下的按钮类型
