@@ -95,6 +95,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '操作方块', link: '/GameVoxels/operate' },
+            { text: '方块速查表', link: '/GameVoxels/cheatSheet' },
           ]
         }, {
           text: '🏠游戏实体',
