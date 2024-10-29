@@ -42,6 +42,10 @@
     margin-bottom: 5px;
 }
 
+#voxelTable {
+    transition: max-height 2s;
+}
+
 /*解决方块速查表颜色太深看不见字问题*/
 .voxelTableData span,
 .coloredWord {
