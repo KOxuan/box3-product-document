@@ -1,6 +1,6 @@
 /*文字发光效果 用于方块速查表*/
 .light {
-    text-shadow: 0px 0px 4px yellow;
+    text-shadow: 0px 0px 4px #ffff00;
 }
 .voxButton{
     display: flex;
@@ -29,6 +29,7 @@
 .animationText {
     border-left: 2px solid #00ff00;
     border-right: 2px solid #ff0000;
+    background: linear-gradient(30deg, #00ff0010 0%, #ff000010 100%);
 }
 
 #voxelTable .new-voxel {
@@ -39,6 +40,10 @@
 #voxelTable tfoot {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#voxelTable {
+    transition: max-height 2s;
 }
 
 /*解决方块速查表颜色太深看不见字问题*/
