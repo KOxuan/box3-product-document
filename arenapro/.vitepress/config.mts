@@ -31,22 +31,15 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: 'TypeScript版',
+                text: '编写代码',
                 collapsed: true,
                 items: [
-                  { text: '编写代码', link: '/guide/HelloWorld/one' },
-                  { text: '打包上传', link: '/guide/HelloWorld/two' },
-                  { text: '运行测试', link: '/guide/HelloWorld/three' },
-                ]
-              }, {
-                text: 'JavaScript版',
-                collapsed: true,
-                items: [
-                  { text: '编写代码', link: '/guide/HelloWorld/one-js' },
-                  { text: '打包上传', link: '/guide/HelloWorld/two-js' },
-                  { text: '运行测试', link: '/guide/HelloWorld/three-js' },
+                  { text: 'TypeScript编写【推荐】', link: '/guide/HelloWorld/one' },
+                  { text: 'JavaScript编写', link: '/guide/HelloWorld/one-js' },
                 ]
               },
+              { text: '打包上传', link: '/guide/HelloWorld/two' },
+              { text: '运行测试', link: '/guide/HelloWorld/three' },
             ]
           },
           { text: 'debug模式', link: '/guide/debug' },
@@ -63,7 +56,7 @@ export default defineConfig({
           { text: '路径别名设置', link: '/advanced/pathAliases' },
           { text: '跨项目引用', link: '/advanced/crossProject' },
         ]
-      },{
+      }, {
         text: 'dao3Cfg配置',
         collapsed: false,
         items: [
@@ -88,7 +81,7 @@ export default defineConfig({
           { text: '生命周期', link: '/component/lifecycle' },
           { text: '组件父类接口', link: '/component/parent' },
         ]
-      },  {
+      }, {
         text: '学习资源',
         collapsed: false,
         items: [{
