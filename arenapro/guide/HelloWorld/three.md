@@ -33,15 +33,12 @@
 
 `服务端导入方式`
 ```javascript
-const { App } = require('./_server_bundle.js');
-
-//实例化App组件
-new App();
+require('./_server_bundle.js');
 ```
 
 
 
-![](/codeindex.webp)
+![](/QQ20241025-110923.png)
 
 `客户端导入方式`
 ```javascript
@@ -50,6 +47,6 @@ import './_client_bundle.js';
 
 点击运行，效果如下：
 
-![](/code2.webp)
+![](/QQ20241025-105839.png)
 
-恭喜，成功完成你的的第一个Ts项目。
+恭喜，成功完成你的的第一个项目。
