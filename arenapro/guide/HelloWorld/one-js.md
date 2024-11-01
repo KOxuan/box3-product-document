@@ -23,8 +23,6 @@
 3. **修改后缀名**：
    - 把服务端下的`App.ts`修给成`App.js`。
     ![示例图片](/QQ20241025-104457.png)    
-   - 鉴于语言初学者，我们不打算用组件式编程的示例，所以你可以直接把`App.js`里面的模板代码全部删除。
-    ![示例图片](/QQ20241025-104325.png)  
 
 在本项目中，`App.js`是默认的服务端入口文件，类似于神岛的`index.js`。
 
@@ -74,6 +72,5 @@ world.onPlayerJoin(({ entity }) => {
     titleBackgroundColor: new GameRGBAColor(0.93, 0.95, 0.54, 1.00),
     contentBackgroundColor: new GameRGBAColor(0.54, 0.68, 0.95, 1.00),
   });
-}
-)
+})
 ```
