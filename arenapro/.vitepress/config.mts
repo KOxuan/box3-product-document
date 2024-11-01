@@ -56,6 +56,7 @@ export default defineConfig({
         text: '使用进阶',
         collapsed: false,
         items: [
+          { text: 'VSCode调试脚本', link: '/advanced/debugger' },
           { text: '跨端共享脚本', link: '/guide/shares' },
           { text: '导入JSON', link: '/advanced/json' },
           { text: '改变构建文件名', link: '/advanced/buildFile' },

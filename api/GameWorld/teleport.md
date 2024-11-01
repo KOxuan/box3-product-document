@@ -28,7 +28,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | mapId | 是 | | string | 目标地图id |
 | players | 是 | | GameEntity[] | 被传送的玩家entity数组 |
-| serverId |  | | string | 自定义生成的服务器id，反之为系统随机生成 |
+| serverId |  | | string | 自定义生成的服务器id |
 
 
 **返回值**
