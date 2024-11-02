@@ -49,6 +49,7 @@ declare class UiNode {
 - [`pointerEventBehavior`](./UiRenderable#pointerEventBehavior) : 配置鼠标指针事件的响应方式
 - [`image`](./node/UiImage#image) : 图片元素的内容，应为图片的路径或者 URL
 - [`imageOpacity`](./node/UiImage#imageOpacity) : 图片元素的透明度
+- [`imageDisplayMode`](./node/UiImage#imageDisplayMode) : 图像显示模式的声明
 - [`textContent`](./node/UiText#textContent) : 文本元素的内容
 - [`textFontSize`](./node/UiText#textFontSize) : 节点显示的文本的字体大小
 - [`textColor`](./node/UiText#textColor) : 节点显示的文本的颜色
@@ -56,7 +57,11 @@ declare class UiNode {
 - [`textYAlignment`](./node/UiText#textYAlignment) : 节点显示的文本的垂直对齐方式
 - [`autoWordWrap`](./node/UiText#autoWordWrap) : 是否开启自动换行
 - [`textLineHeight`](./node/UiText#textLineHeight) : 文本的行高
-- [`placeholder`](./node/UiInput#placeholder) : 输入框的未输入时文本提示内容
+- [`textStrokeColor`](./node/UiText#textStrokeColor) : 文本的描边颜色
+- [`textStrokeOpacity`](./node/UiText#textStrokeOpacity) : 文本描边的不透明度
+- [`textStrokeThickness`](./node/UiText#textStrokeThickness) : 文本描边的厚度
+- [`textStrokeColor`](./node/UiText#textStrokeColor) : 文本的描边颜色
+- [`textFontFamily`](./node/UiInput#textFontFamily) : 文本使用的字体
 - [`placeholderColor`](./node/UiInput#placeholderColor) : 输入框显示的占位文本的颜色
 - [`placeholderOpacity`](./node/UiInput#placeholderOpacity) : 输入框提示文本的不透明度
 - [`isFocus`](./node/UiInput#isFocus) : 输入框是否聚焦
@@ -85,3 +90,5 @@ declare class UiNode {
 
 ## 枚举
 - [`PointerEventBehavior`](./UiRenderable#PointerEventBehavior) : 表示界面元素对鼠标指针按下事件的行为方式
+- [`ImageDisplayMode`](./node/UiImage#ImageDisplayMode) : 控制图像的显示方式
+- [`UITextFontFamily`](./node/UiText#UITextFontFamily) : 字体样式

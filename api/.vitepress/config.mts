@@ -23,7 +23,8 @@ export default defineConfig({
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Arena用户手册', link: 'https://docs.box3lab.com/arena/' }
+      { text: 'Arena用户手册', link: 'https://docs.box3lab.com/arena/' },
+      { text: 'ArenaPro Creator用户手册', link: 'https://docs.box3lab.com/arenapro/' }
     ],
     logo: '/arena.svg',
     search: {
