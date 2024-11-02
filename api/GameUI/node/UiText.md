@@ -78,11 +78,45 @@ import '/style.css'
 #### <font id="API" />textLineHeight<font id="Type">: number</font>{#textLineHeight}  
 > 默认值：1.2
 
-文本的行高
+文本的行高。
 
 > 定义于 [#L158](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L158)
 
+---
 
+#### <font id="API" /><font id="ReadOnly">只读</font>textStrokeColor<font id="Type">: [Vec3](/GameUI/maths/Vec3)</font>{#textStrokeColor}  
+> 默认值：{}
+
+文本的描边颜色。
+
+> 定义于 [#L365](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L365)
+
+---
+
+#### <font id="API" />textStrokeOpacity<font id="Type">: number</font>{#textStrokeOpacity}  
+> 默认值：1
+
+文本描边的不透明度。
+
+> 定义于 [#L369](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L369)
+
+---
+
+#### <font id="API" />textStrokeThickness<font id="Type">: number</font>{#textStrokeThickness}  
+> 默认值：0
+
+文本描边的厚度。
+
+> 定义于 [#L373](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L373)
+
+---
+
+#### <font id="API" />textFontFamily<font id="Type">: [UITextFontFamily](./UiText#UITextFontFamily)</font>{#textFontFamily}  
+> 默认值：UITextFontFamily.Default
+
+文本使用的字体。
+
+> 定义于 [#L377](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L377)
 
 ## 静态方法
 
@@ -98,3 +132,18 @@ import '/style.css'
 
 > 定义于 [#L159](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L159)
 
+
+## 枚举
+
+
+#### <font id="API" />UITextFontFamily{#UITextFontFamily}
+字体样式
+
+| **属性** | **说明** |
+| --- | --- |
+| Default | 默认字体  |
+| AlimamaFangYuanTi | 阿里妈妈方圆体 |
+| CodeNewRomanBold |  Code New Roman Bold  |
+
+
+> 定义于 [#L481](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L481)
