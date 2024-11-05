@@ -122,8 +122,8 @@ export default defineConfig({
             { text: '操作符与表达式', link: '/javascriptEntry/first-step/operator' },
             { text: '条件判断', link: '/javascriptEntry/first-step/if' },
             { text: '实践：抽奖游戏', link: '/javascriptEntry/first-step/lottery' },
-          ] 
-        },{
+          ]
+        }, {
           text: '第二章：循环与函数',
           collapsed: true,
           items: [
@@ -131,38 +131,45 @@ export default defineConfig({
             { text: '函数', link: '/javascriptEntry/second-step/function' },
             { text: '数组', link: '/javascriptEntry/second-step/array' },
             { text: '实践：多人抽奖游戏', link: '/javascriptEntry/second-step/comprehensiveTest' },
-          ] 
-        },{
+          ]
+        }, {
           text: '第三章：对象与类',
           collapsed: true,
           items: [
             { text: 'JSON与对象', link: '/javascriptEntry/third-step/jsonObj' },
             { text: '常量与作用域', link: '/javascriptEntry/third-step/variablesScope' },
             { text: '类', link: '/javascriptEntry/third-step/class' },
-          ] 
-        },   
+          ]
+        },
         { text: '异步与同步', link: '/javascriptEntry/promise' },
         { text: '章末总结', link: '/javascriptEntry/summary' },
       ]
-    },{
+    }, {
       text: 'JS×神岛API',
       collapsed: false,
       items: [
         { text: '如何阅读API', link: '/javascriptDaoAPI/apiUsage' },
-      ] 
-    },  {
+      ]
+    }, {
+      text: '增强创作辅助插件',
+      collapsed: false,
+      items: [
+        { text: '【Ai×代码】Chat吉PT', link: '/plugIns/chatjpt' },
+        { text: '【建筑方块】建筑师工具箱', link: '/plugIns/building' }
+      ]
+    }, {
       text: '进阶主题',
       collapsed: false,
       items: [
         {
           text: 'TypeScript语言入门',
-          link:'https://typescript.p6p.net/typescript-tutorial/intro.html'
-        },  {
+          link: 'https://typescript.p6p.net/typescript-tutorial/intro.html'
+        }, {
           text: '使用VSCode开发',
-          link:'https://docs.box3lab.com/arenapro'
-        }, 
-      ] 
-    }, 
+          link: 'https://docs.box3lab.com/arenapro'
+        },
+      ]
+    },
     ],
     editLink: {
       pattern: 'https://gitee.com/box3lab/box3-product-document/blob/master/arena/:path',
