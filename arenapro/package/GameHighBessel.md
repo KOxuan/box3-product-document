@@ -1,5 +1,9 @@
 # 摄像机高阶贝塞尔
 
+::: info
+本包由创作者 [冷鱼与热猫（83354)](https://dao3.fun/profile/83354)）投稿
+:::
+
 >来自box3游戏《新春·欢乐游乐园》中的火车运行路径，运用了贝塞尔3阶内连续移动。[https://dao3.fun/exp/experience/detail/100012435](https://dao3.fun/exp/experience/detail/100012435)
 
 

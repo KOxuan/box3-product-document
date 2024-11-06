@@ -1,5 +1,9 @@
 # 组件使用方式
 
+::: info
+本包由创作者 [冷鱼与热猫（83354)](https://dao3.fun/profile/83354)）投稿
+:::
+
 ## 安装组件
 ```bash
 npm --registry=https://mirrors.cloud.tencent.com/npm/ i component_dao3
