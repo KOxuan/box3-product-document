@@ -1,5 +1,22 @@
 # 摄像机高阶贝塞尔
 
+>来自box3游戏《新春·欢乐游乐园》中的火车运行路径，运用了贝塞尔3阶内连续移动。[https://dao3.fun/exp/experience/detail/100012435](https://dao3.fun/exp/experience/detail/100012435)
+
+
+![](https://static.codemao.cn/pickduck/Hkh0XuvWkx.gif?hash=lm78J0LS8CUIYMHZDEuyLx-7CMLQ)
+
+
+>来自box3游戏《瓶盖人大乱斗》中的胜利场面，运用了贝塞尔3阶内连续移动。锁定视角。[https://dao3.fun/exp/experience/detail/100108748](https://dao3.fun/exp/experience/detail/100108748)
+
+
+![](https://static.codemao.cn/pickduck/HyMx4dvbyx.gif?hash=lg9KArMwdfxvjKmGEpH1akLVqtTN)
+
+![](https://static.codemao.cn/pickduck/SyWfEdwbke.gif?hash=ljTs4HwUvh9Efg8bS8IYd-SrQlLJ)
+
+![](https://static.codemao.cn/pickduck/HJ974uPWkl.gif?hash=ltaGwWNW1HTCAem8VEW55gOcqc3U)
+
+
+
 ## 安装包
 ```bash
 npm --registry=https://mirrors.cloud.tencent.com/npm/ i gamehighbessel_dao3
@@ -51,21 +68,3 @@ world.onPlayerJoin(({ entity }) => {
 });
 ```
 
-## 包介绍
-
-# 高阶贝塞尔曲线移动-神岛Pro版
-
->来自box3游戏《新春·欢乐游乐园》中的火车运行路径，运用了贝塞尔3阶内连续移动。[https://dao3.fun/exp/experience/detail/100012435](https://dao3.fun/exp/experience/detail/100012435)
-
-
-![](https://static.codemao.cn/pickduck/Hkh0XuvWkx.gif?hash=lm78J0LS8CUIYMHZDEuyLx-7CMLQ)
-
-
->来自box3游戏《瓶盖人大乱斗》中的胜利场面，运用了贝塞尔3阶内连续移动。锁定视角。[https://dao3.fun/exp/experience/detail/100108748](https://dao3.fun/exp/experience/detail/100108748)
-
-
-![](https://static.codemao.cn/pickduck/HyMx4dvbyx.gif?hash=lg9KArMwdfxvjKmGEpH1akLVqtTN)
-
-![](https://static.codemao.cn/pickduck/SyWfEdwbke.gif?hash=ljTs4HwUvh9Efg8bS8IYd-SrQlLJ)
-
-![](https://static.codemao.cn/pickduck/HJ974uPWkl.gif?hash=ltaGwWNW1HTCAem8VEW55gOcqc3U)
