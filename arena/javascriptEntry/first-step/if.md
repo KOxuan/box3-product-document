@@ -59,10 +59,9 @@ console.log(true || false); // true
 console.log(!true); // false
 ```
 ### 优先级
-```
- `!` > `&&` > `||` 
-```
+> `!` > `&&` > `||` 
 
+来个中场练习吧！
 >`做一做`: a=2,b=3,逻辑表达式 ` ((a+b/3) == 3 || !(a == b) && (a < b))`的值是？
 
 ::: details 点击查看参考答案
@@ -94,9 +93,7 @@ console.log(!true); // false
 |2|`!(a == b) && (a < b)`|true && true = true
 |3|`((a + b/3) == 3 丨丨 !(a == b) && (a < b))`|true丨丨 true = true|
 
-综上所述，逻辑表达式 ` ((a+b/3) == 3 || !(a == b) && (a < b))`的值是`true`
- 
-
+综上所述，逻辑表达式 ` ((a+b/3) == 3 || !(a == b) && (a < b))` 的值是 `true`
 :::
 
 
