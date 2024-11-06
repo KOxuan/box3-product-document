@@ -20,6 +20,9 @@ import '/style.css'
 #### <font id="API" />teleport(<font id="Type">mapId: string,players: [GameEntity](/GameEntity/)[],serverId?: string</font>)<font id="Type">: Promise‹[TeleportResult](./teleport#TeleportResult)›</font>{#teleport}
 地图组内传送能力，能够让玩家被传送到指定地图中。且单独开一个地图服务容器（房间），非传送玩家不可见。
 
+如填写了`serverId`参数，则将把该批玩家传送至指定的服务容器
+反之，则新建服务容器并进入。
+
 **此能力受权限影响，无权限账户调用后会导致报错。**
 
 **输入参数**
@@ -28,7 +31,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | mapId | 是 | | string | 目标地图id |
 | players | 是 | | GameEntity[] | 被传送的玩家entity数组 |
-| serverId |  | | string | 自定义生成的服务器id |
+| serverId |  | | string | 自定义生成的服务器id，如填写将进入指定服务器，不填写将随机生成 |
 
 
 **返回值**

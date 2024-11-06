@@ -1,9 +1,38 @@
+# 组件使用方式
+
+## 安装组件
+```bash
+npm --registry=https://mirrors.cloud.tencent.com/npm/ i component_dao3
+```
+
+## 引入组件
+
+```typescript
+import Component, { componentObjByUuid } from "component_dao3"; 
+```
+
+## 继承组件使用
+```typescript
+class App extends Component {
+    protected onStart(): void {
+        console.log("App start");
+    }
+    protected onUpdate(deltaTime: number): void {
+        console.log("App update", deltaTime);
+    }
+    protected onDisable(): void {
+        console.log("App disable");
+    }
+}
+```
+
+## 组件接口
 ```typescript
 /**
  * 抽象类Component，作为所有组件的基类
  * 定义了组件的基本属性和生命周期方法
  */
-export default abstract class Component {
+export default class Component {
     constructor(init?: {
         /** 组件的权重值，权重越大刷新优先级越高，默认为0  */
         weight?: number;
