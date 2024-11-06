@@ -1,4 +1,10 @@
 # 点鸭MySQL数据表
+
+::: info
+本包由创作者 [冷鱼与热猫（83354)](https://dao3.fun/profile/83354)）投稿
+:::
+
+
 ::: warning
 ⚠注：本功能仅供 SQL学习参考及非商业化和流量较低的地图，请勿在商业化游戏中使用，数据丢失概不负责。
 :::
@@ -32,7 +38,7 @@ import PGdb, { PGdbFailResult } from "pickduck-dbs-dao3";
 
 ## 简单的语法操作：
 - 查询`祖籍`是`四川`的同学的`所有`信息。
-```javascript
+```typescript
 
 // 创建数据库连接实例
 const dbs = new PGdb("9D7194D9D5A4F188200417EA283132F0");
@@ -98,7 +104,7 @@ dbs.sql<Data>`SELECT * FROM 9caf494c19dacfd4a6762d11e92db090 WHERE 祖籍="四�
 
 ## 复杂的语法操作：
 - 查询`第二组`的`英语总分`比`第一组`的`英语总分` 的`高/低多少分`，并给出`第一组的最高分`和`第二组的最低分` 。#
-```javascript
+```typescript
 // 创建数据库连接实例
 const dbs = new PGdb("9D7194D9D5A4F188200417EA283132F0");
 
