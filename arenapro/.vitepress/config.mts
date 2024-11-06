@@ -73,13 +73,20 @@ export default defineConfig({
           { text: 'GameDataStorage', link: '/codeDiff/storage' },
           { text: 'RemoteChannel', link: '/codeDiff/remoteChannel' },
         ]
+      },{
+        text: '第三方神岛包',
+        collapsed: false,
+        link: '/package/index',
+        items: [
+          { text: '摄像机高阶贝塞尔运动', link: '/package/GameHighBessel' },
+        ]
       }, {
         text: '组件式编程',
         collapsed: false,
         items: [
           { text: '简介', link: '/component/index' },
+          { text: '组件使用', link: '/component/parent' },
           { text: '生命周期', link: '/component/lifecycle' },
-          { text: '组件父类接口', link: '/component/parent' },
         ]
       }, {
         text: '学习资源',
