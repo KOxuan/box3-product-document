@@ -142,7 +142,7 @@ import '/style.css'
 | **属性** | **说明** |
 | --- | --- |
 | Default | 默认字体  |
-| AlimamaFangYuanTi | 阿里妈妈方圆体 |
+| BoldRound | 粗圆体 |
 | CodeNewRomanBold |  Code New Roman Bold  |
 
 
