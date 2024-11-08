@@ -12,6 +12,8 @@ import '/style.css'
 #### <font id="API" />textContent<font id="Type">: string</font>{#textContent}  
 > 默认值：'Text'
 
+文本支持`富文本`，使用方式请看：[富文本](/GameUI/RichText)
+
 文本元素的内容，支持转义字符与换行，会对自身元素的自适应大小产生影响。
 
 换行后，所有受到元素大小影响的属性，均需以新的大小进行计算，包括且不限于：
@@ -105,7 +107,9 @@ import '/style.css'
 #### <font id="API" />textStrokeThickness<font id="Type">: number</font>{#textStrokeThickness}  
 > 默认值：0
 
-文本描边的厚度。
+文本描边的厚度。范围0-25
+
+描边粗细效果不影响元素“尺寸”，即不会影响自适应、布局计算、以及交互热区，但是会受到[UIScale](/GameUI/maths/UiScale)的影响
 
 > 定义于 [#L373](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L373)
 
@@ -115,6 +119,8 @@ import '/style.css'
 > 默认值：UITextFontFamily.Default
 
 文本使用的字体。
+
+由官方提供的可免费商用字体。
 
 > 定义于 [#L377](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L377)
 
