@@ -29,6 +29,8 @@ import '/style.css'
 
 图像显示模式的声明。
 
+图片元素中的图片资源，不属于其子内容，所以只受到展示方式影响，不受裁剪&自适应作用
+
 > 定义于 [#L452](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L452)
 
 ## 静态方法
