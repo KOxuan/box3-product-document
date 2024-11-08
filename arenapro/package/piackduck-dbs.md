@@ -25,13 +25,13 @@
 
 ## 安装包
 ```bash
-npm --registry=https://mirrors.cloud.tencent.com/npm/ i pickduck-dbs-dao3
+npm --registry=https://mirrors.cloud.tencent.com/npm/ i @dao3fun/pg-dbs
 ```
 
 ## 引入包
 
 ```typescript
-import PGdb, { PGdbFailResult } from "pickduck-dbs-dao3";
+import PGdb, { PGdbFailResult } from "@dao3fun/pg-dbs";
 ```
 
 

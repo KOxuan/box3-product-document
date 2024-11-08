@@ -51,7 +51,7 @@
 #### 更新package.json
 
 9. **确保package.json中的字段完整**：
-   - `name`：包的唯一名称。
+   - `name`：包的唯一名称。【如果加入了组织dao3fun，可加上组织名，例如：`@dao3fun/yourPackageName`】
    - `version`：包的版本号，遵循语义化版本控制（Semantic Versioning）。
    - `description`：包的简短描述。
    - `main`：入口文件路径。
@@ -65,7 +65,7 @@
 #### 发布包
 
 ```bash
-npm publish
+npm publish --access=public
 ```
 
 ### 3. 确保包符合神岛Pro版要求

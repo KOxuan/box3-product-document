@@ -6,13 +6,13 @@
 
 ## 安装组件
 ```bash
-npm --registry=https://mirrors.cloud.tencent.com/npm/ i component_dao3
+npm --registry=https://mirrors.cloud.tencent.com/npm/ i @dao3fun/component
 ```
 
 ## 引入组件
 
 ```typescript
-import Component, { componentObjByUuid } from "component_dao3"; 
+import Component, { componentObjByUuid } from "@dao3fun/component"; 
 ```
 
 ## 继承组件使用

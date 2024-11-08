@@ -23,13 +23,13 @@
 
 ## 安装包
 ```bash
-npm --registry=https://mirrors.cloud.tencent.com/npm/ i gamehighbessel_dao3
+npm --registry=https://mirrors.cloud.tencent.com/npm/ i @dao3fun/high-bessel
 ```
 
 ## 引入包
 
 ```typescript
-import GameHighBessel from "gamehighbessel_dao3"; 
+import GameHighBessel from "@dao3fun/high-bessel"; 
 ```
 
 ## 使用方式示例
