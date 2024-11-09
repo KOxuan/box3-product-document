@@ -101,12 +101,12 @@ declare class GameWorld {
 - [`onTakeDamage`](./fight#onTakeDamage) : 当实体受到伤害时触发
 - [`onDie`](./fight#onDie) : 当实体死亡时触发
 - [`onRespawn`](./fight#onRespawn) : 当实体复活时触发
-- [`onEntityContact`](./physics#onEntityContact) : 当实体与实体发生碰撞时触发
-- [`onEntitySeparate`](./physics#onEntitySeparate) : 当实体与实体结束碰撞时触发
-- [`onVoxelContact`](./physics#onVoxelContact) : 当实体与方块发生碰撞时触发
-- [`onFluidEnter`](./physics#airFriction) : 当实体进入水里/液体时触发
-- [`onFluidLeave`](./physics#airFriction) : 当实体离开水里/液体时触发
-- [`onFluidLeave`](./physics#airFriction) : 当实体离开水里/液体时触发
+- [`onEntityContact`](./input#onEntityContact) : 当实体与实体发生碰撞时触发
+- [`onEntitySeparate`](./input#onEntitySeparate) : 当实体与实体结束碰撞时触发
+- [`onVoxelContact`](./input#onVoxelContact) : 当实体与方块发生碰撞时触发
+- [`onFluidEnter`](./input#airFriction) : 当实体进入水里/液体时触发
+- [`onFluidLeave`](./input#airFriction) : 当实体离开水里/液体时触发
+- [`onFluidLeave`](./input#airFriction) : 当实体离开水里/液体时触发
 - [`onPlayerPurchaseSuccess`](./shopping#onPlayerPurchaseSuccess) : 当玩家成功购买物品时触发
 
 ## 接口
@@ -127,9 +127,9 @@ declare class GameWorld {
 - [`GameZoneConfig`](./mapZone#GameZoneConfig) : 用于区域的参数
 - [`GameZone`](./mapZone#GameZone) : 用于区域的配置
 - [`GameTriggerEvent`](./mapZone#GameTriggerEvent) : 当实体/玩家触发区域的事件
-- [`GameEntityContactEvent`](./physics#GameEntityContactEvent) : 当两个实体碰撞时触发的事件
-- [`GameVoxelContactEvent`](./physics#GameVoxelContactEvent) : 当实体触碰方块时触发的事件
-- [`GameFluidContactEvent`](./physics#GameFluidContactEvent) : 当实体进入或离开液体时触发的事件
+- [`GameEntityContactEvent`](./input#GameEntityContactEvent) : 当两个实体碰撞时触发的事件
+- [`GameVoxelContactEvent`](./input#GameVoxelContactEvent) : 当实体触碰方块时触发的事件
+- [`GameFluidContactEvent`](./input#GameFluidContactEvent) : 当实体进入或离开液体时触发的事件
 - [`GameSoundEffect`](./music#GameSoundEffect) : 使用 Sound()方法播放声音时，传入的参数
 - [`GameWorldKeyframe`](./animate#GameWorldKeyframe) : World世界动画关键帧参数
 - [`GameAnimationPlaybackConfig`](./animate#GameAnimationPlaybackConfig) : 用于动画播放配置的参数组
