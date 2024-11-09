@@ -54,7 +54,6 @@
 | file.typescript.client.entry |  | string | clientApp.ts | Arena**客户端**项目入口文件 |
 | file.typescript.client.development |  | boolean | true | Arena**客户端**项目编译模式，默认为开发模式，优先级比 file.typescript.developmentAll 低 |
 | file.typescript.client.webpack |  | string | ./client/webpack.config.js | Arena**客户端**项目webpack编译配置相对路径 |
-
 | file.typescript.developmentAll |  | boolean &#124; null | null | 是否开启webpack打包开发者模式？开启后**客户端**和**服务端**将不压缩不混淆代码。如是null将忽略本属性 |
 | file.typescript.jsUpdate |  | boolean | true | 是否编译脚本后自动上传至地图？关闭后只编译不上传。|
 | outputAndUpdate |  | object |  | 当前编译文件配置，默认选择第一位数据信息 |
