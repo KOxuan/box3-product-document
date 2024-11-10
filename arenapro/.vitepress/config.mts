@@ -7,8 +7,19 @@ export default defineConfig({
   description: "支持VSCode与TypeScript的神岛游戏制作插件，是Arena编辑器专业版",
   base: '/arenapro/',
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    container: {
+      tipLabel: '提示',
+      warningLabel: '警告',
+      dangerLabel: '危险',
+      infoLabel: '信息',
+      detailsLabel: '详细信息',
+      noteLabel: '信息',
+      importantLabel: '重要',
+      cautionLabel: '注意'
+    }
   },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/icon.png',
@@ -74,23 +85,24 @@ export default defineConfig({
           { text: 'RemoteChannel', link: '/codeDiff/remoteChannel' },
         ]
       }, {
-        text: '第三方神岛包',
+        text: '神岛npm包',
         collapsed: false,
         link: '/package/index',
         items: [
-          {
-            text: '组件',
-            collapsed: true,
-            items: [
-              { text: '简介', link: '/package/component/index' },
-              { text: '组件使用', link: '/package/component/parent' },
-              { text: '生命周期', link: '/package/component/lifecycle' },
-            ]
-          },
-          { text: '摄像机高阶贝塞尔', link: '/package/GameHighBessel' },
-          { text: '点鸭MySQL数据表', link: '/package/piackduck-dbs' },
+          { text: '什么是npm包', link: '/package/help' },
+          { text: '如何投稿npm包', link: '/package/publish' },
         ]
-      }, {
+      },
+      {
+        text: '组件模式',
+        collapsed: false,
+        items: [
+          { text: '简介', link: '/package/component/index' },
+          { text: '组件使用', link: '/package/component/parent' },
+          { text: '生命周期', link: '/package/component/lifecycle' },
+        ]
+      },
+      {
         text: '学习资源',
         collapsed: false,
         items: [{
