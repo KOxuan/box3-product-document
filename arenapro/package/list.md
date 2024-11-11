@@ -5,15 +5,15 @@ import { marked } from "marked";
 </script>
 # 神岛npm包
 
-为造福广大创作者能高效构建项目，欢迎各位创作者分享自己的工具包。助力其他创作者创作。
-
 国内平台安装方式：
 ```bash
 npm --registry=https://mirrors.cloud.tencent.com/npm/ i <package-name>
 ```
 或在AP插件中，进入`Arena资源管理器`，找到`神岛NPM包`一项，可快速安装。
 
-
+:::info
+以下神岛npm包的数据均源自npm官方接口，但数据可能会存在一定的时间延迟。
+:::
 <div v-if="npmPackageList">
     <div v-for="item in npmPackageList" :key="item.name">
         <h2>
