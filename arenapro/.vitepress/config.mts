@@ -87,8 +87,8 @@ export default defineConfig({
       }, {
         text: '神岛npm包',
         collapsed: false,
-        link: '/package/index',
         items: [
+          { text: '神岛npm包列表', link: '/package/list' },
           { text: '什么是npm包', link: '/package/help' },
           { text: '如何投稿npm包', link: '/package/publish' },
         ]

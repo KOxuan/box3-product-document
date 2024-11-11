@@ -42,7 +42,7 @@ export default {
     };
   },
   async created() {
-      const response = await axios.get('https://api.box3lab.com/dao3lab/get_npm_packge', {
+      const response = await axios.get('https://api.box3lab.com/dao3lab/get_npm_package', {
         headers: {
           "Content-Type": "application/json",
         },
