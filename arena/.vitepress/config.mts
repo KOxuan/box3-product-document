@@ -89,6 +89,7 @@ export default defineConfig({
           items: [
             { text: '屏幕', link: '/features/ui/screen' },
             { text: '资源树', link: '/features/ui/tree' },
+            { text: '布局', link: '/features/ui/layout' },
             {
               text: '元素',
               link: '/features/ui/element',
