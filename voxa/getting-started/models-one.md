@@ -13,10 +13,9 @@
 
 ![](https://static.codemao.cn/pickduck/SyXrueZfkx.gif?hash=Fm_apsoMP8rP8lvWvSd6EXB70HgP)
 
-## 创建新模型并进入部件进行编辑
+## 创建新部件并进入编辑
 
 在Voxa编辑器左侧有“编辑工具栏”，包含了新建、移动、缩放、复制模型及创建骨骼等功能，助你轻松编辑。
-
 
 
 ![](https://static.codemao.cn/pickduck/H1mrKg-zke.gif?hash=FiNNnG6SQKmewMWHSUsus_6IBOHg)

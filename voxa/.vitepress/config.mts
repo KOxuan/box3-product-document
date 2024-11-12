@@ -24,7 +24,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/arena.svg',
     nav: [
-      { text: 'API手册', link: 'https://docs.box3lab.com/api/' }
+      { text: 'Arena 用户手册', link: 'https://docs.box3lab.com/arena/' },
+      { text: 'MagicaVoxel 入门手册', link: 'https://zhuanlan.zhihu.com/p/29884021' }
     ],
     search: {
       provider: 'local',
@@ -42,6 +43,17 @@ export default defineConfig({
             { text: '模型颜色', link: '/getting-started/models-two' },
             { text: '骨骼动画', link: '/getting-started/models-three' },
             { text: '发布第一个模型', link: '/getting-started/publish' },
+          ] 
+        },
+        {
+          text: '编辑器界面',
+          collapsed: true,
+          items: [
+            
+            { text: '通用布局', link: '/editor/universal' },
+            { text: '部件界面布局', link: '/editor/parts' },
+            { text: '体素界面布局', link: '/editor/voxels' },
+            { text: '动画界面布局', link: '/editor/animation' },
           ] 
         },
       ]
