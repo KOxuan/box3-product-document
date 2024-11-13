@@ -83,6 +83,11 @@ world.onPlayerJoin(({ entity }) => {
 
 #### <font id="API" />querySocial(<font id="Type">socialType:[SocialType](./info#SocialType)</font>)<font id="Type">: Promise<number[]></font>{#querySocial}
 查询当前玩家的社交关系，并返回具体的玩家ID列表
+
+- 关注ID列表
+- 粉丝ID列表
+- 好友ID列表
+
 **输入参数**
 
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
@@ -102,6 +107,9 @@ world.onPlayerJoin(({ entity }) => {
 #### <font id="API" />querySocialStatistic()<font id="Type">: Promise‹[SocialStatisticType](./info#SocialStatisticType)›</font>{#querySocialStatistic}
 查询当前玩家的社交统计信息，并返回具体的统计数
 
+- 关注人数
+- 粉丝人数
+- 好友人数
 
 **返回值**
 
@@ -110,7 +118,7 @@ world.onPlayerJoin(({ entity }) => {
 | Promise‹SocialStatisticType› | 异步返回数据统计信息 |
 
 
-> 定义于 [待补充]()
+> 定义于 [#L11775](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_11_13.d.ts#L11775)
 ---
 
 #### <font id="API" />openUserProfileDialog(<font id="Type">userId:number</font>)<font id="Type">:  void</font>{#openUserProfileDialog}
@@ -138,7 +146,7 @@ world.onPlayerJoin(({ entity }) => {
 | followerNum | number |  粉丝人数 |
 | friendsNum | number |  好友人数 |
 
-> 定义于 [待补充]()
+> 定义于 [#L9344](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_11_13.d.ts#L9344)
 
 
 
