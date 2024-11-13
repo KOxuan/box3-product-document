@@ -11,21 +11,21 @@
 
 - 选中部件情况下鼠标右键：（可重命名）
 
-![](/3-选中部件后鼠标右键.gif)
+![](https://static.codemao.cn/pickduck/H1GdoK-M1e.gif?hash=FkfSTvhr21qyaj2XiRa5WpGPNaWL)
 
 
 
 - 鼠标左键可框选物体
 
-![](/3-鼠标左键框选.gif)
+![](https://static.codemao.cn/pickduck/HyYVotWfkl.gif?hash=Fh6w1D4m9J6OSiJNlxfcCZwBaKfN)
 
 - 按住鼠标右键不放可旋转视口窗（基于鼠标位置）
 
-![](/3-按住鼠标右键旋转.gif)
+![](https://static.codemao.cn/pickduck/HyrPsYZfye.gif?hash=Fuldf1cSz-fVUK8vRL_4hgUSGflp)
 
 - 按住鼠标中键不放可以平移视口窗
 
-![](/3-按住鼠标中键平移.gif)
+![](https://static.codemao.cn/pickduck/HyWLitbfyg.gif?hash=FvmP56jxkSfysyYhL7w0loerU7og)
 
 
 ## 全局工具栏
@@ -83,20 +83,20 @@
 ## 动画面板上的操作
 拖动动画面板
 
-![](/4-拖动动画面板.gif)
+![](https://static.codemao.cn/pickduck/BkDu_K-GJx.gif?hash=Fk802zLym34Orz7VvUHZQPGGYu_s)
 
 时间轴空白位置鼠标中键可平移时间轴
 
-![](/4-时间轴空白位置鼠标中键可平移时间轴.gif)
+![](https://static.codemao.cn/pickduck/B1uartZMke.gif?hash=ltVh7gp9xDbDnUNC3OEiGbAwNTHF)
 
 时间轴空白位置鼠标左键框选
 
-![](/4-时间轴空白位置鼠标左键框选0.gif)
+![](https://static.codemao.cn/pickduck/HJI4_KZGkg.gif?hash=lkGn4SgjjVHHadnPmNFlpqGxBbRz)
 
 选中帧鼠标左键（右键）拖动帧
 
-![](/4-选中帧鼠标左键（右键）拖动帧.gif)
+![](https://static.codemao.cn/pickduck/HyHvuY-zyg.gif?hash=Fn0s6DamEQtnMUXBWgZRGrTpMjlj)
 
 选中帧与帧中间鼠标右键可选择曲线
 
-![](/4-选中帧与帧中间鼠标右键可选择曲线.gif)
+![](https://static.codemao.cn/pickduck/By7KdtWGyx.gif?hash=Flc0Lc_tEVG85bC3TI7XAA5ztUvt)

@@ -8,11 +8,11 @@
 
 - 按住鼠标中键平移
 
-![](/按住鼠标中键平移.gif)
+![](https://static.codemao.cn/pickduck/SJ2E9K-fJl.gif?hash=Fo1-1kGUowrmuOJc2IU8hSg6udDN)
 
 - 按住鼠标右键旋转
 
-![](/按住鼠标右键旋转.gif)
+![](https://static.codemao.cn/pickduck/ByFc5KbMye.gif?hash=lnQonwkPqAU-Ir70eke2d-qvh5wA)
 
 ## 全局工具栏
 

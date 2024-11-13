@@ -7,23 +7,23 @@
 
 - 未选中部件情况下鼠标右键：可弹出创建菜单
 
-![](/不选中部件鼠标右键.gif)
+![](https://static.codemao.cn/pickduck/Sy63dF-fye.gif?hash=Fi2Y2AqQRE-QFr82kX7CLt1HLAUa)
 
 - 选中部件情况下鼠标右键：会弹出部件编辑菜单
 
-![](/选中部件后鼠标右键.gif)
+![](https://static.codemao.cn/pickduck/Bkn_9t-f1e.gif?hash=Fo_c0WuqxhuUiDDG5QfhDlQImamU)
 
 - 鼠标左键可框选物体
 
-![](/鼠标左键框选.gif)
+![](https://static.codemao.cn/pickduck/rJAb5Kbzyx.gif?hash=FkqfdWBTP8xwdnocK7C1wDGNoWZh)
 
 - 按住鼠标右键不放可旋转视口窗（基于鼠标位置）
 
-![](/按住鼠标右键旋转.gif)
+![](https://static.codemao.cn/pickduck/ByFc5KbMye.gif?hash=lnQonwkPqAU-Ir70eke2d-qvh5wA)
 
 - 按住鼠标中键不放可以平移视口窗
 
-![](/按住鼠标中键平移.gif)
+![](https://static.codemao.cn/pickduck/SJ2E9K-fJl.gif?hash=Fo1-1kGUowrmuOJc2IU8hSg6udDN)
 
 
 ## 全局工具栏
