@@ -7,6 +7,9 @@ import '/style.css'
 
 ![](/QQ20240923-102409.png)
 
+- 输入框是特殊的可交互文本框，允许在用户聚焦时输入文本内容
+- 输入框存在提示文本，用于在无内容时提示输入信息，提示文本可以配置内容及字体颜色，其余属性将与文本内容一致（对齐方式、文本换行等）
+
 ## 属性
 
 #### <font id="API" />placeholder<font id="Type">: string</font>{#placeholder}

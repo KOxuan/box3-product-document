@@ -5,6 +5,9 @@ import '/style.css'
 
 > UiScreen 是继承自 [UiNode](/GameUI/UiNode) 类
 
+- 屏幕是GUI下的最高级别容器（此级别仅有屏幕一个类别元素），用于承载其他2D UI元素（UI元素均需要存在于某个屏幕之下），它将始终以设备屏幕画布为自身载体，自身无实质性内容
+- 每个作品至少含有一个screen（最后一个无法删除），至多可以有1000（超出新增无响应）
+
 ## 属性
 
 #### <font id="API" />visible<font id="Type">: boolean</font>{#visible}

@@ -17,7 +17,7 @@ node -v
 你可以通过 Node.js 的版本管理器如 [nvm](https://github.com/nvm-sh/nvm)（Node Version Manager）来安装多个版本的 Node.js 并轻松切换。或者，你也可以直接卸载当前版本的 Node.js 并重新安装更高版本的 Node.js。
 
 ## 手动使用 npm 初始化项目
-确认已经安装了 Node.js v20 版本，你可以继续执行你原本想要进行的 npm 命令。
+确认已经安装了 Node.js v20或更高的LTS 版本，你可以继续执行你原本想要进行的 npm 命令。
 
 如果你是mac系统，你可以在每行命令前面加上 `sudo` 以管理员权限执行该命令。
 
