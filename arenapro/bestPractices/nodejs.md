@@ -4,7 +4,7 @@
 
 Node.js 安装包及源码下载地址为：[Node.js](https://nodejs.cn/en)
 
-**经过测试，V20.x版本能正常运行项目，建议优先安装**
+**经过测试，V20 LTS及之后的LTS版本能正常运行项目，建议优先安装**
 
 ![](/node.webp)
 
@@ -41,14 +41,22 @@ Node.js 安装包及源码下载地址为：[Node.js](https://nodejs.cn/en)
 ![](/install-node-msi-version-on-windows-step5.webp)
 
 
+**步骤 6 :  格外的扩展项**
 
-**步骤 6 : 点击 Install（安装） 开始安装Node.js。你也可以点击 Back（返回）来修改先前的配置。 然后并点击 next（下一步）**
+
+不需打勾，直接点击**next（下一步）**： 
+  
+![](https://static.codemao.cn/pickduck/HyXVe4lGyx.png?hash=FtqwLs437vYthIfsXa7SnkvsLTE4)  
+
+
+
+**步骤 7 : 点击 Install（安装） 开始安装Node.js。你也可以点击 Back（返回）来修改先前的配置。 然后并点击 next（下一步）**
 
 ![](/install-node-msi-version-on-windows-step6.webp)
 
 
 
-**步骤 7 : 点击 Finish（完成）按钮退出安装向导**
+**步骤 8 : 点击 Finish（完成）按钮退出安装向导**
 
 ![](/install-node-msi-version-on-windows-step8.webp)
 

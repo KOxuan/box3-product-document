@@ -92,6 +92,7 @@ declare class GamePlayer {
 
 ## 方法
 - [`querySocial`](./info#querySocial) : 查询当前玩家的社交关系
+- [`querySocialStatistic`](./info#querySocialStatistic) : 查询当前玩家的社交统计信息
 - [`openUserProfileDialog`](./info#openUserProfileDialog) : 对当前玩家，调起指定ID玩家的个人主页
 - [`setSkinByName`](./appearance#setSkinByName) : 将指定皮肤套装应用到此玩家上。此方法不会影响皮肤的隐藏状态，设置前是隐藏的，设置后也还是隐藏着。
 - [`resetToDefaultSkin`](./appearance#resetToDefaultSkin) : 重置此玩家的皮肤配置为默认皮肤配置，效果同 `setSkinByName()` 传入了默认皮肤套装名称。
@@ -134,7 +135,7 @@ declare class GamePlayer {
 - [`GameDialogCall`](./chat#GameDialogCall) : 在游戏中显示一个对话框
 - [`GameDialogResponse`](./chat#GameDialogResponse) : 对话框回应
 - [`GameDialogSelectResponse`](./chat#GameDialogSelectResponse) : 选项对话框回应
-
+- [`SocialStatisticType`](./info#SocialStatisticType) : 社交统计信息的类型
 
 ## 枚举
 - [`SocialType`](./info#SocialType) : 玩家的社交关系类型

@@ -24,6 +24,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/arena.svg',
     nav: [
+      { text: 'Voxa 用户手册', link: 'https://docs.box3lab.com/voxa/' },
       { text: 'API手册', link: 'https://docs.box3lab.com/api/' }
     ],
     search: {
@@ -89,6 +90,7 @@ export default defineConfig({
           items: [
             { text: '屏幕', link: '/features/ui/screen' },
             { text: '资源树', link: '/features/ui/tree' },
+            { text: '布局', link: '/features/ui/layout' },
             {
               text: '元素',
               link: '/features/ui/element',
