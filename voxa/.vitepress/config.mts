@@ -43,19 +43,61 @@ export default defineConfig({
             { text: '模型颜色', link: '/getting-started/models-two' },
             { text: '骨骼动画', link: '/getting-started/models-three' },
             { text: '发布第一个模型', link: '/getting-started/publish' },
-          ] 
+          ]
         },
         {
           text: '编辑器界面',
           collapsed: true,
           items: [
-            
             { text: '通用布局', link: '/editor/universal' },
-            { text: '部件界面布局', link: '/editor/parts' },
-            { text: '体素界面布局', link: '/editor/voxels' },
-            { text: '动画界面布局', link: '/editor/animation' },
-          ] 
+            {
+              text: '部件界面布局',
+              collapsed: true,
+              link: '/editor/parts',
+              items: [
+                { text: '视口窗', link: '/editor/parts/shortcutKeys' },
+                { text: '全局工具栏', link: '/editor/parts/globalToolbar' },
+                { text: '编辑工具栏', link: '/editor/parts/editToolbar' },
+                { text: '辅助工具栏', link: '/editor/parts/auxiliaryToolbar' },
+                { text: '属性面板', link: '/editor/parts/propertiesPanel' },
+                { text: '部件/骨骼列表', link: '/editor/parts/bone' },
+              ]
+            },
+            {
+              text: '体素界面布局',
+              collapsed: true,
+              link: '/editor/voxels',
+              items: [
+                { text: '视口窗', link: '/editor/voxels/shortcutKeys' },
+                { text: '全局工具栏', link: '/editor/voxels/globalToolbar' },
+                { text: '编辑工具栏', link: '/editor/voxels/editToolbar' },
+                { text: '辅助工具栏', link: '/editor/voxels/auxiliaryToolbar' },
+                { text: '属性面板', link: '/editor/voxels/propertiesPanel' },
+              ]
+            },
+            {
+              text: '动画界面布局',
+              collapsed: true,
+              link: '/editor/animation',
+              items: [
+                { text: '视口窗', link: '/editor/animation/shortcutKeys' },
+                { text: '全局工具栏', link: '/editor/animation/globalToolbar' },
+                { text: '编辑工具栏', link: '/editor/animation/editToolbar' },
+                { text: '属性面板', link: '/editor/animation/propertiesPanel' },
+                { text: '动画面板', link: '/editor/animation/animationPanel' },
+                { text: '部件/骨骼列表', link: '/editor/animation/bone' },
+              ]
+            },
+          ]
         },
+        { text: '换肤模式', link: '/editor/skinningMode' },
+      ]
+    }, {
+      text: '模型进阶',
+      collapsed: true,
+      items: [
+        { text: '模型制作进阶', link: '/advanced/models' },
+        { text: '模型对性能的影响', link: '/advanced/help' },
       ]
     },
     ],
