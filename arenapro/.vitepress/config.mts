@@ -78,6 +78,7 @@ export default defineConfig({
         text: 'API差异',
         collapsed: false,
         items: [
+          { text: 'API代码片段', link: '/codeDiff/snippets' },
           { text: '自定义entity属性与方法', link: '/codeDiff/customizeEntity' },
           { text: 'dialog', link: '/codeDiff/dialog' },
           { text: 'findChildByName', link: '/codeDiff/findChildByName' },
