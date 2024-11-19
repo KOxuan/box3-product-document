@@ -51,6 +51,7 @@ declare class UiNode {
 - [`imageOpacity`](./node/UiImage#imageOpacity) : 图片元素的透明度
 - [`imageDisplayMode`](./node/UiImage#imageDisplayMode) : 图像显示模式的声明
 - [`textContent`](./node/UiText#textContent) : 文本元素的内容
+- [`richText`](./node/UiText#richText) : 文本内容是否支持富文本
 - [`textFontSize`](./node/UiText#textFontSize) : 节点显示的文本的字体大小
 - [`textColor`](./node/UiText#textColor) : 节点显示的文本的颜色
 - [`textXAlignment`](./node/UiText#textXAlignment) : 节点显示的文本的水平对齐方式

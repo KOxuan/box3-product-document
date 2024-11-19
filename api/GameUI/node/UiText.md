@@ -12,8 +12,6 @@ import '/style.css'
 #### <font id="API" />textContent<font id="Type">: string</font>{#textContent}  
 > 默认值：'Text'
 
-文本支持`富文本`，使用方式请看：[富文本](/GameUI/RichText)
-
 文本元素的内容，支持转义字符与换行，会对自身元素的自适应大小产生影响。
 
 换行后，所有受到元素大小影响的属性，均需以新的大小进行计算，包括且不限于：
@@ -22,6 +20,15 @@ import '/style.css'
 - textYAlignment
 
 > 定义于 [#L152](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L152)
+
+---
+
+#### <font id="API" />richText<font id="Type">: boolean</font>{#richText}  
+> 默认值：false
+
+文本元素的内容是否支持`富文本`。支持的xml语法请看：[富文本](/GameUI/RichText)
+
+> 定义于 [#L345](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_23.d.ts#L345)
 
 ---
 

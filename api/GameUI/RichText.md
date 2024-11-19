@@ -1,42 +1,44 @@
 # UIText 富文本
-:::info
-此功能暂未上线，此版本的文稿不代表此功能正式发版后的文稿，仅供参考。
-:::
-**富文本（Rich Text Format，简称RTF）是由微软公司开发的跨平台文档格式**
 
-在 Arena 编辑器中，富文本支持类似 `HTML` 写法，具体请参考：[HTML教程](https://developer.mozilla.org/zh-CN/docs/Web/HTML)
-
+富文本（RichText）用来显示一段带有不同样式效果的文字，你可以通过一些简单的`XML`标签来设置文字的样式。并且不同的`XML`标签是可以支持相互嵌套的。
 
 ## 功能开关
-此功能默认关闭，开启后则文本内容可以支持富文本格式
+此功能默认关闭，开启后则文本内容可以支持富文本。
 
 ![](/QQ20241108-150717.png)
 
+或者使用[richText](./node/UiText#richText)开启对富文本的支持。
 ## 富文本的支持
-以下是`初期支持`的富文本标签：
+以下是目前支持的富文本标签：
 
-**字体大小**
 
-```html
-<font size="...">...</font>
-```
+**font 字体**
+
+| **属性** | **类型** |**说明** |
+| --- | --- | --- |
+| size | string | 字体大小 | 
+| color | string | 十六进制颜色值，参考：[颜色取色](https://www.rapidtables.org/zh-CN/web/color/RGB_Color.html#color-picker) | 
     
-**字体颜色**
-  
-```html
-<font color="...">...</font>
-``` 
-**描边**
+**stroke 描边**
       
-```html
-<stroke="...">...</stroke>
-``` 
+| **属性** | **类型** |**说明** |
+| --- | --- | --- |
+| thickness | string | 描边宽度 | 
+| opacity | string(0-1) | 描边透明度 | 
+| color | string | 十六进制颜色值，参考：[颜色取色](https://www.rapidtables.org/zh-CN/web/color/RGB_Color.html#color-picker) | 
+    
 
-- 可定义描边粗细、颜色、不透明度
+
+## 使用示例
+
+```xml
+你好，我是<font size="25" color="#F55505">吉吉喵</font>。我是神岛可爱的<stroke thickness="10" opacity="0.6">吉祥物</stroke>。
+
+你好，我是<font size="25" color="#F55505"><font size="48" color="#5520D0">文档</font>喵</font>。我也是<font size="12" color="#2CDC67">神岛</font>可爱的<stroke thickness="10" opacity="0.6">吉祥物</stroke>。
+```
 
 ## 关于富文本的说明
 
-    
 **生效规则**
       
 - 富文本标签只影响被标记部分文本的样式，未被标记的文本则继承元素文本的初始配置。
