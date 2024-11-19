@@ -7,7 +7,7 @@
 ## 插件安装
 
 ### 支持的 IDE 及操作系统
-+ [Node.js V20.x](/bestPractices/nodejs)
++ [Node.js V20.x](/bestPractices/nodejs) or later (LTS)
 + Windows 10/11 / macOS / Linux
 + [Visual Studio Code 1.90](/bestPractices/vscode) or later
 

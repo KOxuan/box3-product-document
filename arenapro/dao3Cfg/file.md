@@ -7,6 +7,8 @@ myArenaProject
 ├── .gitignore			       		--Git忽略特定信息文件
 ├── /node_modules/				 	--node项目包文件夹
 ├── /shares/						--共享脚本文件夹
+├── /.vscode/						--vscode配置文件夹
+│   └── dao3-ap.code-snippets		--神岛代码片段存储文件
 ├── /server/						--服务端脚本
 |   ├── tsconfig.json      			--ts配置文件
 |   ├── webpack.config.js   		--webpack配置文件
@@ -44,6 +46,7 @@ myArenaProject
 5. **package-lock.json**
 6. **dao3.config.json**
 7. **.gitignore**
+9. **dao3-ap.code-snippets**
 
 :::
 
@@ -54,4 +57,5 @@ myArenaProject
 
 1. **GameAPI.d.ts**
 2. **ClientAPI.d.ts**
+3. **dao3-ap.code-snippets**
 :::
