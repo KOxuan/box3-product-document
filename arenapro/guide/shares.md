@@ -29,5 +29,3 @@ import { arenaChannel, arenaChannelType } from "@shares/channel";
 ![](/QQ20241022-200906.png)
 
 通过上述方法，你可以有效地在两个端之间共享代码，提高开发效率和代码的可维护性。
-
-更多信息请看：[数据跨端通讯](/codeDiff/remoteChannel)

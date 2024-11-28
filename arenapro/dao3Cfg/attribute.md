@@ -4,6 +4,7 @@
 ```json
 {
   "ArenaPro": {
+    "npmPackage": undefined,
     "file": {
       "typescript": {
         "server": {
@@ -56,3 +57,4 @@
 | map.id | √ | string | "" | 当前Arena项目对应的**扩展地图ID** |
 | map.editHash | √ | string | "" | 当前Arena项目对应的扩展地图**创作端Hash** |
 | map.playHash |  | string | "" | 当前Arena项目对应的扩展地图**游玩端Hash** |
+| npmPackage |  | "server" &#124; "client" |  | 当前项目是否为神岛组件库（npm包）？如是需写指定端名，会停止构建另一端以加快速度。|

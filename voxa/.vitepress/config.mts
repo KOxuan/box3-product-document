@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'zh-cn',
   title: "VoxaEdit 用户手册",
-  head: [['link', { rel: 'icon', href: '/arena.svg' }]],
+  head: [['link', { rel: 'icon', href: '/voxa.svg' }]],
   description: "为创作者所有✨ 由创作者共建⚖️ 因创作者而生🎉",
   markdown: {
     lineNumbers: true,

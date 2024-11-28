@@ -7,6 +7,7 @@ myArenaProject
 ├── .gitignore			       		--Git忽略特定信息文件
 ├── /node_modules/				 	--node项目包文件夹
 ├── /shares/						--共享脚本文件夹
+|   └── sharesApp.ts			   	--程序入口
 ├── /.vscode/						--vscode配置文件夹
 │   ├── launch.json		            --Debugger配置文件
 │   └── dao3-ap.code-snippets		--神岛代码片段存储文件
