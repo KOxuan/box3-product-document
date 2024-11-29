@@ -65,7 +65,6 @@ console.log(!true); // false
 
 > `!` > `&&` > `||`
 
-来个中场练习吧！
 
 <!--    答题卡 demo版，以Kimi AI生成  -->
 <head>
@@ -313,7 +312,7 @@ if (hungerLevel > 5) {
   console.log("我不太饿，还不想吃。");
 }
 
-// 或可以简写成
+// 或简写成
 console.log(
   hungerLevel > 5 ? "我饿了，吃一片饼干吧！" : "我不太饿，还不想吃。"
 );
