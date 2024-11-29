@@ -17,9 +17,12 @@
 
 ### 功能需求
 
-1. **玩家加入地图时**：
-   - 向控制台输出欢迎信息，格式为：`Hello World！{玩家名称}。`
-   - 给该玩家展示一个独特的对话框，内容为：`Hello World！{玩家名称}`。
+
+1. 当玩家加入地图后，系统需在控制台输出包含玩家名称的欢迎信息：`Hello World！{玩家名称}`。
+
+2. 同时，系统应向该玩家展示一个独特的对话框，内容同样为：`Hello World！{玩家名称}`。
+
+3. 并且将对话框封装成函数，放置`b.js`文件中，并导入到`App.js`中使用。
 
 ### 功能效果
 
@@ -39,31 +42,53 @@
 
 ![弹出对话框界面](/QQ20241025-110125.png)
 
+#### 第四步：新建b.js文件并封装
+
+在服务端（server）下的src文件夹中新建一个`b.js`文件，用于封装对话框的逻辑。
+
+![](/QQ20241129-120537.png)
+
+我们需要导出这个函数，以便在`App.js`中调用。
+
+注意：在ArenaPro中，我们统一使用`ESM`模块语法，服务端和客户端都可以使用。
+
+`b.js`
+![](/QQ20241129-120550.png)
+
+`App.js`
+![](/QQ20241129-120601.png)
+
 ### 完整代码实现
 
 ```javascript
-/**
- * 当有新玩家加入游戏时，触发此回调函数。
- * 回调函数参数包含玩家的实体信息。
- */
+// -----------------App.js-----------------
+
+// 导入dialog模块，用于在玩家加入时显示欢迎对话框
+import { dialog } from './b'
+
+// 当玩家加入游戏时触发
 world.onPlayerJoin(({ entity }) => {
-  // 在控制台输出欢迎信息
+  // 打印欢迎信息到控制台
   console.log(`Hello World！${entity.player.name}`);
 
-  /**
-   * 创建一个对话框，向玩家展示欢迎信息。
-   * 对话框类型设置为TEXT（文本对话框）。
-   * 设置对话框标题为"欢迎新玩家"。
-   * 设置对话框内容为"Hello World！{玩家名称}"。
-   * 设置标题背景颜色为浅黄色（RGBA值：0.93, 0.95, 0.54, 1.00）。
-   * 设置内容背景颜色为浅蓝色（RGBA值：0.54, 0.68, 0.95, 1.00）。
-   */
-  entity.player.dialog({
-    type: GameDialogType.TEXT,
-    title: "欢迎新玩家",
-    content: `Hello World！${entity.player.name}`,
-    titleBackgroundColor: new GameRGBAColor(0.93, 0.95, 0.54, 1.00),
-    contentBackgroundColor: new GameRGBAColor(0.54, 0.68, 0.95, 1.00),
-  });
+  // 调用dialog函数显示欢迎对话框
+  dialog(entity);
 });
+
+// -----------------b.js-----------------
+
+/**
+ * 显示欢迎对话框给指定的玩家实体
+ * @param entity 游戏实体，包含玩家信息和方法
+ */
+export function dialog(entity) {
+    // 创建并显示一个文本类型的对话框
+    entity.player.dialog({
+        type: GameDialogType.TEXT,
+        title: '欢迎新玩家',
+        content: `Hello World！${entity.player.name}`,
+        titleBackgroundColor: new GameRGBAColor(0.93, 0.95, 0.54, 1.00),
+        contentBackgroundColor: new GameRGBAColor(0.54, 0.68, 0.95, 1.00),
+    });
+}
 ```

@@ -12,6 +12,8 @@
 
 2. 同时，系统应向该玩家展示一个独特的对话框，内容同样为：`Hello World！{玩家名称}`。
 
+3. 并且将对话框封装成函数，放置`b.ts`文件中，并导入到`App.ts`中使用。
+
 ## 功能效果预览
 
 ![功能效果预览图](/QQ20241025-105839.png)
@@ -36,21 +38,57 @@
 
 通过调用`entity.player.dialog`方法，我们可以向玩家展示一个包含欢迎信息的对话框。在这里，我们使用了泛型`<GameTextDialogParams>`来约束对话框的参数类型，以便获得更好的语法提示和类型检查。
 
+#### 第四步：新建b.ts文件并封装
+
+在服务端（server）下的src文件夹中新建一个`b.ts`文件，用于封装对话框的逻辑。
+
+![](/QQ20241129-115545.png)
+
+我们需要导出这个函数，以便在`App.ts`中调用。
+
+注意：在ArenaPro中，我们统一使用`ESM`模块语法，服务端和客户端都可以使用。
+
+`b.ts`
+![](/QQ20241129-115944.png)
+
+`App.ts`
+![](/QQ20241129-120043.png)
+
+
 ## 完整代码示例
 
 ```typescript
-/** 当有新玩家加入游戏时触发的回调函数 */
+// -----------------App.ts-----------------
+
+// 导入dialog模块，用于在玩家加入时显示欢迎对话框
+import { dialog } from './b'
+
+// 当玩家加入游戏时触发
 world.onPlayerJoin(({ entity }) => {
-  // 在控制台输出欢迎信息
+  // 打印欢迎信息到控制台
   console.log(`Hello World！${entity.player.name}`);
 
-  /** 创建一个对话框，向玩家展示欢迎信息 */
-  entity.player.dialog<GameTextDialogParams>({
-    type: GameDialogType.TEXT, // 对话框类型为文本
-    title: '欢迎新玩家', // 对话框标题
-    content: `Hello World！${entity.player.name}`, // 对话框内容
-    titleBackgroundColor: new GameRGBAColor(0.93, 0.95, 0.54, 1.00), // 标题背景颜色
-    contentBackgroundColor: new GameRGBAColor(0.54, 0.68, 0.95, 1.00), // 内容背景颜色
-  });
+  // 调用dialog函数显示欢迎对话框
+  dialog(entity);
 });
+
+// -----------------b.ts-----------------
+
+/**
+ * 显示欢迎对话框给指定的玩家实体
+ * @param entity 游戏实体，包含玩家信息和方法
+ */
+export function dialog(entity: GameEntity & {
+    player: GamePlayer;
+    isPlayer: true;
+}) {
+    // 创建并显示一个文本类型的对话框
+    entity.player.dialog<GameTextDialogParams>({
+        type: GameDialogType.TEXT,
+        title: '欢迎新玩家',
+        content: `Hello World！${entity.player.name}`,
+        titleBackgroundColor: new GameRGBAColor(0.93, 0.95, 0.54, 1.00),
+        contentBackgroundColor: new GameRGBAColor(0.54, 0.68, 0.95, 1.00),
+    });
+}
 ```

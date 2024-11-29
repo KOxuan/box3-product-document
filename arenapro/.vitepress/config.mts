@@ -32,15 +32,15 @@ export default defineConfig({
         text: '插件入门',
         collapsed: false,
         items: [
+          { text: '插件简介', link: '/index' },
           {
             text: 'Ⅰ、前置知识',
             collapsed: true,
             items: [
-              { text: '1.插件简介', link: '/index' },
-              { text: '2.什么是TypeScript？', link: '/guide/one/WhatTypeScript' },
-              { text: '3.什么是VSCode？', link: '/guide/one/WhatVSCode' },
-              { text: '4.什么是NodeJs？', link: '/guide/one/WhatNodeJs' },
-              { text: '5.什么是Webpack？', link: '/guide/one/WhatWebpack' },
+              { text: '1.什么是TypeScript？', link: '/guide/one/WhatTypeScript' },
+              { text: '2.什么是VSCode？', link: '/guide/one/WhatVSCode' },
+              { text: '3.什么是NodeJs？', link: '/guide/one/WhatNodeJs' },
+              { text: '4.什么是Webpack？', link: '/guide/one/WhatWebpack' },
             ]
           }, {
             text: 'Ⅱ、创建代码项目',
@@ -63,8 +63,9 @@ export default defineConfig({
                   { text: 'JavaScript编写', link: '/guide/three/one-js' },
                 ]
               },
-              { text: '2.打包上传', link: '/guide/three/two' },
-              { text: '3.运行测试', link: '/guide/three/three' },
+              { text: '2.推荐的插件', link: '/guide/three/plugIn' },
+              { text: '3.打包上传', link: '/guide/three/two' },
+              { text: '4.运行测试', link: '/guide/three/three' },
             ]
           }, {
             text: 'Ⅳ、调试你的代码',
@@ -75,14 +76,33 @@ export default defineConfig({
               { text: '3.debugger', link: '/guide/four/debugger' },
             ]
           }, {
-            text: 'Ⅵ、API差异',
+            text: 'Ⅴ、双端共享代码',
             collapsed: true,
             items: [
-              { text: '1.自定义enity与player', link: '/guide/five/customizeEntity' },
-              { text: '2.dialog', link: '/guide/five/dialog' },
-              { text: '3.findChildByName', link: '/guide/five/findChildByName' },
-              { text: '4.GameDataStorage', link: '/guide/five/storage' },
-              { text: '5.RemoteChannel', link: '/guide/five/remoteChannel' },
+              { text: '1.通讯约定', link: '/guide/five/communicationAgreement' },
+              { text: '2.代码复用', link: '/guide/five/codeReuse' },
+            ]
+          }, {
+            text: 'Ⅵ、Git项目协同',
+            collapsed: true,
+            items: [
+              { text: '1.通讯约定', link: '/guide/five/communicationAgreement' },
+              { text: '2.代码复用', link: '/guide/five/codeReuse' },
+            ]
+          }, {
+            text: 'Ⅶ、进阶用法',
+            collapsed: true,
+            items: [
+              { text: '1.安装npm包', link: '/guide/five/codeReuse' },
+              { text: '2.改变构建文件名', link: '/guide/five/communicationAgreement' },
+              { text: '3.跨项目引用', link: '/guide/five/codeReuse' },
+              { text: '4.组件模式', link: '/package/component/index' },
+            ]
+          },{
+            text: 'Ⅷ、神岛NPM包开发',
+            collapsed: true,
+            items: [
+              { text: '1.部署组件库项目', link: '/guide/five/codeReuse' },
             ]
           },
         ]
@@ -93,11 +113,22 @@ export default defineConfig({
           { text: '脚手架架构', link: '/dao3Cfg/file' },
           { text: '属性', link: '/dao3Cfg/attribute' },
         ]
-      }, {
+      },
+      {
+        text: 'API差异',
+        collapsed: false,
+        items: [
+          { text: '自定义enity与player', link: '/difference/customizeEntity' },
+          { text: 'dialog', link: '/difference/dialog' },
+          { text: 'findChildByName', link: '/difference/findChildByName' },
+          { text: 'GameDataStorage', link: '/difference/storage' },
+          { text: 'RemoteChannel', link: '/difference/remoteChannel' },
+        ]
+      },
+      {
         text: '组件模式',
         collapsed: false,
         items: [
-          { text: '简介', link: '/package/component/index' },
           { text: '组件使用', link: '/package/component/parent' },
           { text: '生命周期', link: '/package/component/lifecycle' },
         ]
