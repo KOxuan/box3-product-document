@@ -63,9 +63,9 @@ export default defineConfig({
                   { text: 'JavaScript编写', link: '/guide/three/one-js' },
                 ]
               },
-              { text: '2.推荐的插件', link: '/guide/three/plugIn' },
-              { text: '3.打包上传', link: '/guide/three/two' },
-              { text: '4.运行测试', link: '/guide/three/three' },
+              { text: '3.Arena资源管理', link: '/guide/three/resources' },
+              { text: '4.打包上传', link: '/guide/three/two' },
+              { text: '5.运行测试', link: '/guide/three/three' },
             ]
           }, {
             text: 'Ⅳ、调试你的代码',
@@ -83,26 +83,29 @@ export default defineConfig({
               { text: '2.代码复用', link: '/guide/five/codeReuse' },
             ]
           }, {
-            text: 'Ⅵ、Git项目协同',
+            text: 'Ⅵ、进阶用法',
             collapsed: true,
             items: [
-              { text: '1.通讯约定', link: '/guide/five/communicationAgreement' },
-              { text: '2.代码复用', link: '/guide/five/codeReuse' },
-            ]
-          }, {
-            text: 'Ⅶ、进阶用法',
-            collapsed: true,
-            items: [
-              { text: '1.安装npm包', link: '/guide/five/codeReuse' },
-              { text: '2.改变构建文件名', link: '/guide/five/communicationAgreement' },
-              { text: '3.跨项目引用', link: '/guide/five/codeReuse' },
-              { text: '4.组件模式', link: '/package/component/index' },
+              { text: '1.安装npm包', link: '/guide/six/npmPackage' },
+              { text: '2.改变构建文件名及入口', link: '/guide/six/bulidName' },
+              { text: '3.跨项目引用', link: '/guide/six/projectReference' },
+              {
+                text: '4.组件模式',
+                link: '/package/component/index',
+                collapsed: false,
+                items: [
+                  { text: '组件使用', link: '/package/component/parent' },
+                  { text: '生命周期', link: '/package/component/lifecycle' },
+                ]
+              },
             ]
           },{
-            text: 'Ⅷ、神岛NPM包开发',
+            text: 'Ⅶ、神岛NPM包开发',
             collapsed: true,
             items: [
-              { text: '1.部署组件库项目', link: '/guide/five/codeReuse' },
+              { text: '1.部署组件库项目', link: '/guide/seven/createNPMProject' },
+              { text: '2.编写代码', link: '/guide/seven/code' },
+              { text: '2.投稿至dao3fun组织', link: '/guide/seven/dao3fun' },
             ]
           },
         ]
@@ -125,139 +128,7 @@ export default defineConfig({
           { text: 'RemoteChannel', link: '/difference/remoteChannel' },
         ]
       },
-      {
-        text: '组件模式',
-        collapsed: false,
-        items: [
-          { text: '组件使用', link: '/package/component/parent' },
-          { text: '生命周期', link: '/package/component/lifecycle' },
-        ]
-      },
     ],
-    // sidebar: [
-    //   {
-    //     text: '用户手册',
-    //     collapsed: false,
-    //     items: [
-    //       { text: '导读', link: '/' },
-    //       { text: '快速开始', link: '/guide/start' },
-    //       { text: '登录账号', link: '/guide/login' },
-    //       { text: '链接扩展地图', link: '/guide/linkMap' },
-    //       {
-    //         text: 'HelloWorld 项目',
-    //         collapsed: true,
-    //         items: [
-    //           {
-    //             text: '编写代码',
-    //             collapsed: true,
-    //             items: [
-    //               { text: 'TypeScript编写【推荐】', link: '/guide/HelloWorld/one' },
-    //               { text: 'JavaScript编写', link: '/guide/HelloWorld/one-js' },
-    //             ]
-    //           },
-    //           { text: '打包上传', link: '/guide/HelloWorld/two' },
-    //           { text: '运行测试', link: '/guide/HelloWorld/three' },
-    //         ]
-    //       },
-    //       { text: 'debug模式', link: '/guide/debug' },
-    //       { text: '模块热替换编译方式', link: '/guide/hmr' },
-    //     ]
-    //   }, {
-    //     text: '使用进阶',
-    //     collapsed: false,
-    //     items: [
-    //       { text: 'VSCode调试脚本', link: '/advanced/debugger' },
-    //       { text: '跨端共享脚本', link: '/guide/shares' },
-    //       { text: '导入JSON', link: '/advanced/json' },
-    //       { text: '改变构建文件名', link: '/advanced/buildFile' },
-    //       { text: '路径别名设置', link: '/advanced/pathAliases' },
-    //       { text: '跨项目引用', link: '/advanced/crossProject' },
-    //     ]
-    //   }, {
-    //     text: 'dao3Cfg配置',
-    //     collapsed: false,
-    //     items: [
-    //       { text: '脚手架架构', link: '/dao3Cfg/file' },
-    //       { text: '属性', link: '/dao3Cfg/attribute' },
-    //     ]
-    //   }, {
-    //     text: 'API差异',
-    //     collapsed: false,
-    //     items: [
-    //       { text: 'API代码片段', link: '/codeDiff/snippets' },
-    //       { text: '自定义entity属性与方法', link: '/codeDiff/customizeEntity' },
-    //       { text: 'dialog', link: '/codeDiff/dialog' },
-    //       { text: 'findChildByName', link: '/codeDiff/findChildByName' },
-    //       { text: 'GameDataStorage', link: '/codeDiff/storage' },
-    //       { text: 'RemoteChannel', link: '/codeDiff/remoteChannel' },
-    //     ]
-    //   }, {
-    //     text: '神岛npm包',
-    //     collapsed: false,
-    //     items: [
-    //       { text: '公开npm包列表', link: '/package/list' },
-    //       { text: '什么是npm包', link: '/package/help' },
-    //       { text: '如何投稿npm包', link: '/package/publish' },
-    //     ]
-    //   },
-    //   {
-    //     text: '组件模式',
-    //     collapsed: false,
-    //     items: [
-    //       { text: '简介', link: '/package/component/index' },
-    //       { text: '组件使用', link: '/package/component/parent' },
-    //       { text: '生命周期', link: '/package/component/lifecycle' },
-    //     ]
-    //   },
-    //   {
-    //     text: '学习资源',
-    //     collapsed: false,
-    //     items: [{
-    //       text: 'TypeScript语言',
-    //       collapsed: false,
-    //       items: [
-    //         { text: '系统学习', link: 'https://typescript.p6p.net/about/experience.html' },
-    //         { text: '20分钟速成', link: 'https://www.bilibili.com/video/BV1gX4y177Kf/' },
-    //         { text: '代码演练场', link: 'https://www.typescriptlang.org/zh/play/' },
-    //       ]
-    //     },
-    //     {
-    //       text: 'Git协同',
-    //       collapsed: false,
-    //       items: [
-    //         { text: '文字教学', link: 'https://liaoxuefeng.com/books/git/what-is-git/index.html' },
-    //         { text: '视频教学', link: 'https://www.bilibili.com/video/BV1HM411377j' },
-    //         { text: 'Git×VSCode综合', link: 'https://www.bilibili.com/video/BV1w14y1C7oi' },
-    //         { text: 'Git小乌龟可视化', link: 'https://blog.csdn.net/qq_43543789/article/details/105186322' },
-    //       ]
-    //     },
-    //     ]
-    //   }, {
-    //     text: '最佳实践',
-    //     collapsed: false,
-    //     items: [
-    //       {
-    //         text: '安装相关',
-    //         collapsed: false,
-    //         items: [
-    //           { text: 'VSCode安装', link: '/bestPractices/vscode' },
-    //           { text: '中文版VSCode', link: '/bestPractices/chineseVSCode' },
-    //           { text: 'NodeJS安装', link: '/bestPractices/nodejs' },
-    //           { text: 'NodeJS部署Ts问题', link: '/bestPractices/nodejsTest' },
-    //         ]
-    //       }, {
-    //         text: '便利相关',
-    //         collapsed: false,
-    //         items: [
-    //           { text: '单个上传js文件', link: '/bestPractices/upLoad-js' },
-    //           { text: '多桌面开发', link: '/bestPractices/multipleDesktops' },
-    //           { text: 'ts与js混搭', link: '/bestPractices/allowJs' },
-    //         ]
-    //       },
-    //     ]
-    //   },
-    // ],
-
     editLink: {
       pattern: 'https://gitee.com/box3lab/box3-product-document/blob/master/arenapro/:path',
       text: '在 Gitee 上编辑此界面'

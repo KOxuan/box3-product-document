@@ -71,8 +71,8 @@ class Employee extends Person {
   }
 }
 
-const employee1 = new Employee('吉吉喵', 10, '开发者');
-console.log(employee1.introduce()); // 输出: 你好，我的名字叫吉吉喵 ，我 10 岁了，我是开发者。
+const employee1 = new Employee('吉吉喵', 10, '创作者');
+console.log(employee1.introduce()); // 输出: 你好，我的名字叫吉吉喵 ，我 10 岁了，我是创作者。
 ```
 
 - `super`关键字用于调用父类的构造函数和方法。
