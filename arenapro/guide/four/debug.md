@@ -15,16 +15,23 @@ Debug模式主要用于`开发阶段`，它允许创作者在神岛环境/VSCode
 
 1. 打开`dao3.config.json`文件。
 2. 找到与当前端（如客户端或服务端）相关的配置部分。
-3. 将`development`属性的值改为`true`，以启用Debug模式。
-
-例如，对于客户端配置，如下所示：
+3. 将`developmentAll`或`development`属性的值改为`true`，以启用Debug模式。
 
 ```json
 {
-  "client": {
-    "development": true,
-    // 其他配置...
-  }
+    "ArenaPro": {
+        "file": {
+            "typescript": {
+                "server": {
+                    "development": true // 服务端开启debug代码
+                },
+                "client": {
+                    "development": true // 服务端开启debug代码
+                },
+                "developmentAll": null, // 开启服务端和客户端debug代码，优先级最高，null表示忽略该属性。
+            }
+        },
+    }
 }
 ```
 
