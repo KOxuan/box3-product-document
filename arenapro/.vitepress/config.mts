@@ -63,9 +63,9 @@ export default defineConfig({
                   { text: 'JavaScript编写', link: '/guide/three/one-js' },
                 ]
               },
-              { text: '3.Arena资源管理', link: '/guide/three/resources' },
-              { text: '4.打包上传', link: '/guide/three/two' },
-              { text: '5.运行测试', link: '/guide/three/three' },
+              { text: '2.Arena资源管理', link: '/guide/three/resources' },
+              { text: '3.打包上传', link: '/guide/three/two' },
+              { text: '4.运行测试', link: '/guide/three/three' },
             ]
           }, {
             text: 'Ⅳ、调试你的代码',
@@ -105,7 +105,7 @@ export default defineConfig({
             items: [
               { text: '1.部署组件库项目', link: '/guide/seven/createNPMProject' },
               { text: '2.编写代码', link: '/guide/seven/code' },
-              { text: '2.投稿至dao3fun组织', link: '/guide/seven/dao3fun' },
+              { text: '3.投稿至dao3fun组织', link: '/guide/seven/dao3fun' },
             ]
           },
         ]
