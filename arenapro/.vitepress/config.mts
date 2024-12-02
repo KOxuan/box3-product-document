@@ -73,8 +73,9 @@ export default defineConfig({
             items: [
               { text: '1.代码开发模式', link: '/guide/four/debug' },
               { text: '2.HMR服务器', link: '/guide/four/hmr' },
-              { text: '3.debugger', link: '/guide/four/debugger' },
-            ]
+              { text: '3.编译原理', link: '/guide/four/compilationPrinciple' },
+              { text: '4.debugger', link: '/guide/four/debugger' },
+            ] 
           }, {
             text: 'Ⅴ、双端共享代码',
             collapsed: true,
