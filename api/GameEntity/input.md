@@ -64,7 +64,7 @@ npc.onInteract(async({entity}) => {
 
 ## 方法
 
-#### <font id="API" />say(<font id="Type">message:string</font>)<font id="Type">:  void</font>{#say}
+#### <font id="API" />say(<font id="Type">message:string,options?: Partial<{duration: number,hideFloat: boolean}></font>)<font id="Type">:  void</font>{#say}
 让实体说话。
 
 **输入参数**
@@ -72,8 +72,10 @@ npc.onInteract(async({entity}) => {
 | **参数** | **必填** | **默认值** | **类型** | **说明** |
 | --- | --- | --- | --- | --- |
 | message | 是 | | string | 说话的内容 |
+| options.duration |  | 2000 | number | 气泡及广播提示语的持续时间（ms） |
+| options.hideFloat |  | false | boolean | 气泡内容是否在世界广播上隐藏？ |
 
-> 定义于 [#L10636](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10636)
+> 定义于 [#L11344](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_12_4.d.ts#L11344)
 
 ::: details 点击查看示例代码
 ```javascript

@@ -162,7 +162,6 @@ export default defineConfig({
           link: '/GameDataStorage/index',
           collapsed: false,
           items: [
-            { text: 'API讲解【教程版】', link: '/GameDataStorage/help' },
             { text: '获取数据空间', link: '/GameDataStorage/getSpace' },
             { text: '操作数据', link: '/GameDataStorage/setSpace' },
           ]
@@ -217,6 +216,14 @@ export default defineConfig({
           items: [
             { text: '服务端->客户端', link: '/RemoteChannel/Client/serverToClient' },
             { text: '客户端->服务端', link: '/RemoteChannel/Client/clientToServer' },
+          ]
+        },
+        {
+          text: '🌏游戏世界',
+          link: '/ClientWorld/index',
+          collapsed: false,
+          items: [
+            { text: '输入', link: '/ClientWorld/input' },
           ]
         },
         {

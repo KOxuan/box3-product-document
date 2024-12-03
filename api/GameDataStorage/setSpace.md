@@ -21,6 +21,28 @@ console.log(`storageName: ${storageName}`)
 
 ## 方法
 
+#### <font id="API" />increment(<font id="Type">key: string,value?:number</font>)<font id="Type">: Promise‹number›</font> {#increment}
+原子方式递增给定键的值，当对应键不存在时视作设置值，对应值不为数字时报错。
+- 通过此方式修改值时不会触发数据锁定。
+
+**输入参数**
+
+| **参数** | **必填** | **默认值** | **类型** | **说明** |
+| --- | --- | --- | --- | --- |
+| key | 是 | | string | 需要递增的键 |
+| value |  | 1 | number | 递增量 |
+
+**返回值**
+
+| **类型** | **说明** |
+| --- | --- |
+| number | 异步返回递增后的值，当获取完成时 resolve，否则 reject。 |
+
+
+> 定义于 [#L15433](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_12_4.d.ts#L15433)
+
+---
+
 #### <font id="API" />set(<font id="Type">key: string,value:[JSONValue](./setSpace#JSONValue)</font>)<font id="Type">: Promise‹void›</font> {#set}
 传入指定键与值，无论该键是否存在，均将值设置到此键上。
 

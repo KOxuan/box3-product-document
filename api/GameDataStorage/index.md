@@ -18,6 +18,7 @@ declare class GameStorage {
 ## 方法
 - [`getDataStorage`](./getSpace#getDataStorage) : 【单地图】连接指定数据存储空间，如果不存在则创建一个新的空间。
 - [`getGroupStorage`](./getSpace#getGroupStorage) :【主副图】连接指定数据存储空间，如果不存在则创建一个新的空间。
+- [`increment`](./setSpace#increment) : 原子方式递增给定键的值，当对应键不存在时视作设置值，对应值不为数字时报错。
 - [`set`](./setSpace#set) : 传入指定键与值，无论该键是否存在，均将值设置到此键上
 - [`get`](./setSpace#get) : 获取指定键对应的值
 - [`update`](./setSpace#update) : 更新指定键对应的值
