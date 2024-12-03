@@ -33,6 +33,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '插件简介', link: '/index' },
+          { text: '插件运作原理', link: '/guide/one/APoperatingPrinciple' },
           {
             text: 'Ⅰ、前置知识',
             collapsed: true,
@@ -88,10 +89,11 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: '1.安装npm包', link: '/guide/six/npmPackage' },
-              { text: '2.改变构建文件名及入口', link: '/guide/six/bulidName' },
-              { text: '3.跨项目引用', link: '/guide/six/projectReference' },
+              { text: '2.导入JSON', link: '/guide/six/json' },
+              { text: '3.改变构建文件名及入口', link: '/guide/six/bulidName' },
+              { text: '4.跨项目引用', link: '/guide/six/projectReference' },
               {
-                text: '4.组件模式',
+                text: '5.组件模式',
                 link: '/package/component/index',
                 collapsed: false,
                 items: [

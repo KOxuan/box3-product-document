@@ -8,7 +8,7 @@ tsc编译后再进行webpack打包，以及webpack的HMR（Hot Module Replacemen
 
 1. **tsc编译**：
 
-	* TSC（TypeScript Compiler）是TypeScript语言的核心组件，负责将开发者编写的TypeScript代码转换为神岛可以执行的JavaScript代码。
+	* TSC（TypeScript Compiler）是TypeScript语言的核心组件，负责将创作者编写的TypeScript代码转换为神岛可以执行的JavaScript代码。
 	* TSC的编译过程包括词法分析、语法分析、语义分析、类型检查和代码转换等阶段。通过这些阶段，TSC确保TypeScript代码符合语法规则、变量声明和使用规范，以及类型匹配等要求。
 	* 编译完成后，TSC将生成的JavaScript代码输出到指定的文件中，供后续工具（webpack）使用。
 
@@ -30,7 +30,7 @@ tsc编译后再进行webpack打包，以及webpack的HMR（Hot Module Replacemen
 
 1. **HMR概述**：
 
-	* HMR是webpack提供的一个特性，它允许在应用程序运行时动态替换模块，而无需重新加载整个页面。这可以极大地提高开发效率，因为开发者可以立即看到代码更改的效果。
+	* HMR是webpack提供的一个特性，它允许在应用程序运行时动态替换模块，而无需重新加载整个页面。这可以极大地提高开发效率，因为创作者可以立即看到代码更改的效果。
 
 2. **HMR工作原理**：
 
