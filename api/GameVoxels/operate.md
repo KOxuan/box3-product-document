@@ -38,7 +38,7 @@ import '/style.css'
 
 当前世界地形最大尺寸。
 
-> 定义于 [#L10385](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10385)
+
 
 ---
 
@@ -48,7 +48,7 @@ import '/style.css'
 
 返回包含所有方块名称的数组。
 
-> 定义于 [#L10390](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10390)
+
 ## 方法
 
 ### 方块ID<互转>方块名称
@@ -68,7 +68,7 @@ import '/style.css'
 | --- | --- |
 | number | 方块ID |
 
-> 定义于 [#L10396](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10396)
+
 ---
 
 
@@ -87,7 +87,7 @@ import '/style.css'
 | --- | --- |
 | string | 方块名称 |
 
-> 定义于 [#L10402](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10402)
+
 ---
 
 
@@ -112,7 +112,7 @@ import '/style.css'
 | --- | --- |
 | number | 新的方块id |
 
-> 定义于 [#L10409](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10409)
+
 
 ::: warning
 若方块名称为'**air**' 或者方块id为**0**，则会打破
@@ -319,7 +319,7 @@ createBoard(32, 9, 32, 19)
 | --- | --- |
 | number | 新的方块id |
 
-> 定义于 [#L10424](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10424)
+
 ---
 
 
@@ -348,7 +348,7 @@ createBoard(32, 9, 32, 19)
 | --- | --- |
 | number | 返回指定位置的方块id，**不包含方块的旋转码** |
 
-> 定义于 [#L10414](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10414)
+
 ---
 
 #### <font id="API" />getVoxelId(<font id="Type">x:number,y:number,z:number</font>)<font id="Type">: number</font>{#getVoxelId}
@@ -371,7 +371,7 @@ createBoard(32, 9, 32, 19)
 | --- | --- |
 | number | 返回指定位置的方块id |
 
-> 定义于 [#L10429](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10429)
+
 ---
 
 
@@ -392,7 +392,7 @@ createBoard(32, 9, 32, 19)
 | --- | --- |
 | number | 返回指定位置的方块旋转码(0,1,2,3) |
 
-> 定义于 [#L10471](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10471)
+
 
 
 ## 快速建造代码示例

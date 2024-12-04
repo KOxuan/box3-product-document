@@ -9,7 +9,7 @@ import '/style.css'
 
 视角模式
 
-> 定义于 [#L11828](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11828)
+
 ---
 
 
@@ -18,7 +18,7 @@ import '/style.css'
 
 在第一人称视角(FPS)或第三人称跟随视角(FOLLOW)下，玩家视角所跟随的实体
 
-> 定义于 [#L11833](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11833)
+
 ---
 
 
@@ -27,7 +27,7 @@ import '/style.css'
 
 固定视角(FIXED)和相对视角(RELATIVE)下，摄像机本身所处的位置
 
-> 定义于 [#L11848](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11848)
+
 ---
 
 #### <font id="API" />cameraTarget<font id="Type">: [GameVector3](/GameVector3/)</font>{#cameraTarget}
@@ -35,14 +35,14 @@ import '/style.css'
 
 固定视角(FIXED)和相对视角(RELATIVE)下，摄像机看向的目标点
 
-> 定义于 [#L11838](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11838)
+
 ---
 #### <font id="API" />cameraUp<font id="Type">: [GameVector3](/GameVector3/)</font>{#cameraUp}
 > 默认值：GameVector3(0, 1, 0)
 
 固定视角(FIXED)和相对视角(RELATIVE)下，摄像机镜头向上的矢量
 
-> 定义于 [#L11843](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11843)
+
 ---
 
 
@@ -51,7 +51,7 @@ import '/style.css'
 
 垂直方向的视场角
 
-> 定义于 [#L11858](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11858)
+
 ---
 
 
@@ -60,7 +60,7 @@ import '/style.css'
 
 启动玩家的3D光标
 
-> 定义于 [#L12013](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12013)
+
 ---
 
 
@@ -69,7 +69,7 @@ import '/style.css'
 
 相对视角(RELATIVE)下，下冻结相机轴
 
-> 定义于 [#L11853](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11853)
+
 ---
 
 
@@ -78,7 +78,7 @@ import '/style.css'
 
 如果不为null，眼睛看向指定方向且锁定左右旋转，只可以上下移动。
 
-> 定义于 [#L11947](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11947)
+
 ---
 
 
@@ -87,7 +87,7 @@ import '/style.css'
 
 摄像机离跟随目标的距离，这决定了相机在场景中观察目标时的相对位置。
 
-> 定义于 [#L11863](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11863)
+
 
 ## 方法
 
@@ -100,7 +100,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | v | 是 | | number | 设置弧度 |
 
-> 定义于 [#L11721](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11721)
+
 
 ---
 
@@ -115,7 +115,7 @@ import '/style.css'
 | v | 是 | | number | 设置弧度 |
 
 
-> 定义于 [#L11725](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11725)
+
 
 
 
@@ -131,7 +131,7 @@ import '/style.css'
 | FPS | 第一人称视角 |
 | RELATIVE | 相对于玩家位置的第三人称视角 |
 
-> 定义于 [#L11555](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11555)
+
 
 ---
 
@@ -151,4 +151,3 @@ import '/style.css'
 | XYZ | XYZ轴 |
 
 
-> 定义于 [#L11561](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11561)

@@ -10,7 +10,7 @@ declare const input: InputSystem;
 #### <font id="API" />unlockPointer()<font id="Type"> :  void</font> {#unlockPointer}
 用后在游戏界面显示鼠标指针。
 
-> 定义于 [#L257](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L257)
+
 
 ---
 
@@ -20,7 +20,7 @@ declare const input: InputSystem;
 
 有兴趣可以查看[Pointer Lock 2.0](https://w3c.github.io/pointerlock/#dom-element-requestpointerlock)。
 
-> 定义于 [#L262](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L262)
+
 
 
 ## 鼠标指针锁定监听事件
@@ -34,7 +34,7 @@ declare const input: InputSystem;
 
 表示鼠标指针是否隐藏。
 
-> 定义于 [#L230](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L230)
+
 
 ---
 
@@ -42,7 +42,7 @@ declare const input: InputSystem;
 #### <font id="API" />pointerlockerror<font id="Type"> : [UiEvent](/GameUI/UiEvent)‹undefined›</font> {#pointerlockerror}
 当鼠标隐藏出错时触发，无事件对象
 
-> 定义于 [#L231](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L231)
+
 
 ```javascript
 //当显示/隐藏鼠标指针时触发
@@ -64,7 +64,7 @@ input.pointerLockEvents.add('pointerlockerror', () => {
 
 类似 Web 的 pointerdown 事件，会受到 `pointerEventBehavior` 的影响。
 
-> 定义于 [#L108](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L108)
+
 
 ---
 
@@ -72,7 +72,7 @@ input.pointerLockEvents.add('pointerlockerror', () => {
 #### <font id="API" />pointerup<font id="Type">: [UiEvent](/GameUI/UiEvent)‹this›</font>   {#pointerup}
 类似 Web 的 pointerup 事件，会受到 `pointerEventBehavior` 的影响。
 
-> 定义于 [#L109](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L109)
+
 
 
 ```javascript

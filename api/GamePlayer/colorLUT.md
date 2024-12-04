@@ -9,7 +9,7 @@ import '/style.css'
 
 用于渲染玩家所见游戏世界的色调
 
-> 定义于 [#L11819](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11819)
+
 
 ```javascript
 world.onPlayerJoin(({ entity:{ player } }) => {

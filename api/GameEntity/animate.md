@@ -8,7 +8,7 @@ import '/style.css'
 
 索引与模型动作相关的全部状态和方法
 
-> 定义于 [#L10703](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10703)
+
 
 
 ## 方法
@@ -30,7 +30,7 @@ import '/style.css'
 | GameAnimation | 创建出来的动画对象 |
 
 
-> 定义于 [#L10640](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10640)
+
 
 
 ::: details 点击查看示例代码
@@ -71,7 +71,7 @@ ani.onFinish(() => {//当动画结束播放时
 | GameAnimation[] | 创建出来的动画对象列表 |
 
 
-> 定义于 [#L10641](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10641)
+
 
 
 
@@ -99,4 +99,3 @@ Entity实体动画关键帧参数，可对Entity除音效外的大部分属性�
 | mass | number | 实体质量 |
 | friction | number | 实体的粘性(0 = 滑，1 = 粘) |
 
-> 定义于 [#L10541](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10541)

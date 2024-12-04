@@ -15,7 +15,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | message | _是_ | | srting | 要广播的消息 |
 
-> 定义于 [#L9827](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9827)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -78,7 +78,7 @@ startTimer()  // 调用方法
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到聊天的处理函数 |
 
-> 定义于 [#L9832](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9832)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -170,4 +170,3 @@ world.onChat(({ entity, message }) => {
 | message | string | 聊天事件中说话的内容 |
 | tick | number | 聊天事件发生时间 |
 
-> 定义于 [#L12833](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12833)

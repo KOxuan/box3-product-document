@@ -25,21 +25,21 @@ motion.play()
 | --- | --- | --- | --- | --- |
 | configs | 是 | | string &#124; GameMotionConfig[] &#124; GameMotionClipConfig | 动作名称或配置 |
 
-> 定义于 [#L11093](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11093)
+
 ---
 
 
 #### <font id="API" />pause()<font id="Type">:  void</font>{#pause}
 暂停实体上的动作播放  
 
-> 定义于 [#L11097](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11097)
+
 ---
 
 
 #### <font id="API" />resume()<font id="Type">:  void</font>{#resume}
 恢复实体上的动作播放  
 
-> 定义于 [#L11101](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11101)
+
 ---
 
 
@@ -62,7 +62,7 @@ entity.motion.setDefaultMotionByName('FirstMotion');
 entity.motion.setDefaultMotionByName(''); // 报错，不存在对应动作
 entity.motion.setDefaultMotionByName(); // 设置默认动作为空，即不播放默认动作
 ```
-> 定义于 [#L11105](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11105)
+
 
 ## 接口
 
@@ -74,7 +74,7 @@ entity.motion.setDefaultMotionByName(); // 设置默认动作为空，即不播�
 | iterations | number | 输入Infinity就是无限循环，此时会覆盖掉默认动作，能cancel或者播放新的动作覆盖。可选项，默认 1 次 |
 |  name | string | 动作名字 |
 
-> 定义于 [#L11081](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11081)
+
 ---
 
 
@@ -86,4 +86,4 @@ entity.motion.setDefaultMotionByName(); // 设置默认动作为空，即不播�
 | iterations | number | 输入Infinity就是无限循环，此时会覆盖掉默认动作，能cancel或者播放新的动作覆盖。可选项，默认 1 次 |
 | motions | (string &#124; [GameMotionConfig](./controller#GameMotionConfig))[]   | 可填写指定动作名或motion动作配置 |
 
-> 定义于 [#L11085](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11085)
+

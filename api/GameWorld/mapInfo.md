@@ -8,7 +8,7 @@ import '/style.css'
 
 本张地图名称，对应项目设置中的名称。
 
-> 定义于 [#L9947](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9947)
+
 
 ---
 
@@ -18,7 +18,7 @@ import '/style.css'
 
 可通过[`teleport`](./teleport)生成服务器ID。
 
-> 定义于 [#L9950](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_10_28.d.ts#L9950)
+
 
 ---
 
@@ -27,7 +27,7 @@ import '/style.css'
 
 世界当前的Tick计数。
 
-> 定义于 [#L9948](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9948)
+
 
 ---
 
@@ -36,7 +36,7 @@ import '/style.css'
 
 获取当前地图所在的URL链接地址。
 
-> 定义于 [#L9984](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9684)
+
 
 ---
 
@@ -57,7 +57,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 每64毫秒触发的处理函数 |
 
-> 定义于 [#L9784](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9784)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -93,5 +93,5 @@ world.onPlayerJoin(({ entity }) => { // 每Tick的间隔向控制台输出提示
 | elapsedTimeMS | number | 两个时刻之间的时间间隔(毫秒) |
 | skip | boolean | 是否因为延迟而跳过了某些 Tick |
 
-> 定义于 [#L12457](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12457)
+
 

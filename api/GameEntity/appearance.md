@@ -12,7 +12,7 @@ import '/style.css'
 
 模型被放置后，会自动保存在文件列表中。模型文件对应的 **'mesh/*.vb'** 名称便是 mesh属性。
 
-> 定义于 [#L10783](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10783)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -36,7 +36,7 @@ world.onPlayerJoin(async({ entity }) => {
 
 实体的位置。
 
-> 定义于 [#L10718](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10718)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -56,7 +56,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 实体的旋转角度。
 
-> 定义于 [#L10796](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10796)
+
 
 ---
 
@@ -65,7 +65,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 实体的缩放比例。
 
-> 定义于 [#L10792](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10792)
+
 
 ---
 
@@ -74,7 +74,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 实体的颜色。
 
-> 定义于 [#L10804](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10804)
+
 
 ---
 
@@ -84,7 +84,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 可控制实体隐形，当值设为true时，则实体隐形。
 
-> 定义于 [#L10788](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10788)
+
 
 ---
 
@@ -94,7 +94,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 实体的发光度。
 
-> 定义于 [#L10812](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10812)
+
 
 ---
 
@@ -104,7 +104,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 实体的金属感。
 
-> 定义于 [#L10808](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10808)
+
 
 ---
 
@@ -116,7 +116,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 实体的反光度，设为1则为非常光滑。
 
-> 定义于 [#L10816](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10816)
+
 
 ---
 
@@ -126,7 +126,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 实体的位移。
 
-> 定义于 [#L10800](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10800)
+
 
 ---
 
@@ -138,7 +138,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 如果通过`customName`自定义了需要展示的名称，则展示`customName`。
 
-> 定义于 [#L10952](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_9_27.d.ts#L10952)
+
 
 ---
 
@@ -148,7 +148,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 允许自定义需要展示的名称，默认为空。
 
-> 定义于 [#L10957](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_9_27.d.ts#L10957)
+
 
 ---
 
@@ -158,7 +158,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 名称展示范围，数值越小，则需要靠近实体才会出现名称。
 
-> 定义于 [#L10962](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_9_27.d.ts#L10962)
+
 
 ---
 
@@ -168,7 +168,7 @@ world.querySelectorAll('*').forEach((e) => {
 
 进入实体名称展示范围时，实体名称的颜色。
 
-> 定义于 [#L10967](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_9_27.d.ts#L10967)
+
 
 ::: details 点击查看示例代码
 展示实体名称之前，在场景中必须先有一个实体。
@@ -205,4 +205,3 @@ npc.customName = "Miss Miao"; // 显示自定义的名称
 | up | | | GameVector3 | 上向量，默认取 Y 轴正方向 |
 
 
-> 定义于 [#L10704](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10704)

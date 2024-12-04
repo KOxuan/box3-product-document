@@ -15,7 +15,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到服务端传过来的数据时处理函数 |
 
-> 定义于 [#L75](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L75)
+
 
 ## 接口
 
@@ -27,4 +27,3 @@ import '/style.css'
 | args | any | 服务端通过该事件发送的数据。 |
 
 
-> 定义于 [#L61](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L61)

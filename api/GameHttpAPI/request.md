@@ -22,7 +22,7 @@ import '/style.css'
 | --- | --- |
 | Promise‹GameHttpFetchResponse› | 异步返回响应数据 |
 
-> 定义于 [#L13260](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13260)
+
 
 
 
@@ -38,7 +38,7 @@ import '/style.css'
 | headers | [GameHttpFetchHeaders](./request#GameHttpFetchHeaders) | 请求头对象 |
 | body | string &#124; ArrayBuffer | 请求体 |
 
-> 定义于 [#L13237](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13237)
+
 
 
 ---
@@ -51,5 +51,5 @@ import '/style.css'
 | --- | --- | --- |
 | [name: string] | string &#124; string[] | 请求头列表 |
 
-> 定义于 [#L13234](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13234)
+
 

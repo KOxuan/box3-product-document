@@ -18,7 +18,7 @@ import '/style.css'
 | handler | 是 | | function | 监听到互动时的处理函数 |
 
 
-> 定义于 [#L9898](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9898)
+
 
 
 ::: details 点击查看示例代码
@@ -49,7 +49,7 @@ world.onInteract( ({entity, targetEntity}) => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到鼠标点击时的处理函数 |
 
-> 定义于 [#L9838](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9838)
+
 
 
 ::: details 点击查看示例代码
@@ -73,7 +73,7 @@ world.onClick(({ entity }) => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到鼠标按下时的处理函数 |
 
-> 定义于 [#L9844](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9844)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -120,7 +120,7 @@ world.onPress(({ button, raycast }) => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到鼠标松开时的处理函数 |
 
-> 定义于 [#L9850](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9850)
+
 
 :::info
 **💡提示**
@@ -156,7 +156,7 @@ world.onRelease(({ button, position }) => {
 | --- | --- |
 | GameEntityContactEvent | 碰撞结果 |
 
-> 定义于 [#L9856](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9856)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -213,7 +213,7 @@ function fakeObject(player, object) {
 | --- | --- |
 | GameEntityContactEvent | 碰撞结果 |
 
-> 定义于 [#L9862](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9862)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -273,7 +273,7 @@ world.onEntityContact(({ entity, other }) => {
 | --- | --- |
 | GameVoxelContactEvent | 碰撞结果 |
 
-> 定义于 [#L9868](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9868)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -327,7 +327,7 @@ world.onEntityContact(({ entity, other }) => {
 | GameVoxelContactEvent | 碰撞结果 |
 
 
-> 定义于 [#L9874](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9874)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -360,7 +360,7 @@ world.onVoxelSeparate(({ entity, voxel }) => {
 | --- | --- |
 | GameFluidContactEvent | 碰撞结果 |
 
-> 定义于 [#L9880](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9880)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -390,7 +390,7 @@ world.onFluidEnter(({ entity, voxel})=>{
 | --- | --- |
 | GameFluidContactEvent | 碰撞结果 |
 
-> 定义于 [#L9886](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9886)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -437,7 +437,7 @@ world.onFluidLeave(({ entity, voxel}) => {
 | position | number | 按下按钮瞬间，玩家的位置 |
 | pressed | boolean | 是否按下了按钮。若为 true，则为按下了按钮。 | 
 
-> 定义于 [#L12959](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12959)
+
 
 ---
 
@@ -455,7 +455,7 @@ world.onFluidLeave(({ entity, voxel}) => {
 | raycast |  [GameRaycastResult](./querySelectorEntity#gameraycastresult) | 按下按钮瞬间，从玩家视角投射的射线检测结果 |
 
 
-> 定义于 [#L13013](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13013)
+
 
 ---
 
@@ -470,7 +470,7 @@ world.onFluidLeave(({ entity, voxel}) => {
 | other | [GameEntity](/GameEntity/) | 碰撞中的第二个实体 |
 | tick | number | 两个实体碰撞的时间 |
 
-> 定义于 [#L12673](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12673)
+
 ---
 
 
@@ -488,7 +488,7 @@ world.onFluidLeave(({ entity, voxel}) => {
 | y | number | 被触碰方块的 y 坐标 |
 | z | number | 被触碰方块的 z 坐标 |
 
-> 定义于 [#L12724](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12724)
+
 ---
 
 
@@ -501,7 +501,7 @@ world.onFluidLeave(({ entity, voxel}) => {
 | voxel | number | 触碰的液体方块 |
 | tick | number | 事件发生时间 |
 
-> 定义于 [#L12799](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12799)
+
 
 
 

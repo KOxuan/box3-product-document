@@ -19,7 +19,7 @@ import '/style.css'
 - textXAlignment
 - textYAlignment
 
-> 定义于 [#L152](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L152)
+
 
 ---
 
@@ -28,7 +28,7 @@ import '/style.css'
 
 文本元素的内容是否支持`富文本`。支持的xml语法请看：[富文本](/GameUI/RichText)
 
-> 定义于 [#L345](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_23.d.ts#L345)
+
 
 ---
 
@@ -38,7 +38,7 @@ import '/style.css'
 
 节点显示的文本的字体大小。
 
-> 定义于 [#L153](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L153)
+
 
 ---
 
@@ -48,7 +48,7 @@ import '/style.css'
 
 节点显示的文本的颜色。
 
-> 定义于 [#L154](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L154)
+
 
 ---
 
@@ -58,7 +58,7 @@ import '/style.css'
 
 节点显示的文本的水平对齐方式。
 
-> 定义于 [#L155](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L155)
+
 
 ---
 
@@ -68,7 +68,7 @@ import '/style.css'
 
 节点显示的文本的垂直对齐方式。
 
-> 定义于 [#L156](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L156)
+
 
 ---
 
@@ -78,7 +78,7 @@ import '/style.css'
 
 是否开启自动换行。
 
-> 定义于 [#L157](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L157)
+
 
 
 ---
@@ -89,7 +89,7 @@ import '/style.css'
 
 文本的行高。
 
-> 定义于 [#L158](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L158)
+
 
 ---
 
@@ -98,7 +98,7 @@ import '/style.css'
 
 文本的描边颜色。
 
-> 定义于 [#L365](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L365)
+
 
 ---
 
@@ -107,7 +107,7 @@ import '/style.css'
 
 文本描边的不透明度。
 
-> 定义于 [#L369](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L369)
+
 
 ---
 
@@ -118,7 +118,7 @@ import '/style.css'
 
 描边粗细效果不影响元素“尺寸”，即不会影响自适应、布局计算、以及交互热区，但是会受到[UIScale](/GameUI/maths/UiScale)的影响
 
-> 定义于 [#L373](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L373)
+
 
 ---
 
@@ -129,7 +129,7 @@ import '/style.css'
 
 由官方提供的可免费商用字体。
 
-> 定义于 [#L377](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L377)
+
 
 ## 静态方法
 
@@ -143,7 +143,7 @@ import '/style.css'
 | --- | --- |
 | UiText | 新建 UiText 元素实例 |
 
-> 定义于 [#L159](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L159)
+
 
 
 ## 枚举
@@ -159,4 +159,4 @@ import '/style.css'
 | CodeNewRomanBold |  Code New Roman Bold  |
 
 
-> 定义于 [#L481](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L481)
+

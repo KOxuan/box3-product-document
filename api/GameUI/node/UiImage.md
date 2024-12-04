@@ -31,7 +31,7 @@ import '/style.css'
 
 图片元素中的图片资源，不属于其子内容，所以只受到展示方式影响，不受裁剪&自适应作用
 
-> 定义于 [#L452](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L452)
+
 
 ## 静态方法
 
@@ -59,4 +59,4 @@ import '/style.css'
 | Cover |  等比截取：等比缩放图片使图片填满外框，超出部分将被裁剪（隐藏显示）  |
 | None |  无：按图片正常尺寸与外框中心对齐展示，不对图片进行任何缩放调整，但是超出元素框部分会被裁剪（隐藏显示）    |
 
-> 定义于 [#L499](https://github.com/box3lab/arena_dts/blob/main/ClientAPI_2024_11_1.d.ts#L499)
+

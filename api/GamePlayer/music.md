@@ -9,7 +9,7 @@ import '/style.css'
 
 为指定的玩家播放背景音乐（循环播放），此声音仅该玩家能听见，其他玩家无法听到。 背景音乐的音量会根据用户在[设置-声音]更改。
 
-> 定义于 [#L12095](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12095)
+
 ---
 
 
@@ -18,7 +18,7 @@ import '/style.css'
 
 当玩家按下 'action0' 按键（鼠标左键 / 虚拟按钮A）时，播放的音效。
 
-> 定义于 [#L12065](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12065)
+
 ---
 
 
@@ -27,7 +27,7 @@ import '/style.css'
 
 当玩家按下 'action1' 按键（鼠标右键 / 虚拟按钮B）时，播放的音效。
 
-> 定义于 [#L12070](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12070)
+
 ---
 
 
@@ -36,7 +36,7 @@ import '/style.css'
 
 当玩家按下 'crouchButton ' 按键进行蹲下时，播放的音效。
 
-> 定义于 [#L12050](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12050)
+
 ---
 
 
@@ -45,7 +45,7 @@ import '/style.css'
 
 当玩家按下 'jumpButton ' 按键进行跳跃时，播放的音效
 
-> 定义于 [#L12035](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12035)
+
 ---
 
 
@@ -54,7 +54,7 @@ import '/style.css'
 
 当玩家触发二段跳时，播放的音效
 
-> 定义于 [#L12040](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12040)
+
 ---
 
 
@@ -63,7 +63,7 @@ import '/style.css'
 
 玩家落地时，播放的音效
 
-> 定义于 [#L12045](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12045)
+
 ---
 
 
@@ -72,7 +72,7 @@ import '/style.css'
 
 当玩家进入液体时，播放的音效
 
-> 定义于 [#L12075](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12075)
+
 ---
 
 
@@ -81,7 +81,7 @@ import '/style.css'
 
 当玩家离开液体时，播放的音效
 
-> 定义于 [#L12080](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12080)
+
 ---
 
 
@@ -94,7 +94,7 @@ import '/style.css'
 注：游泳的音效在前进时才会循环播放。如果在水中静止不动，不会播放音效。
 :::
 
-> 定义于 [#L12060](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12060)
+
 ---
 
 
@@ -103,7 +103,7 @@ import '/style.css'
 
 当玩家重生时，播放的音效。通过`entity.player.onRespawn()`触发
 
-> 定义于 [#L12030](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12030)
+
 ---
 
 
@@ -112,7 +112,7 @@ import '/style.css'
 
 当玩家行走时，每迈出一步，播放的音效
 
-> 定义于 [#L12055](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12055)
+
 ---
 
 
@@ -121,7 +121,7 @@ import '/style.css'
 
 玩家开始飞行时的音效
 
-> 定义于 [#L12085](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12085)
+
 ---
 
 
@@ -130,7 +130,7 @@ import '/style.css'
 
 玩家结束飞行时播放的音效
 
-> 定义于 [#L12090](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12090)
+
 
 ## 方法
 
@@ -151,7 +151,7 @@ import '/style.css'
 | GameSound | 音乐对象 |
 
 
-> 定义于 [#L11704](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11704)
+
 
 ::: details 点击查看示例代码
 ```javascript

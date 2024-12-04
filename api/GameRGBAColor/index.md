@@ -1,7 +1,7 @@
 <script setup>
 import '/style.css'
 </script>
-# RGBA颜色
+# S-RGBA颜色
 
 RGBA颜色基于RGB颜色新增alpha通道，用来表示颜色的不透明度。
 
@@ -19,7 +19,7 @@ RGBA颜色基于RGB颜色新增alpha通道，用来表示颜色的不透明度�
 | b | 是 | | number(0-1) | blue颜色值 |
 | a | 是 | | number(0-1) | alpha透明值 |
 
-> 定义于 [#L13342](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13342)
+
 
 
 ```javascript

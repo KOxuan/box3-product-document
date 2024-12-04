@@ -19,4 +19,4 @@ import '/style.css'
 | UiBox | 新建 UiBox 元素实例 |
 
 
-> 定义于 [#L149](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L149)
+

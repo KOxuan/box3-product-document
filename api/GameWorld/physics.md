@@ -18,7 +18,7 @@ import '/style.css'
 因此，决定是否启用OBB模式时，需要综合考虑其对性能的影响以及应用场景的具体需求。
 :::
 
-> 定义于 [#L10109](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10109)
+
 
 
 ---
@@ -31,7 +31,7 @@ import '/style.css'
 
 数值越小，行动越笨重。受重力影响最明显的属性是跳跃高度及下落速度。如果重力数值大于0，可以实现反重力。
 
-> 定义于 [#L10099](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10099)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -65,7 +65,7 @@ world.onPress(({ button }) => {
 
 数值越大，行走加速度越小。可以用来模拟大风的环境。
 
-> 定义于 [#L10104](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10104)
+
 
 ### **方法**
 
@@ -80,7 +80,7 @@ world.onPress(({ button }) => {
 | aSelector | _是_ | | GameSelectorString | 用于定义第一组实体的选择器 |
 | bSelector | _是_ | | GameSelectorString | 用于定义第二组实体的选择器 |
 
-> 定义于 [#L10193](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10193)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -110,7 +110,7 @@ world.addCollisionFilter('*','*');
 | aSelector | _是_ | | GameSelectorString | 用于定义第一组实体的选择器 |
 | bSelector | _是_ | | GameSelectorString | 用于定义第二组实体的选择器 |
 
-> 定义于 [#L10201](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10201)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -131,7 +131,7 @@ world.removeCollisionFilter('#entity1','player');
 清除全部碰撞过滤器。
 
 
-> 定义于 [#L10207](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10207)
+
 
 ---
 
@@ -147,7 +147,7 @@ world.removeCollisionFilter('#entity1','player');
 | string[][] | 当前有效的全部碰撞过滤器 |
 
 
-> 定义于 [#L10214](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10214)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -175,7 +175,7 @@ world.collisionFilters().forEach(([ a, b ]) => console.log(a, b));
 | boolean | true: 实体符合选择器的条件; false: 实体不符合选择器的条件 |
 
 
-> 定义于 [#L10185](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10185)
+
 
 ::: details 点击查看示例代码
 ```javascript

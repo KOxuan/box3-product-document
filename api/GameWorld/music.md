@@ -11,7 +11,7 @@ import '/style.css'
 
 背景音乐的音量会根据用户在[设置-声音]更改。
 
-> 定义于 [#L10134](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10134)
+
 
 
 
@@ -29,7 +29,7 @@ world.ambientSound.sample = 'audio/rain.mp3';
 
 当玩家进入地图时，播放的音效。通过world.onPlayerJoin()触发。
 
-> 定义于 [#L10124](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10124)
+
 
 
 
@@ -41,7 +41,7 @@ world.ambientSound.sample = 'audio/rain.mp3';
 
 当玩家离开地图时，播放的音效。通过world.onPlayerLeave()触发。
 
-> 定义于 [#L10129](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10129)
+
 
 
 ---
@@ -52,7 +52,7 @@ world.ambientSound.sample = 'audio/rain.mp3';
 
 方块被放置时，播放的音效。通过voxels.setVoxel()触发。
 
-> 定义于 [#L10119](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10119)
+
 
 
 ---
@@ -63,7 +63,7 @@ world.ambientSound.sample = 'audio/rain.mp3';
 
 方块被销毁时，播放的音效。通过voxels.setVoxel()触发。
 
-> 定义于 [#L10114](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10114)
+
 
 
 
@@ -85,7 +85,7 @@ world.ambientSound.sample = 'audio/rain.mp3';
 | --- | --- |
 | GameSound | 音乐对象 |
 
-> 定义于 [#L9909](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9909)
+
 
 
 :::info
@@ -127,5 +127,5 @@ world.sound({
 | pitch | number | 音高增益。正常为1。大于1，声音播放越快。小于1，声音播放越慢。 |
 | pitchRange | number | 音高增益方差。计算公式为：effect.pitch + (Math.random() - 0.5) * effect.pitchRange |
 
-> 定义于 [#L9352](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9352)
+
 

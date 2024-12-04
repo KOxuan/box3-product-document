@@ -18,7 +18,7 @@
 | --- | --- |
 | Promise‹string› | 创建临时频道后的频道id |
 
-> 定义于 [#L9923](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9923)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -46,7 +46,7 @@ world.createTempChat().then(chatId => {
 | --- | --- |
 | Promise‹string[]› | 删除失败的临时频道id数组 |
 
-> 定义于 [#L9927](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9927)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -78,7 +78,7 @@ world.destroyTempChat(['chatId1','chatId2']).then(failedChatIds => {
 | --- | --- |
 | Promise‹string[]› | 添加成功的玩家id数组 |
 
-> 定义于 [#L9931](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9931)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -108,7 +108,7 @@ world.createTempChat().then(chatId => {
 | --- | --- |
 | Promise‹string[]› | 移除成功的玩家id数组 |
 
-> 定义于 [#L9935](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9935)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -131,7 +131,7 @@ world.createTempChat(['userId1','userId2']).then(chatId => {
 | --- | --- |
 | Promise‹string[]› | 当前地图存在的临时聊天频道id数组 |
 
-> 定义于 [#L9939](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9939)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -158,7 +158,7 @@ world.getTempChats().then(chatIds => {
 | --- | --- |
 | Promise‹string[]› | 在临时聊天频道中的玩家id数组 |
 
-> 定义于 [#L9943](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9943)
+
 
 ::: details 点击查看示例代码
 ```javascript

@@ -20,7 +20,7 @@ import '/style.css'
 | --- | --- |
 | GameEntity &#124; null | 如有，返回搜索到的实体对象，反之为空 |
 
-> 定义于 [#L9711](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9711)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -54,7 +54,7 @@ world.onPlayerJoin(({ entity }) => {
 | --- | --- |
 | GameEntity | 如有，返回搜索到的实体对象列表，反之为空列表 |
 
-> 定义于 [#L9720](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9720)
+
 :::info
 **💡提示**
 
@@ -98,7 +98,7 @@ world.onRelease(({ button }) => {
 | --- | --- |
 | GameEntity[] | 范围内的全部实体 |
 
-> 定义于 [#L9772](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9772)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -134,7 +134,7 @@ world.searchBox(bounds).forEach( (entityInBounds) => {
 | --- | --- |
 | GameRaycastResult | 发射射线后的结果 |
 
-> 定义于 [#L9766](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9766)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -163,7 +163,7 @@ world.onPress(({ button, entity }) => {
 | . | string | 搜索该模型标签实体 |
 | player | string | 搜索游戏中的全部玩家 |
 
-> 定义于 [#L13108](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13108)
+
 
 ```javascript
 const entities = world.querySelector('*'); // 世界中的全部实体
@@ -187,7 +187,7 @@ const redBox = world.querySelector('.box .red');// 标签同时带有"box"和“
 | ignoreEntities | boolean | 如果为真，则射线无视实体 |
 | ignoreSelector | GameSelectorString | 被射线检测忽略的实体选择器 |
 
-> 定义于 [#L12350](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12350)
+
 
 ---
 
@@ -207,4 +207,3 @@ const redBox = world.querySelector('.box .red');// 标签同时带有"box"和“
 | voxelIndex | [GameVector3](/GameVector3/) | 如果射线击中的是方块，则返回所击中方块的网格坐标。 |
 | normal | [GameVector3](/GameVector3/) | 射线所击中平面的法向量 |
 
-> 定义于 [#L12269](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12269)

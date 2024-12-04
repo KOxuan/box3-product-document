@@ -17,7 +17,7 @@ import '/style.css'
 
 当实体说话时，播放聊天音效。通过`say()`触发。
 
-> 定义于 [#L10952](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10952)
+
 
 ---
 
@@ -26,7 +26,7 @@ import '/style.css'
 
 当实体触发受伤事件时，播放受伤音效。通过`onTakeDamage()`触发
 
-> 定义于 [#L10957](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10957)
+
 
 ---
 
@@ -37,7 +37,7 @@ import '/style.css'
 
 当实体触发死亡事件时，播放死亡音效。通过`onDie()`触发
 
-> 定义于 [#L10962](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10962)
+
 
 ---
 
@@ -47,7 +47,7 @@ import '/style.css'
 
 当实体进行互动时，播放互动音效。此音效仅互动的玩家可听见。通过`onInteract()`触发。
 
-> 定义于 [#L10967](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10967)
+
 
 
 
@@ -69,7 +69,7 @@ import '/style.css'
 | --- | --- |
 | GameSound | 音乐对象 |
 
-> 定义于 [#L10693](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10693)
+
 
 ::: details 点击查看示例代码
 ```javascript

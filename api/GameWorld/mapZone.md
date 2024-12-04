@@ -19,7 +19,7 @@ import '/style.css'
 | --- | --- |
 | GameZone | 区域对象 |
 
-> 定义于 [#L9893](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9893)
+
 
 ::: details 点击查看示例代码
 
@@ -58,7 +58,7 @@ area.onLeave(({ entity }) => {
 | --- | --- | --- | --- | --- |
 | trigger | _是_ | | GameZone | 要删除的区域 |
 
-> 定义于 [#L9894](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9894)
+
 
 ::: details 点击查看示例代码
 
@@ -89,7 +89,7 @@ world.removeZone(area);
 | --- | --- |
 | GameZone[] | 所有的区域 |
 
-> 定义于 [#L9892](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9892)
+
 
 ::: details 点击查看示例代码
 
@@ -151,7 +151,7 @@ allZones.forEach((zone) => {
 | snowSpinSpeed | number | 雪花自旋速度 |
 | snowTexture | string | 雪花纹理 |
 
-> 定义于 [#L9481](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9481)
+
 
 ---
 
@@ -205,7 +205,7 @@ allZones.forEach((zone) => {
 | snowSpinSpeed | number | 雪花自旋速度 |
 | snowTexture | string | 雪花纹理 |
 
-> 定义于 [#L9384](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9384)
+
 
 --- 
 #### <font id="API" />GameTriggerEvent{#GameTriggerEvent}
@@ -216,4 +216,3 @@ allZones.forEach((zone) => {
 | entity | [GameEntity](/GameEntity/) | 触发事件的实体 |
 | tick | number | 触发事件的时间 |
 
-> 定义于 [#12526](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#12526)

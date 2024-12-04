@@ -10,7 +10,7 @@ import '/style.css'
 
 雪花颜色。
 
-> 定义于 [#L10062](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10062)
+
 ---
 
 
@@ -19,7 +19,7 @@ import '/style.css'
 
 雪花纹理。此处填写文件管理器中的纹理资源名称。如 'snow/heart.part'
 
-> 定义于 [#L10066](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10066)
+
 ---
 
 
@@ -28,7 +28,7 @@ import '/style.css'
 
 雪的密度。密度越大，雪花越多。
 
-> 定义于 [#L10054](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10054)
+
 ---
 
 
@@ -37,7 +37,7 @@ import '/style.css'
 
 雪花下落速度。如果小于0，则反向运动。
 
-> 定义于 [#L10054](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10054)
+
 ---
 
 
@@ -46,7 +46,7 @@ import '/style.css'
 
 雪花自旋速度。
 
-> 定义于 [#L10058](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10058)
+
 ---
 
 
@@ -55,7 +55,7 @@ import '/style.css'
 
 雪花的最小直径。
 
-> 定义于 [#L10046](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10046)
+
 ---
 
 
@@ -64,4 +64,3 @@ import '/style.css'
 
 雪花的最大直径。
 
-> 定义于 [#L10050](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10050)

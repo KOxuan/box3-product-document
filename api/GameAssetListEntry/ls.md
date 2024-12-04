@@ -20,7 +20,7 @@ import '/style.css'
 | --- | --- |
 | GameAssetListEntry[] | 资产列表，包含文件类型和路径 |
 
-> 定义于 [#L15](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L15)
+
 
 ## 接口
 
@@ -32,7 +32,7 @@ import '/style.css'
 | path | string  | 资产的完全限定路径，按目录拆分 |
 | type | [GameAssetType](./ls#GameAssetType)  | 资产类型 |
 
-> 定义于 [#L13132](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13132)
+
 
 
 ## 枚举
@@ -51,4 +51,4 @@ import '/style.css'
 | SOUND  | 音频  |
 | PICTURE   |  图片 |
 
-> 定义于 [#L13119](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13119)
+

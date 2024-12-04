@@ -19,7 +19,7 @@ declare const ui: UiNode;
 | type  | 是 | | string | 监听的事件类型，是个字符串 |
 | listener  | 是 | | Function | 监听到事件类型后的处理函数 |
 
-> 定义于 [#L21](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L21)
+
 
 ---
 
@@ -34,7 +34,7 @@ declare const ui: UiNode;
 | type  | 是 | | string | 监听的事件类型，是个字符串 |
 | listener  | 是 | | Function | 监听到事件类型后的处理函数 |
 
-> 定义于 [#L27](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L27)
+
 ---
 
 
@@ -48,7 +48,7 @@ declare const ui: UiNode;
 | type  | 是 | | string | 监听的事件类型，是个字符串 |
 | listener  | 是 | | Function | 监听到事件类型后的处理函数 |
 
-> 定义于 [#L33](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L33)
+
 ---
 
 
@@ -62,7 +62,7 @@ declare const ui: UiNode;
 | type  | 是 | | string | 监听的事件类型，是个字符串 |
 | listener  | | | Function | 监听到事件类型后的处理函数 |
 
-> 定义于 [#L39](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L39)
+
 ---
 
 
@@ -76,7 +76,7 @@ declare const ui: UiNode;
 | type  | 是 | | string | 监听的事件类型，是个字符串 |
 | listener  | | | Function | 监听到事件类型后的处理函数 |
 
-> 定义于 [#L45](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L45)
+
 ---
 
 
@@ -90,7 +90,7 @@ declare const ui: UiNode;
 | type  | 是 | | string | 要触发的事件类型； |
 | event | | | any | 要触发的事件对象，会被作为监听器的参数。 |
 
-> 定义于 [#L55](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L55)
+
 ---
 
 
@@ -105,4 +105,3 @@ declare const ui: UiNode;
 | event | | | any | 要触发的事件对象，会被作为监听器的参数。 |
 
 
-> 定义于 [#L51](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L51)

@@ -25,7 +25,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到有实体受到伤害时的处理函数 |
 
-> 定义于 [#L9790](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9790)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -49,7 +49,7 @@ world.onTakeDamage(({ entity, attacker, damage}) => {
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到有实体死亡时的处理函数 |
 
-> 定义于 [#L9796](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9796)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -82,7 +82,7 @@ world.onDie(async({ entity }) => { // 等待事件需要用 async
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到有实体复活时的处理函数 |
 
-> 定义于 [#L9693](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9693)
+
 
 :::info
 GameWorld 和 GameEntity 拥有相同的触发事件。 他们的区别是
@@ -115,7 +115,7 @@ world.onRespawn(({ entity }) => {
 | damageType | string | 伤害类型 |
 | tick | number | 事件发生时间 |
 
-> 定义于 [#L12553](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12553)
+
 
 ---
 
@@ -130,7 +130,7 @@ world.onRespawn(({ entity }) => {
 | damageType | string | 伤害类型 |
 | tick | number | 事件发生时间 |
 
-> 定义于 [#L12604](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12604)
+
 ---
 
 
@@ -142,4 +142,3 @@ world.onRespawn(({ entity }) => {
 | entity | [GamePlayerEntity](/GameEntity/isPlayer) | 死亡的实体 |
 | tick | number | 事件发生时间 |
 
-> 定义于 [#L12646](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12646)

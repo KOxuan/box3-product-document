@@ -17,7 +17,7 @@ import '/style.css'
 
 输入框的未输入时文本提示内容。
 
-> 定义于 [#L162](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L162)
+
 
 ---
 
@@ -27,7 +27,7 @@ import '/style.css'
 
 输入框显示的占位文本的颜色。
 
-> 定义于 [#L163](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L163)
+
 
 ---
 
@@ -37,7 +37,7 @@ import '/style.css'
 
 输入框提示文本的不透明度。
 
-> 定义于 [#L164](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L164)
+
 
 ---
 
@@ -46,7 +46,7 @@ import '/style.css'
 
 输入框是否聚焦。
 
-> 定义于 [#L165](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L165)
+
 
 
 
@@ -63,7 +63,7 @@ import '/style.css'
 | UiInput | 新建 UiInput 元素实例 |
 
 
-> 定义于 [#L168](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L168)
+
 
 
 ## 方法
@@ -71,7 +71,7 @@ import '/style.css'
 #### <font id="API" />focus()<font id="Type">:  void</font>{#focus}
 使输入框聚焦。
 
-> 定义于 [#L166](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L166)
+
 
 ---
 
@@ -85,7 +85,7 @@ import '/style.css'
 | --- | --- |
 | string | 输入框当前的输入值。 |
 
-> 定义于 [#L167](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L167)
+
 
 
 

@@ -22,7 +22,7 @@ import '/style.css'
 | handler | _是_ | | function | 监听到玩家购买后的处理函数 |
 
 
-> 定义于 [#L9904](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9904)
+
 
 
 ::: details 点击查看示例代码
@@ -52,4 +52,3 @@ world.onPlayerPurchaseSuccess(({ userId, productId, orderId }) => {
 | productId | number | 购买商品的ID |
 | orderId | number | 购买成功的订单号 |
 
-> 定义于 [#L12867](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12867)

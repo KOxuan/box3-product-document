@@ -13,7 +13,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | productIds | 是 | | number[] | 商品ID数组 |
 
-> 定义于 [#L11730](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11730)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -35,7 +35,7 @@ world.onPlayerJoin(({ entity }) => {
 | --- | --- |
 | Promise‹number› | 异步返回当前玩家打赏的喵贝壳数量 |
 
-> 定义于 [#L11731](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11731)
+
 
 
 ::: details 点击查看示例代码

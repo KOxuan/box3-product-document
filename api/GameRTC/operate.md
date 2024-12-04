@@ -20,7 +20,7 @@ import '/style.css'
 | --- | --- |
 | Promise‹boolean› | 异步返回是否成功获取到录音权限 |
 
-> 定义于 [#L13410](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13410)
+
 
 ---
 #### <font id="API" />add(<font id="Type">entity:[GamePlayerEntity](/GameEntity/isPlayer)</font>)<font id="Type">: Promise‹void›</font>{#add}
@@ -33,7 +33,7 @@ import '/style.css'
 | entity | 是 |  | string | 玩家对象 |
 
 
-> 定义于 [#L13402](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13402)
+
 
 ---
 #### <font id="API" />remove(<font id="Type">entity:[GamePlayerEntity](/GameEntity/isPlayer)</font>)<font id="Type">: Promise‹void›</font>{#remove}
@@ -46,7 +46,7 @@ import '/style.css'
 | entity | 是 |  | string | 玩家对象 |
 
 
-> 定义于 [#L13403](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13403)
+
 
 ---
 #### <font id="API" />unpublish(<font id="Type">entity:[GamePlayerEntity](/GameEntity/isPlayer)</font>)<font id="Type">: Promise‹void›</font>{#unpublish}
@@ -59,7 +59,7 @@ import '/style.css'
 | entity | 是 |  | string | 玩家对象 |
 
 
-> 定义于 [#L13404](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13404)
+
 
 ---
 #### <font id="API" />publishMicrophone(<font id="Type">entity:[GamePlayerEntity](/GameEntity/isPlayer)</font>)<font id="Type">: Promise‹void›</font>{#publishMicrophone}
@@ -72,7 +72,7 @@ import '/style.css'
 | entity | 是 |  | string | 玩家对象 |
 
 
-> 定义于 [#L13405](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13405)
+
 
 ---
 #### <font id="API" />getPlayers()<font id="Type">: Promise‹[GamePlayerEntity](/GameEntity/isPlayer)[]›</font>{#getPlayers}
@@ -85,13 +85,13 @@ import '/style.css'
 | Promise‹GamePlayerEntity[]› | 异步返回玩家对象列表 |
 
 
-> 定义于 [#L13406](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13406)
+
 
 ---
 #### <font id="API" />destroy()<font id="Type">: Promise‹void›</font>{#destroy}
 删除该通道
 
-> 定义于 [#L13407](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13407)
+
 
 ---
 #### <font id="API" />getVolume(<font id="Type">entity:[GamePlayerEntity](/GameEntity/isPlayer)</font>)<font id="Type">: Promise‹number›</font>{#getVolume}
@@ -109,7 +109,7 @@ import '/style.css'
 | --- | --- |
 | Promise‹number› | 异步返回音量大小 |
 
-> 定义于 [#L13408](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13408)
+
 
 ---
 #### <font id="API" />setVolume(<font id="Type">entity:[GamePlayerEntity](/GameEntity/isPlayer),volume:number</font>)<font id="Type">: Promise‹void›</font>{#setVolume}
@@ -122,4 +122,3 @@ import '/style.css'
 | entity | 是 |  | string | 玩家对象 |
 | volume | 是 |  | number | 音量大小 |
 
-> 定义于 [#L13409](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13409)

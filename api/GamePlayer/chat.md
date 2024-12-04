@@ -13,7 +13,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | message | 是 | | string | 私信内容 |
 
-> 定义于 [#L11618](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11618)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -40,7 +40,7 @@ world.onPlayerJoin(({ entity }) => {
 | --- | --- |
 | Promise‹GameDialogResponse› | 异步返回玩家的选择/输入内容 |
 
-> 定义于 [#L11650](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11650)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -82,7 +82,7 @@ npc.onInteract(async ({entity}) => {
 #### <font id="API" />cancelDialogs()<font id="Type">:  void</font>{#cancelDialogs}
 关闭该玩家的所有打开的对话框。
 
-> 定义于 [#L11659](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11659)
+
 ---
 
 
@@ -101,7 +101,7 @@ npc.onInteract(async ({entity}) => {
 > 编辑模式下，此API弹出的分享弹窗分享的地址是编辑模式的地址。
 
 
-> 定义于 [#L11736](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11736)
+
 ---
 
 
@@ -114,7 +114,7 @@ npc.onInteract(async ({entity}) => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到聊天的处理函数 |
 
-> 定义于 [#L11623](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11623)
+
 ::: details 点击查看示例代码
 ```javascript
 entity.player.onChat(({ entity, message }) => {
@@ -158,7 +158,7 @@ entity.player.onChat(({ entity, message }) => {
 
 
 
-> 定义于 [#L12149](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12149)
+
 ---
 
 
@@ -174,7 +174,7 @@ entity.player.onChat(({ entity, message }) => {
 
 如果是选项对话框，回应 [GameDialogSelectResponse ](./chat#GameDialogSelectResponse)
 
-> 定义于 [#L11325](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11325)
+
 
 ---
 
@@ -189,7 +189,7 @@ entity.player.onChat(({ entity, message }) => {
 | index | number | 选项编号（从0开始计数） |
 | value | string | 选项内容 |
 
-> 定义于 [#L11321](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11321)
+
 
 
 ## 枚举
@@ -204,4 +204,4 @@ entity.player.onChat(({ entity, message }) => {
 | SELECT | **选择**样式对话框 |
 
 
-> 定义于 [#L11316](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11316)
+

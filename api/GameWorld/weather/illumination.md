@@ -10,7 +10,7 @@
 
 目前有提供2种光照模式，'manual'(自定义)或'natural'(动态)。
 
-> 定义于 [#L9952](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9952)
+
 
 
 ---
@@ -23,7 +23,7 @@
 
 昼夜时间计算公式: timeOfDay = (sunPhase + sunFrequency * tick) % 1
 
-> 定义于 [#L9963](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9963)
+
 
 
 ---
@@ -50,7 +50,7 @@
 太阳位置 sunPhase = 1 世界时间为第二天 06:00
 :::
 
-> 定义于 [#L9958](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9958)
+
 
 
 ---
@@ -61,7 +61,7 @@
 
 太阳光照明方向。仅在光照模式为manual自定义模式时生效。
 
-> 定义于 [#L9973](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9973)
+
 
 
 ---
@@ -74,7 +74,7 @@
 
 颜色值大于0时，颜色越亮。
 
-> 定义于 [#L9978](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9978)
+
 
 
 ---
@@ -87,7 +87,7 @@
 
 颜色值大于0时，颜色越亮。
 
-> 定义于 [#L9983](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9983)
+
 
 
 ---
@@ -100,7 +100,7 @@
 
 颜色值大于0时，颜色越亮。
 
-> 定义于 [#L9988](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9988)
+
 
 
 ---
@@ -113,7 +113,7 @@
 
 颜色值大于0时，颜色越亮。
 
-> 定义于 [#L9993](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9993)
+
 
 
 ---
@@ -126,7 +126,7 @@
 
 颜色值大于0时，颜色越亮。
 
-> 定义于 [#L9998](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9998)
+
 
 ---
 
@@ -138,7 +138,7 @@
 
 颜色值大于0时，颜色越亮。
 
-> 定义于 [#L10003](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10003)
+
 
 
 ---
@@ -151,5 +151,5 @@
 
 颜色值大于0时，颜色越亮。
 
-> 定义于 [#L10008](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10008)
+
 

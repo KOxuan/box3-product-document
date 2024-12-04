@@ -9,7 +9,7 @@ import '/style.css'
 
 获取数据存储空间名称。
 
-> 定义于 [#L13445](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13445)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -39,7 +39,7 @@ console.log(`storageName: ${storageName}`)
 | number | 异步返回递增后的值，当获取完成时 resolve，否则 reject。 |
 
 
-> 定义于 [#L15433](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_12_4.d.ts#L15433)
+
 
 ---
 
@@ -54,7 +54,7 @@ console.log(`storageName: ${storageName}`)
 | value | 是 | | JSONValue | 需要设置的值 |
 
 
-> 定义于 [#L13446](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13446)
+
 
 ---
 
@@ -74,7 +74,7 @@ console.log(`storageName: ${storageName}`)
 | --- | --- |
 | ReturnValue | 异步返回数据，当获取完成时 resolve，否则 reject。 |
 
-> 定义于 [#L13448](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13448)
+
 
 
 ---
@@ -91,7 +91,7 @@ console.log(`storageName: ${storageName}`)
 | handler | 是 | | function | 处理更新的方法，接受一个参数，为当前键的值，返回一个更新后的值 |
 
 
-> 定义于 [#L13447](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13447)
+
 
 ---
 
@@ -112,7 +112,7 @@ console.log(`storageName: ${storageName}`)
 | ReturnValue | 异步返回数据，当删除完成时 resolve，否则 reject。 |
 
 
-> 定义于 [#L13450](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13450)
+
 
 ---
 
@@ -132,7 +132,7 @@ console.log(`storageName: ${storageName}`)
 | --- | --- |
 | QueryList | 异步返回数据，当获取完成时 resolve，否则 reject。 |
 
-> 定义于 [#L13449](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13449)
+
 
 
 ---
@@ -141,7 +141,7 @@ console.log(`storageName: ${storageName}`)
 #### <font id="API" />destroy()<font id="Type">: Promise‹void›</font> {#destroy}
 删除该数据空间。
 
-> 定义于 [#L13451](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13451)
+
 
 
 ## 接口
@@ -157,7 +157,7 @@ console.log(`storageName: ${storageName}`)
 | JSONValue[] | JSONValue数组 |
 | `{[x: string]:JSONValue}` | 键值对 |
 
-> 定义于 [#L9302](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9302)
+
 
 
 ---
@@ -174,7 +174,7 @@ console.log(`storageName: ${storageName}`)
 | createTime | number | key创建时间 |
 | version | string | 更新版本号 |
 
-> 定义于 [#L13436](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13436)
+
 
 
 ---
@@ -195,7 +195,7 @@ console.log(`storageName: ${storageName}`)
 
 
 
-> 定义于 [#L13437](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13437)
+
 
 ---
 
@@ -212,4 +212,4 @@ console.log(`storageName: ${storageName}`)
 | nextPage() | ()=> Promise‹void› | 翻到下一页，执行后 {getCurrentPage} 将返回下一页的键值对内容 |
 
 
-> 定义于 [#L13454](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13454)
+

@@ -14,4 +14,4 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | event | 是 | | any | 在服务端接收到的自定义事件，作为传入服务端脚本里监听器的参数，仅允许可序列化的值 |
 
-> 定义于 [#L71](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L71)
+

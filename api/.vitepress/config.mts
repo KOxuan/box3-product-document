@@ -126,7 +126,7 @@ export default defineConfig({
           items: [
             { text: '资产树', link: '/GameAssetListEntry/ls' },
           ]
-        },{
+        }, {
           text: '🕺游戏模型动作',
           link: '/GameMotionController/index',
           collapsed: false,
@@ -205,7 +205,7 @@ export default defineConfig({
         { text: '动画对象', link: '/GameAnimation/' },
         { text: '事件监听', link: '/GameEventHandlerToken/' },
       ]
-    },   {
+    }, {
       text: '客户端脚本',
       collapsed: false,
       items: [
@@ -251,11 +251,24 @@ export default defineConfig({
                 },
               ]
             },
-            { text: '导航器', link: '/GameUI/navigator' },
             { text: '监听输入事件', link: '/GameUI/input' },
             { text: '事件监听处理', link: '/GameUI/UiEvent' },
           ]
-        },  {
+        }, {
+          text: '📺游戏屏幕',
+          link: '/ClientScreen/index',
+          collapsed: false,
+          items: [
+            { text: '输入', link: '/ClientScreen/input' },
+          ]
+        }, {
+          text: '🧭游戏导航器',
+          link: '/ClientNavigator/index',
+          collapsed: false,
+          items: [
+            { text: '屏幕信息', link: '/ClientNavigator/navigator' },
+          ]
+        }, {
           text: '🟰游戏数学',
           collapsed: false,
           items: [

@@ -1,7 +1,7 @@
 <script setup>
 import '/style.css'
 </script>
-# UI缩放
+# C-UI缩放
 
 ```typescript
 declare class UiScale {
@@ -33,7 +33,7 @@ uiNode.uiScale = uiScale; // 将组件作为属性挂载到节点上
 ```
 
 
-> 定义于 [#L184](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L184)
+
 
 
 ## 静态方法
@@ -48,4 +48,4 @@ uiNode.uiScale = uiScale; // 将组件作为属性挂载到节点上
 | UiScale | 缩放对象 |
 
 
-> 定义于 [#L185](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L185)
+

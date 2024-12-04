@@ -8,7 +8,7 @@ import '/style.css'
 
 玩家的昵称。
 
-> 定义于 [#L11749](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11749)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -33,14 +33,14 @@ world.onPlayerJoin(({ entity }) => {
 
 玩家的用户ID，个人中心昵称下方可见。
 
-> 定义于 [#L11753](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11753)
+
 ---
 
 #### <font id="API" /><font id="ReadOnly">只读</font>boxId<font id="Type">: string</font> {#boxid}
 
 玩家的Box ID(3-15字符)。
 
-> 定义于 [#L11761](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11761)
+
 :::info
 该属性已不推荐使用，建议使用 `entity.player.userId` 获取玩家ID。
 :::
@@ -49,7 +49,7 @@ world.onPlayerJoin(({ entity }) => {
 
 玩家的唯一识别码(16字符)，可以用于存储玩家信息到数据库，无法控制更改。 
 
-> 定义于 [#L11757](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11757)
+
 :::info
 该属性已不推荐使用，建议使用 `entity.player.userId` 获取玩家ID。
 :::
@@ -60,7 +60,7 @@ world.onPlayerJoin(({ entity }) => {
 
 玩家的头像url直链。
 
-> 定义于 [#L11765](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11765)
+
 ---
 
 
@@ -69,7 +69,7 @@ world.onPlayerJoin(({ entity }) => {
 
 玩家的活动范围限制，如超出此范围，则传回出生点
 
-> 定义于 [#L11779](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11779)
+
 ---
 
 
@@ -77,7 +77,7 @@ world.onPlayerJoin(({ entity }) => {
 
 获取该玩家进入地图时所用的URL链接地址, 主要用于获取URL参数, 以便区别对待进来的玩家
 
-> 定义于 [#L11769](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11769)
+
 
 ## 方法
 
@@ -101,7 +101,7 @@ world.onPlayerJoin(({ entity }) => {
 | Promise‹number[]› | 异步返回玩家 ID 列表 |
 
 
-> 定义于 [#L11738](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11738)
+
 ---
 
 #### <font id="API" />querySocialStatistic()<font id="Type">: Promise‹[SocialStatisticType](./info#SocialStatisticType)›</font>{#querySocialStatistic}
@@ -118,7 +118,7 @@ world.onPlayerJoin(({ entity }) => {
 | Promise‹SocialStatisticType› | 异步返回数据统计信息 |
 
 
-> 定义于 [#L11775](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_11_13.d.ts#L11775)
+
 ---
 
 #### <font id="API" />openUserProfileDialog(<font id="Type">userId:number</font>)<font id="Type">:  void</font>{#openUserProfileDialog}
@@ -131,7 +131,7 @@ world.onPlayerJoin(({ entity }) => {
 | userId | 是 | | number | 玩家的用户ID |
 
 
-> 定义于 [#L11737](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11737)
+
 
 
 
@@ -146,7 +146,7 @@ world.onPlayerJoin(({ entity }) => {
 | followerNum | number |  粉丝人数 |
 | friendsNum | number |  好友人数 |
 
-> 定义于 [#L9344](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_11_13.d.ts#L9344)
+
 
 
 
@@ -163,4 +163,4 @@ world.onPlayerJoin(({ entity }) => {
 
 
 
-> 定义于 [#L9336](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9336)
+

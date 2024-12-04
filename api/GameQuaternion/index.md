@@ -2,7 +2,7 @@
 <script setup>
 import '/style.css'
 </script>
-# 四元数
+# S-四元数
 
 四元数是一种用于描述物体在三维空间中旋转的量。四元数由四个分量组成：`x`, `y`, `z` 和 `w`。虽然比起欧拉角、矩阵等方式，四元数略显晦涩，但由于四元数的运算更加高效、造成的数值误差更低，在 3D 游戏领域发挥着很大作用。
 
@@ -22,7 +22,7 @@ import '/style.css'
 | y | 是 | | number | y虚部 |
 | z | 是 | | number | z虚部 |
 
-> 定义于 [#L13263](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13263)
+
 
 
 ## 属性

@@ -14,7 +14,7 @@ import '/style.css'
 | entities | 是 | | GamePlayer &#124; GamePlayer[] | 玩家实体列表，代表发送对象，传入空数组时不会产生任何效果 |
 | clientEvent | 是 | | any | 自定义事件，在客户端接收到时，传入监听器的参数，仅允许可序列化的值 |
 
-> 定义于 [#L13395](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13395)
+
 ---
 
 
@@ -27,4 +27,4 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | clientEvent | 是 | | any | 自定义事件，在客户端接收到时，传入监听器的参数，仅允许可序列化的值 |
 
-> 定义于 [#L13396](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13396)
+

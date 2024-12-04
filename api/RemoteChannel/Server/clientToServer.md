@@ -14,7 +14,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到客户端传过来的数据时处理函数 |
 
-> 定义于 [#L13397](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13397)
+
 
 ## 接口
 
@@ -34,4 +34,3 @@ declare type JSONValue = string | number | boolean | {
 } | Array<JSONValue>;
 ```
 
-> 定义于 [#L13389](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13389)

@@ -21,7 +21,7 @@ import '/style.css'
 | GameAnimation | 创建出来的动画对象 |
 
 
-> 定义于 [#L11712](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11712)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -72,7 +72,7 @@ world.onPlayerJoin(({ entity }) => {
 | GameAnimation[] | 创建出来的动画对象列表 |
 
 
-> 定义于 [#L11713](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11713)
+
 
 
 
@@ -101,5 +101,5 @@ Player玩家动画关键帧参数，可对Player的大部分属性做动画效�
 | showName | boolean | 玩家名字是否显示 |
 
 
-> 定义于 [#L11577](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11577)
+
 

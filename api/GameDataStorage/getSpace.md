@@ -30,7 +30,7 @@ import '/style.css'
 | --- | --- |
 | GameDataStorage | 数据存储空间对象 |
 
-> 定义于 [#L13420](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13420)
+
 
 ---
 
@@ -53,7 +53,7 @@ import '/style.css'
 | GameDataStorage | 数据存储空间对象 |
 
 
-> 定义于 [#L13421](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13421)
+
 
 ## 服务器维度
 对每一个游戏服务器独立生效，与服务器在线玩家数正相关，同一队列中的所有API共享限制。

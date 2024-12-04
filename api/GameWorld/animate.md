@@ -20,7 +20,7 @@ import '/style.css'
 | --- | --- |
 | GameAnimation | 创建出来的动画对象 |
 
-> 定义于 [#L9776](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9776)
+
 
 
 ::: details 点击查看示例代码
@@ -56,7 +56,7 @@ world.onPress(({ button }) => {
 | GameAnimation[] | 创建出来的动画对象列表 |
 
 
-> 定义于 [#L9777](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9777)
+
 
 
 ---
@@ -71,7 +71,7 @@ world.onPress(({ button }) => {
 | GameAnimation[] | 创建出来的动画对象列表 |
 
 
-> 定义于 [#L9778](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9778)
+
 ---
 #### <font id="API" />getPlayerAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getPlayerAnimations}
 获取玩家的所有已创建的动画
@@ -84,7 +84,7 @@ world.onPress(({ button }) => {
 | GameAnimation[] | 创建出来的动画对象列表 |
 
 
-> 定义于 [#L9779](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9779)
+
 
 ## 接口
 
@@ -131,7 +131,7 @@ World世界动画关键帧参数，可对World的大部分属性做动画效果�
 | skyFrontLight | number | 环境光在+Z轴方向的颜色亮度 |
 | skyBackLight | number | 环境光在-Z轴方向的颜色亮度 |
 
-> 定义于 [#L9629](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9629)
+
 ---
 
 
@@ -148,7 +148,7 @@ World世界动画关键帧参数，可对World的大部分属性做动画效果�
 | iterations | number | 反复播放次数 |
 | startTick | number | 开始时间 |
 
-> 定义于 [#L9629](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9629)
+
 
 ## 枚举
 
@@ -167,7 +167,7 @@ World世界动画关键帧参数，可对World的大部分属性做动画效果�
 | QUADRATIC | 二次方 |
 | SINE | 正弦波 |
 
-> 定义于 [#L9536](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9536)
+
 ---
 
 
@@ -183,4 +183,3 @@ World世界动画关键帧参数，可对World的大部分属性做动画效果�
 | WRAP | 循环 |
 | WRAP_REVERSE | 循环倒放 |
 
-> 定义于 [#L9528](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9528)

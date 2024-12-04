@@ -40,7 +40,7 @@ import '/style.css'
 | --- | --- |
 | Promise‹TeleportResult› | 异步返回传送结果 |
 
-> 定义于 [#L9922](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_10_28.d.ts#L9922)
+
 
 
 :::info
@@ -82,4 +82,4 @@ world.say('传送成功 ')
 | --- | --- | --- |
 | serverId | string | 生成的服务器id |
 
-> 定义于 [#L9335](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_10_28.d.ts#L9335)
+

@@ -11,7 +11,7 @@ declare const ui: UiNode;
 #### <font id="API" />name<font id="Type">: string</font>   {#name}
 该节点的标识，可重复。
 
-> 定义于 [#L119](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L119)
+
 
 ---
 
@@ -20,7 +20,7 @@ declare const ui: UiNode;
 节点的父节点，非根节点的父节点为空时，该节点将不会被渲染。
 >   ℹ️  若节点的父节点为空，且在脚本中无任何引用，则该节点可能会被浏览器当作垃圾回收掉哦。
 
-> 定义于 [#L121](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L121)
+
 
 ---
 
@@ -29,7 +29,7 @@ declare const ui: UiNode;
 
 节点的子节点。如需要调整子节点结构，应修改子节点的`parent`属性。
 
-> 定义于 [#L120](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L120)
+
 
 ---
 
@@ -37,7 +37,7 @@ declare const ui: UiNode;
 #### <font id="API" /><font id="ReadOnly">只读</font>events<font id="Type">: [EventEmitter](/GameUI/UiEvent)‹[UiNodeEvents](/GameUI/UiRenderable#事件)›</font> {#events}
 管理节点相关的事件。
 
-> 定义于 [#L126](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L126)
+
 
 ---
 
@@ -45,7 +45,7 @@ declare const ui: UiNode;
 #### <font id="API" />uiScale<font id="Type">: [UiScale](/GameUI/maths/UiScale) | undefined</font> {#uiScale}
 节点等比例缩放数据。
 
-> 定义于 [#L130](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L130)
+
 
 
 ## 方法
@@ -65,7 +65,7 @@ declare const ui: UiNode;
 | --- | --- |
 | UiNode &#124; undefined | 指定名称的节点的对象，若子节点中无对应ID的节点，则返回`undefined` |
 
-> 定义于 [#L122](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L122)
+
 
 
 ---
@@ -80,6 +80,6 @@ declare const ui: UiNode;
 | --- | --- |
 | this | 返回克隆出来的新节点。 |
 
-> 定义于 [#L134](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L134)
+
 
 

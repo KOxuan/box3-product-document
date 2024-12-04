@@ -8,7 +8,7 @@ import '/style.css'
 响应是否成功。
 HTTP 状态码的范围在 200-299
 
-> 定义于 [#L13252](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13252)
+
 ---
 
 
@@ -17,7 +17,7 @@ HTTP 状态码的范围在 200-299
 
 响应数字状态码。
 
-> 定义于 [#L13244](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13244)
+
 ---
 
 
@@ -25,7 +25,7 @@ HTTP 状态码的范围在 200-299
 
 响应文本状态信息。
 
-> 定义于 [#L13245](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13245)
+
 ---
 
 
@@ -33,7 +33,7 @@ HTTP 状态码的范围在 200-299
 
 响应的请求头。
 
-> 定义于 [#L13246](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13246)
+
 
 ## 方法
 
@@ -47,7 +47,7 @@ HTTP 状态码的范围在 200-299
 | --- | --- |
 | Promise‹any› | 异步JSON格式化后返回网址数据 |
 
-> 定义于 [#L13247](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13247)
+
 
 ---
 
@@ -61,7 +61,7 @@ HTTP 状态码的范围在 200-299
 | --- | --- |
 | Promise‹string› | 异步返回网址字符串数据 |
 
-> 定义于 [#L13248](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13248)
+
 
 ---
 
@@ -75,7 +75,7 @@ HTTP 状态码的范围在 200-299
 | --- | --- |
 | Promise‹ArrayBuffer› | 异步二进制数据缓冲区返回网址字符串数据 |
 
-> 定义于 [#L13249](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13249)
+
 
 ---
 
@@ -84,4 +84,3 @@ HTTP 状态码的范围在 200-299
 关闭连接。
 
 
-> 定义于 [#L13250](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13250)

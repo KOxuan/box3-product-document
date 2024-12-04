@@ -9,7 +9,7 @@ import '/style.css'
 
 是否允许实体进行互动。如果允许互动，走进互动范围之内，实体身上将会出现互动提示。
 
-> 定义于 [#L10932](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10932)
+
 ---
 
 
@@ -20,7 +20,7 @@ import '/style.css'
 
 范围有多个可互动实体，按下键盘'['或']'键，切换互动目标。
 
-> 定义于 [#L10947](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10947)
+
 ---
 
 
@@ -29,7 +29,7 @@ import '/style.css'
 
 进入实体互动范围时，实体身上出现的提示文本。
 
-> 定义于 [#L10942](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10942)
+
 ---
 
 
@@ -38,7 +38,7 @@ import '/style.css'
 
 进入实体互动范围时，提示文本的颜色。
 
-> 定义于 [#L10937](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10937)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -75,7 +75,7 @@ npc.onInteract(async({entity}) => {
 | options.duration |  | 2000 | number | 气泡及广播提示语的持续时间（ms） |
 | options.hideFloat |  | false | boolean | 气泡内容是否在世界广播上隐藏？ |
 
-> 定义于 [#L11344](https://github.com/box3lab/arena_dts/blob/main/GameAPI_2024_12_4.d.ts#L11344)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -101,7 +101,7 @@ setInterval(() => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到鼠标点击时的处理函数 |
 
-> 定义于 [#L10645](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10645)
+
 
 ---
 
@@ -115,7 +115,7 @@ setInterval(() => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到互动时的处理函数 |
 
-> 定义于 [#L10687](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10687)
+
 
 ---
 
@@ -129,7 +129,7 @@ setInterval(() => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到碰到另外的实体的处理函数 |
 
-> 定义于 [#L10651](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10651)
+
 
 ---
 
@@ -143,7 +143,7 @@ setInterval(() => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到停止碰到另外的实体的处理函数 |
 
-> 定义于 [#L10657](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10657)
+
 
 ---
 
@@ -157,7 +157,7 @@ setInterval(() => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到进入液体的实体的处理函数 |
 
-> 定义于 [#L10675](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10675)
+
 
 ---
 
@@ -171,7 +171,7 @@ setInterval(() => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到离开液体的实体的处理函数 |
 
-> 定义于 [#L10681](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10681)
+
 
 ---
 
@@ -185,7 +185,7 @@ setInterval(() => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到触碰方块的实体的处理函数 |
 
-> 定义于 [#L10663](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10663)
+
 
 ---
 
@@ -199,7 +199,7 @@ setInterval(() => {
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到停止触碰方块的实体的处理函数 |
 
-> 定义于 [#L10669](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10669)
+
 
 
 ## 接口
@@ -217,7 +217,7 @@ setInterval(() => {
 | tick | number | 两个实体碰撞的时间 |
 | force | [GameVector3](/GameVector3/) | 碰撞所产生的力 |
 
-> 定义于 [#L12673](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12673)
+
 
 ---
 
@@ -231,7 +231,7 @@ setInterval(() => {
 | voxel | number | 液体方块id |
 | tick | number | 实体进入或离开液体的时间 |
 
-> 定义于 [#L12799](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12799)
+
 
 ---
 
@@ -251,4 +251,4 @@ setInterval(() => {
 | y | number | 被触碰方块的y坐标 |
 | z | number | 被触碰方块的z坐标 |
 
-> 定义于 [#L12724](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12724)
+

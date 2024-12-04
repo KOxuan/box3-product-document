@@ -9,7 +9,7 @@ import '/style.css'
 
 实体边界框的半径，沿着x/y/z方向，每帧都会重新计算
 
-> 定义于 [#L10727](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10727)
+
 ---
 
 
@@ -18,7 +18,7 @@ import '/style.css'
 
 如果为假(false)，则实体不会碰撞
 
-> 定义于 [#L10747](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10747)
+
 ---
 
 
@@ -27,14 +27,14 @@ import '/style.css'
 
 如果为真(true)，则实体不会移动
 
-> 定义于 [#L10757](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10757)
+
 ---
 
 
 #### <font id="API" />meshScale<font id="Type">: [GameVector3](/GameVector3/)</font>{#meshScale}
 实体的缩放比例。
 
-> 定义于 [#L10757](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10757)
+
 ---
 
 
@@ -45,7 +45,7 @@ import '/style.css'
 
 控制实体的粘性(0 = 滑，1 = 粘)
 
-> 定义于 [#L10737](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10737)
+
 ---
 
 
@@ -54,7 +54,7 @@ import '/style.css'
 
 如果为假(false)，则实体不会下落
 
-> 定义于 [#L10752](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10752)
+
 ---
 
 
@@ -63,7 +63,7 @@ import '/style.css'
 
 实体物理质量。
 
-> 定义于 [#L10732](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10732)
+
 ---
 
 
@@ -75,7 +75,7 @@ import '/style.css'
 控制实体的弹性(0 = 软, 1 = 弹)
 
 
-> 定义于 [#L10742](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10742)
+
 
 ---
 
@@ -85,7 +85,7 @@ import '/style.css'
 
 实体的速度。
 
-> 定义于 [#L10722](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10722)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -106,7 +106,7 @@ setInterval(() => {
 
 实体受到的碰撞力。
 
-> 定义于 [#L10762](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10762)
+
 ---
 
 
@@ -115,7 +115,7 @@ setInterval(() => {
 
 返回正在和玩家/实体发生碰撞的全部实体列表。
 
-> 定义于 [#L10767](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10767)
+
 ---
 
 
@@ -124,7 +124,7 @@ setInterval(() => {
 
 返回正在和玩家/实体发生碰撞的全部方块列表。
 
-> 定义于 [#L10772](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10772)
+
 ---
 
 
@@ -133,4 +133,3 @@ setInterval(() => {
 
 返回正在被玩家/实体触碰的全部液体方块列表。
 
-> 定义于 [#L10777](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10777)

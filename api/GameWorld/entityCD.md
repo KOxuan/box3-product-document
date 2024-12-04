@@ -19,7 +19,7 @@ import '/style.css'
 | --- | --- |
 | GameEntity &#124; null | 根据指定参数创建的一个新实体对象，如达到上限将无法创建 |
 
-> 定义于 [#L9702](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9702)
+
 
 ::: warning
 需要提前在编辑器中添加'花'的模型。
@@ -55,7 +55,7 @@ for(let i=0;i<50;i++){
 | --- | --- |
 | number | 当前仍可创建的实体数量 |
 
-> 定义于 [#L10147](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10147)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -75,7 +75,7 @@ console.log(`还可以创建 ${world.entityQuota()} 个实体`)
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到有实体创建时的处理函数 |
 
-> 定义于 [#L10263](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10263)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -98,7 +98,7 @@ world.onEntityCreate(({ entity }) => {
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到有实体销毁时的处理函数 |
 
-> 定义于 [#L10268](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10268)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -120,7 +120,7 @@ world.onEntityDestroy(({ entity }) => {
 | entity | [GameEntity](/GameEntity/) | 销毁的实体 |
 | tick | number | 事件发生时间 |
 
-> 定义于 [#L12500](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12500)
+
 
 ---
 
@@ -168,4 +168,3 @@ world.onEntityDestroy(({ entity }) => {
 | hurtSound | [GameSoundEffect](/GameWorld/music#GameSoundEffect) | 实体触发受伤事件时播放的音效 |
 | dieSound | [GameSoundEffect](/GameWorld/music#GameSoundEffect) | 实体触发死亡事件时播放的音效 |
 
-> 定义于 [#L10493](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10493)

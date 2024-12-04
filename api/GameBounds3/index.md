@@ -2,7 +2,7 @@
 <script setup>
 import '/style.css'
 </script>
-# 三维空间
+# S-三维空间
 三维空间是指由长、宽、高三个维度所构成的空间，是我们日常生活中能够看得见、感受得到的空间。
 
 ## 构造函数
@@ -18,7 +18,7 @@ import '/style.css'
 | hi | 是 | | GameVector3 | 区域的高处顶点 |
 
 
-> 定义于 [#L13329](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13329)
+
 
 ## 属性
 

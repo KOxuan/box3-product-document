@@ -19,7 +19,7 @@ declare type GamePlayerEntity = GameEntity & {
 
 如果为真，则实体为玩家。
 
-> 定义于 [#L10837](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10837)
+
 
 ---
 
@@ -28,4 +28,3 @@ declare type GamePlayerEntity = GameEntity & {
 
 如果是玩家，可以访问此属性。索引与玩家相关的全部状态和方法
 
-> 定义于 [#L10842](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10842)

@@ -11,7 +11,7 @@ import '/style.css'
 
 设置虚拟按键图片
 
-> 定义于 [#L11745](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11745)
+
 
 ### 实体按键
 
@@ -20,7 +20,7 @@ import '/style.css'
 
 禁用指定方向的摇杆输入偏移量，当横纵两个方向均被禁用时，将不显示此玩家的触屏虚拟摇杆。
 
-> 定义于 [#L11967](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11967)
+
 ---
 
 
@@ -29,7 +29,7 @@ import '/style.css'
 
 启动鼠标左键/移动端虚拟按钮A键
 
-> 定义于 [#L11984](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11984)
+
 ---
 
 
@@ -38,7 +38,7 @@ import '/style.css'
 
 启动鼠标右键/移动端虚拟按钮B键
 
-> 定义于 [#L11989](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11989)
+
 ---
 
 
@@ -47,7 +47,7 @@ import '/style.css'
 
 鼠标左键/移动端虚拟按钮A键
 
-> 定义于 [#L11993](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11993)
+
 ---
 
 
@@ -56,7 +56,7 @@ import '/style.css'
 
 鼠标右键/移动端虚拟按钮B键
 
-> 定义于 [#L11997](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11997)
+
 ---
 
 
@@ -65,7 +65,7 @@ import '/style.css'
 
 跳跃按钮
 
-> 定义于 [#L11979](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11979)
+
 ---
 
 
@@ -74,7 +74,7 @@ import '/style.css'
 
 步行按钮
 
-> 定义于 [#L11971](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11971)
+
 
 ### 行动
 
@@ -91,7 +91,7 @@ import '/style.css'
 开启：w：右走，s：左走，a：后退，d：前进
 :::
 
-> 定义于 [#L11959](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11959)
+
 ---
 
 
@@ -100,7 +100,7 @@ import '/style.css'
 
 反转指定方向的摇杆
 
-> 定义于 [#L11963](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11963)
+
 ---
 
 
@@ -109,7 +109,7 @@ import '/style.css'
 
 玩家朝向
 
-> 定义于 [#L12017](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12017)
+
 ---
 
 
@@ -118,7 +118,7 @@ import '/style.css'
 
 如果为真(true)，则允许玩家飞行
 
-> 定义于 [#L11868](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11868)
+
 ---
 
 
@@ -127,7 +127,7 @@ import '/style.css'
 
 如果为真(true)，则玩家是一个幽灵，可以穿墙
 
-> 定义于 [#L11873](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11873)
+
 ---
 
 
@@ -136,7 +136,7 @@ import '/style.css'
 
 如果为假(false)，则不允许玩家跳跃
 
-> 定义于 [#L12001](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12001)
+
 ---
 
 #### <font id="API" />enableDoubleJump<font id="Type">: boolean</font>{#enableDoubleJump}
@@ -144,7 +144,7 @@ import '/style.css'
 
 如果为假(false)，则不允许玩家二段跳跃
 
-> 定义于 [#L12005](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12005)
+
 ---
 
 
@@ -153,7 +153,7 @@ import '/style.css'
 
 最大步行速度
 
-> 定义于 [#L11878](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11878)
+
 ---
 
 
@@ -162,7 +162,7 @@ import '/style.css'
 
 最大奔跑速度
 
-> 定义于 [#L11888](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11888)
+
 ---
 
 
@@ -171,7 +171,7 @@ import '/style.css'
 
 奔跑加速度
 
-> 定义于 [#L11893](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11893)
+
 ---
 
 
@@ -180,7 +180,7 @@ import '/style.css'
 
 跳跃力度
 
-> 定义于 [#L11938](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11938)
+
 ---
 
 
@@ -189,7 +189,7 @@ import '/style.css'
 
 跳跃速度
 
-> 定义于 [#L11928](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11928)
+
 ---
 
 
@@ -198,7 +198,7 @@ import '/style.css'
 
 跳跃加速率
 
-> 定义于 [#L11933](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11933)
+
 ---
 
 
@@ -207,7 +207,7 @@ import '/style.css'
 
 二段跳力度
 
-> 定义于 [#L11943](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11943)
+
 ---
 
 
@@ -216,7 +216,7 @@ import '/style.css'
 
 蹲着走路的速度
 
-> 定义于 [#L11898](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11898)
+
 ---
 
 
@@ -225,7 +225,7 @@ import '/style.css'
 
 蹲着走路的加速度
 
-> 定义于 [#L11903](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11903)
+
 ---
 
 
@@ -234,7 +234,7 @@ import '/style.css'
 
 最大飞行速度
 
-> 定义于 [#L11918](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11918)
+
 ---
 
 
@@ -243,7 +243,7 @@ import '/style.css'
 
 飞行加速度
 
-> 定义于 [#L11923](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11923)
+
 ---
 
 
@@ -252,7 +252,7 @@ import '/style.css'
 
 游泳加速度
 
-> 定义于 [#L11913](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11913)
+
 ---
 
 
@@ -261,7 +261,7 @@ import '/style.css'
 
 最大游泳速度
 
-> 定义于 [#L11908](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11908)
+
 ---
 
 
@@ -270,7 +270,7 @@ import '/style.css'
 
 步行加速度
 
-> 定义于 [#L11883](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11883)
+
 ---
 
 
@@ -279,7 +279,7 @@ import '/style.css'
 
 玩家的运动状态
 
-> 定义于 [#L11951](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11951)
+
 ---
 
 
@@ -288,7 +288,7 @@ import '/style.css'
 
 玩家的步行状态
 
-> 定义于 [#L11955](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11955)
+
 ---
 
 
@@ -297,7 +297,7 @@ import '/style.css'
 
 玩家视角准心绕水平方向的旋转弧度
 
-> 定义于 [#L12025](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12025)
+
 ---
 
 
@@ -307,7 +307,7 @@ import '/style.css'
 玩家视角准心绕垂直方向的旋转弧度
 
 
-> 定义于 [#L12021](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12021)
+
 
 ## 方法
 
@@ -321,7 +321,7 @@ import '/style.css'
 | handler | 是 | | function | 监听到玩家按下按钮时的处理函数 |
 
 
-> 定义于 [#L11629](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11629)
+
 ---
 
 
@@ -334,7 +334,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到玩家松开按钮时的处理函数 |
 
-> 定义于 [#L11635](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11635)
+
 
 ---
 
@@ -348,7 +348,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到玩家按下键盘时的处理函数 |
 
-> 定义于 [#L11743](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11743)
+
 
 ---
 
@@ -362,7 +362,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到玩家松开键盘时的处理函数 |
 
-> 定义于 [#L11744](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11744)
+
 
 ---
 
@@ -371,7 +371,7 @@ import '/style.css'
 把玩家"踢出"当前地图
 
 
-> 定义于 [#L12211](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12211)
+
 
 ## 接口
 
@@ -383,7 +383,7 @@ import '/style.css'
 | keyCode | number | 按下/松开按键的[keyCode](./input#keyCode) |
 | tick | number | 按下/松开按钮的时间 |
 
-> 定义于 [#L13075](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13075)
+
 ---
 
 #### <font id="API" />Gamepad{#Gamepad}
@@ -401,7 +401,7 @@ import '/style.css'
 |actionA|string|A键按钮|
 |actionB|string|B键按钮|
 
-> 定义于 [#L11599](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11599)
+
 ## 枚举
 
 #### <font id="API" />GamePlayerMoveState{#GamePlayerMoveState}
@@ -416,7 +416,7 @@ import '/style.css'
 | JUMP | 跳跃中 |
 | DOUBLE_JUMP | 二段跳中 |
 
-> 定义于 [#L11215](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11215)
+
 
 ---
 
@@ -431,7 +431,7 @@ import '/style.css'
 | WALK | 正常步行 |
 | RUN | 奔跑 |
 
-> 定义于 [#L11226](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11226)
+
 
 ---
 
@@ -446,7 +446,7 @@ import '/style.css'
 | HORIZONTAL | 水平方向 |
 | BOTH | 所有方向 |
 
-> 定义于 [#L11571](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11571)
+
 
 
 ## keyCode映射表{#keyCode}

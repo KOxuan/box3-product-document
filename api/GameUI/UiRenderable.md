@@ -15,7 +15,7 @@ import '/style.css'
 
 节点的锚点，用于确定节点的位置。
 
-> 定义于 [#L137](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L137)
+
 
 ---
 
@@ -25,7 +25,7 @@ import '/style.css'
 
 节点的位置，相对于父节点的位置。
 
-> 定义于 [#L138](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L138)
+
 
 ---
 
@@ -35,7 +35,7 @@ import '/style.css'
 
 节点的背景颜色。
 
-> 定义于 [#L139](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L139)
+
 
 ---
 
@@ -45,7 +45,7 @@ import '/style.css'
 
 节点的背景透明度。
 
-> 定义于 [#L140](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L140)
+
 
 ---
 
@@ -55,7 +55,7 @@ import '/style.css'
 
 节点的尺寸。
 
-> 定义于 [#L141](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L141)
+
 
 ---
 
@@ -65,7 +65,7 @@ import '/style.css'
 
 节点的层级，用于确定节点的渲染顺序。
 
-> 定义于 [#L142](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L142)
+
 
 ---
 
@@ -75,7 +75,7 @@ import '/style.css'
 
 节点的自动调整尺寸的方式。
 
-> 定义于 [#L143](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L143)
+
 
 ---
 
@@ -85,7 +85,7 @@ import '/style.css'
 
 节点的可见性。
 
-> 定义于 [#L144](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L144)
+
 
 ---
 
@@ -98,7 +98,7 @@ import '/style.css'
 - pointerdown
 - pointerup
 
-> 定义于 [#L145](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L145)
+
 
 
 
@@ -116,6 +116,6 @@ import '/style.css'
 | BLOCK_PASS_THROUGH | 不允许位于元素后方的其他元素响应。 |
 | ENABLE | 正常响应。 |
 
-> 定义于 [#L190](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L190)
+
 
 

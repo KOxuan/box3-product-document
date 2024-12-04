@@ -15,7 +15,7 @@ import '/style.css'
 
 得到当前entity对象
 
-> 定义于 [#L11131](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11131)
+
 
 ## 方法
 
@@ -25,14 +25,14 @@ import '/style.css'
 - 会打断当前动作，开始对应动作/序列动作的播放
 - 当配置中包含的动作播放结束时，触发 `onFinish` 事件 
 
-> 定义于 [#L11135](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11135)
+
 ---
 
 
 #### <font id="API" />cancel()<font id="Type">:  void</font>{#cancel}
 中途打断此动作播放，并触发 `onFinish` 事件  
 
-> 定义于 [#L11139](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11139)
+
 ---
 
 
@@ -46,7 +46,7 @@ import '/style.css'
 | handler | 是 | | function | 监听到实体动作结束时的处理函数 |
 
 
-> 定义于 [#L11143](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11143)
+
 
 ## 接口
 
@@ -60,4 +60,4 @@ import '/style.css'
 | target | [GameEntity](/GameEntity/) | entity对象 |
 | motionHandler | [GameMotionHandler](./handler) | 本身的动作处理器 |
 
-> 定义于 [#L11166](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11166)
+

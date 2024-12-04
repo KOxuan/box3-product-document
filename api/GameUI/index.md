@@ -1,7 +1,7 @@
-# 🖼️游戏用户界面
+# C-🖼️游戏用户界面
 
 - **GameUI** 是管理游戏界面的对象，用于对玩家界面UI的操作。
-- 在`客户端脚本`中，可以通过全局对象 `ui`，`input`，`navigator` ，`screenWidth` ，`screenHeight` 来使用它。
+- 在`客户端脚本`中，可以通过全局对象 `ui`，`input`，`screenWidth` ，`screenHeight` 来使用它。
 
 ::: tip
 在推出此功能前，已有GUI功能，基于xml编写。但已不推荐使用，因有更优方案且支持可视化编辑。推荐使用最新的GameUI。
@@ -13,15 +13,11 @@
 
 ```typescript
 declare const ui: UiNode;
-declare const navigator: Navigator;
 declare const input: InputSystem;
 declare const screenWidth: number; // 全局对象，获取当前玩家屏幕宽度
 declare const screenHeight: number; // 全局对象，获取当前玩家屏幕高度
 
 declare class InputSystem {
-    //...
-}
-declare class Navigator {
     //...
 }
 declare class UiNode {
@@ -78,7 +74,6 @@ declare class UiNode {
 - [`create`](./node/UiInput#create) : 创建一个新的 `Ui输入` 实例
 - [`focus`](./node/UiInput#isFocus) : 使输入框聚焦
 - [`blur`](./node/UiInput#blur) : 使输入框失去焦点
-- [`getDeviceInfo`](./navigator#getDeviceInfo) : 获取该客户端当前设备以及屏幕分辨率
 - [`unlockPointer`](./input#unlockPointer) : 调用后在游戏界面显示鼠标指针
 - [`lockPointer`](./input#lockPointer) : 调用后在游戏界面隐藏鼠标指针
 - [`on`](./UiEvent#on) : 监听指定的事件

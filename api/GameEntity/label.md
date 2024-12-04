@@ -10,7 +10,7 @@ import '/style.css'
 已在编辑器中添加的实体名称
 
 
-> 定义于 [#L10709](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10709)
+
 
 ## 方法
 
@@ -24,7 +24,7 @@ import '/style.css'
 | tag | 是 | | string | 要添加的标签名 |
 
 
-> 定义于 [#L10981](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10981)
+
 ---
 
 
@@ -44,7 +44,7 @@ import '/style.css'
 | boolean | 是否带有该实体标签 |
 
 
-> 定义于 [#L10991](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10991)
+
 ---
 
 
@@ -58,7 +58,7 @@ import '/style.css'
 | tag | 是 | | string | 要移除的标签名 |
 
 
-> 定义于 [#L10986](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10986)
+
 ---
 
 
@@ -72,4 +72,4 @@ import '/style.css'
 | string[] | 该实体的标签列表 |
 
 
-> 定义于 [#L10588](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10588)
+

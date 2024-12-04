@@ -15,7 +15,7 @@ import '/style.css'
 | href | 是 | | URL | 网址（目前支持神奇代码岛、编程猫、微信文章、Bilibili视频等链接） |
 | options.isConfirm | | true | boolean | 是否弹出跳转提示框 |
 | options.isNewTab | | false | boolean | 是否新窗口打开网页 |
-> 定义于 [#L11664](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11664)
+
 
 ::: details 点击查看示例代码
 ```javascript

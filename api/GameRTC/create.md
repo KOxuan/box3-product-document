@@ -20,6 +20,6 @@ import '/style.css'
 | --- | --- |
 | Promise‹GameRTCChannel› | 异步返回rtc对象 |
 
-> 定义于 [#L13414](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13414)
+
 
 

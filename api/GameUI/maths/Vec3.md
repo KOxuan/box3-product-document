@@ -1,7 +1,7 @@
 <script setup>
 import '/style.css'
 </script>
-# 三维向量
+# C-三维向量
 ```typescript
 declare class Vec3 {
     //...
@@ -14,7 +14,7 @@ declare class Vec3 {
 
 Vec3的x坐标。
 
-> 定义于 [#L91](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L91)
+
 ---
 
 
@@ -23,7 +23,7 @@ Vec3的x坐标。
 
 Vec3的y坐标。
 
-> 定义于 [#L92](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L92)
+
 ---
 
 
@@ -32,7 +32,7 @@ Vec3的y坐标。
 
 Vec3的z坐标。
 
-> 定义于 [#L93](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L93)
+
 ---
 
 
@@ -43,7 +43,7 @@ Vec3的z坐标。
 
 等同于x，是red红色通道，方便设置颜色时使用。
 
-> 定义于 [#L94](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L94)
+
 ---
 
 
@@ -54,7 +54,7 @@ Vec3的z坐标。
 
 等同于y，是green绿色通道，方便设置颜色时使用。
 
-> 定义于 [#L95](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L95)
+
 ---
 
 
@@ -65,7 +65,7 @@ Vec3的z坐标。
 
 等同于z，是blue蓝色通道，方便设置颜色时使用。
 
-> 定义于 [#L96](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L96)
+
 
 ## 静态方法
 
@@ -85,7 +85,7 @@ Vec3的z坐标。
 | --- | --- |
 | Vec3 | 三维向量对象 |
 
-> 定义于 [#L98](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L98)
+
 
 ## 方法
 
@@ -105,7 +105,7 @@ Vec3的z坐标。
 | --- | --- |
 | Vec3 | 三维向量对象 |
 
-> 定义于 [#L97](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L97)
+
 
 ```javascript
 let vec1 = Vec3.create({x: 1, y: 2, z: 3});

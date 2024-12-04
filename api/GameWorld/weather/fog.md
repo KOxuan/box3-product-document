@@ -10,7 +10,7 @@ import '/style.css'
 
 最大雾量。
 
-> 定义于 [#L10038](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10038)
+
 
 ---
 
@@ -20,7 +20,7 @@ import '/style.css'
 
 雾的颜色。
 
-> 定义于 [#L10013](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10013)
+
 ---
 
 
@@ -29,7 +29,7 @@ import '/style.css'
 
 雾起始距离。
 
-> 定义于 [#L10018](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10018)
+
 
 ---
 
@@ -39,7 +39,7 @@ import '/style.css'
 
 雾高度。
 
-> 定义于 [#L10033](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10033)
+
 
 ---
 
@@ -49,7 +49,7 @@ import '/style.css'
 
 均匀雾量，若值大于0，越难看到天空。
 
-> 定义于 [#L10033](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10033)
+
 
 ---
 
@@ -59,4 +59,4 @@ import '/style.css'
 
 高度衰减系数。数值在0-1之间。值越小，雾越浓。
 
-> 定义于 [#L10028](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10028)
+

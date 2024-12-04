@@ -9,7 +9,7 @@ import '/style.css'
 
 如果为真(true)，实体就被销毁。
 
-> 定义于 [#L10714](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10714)
+
 
 ---
 
@@ -19,7 +19,7 @@ import '/style.css'
 
 如果为真true，则可对实体进行伤害。
 
-> 定义于 [#L10820](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10820)
+
 
 ---
 
@@ -29,7 +29,7 @@ import '/style.css'
 
 如果为真true，则显示实体的生命值HP。
 
-> 定义于 [#L10824](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10824)
+
 
 ---
 
@@ -39,7 +39,7 @@ import '/style.css'
 
 实体的当前生命值hp。
 
-> 定义于 [#L9776](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9776)
+
 
 ---
 
@@ -49,7 +49,7 @@ import '/style.css'
 
 实体的最大生命值hp。
 
-> 定义于 [#L10828](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10828)
+
 
 
 ## 方法
@@ -57,7 +57,7 @@ import '/style.css'
 #### <font id="API" />destroy()<font id="Type">:  void</font>{#destroy}
 销毁实体
 
-> 定义于 [#L10608](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10608)
+
 
 ---
 
@@ -73,7 +73,7 @@ import '/style.css'
 | options | | | Partial‹GameHurtOptions› | 伤害的相关配置 |
 
 
-> 定义于 [#L10631](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10631)
+
 
 ---
 
@@ -87,7 +87,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到实体被销毁时的处理函数 |
 
-> 定义于 [#L10613](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10613)
+
 
 
 ---
@@ -102,7 +102,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | handler | 是 | | function | 监听到实体受到伤害时的处理函数 |
 
-> 定义于 [#L10619](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10619)
+
 
 
 ---
@@ -118,7 +118,7 @@ import '/style.css'
 | handler | 是 | | function | 监听到实体死亡时的处理函数 |
 
 
-> 定义于 [#L10625](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10625)
+
 
 
 
@@ -132,7 +132,7 @@ import '/style.css'
 | attacker | [GameEntity](/GameEntity/) | 发出攻击的实体 |
 | damageType | string | 伤害类型，可自行定义 |
 
-> 定义于 [#L10537](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10537)
+
 
 
 ---
@@ -149,7 +149,7 @@ import '/style.css'
 | damageType | string | 伤害的类型 |
 | tick | number | 事件发生的时间 |
 
-> 定义于 [#L12553](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12553)
+
 
 
 ---
@@ -166,5 +166,5 @@ import '/style.css'
 | tick | number | 事件发生的时间 |
 
 
-> 定义于 [#L12604](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12604)
+
 

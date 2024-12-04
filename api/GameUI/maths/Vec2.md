@@ -1,7 +1,7 @@
 <script setup>
 import '/style.css'
 </script>
-# 二维向量
+# C-二维向量
 ```typescript
 declare class Vec2 {
     //...
@@ -14,7 +14,7 @@ declare class Vec2 {
 
 Vec2的x坐标。
 
-> 定义于 [#L85](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L85)
+
 ---
 
 
@@ -23,7 +23,7 @@ Vec2的x坐标。
 
 Vec2的y坐标。
 
-> 定义于 [#L86](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L86)
+
 
 ## 静态方法
 
@@ -43,7 +43,7 @@ Vec2的y坐标。
 | --- | --- |
 | Vec2 | 二维向量对象 |
 
-> 定义于 [#L87](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L87)
+
 
 
 ## 方法
@@ -64,7 +64,7 @@ Vec2的y坐标。
 | --- | --- |
 | Vec2 | 二维向量对象 |
 
-> 定义于 [#L87](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L87)
+
 
 ```javascript
 let vec1 = Vec2.create({x: 1, y: 2});

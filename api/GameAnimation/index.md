@@ -1,7 +1,7 @@
 <script setup>
 import '/style.css'
 </script>
-# 动画对象
+# S-动画对象
 :::info
 **GameAnimation**，作为 `animate()` 方法的统一返回类型，支持后续的动画操作。 
 
@@ -16,7 +16,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 
 动画的当前播放时间（多少动画帧）
 
-> 定义于 [#L9586](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9586)
+
 
 ---
 
@@ -26,7 +26,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 
 当前动画播放状态
 
-> 定义于 [#L9594](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9594)
+
 ---
 
 
@@ -35,7 +35,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 
 每tick动画播放速度
 
-> 定义于 [#L9598](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9598)
+
 ---
 
 
@@ -44,7 +44,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 
 动画开始的时间tick
 
-> 定义于 [#L9590](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9590)
+
 ---
 
 
@@ -52,7 +52,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 
 动画作用的对象
 
-> 定义于 [#L9560](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9560)
+
 
 ## 方法
 
@@ -65,7 +65,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 | --- | --- | --- | --- | --- |
 | playback | 否 || Partial‹GameAnimationPlaybackConfig›|播放的参数|
 
-> 定义于 [#L9568](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9568)
+
 
 ---
 
@@ -73,7 +73,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 #### <font id="API" />cancel()<font id="Type">:  void</font>
 暂停动画的播放
 
-> 定义于 [#L9572](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9572)
+
 ---
 
 
@@ -86,7 +86,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 | --- | --- |
 | Partial‹KeyframeType›[] | 已配置的动画关键帧列表 |
 
-> 定义于 [#L9564](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9564)
+
 
 ---
 
@@ -101,7 +101,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 | handler | 是 ||function|监听到动画播放完毕时的处理函数|
 
 
-> 定义于 [#L9581](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9581)
+
 ---
 
 
@@ -114,7 +114,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 | --- | --- | --- | --- | --- |
 | handler | 是 ||function|监听到动画开始播放时的处理函数|
 
-> 定义于 [#L9576](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9576)
+
 
 ## 接口
 
@@ -128,7 +128,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 | cancelled | boolean | 动画是否被取消 |
 | tick | number | 事件发生时间 |
 
-> 定义于 [#L13087](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L13087)
+
 
 ---
 
@@ -146,7 +146,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 | iterations | number | 反复播放次数 |
 | startTick | number | 开始时间 |
 
-> 定义于 [#L9547](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9547)
+
 
 ---
 
@@ -160,7 +160,7 @@ Animation 动画，可对World世界、Entity实体及Player玩家等对象添�
 | PENDING | 挂起等待 |
 | RUNNING | 播放中 |
 
-> 定义于 [#L9523](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9523)
+
 
 ### 示例代码
 ```javascript

@@ -1,7 +1,7 @@
 <script setup>
 import '/style.css'
 </script>
-# 图像映射中区域的坐标
+# C-图像映射中区域的坐标
 ```typescript
 declare class Coord2 {
     //...
@@ -15,7 +15,7 @@ declare class Coord2 {
 
 Coord2 的偏移量。
 
-> 定义于 [#L80](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L80)
+
 ---
 
 
@@ -24,7 +24,7 @@ Coord2 的偏移量。
 
 Coord2 的相对缩放量。
 
-> 定义于 [#L81](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L81)
+
 
 
 ## 静态方法
@@ -46,4 +46,4 @@ Coord2 的相对缩放量。
 | --- | --- |
 | Coord2 | 规定图像映射中区域的坐标 |
 
-> 定义于 [#L82](https://github.com/box3lab/arena_dts/blob/main/ClientAPI.d.ts#L82)
+

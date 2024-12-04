@@ -13,7 +13,7 @@ import '/style.css'
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到玩家加入时的处理函数 |
 
-> 定义于 [#L10253](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10253)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -51,7 +51,7 @@ world.onPlayerJoin(({ entity }) => {
 | --- | --- | --- | --- | --- |
 | handler | _是_ | | function | 监听到玩家离开时的处理函数 |
 
-> 定义于 [#L10258](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L10258)
+
 
 ::: details 点击查看示例代码
 ```javascript

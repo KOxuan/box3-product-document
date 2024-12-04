@@ -9,7 +9,7 @@ import '/style.css'
 
 玩家的颜色。
 
-> 定义于 [#L11787](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11787)
+
 ---
 
 
@@ -18,7 +18,7 @@ import '/style.css'
 
 玩家的发光度。
 
-> 定义于 [#L11795](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11795)
+
 ---
 
 
@@ -27,7 +27,7 @@ import '/style.css'
 
 玩家是否隐身。
 
-> 定义于 [#L11804](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11804)
+
 ---
 
 
@@ -36,7 +36,7 @@ import '/style.css'
 
 玩家名字是否显示。
 
-> 定义于 [#L11807](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11807)
+
 ---
 
 
@@ -45,7 +45,7 @@ import '/style.css'
 
 玩家标记否显示。
 
-> 定义于 [#L11811](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11811)
+
 ---
 
 
@@ -54,7 +54,7 @@ import '/style.css'
 
 玩家的缩放比例。
 
-> 定义于 [#L11783](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11783)
+
 ---
 
 
@@ -63,7 +63,7 @@ import '/style.css'
 
 玩家的金属感。
 
-> 定义于 [#L11791](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11791)
+
 ---
 
 
@@ -72,7 +72,7 @@ import '/style.css'
 
 玩家的反光度。
 
-> 定义于 [#L11799](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11799)
+
 ---
 
 
@@ -83,7 +83,7 @@ import '/style.css'
 当皮肤名称不存在于项目皮肤库或不符合类型定义时，无事发生，并会在控制台打印警告。 
 
 
-> 定义于 [#L12106](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12106)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -107,7 +107,7 @@ world.onPlayerJoin(({entity}) => {
 
 是否隐藏玩家模型部件。
 
-> 定义于 [#L12111](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L12111)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -136,21 +136,21 @@ world.onPlayerJoin(({entity}) => {
 | skinName | 是 | | string | 指定要设置的皮肤名称，将玩家皮肤整体替换为对应的皮肤。 |
 
 
-> 定义于 [#L11689](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11689)
+
 ---
 
 
 #### <font id="API" />resetToDefaultSkin()<font id="Type">:  void</font>{#resetToDefaultSkin}
 重置此玩家的皮肤配置为默认皮肤配置，效果同 `setSkinByName`传入了默认皮肤套装名称。
 
-> 定义于 [#L11694](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11694)
+
 ---
 
 
 #### <font id="API" />clearSkin()<font id="Type">:  void</font>{#clearSkin}
 清除地图对此玩家应用的皮肤配置，将此玩家的皮肤配置为仅展示玩家自己的皮肤。
 
-> 定义于 [#L11699](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11699)
+
 ---
 
 
@@ -169,7 +169,7 @@ world.onPlayerJoin(({entity}) => {
 | --- | --- |
 | GameWearable | 穿戴部件的位置 |
 
-> 定义于 [#L11678](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11678)
+
 
 ::: details 点击查看示例代码
 ```javascript
@@ -196,7 +196,7 @@ world.onPlayerJoin(({ entity }) => {
 | --- | --- | --- | --- | --- |
 | config | 是 | | GameWearable | 穿戴部件的位置 |
 
-> 定义于 [#L11684](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11684)
+
 ::: details 点击查看示例代码
 ```javascript
 // 在玩家进入液体时把穿戴配件'潜水镜'在玩家头上附带
@@ -238,7 +238,7 @@ world.onFluidLeave(({ entity }) => {
 | --- | --- |
 | GameWearable | 穿戴部件的位置列表 |
 
-> 定义于 [#L11673](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11673)
+
 ::: details 点击查看示例代码
 ```javascript
 // 在玩家上所有部位的穿戴配件
@@ -275,7 +275,7 @@ const wearablesOnHead = entity.player.wearables(GameBodyPart.HEAD);
 | rightLowerLeg | string &#124;  undefined &#124;  null | 右下腿 |
 | rightFoot | string &#124;  undefined &#124;  null | 右脚 |
 
-> 定义于 [#L11253](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11253)
+
 
 ---
 
@@ -303,7 +303,7 @@ const wearablesOnHead = entity.player.wearables(GameBodyPart.HEAD);
 | rightLowerLeg | boolean | 右下腿 |
 | rightFoot | boolean | 右脚 |
 
-> 定义于 [#L11256](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11256)
+
 
 ---
 
@@ -326,7 +326,7 @@ const wearablesOnHead = entity.player.wearables(GameBodyPart.HEAD);
 | remove | ()=>void | 删除该已穿戴的配件 |
 
 
-> 定义于 [#L9776](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L9776)
+
 
 
 ## 枚举
@@ -356,4 +356,3 @@ const wearablesOnHead = entity.player.wearables(GameBodyPart.HEAD);
 | RIGHT_FOOT | 右脚 |
 
 
-> 定义于 [#L11232](https://github.com/box3lab/arena_dts/blob/main/GameAPI.d.ts#L11232)
