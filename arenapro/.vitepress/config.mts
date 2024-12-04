@@ -49,8 +49,9 @@ export default defineConfig({
             items: [
               { text: '1.安装插件', link: '/guide/two/start' },
               { text: '2.创建地图代码项目', link: '/guide/two/createCodeProject' },
-              { text: '3.登录神岛账号', link: '/guide/two/login' },
-              { text: '4.链接扩展地图到项目', link: '/guide/two/linkMap' },
+              { text: '3.项目架构解惑', link: '/guide/two/qa' },
+              { text: '4.登录神岛账号', link: '/guide/two/login' },
+              { text: '5.链接扩展地图到项目', link: '/guide/two/linkMap' },
             ]
           }, {
             text: 'Ⅲ、HelloWorld 项目',
