@@ -68,6 +68,7 @@ export default defineConfig({
               { text: '2.Arena资源管理', link: '/guide/three/resources' },
               { text: '3.打包上传', link: '/guide/three/two' },
               { text: '4.运行测试', link: '/guide/three/three' },
+              { text: '5.导出至Arena', link: '/guide/three/toArena' },
             ]
           }, {
             text: 'Ⅳ、调试你的代码',
