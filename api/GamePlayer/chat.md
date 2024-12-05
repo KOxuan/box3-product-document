@@ -143,7 +143,7 @@ entity.player.onChat(({ entity, message }) => {
 | content | string | **必选**，对话框显示的正文内容。支持使用'\' 换行。 |
 | contentBackgroundColor | [GameRGBAColor](/GameRGBAColor/) | 对话框正文窗口的背景颜色。 |
 | contentTextColor | [GameRGBAColor](/GameRGBAColor/) | 对话框正文字体的颜色。 |
-| title | string | **必选**，对话框显示的标题名称。 |
+| title | string | 对话框显示的标题名称。 |
 | titleBackgroundColor | [GameRGBAColor](/GameRGBAColor/) | 对话框显示的标题窗口背景颜色。 |
 | titleTextColor  | [GameRGBAColor](/GameRGBAColor/) | 对话框显示的标题字体颜色。 |
 | hasArrow  | boolean | 如果接下来还有新的对话，在当前对话框中是否显示箭头提示。仅在**文本对话框**中使用。 |
@@ -170,7 +170,7 @@ entity.player.onChat(({ entity, message }) => {
 
 如果是文本对话框，回应`'success'`
 
-如果是选项对话框，回应**输入框填写的内容字符串**
+如果是输入对话框，回应**输入框填写的内容字符串**
 
 如果是选项对话框，回应 [GameDialogSelectResponse ](./chat#GameDialogSelectResponse)
 

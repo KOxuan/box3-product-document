@@ -3,6 +3,9 @@ import '/style.css'
 </script>
 # UI父类
 ```typescript
+/**
+ * @deprecated 已不推荐使用该属性，请使用{@link UiScreen}获取屏幕对象。
+ */
 declare const ui: UiNode;
 ```
 

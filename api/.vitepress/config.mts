@@ -262,6 +262,20 @@ export default defineConfig({
             { text: '输入', link: '/ClientScreen/input' },
           ]
         }, {
+          text: '🎵游戏音频',
+          link: '/ClientAudio/index',
+          collapsed: false,
+          items: [
+            { text: '媒体错误码', link: '/ClientAudio/mediaError' },
+          ]
+        }, {
+          text: '🎙游戏录音',
+          link: '/ClientMedia/index',
+          collapsed: false,
+          items: [
+            { text: '输入输出', link: '/ClientMedia/media' },
+          ]
+        },  {
           text: '🧭游戏导航器',
           link: '/ClientNavigator/index',
           collapsed: false,

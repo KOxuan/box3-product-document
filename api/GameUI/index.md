@@ -46,6 +46,7 @@ declare class UiNode {
 - [`image`](./node/UiImage#image) : 图片元素的内容，应为图片的路径或者 URL
 - [`imageOpacity`](./node/UiImage#imageOpacity) : 图片元素的透明度
 - [`imageDisplayMode`](./node/UiImage#imageDisplayMode) : 图像显示模式的声明
+- [`complete`](./node/UiImage#complete) : 图片是否加载完毕
 - [`textContent`](./node/UiText#textContent) : 文本元素的内容
 - [`richText`](./node/UiText#richText) : 文本内容是否支持富文本
 - [`textFontSize`](./node/UiText#textFontSize) : 节点显示的文本的字体大小

@@ -31,6 +31,15 @@ import '/style.css'
 
 图片元素中的图片资源，不属于其子内容，所以只受到展示方式影响，不受裁剪&自适应作用
 
+---
+
+
+#### <font id="API" /><font id="ReadOnly">只读</font>complete<font id="Type">: boolean</font>{#complete}
+
+图片是否加载完毕。
+
+
+
 
 
 ## 静态方法
@@ -60,3 +69,21 @@ import '/style.css'
 | None |  无：按图片正常尺寸与外框中心对齐展示，不对图片进行任何缩放调整，但是超出元素框部分会被裁剪（隐藏显示）    |
 
 
+
+## 图片加载完毕事件
+
+#### <font id="API" />load<font id="Type">: [UiEvent](/GameUI/UiEvent)‹UiImage›</font>
+图片加载完成后触发。
+
+```javascript
+const img = UiImage.create();
+img.image ='picture/cat.jpg';
+img.imageDisplayMode = ImageDisplayMode.Contain;
+
+img.events.add('load', (event)=>{
+  console.log('complete = ', event.target.complete);
+})
+
+img.parent = ui;
+
+```
