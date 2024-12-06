@@ -282,6 +282,13 @@ export default defineConfig({
           items: [
             { text: '屏幕信息', link: '/ClientNavigator/navigator' },
           ]
+        },  {
+          text: '🔗游戏外部数据请求',
+          link: '/ClientHttp/index',
+          collapsed: false,
+          items: [
+            { text: '请求响应', link: '/ClientHttp/requestAndResponse' },
+          ]
         }, {
           text: '🟰游戏数学',
           collapsed: false,

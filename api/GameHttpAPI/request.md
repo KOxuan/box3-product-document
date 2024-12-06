@@ -3,6 +3,7 @@ import '/style.css'
 </script>
 # 外部请求
 
+
 ## 方法
 
 #### <font id="API" />fetch(<font id="Type">url: [URL](https://developer.mozilla.org/zh-CN/docs/Web/API/URL), options?:Partial<[GameHttpFetchRequestOptions](./request#GameHttpFetchRequestOptions)></font>)<font id="Type">: Promise<[GameHttpFetchResponse](/GameHttpAPI/response)></font>{#fetch}
