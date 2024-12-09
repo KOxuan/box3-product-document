@@ -131,6 +131,7 @@ export default defineConfig({
           { text: 'findChildByName', link: '/difference/findChildByName' },
           { text: 'GameDataStorage', link: '/difference/storage' },
           { text: 'RemoteChannel', link: '/difference/remoteChannel' },
+          { text: 'GameVoxels', link: '/difference/voxel' },
         ]
       },
     ],
