@@ -20,7 +20,7 @@
 
 | 对比项           | **神岛脚本编辑器**                           | **VSCode + ArenaPro**                     |
 |----------------|----------------------------------------------|------------------------------------------------|
-| **编程语言**   | ❌ 仅支持`JavaScript`语言，不支持[`jsDoc`](https://www.jsdoc.com.cn/)注解  | ✅ 支持`JavaScript`、`TypeScript`语言，支持`jsDoc`注解及[`类型声明文件`](https://typescript.p6p.net/typescript-tutorial/d.ts.html)    |
+| **编程语言**   | ❌ 仅支持`JavaScript`语言，支持[`jsDoc`](https://www.jsdoc.com.cn/)注解  | ✅ 支持`JavaScript`、`TypeScript`语言，支持`jsDoc`注解及[`类型声明文件`](https://typescript.p6p.net/typescript-tutorial/d.ts.html)    |
 | **代码错误检测**   | ![](/QQ20241005-154400.png)<br>❌ 缺乏高亮，错误难寻，排查费时费力           | ![](/QQ20241005-154610.png) <br>✅ 全面高亮，即时报错，原因一目了然               |
 | **智能代码提示**   | ![](/QQ20241005-154453.png) <br>❌ 跨文件/自定义属性显示为`any`，属性未知       |![](/QQ20241005-154731.png) <br> ✅ 智能提示，精准识别，代码编写如行云流水       |
 | **多文件管理**     | ![](/QQ20241005-155536.png) <br>❌ 单层文件夹，分类困难，查找繁琐               | ![](/QQ20241005-160504.png) <br>✅ 多层文件夹，并行编辑，跨文件导入轻松自如     |

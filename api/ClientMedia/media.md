@@ -3,6 +3,8 @@ import '/style.css'
 </script>
 # 输入输出
 
+该录音所生成的Blob文件是`audio/wav`格式音频文件。
+
 ## 方法
 
 #### <font id="API" />playAudio(<font id="Type">spec?:Partial<{blob:[Blob](https://developer.mozilla.org/zh-CN/docs/Web/API/Blob)}></font>)<font id="Type">: Promise‹void›</font>{#playAudio}

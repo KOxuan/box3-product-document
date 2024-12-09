@@ -37,6 +37,7 @@ export default defineConfig({
         { text: '导读页', link: '/' },
         { text: '脚本规范说明', link: '/notice/exportAndImport' },
         { text: '事件函数与异步处理机制', link: '/notice/eventDiff' },
+        { text: 'JSDoc注解', link: '/notice/jsdoc' },
       ]
     }, {
       text: '服务端脚本',
