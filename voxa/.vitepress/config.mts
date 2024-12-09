@@ -22,10 +22,9 @@ export default defineConfig({
   base: '/voxa/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/arena.svg',
+    logo: '/voxa.svg',
     nav: [
       { text: 'Arena 用户手册', link: 'https://docs.box3lab.com/arena/' },
-      { text: 'MagicaVoxel 入门手册', link: 'https://zhuanlan.zhihu.com/p/29884021' }
     ],
     search: {
       provider: 'local',
@@ -36,7 +35,7 @@ export default defineConfig({
       items: [
         {
           text: '新手上路', link: '/index',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: '创建第一个模型', link: '/getting-started/create' },
             { text: '白模搭建', link: '/getting-started/models-one' },
@@ -47,7 +46,7 @@ export default defineConfig({
         },
         {
           text: '编辑器界面',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: '通用布局', link: '/editor/universal' },
             {
@@ -88,13 +87,14 @@ export default defineConfig({
                 { text: '部件/骨骼列表', link: '/editor/animation/bone' },
               ]
             },
+            { text: '物理界面布局', link: '/editor/hitbox' },
           ]
         },
         { text: '换肤模式', link: '/editor/skinningMode' },
       ]
     }, {
       text: '模型进阶',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '模型制作进阶', link: '/advanced/models' },
         { text: '模型对性能的影响', link: '/advanced/help' },
