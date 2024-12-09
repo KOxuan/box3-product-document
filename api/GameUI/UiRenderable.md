@@ -11,11 +11,10 @@ import '/style.css'
 ## 属性
 
 #### <font id="API" /><font id="ReadOnly">只读</font>anchor<font id="Type">: [Vec2](/GameUI/maths/Vec2)</font>   {#anchor}
-> 默认值：{}
 
 节点的锚点，用于确定节点的位置。
 
-
+每个坐标轴的范围为0-1。
 
 ---
 
