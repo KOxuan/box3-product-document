@@ -33,7 +33,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '插件简介', link: '/index' },
-          { text: '插件运作原理', link: '/guide/one/APoperatingPrinciple' },
+          { text: '插件运作原理', link: '/guide/one/APdemand' },
           {
             text: 'Ⅰ、前置知识',
             collapsed: true,
