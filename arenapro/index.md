@@ -1,7 +1,7 @@
 # 神岛Arena编辑器专业版
 > 重塑开发，共创未来，重塑神岛开发体验的革命性的VSCode插件。
 
-[![](/arenaproVideo.png)](https://www.bilibili.com/video/BV1sazZYyELP)
+[![](/arenaproVideo.png)](https://www.bilibili.com/video/BV1bskyYXEsk)
 
 **ArenaPro Creator** 旨在攻克神岛Arena编辑器使用上的难题，通过与其生态中强大的VSCode编辑器实现无缝对接，极大地扩展了创作者的创作效率。让创作者能够更专注于代码创作本身，无需为繁琐的编辑操作分心。
 
