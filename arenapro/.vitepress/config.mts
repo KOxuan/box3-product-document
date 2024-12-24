@@ -127,12 +127,20 @@ export default defineConfig({
         text: 'API差异',
         collapsed: false,
         items: [
+          { text: '地图资源路径', link: '/difference/resourcePath' },
           { text: '自定义enity与player', link: '/difference/customizeEntity' },
           { text: 'dialog', link: '/difference/dialog' },
           { text: 'findChildByName', link: '/difference/findChildByName' },
           { text: 'GameDataStorage', link: '/difference/storage' },
           { text: 'RemoteChannel', link: '/difference/remoteChannel' },
           { text: 'GameVoxels', link: '/difference/voxel' },
+        ]
+      },    {
+        text: '特殊权限',
+        collapsed: false,
+        items: [
+          { text: '扩展地图', link: '/authority/expandMap' },
+          { text: '数据空间', link: '/authority/storage' },
         ]
       },
     ],
