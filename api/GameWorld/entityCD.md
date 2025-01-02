@@ -140,6 +140,7 @@ world.onEntityDestroy(({ entity }) => {
 | meshMetalness | number | 实体的金属感 |
 | meshEmissive | number | 实体的发光度 |
 | meshShininess | number | 实体的反光度 |
+| anchorOffset | [GameVector3](/GameVector3/)  | 实体几何中心与锚点的偏移量 |
 | gravity | boolean | 实体是否会下落 |
 | fixed | boolean | 实体的位置是否固定不动 |
 | mass | number | 实体质量 |

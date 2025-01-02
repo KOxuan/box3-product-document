@@ -157,6 +157,6 @@ import '/style.css'
 | Default | 默认字体  |
 | BoldRound | 粗圆体 |
 | CodeNewRomanBold |  Code New Roman Bold  |
-| KelvinchRoman |  Kelvinch-Roman  |
+| ENSerif |  EN-Serif   |
 
 

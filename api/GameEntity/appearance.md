@@ -51,6 +51,12 @@ world.querySelectorAll('*').forEach((e) => {
 :::
 ---
 
+#### <font id="API" />anchorOffset<font id="Type">: [GameVector3](/GameVector3/)</font>{#anchorOffset} 
+
+实体几何中心与锚点的偏移量
+
+
+---
 
 #### <font id="API" />meshOrientation<font id="Type">: [GameQuaternion](/GameQuaternion/)</font>{#meshOrientation} 
 
@@ -204,4 +210,55 @@ npc.customName = "Miss Miao"; // 显示自定义的名称
 | meshFacing | | Z | "X" &#124; "Y" &#124; "Z" | 定义模型在未旋转状态下的参考方向，处理模型设计时未朝向Z轴时的情况：  - 当取X、Z时，定义模型的正方向分别为X、Z轴正方向，上方向为 Y 轴正方向  - 当取Y时，定义模型的正方向为Y轴正方向，上方向为Z轴正方向  - 默认值为Z，即模型设计时朝向Z轴正方向|
 | up | | | GameVector3 | 上向量，默认取 Y 轴正方向 |
 
+---
 
+#### <font id="API" />rotateLocal(<font id="Type">localPosition:[GameVector3](/GameVector3/),axis:"X" | "Y" | "Z",rad:number</font>)<font id="Type">: void</font>{#rotateLocal} 
+
+围绕模型自身坐标系下的某个点进行旋转
+
+**输入参数**
+
+| **参数** | **必填** | **默认值** | **类型** | **说明** |
+| --- | --- | --- | --- | --- |
+| localPosition | 是 | | GameVector3 | 自身坐标系中的位置向量，表示待旋转的点 |
+| axis |是  | Z | "X" &#124; "Y" &#124; "Z" | 指定旋转轴 |
+| rad | 是 | | number | 旋转的角度，以弧度为单位 |
+
+---
+
+#### <font id="API" />scaleLocal(<font id="Type">localPosition:[GameVector3](/GameVector3/),v:[GameVector3](/GameVector3/)</font>)<font id="Type">: void</font>{#scaleLocal} 
+
+参照模型自身坐标系下的某个点进行缩放
+
+**输入参数**
+
+| **参数** | **必填** | **默认值** | **类型** | **说明** |
+| --- | --- | --- | --- | --- |
+| localPosition | 是 | | GameVector3 | 自身坐标系中的位置向量，表示待缩放的点 |
+| v | 是 | | GameVector3 | 缩放向量，表示在x、y、z轴上的缩放因子 |
+
+::: details 点击查看示例代码
+
+```javascript
+const modelScale = world.querySelector('#New-model-s');
+const modelRotation = world.querySelector('#New-model-r');
+
+if (modelScale) {
+    modelScale.showEntityName = true;
+    modelScale.enableInteract = true;
+    modelScale.onInteract(() => {
+        // 以外观框中心为原点进行缩放
+        modelScale.scaleLocal(modelScale.anchorOffset.scale(-1), new GameVector3(0.2, 0.1, 0.3));
+    });
+}
+
+if (modelRotation) {
+    modelRotation.showEntityName = true;
+    modelRotation.enableInteract = true;
+    modelRotation.onInteract(() => {
+        // 以外观框中心为原点进行旋转
+        modelRotation.rotateLocal(modelRotation.anchorOffset.scale(-1), 'X', 30 * Math.PI / 180);
+    });
+}
+```
+:::
