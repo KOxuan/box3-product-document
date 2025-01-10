@@ -7,7 +7,7 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" />playAudio(<font id="Type">spec?:Partial<{blob:[Blob](https://developer.mozilla.org/zh-CN/docs/Web/API/Blob)}></font>)<font id="Type">: Promise‹void›</font>{#playAudio}
+#### <font id="API" />playAudio(<font id="Type">spec?:Partial<{blob:[Blob](https://developer.mozilla.org/zh-CN/docs/Web/API/Blob),gain:number}></font>)<font id="Type">: Promise‹void›</font>{#playAudio}
 
 播放录音后的音频，可以传入指定的音频Blob文件。
 
@@ -16,6 +16,7 @@ import '/style.css'
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | --- | --- | --- | --- | --- |
 | spec.blob |  | | Blob | 音频内容 |
+| spec.gain |  | | number | 音频声音增益 |
 
 ---
 #### <font id="API" />stopPlayAudio()<font id="Type">: void</font>{#stopPlayAudio}
