@@ -168,7 +168,7 @@ export default defineConfig({
           { text: "四大剑客介绍", link: "/engineering/describes" },
           { text: "eslint用法", link: "/engineering/eslint" },
           { text: "prettier用法", link: "/engineering/prettier" },
-          { text: "Husky用法", link: "/engineering/husky" },
+          { text: "husky用法", link: "/engineering/husky" },
         ],
       },
       {
