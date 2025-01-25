@@ -1,42 +1,58 @@
-# dao3Cfg脚手架架构
+# dao3Cfg 脚手架架构
+
 ```plain
 myArenaProject
-├── dao3.config.json       			--岛项目配置文件
-├── package.json				   	--node项目配置文件
-├── package-lock.json			 	--node项目包信息文件
-├── .gitignore			       		--Git忽略特定信息文件
-├── /node_modules/				 	--node项目包文件夹
-├── /shares/						--共享脚本文件夹
-|   └── sharesApp.ts			   	--程序入口
-├── /.vscode/						--vscode配置文件夹
-│   ├── launch.json		            --Debugger配置文件
-│   └── dao3-ap.code-snippets		--神岛代码片段存储文件
-├── /server/						--服务端脚本
-|   ├── tsconfig.json      			--ts配置文件
-|   ├── webpack.config.js   		--webpack配置文件
-|   ├── /.log/             			--打包构建日志
-|   ├── /dist/             			--打包构建文件夹
-|   ├── /src/              			--源代码文件夹
-|   |   └── App.ts			   	    --程序入口
-│   └── /types/					   	--类型提示文件夹
-│       ├── GameEntity.d.ts
-│       ├── GamePlayer.d.ts
-│       └── GameAPI.d.ts            --类型提示
-└── /client/						--客户端脚本
-    ├── tsconfig.json      			--ts配置文件
-    ├── webpack.config.js   		--webpack配置文件
-    ├── /.log/             			--打包构建日志
-    ├── /dist/             			--打包构建文件夹
-    ├── /src/              			--源代码文件夹
-    |   └── clientApp.ts   			--程序入口
-    └── /types/            			--类型提示文件夹
-        └── ClientAPI.d.ts          --类型提示
+├─ .prettierignore
+├─ .prettierrc
+├─ dao3.config.json
+├─ eslint.config.mjs
+├─ package-lock.json
+├─ package.json
+├─ shares
+│  └─ sharesApp.ts
+├─ server
+│  ├─ tsconfig.json
+│  ├─ webpack.config.js
+│  ├─ types
+│  │  ├─ GameAPI.d.ts
+│  │  ├─ GameEntity.d.ts
+│  │  └─ GamePlayer.d.ts
+│  └─ src
+│     └─ App.ts
+├─ client
+│  ├─ tsconfig.json
+│  ├─ webpack.config.js
+│  ├─ types
+│  │  └─ ClientAPI.d.ts
+│  └─ src
+│     └─ clientApp.ts
+├─ .vscode
+│  ├─ dao3-ap.code-snippets
+│  └─ launch.json
+└─ .husky
+   ├─ pre-commit
+   └─ _
+      ├─ applypatch-msg
+      ├─ commit-msg
+      ├─ h
+      ├─ husky.sh
+      ├─ post-applypatch
+      ├─ post-checkout
+      ├─ post-commit
+      ├─ post-merge
+      ├─ post-rewrite
+      ├─ pre-applypatch
+      ├─ pre-auto-gc
+      ├─ pre-commit
+      ├─ pre-merge-commit
+      ├─ pre-push
+      ├─ pre-rebase
+      └─ prepare-commit-msg
+
 ```
 
-
-
 :::danger
-⚠️以下文件**禁止移动/改名**，否则可能会出现不可预知的错误：
+⚠️ 以下文件**禁止移动/改名**，否则可能会出现不可预知的错误：
 
 1. **GameAPI.d.ts**
 2. **ClientAPI.d.ts**
@@ -45,17 +61,20 @@ myArenaProject
 5. **package-lock.json**
 6. **dao3.config.json**
 7. **.gitignore**
-9. **dao3-ap.code-snippets**
-10. **webpack.config.js**
+8. **dao3-ap.code-snippets**
+9. **webpack.config.js**
+10. **.prettierrc**
+11. **.prettierignore**
+12. **eslint.config.mjs**
 
 :::
 
 ::: tip
 ⚠️**重要提示**：以下文件**严禁修改/移动**，因为内置了自动检测更新机制，任何自定义更改都可能导致数据丢失。
 
-请注意，这些文件与Arena脚本编辑器内置的`.d.ts`文件存在差异。AP插件专为TypeScript语言定制了一份`.d.ts`文件，提供了更佳的适配性和代码提示功能。
+请注意，这些文件与 Arena 脚本编辑器内置的`.d.ts`文件存在差异。AP 插件专为 TypeScript 语言定制了一份`.d.ts`文件，提供了更佳的适配性和代码提示功能。
 
 1. **GameAPI.d.ts**
 2. **ClientAPI.d.ts**
-3. **dao3-ap.code-snippets**
+
 :::
