@@ -14,7 +14,10 @@
     "api:preview": "vitepress preview api",
     "arenapro:dev": "vitepress dev arenapro",
     "arenapro:build": "vitepress build arenapro",
-    "arenapro:preview": "vitepress preview arenapro"
+    "arenapro:preview": "vitepress preview arenapro",
+    "minemotion:dev": "vitepress dev minemotion",
+    "minemotion:build": "vitepress build minemotion",
+    "minemotion:preview": "vitepress preview minemotion"
   },
   "dependencies": {
     "axios": "^1.7.7",
