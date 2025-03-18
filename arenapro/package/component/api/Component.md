@@ -30,10 +30,9 @@ import '/style.css'
 
 ---
 
-
 #### <font id="API" />enable<font id="Type">: boolean</font>{#enable}
 
-该组件启用状态
+该组件启用状态。
 
 ## 方法
 
@@ -45,21 +44,27 @@ import '/style.css'
 
 ---
 
-#### <font id="API" />onLoad(<font id="Type">event: () => void </font>)<font id="Type">: void</font>{#onLoad}
+#### <font id="API" />onLoad()<font id="Type">: void</font>{#onLoad}
 
-生命周期，用于在对象初始化时执行逻辑。
+当附加到一个节点上或者其节点第一次激活时候调用。onLoad 总是会在任何 start 方法调用前执行，这能用于安排脚本的初始化顺序。
 
----
-
-#### <font id="API" />start(<font id="Type">event: () => void </font>)<font id="Type">: void</font>{#start}
-
-生命周期，用于在对象初次运行时执行逻辑。
+该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
 
 ---
 
-#### <font id="API" />update(<font id="Type">event: (deltaTime: number) => void </font>)<font id="Type">: void</font>{#update}
+#### <font id="API" />start()<font id="Type">: void</font>{#start}
 
-生命周期，用于在每一帧（30 FPS）更新时执行逻辑。
+如果该组件第一次启用，则在所有组件的 update 之前调用。通常用于需要在所有组件的 onLoad 初始化完毕后执行的逻辑。
+
+该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
+
+---
+
+#### <font id="API" />update(<font id="Type">deltaTime: number</font>)<font id="Type">: void</font>{#update}
+
+如果该组件启用，则每帧（30 FPS）调用 update。
+
+该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
 
 **返回值**
 
@@ -69,18 +74,24 @@ import '/style.css'
 
 ---
 
-#### <font id="API" />onEnable(<font id="Type">event: () => void </font>)<font id="Type">: void</font>{#onEnable}
+#### <font id="API" />onEnable()<font id="Type">: void</font>{#onEnable}
 
-生命周期，当组件被启用时调用。
+当该组件被启用，并且它的节点也激活时。
 
----
-
-#### <font id="API" />onDisable(<font id="Type">event: () => void </font>)<font id="Type">: void</font>{#onDisable}
-
-生命周期， 当组件被禁用时调用。
+该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
 
 ---
 
-#### <font id="API" />onDestroy(<font id="Type">event: () => void </font>)<font id="Type">: void</font>{#onDestroy}
+#### <font id="API" />onDisable()<font id="Type">: void</font>{#onDisable}
 
-生命周期， 当组件被销毁时调用。
+当该组件被禁用或节点变为无效时调用。
+
+该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
+
+---
+
+#### <font id="API" />onDestroy()<font id="Type">: void</font>{#onDestroy}
+
+当该组件被销毁时调用。
+
+该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
