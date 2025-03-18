@@ -115,15 +115,6 @@ export default defineConfig({
               { text: "2.导入JSON", link: "/guide/six/json" },
               { text: "3.改变构建文件名及入口", link: "/guide/six/bulidName" },
               { text: "4.跨项目引用", link: "/guide/six/projectReference" },
-              {
-                text: "5.组件模式",
-                link: "/package/component/index",
-                collapsed: false,
-                items: [
-                  { text: "组件使用", link: "/package/component/parent" },
-                  { text: "生命周期", link: "/package/component/lifecycle" },
-                ],
-              },
             ],
           },
           {
@@ -161,6 +152,16 @@ export default defineConfig({
           { text: "GameVoxels", link: "/difference/voxel" },
         ],
       },
+      {
+        text: "组件模式",
+        collapsed: false,
+        items: [
+          { text: "组件介绍", link: "/package/component/index" },
+          { text: "生命周期", link: "/package/component/lifecycle" },
+          { text: "代码示例", link: "/package/component/example" },
+        ],
+      },
+
       {
         text: "前端工程化",
         collapsed: false,
