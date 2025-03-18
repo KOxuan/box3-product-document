@@ -14,7 +14,7 @@ import { Component, EntityNode } from "@dao3fun/component";
  */
 class SayComponent extends Component<GameEntity> {
   protected start(): void {
-    this.node.entity.say(`欢迎${entity.player.name}`);
+    this.node.entity.say(`欢迎你`);
   }
 }
 
@@ -218,70 +218,101 @@ if (e) {
 }
 ```
 
-## 应用示例
+## 计时器组件示例
 
-以下示例展示了一个更复杂的应用场景：批量创建实体并为每个实体添加具有生命周期管理的组件。
+以下示例展示了如何创建一个计时器组件，可以用于管理游戏中的定时事件。
 
 ```typescript
 import { Component, EntityNode } from "@dao3fun/component";
 
 /**
- * @CaperComponent - 管理游戏实体的跳跃行为
- * 定期使实体进行跳跃，并在总时间达到限制后自我销毁
+ * @TimerComponent - 计时器组件
  */
-class CaperComponent extends Component<GameEntity> {
-  static readonly JUMP_INTERVAL = 2000; // 跳跃间隔时间（毫秒）
-  static readonly TOTAL_TIME_LIMIT = 10000; // 总时间限制（毫秒）
-
-  time = 0;
-  totalTime = 0;
-
-  protected start(): void {
-    console.log(`跳跃组件已挂载到实例${this.node.entity.id ?? "未知实体"}`);
-  }
+class TimerComponent extends Component<GameEntity> {
+  private timeElapsed = 0;
+  private readonly interval = 1000; // 1秒间隔
 
   protected update(deltaTime: number): void {
-    this.time += deltaTime;
-    this.totalTime += deltaTime;
+    this.timeElapsed += deltaTime;
 
-    if (this.time >= CaperComponent.JUMP_INTERVAL) {
-      this.up();
-      this.time = 0;
-    }
-
-    if (this.totalTime >= CaperComponent.TOTAL_TIME_LIMIT) {
-      this.remove();
+    if (this.timeElapsed >= this.interval) {
+      this.timeElapsed = 0;
+      this.onTimerTick();
     }
   }
 
-  protected onDestroy(): void {
-    console.log(`实例${this.node.entity.id ?? "未知实体"}的跳跃组件已销毁`);
-  }
-
-  up() {
-    this.node.entity.velocity.y += getRandomFloat(0, 1.8);
-  }
-
-  remove() {
-    this.node.removeComponent(CaperComponent);
+  private onTimerTick(): void {
+    this.node.entity.say("又过去了1秒！");
   }
 }
 
-function getRandomFloat(min: number, max: number): number {
-  return Math.random() * (max - min) + min;
+const e = world.querySelector("#计时器实体");
+if (e) {
+  const node = new EntityNode(e);
+  node.addComponent(TimerComponent);
+}
+```
+
+## 资源管理组件示例
+
+创建一个管理游戏资源（如分数、生命值等）的组件。
+
+```typescript
+const gameEvents = new EventEmitter();
+
+/**
+ * @ResourceComponent - 资源管理组件
+ */
+class ResourceComponent extends Component<GameEntity> {
+  private health = 100;
+  private score = 0;
+  private coins = 0;
+
+  protected start(): void {
+    gameEvents.on("damage", this.takeDamage, this);
+    gameEvents.on("collect", this.collectItem, this);
+  }
+
+  private takeDamage(amount: number): void {
+    this.health = Math.max(0, this.health - amount);
+    this.node.entity.say(`受到伤害！剩余生命值：${this.health}`);
+
+    if (this.health <= 0) {
+      gameEvents.emit("gameOver", this.score);
+    }
+  }
+
+  private collectItem(type: string, value: number): void {
+    switch (type) {
+      case "coin":
+        this.coins += value;
+        this.score += value * 10;
+        this.node.entity.say(`收集金币！当前分数：${this.score}`);
+        break;
+      case "health":
+        this.health = Math.min(100, this.health + value);
+        this.node.entity.say(`恢复生命值！当前生命值：${this.health}`);
+        break;
+    }
+  }
 }
 
-for (let i = 1; i <= 20; i++) {
-  const e = world.createEntity({
-    mesh: "mesh/光谱太阳能.vb",
-    id: `光谱太阳能${i}号`,
-    meshScale: new GameVector3(0.05, 0.05, 0.05),
-    friction: 1,
-    position: new GameVector3(getRandomFloat(1, 55), 9, getRandomFloat(1, 55)),
-  });
-  if (e) {
-    const node = new EntityNode(e);
-    node.addComponent(CaperComponent);
-  }
+const e = world.querySelector("#实体名称");
+if (e) {
+  const node = new EntityNode(e);
+  node.addComponent(ResourceComponent);
+
+  // 测试资源系统
+  setTimeout(() => {
+    gameEvents.emit("damage", 20);
+  }, 1000);
+
+  setTimeout(() => {
+    gameEvents.emit("collect", "coin", 5);
+  }, 3000);
+
+  setTimeout(() => {
+    gameEvents.emit("collect", "health", 30);
+  }, 5000);
 }
 ```

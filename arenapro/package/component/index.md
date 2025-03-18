@@ -27,8 +27,6 @@ npm install @dao3fun/component
 | **脚本语言** | TypeScript       | C#                   | C++/蓝图          | TypeScript/JavaScript |
 | **生命周期** | onLoad/onDestroy | Awake/OnDestroy      | BeginPlay/EndPlay | onLoad/onDestroy      |
 
-> **架构对比说明**：神岛引擎采用轻量级 ECS 变体架构，在保留经典组件模式优点的同时，通过 EntityNode 实现更灵活的组件挂载机制
-
 ## 神岛引擎组件化模型解析
 
 ### ▋ 节点系统（EntityNode）
@@ -67,7 +65,6 @@ const npcNode = new EntityNode(world.querySelector("#NPC"));
 npcNode
   .addComponent(ModelComponent, {
     path: "mesh/npc.vb",
-    lodLevels: [10, 20, 30], // LOD配置
   })
   .addComponent(RigidBody, {
     mass: 0, // 静态物体
