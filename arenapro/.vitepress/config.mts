@@ -159,6 +159,18 @@ export default defineConfig({
           { text: "组件介绍", link: "/package/component/index" },
           { text: "生命周期", link: "/package/component/lifecycle" },
           { text: "代码示例", link: "/package/component/example" },
+          {
+            text: "API",
+            collapsed: false,
+            items: [
+              {
+                text: "EventEmitter",
+                link: "/package/component/api/EventEmitter",
+              },
+              { text: "EntityNode", link: "/package/component/api/EntityNode" },
+              { text: "Component", link: "/package/component/api/Component" },
+            ],
+          },
         ],
       },
 
