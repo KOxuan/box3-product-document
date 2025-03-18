@@ -116,7 +116,7 @@ class SayComponent extends Component<GameEntity> {
 
   protected onDestroy(): void {
     // 重要：移除事件监听防止内存泄漏
-    this.onPlayerJoinId.cancel();
+    this.onPlayerJoinId?.cancel();
   }
 }
 
@@ -146,9 +146,11 @@ if (e) {
   new EntityNode(e)
     .addComponent(SayComponent) // 添加广播能力
     .addComponent(CaperComponent, {
-      // 配置跳跃参数
-      baseForce: 1.2,
-      randomRange: 0.8,
+      config: {
+        // 配置跳跃参数
+        baseForce: 1.2,
+        randomRange: 0.8,
+      },
     });
 }
 ```
