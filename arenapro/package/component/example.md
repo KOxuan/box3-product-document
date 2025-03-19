@@ -85,9 +85,14 @@ import { Component, EntityNode } from "@dao3fun/component";
  */
 class SayComponent extends Component<GameEntity> {
   protected start(): void {
-    world.onPlayerJoin(({ entity }) => {
-      this.node.entity.say(`欢迎${entity.player.name}加入游戏`);
-    });
+    GameWorldEvent.on(world.onPlayerJoin, this.onWechat, this);
+  }
+  protected onDestroy(): void {
+    GameWorldEvent.off(world.onPlayerJoin, this.onWechat, this);
+  }
+  private onWechat({ entity }: GamePlayerEntityEvent): void {
+    // 让游戏中的实体说欢迎词，欢迎新加入游戏的玩家
+    this.node.entity.say(`欢迎${entity.player.name}加入游戏`);
   }
 }
 
@@ -150,16 +155,14 @@ if (e) {
 不同节点上的组件可以通过全局事件系统进行通信，实现跨节点的消息传递。
 
 ```typescript
-import { Component, EntityNode, EventEmitter } from "@dao3fun/component";
-
-const eventEmitter = new EventEmitter();
+import { Component, EntityNode, Emitter } from "@dao3fun/component";
 
 /**
  * @SayComponent - 实体广播组件
  */
 class SayComponent extends Component<GameEntity> {
   protected start(): void {
-    eventEmitter.on("say", this.log, this);
+    Emitter.on("say", this.log, this);
   }
   protected log(text: string): void {
     console.log(text);
@@ -171,7 +174,7 @@ class SayComponent extends Component<GameEntity> {
  */
 class SayMgrComponent extends Component<GameEntity> {
   protected start(): void {
-    eventEmitter.emit("say", "hello world，来自SayMgrComponent");
+    Emitter.emit("say", "hello world，来自SayMgrComponent");
   }
 }
 

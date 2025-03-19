@@ -6,7 +6,7 @@ import '/style.css'
 
 该扩展节点继承至 [EventEmitter](./EventEmitter)。
 
-#### <font id="API" />EntityNode<font id="Type">‹T = any›</font>(<font id="Type">enity:T,isEnable?:boolean</font>)<font id="Type">: EntityNode</font>{#EntityNode}
+#### <font id="API" />EntityNode<font id="Type">‹T = any›</font>(<font id="Type">entity:T,isEnable?:boolean</font>)<font id="Type">: EntityNode</font>{#EntityNode}
 
 实例化一个扩展节点类
 
@@ -16,7 +16,7 @@ import '/style.css'
 
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_**                                                     |
 | ---------- | ---------- | ------------ | ---------- | -------------------------------------------------------------- |
-| enity      | 是         |              | T          | 游戏实体，可以是任意实体，例如角色、道具、ui 等                |
+| entity     | 是         |              | T          | 游戏实体，可以是任意实体，例如角色、道具、ui 等                |
 | isEnable   |            | true         | boolean    | 扩展节点是否启用，启用时每帧刷新，且会影响节点下的组件启用状态 |
 
 **返回值**
@@ -27,7 +27,13 @@ import '/style.css'
 
 ## 属性
 
-#### <font id="API" />entity<font id="Type">: entity‹T›</font> {#entity}
+#### <font id="API" /><font id="ReadOnly" >只读</font>components<font id="Type">: Map‹string, Component‹T››</font> {#components}
+
+获取该节点下所有组件实例。
+
+---
+
+#### <font id="API" /><font id="ReadOnly" >只读</font>entity<font id="Type">: entity‹T›</font> {#entity}
 
 获取关联的游戏实体。
 
@@ -36,18 +42,6 @@ import '/style.css'
 #### <font id="API" />enable<font id="Type">: boolean</font>{#enable}
 
 节点启用状态，会影响每帧刷新和节点下的组件启用状态。
-
-## 静态方法
-
-#### <font id="API" />find<font id="Type">‹U = any›</font>(<font id="Type">entity:U</font>)<font id="Type">: EntityNode‹U› | undefined</font>{#find}
-
-根据 entity 从全局注册表中获取一个已注册的扩展节点实例。
-
-**输入参数**
-
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| ---------- | ---------- | ------------ | ---------- | ---------- |
-| entity     | 是         |              | U          | 游戏实体   |
 
 ## 方法
 
@@ -113,6 +107,18 @@ import '/style.css'
 
 ---
 
-#### <font id="API" />removeNode()<font id="Type">: void</font>{#removeNode}
+#### <font id="API" />destroy()<font id="Type">: void</font>{#destroy}
 
 移除节点及其所有组件，并清理相关资源。
+
+## 函数
+
+#### <font id="API" />find<font id="Type">‹U = any›</font>(<font id="Type">entity:U</font>)<font id="Type">: EntityNode‹U› | undefined</font>{#find}
+
+根据 entity 从全局注册表中获取一个已注册的扩展节点实例。
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| ---------- | ---------- | ------------ | ---------- | ---------- |
+| entity     | 是         |              | U          | 游戏实体   |
