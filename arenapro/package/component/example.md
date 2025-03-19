@@ -9,11 +9,12 @@
 以下示例展示了如何创建一个简单的广播组件，挂载后指定实体会发送欢迎消息。
 
 ```typescript
-import { Component, EntityNode } from "@dao3fun/component";
+import { Component, EntityNode, apclass } from "@dao3fun/component";
 
 /**
  * @SayComponent - 实体广播组件
  */
+@apclass
 class SayComponent extends Component<GameEntity> {
   protected start(): void {
     this.node.entity.say(`欢迎你`);
@@ -33,11 +34,12 @@ if (e) {
 组件可以通过构造函数的参数进行初始化，实现组件的配置化。以下示例展示了如何通过配置参数初始化组件。
 
 ```typescript
-import { Component, EntityNode } from "@dao3fun/component";
+import { Component, EntityNode, apclass } from "@dao3fun/component";
 
 /**
  * @SayComponent - 实体广播组件
  */
+@apclass
 class SayComponent extends Component<GameEntity> {
   say = "ap";
   protected start(): void {
@@ -78,11 +80,12 @@ if (e && e2) {
 一个实体可以挂载多个组件，每个组件负责不同的功能。以下示例展示了如何同时挂载广播和跳跃组件。
 
 ```typescript
-import { Component, EntityNode } from "@dao3fun/component";
+import { Component, EntityNode, apclass } from "@dao3fun/component";
 
 /**
  * @SayComponent - 实体广播组件
  */
+@apclass
 class SayComponent extends Component<GameEntity> {
   protected start(): void {
     GameWorldEvent.on(world.onPlayerJoin, this.onWechat, this);
@@ -99,6 +102,7 @@ class SayComponent extends Component<GameEntity> {
 /**
  * @CaperComponent - 物理跳跃组件
  */
+@apclass
 class CaperComponent extends Component<GameEntity> {
   protected start(): void {
     this.node.entity.velocity.y++;
@@ -119,10 +123,11 @@ if (e) {
 同一节点上的不同组件可以通过事件系统进行通信，实现组件间的解耦合。
 
 ```typescript
-import { Component, EntityNode } from "@dao3fun/component";
+import { Component, EntityNode, apclass } from "@dao3fun/component";
 /**
  * @SayComponent - 实体广播组件
  */
+@apclass
 class SayComponent extends Component<GameEntity> {
   protected start(): void {
     this.node.on("say", this.log, this);
@@ -135,6 +140,7 @@ class SayComponent extends Component<GameEntity> {
 /**
  * @SayMgrComponent - 实体广播管理组件
  */
+@apclass
 class SayMgrComponent extends Component<GameEntity> {
   protected start(): void {
     this.node.emit("say", "hello world，来自SayMgrComponent", this);
@@ -155,11 +161,12 @@ if (e) {
 不同节点上的组件可以通过全局事件系统进行通信，实现跨节点的消息传递。
 
 ```typescript
-import { Component, EntityNode, Emitter } from "@dao3fun/component";
+import { Component, EntityNode, Emitter, apclass } from "@dao3fun/component";
 
 /**
  * @SayComponent - 实体广播组件
  */
+@apclass
 class SayComponent extends Component<GameEntity> {
   protected start(): void {
     Emitter.on("say", this.log, this);
@@ -172,6 +179,7 @@ class SayComponent extends Component<GameEntity> {
 /**
  * @SayMgrComponent - 实体广播管理组件
  */
+@apclass
 class SayMgrComponent extends Component<GameEntity> {
   protected start(): void {
     Emitter.emit("say", "hello world，来自SayMgrComponent");
@@ -195,11 +203,12 @@ if (e && e2) {
 通过组件继承，可以复用父组件的功能并扩展新的行为。以下示例展示了如何通过继承实现功能扩展。
 
 ```typescript
-import { Component, EntityNode } from "@dao3fun/component";
+import { Component, EntityNode, apclass } from "@dao3fun/component";
 
 /**
  * @CaperComponent - 物理跳跃组件
  */
+@apclass
 class CaperComponent extends Component<GameEntity> {
   jump() {
     this.node.entity.velocity.y++;
@@ -209,6 +218,7 @@ class CaperComponent extends Component<GameEntity> {
 /**
  * @SayComponent - 实体广播跳跃组件
  */
+@apclass
 class SayComponent extends CaperComponent {
   protected start(): void {
     this.jump();
@@ -228,11 +238,12 @@ if (e) {
 以下示例展示了如何创建一个计时器组件，可以用于管理游戏中的定时事件。
 
 ```typescript
-import { Component, EntityNode } from "@dao3fun/component";
+import { Component, EntityNode, apclass } from "@dao3fun/component";
 
 /**
  * @TimerComponent - 计时器组件
  */
+@apclass
 class TimerComponent extends Component<GameEntity> {
   private timeElapsed = 0;
   private readonly interval = 1000; // 1秒间隔
@@ -263,19 +274,20 @@ if (e) {
 创建一个管理游戏资源（如分数、生命值等）的组件。
 
 ```typescript
-const gameEvents = new EventEmitter();
+import { Component, EntityNode, apclass } from "@dao3fun/component";
 
 /**
  * @ResourceComponent - 资源管理组件
  */
+@apclass
 class ResourceComponent extends Component<GameEntity> {
   private health = 100;
   private score = 0;
   private coins = 0;
 
   protected start(): void {
-    gameEvents.on("damage", this.takeDamage, this);
-    gameEvents.on("collect", this.collectItem, this);
+    Emitter.on("damage", this.takeDamage, this);
+    Emitter.on("collect", this.collectItem, this);
   }
 
   private takeDamage(amount: number): void {
@@ -283,7 +295,7 @@ class ResourceComponent extends Component<GameEntity> {
     this.node.entity.say(`受到伤害！剩余生命值：${this.health}`);
 
     if (this.health <= 0) {
-      gameEvents.emit("gameOver", this.score);
+      Emitter.emit("gameOver", this.score);
     }
   }
 
@@ -309,15 +321,15 @@ if (e) {
 
   // 测试资源系统
   setTimeout(() => {
-    gameEvents.emit("damage", 20);
+    Emitter.emit("damage", 20);
   }, 1000);
 
   setTimeout(() => {
-    gameEvents.emit("collect", "coin", 5);
+    Emitter.emit("collect", "coin", 5);
   }, 3000);
 
   setTimeout(() => {
-    gameEvents.emit("collect", "health", 30);
+    Emitter.emit("collect", "health", 30);
   }, 5000);
 }
 ```

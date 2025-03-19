@@ -45,9 +45,29 @@ import '/style.css'
 
 ## 方法
 
+#### <font id="API" />addComponent(<font id="Type">componentName: string, object?: Record‹string, any› , isEnable?: boolean</font>)<font id="Type">: this</font>{#addComponentName}
+
+向该节点增加指定类型的组件。
+
+子组件类须加上@apclass 修饰器。否则无法获取组件实例。
+
+【使用组件名】
+
+**输入参数**
+
+| **_参数_**    | **_必填_** | **_默认值_** | **_类型_**          | **_说明_**                     |
+| ------------- | ---------- | ------------ | ------------------- | ------------------------------ |
+| componentName | 是         |              | string              | 组件名                         |
+| object        |            | {}           | Record<string, any> | 组件初始化属性，默认不修改属性 |
+| isEnable      |            | true         | boolean             | 组件是否启用，默认启用         |
+
+---
+
 #### <font id="API" />addComponent<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U, object?: Partial‹Omit‹U, keyof Component‹T››› , isEnable?: boolean</font>)<font id="Type">: this</font>{#addComponent}
 
 向该节点增加指定类型的组件。
+
+【使用组件构造函数】
 
 **输入参数**
 
@@ -59,9 +79,25 @@ import '/style.css'
 
 ---
 
+#### <font id="API" />getComponent(<font id="Type">componentName: string</font>)<font id="Type">: U | undefined</font>{#getComponentName}
+
+获取该节点下指定类型的组件。
+
+【使用组件名】
+
+**输入参数**
+
+| **_参数_**    | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| ------------- | ---------- | ------------ | ---------- | ---------- |
+| componentName | 是         |              | string     | 组件名     |
+
+---
+
 #### <font id="API" />getComponent<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U</font>)<font id="Type">: U | undefined</font>{#getComponent}
 
 获取该节点下指定类型的组件。
+
+【使用组件构造函数】
 
 **输入参数**
 
@@ -77,21 +113,25 @@ import '/style.css'
 
 ---
 
-#### <font id="API" />hasComponent<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U</font>)<font id="Type">: boolean</font>{#hasComponent}
+#### <font id="API" />removeComponent(<font id="Type">componentName: string</font>)<font id="Type">: boolean</font>{#removeComponentnName}
 
-检查是节点否存在指定类型的组件。
+移除节点下指定类型的组件。
+
+【使用组件名】
 
 **输入参数**
 
-| **_参数_**           | **_必填_** | **_默认值_** | **_类型_**                | **_说明_**   |
-| -------------------- | ---------- | ------------ | ------------------------- | ------------ |
-| componentConstructor | 是         |              | new (...args: any[]) => U | 组件构造函数 |
+| **_参数_**    | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| ------------- | ---------- | ------------ | ---------- | ---------- |
+| componentName | 是         |              | string     | 组件名     |
 
 ---
 
 #### <font id="API" />removeComponent<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U</font>)<font id="Type">: boolean</font>{#removeComponent}
 
 移除节点下指定类型的组件。
+
+【使用组件构造函数】
 
 **输入参数**
 

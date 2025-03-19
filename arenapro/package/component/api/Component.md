@@ -95,3 +95,9 @@ import '/style.css'
 当该组件被销毁时调用。
 
 该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
+
+## 修饰器函数
+
+#### <font id="API" />apclass<font id="Type">‹T extends { new (...args: any[]): Component }›</font>(<font id="Type">constructor:T</font>)<font id="Type">: void</font>{#apclass}
+
+该装饰器函数的目的在于确保传入的构造函数是 Component 类的子类，并将自动注册到 registryComponent 中，从而们可以直接使用类名来注册组件。
