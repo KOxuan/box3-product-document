@@ -9,14 +9,15 @@
 以下示例展示了如何创建一个简单的广播组件，挂载后指定实体会发送欢迎消息。
 
 ```typescript
-import { Component, EntityNode, apclass } from "@dao3fun/component";
+import { Component, EntityNode, _decorator } from "@dao3fun/component";
+const { apclass } = _decorator;
 
 /**
  * @SayComponent - 实体广播组件
  */
 @apclass
 class SayComponent extends Component<GameEntity> {
-  protected start(): void {
+  start(): void {
     this.node.entity.say(`欢迎你`);
   }
 }
@@ -34,15 +35,15 @@ if (e) {
 组件可以通过构造函数的参数进行初始化，实现组件的配置化。以下示例展示了如何通过配置参数初始化组件。
 
 ```typescript
-import { Component, EntityNode, apclass } from "@dao3fun/component";
-
+import { Component, EntityNode, _decorator } from "@dao3fun/component";
+const { apclass } = _decorator;
 /**
  * @SayComponent - 实体广播组件
  */
 @apclass
 class SayComponent extends Component<GameEntity> {
   say = "ap";
-  protected start(): void {
+  start(): void {
     console.log("SayComponent 说：", this.say);
   }
 }
@@ -55,6 +56,42 @@ if (e) {
     say: "hello",
   });
 }
+```
+
+## 组件性能事件监听
+
+以下示例展示了如何全局监听组件的性能事件，例如帧率过低。
+
+```typescript
+import { Component, EntityNode, _decorator } from "@dao3fun/component";
+const { apclass } = _decorator;
+
+/**
+ * @SayComponent - 实体广播组件
+ */
+class SayComponent extends Component<GameEntity> {
+  start(): void {
+    this.node.entity.say(`欢迎你`);
+  }
+  async update(deltaTime: number): Promise<void> {
+    console.log("update");
+    await sleep(1000);
+  }
+}
+
+const e = world.querySelector("#实体名称");
+
+if (e) {
+  const node = new EntityNode(e);
+  node.addComponent(SayComponent);
+}
+
+// 注册全局性能警告回调
+EntityNode.onPerformanceWarning(({ entityNode, component, currentFPS }) => {
+  console.warn(
+    `实体 ${entityNode.entity.id} 的组件${component.constructor.name}帧率过低: ${currentFPS}`
+  );
+});
 ```
 
 ## 节点实例获取
@@ -80,17 +117,18 @@ if (e && e2) {
 一个实体可以挂载多个组件，每个组件负责不同的功能。以下示例展示了如何同时挂载广播和跳跃组件。
 
 ```typescript
-import { Component, EntityNode, apclass } from "@dao3fun/component";
+import { Component, EntityNode, _decorator } from "@dao3fun/component";
+const { apclass } = _decorator;
 
 /**
  * @SayComponent - 实体广播组件
  */
 @apclass
 class SayComponent extends Component<GameEntity> {
-  protected start(): void {
+  start(): void {
     GameWorldEvent.on(world.onPlayerJoin, this.onWechat, this);
   }
-  protected onDestroy(): void {
+  onDestroy(): void {
     GameWorldEvent.off(world.onPlayerJoin, this.onWechat, this);
   }
   private onWechat({ entity }: GamePlayerEntityEvent): void {
@@ -123,13 +161,15 @@ if (e) {
 同一节点上的不同组件可以通过事件系统进行通信，实现组件间的解耦合。
 
 ```typescript
-import { Component, EntityNode, apclass } from "@dao3fun/component";
+import { Component, EntityNode, _decorator } from "@dao3fun/component";
+const { apclass } = _decorator;
+
 /**
  * @SayComponent - 实体广播组件
  */
 @apclass
 class SayComponent extends Component<GameEntity> {
-  protected start(): void {
+  start(): void {
     this.node.on("say", this.log, this);
   }
   protected log(text: string): void {
@@ -142,7 +182,7 @@ class SayComponent extends Component<GameEntity> {
  */
 @apclass
 class SayMgrComponent extends Component<GameEntity> {
-  protected start(): void {
+  start(): void {
     this.node.emit("say", "hello world，来自SayMgrComponent", this);
   }
 }
@@ -161,14 +201,15 @@ if (e) {
 不同节点上的组件可以通过全局事件系统进行通信，实现跨节点的消息传递。
 
 ```typescript
-import { Component, EntityNode, Emitter, apclass } from "@dao3fun/component";
+import { Component, EntityNode, Emitter, _decorator } from "@dao3fun/component";
+const { apclass } = _decorator;
 
 /**
  * @SayComponent - 实体广播组件
  */
 @apclass
 class SayComponent extends Component<GameEntity> {
-  protected start(): void {
+  start(): void {
     Emitter.on("say", this.log, this);
   }
   protected log(text: string): void {
@@ -181,7 +222,7 @@ class SayComponent extends Component<GameEntity> {
  */
 @apclass
 class SayMgrComponent extends Component<GameEntity> {
-  protected start(): void {
+  start(): void {
     Emitter.emit("say", "hello world，来自SayMgrComponent");
   }
 }
@@ -203,7 +244,8 @@ if (e && e2) {
 通过组件继承，可以复用父组件的功能并扩展新的行为。以下示例展示了如何通过继承实现功能扩展。
 
 ```typescript
-import { Component, EntityNode, apclass } from "@dao3fun/component";
+import { Component, EntityNode, _decorator } from "@dao3fun/component";
+const { apclass } = _decorator;
 
 /**
  * @CaperComponent - 物理跳跃组件
@@ -220,7 +262,7 @@ class CaperComponent extends Component<GameEntity> {
  */
 @apclass
 class SayComponent extends CaperComponent {
-  protected start(): void {
+  start(): void {
     this.jump();
   }
 }
@@ -238,7 +280,8 @@ if (e) {
 以下示例展示了如何创建一个计时器组件，可以用于管理游戏中的定时事件。
 
 ```typescript
-import { Component, EntityNode, apclass } from "@dao3fun/component";
+import { Component, EntityNode, _decorator } from "@dao3fun/component";
+const { apclass } = _decorator;
 
 /**
  * @TimerComponent - 计时器组件
@@ -248,7 +291,7 @@ class TimerComponent extends Component<GameEntity> {
   private timeElapsed = 0;
   private readonly interval = 1000; // 1秒间隔
 
-  protected update(deltaTime: number): void {
+  update(deltaTime: number): void {
     this.timeElapsed += deltaTime;
 
     if (this.timeElapsed >= this.interval) {
@@ -274,7 +317,8 @@ if (e) {
 创建一个管理游戏资源（如分数、生命值等）的组件。
 
 ```typescript
-import { Component, EntityNode, apclass } from "@dao3fun/component";
+import { Component, EntityNode, _decorator } from "@dao3fun/component";
+const { apclass } = _decorator;
 
 /**
  * @ResourceComponent - 资源管理组件
@@ -285,7 +329,7 @@ class ResourceComponent extends Component<GameEntity> {
   private score = 0;
   private coins = 0;
 
-  protected start(): void {
+  start(): void {
     Emitter.on("damage", this.takeDamage, this);
     Emitter.on("collect", this.collectItem, this);
   }

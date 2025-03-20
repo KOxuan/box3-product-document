@@ -89,7 +89,7 @@ export class EventEmitter extends BaseEventEmitter<string>;
  * });
  * ```
  */
-export const GameWorldEvent = new GameEventClass<GameEventChannel<any>>(world);
+export const GameWorldEvent = new GameEvent<GameEventChannel<any>>(world);
 ````
 
 ---
@@ -174,7 +174,7 @@ GameEventClass 类下无此方法。
 | **_参数_**       | **_必填_** | **_默认值_** | **_类型_** | **_说明_**                                     |
 | ---------------- | ---------- | ------------ | ---------- | ---------------------------------------------- |
 | IEvent.type      | 是         |              | string     | 事件类型，用于标识事件的种类                   |
-| target           |            | this         | any        | 事件目标，可选属性，表示触发该事件的元素或对象 |
+| IEvent.target    |            | this         | any        | 事件目标，可选属性，表示触发该事件的元素或对象 |
 | [x: string]: any |            |              | object     | 其他任意值                                     |
 
 ---

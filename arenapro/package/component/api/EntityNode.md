@@ -27,6 +27,12 @@ import '/style.css'
 
 ## 属性
 
+#### <font id="API" /><font id="ReadOnly" >只读</font>uuid<font id="Type">: string</font> {#uuid}
+
+获取该节点的 uuid。
+
+---
+
 #### <font id="API" /><font id="ReadOnly" >只读</font>components<font id="Type">: Map‹string, Component‹T››</font> {#components}
 
 获取该节点下所有组件实例。
@@ -42,6 +48,18 @@ import '/style.css'
 #### <font id="API" />enable<font id="Type">: boolean</font>{#enable}
 
 节点启用状态，会影响每帧刷新和节点下的组件启用状态。
+
+## 静态方法
+
+#### <font id="API" />onPerformanceWarning(<font id="Type">event: (event: IonPerformanceData) => void</font>)<font id="Type">: void</font>{#onPerformanceWarning}
+
+设置全局组件的性能警告回调。
+
+**输入参数**
+
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_**                          | **_说明_** |
+| ---------- | ---------- | ------------ | ----------------------------------- | ---------- |
+| event      | 是         |              | (event: IonPerformanceData) => void | 回调方法   |
 
 ## 方法
 
@@ -96,6 +114,34 @@ import '/style.css'
 #### <font id="API" />getComponent<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U</font>)<font id="Type">: U | undefined</font>{#getComponent}
 
 获取该节点下指定类型的组件。
+
+【使用组件构造函数】
+
+**输入参数**
+
+| **_参数_**           | **_必填_** | **_默认值_** | **_类型_**                | **_说明_**   |
+| -------------------- | ---------- | ------------ | ------------------------- | ------------ |
+| componentConstructor | 是         |              | new (...args: any[]) => U | 组件构造函数 |
+
+---
+
+#### <font id="API" />getComponentPerformance(<font id="Type">componentName: string</font>)<font id="Type">: IBasePerformanceData | null</font>{#getComponentPerformanceName}
+
+获取该节点下指定的组件性能数据。
+
+【使用组件名】
+
+**输入参数**
+
+| **_参数_**    | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
+| ------------- | ---------- | ------------ | ---------- | ---------- |
+| componentName | 是         |              | string     | 组件名     |
+
+---
+
+#### <font id="API" />getComponentPerformance<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U</font>)<font id="Type">: IBasePerformanceData | null</font>{#getComponentPerformance}
+
+获取该节点下指定的组件性能数据。
 
 【使用组件构造函数】
 
