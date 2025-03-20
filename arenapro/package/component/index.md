@@ -12,6 +12,21 @@
 - 组件(Component)就像是不同功能的积木块，每个都有特定功能
 - EntityNode 就像是把积木块组装在一起的说明书，指导如何组合
 
+## 安装组件库
+
+### 使用 ArenaPro 插件安装
+
+1. 在 VScode 编辑器中，按下`Ctrl + Shift + P`打开命令面板。
+2. 搜索"ArenaPro"并运行`ArenaPro: 查看神岛NPM包`命令。
+3. 在弹出的输入框中输入`component`进行搜索。
+4. 点击`@dao3fun/component`，然后在左下角弹窗中点击"确认安装"，等待安装完成。
+
+### 使用 npm 安装
+
+```bash
+npm install @dao3fun/component
+```
+
 ## 入门：基础用法
 
 ### 1. 创建实体节点
