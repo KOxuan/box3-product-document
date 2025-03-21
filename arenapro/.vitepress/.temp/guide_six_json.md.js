@@ -1,0 +1,26 @@
+import { ssrRenderAttrs, ssrRenderAttr, ssrRenderStyle } from "vue/server-renderer";
+import { useSSRContext } from "vue";
+import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
+const _imports_0 = "/arenapro/json1.webp";
+const _imports_1 = "/arenapro/json4.webp";
+const _imports_2 = "/arenapro/json5.webp";
+const _imports_3 = "/arenapro/json8.webp";
+const _imports_4 = "/arenapro/json9.webp";
+const _imports_5 = "/arenapro/json10.webp";
+const _imports_6 = "/arenapro/json11.webp";
+const __pageData = JSON.parse('{"title":"导入JSON文件至TypeScript项目","description":"","frontmatter":{},"headers":[],"relativePath":"guide/six/json.md","filePath":"guide/six/json.md","lastUpdated":1733191299000}');
+const _sfc_main = { name: "guide/six/json.md" };
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="导入json文件至typescript项目" tabindex="-1">导入JSON文件至TypeScript项目 <a class="header-anchor" href="#导入json文件至typescript项目" aria-label="Permalink to &quot;导入JSON文件至TypeScript项目&quot;">​</a></h1><p>在TypeScript项目中，导入JSON文件是一项非常实用的功能，特别是在处理配置数据或游戏关卡数据时。以下是一个详细的步骤指南，教你如何从Excel表格开始，最终将JSON文件导入到TypeScript文件中并在项目中使用。</p><h2 id="第一步-excel转json" tabindex="-1">第一步：Excel转JSON <a class="header-anchor" href="#第一步-excel转json" aria-label="Permalink to &quot;第一步：Excel转JSON&quot;">​</a></h2><p>如果你的数据最初是以Excel表格的形式存在的，那么你需要先将其转换为JSON格式。以下是具体步骤：</p><ol><li><p><strong>准备Excel表格</strong>：确保你的Excel表格数据已经整理好，每一列对应一个数据字段。</p></li><li><p><strong>在线转换工具</strong>：访问<a href="https://www.lddgo.net/string/excel-to-json" target="_blank" rel="noreferrer">在线Excel转JSON工具</a>，上传你的Excel文件，并选择合适的转换选项。</p></li><li><p><strong>保存JSON文件</strong>：转换完成后，将生成的JSON文件保存到本地。</p></li></ol><p><img${ssrRenderAttr("src", _imports_0)} alt="Excel转JSON步骤图示"></p><h2 id="第二步-在typescript中导入json" tabindex="-1">第二步：在TypeScript中导入JSON <a class="header-anchor" href="#第二步-在typescript中导入json" aria-label="Permalink to &quot;第二步：在TypeScript中导入JSON&quot;">​</a></h2><ol><li><p><strong>查看JSON文件内容</strong>：打开你刚才保存的JSON文件，确保其内容正确无误。</p></li><li><p><strong>导入JSON文件</strong>：在你的TypeScript文件中（例如<code>App.ts</code>），使用<code>import</code>语句导入这个JSON文件。由于JSON文件默认会被TypeScript当作模块来处理，因此你需要确保它的路径正确。</p><div class="language-typescript vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "--shiki-light": "#D73A49", "--shiki-dark": "#F97583" })}">import</span><span style="${ssrRenderStyle({ "--shiki-light": "#24292E", "--shiki-dark": "#E1E4E8" })}"> jsonData </span><span style="${ssrRenderStyle({ "--shiki-light": "#D73A49", "--shiki-dark": "#F97583" })}">from</span><span style="${ssrRenderStyle({ "--shiki-light": "#032F62", "--shiki-dark": "#9ECBFF" })}"> &#39;./path/to/your/jsonfile.json&#39;</span><span style="${ssrRenderStyle({ "--shiki-light": "#24292E", "--shiki-dark": "#E1E4E8" })}">;</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div></li><li><p><strong>使用JSON数据</strong>：现在，你可以在你的TypeScript代码中使用这个JSON数据了。例如，你可以遍历数组、访问对象的属性等。</p></li></ol><p><img${ssrRenderAttr("src", _imports_1)} alt="在TypeScript中导入JSON文件图示"></p><ol start="4"><li><strong>编译并查看效果</strong>：编译你的TypeScript代码，并在你的项目（如神岛地图）中查看效果。</li></ol><p><img${ssrRenderAttr("src", _imports_2)} alt="编译后查看效果图示"></p><h2 id="第三步-自定义json格式并批量转换" tabindex="-1">第三步：自定义JSON格式并批量转换 <a class="header-anchor" href="#第三步-自定义json格式并批量转换" aria-label="Permalink to &quot;第三步：自定义JSON格式并批量转换&quot;">​</a></h2><p>如果你需要自定义JSON文件的格式，比如为游戏关卡配置特定的数据结构，你可以使用Python脚本来帮助你完成这个任务。</p><ol><li><p><strong>设计数据结构</strong>：首先，你需要设计一个符合你需求的JSON数据结构。例如，为《单词派对》地图设计一个关卡配置格式。</p></li><li><p><strong>准备Excel表格</strong>：根据设计的数据结构，准备一个新的Excel表格，并填入相应的数据。</p></li><li><p><strong>在线转换并保存</strong>：再次使用<a href="https://www.lddgo.net/string/excel-to-json" target="_blank" rel="noreferrer">在线Excel转JSON工具</a>将Excel表格转换为JSON文件，并保存到本地。</p></li><li><p><strong>编写Python脚本</strong>：编写一个Python脚本来读取这个JSON文件，并将其转换为你需要的格式。你可以使用Python的内置JSON库来处理这个任务。</p></li></ol><p><img${ssrRenderAttr("src", _imports_3)} alt="Python脚本批量转换图示"></p><ol start="5"><li><strong>运行Python脚本</strong>：运行你的Python脚本，生成最终的JSON文件。</li></ol><p><img${ssrRenderAttr("src", _imports_4)} alt="在TypeScript中调用单词数据图示"></p><ol start="6"><li><strong>在TypeScript中使用</strong>：现在，你可以在你的TypeScript代码中导入并使用这个自定义格式的JSON数据了。</li></ol><p><img${ssrRenderAttr("src", _imports_5)} alt="在TypeScript中调用单词数据图示"></p><ol start="7"><li><strong>打包并运行</strong>：将你的TypeScript代码打包成JavaScript文件，并在神岛地图中运行，以查看最终效果。</li></ol><p><img${ssrRenderAttr("src", _imports_6)} alt="打包成JavaScript文件并在神岛地图中运行图示"></p><p>通过以上步骤，你可以轻松地将Excel表格数据转换为JSON文件，并在TypeScript项目中导入和使用这些数据。这对于处理复杂的配置数据或游戏关卡数据来说非常有用。</p></div>`);
+}
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("guide/six/json.md");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const json = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
+export {
+  __pageData,
+  json as default
+};

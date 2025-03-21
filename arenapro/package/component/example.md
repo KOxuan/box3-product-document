@@ -15,7 +15,7 @@ const { apclass } = _decorator;
 /**
  * @SayComponent - 实体广播组件
  */
-@apclass
+@apclass("SayComponent")
 class SayComponent extends Component<GameEntity> {
   start(): void {
     this.node.entity.say(`欢迎你`);
@@ -40,7 +40,7 @@ const { apclass } = _decorator;
 /**
  * @SayComponent - 实体广播组件
  */
-@apclass
+@apclass("SayComponent")
 class SayComponent extends Component<GameEntity> {
   say = "ap";
   start(): void {
@@ -69,6 +69,7 @@ const { apclass } = _decorator;
 /**
  * @SayComponent - 实体广播组件
  */
+@apclass("SayComponent")
 class SayComponent extends Component<GameEntity> {
   start(): void {
     this.node.entity.say(`欢迎你`);
@@ -85,6 +86,9 @@ if (e) {
   const node = new EntityNode(e);
   node.addComponent(SayComponent);
 }
+
+// 开启全局性能监控
+EntityNode.isMonitoringEnabled = true;
 
 // 注册全局性能警告回调
 EntityNode.onPerformanceWarning(({ entityNode, component, currentFPS }) => {
@@ -123,7 +127,7 @@ const { apclass } = _decorator;
 /**
  * @SayComponent - 实体广播组件
  */
-@apclass
+@apclass("SayComponent")
 class SayComponent extends Component<GameEntity> {
   start(): void {
     GameWorldEvent.on(world.onPlayerJoin, this.onWechat, this);
@@ -140,7 +144,7 @@ class SayComponent extends Component<GameEntity> {
 /**
  * @CaperComponent - 物理跳跃组件
  */
-@apclass
+@apclass("CaperComponent")
 class CaperComponent extends Component<GameEntity> {
   protected start(): void {
     this.node.entity.velocity.y++;
@@ -167,7 +171,7 @@ const { apclass } = _decorator;
 /**
  * @SayComponent - 实体广播组件
  */
-@apclass
+@apclass("SayComponent")
 class SayComponent extends Component<GameEntity> {
   start(): void {
     this.node.on("say", this.log, this);
@@ -180,7 +184,7 @@ class SayComponent extends Component<GameEntity> {
 /**
  * @SayMgrComponent - 实体广播管理组件
  */
-@apclass
+@apclass("SayMgrComponent")
 class SayMgrComponent extends Component<GameEntity> {
   start(): void {
     this.node.emit("say", "hello world，来自SayMgrComponent", this);
@@ -207,7 +211,7 @@ const { apclass } = _decorator;
 /**
  * @SayComponent - 实体广播组件
  */
-@apclass
+@apclass("SayComponent")
 class SayComponent extends Component<GameEntity> {
   start(): void {
     Emitter.on("say", this.log, this);
@@ -220,7 +224,7 @@ class SayComponent extends Component<GameEntity> {
 /**
  * @SayMgrComponent - 实体广播管理组件
  */
-@apclass
+@apclass("SayMgrComponent")
 class SayMgrComponent extends Component<GameEntity> {
   start(): void {
     Emitter.emit("say", "hello world，来自SayMgrComponent");
@@ -250,7 +254,7 @@ const { apclass } = _decorator;
 /**
  * @CaperComponent - 物理跳跃组件
  */
-@apclass
+@apclass("CaperComponent")
 class CaperComponent extends Component<GameEntity> {
   jump() {
     this.node.entity.velocity.y++;
@@ -260,7 +264,7 @@ class CaperComponent extends Component<GameEntity> {
 /**
  * @SayComponent - 实体广播跳跃组件
  */
-@apclass
+@apclass("SayComponent")
 class SayComponent extends CaperComponent {
   start(): void {
     this.jump();
@@ -286,7 +290,7 @@ const { apclass } = _decorator;
 /**
  * @TimerComponent - 计时器组件
  */
-@apclass
+@apclass("TimerComponent")
 class TimerComponent extends Component<GameEntity> {
   private timeElapsed = 0;
   private readonly interval = 1000; // 1秒间隔
@@ -323,7 +327,7 @@ const { apclass } = _decorator;
 /**
  * @ResourceComponent - 资源管理组件
  */
-@apclass
+@apclass("ResourceComponent")
 class ResourceComponent extends Component<GameEntity> {
   private health = 100;
   private score = 0;
