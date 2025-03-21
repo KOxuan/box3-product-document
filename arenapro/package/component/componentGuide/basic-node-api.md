@@ -84,7 +84,7 @@ class Component<T = any> {
   // 组件加载时调用
   onLoad?(): void;
 
-  // 组件启动时调用
+  // 组件首次启动时调用
   start?(): void;
 
   // 每帧更新时调用

@@ -156,7 +156,7 @@ export default defineConfig({
         text: "ECS架构",
         collapsed: false,
         items: [
-          { text: "组件介绍", link: "/package/component/index" },
+          { text: "组件介绍", link: "/package/component/componentGuide/index" },
           {
             text: "脚本指南",
             collapsed: true,
