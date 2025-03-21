@@ -25,6 +25,16 @@ import '/style.css'
 | ---------- | ---------- |
 | EntityNode | 扩展节点类 |
 
+## 静态属性
+
+#### <font id="API" />isMonitoringEnabled<font id="Type">: boolean</font> {#isMonitoringEnabled}
+
+设置是否启用全局性能监控。
+默认为 true。
+
+当启用时，所有组件的 Component.update 方法将被性能监控器跟踪，
+以便记录和分析其执行性能。关闭此选项可以减少性能开销，适用于生产环境或不需要性能监控的场景。
+
 ## 属性
 
 #### <font id="API" /><font id="ReadOnly" >只读</font>uuid<font id="Type">: string</font> {#uuid}
@@ -199,12 +209,14 @@ import '/style.css'
 
 ## 函数
 
-#### <font id="API" />find<font id="Type">‹U = any›</font>(<font id="Type">entity:U</font>)<font id="Type">: EntityNode‹U› | undefined</font>{#find}
+#### <font id="API" />find<font id="Type">‹U = any›</font>(<font id="Type">entityOrUUID:U</font>)<font id="Type">: EntityNode‹U› | undefined</font>{#find}
 
-根据 entity 从全局注册表中获取一个已注册的扩展节点实例。
+根据 entity 或 uuid 从全局注册表中获取一个已注册的节点实例。
+
+- 优先级：entity > uuid
 
 **输入参数**
 
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
-| ---------- | ---------- | ------------ | ---------- | ---------- |
-| entity     | 是         |              | U          | 游戏实体   |
+| **_参数_**   | **_必填_** | **_默认值_** | **_类型_** | **_说明_**          |
+| ------------ | ---------- | ------------ | ---------- | ------------------- |
+| entityOrUUID | 是         |              | U          | 游戏实体或节点 uuid |
