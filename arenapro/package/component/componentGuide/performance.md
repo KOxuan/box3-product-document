@@ -19,8 +19,21 @@ EntityNode.isMonitoringEnabled = true;
 ```typescript
 // 设置性能警告回调
 EntityNode.onPerformanceWarning((event) => {
-  console.warn(`平均执行时间：${event.averageExecutionTime}ms`);
-  console.warn(`执行时间：${event.executionTime}ms`);
+ console.warn(
+      `\n📊 组件性能报告 - ${event.component.constructor.name}\n` +
+        `━━━━━━━━━━━━━━━\n` +
+        `节点ID: ${event.entityNode.uuid}\n` +
+        `当前帧率: ${event.currentFPS} FPS\n` +
+        `执行时间: ${event.executionTime}ms\n` +
+        `平均执行: ${event.averageExecutionTime}ms\n` +
+        `最小执行: ${event.minExecutionTime}ms\n` +
+        `最大执行: ${event.maxExecutionTime}ms\n` +
+        `标准差: ${event.standardDeviation}ms\n` +
+        `性能趋势: ${event.performanceTrend}\n` +
+        `警告次数: ${event.warningCount} （执行时间>16.67ms）\n` +
+        `最近执行: ${event.recentExecutionTimes.join(', ')}ms\n` +
+        `━━━━━━━━━━━━━━━`
+    );
 });
 ```
 
