@@ -6,7 +6,7 @@ import '/style.css'
 
 该扩展节点继承至 [EventEmitter](./EventEmitter)。
 
-#### <font id="API" />EntityNode<font id="Type">‹T = any›</font>(<font id="Type">entity:T,isEnable?:boolean</font>)<font id="Type">: EntityNode</font>{#EntityNode}
+#### <font id="API" />EntityNode<font id="Type">‹T = any›</font>(<font id="Type">entity:T</font>)<font id="Type">: EntityNode</font>{#EntityNode}
 
 实例化一个扩展节点类
 
@@ -14,10 +14,9 @@ import '/style.css'
 
 **输入参数**
 
-| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_**                                                     |
-| ---------- | ---------- | ------------ | ---------- | -------------------------------------------------------------- |
-| entity     | 是         |              | T          | 游戏实体，可以是任意实体，例如角色、道具、ui 等                |
-| isEnable   |            | true         | boolean    | 扩展节点是否启用，启用时每帧刷新，且会影响节点下的组件启用状态 |
+| **_参数_** | **_必填_** | **_默认值_** | **_类型_** | **_说明_**                                      |
+| ---------- | ---------- | ------------ | ---------- | ----------------------------------------------- |
+| entity     | 是         |              | T          | 游戏实体，可以是任意实体，例如角色、道具、ui 等 |
 
 **返回值**
 

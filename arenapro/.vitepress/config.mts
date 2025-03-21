@@ -153,11 +153,57 @@ export default defineConfig({
         ],
       },
       {
-        text: "组件模式",
+        text: "ECS架构",
         collapsed: false,
         items: [
           { text: "组件介绍", link: "/package/component/index" },
-          { text: "生命周期", link: "/package/component/lifecycle" },
+          {
+            text: "脚本指南",
+            collapsed: true,
+            items: [
+              {
+                text: "创建组件脚本",
+                link: "/package/component/componentGuide/setup",
+              },
+              {
+                text: "组件和组件执行顺序",
+                link: "/package/component/componentGuide/component",
+              },
+              {
+                text: "装饰器使用",
+                link: "/package/component/componentGuide/decorator",
+              },
+              {
+                text: "生命周期",
+                link: "/package/component/componentGuide/lifecycle",
+              },
+              {
+                text: "创建和销毁节点",
+                link: "/package/component/componentGuide/create-destroy",
+              },
+              {
+                text: "访问节点和组件",
+                link: "/package/component/componentGuide/access-node-component",
+              },
+              {
+                text: "常用节点和组件接口",
+                link: "/package/component/componentGuide/basic-node-api",
+              },
+              {
+                text: "节点事件系统",
+                link: "/package/component/componentGuide/event-node",
+              },
+              {
+                text: "服务端-游戏世界事件系统",
+                link: "/package/component/componentGuide/event-world",
+              },
+              {
+                text: "性能优化",
+                link: "/package/component/componentGuide/performance",
+              },
+            ],
+          },
+
           { text: "代码示例", link: "/package/component/example" },
           {
             text: "API",

@@ -2,7 +2,7 @@
 
 组件模式适用于服务端及客户端。
 
-本文档提供了使用 `@dao3fun/component` 组件系统的各种实用示例，帮助开发者快速掌握组件的创建、挂载和通信方式。
+本文档提供了使用 `@dao3fun/component` 组件系统的各种实用示例，帮助创作者快速掌握组件的创建、挂载和通信方式。
 
 ## 单组件示例
 
@@ -146,7 +146,7 @@ class SayComponent extends Component<GameEntity> {
  */
 @apclass("CaperComponent")
 class CaperComponent extends Component<GameEntity> {
-  protected start(): void {
+  start(): void {
     this.node.entity.velocity.y++;
   }
 }
