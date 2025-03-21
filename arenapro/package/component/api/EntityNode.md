@@ -73,7 +73,22 @@ import '/style.css'
 
 ## 方法
 
-#### <font id="API" />addComponent(<font id="Type">componentName: string, object?: Record‹string, any› , isEnable?: boolean</font>)<font id="Type">: this</font>{#addComponentName}
+#### <font id="API" />addComponent<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U, object?: Partial‹Omit‹U, keyof Component‹T››› </font>)<font id="Type">: this</font>{#addComponent}
+
+向该节点增加指定类型的组件。
+
+【使用组件构造函数】
+
+**输入参数**
+
+| **_参数_**           | **_必填_** | **_默认值_** | **_类型_**                           | **_说明_**                     |
+| -------------------- | ---------- | ------------ | ------------------------------------ | ------------------------------ |
+| componentConstructor | 是         |              | new (...args: any[]) => U            | 组件构造函数                   |
+| object               |            | {}           | Partial‹Omit‹U, keyof Component‹T››› | 组件初始化属性，默认不修改属性 |
+
+---
+
+#### <font id="API" />addComponent(<font id="Type">componentName: string, object?: Record‹string, any›</font>)<font id="Type">: this</font>{#addComponentName}
 
 向该节点增加指定类型的组件。
 
@@ -87,23 +102,6 @@ import '/style.css'
 | ------------- | ---------- | ------------ | ------------------- | ------------------------------ |
 | componentName | 是         |              | string              | 组件名                         |
 | object        |            | {}           | Record<string, any> | 组件初始化属性，默认不修改属性 |
-| isEnable      |            | true         | boolean             | 组件是否启用，默认启用         |
-
----
-
-#### <font id="API" />addComponent<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U, object?: Partial‹Omit‹U, keyof Component‹T››› , isEnable?: boolean</font>)<font id="Type">: this</font>{#addComponent}
-
-向该节点增加指定类型的组件。
-
-【使用组件构造函数】
-
-**输入参数**
-
-| **_参数_**           | **_必填_** | **_默认值_** | **_类型_**                           | **_说明_**                     |
-| -------------------- | ---------- | ------------ | ------------------------------------ | ------------------------------ |
-| componentConstructor | 是         |              | new (...args: any[]) => U            | 组件构造函数                   |
-| object               |            | {}           | Partial‹Omit‹U, keyof Component‹T››› | 组件初始化属性，默认不修改属性 |
-| isEnable             |            | true         | boolean                              | 组件是否启用，默认启用         |
 
 ---
 
