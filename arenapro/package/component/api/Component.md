@@ -62,7 +62,21 @@ import '/style.css'
 
 #### <font id="API" />update(<font id="Type">deltaTime: number</font>)<font id="Type">: void</font>{#update}
 
-如果该组件启用，则每帧（30 FPS）调用 update。
+如果该组件启用，则每帧（60 FPS）调用 update。
+
+该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
+
+**返回值**
+
+| **类型**  | **说明**                           |
+| --------- | ---------------------------------- |
+| deltaTime | 自上次更新以来的时间差，单位为毫秒 |
+
+---
+
+#### <font id="API" />lateUpdate(<font id="Type">deltaTime: number</font>)<font id="Type">: void</font>{#lateUpdate}
+
+如果该组件启用，则等节点下所有组件 update 执行完后调用 lateUpdate。
 
 该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
 

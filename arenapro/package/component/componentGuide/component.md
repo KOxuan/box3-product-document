@@ -81,14 +81,19 @@ class LifecycleComponent extends Component<GameEntity> {
     console.log("4. update");
   }
 
+  lateUpdate(dt: number): void {
+    // 5. 全部组件刷新后执行，按权重排序
+    console.log("5. lateUpdate");
+  }
+
   onDisable(): void {
-    // 5. 组件禁用时执行
-    console.log("5. onDisable");
+    //6. 组件禁用时执行
+    console.log("6. onDisable");
   }
 
   onDestroy(): void {
-    // 6. 组件销毁时执行
-    console.log("6. onDestroy");
+    // 7. 组件销毁时执行
+    console.log("7. onDestroy");
   }
 }
 ```
@@ -209,7 +214,7 @@ class DependentComponent extends Component<GameEntity> {
 3. **性能考虑**
 
    - 避免过多的高优先级组件
-   - 合理使用 update 方法
+   - 合理使用 update,lateUpdate 方法
    - 考虑使用事件驱动替代轮询
 
 ## 常见问题
@@ -238,4 +243,4 @@ A: 可以通过以下方式优化：
 1. 合理使用权重系统
 2. 使用组件池
 3. 适时禁用不需要的组件
-4. 避免在 update 中进行重复计算
+4. 避免在 update,lateUpdate 中进行重复计算

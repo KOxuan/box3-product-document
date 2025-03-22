@@ -2,7 +2,7 @@
 
 > **重要提示：** 生命周期函数的执行顺序是固定的，创作者应该在合适的生命周期阶段处理相应的游戏逻辑。错误的执行时机可能会导致组件之间的依赖关系出现问题。
 
-![](https://static.codemao.cn/pickduck/B1Cctbi3yl.png?hash=Fh8crpqjaggh0yZoDzpPBDFhiTHM)
+![](https://static.codemao.cn/pickduck/HyH4xoin1g.png?hash=FsUtJcE2yBbKnn-btkwZrCzoc68g)
 
 组件生命周期是指脚本组件从创建到销毁的整个过程中所经历的一系列预设事件。这些事件定义了组件在不同阶段的行为，帮助创作者有效管理游戏逻辑和资源。以下是组件生命周期的详细解释：
 
@@ -21,6 +21,8 @@
 ### 4. 更新阶段
 
 - **update(deltaTime)**：每帧调用一次，用于实现帧更新逻辑。`deltaTime` 参数表示自上一帧以来经过的时间（毫秒），可用于时间相关计算，如动画、移动等基于时间的操作。这是游戏逻辑的核心部分，每一帧都在此更新。
+
+- **lateUpdate(deltaTime)**：update 会在所有动画更新前执行，但如果我们要在动效（如动画、粒子、物理等）更新之后才进行一些额外操作，或者希望在所有组件的 update 都执行完之后才进行其它操作，那就需要用到 lateUpdate 回调。
 
 ### 5. 禁用和销毁阶段
 

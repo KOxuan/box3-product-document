@@ -90,6 +90,9 @@ class Component<T = any> {
   // 每帧更新时调用
   update?(deltaTime: number): void;
 
+  // 全部组件刷新结束时调用
+  lateUpdate?(deltaTime: number): void;
+
   // 组件销毁时调用
   onDestroy?(): void;
 
@@ -200,7 +203,7 @@ export class GameController extends Component<GameEntity> {
 
 3. **性能优化**
    - 缓存频繁使用的组件引用
-   - 合理使用 update 方法
+   - 合理使用 update,lateUpdate 方法
    - 及时清理不需要的事件监听
 
 ## 常见陷阱
