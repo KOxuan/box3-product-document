@@ -381,3 +381,93 @@ if (e) {
   }, 5000);
 }
 ```
+
+## 简单日志系统
+
+这个系统在每次添加或移除实体节点时记录日志，适合用于调试和监控实体的变化。
+
+```typescript
+class LoggingSystem extends NodeSystem {
+  protected onEntityNodeAdded(entityNode: EntityNode): void {
+    console.log(`实体节点 ${entityNode.id} 已添加到系统`);
+  }
+
+  protected onEntityNodeRemoved(entityNode: EntityNode): void {
+    console.log(`实体节点 ${entityNode.id} 已从系统移除`);
+  }
+}
+```
+
+## 简单计时器系统
+
+这个系统在每帧更新时增加一个计时器，适合用于需要时间跟踪的场景。
+
+```typescript
+class TimerSystem extends NodeSystem {
+  private elapsedTime: number = 0;
+
+  protected update(deltaTime: number): void {
+    this.elapsedTime += deltaTime;
+    console.log(`系统运行时间：${this.elapsedTime} 毫秒`);
+  }
+}
+```
+
+## 物理更新系统
+
+这个系统用于更新实体的物理状态，比如位置和速度，适合用于简单的物理模拟。
+
+```typescript
+class PhysicsSystem extends NodeSystem {
+  protected update(deltaTime: number): void {
+    for (const entity of this.entities) {
+      const physicsComponent = entity.getComponent("PhysicsComponent");
+      if (physicsComponent) {
+        physicsComponent.updatePhysics(deltaTime);
+      }
+    }
+  }
+}
+```
+
+## 碰撞检测系统
+
+这个系统用于检测实体之间的碰撞，并触发相应的事件，适合用于游戏中的碰撞处理。
+
+```typescript
+class CollisionDetectionSystem extends NodeSystem {
+  protected update(deltaTime: number): void {
+    const entities = this.entities;
+    for (let i = 0; i < entities.length; i++) {
+      for (let j = i + 1; j < entities.length; j++) {
+        if (this.checkCollision(entities[i], entities[j])) {
+          entities[i].emit("collision", entities[j]);
+          entities[j].emit("collision", entities[i]);
+        }
+      }
+    }
+  }
+
+  private checkCollision(entity1: EntityNode, entity2: EntityNode): boolean {
+    // 简单的碰撞检测逻辑
+    return Math.random() > 0.5; // 示例逻辑
+  }
+}
+```
+
+## AI 控制系统
+
+这个系统用于管理和更新实体的 AI 行为，适合用于复杂的游戏 AI 控制。
+
+```typescript
+class AISystem extends NodeSystem {
+  protected update(deltaTime: number): void {
+    for (const entity of this.entities) {
+      const aiComponent = entity.getComponent("AIComponent");
+      if (aiComponent) {
+        aiComponent.updateAI(deltaTime);
+      }
+    }
+  }
+}
+```

@@ -198,6 +198,14 @@ export default defineConfig({
                 link: "/package/component/componentGuide/event-world",
               },
               {
+                text: "节点系统",
+                link: "/package/component/componentGuide/system",
+              },
+              {
+                text: "节点时间管理",
+                link: "/package/component/componentGuide/NodeTime",
+              },
+              {
                 text: "性能优化",
                 link: "/package/component/componentGuide/performance",
               },
@@ -215,6 +223,8 @@ export default defineConfig({
               },
               { text: "EntityNode", link: "/package/component/api/EntityNode" },
               { text: "Component", link: "/package/component/api/Component" },
+              { text: "NodeSystem", link: "/package/component/api/NodeSystem" },
+              { text: "NodeTime", link: "/package/component/api/NodeTime" },
             ],
           },
         ],

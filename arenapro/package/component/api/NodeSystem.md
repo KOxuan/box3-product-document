@@ -2,47 +2,65 @@
 import '/style.css'
 </script>
 
-# 属性
+# 构造函数
 
-#### <font id="API" />weight<font id="Type">: number</font> {#weight}
+#### <font id="API" />NodeSystem<font id="Type">‹T = any›</font>()<font id="Type">: NodeSystem</font>{#NodeSystem}
 
-组件权重，值越小权重越大，刷新时会根据权重进行排序。
+实例化一个节点系统类
 
-默认值：0
+**返回值**
+
+| **类型**   | **说明**   |
+| ---------- | ---------- |
+| NodeSystem | 节点系统类 |
+
+## 属性
+
+#### <font id="API" />uuid<font id="Type">: string</font>{#uuid}
+
+获得系统的 uuid。
 
 ---
 
-#### <font id="API" /><font id="ReadOnly" >只读</font>node<font id="Type">: node‹T›</font>{#node}
+#### <font id="API" /><font id="ReadOnly" >只读</font>entities<font id="Type">: node‹T›[]</font>{#entities}
 
-获取该组件关联的扩展节点。
+获取该系统的扩展节点列表。
 
 ---
 
 #### <font id="API" />enable<font id="Type">: boolean</font>{#enable}
 
-该组件启用状态。
+该系统启用状态。
 
 ## 方法
 
 #### <font id="API" />destroy()<font id="Type">: void</font>{#destroy}
 
-从当前节点上移除当前组件实例。
+移除当前系统实例。
 
-会执行组件的`onDisable`和`onDestroy`方法
+会执行系统的`onDisable`和`onDestroy`方法
+
+---
+
+#### <font id="API" />onEntityNodeAdded(<font id="Type">entityNode: EntityNode</font>)<font id="Type">: void</font>{#onEntityNodeAdded}
+
+当实体节点成功被添加到系统时调用。
+
+你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
+
+---
+
+#### <font id="API" />onEntityNodeRemoved(<font id="Type">entityNode: EntityNode</font>)<font id="Type">: void</font>{#onEntityNodeRemoved}
+
+当实体节点成功被移除到系统时调用。
+
+你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
 
 ---
 
 #### <font id="API" />onLoad()<font id="Type">: void</font>{#onLoad}
 
-当附加到一个节点上或者其节点第一次激活时候调用。onLoad 总是会在任何 start 方法调用前执行，这能用于安排脚本的初始化顺序。
-
-该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
-
----
-
-#### <font id="API" />start()<font id="Type">: void</font>{#start}
-
-如果该组件第一次启用，则在所有组件的 update 之前调用。通常用于需要在所有组件的 onLoad 初始化完毕后执行的逻辑。
+系统初始化函数，在系统被注册到注册表之前调用
 
 该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
 
@@ -50,7 +68,7 @@ import '/style.css'
 
 #### <font id="API" />update(<font id="Type">deltaTime: number</font>)<font id="Type">: void</font>{#update}
 
-如果该组件启用，则每帧（60 FPS）调用 update。
+如果该系统启用，在每一帧中在所有组件的 update 之后被调用
 
 该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
 
@@ -62,9 +80,9 @@ import '/style.css'
 
 ---
 
-#### <font id="API" />lateUpdate(<font id="Type">deltaTime: number</font>)<font id="Type">: void</font>{#lateUpdate}
+#### <font id="API" />postUpdate(<font id="Type">deltaTime: number</font>)<font id="Type">: void</font>{#postUpdate}
 
-如果该组件启用，则等节点下所有组件 update 执行完后调用 lateUpdate。
+如果该系统启用，在每一帧中在所有组件的 lateUpdate 之后被调用
 
 该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
 
@@ -78,7 +96,7 @@ import '/style.css'
 
 #### <font id="API" />onEnable()<font id="Type">: void</font>{#onEnable}
 
-当该组件被启用，并且它的节点也激活时。
+系统启用时调用，当系统的 enable 属性从 false 变为 true 时触发。
 
 该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
 
@@ -86,7 +104,7 @@ import '/style.css'
 
 #### <font id="API" />onDisable()<font id="Type">: void</font>{#onDisable}
 
-当该组件被禁用或节点变为无效时调用。
+系统禁用时调用，当系统的 enable 属性从 true 变为 false 时触发。
 
 该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
 
@@ -94,12 +112,6 @@ import '/style.css'
 
 #### <font id="API" />onDestroy()<font id="Type">: void</font>{#onDestroy}
 
-当该组件被销毁时调用。
+系统销毁时调用，在系统被完全清理之前的最后一个生命周期方法。
 
 该方法为生命周期方法，父类未必会有实现。并且你只能在该方法内部调用父类的实现，不可在其它地方直接调用该方法。
-
-## 修饰器函数
-
-#### <font id="API" />apclass<font id="Type">‹T extends { new (...args: any[]): Component }›</font>(<font id="Type">constructor:T</font>)<font id="Type">: void</font>{#apclass}
-
-该装饰器函数的目的在于确保传入的构造函数是 Component 类的子类，并将自动注册到 registryComponent 中，从而们可以直接使用类名来注册组件。
