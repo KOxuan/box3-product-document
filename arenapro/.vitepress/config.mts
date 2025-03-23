@@ -203,7 +203,7 @@ export default defineConfig({
               },
               {
                 text: "节点时间管理",
-                link: "/package/component/componentGuide/NodeTime",
+                link: "/package/component/componentGuide/time",
               },
               {
                 text: "性能优化",
