@@ -211,7 +211,24 @@ export default defineConfig({
               },
             ],
           },
-
+          {
+            text: "组件实战-时间回溯",
+            collapsed: true,
+            items: [
+              {
+                text: "入门：调用方式",
+                link: "/package/component/timeRewindSystem/timeRewindComponent",
+              },
+              {
+                text: "进阶：接口解析",
+                link: "/package/component/timeRewindSystem/intermediateTopics",
+              },
+              {
+                text: "高级：源码解析",
+                link: "/package/component/timeRewindSystem/advancedTopics",
+              },
+            ],
+          },
           { text: "代码示例", link: "/package/component/example" },
           {
             text: "API",
