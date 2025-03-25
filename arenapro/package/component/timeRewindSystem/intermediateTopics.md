@@ -1,210 +1,142 @@
 # 进阶篇：回溯系统核心概念与实现
 
-## 1. 状态处理器设计
+## 1. 系统概述
 
-### 1.1 核心概念
+时间回溯系统用于实现游戏中的时间倒流效果，可以记录和回放实体的状态变化。主要功能包括：
 
-状态处理器是回溯系统的基础，它负责实体状态的获取和设置：
+- 状态记录：自动记录实体的位置和方向
+- 状态回放：支持倒流回放之前的状态
+- 物理控制：自动管理回溯过程中的物理属性
+
+## 2. 快速开始
+
+### 2.1 初始化系统
 
 ```typescript
-interface IStateHandler<T = any> {
-  get: () => T; // 获取状态
-  set: (value: T) => void; // 设置状态
+import { TimeRewindSystem } from "./TimeRewindSystem";
+
+// 使用默认配置初始化
+const sys = initTimeRewindSystem();
+
+// 或使用自定义配置
+const sys = initTimeRewindSystem({
+  maxRecordTime: 10000, // 记录10秒
+  recordInterval: 20, // 每20ms记录一次
+  speedFactor: 1.5, // 1.5倍回放速度
+});
+```
+
+### 2.2 添加实体
+
+```typescript
+// 方式1：单个实体
+const entity = world.querySelector("#time");
+const node = createTimeRewindNode(entity);
+sys.addEntityNode(node);
+
+// 方式2：批量添加
+const entities = world.querySelectorAll(".time");
+entities.forEach((entity) => {
+  const node = createTimeRewindNode(entity);
+  sys.addEntityNode(node);
+});
+```
+
+### 2.3 控制回溯
+
+```typescript
+// 开始回溯
+sys.startRewind();
+
+// 停止回溯
+sys.stopRewind();
+```
+
+## 3. 配置项说明
+
+### 3.1 系统配置
+
+```typescript
+interface ISystemConfig {
+  maxRecordTime: number; // 最大记录时间（毫秒）
+  recordInterval: number; // 记录间隔（毫秒）
+  speedFactor: number; // 回放速度倍率
 }
 ```
 
-### 1.2 设计原则
+### 3.2 状态处理器
 
-1. **单一职责**
+```typescript
+const stateHandlers = {
+  position: {
+    get: () => entity.position,
+    set: (value) => entity.position.set(value.x, value.y, value.z),
+  },
+  meshOrientation: {
+    get: () => entity.meshOrientation,
+    set: (value) =>
+      entity.meshOrientation.set(value.w, value.x, value.y, value.z),
+  },
+};
+```
 
-   - 每个处理器只负责一个状态属性
-   - 保持获取和设置逻辑的对称性
-   - 避免在处理器中包含业务逻辑
+### 3.3 回调函数
 
-2. **数据独立性**
+```typescript
+const callbacks = {
+  onStart: () => {
+    // 回溯开始时的处理
+  },
+  onEnd: () => {
+    // 回溯结束时的处理
+  },
+};
+```
 
-   - 确保状态数据的深拷贝
-   - 避免对象引用导致的数据污染
-   - 处理好循环引用的情况
+## 4. 事件监听
 
-3. **类型安全**
-   - 使用泛型约束状态类型
-   - 在设置时进行类型检查
-   - 处理好可空值的情况
+### 4.1 进度监听
 
-### 1.3 常见陷阱
+```typescript
+sys.onProgress = (progress: number) => {
+  console.log(`回溯进度: ${progress}%`);
+};
+```
 
-1. **对象引用问题**
+### 4.2 结束监听
 
-   ```typescript
-   // 错误示例
-   get: () => this.position,  // 直接返回引用
+```typescript
+sys.onEnd = () => {
+  console.log("回溯结束");
+};
+```
 
-   // 正确示例
-   get: () => ({...this.position}),  // 返回副本
-   ```
+## 5. 最佳实践
 
-2. **异步处理**
+### 5.1 性能优化
 
-   ```typescript
-   // 错误示例
-   get: async () => await fetchState(),  // 异步获取
+- 合理设置 `recordInterval`，避免过于频繁的状态记录
+- 只为需要回溯的实体添加组件
+- 根据实际需求调整 `maxRecordTime`
 
-   // 正确示例
-   get: () => this.cachedState,  // 同步返回缓存
-   ```
+### 5.2 实体标记
 
-3. **性能问题**
+建议使用标签记录需要回溯的实体
 
-   ```typescript
-   // 低效示例
-   get: () => JSON.parse(JSON.stringify(this.state)),  // 深拷贝开销大
+### 5.3 错误处理
 
-   // 优化示例
-   get: () => Object.assign({}, this.state),  // 浅拷贝足够时使用
-   ```
+```typescript
+try {
+  const node = createTimeRewindNode(entity);
+  sys.addEntityNode(node);
+} catch (error) {
+  console.error("添加回溯节点失败:", error);
+}
+```
 
-## 2. 回溯系统实现
+## 6. 注意事项
 
-### 2.1 核心流程
-
-1. **状态记录**
-
-   - 定期采样实体状态
-   - 创建状态快照
-   - 维护快照链表
-
-2. **状态回放**
-   - 定位目标时间点
-   - 查找相关快照
-   - 计算插值参数
-   - 更新实体状态
-
-### 2.2 关键算法
-
-1. **快照管理**
-
-   ```typescript
-   // 添加快照
-   snapshots.push({
-     timestamp: currentTime,
-     states: this.captureStates(entity),
-     entityId: entity.uuid,
-   });
-
-   // 清理过期快照
-   while (
-     snapshots.length > 1 &&
-     currentTime - snapshots[0].timestamp > maxRecordTime
-   ) {
-     snapshots.shift();
-   }
-   ```
-
-2. **状态插值**
-
-   ```typescript
-   // 计算插值因子
-   const alpha =
-     (targetTime - snapshot1.timestamp) /
-     (snapshot2.timestamp - snapshot1.timestamp);
-
-   // 执行插值
-   const value = snapshot1.value + (snapshot2.value - snapshot1.value) * alpha;
-   ```
-
-### 2.3 性能考虑
-
-1. **内存管理**
-
-   - 使用对象池复用快照对象
-   - 及时清理过期数据
-   - 优化数据结构
-
-2. **计算优化**
-   - 缓存常用计算结果
-   - 批量处理状态更新
-   - 避免频繁的 GC
-
-## 3. 调试与优化
-
-### 3.1 调试工具
-
-1. **状态检查**
-
-   ```typescript
-   // 打印快照信息
-   console.log("Snapshots:", this.snapshotMap.get(entity.uuid));
-
-   // 检查状态变化
-   console.log("State Change:", {
-     before: prevState,
-     after: currentState,
-   });
-   ```
-
-2. **性能分析**
-   ```typescript
-   // 记录处理时间
-   console.time("rewind");
-   this.rewindEntities();
-   console.timeEnd("rewind");
-   ```
-
-### 3.2 常见问题
-
-1. **状态不连续**
-
-   - 原因：快照间隔过大
-   - 解决：调整 recordInterval
-   - 优化：增加插值平滑度
-
-2. **内存泄漏**
-
-   - 原因：快照清理不及时
-   - 解决：检查清理逻辑
-   - 优化：设置合理的 maxRecordTime
-
-3. **性能抖动**
-   - 原因：GC 频繁触发
-   - 解决：使用对象池
-   - 优化：批量处理更新
-
-### 3.3 优化建议
-
-1. **配置调优**
-
-   ```typescript
-   timeRewindSystem.config = {
-     maxRecordTime: 6000, // 根据实际需求设置
-     recordInterval: 50, // 平衡精度和性能
-     rewindSpeed: 1.0, // 控制回放速度
-   };
-   ```
-
-2. **代码优化**
-
-   ```typescript
-   // 优化前
-   states[key] = JSON.parse(JSON.stringify(value));
-
-   // 优化后
-   states[key] = this.cloneState(value); // 使用专用的克隆函数
-   ```
-
-3. **内存优化**
-
-   ```typescript
-   // 使用对象池
-   class SnapshotPool {
-     private pool: IStateSnapshot[] = [];
-
-     acquire(): IStateSnapshot {
-       return this.pool.pop() || this.createSnapshot();
-     }
-
-     release(snapshot: IStateSnapshot): void {
-       this.pool.push(snapshot);
-     }
-   }
-   ```
+1. 确保实体具有正确的物理属性设置
+2. 回溯过程中实体的物理属性会被临时修改
+3. 系统会自动处理远程同步事件
+4. 回溯结束后实体会恢复原有的物理属性
