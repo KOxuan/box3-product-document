@@ -1,8 +1,14 @@
-# 改变构建文件名及入口
+# 构建配置优化指南
 
-在开发神岛地图的过程中，创作者经常会遇到扩展地图下不同副图对应不同代码的情况。尽管部分代码可以复用，但每个副图可能都有其独特的逻辑，因此希望为每个副图配置不同的入口文件。为满足这一需求，我们开发了改变入口文件和构建输出文件名的功能。
+在神岛地图开发中，创作者经常需要为扩展地图的不同副图配置不同的代码文件。虽然部分代码可以复用，但每个副图可能有其独特的逻辑需求，因此需要为每个副图配置不同的入口文件。
 
-这一功能使得创作者能够轻松地为不同副图引入不同的代码文件，从而提高开发效率和代码的可维护性。
+为了解决这一问题，我们开发了构建配置优化功能，允许创作者灵活地配置不同的入口文件和输出文件名。
+
+## 功能优势
+
+- **灵活性**：支持为不同副图配置独立的入口文件
+- **可维护性**：清晰的构建配置结构，便于后期维护
+- **高效性**：简化构建流程，提高开发效率
 
 ## 配置文件数据
 
@@ -15,26 +21,25 @@
 
 ### 支持的格式
 
-
 ```json
 {
-    "ArenaPro": {
-        "file": {
-            "outputAndUpdate": [
-                "bundle.js", // 字符串格式，指定输出文件名称。构建时读取数组第一项作为当前构建的数据。【HMR编译不会读取字符串格式】
-                {   // 对象格式，可同时配置输出文件名称、文件入口、服务端入口、客户端入口及描述信息。
-                    "name": "bundle2.js", // 输出文件名称
-                    "serverEntry": "src/App2.ts", // 服务端入口文件
-                    "clientEntry": "src/clientApp2.ts", // 客户端入口文件
-                    "description": "第二个代码模块示例，可根据实际需求更改。" // 描述信息
-                }
-            ]
-            // 其他配置...
+  "ArenaPro": {
+    "file": {
+      "outputAndUpdate": [
+        "bundle.js", // 字符串格式，指定输出文件名称。构建时读取数组第一项作为当前构建的数据。【HMR编译不会读取字符串格式】
+        {
+          // 对象格式，可同时配置输出文件名称、文件入口、服务端入口、客户端入口及描述信息。
+          "name": "bundle2.js", // 输出文件名称
+          "serverEntry": "src/App2.ts", // 服务端入口文件
+          "clientEntry": "src/clientApp2.ts", // 客户端入口文件
+          "description": "第二个代码模块示例，可根据实际需求更改。" // 描述信息
         }
+      ]
+      // 其他配置...
     }
+  }
 }
 ```
-
 
 ## 完整编译构建效果
 
@@ -42,20 +47,20 @@
 
 ```json
 {
-    "ArenaPro": {
-        "file": {
-            "outputAndUpdate": [
-                "bundle.js", 
-                {   
-                    "name": "bundle2.js",   
-                    "serverEntry": "src/App2.ts", 
-                    "clientEntry": "src/clientApp2.ts", 
-                    "description": "第二个代码模块示例，可根据实际需求更改。"
-                }
-            ]
-            // 其他配置...
+  "ArenaPro": {
+    "file": {
+      "outputAndUpdate": [
+        "bundle.js",
+        {
+          "name": "bundle2.js",
+          "serverEntry": "src/App2.ts",
+          "clientEntry": "src/clientApp2.ts",
+          "description": "第二个代码模块示例，可根据实际需求更改。"
         }
+      ]
+      // 其他配置...
     }
+  }
 }
 ```
 
@@ -65,26 +70,26 @@
 
 ```json
 {
-    "ArenaPro": {
-        "file": {
-            "outputAndUpdate": [
-                {   
-                    "name": "bundle2.js",   
-                    "serverEntry": "src/App2.ts", 
-                    "clientEntry": "src/clientApp2.ts", 
-                    "description": "第二个代码模块示例，可根据实际需求更改。"
-                },
-                "bundle.js"                
-            ]
-            // 其他配置...
-        }
+  "ArenaPro": {
+    "file": {
+      "outputAndUpdate": [
+        {
+          "name": "bundle2.js",
+          "serverEntry": "src/App2.ts",
+          "clientEntry": "src/clientApp2.ts",
+          "description": "第二个代码模块示例，可根据实际需求更改。"
+        },
+        "bundle.js"
+      ]
+      // 其他配置...
     }
+  }
 }
 ```
 
 在此配置下，服务端入口文件变为`src/App2.ts`，客户端入口文件变为`src/clientApp2.ts`，因此构建输出的文件名称为`_server_bundle2.js`和`_client_bundle2.js`，并会上传到神岛编辑器中。
 
-## HMR编译构建效果
+## HMR 编译构建效果
 
 请看：[代码分离（多入口文件）](/guide/four/hmr.html#%E4%BB%A3%E7%A0%81%E5%88%86%E7%A6%BB-%E5%A4%9A%E5%85%A5%E5%8F%A3%E6%96%87%E4%BB%B6)
 
