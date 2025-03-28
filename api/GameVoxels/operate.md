@@ -1,5 +1,5 @@
 <script setup>
-import './style.css'
+import '/style.css'
 </script>
 
 # 方块的操作
