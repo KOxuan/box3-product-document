@@ -1,17 +1,32 @@
-# C-🔗游戏外部数据请求
+# C-🔗 游戏外部数据请求
 
-- **ClientHttp** 是`客户端`管理游戏外部请求的对象，用于对客户端向互联网进行请求的操作。
-- 在`客户端脚本`中，可以通过全局对象 `http` 来使用它。
+**ClientHttp** 是客户端网络请求的核心接口，它提供了以下功能：
 
-## 类
+- 网络请求：支持向指定网站发送 HTTP 请求并获取响应数据
+- 数据交互：实现与外部服务器的数据交换和 API 调用
+- 异步操作：处理异步网络请求，支持 Promise 形式的响应处理
+
+你可以通过全局对象 `http` 来使用这些功能。
+
+## 类定义
 
 ```typescript
 declare const http: ClientHttp;
 
 declare class ClientHttp {
-    //...
+  //...
 }
 ```
 
-## 方法
-- [`fetch`](./requestAndResponse#fetch) : 请求指定网站，获取响应数据
+## 方法列表
+
+### 网络请求
+
+- [`fetch`](./requestAndResponse#fetch) : 发送 HTTP 请求并获取响应数据，支持 GET、POST 等多种请求方式
+
+## 接口定义
+
+### 请求配置
+
+- [`RequestInit`](./requestAndResponse#RequestInit) : 用于配置 HTTP 请求的参数，包括请求方法、请求头、请求体等
+- [`Response`](./requestAndResponse#Response) : HTTP 响应对象，包含响应状态、响应头、响应数据等信息

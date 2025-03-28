@@ -1,21 +1,29 @@
-# S-🔊游戏跨端通讯
+# S-🔊 游戏跨端通讯
 
-- **ServerRemoteChannel** 是管理`客户端`与`服务端`通讯的对象，用于对跨端传递信息的操作。
-- 在`服务端脚本`中，可以通过全局对象 `remoteChannel` 来使用它。
+**ServerRemoteChannel** 是整个游戏跨端通信的服务端接口，它提供了以下核心功能：
 
-## 类
+- 服务端消息发送：向指定玩家或全体玩家发送事件消息
+- 客户端消息接收：监听并处理来自客户端的事件消息
+- 跨端数据传输：支持结构化数据的跨端安全传递
+
+你可以通过全局对象 `remoteChannel` 来使用这些功能。
+
+## 类定义
 
 ```typescript
 declare const remoteChannel: ServerRemoteChannel;
 declare class ServerRemoteChannel {
-    //...
+  //...
 }
 ```
 
+## 方法列表
 
-## 方法
-- [`sendClientEvent`](/RemoteChannel/Server/serverToClient#sendClientEvent) : `服务端` 发送至 `客户端`，向**指定玩家**发送事件。
-- [`broadcastClientEvent`](/RemoteChannel/Server/serverToClient#broadcastClientEvent) : `服务端` 发送至 `客户端`，向**所有玩家**发送事件。
+### 服务端发送
 
-### 监听方法
-- [`onServerEvent`](/RemoteChannel/Server/clientToServer#onServerEvent) : 监听`客户端`发来的事件
+- [`sendClientEvent`](/RemoteChannel/Server/serverToClient#sendClientEvent) : 向**指定玩家**发送事件消息
+- [`broadcastClientEvent`](/RemoteChannel/Server/serverToClient#broadcastClientEvent) : 向**所有玩家**广播事件消息
+
+### 客户端监听
+
+- [`onServerEvent`](/RemoteChannel/Server/clientToServer#onServerEvent) : 监听并处理来自客户端的事件消息

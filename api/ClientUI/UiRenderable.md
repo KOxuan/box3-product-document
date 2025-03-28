@@ -4,11 +4,11 @@ import '/style.css'
 
 # UI 可渲染基类
 
-> UiRenderable 是继承自 [UiNode](/GameUI/UiNode) 类
+> UiRenderable 是继承自 [UiNode](/ClientUI/UiNode) 类
 
 ## 属性
 
-#### <font id="API" /><font id="ReadOnly">只读</font>anchor<font id="Type">: [Vec2](/GameUI/maths/Vec2)</font> {#anchor}
+#### <font id="API" /><font id="ReadOnly">只读</font>anchor<font id="Type">: [Vec2](/ClientUI/maths/Vec2)</font> {#anchor}
 
 节点的锚点，用于确定节点的位置。
 
@@ -16,13 +16,13 @@ import '/style.css'
 
 ---
 
-#### <font id="API" /><font id="ReadOnly">只读</font>position<font id="Type">: [Coord2](/GameUI/maths/Coord2)</font> {#position}
+#### <font id="API" /><font id="ReadOnly">只读</font>position<font id="Type">: [Coord2](/ClientUI/maths/Coord2)</font> {#position}
 
 节点的位置，相对于父节点的位置。
 
 ---
 
-#### <font id="API" /><font id="ReadOnly">只读</font>backgroundColor<font id="Type">: [Vec3](/GameUI/maths/Vec3)</font> {#backgroundColor}
+#### <font id="API" /><font id="ReadOnly">只读</font>backgroundColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font> {#backgroundColor}
 
 > 默认值：{}
 
@@ -50,7 +50,7 @@ import '/style.css'
 
 ---
 
-#### <font id="API" /><font id="ReadOnly">只读</font>size<font id="Type">: [Coord2](/GameUI/maths/Coord2)</font> {#size}
+#### <font id="API" /><font id="ReadOnly">只读</font>size<font id="Type">: [Coord2](/ClientUI/maths/Coord2)</font> {#size}
 
 节点的尺寸。
 

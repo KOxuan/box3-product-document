@@ -1,114 +1,95 @@
-# JSDoc：JavaScript的API文档生成器
+# JSDoc：JavaScript 的 API 文档生成器
 
-jsDoc官方文档：[https://www.jsdoc.com.cn/](https://www.jsdoc.com.cn/)
+## 基础概念
 
-## 使用JSDoc示例
+JSDoc 是一个用于 JavaScript 的 API 文档生成器，它通过特殊的注释格式来描述代码的结构和行为。JSDoc 注释以`/** ... */`的形式出现，包含特定的标签来描述代码的不同方面。
 
-   在JavaScript文件中，使用JSDoc注释来描述代码的结构和行为。这些注释通常以`/** ... */`的形式出现，并包含特定的JSDoc标签，如`@param`、`@returns`、`@constructor`等。
+官方文档：[https://www.jsdoc.com.cn/](https://www.jsdoc.com.cn/)
 
-  - 函数参数的类型：约束参数的类型
-   ```javascript
-   /**
-    * 表示一本书。
-    * @constructor
-    * @param {string} title - 书的标题。
-    * @param {string} author - 书的作者。
-    */
-   function Book(title, author) {
-       this.title = title;
-       this.author = author;
-   }
-   ```
+## 使用示例
 
-  - 设置变量的类型：text的类型为UiText而不是UiBox。
-   ```javascript
-   /**
-    * text-1
-    * @type UiText
-    */
-   const text = ui.findChildByName('text-1');
-   ```
+### 函数文档示例
 
-## JSDoc的常用标签
+```javascript
+/**
+ * 表示一本书。
+ * @constructor
+ * @param {string} title - 书的标题。
+ * @param {string} author - 书的作者。
+ * @returns {Book} 返回一个新的Book实例
+ */
+function Book(title, author) {
+  this.title = title;
+  this.author = author;
+}
+```
 
-1. **@constructor**
-   - 用于声明一个构造函数。
-   - 示例：`@constructor`
+### 变量类型声明示例
 
-2. **@param**
-   - 描述函数或方法的参数。
-   - 示例：`@param {string} name - The name of the person.`
+```javascript
+/**
+ * UI文本元素
+ * @type {UiText}
+ */
+const text = ui.findChildByName("text-1");
+```
 
-3. **@returns** 或 **@return**
-   - 描述函数或方法的返回值。
-   - 示例：`@returns {number} - The sum of the two numbers.`
+### 方法文档示例
 
-4. **@throws** 或 **@exception**
-   - 指出函数或方法可能抛出的异常或错误。
-   - 示例：`@throws {Error} - If the input is invalid.`
+```javascript
+/**
+ * 计算两个数字的和
+ * @param {number} a - 第一个数字
+ * @param {number} b - 第二个数字
+ * @returns {number} 两个数字的和
+ * @throws {Error} 当参数不是数字时抛出错误
+ */
+function add(a, b) {
+  if (typeof a !== "number" || typeof b !== "number") {
+    throw new Error("参数必须是数字");
+  }
+  return a + b;
+}
+```
 
-5. **@type**
-   - 指定变量或属性的类型。
-   - 示例：`@type {number}`
+## 常用标签参考
 
-6. **@property**
-   - 描述对象的属性。
-   - 示例：`@property {string} name - The name of the item.`
+### 基础标签
 
-7. **@property {Type} [name]**
-   - 可选属性的描述（方括号表示可选）。
-   - 示例：`@property {string} [description] - Optional description of the item.`
+- **@type {类型}** - 指定变量或属性的类型
+- **@param {类型} 参数名 - 描述** - 描述函数参数
+- **@returns {类型} 描述** - 描述返回值
+- **@throws {错误类型} 描述** - 描述可能抛出的错误
 
-8. **@callback**
-   - 定义回调函数的签名。
-   - 示例：`@callback DoneCallback @param {Error|null} err - The error object, or null if no error occurred. @param {Result} [result] - The result of the operation, if any.`
+### 类相关标签
 
-9. **@example**
-   - 提供代码示例。
-   - 示例：`@example const result = add(2, 3); console.log(result); // Output: 5`
+- **@constructor** - 标记构造函数
+- **@class** - 标记类
+- **@extends** - 指定父类
+- **@implements** - 指定实现的接口
+- **@property {类型} 属性名 - 描述** - 描述类的属性
 
-10. **@see**
-    - 提供对其他文档或资源的引用。
-    - 示例：`@see http://example.com/related-topic`
+### 文档组织标签
 
-11. **@since**
-    - 指出某个功能或API自哪个版本开始可用。
-    - 示例：`@since 1.0.0`
+- **@example** - 提供代码示例
+- **@see** - 相关引用
+- **@since** - 指定功能加入的版本
+- **@deprecated** - 标记已废弃的功能
 
-12. **@deprecated**
-    - 标记某个功能或API已弃用。
-    - 示例：`@deprecated Use the newMethod instead.`
+### 高级标签
 
-13. **@override**
-    - 指出某个方法重写了父类或接口中的方法。
-    - 示例：`@override`
+- **@callback** - 定义回调函数类型
+- **@typedef** - 定义自定义类型
+- **@namespace** - 定义命名空间
+- **@module** - 定义模块
+- **@private** - 标记私有成员
+- **@public** - 标记公共成员
+- **@readonly** - 标记只读属性
 
-14. **@augments**
-    - 指出一个类继承自另一个类。
-    - 示例：`@augments SomeBaseClass`
+::: tip
 
-15. **@implements**
-    - 指出一个类实现了某个接口。
-    - 示例：`@implements SomeInterface`
-
-16. **@mixes**
-    - 指出一个类混合了其他类或模块的功能（也称为traits）。
-    - 示例：`@mixes SomeMixin`
-
-17. **@namespace**
-    - 定义一个命名空间。
-    - 示例：`@namespace MyLibrary.Utils`
-
-18. **@global**
-    - 标记一个全局变量或函数。
-    - 示例：`@global`
-
-19. **@inner**
-    - 标记一个内部（私有）成员，通常不会出现在生成的文档中。
-    - 示例：`@inner`
-
-20. **@alias**
-    - 为某个成员提供一个别名。
-    - 示例：`@alias anotherName`
-
-这些标签可以组合使用，以提供关于代码的全面文档。例如，一个完整的函数文档可能包含`@param`、`@returns`、`@throws`和`@example`等标签。通过合理使用这些标签，可以生成清晰、有用的API文档，帮助其他创作者理解和使用你的代码。
+- JSDoc 注释必须以`/**`开始，以`*/`结束
+- 每行注释前可以添加`*`以提高可读性
+- 标签名称前必须加`@`符号
+- 类型声明使用花括号`{}`包裹
+  :::

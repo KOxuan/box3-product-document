@@ -1,20 +1,30 @@
-# C-🎙游戏录音
+# C-🎙 游戏录音
 
-- **ClientMedia** 是`客户端`管理游戏录音的对象，用于对客户端设备外部录音的操作。
-- 在`客户端脚本`中，可以通过全局对象 `media` 来使用它。
+**ClientMedia** 是客户端管理游戏录音的主要接口，它提供了以下核心功能：
 
-## 类
+- 录音控制：管理设备录音的开始和停止
+- 音频播放：控制录制音频的播放和停止
+
+你可以通过全局对象 `media` 来使用这些功能。
+
+## 类定义
 
 ```typescript
 declare const media: ClientMedia;
 
 declare class ClientMedia {
-    //...
+  //...
 }
 ```
 
-## 方法
-- [`playAudio`](./media#playAudio) : 播放录音后的音频
-- [`stopPlayAudio`](./media#stopPlayAudio) : 停止播放录音音频
-- [`startRecording`](./media#startRecording) : 开始录音
-- [`stopRecording`](./media#stopRecording) : 停止录音
+## 方法列表
+
+### 录音控制
+
+- [`startRecording`](./media#startRecording) : 开始录制音频，调用设备的麦克风进行录音
+- [`stopRecording`](./media#stopRecording) : 停止当前的录音过程，完成音频录制
+
+### 音频播放
+
+- [`playAudio`](./media#playAudio) : 播放已录制的音频内容
+- [`stopPlayAudio`](./media#stopPlayAudio) : 停止正在播放的录音音频
