@@ -1,6 +1,6 @@
 # 节点性能优化指南
 
-本文将介绍在神岛引擎中如何优化节点和组件的性能，帮助开发者创建高效的游戏。
+本文将介绍在神岛引擎中如何优化节点和组件的性能，帮助创作者创建高效的游戏。
 
 ## 组件性能监控
 
@@ -19,21 +19,21 @@ EntityNode.isMonitoringEnabled = true;
 ```typescript
 // 设置性能警告回调
 EntityNode.onPerformanceWarning((event) => {
- console.warn(
-      `\n📊 组件性能报告 - ${event.component.constructor.name}\n` +
-        `━━━━━━━━━━━━━━━\n` +
-        `节点ID: ${event.entityNode.uuid}\n` +
-        `当前帧率: ${event.currentFPS} FPS\n` +
-        `执行时间: ${event.executionTime}ms\n` +
-        `平均执行: ${event.averageExecutionTime}ms\n` +
-        `最小执行: ${event.minExecutionTime}ms\n` +
-        `最大执行: ${event.maxExecutionTime}ms\n` +
-        `标准差: ${event.standardDeviation}ms\n` +
-        `性能趋势: ${event.performanceTrend}\n` +
-        `警告次数: ${event.warningCount} （执行时间>16.67ms）\n` +
-        `最近执行: ${event.recentExecutionTimes.join(', ')}ms\n` +
-        `━━━━━━━━━━━━━━━`
-    );
+  console.warn(
+    `\n📊 组件性能报告 - ${event.component.constructor.name}\n` +
+      `━━━━━━━━━━━━━━━\n` +
+      `节点ID: ${event.entityNode.uuid}\n` +
+      `当前帧率: ${event.currentFPS} FPS\n` +
+      `执行时间: ${event.executionTime}ms\n` +
+      `平均执行: ${event.averageExecutionTime}ms\n` +
+      `最小执行: ${event.minExecutionTime}ms\n` +
+      `最大执行: ${event.maxExecutionTime}ms\n` +
+      `标准差: ${event.standardDeviation}ms\n` +
+      `性能趋势: ${event.performanceTrend}\n` +
+      `警告次数: ${event.warningCount} （执行时间>16.67ms）\n` +
+      `最近执行: ${event.recentExecutionTimes.join(", ")}ms\n` +
+      `━━━━━━━━━━━━━━━`
+  );
 });
 ```
 

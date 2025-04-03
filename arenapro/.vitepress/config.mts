@@ -263,10 +263,18 @@ export default defineConfig({
               { text: "创建脚本", link: "/package/react/reactGuide/setup" },
               { text: "XML基础", link: "/package/react/reactGuide/xml" },
               { text: "DOM树", link: "/package/react/reactGuide/domTree" },
+              {
+                text: "元素引用（ref）",
+                link: "/package/react/reactGuide/refs",
+              },
               { text: "TS类型定义", link: "/package/react/reactGuide/tsType" },
               {
                 text: "多组件",
                 link: "/package/react/reactGuide/multiComponent",
+              },
+              {
+                text: "生命周期与事件处理器",
+                link: "/package/react/reactGuide/eventHandlers",
               },
               {
                 text: "钩子函数",
@@ -279,6 +287,10 @@ export default defineConfig({
             ],
           },
           { text: "双向选择器示例", link: "/package/react/selectCode" },
+          {
+            text: "React官方教程",
+            link: "https://zh-hans.react.dev/learn/describing-the-ui",
+          },
         ],
       },
       {

@@ -109,4 +109,26 @@ React.render(<App />, ui);
 
 ![](/QQ20250402-152915.png)
 
+## Fragment
+
+`<fragment />`或`< />` 标签用于将多个组件组合成一个组件，而不用建立一个父组件。
+
+```tsx
+import React from "@dao3fun/react";
+
+function App() {
+  return (
+    <>
+      <text>你好，React</text>
+    </>
+  );
+}
+
+React.render(<App />, ui);
+```
+
+效果如下：
+
+![](/QQ20250403-205512.png)
+
 恭喜！你已经成功完成了神岛 React 的基础配置和简单使用。更多特性和开发技巧，请继续阅读后续文档。

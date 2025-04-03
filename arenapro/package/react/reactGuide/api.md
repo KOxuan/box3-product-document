@@ -2,7 +2,7 @@
 
 本文档提供了 React 中关键 API 的使用说明和示例，重点关注性能优化相关的 API。
 
-## [createContext](https://react.docschina.org/reference/react/createContext)
+## [createContext](https://zh-hans.react.dev/reference/react/createContext)
 
 `createContext` 用于创建一个上下文（Context），使组件树中的组件可以共享数据，而不必通过 props 层层传递。
 
@@ -116,7 +116,7 @@ function NestedProviders() {
 2. **拆分上下文**：不同类型的数据使用不同的 Context
 3. **考虑性能**：Context 值变化会导致所有消费它的组件重新渲染
 
-## [forwardRef](https://react.docschina.org/reference/react/forwardRef)
+## [forwardRef](https://zh-hans.react.dev/reference/react/forwardRef)
 
 `forwardRef` 允许组件接收父组件传递的 ref，并将其转发到子组件中的 DOM 元素或组件实例。
 
@@ -279,7 +279,7 @@ function EnhancedForm() {
 2. **构建可复用组件库**：为组件用户提供命令式 API
 3. **第三方集成**：与需要引用的第三方库集成
 
-## [startTransition](https://react.docschina.org/reference/react/startTransition)
+## [startTransition](https://zh-hans.react.dev/reference/react/startTransition)
 
 `startTransition` 用于标记非紧急的状态更新，使 UI 保持响应性，即使在大型更新期间也能接收用户输入。
 
@@ -450,7 +450,7 @@ function ImprovedTabsExample() {
 2. **过渡不会取消**：过渡更新只是降低优先级，不会被取消
 3. **适用范围**：仅适用于 React 状态更新，不适用于数据加载或异步操作
 
-## [memo](https://react.docschina.org/reference/react/memo)
+## [memo](https://zh-hans.react.dev/reference/react/memo)
 
 `memo` 是一个高阶组件，用于优化函数组件的渲染性能。它通过记忆组件渲染结果，在 props 没有变化时跳过重新渲染。
 

@@ -1,6 +1,6 @@
 # npm 包使用指南
 
-Node.js 生态系统中，npm（Node Package Manager）是开发者不可或缺的工具。它允许我们轻松安装和使用他人开发的代码库，极大地提升了开发效率。npmjs 作为 npm 的官方仓库，提供了海量的开源包资源。
+Node.js 生态系统中，npm（Node Package Manager）是创作者不可或缺的工具。它允许我们轻松安装和使用他人开发的代码库，极大地提升了开发效率。npmjs 作为 npm 的官方仓库，提供了海量的开源包资源。
 
 ## npm 核心优势
 
@@ -21,7 +21,7 @@ Node.js 生态系统中，npm（Node Package Manager）是开发者不可或缺�
 
 ### 社区支持
 
-- 拥有庞大的开发者社区
+- 拥有庞大的创作者社区
 - 便于获取帮助和分享经验
 
 ## 神岛 npm 包安装
@@ -79,7 +79,7 @@ npm --registry=https://mirrors.cloud.tencent.com/npm/ install @dao3fun/arena-ric
 
 ## 总结
 
-通过合理使用 npm 包，开发者可以：
+通过合理使用 npm 包，创作者可以：
 
 - 提高开发效率
 - 充分利用社区资源

@@ -103,7 +103,7 @@ React.render(<ServerCommunicationExample />, ui);
 
 ## 状态钩子 (State Hooks)
 
-### [useState](https://react.docschina.org/reference/react/useState)
+### [useState](https://zh-hans.react.dev/reference/react/useState)
 
 `useState` 是最基本的钩子函数，用于在函数组件中添加状态：
 
@@ -164,7 +164,7 @@ function handleClick() {
 }
 ```
 
-### [useReducer](https://react.docschina.org/reference/react/useReducer)
+### [useReducer](https://zh-hans.react.dev/reference/react/useReducer)
 
 `useReducer` 用于管理更复杂的状态逻辑：
 
@@ -219,7 +219,7 @@ React.render(<Counter />, ui);
 
 ## 副作用钩子 (Effect Hooks)
 
-### [useEffect](https://react.docschina.org/reference/react/useEffect)
+### [useEffect](https://zh-hans.react.dev/reference/react/useEffect)
 
 `useEffect` 用于处理副作用，如数据获取、订阅或手动修改 DOM：
 
@@ -273,7 +273,7 @@ useEffect(() => {
 }, [count]);
 ```
 
-### [useLayoutEffect](https://react.docschina.org/reference/react/useLayoutEffect)
+### [useLayoutEffect](https://zh-hans.react.dev/reference/react/useLayoutEffect)
 
 `useLayoutEffect` 与 `useEffect` 类似，但在浏览器重新绘制屏幕之前同步执行：
 
@@ -374,7 +374,7 @@ React.render(<LayoutEffectDemo />, ui);
 
 ## 上下文钩子 (Context Hooks)
 
-### [useContext](https://react.docschina.org/reference/react/useContext)
+### [useContext](https://zh-hans.react.dev/reference/react/useContext)
 
 `useContext` 用于访问 React 上下文：
 
@@ -424,7 +424,7 @@ React.render(<App />, ui);
 
 ## 记忆化钩子 (Memoization Hooks)
 
-### [useMemo](https://react.docschina.org/reference/react/useMemo)
+### [useMemo](https://zh-hans.react.dev/reference/react/useMemo)
 
 `useMemo` 用于记忆计算结果，避免昂贵的计算重复执行。当依赖项不变时，它会返回上一次计算的结果，而不是重新计算。
 
@@ -497,7 +497,7 @@ React.render(<ExpensiveCalculation />, ui);
 - 确保依赖数组包含所有计算中使用的变量
 - 当依赖项很少变化时，`useMemo` 最有效
 
-### [useCallback](https://react.docschina.org/reference/react/useCallback)
+### [useCallback](https://zh-hans.react.dev/reference/react/useCallback)
 
 `useCallback` 用于记忆回调函数，防止不必要的重新渲染：
 
@@ -538,7 +538,7 @@ React.render(<ParentComponent />, ui);
 
 ## 引用钩子 (Ref Hooks)
 
-### [useRef](https://react.docschina.org/reference/react/useRef)
+### [useRef](https://zh-hans.react.dev/reference/react/useRef)
 
 `useRef` 用于创建一个可变的引用，主要用于：
 
@@ -605,7 +605,7 @@ function IntervalCounter() {
 
 ## 性能优化钩子
 
-### [useDeferredValue](https://react.docschina.org/reference/react/useDeferredValue)
+### [useDeferredValue](https://zh-hans.react.dev/reference/react/useDeferredValue)
 
 `useDeferredValue` 允许你推迟更新 UI 的非关键部分，优先处理紧急更新。它接收一个值并返回该值的"延迟版本"，当紧急更新发生时，React 会先渲染使用当前值的 UI，然后在后台渲染使用延迟值的部分。
 
@@ -724,7 +724,7 @@ React.render(<DeferredValueExample />, ui);
 - **防抖/节流**：完全阻止更新，直到经过一定时间
 - **useDeferredValue**：不阻止更新，而是先渲染高优先级更新，然后在后台渲染低优先级更新
 
-### [useTransition](https://react.docschina.org/reference/react/useTransition)
+### [useTransition](https://zh-hans.react.dev/reference/react/useTransition)
 
 `useTransition` 允许你将某些状态更新标记为非紧急的，让 React 在不阻塞 UI 的情况下执行这些更新。它返回一个布尔值表示过渡状态和一个启动过渡的函数。
 
@@ -864,7 +864,7 @@ React.render(<TabsExample />, ui);
 - **useTransition**: 用于包装状态更新函数
 - **useDeferredValue**: 用于包装值本身
 
-### [useImperativeHandle](https://react.docschina.org/reference/react/useImperativeHandle)
+### [useImperativeHandle](https://zh-hans.react.dev/reference/react/useImperativeHandle)
 
 `useImperativeHandle` 允许你自定义通过 ref 暴露给父组件的实例值。它通常与 `forwardRef` 一起使用，让你可以精确控制子组件通过 ref 暴露什么给父组件。
 
