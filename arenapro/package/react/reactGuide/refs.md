@@ -13,8 +13,8 @@ Refs 是 React 提供的一种引用机制，允许你直接访问 DOM 元素或
 在函数组件中，我们可以使用 `useRef` Hook 来创建 Refs：
 
 ```tsx
-import React from "@dao3fun/react";
-const { useRef, useEffect } = React;
+import React, { hooks } from "@dao3fun/react";
+const { useRef, useEffect } = hooks;
 
 function TextInputWithFocusButton() {
   // 创建一个 ref 对象
