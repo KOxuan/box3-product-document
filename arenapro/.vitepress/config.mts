@@ -30,6 +30,10 @@ export default defineConfig({
         link: "https://qm.qq.com/cgi-bin/qm/qr?authKey=LteV6YzMX0xKmrQSp8%2BaNi6YUdonwyVMc44npCKlNymwnoWVZBmG5Y4S4N9RwxEP&k=JeZQYLLnherYW6pGlbODkErutSmbkzr-&noverify=0",
       },
     ],
+    outline: {
+      level: [2, 3],
+      label: "本页目录",
+    },
     sidebar: [
       {
         text: "插件入门",
@@ -247,7 +251,36 @@ export default defineConfig({
           },
         ],
       },
-
+      {
+        text: "React框架",
+        collapsed: false,
+        items: [
+          { text: "简介", link: "/package/react" },
+          {
+            text: "脚本指南",
+            collapsed: true,
+            items: [
+              { text: "创建脚本", link: "/package/react/reactGuide/setup" },
+              { text: "XML基础", link: "/package/react/reactGuide/xml" },
+              { text: "DOM树", link: "/package/react/reactGuide/domTree" },
+              { text: "TS类型定义", link: "/package/react/reactGuide/tsType" },
+              {
+                text: "多组件",
+                link: "/package/react/reactGuide/multiComponent",
+              },
+              {
+                text: "钩子函数",
+                link: "/package/react/reactGuide/hooks",
+              },
+              {
+                text: "API",
+                link: "/package/react/reactGuide/api",
+              },
+            ],
+          },
+          { text: "双向选择器示例", link: "/package/react/selectCode" },
+        ],
+      },
       {
         text: "前端工程化",
         collapsed: false,
