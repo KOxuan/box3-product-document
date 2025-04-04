@@ -20,4 +20,4 @@ declare class GameAnalytics {
 
 ## 属性
 
-- [`sensor`](./GameSensorAnalytics) : 神策分析平台接口
+- [`sensor`](./GameSensorAnalytics/) : 神策分析平台接口
