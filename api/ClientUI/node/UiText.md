@@ -41,8 +41,6 @@ import '/style.css'
 
 #### <font id="API" /><font id="ReadOnly">只读</font>textColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font>{#textColor}
 
-> 默认值：{}
-
 节点显示的文本的颜色。
 
 ---
@@ -80,8 +78,6 @@ import '/style.css'
 ---
 
 #### <font id="API" /><font id="ReadOnly">只读</font>textStrokeColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font>{#textStrokeColor}
-
-> 默认值：{}
 
 文本的描边颜色。
 

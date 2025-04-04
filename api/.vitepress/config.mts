@@ -217,6 +217,14 @@ export default defineConfig({
             ],
           },
           {
+            text: "📊游戏数据分析",
+            link: "/GameAnalytics/index",
+            collapsed: false,
+            items: [
+              { text: "神策埋点", link: "/GameAnalytics/GameSensorAnalytics" },
+            ],
+          },
+          {
             text: "🟰游戏数学",
             collapsed: false,
             items: [
@@ -274,6 +282,7 @@ export default defineConfig({
                     collapsed: true,
                     items: [
                       { text: "框架", link: "/ClientUI/node/UiBox" },
+                      { text: "滚动框", link: "/ClientUI/node/UiScrollBox" },
                       { text: "图片", link: "/ClientUI/node/UiImage" },
                       { text: "文字", link: "/ClientUI/node/UiText" },
                       { text: "输入", link: "/ClientUI/node/UiInput" },

@@ -64,6 +64,10 @@ declare class UiNode {
 - [`imageDisplayMode`](./node/UiImage#imageDisplayMode) : 图像显示模式
 - [`complete`](./node/UiImage#complete) : 图片加载状态
 
+### 滚动框节点
+
+- [`scrollPosition`](./node/UiScrollBox#scrollPosition) : 滚动的位置
+
 ### 文本节点
 
 - [`textContent`](./node/UiText#textContent) : 文本内容
@@ -96,6 +100,7 @@ declare class UiNode {
 
 - [`create`](./UiScreen#create) : 创建 UI 屏幕实例
 - [`create`](./node/UiBox#create) : 创建 UI 盒子实例
+- [`create`](./node/UiScrollBox#create) : 创建 UI 滚动框实例
 - [`create`](./node/UiImage#create) : 创建 UI 图片实例
 - [`create`](./node/UiText#create) : 创建 UI 文本实例
 - [`create`](./node/UiInput#create) : 创建 UI 输入实例

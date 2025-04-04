@@ -64,6 +64,12 @@
 - **GameRTC** 提供实时语音交流功能
 - 通过全局对象 `rtc` 访问
 
+### S-📊 [数据分析](/GameAnalytics/)
+
+- **GameAnalytics** 提供数据分析模块
+- 支持数据上报和事件统计
+- 通过全局对象 `analytics` 访问
+
 ### S-🟰 数学工具
 
 - [三维向量](/GameVector3/) - 空间计算

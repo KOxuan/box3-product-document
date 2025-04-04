@@ -24,8 +24,6 @@ import '/style.css'
 
 #### <font id="API" /><font id="ReadOnly">只读</font>backgroundColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font> {#backgroundColor}
 
-> 默认值：{}
-
 节点的背景颜色。
 
 ---

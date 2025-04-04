@@ -23,8 +23,6 @@ import '/style.css'
 
 #### <font id="API" /><font id="ReadOnly">只读</font>placeholderColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font>{#placeholderColor}
 
-> 默认值：{}
-
 输入框显示的占位文本的颜色。
 
 ---
