@@ -158,6 +158,16 @@ export default defineConfig({
         ],
       },
       {
+        text: "MCP工具",
+        collapsed: false,
+        items: [
+          {
+            text: "神岛作品数据分析",
+            link: "https://smithery.ai/server/@box3lab/statistics-mcp",
+          },
+        ],
+      },
+      {
         text: "ECS架构",
         collapsed: false,
         items: [
