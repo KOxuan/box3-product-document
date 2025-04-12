@@ -162,6 +162,10 @@ export default defineConfig({
         collapsed: false,
         items: [
           {
+            text: "插件MCP使用",
+            link: "/mcp/",
+          },
+          {
             text: "神岛引擎OpenAPI",
             link: "https://smithery.ai/server/@box3lab/engine-openapi-mcp",
           },

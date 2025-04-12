@@ -2,6 +2,12 @@
 
 > 重塑开发，共创未来，重塑神岛开发体验的革命性的 VSCode 插件。
 
+:::tip 🎉 插件 MCP（模型上下文协议） 现已支持
+✨ 自 V1.2.0 版本起，ArenaPro Creator 插件已正式支持 MCP 协议！
+
+🎉 你可以在任意兼容此协议的客户端中调用相关功能。📄 想了解更多？请查看 [插件 MCP 使用教程](/mcp/) 获取详细信息。
+:::
+
 [![](/arenaproVideo.png)](https://www.bilibili.com/video/BV1bskyYXEsk)
 
 **ArenaPro Creator** 旨在攻克神岛 Arena 编辑器使用上的难题，通过与其生态中强大的 VSCode 编辑器实现无缝对接，极大地扩展了创作者的创作效率。让创作者能够更专注于代码创作本身，无需为繁琐的编辑操作分心。
