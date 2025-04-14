@@ -5,7 +5,9 @@
 :::tip 🎉 插件 MCP（模型上下文协议） 现已支持
 ✨ 自 V1.2.0 版本起，ArenaPro Creator 插件已正式支持 MCP 协议！
 
-🎉 你可以在任意兼容此协议的客户端中调用相关功能。📄 想了解更多？请查看 [插件 MCP 使用教程](/mcp/) 获取详细信息。
+🎉 你可以在任意兼容此协议的客户端中调用相关功能。
+
+📄 想了解更多？请查看 [插件 MCP 使用教程](/mcp/) 获取详细信息。
 :::
 
 [![](/arenaproVideo.png)](https://www.bilibili.com/video/BV1bskyYXEsk)

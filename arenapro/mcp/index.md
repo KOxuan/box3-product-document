@@ -151,4 +151,8 @@ MCP 工具链提供以下便利：
 
 - `component_showComponentStats`：显示组件统计
 
+### Chat 吉 PT 工具
+
+- `chatjpt_onlyKnowledgeBase`： 仅查询神岛 API 知识库
+
 更多 MCP 协议详情，请参考 [MCP 协议文档](https://modelcontextprotocol.io)。
