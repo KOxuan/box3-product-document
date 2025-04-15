@@ -28,6 +28,7 @@ myArenaProject
 │     └─ clientApp.ts
 ├─ .vscode
 │  ├─ dao3-ap.code-snippets
+│  ├─ mcp.json
 │  └─ launch.json
 └─ .husky
    ├─ pre-commit
