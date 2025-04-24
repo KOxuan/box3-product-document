@@ -1,27 +1,36 @@
-# ArenaPro 插件安装指南
+# 🛠️ ArenaPro 插件安装教程
 
 :::tip
-因官方规划，本插件仅在[`扩展地图`](/authority/expandMap)模式下才能正常使用。
+**💡 重要说明**：本插件只能在[`扩展地图`](/authority/expandMap)模式下使用。
 
-[`扩展地图`](/authority/expandMap)模式实现了多个子地图资源互通，涵盖了`代码`、`模型`、`图片`、`UI界面`、`数据空间`、`玩家皮肤`、`商城`及`音频`资源，旨在显著提升开发效率与灵活性。
+[`扩展地图`](/authority/expandMap)模式可以让多个子地图共享资源，包括`代码`、`模型`、`图片`、`界面`、`数据`、`皮肤`、`商城`和`音乐`，这样开发会更方便。
 :::
 
-## 安装准备
+## 📥 安装步骤
 
-### 系统要求
+### 1️⃣ 安装 Visual Studio Code（简称 VS Code）
 
-- **操作系统**：Windows 10/11 / macOS / Linux
-- **开发环境**：
-  - [Node.js V20.x](/bestPractices/nodejs) 或更高版本（推荐 LTS）
-  - [Visual Studio Code 1.90](/bestPractices/vscode) 或更高版本
+> **注意**：如已安装，请直接跳过该步骤
 
-## 安装步骤
+| 步骤 | 操作说明                                                                                                                            |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | 打开 [VS Code 官网](https://code.visualstudio.com/)                                                                                 |
+| 2    | 下载并安装                                                                                                                          |
+| 3    | 安装时，全部选择默认设置，一直点"下一步"即可                                                                                        |
+| 4    | 【可选】点击 [简体中文插件](vscode:extension/MS-CEINTL.vscode-language-pack-zh-hans) 安装，安装后点击右下角弹出框的提示，切换为中文 |
 
-1. 确保已安装上述所有必备软件
-2. 在 VSCode 扩展市场中搜索并安装：[ArenaPro Creator 插件](vscode:extension/box3lab.box3arenapro)
+### 2️⃣ 安装 ArenaPro 插件
 
-## 验证安装
+| 步骤 | 操作说明                                                                     |
+| ---- | ---------------------------------------------------------------------------- |
+| 1    | 直接点击 [ArenaPro Creator 插件](vscode:extension/box3lab.box3arenapro) 安装 |
+| 2    | 找到插件后点击"安装"按钮                                                     |
+| 3    | 如果没有安装 Node.js，插件会提示你安装，并提供一键安装方式                   |
 
-![](/QQ20240926-151900.png)
+![在扩展市场中搜索插件](/QQ20240926-151900.png)
 
-> 安装完成后，请重启 VSCode 以确保插件正常加载。
+---
+
+<div align="center">
+  <p>❓ 有问题？加入 <a href="https://qm.qq.com/q/tvrI6iSl56">QQ群：492953731</a> 寻求帮助</p>
+</div>

@@ -40,22 +40,8 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: "插件简介", link: "/index" },
-          { text: "插件运作原理", link: "/guide/one/APdemand" },
           {
-            text: "Ⅰ、前置知识",
-            collapsed: true,
-            items: [
-              {
-                text: "1.什么是TypeScript？",
-                link: "/guide/one/WhatTypeScript",
-              },
-              { text: "2.什么是VSCode？", link: "/guide/one/WhatVSCode" },
-              { text: "3.什么是NodeJs？", link: "/guide/one/WhatNodeJs" },
-              { text: "4.什么是Webpack？", link: "/guide/one/WhatWebpack" },
-            ],
-          },
-          {
-            text: "Ⅱ、创建代码项目",
+            text: "Ⅰ、创建代码项目",
             collapsed: true,
             items: [
               { text: "1.安装插件", link: "/guide/two/start" },
@@ -63,13 +49,12 @@ export default defineConfig({
                 text: "2.创建地图代码项目",
                 link: "/guide/two/createCodeProject",
               },
-              { text: "3.项目架构解惑", link: "/guide/two/qa" },
-              { text: "4.登录神岛账号", link: "/guide/two/login" },
-              { text: "5.链接扩展地图到项目", link: "/guide/two/linkMap" },
+              { text: "3.登录神岛账号", link: "/guide/two/login" },
+              { text: "4.链接扩展地图到项目", link: "/guide/two/linkMap" },
             ],
           },
           {
-            text: "Ⅲ、HelloWorld 项目",
+            text: "Ⅱ、HelloWorld 项目",
             collapsed: true,
             items: [
               {
@@ -91,7 +76,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "Ⅳ、调试你的代码",
+            text: "Ⅲ、调试你的代码",
             collapsed: true,
             items: [
               { text: "1.代码开发模式", link: "/guide/four/debug" },
@@ -101,7 +86,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "Ⅴ、双端共享代码",
+            text: "Ⅳ、双端共享代码",
             collapsed: true,
             items: [
               {
@@ -112,7 +97,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "Ⅵ、进阶用法",
+            text: "Ⅴ、进阶用法",
             collapsed: true,
             items: [
               { text: "1.安装npm包", link: "/guide/six/npmPackage" },
@@ -123,7 +108,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "Ⅶ、神岛NPM包开发",
+            text: "Ⅵ、神岛NPM包开发",
             collapsed: true,
             items: [
               {
