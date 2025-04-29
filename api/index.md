@@ -70,7 +70,7 @@
 - 支持数据上报和事件统计
 - 通过全局对象 `analytics` 访问
 
-### S-🟰 数学工具
+### S-🧮 数学工具
 
 - [三维向量](/GameVector3/) - 空间计算
 - [三维空间](/GameBounds3/) - 碰撞检测
@@ -115,7 +115,7 @@
 - **ClientScreen** 控制客户端显示
 - 通过全局对象 `screen` 访问
 
-### C-🟰 数学工具
+### C-🧮 数学工具
 
 - [二维坐标](/ClientUI/maths/Coord2)
 - [UI 缩放](/ClientUI/maths/UiScale)

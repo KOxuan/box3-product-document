@@ -225,7 +225,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "🟰游戏数学",
+            text: "🧮游戏数学",
             collapsed: false,
             items: [
               { text: "三维向量", link: "/GameVector3/index" },
@@ -327,7 +327,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "🟰游戏数学",
+            text: "🧮游戏数学",
             collapsed: false,
             items: [
               { text: "图像映射中区域的坐标", link: "/ClientUI/maths/Coord2" },
