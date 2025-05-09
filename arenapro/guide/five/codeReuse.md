@@ -91,7 +91,7 @@ export default {
       player.sendChat(`欢迎回来, ${formattedName}!`);
 
       if (!isValidEmail(userData.email)) {
-        player.sendChat("请更新您的电子邮件地址");
+        player.sendChat("请更新你的电子邮件地址");
       }
     }
   },

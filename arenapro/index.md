@@ -234,7 +234,7 @@
 - **编译模块开发：** [**@Nomina**](https://dao3.fun/profile/13631966)
 - **图标设计：** [**@海藻酸钠**](https://dao3.fun/profile/73)
 
-**公测期间贡献创作者：** [**@AmC**](https://dao3.fun/profile/12882489)、[**@Coder 小苏打**](https://dao3.fun/profile/12902615)、[**@FML 饭米粒**](https://dao3.fun/profile/2218285)、[**@Tobylai**](https://dao3.fun/profile/74)、[**@元元 BU1e**](https://dao3.fun/profile/13306211)、[**@CodeKpy**](https://dao3.fun/profile/12747698)、[**@小宏 XeLa**](https://dao3.fun/profile/4075204)、[**@刘 lyxAndy**](https://dao3.fun/profile/549672)、[**@fishhh**](https://dao3.fun/profile/302458043687863)、[**@全能岛民**](https://dao3.fun/profile/1349822)
+**公测期间贡献创作者：** [**@AmC**](https://dao3.fun/profile/12882489)、[**@Coder 小苏打**](https://dao3.fun/profile/12902615)、[**@where**](https://dao3.fun/profile/12834608)、[**@FML 饭米粒**](https://dao3.fun/profile/2218285)、[**@Tobylai**](https://dao3.fun/profile/74)、[**@元元 BU1e**](https://dao3.fun/profile/13306211)、[**@CodeKpy**](https://dao3.fun/profile/12747698)、[**@小宏 XeLa**](https://dao3.fun/profile/4075204)、[**@刘 lyxAndy**](https://dao3.fun/profile/549672)、[**@fishhh**](https://dao3.fun/profile/302458043687863)、[**@全能岛民**](https://dao3.fun/profile/1349822)
 
 ---
 

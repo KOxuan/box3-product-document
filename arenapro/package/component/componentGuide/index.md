@@ -58,7 +58,7 @@ ECS（Entity-Component-System）是现代游戏开发中广泛采用的架构模
 
 ## 与 Cocos Creator 的技术桥梁
 
-掌握`@dao3fun/component`组件系统将为您使用 Cocos Creator 开发打下坚实基础：
+掌握`@dao3fun/component`组件系统将为你使用 Cocos Creator 开发打下坚实基础：
 
 ### 1. **一脉相承的组件概念**
 
@@ -119,7 +119,7 @@ ECS（Entity-Component-System）是现代游戏开发中广泛采用的架构模
 - 更新频率精细调控策略
 - 资源加载与释放管理方法
 
-这些共性使您在掌握`@dao3fun/component`后能够快速适应 Cocos Creator 开发。主要差异在于：
+这些共性使你在掌握`@dao3fun/component`后能够快速适应 Cocos Creator 开发。主要差异在于：
 
 1. Cocos Creator 提供更全面的引擎功能集
 2. Cocos Creator 配备直观的可视化编辑器
