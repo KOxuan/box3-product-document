@@ -24,7 +24,7 @@ declare class UiScale {
 缩放倍数，仅允许设置大于等于0的数字。当传入非法值时，不会生效并会在控制台打印一条警告。
 
 ```javascript
-const uiScale = UiScale.create();
+const uiScale = UiScale.create(); // 创建一个 Ui缩放 对象
 
 uiScale.scale = screenWidth / 1366; // 按宽度进行缩放，预设渲染分辨率x值为 1366px
 
