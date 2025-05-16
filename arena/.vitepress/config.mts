@@ -197,11 +197,21 @@ export default defineConfig({
         items: [{ text: "如何阅读API", link: "/javascriptDaoAPI/apiUsage" }],
       },
       {
-        text: "增强创作辅助插件",
+        text: "创作插件",
         collapsed: false,
         items: [
           { text: "【下一代编辑器】ArenaNext", link: "/plugIns/arenanext" },
           { text: "【建筑方块】建筑师工具箱", link: "/plugIns/building" },
+        ],
+      },
+      {
+        text: "插件开发",
+        collapsed: false,
+        items: [
+          { text: "介绍", link: "/plugIns/code/introduction" },
+          { text: "开发基础", link: "/plugIns/code/basic" },
+          { text: "Core对象", link: "/plugIns/code/core" },
+          { text: "实战", link: "/plugIns/code/practice" },
         ],
       },
       {
