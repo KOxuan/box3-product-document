@@ -309,10 +309,7 @@ export default defineConfig({
       {
         text: "特殊权限",
         collapsed: false,
-        items: [
-          { text: "扩展地图", link: "/authority/expandMap" },
-          { text: "数据空间", link: "/authority/storage" },
-        ],
+        items: [{ text: "数据空间", link: "/authority/storage" }],
       },
     ],
     editLink: {

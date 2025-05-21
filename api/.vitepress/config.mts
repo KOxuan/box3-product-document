@@ -216,14 +216,14 @@ export default defineConfig({
               { text: "操作", link: "/GameRTC/operate" },
             ],
           },
-          {
-            text: "📊游戏数据分析",
-            link: "/GameAnalytics/index",
-            collapsed: false,
-            items: [
-              { text: "神策埋点", link: "/GameAnalytics/GameSensorAnalytics" },
-            ],
-          },
+          // {
+          //   text: "📊游戏数据分析",
+          //   link: "/GameAnalytics/index",
+          //   collapsed: false,
+          //   items: [
+          //     { text: "神策埋点", link: "/GameAnalytics/GameSensorAnalytics" },
+          //   ],
+          // },
           {
             text: "🟰游戏数学",
             collapsed: false,
