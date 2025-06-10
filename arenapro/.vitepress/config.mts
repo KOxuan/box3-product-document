@@ -105,6 +105,7 @@ export default defineConfig({
               { text: "3.改变构建文件名及入口", link: "/guide/six/bulidName" },
               { text: "4.跨项目引用", link: "/guide/six/projectReference" },
               { text: "5.webpack插件", link: "/guide/six/webpackPlugins" },
+              { text: "6.文件依赖图", link: "/guide/six/nodeGraph" },
             ],
           },
           {
