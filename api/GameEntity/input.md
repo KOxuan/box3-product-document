@@ -14,7 +14,7 @@ import '/style.css'
 
 ---
 
-#### <font id="API" />interactRadiu<font id="Type">: number</font>{#interactRadiu}
+#### <font id="API" />interactRadius<font id="Type">: number</font>{#interactRadius}
 
 > 默认值：16
 

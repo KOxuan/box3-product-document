@@ -86,7 +86,7 @@ declare class GameEntity {
 ### 交互系统
 
 - [`enableInteract`](./input#enableInteract) : 是否允许实体进行互动
-- [`interactRadiu`](./input#interactRadiu) : 实体互动范围。数值越小，则需要靠近实体才会出现互动提示
+- [`interactRadius`](./input#interactRadius) : 实体互动范围。数值越小，则需要靠近实体才会出现互动提示
 - [`interactHint`](./input#interactHint) : 进入实体互动范围时，实体身上出现的提示文本
 - [`interactColor`](./input#interactColor) : 进入实体互动范围时，提示文本的颜色
 
