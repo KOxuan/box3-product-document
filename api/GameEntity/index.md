@@ -162,3 +162,9 @@ declare class GameEntity {
 - [`GameHurtOptions`](./fight#GameHurtOptions) : 攻击/伤害的相关参数
 - [`GameDamageEvent`](./fight#GameDamageEvent) : 当实体收到伤害时触发的事件
 - [`GameDieEvent`](./fight#GameDieEvent) : 当实体死亡时触发的事件
+
+### 碰撞接口
+
+- [`GameEntityContact`](./physics#GameEntityContact) : 活跃实体对接触
+- [`GameVoxelContact`](./physics#GameVoxelContact) : 活跃方块接触状态
+- [`GameFluidContact`](./physics#GameFluidContact) : 活跃流体接触

@@ -89,7 +89,7 @@ setInterval(() => {
 }, 1000);
 ```
 
-## :::
+:::
 
 #### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameClickEvent](/GameWorld/input#GameClickEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onClick}
 
