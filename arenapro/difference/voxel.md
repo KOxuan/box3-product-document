@@ -1,4 +1,4 @@
-# 数据空间
+# 方块
 
 :::warning
 该 API 文档：[GameVoxels](https://docs.box3lab.com/api/GameVoxels/operate.html)

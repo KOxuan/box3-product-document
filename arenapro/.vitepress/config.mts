@@ -24,7 +24,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: "/icon.png",
     nav: [
-      { text: "API手册", link: "https://docs.box3lab.com/api/" },
+      { text: "API手册", link: "https://docs.box3lab.com/apapi/" },
       {
         text: "创作者QQ群",
         link: "https://qm.qq.com/cgi-bin/qm/qr?authKey=LteV6YzMX0xKmrQSp8%2BaNi6YUdonwyVMc44npCKlNymwnoWVZBmG5Y4S4N9RwxEP&k=JeZQYLLnherYW6pGlbODkErutSmbkzr-&noverify=0",
@@ -106,6 +106,7 @@ export default defineConfig({
               { text: "4.跨项目引用", link: "/guide/six/projectReference" },
               { text: "5.webpack插件", link: "/guide/six/webpackPlugins" },
               { text: "6.文件依赖图", link: "/guide/six/nodeGraph" },
+              { text: "7.管理环境变量", link: "/guide/six/env" },
             ],
           },
           {

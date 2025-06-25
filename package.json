@@ -5,16 +5,12 @@
   "scripts": {
     "arena:dev": "vitepress dev arena",
     "arena:build": "vitepress build arena",
-    "arena:preview": "vitepress preview arena",
     "voxa:dev": "vitepress dev voxa",
     "voxa:build": "vitepress build voxa",
-    "voxa:preview": "vitepress preview voxa",
     "api:dev": "vitepress dev api",
     "api:build": "vitepress build api",
-    "api:preview": "vitepress preview api",
     "arenapro:dev": "vitepress dev arenapro",
-    "arenapro:build": "vitepress build arenapro",
-    "arenapro:preview": "vitepress preview arenapro"
+    "arenapro:build": "vitepress build arenapro"
   },
   "dependencies": {
     "axios": "^1.7.7",
