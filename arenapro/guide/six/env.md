@@ -1,5 +1,7 @@
 # 🔑 管理环境变量
 
+![](/QQ20250625-201437.png)
+
 在项目开发中，处理敏感信息（如 API 密钥）和环境特定配置（如服务端口）是一项核心任务。将这些值硬编码到代码中会带来安全风险和维护困难。最佳实践是通过环境变量来管理它们。
 
 然而在神岛项目中，标准的 `dotenv` 包在运行时加载变量的方式并不可行。此时，我们需要一个能在 **构建时** 将环境变量注入代码的工具。
@@ -74,10 +76,9 @@ module.exports = {
   // ... 其他 webpack 配置，如 entry, output, module ...
 
   plugins: [
-    // 插件会自动寻找并加载项目根目录下的 .env 文件
-    // 如果你的 .env 文件不在根目录，可以像这样指定路径
     new Dotenv({
-      path: "../.env",
+      // 查找根目录下的.env文件
+      path: path.resolve(__dirname, "../.env"),
     }),
   ],
 
@@ -162,6 +163,37 @@ console.log(`API 密钥: ${process.env.API_KEY}，端口：${port}`); // API 密
     </td>
   </tr>
 </table>
+
+## ⚠️ 重要注意事项：避免运行时错误
+
+由于 `dotenv-webpack` 插件的工作原理是 **在构建时进行文本替换**，因此存在一个非常关键的细节需要注意，否则会导致代码在神岛平台上运行失败。
+
+**问题根源: `ReferenceError: process is not defined`**
+
+- 当你在代码中写入 `process.env.MY_VARIABLE` 时，`dotenv-webpack` 会在你的 `.env` 文件中寻找 `MY_VARIABLE`。
+- **如果找到了**，它会把 `process.env.MY_VARIABLE` 替换成你在文件中定义的值（一个字符串）。
+- **如果<u>没有</u>找到**，插件 **不会进行任何替换**。你的最终代码中将保留 `process.env.MY_VARIABLE` 这段原始代码。
+- 由于神岛的客户端/服务端脚本运行环境 **不是标准的 Node.js 环境**，其中并不存在 `process` 这个全局对象。
+- 因此，当代码尝试访问不存在的 `process` 对象时，会立即抛出 `ReferenceError: process is not defined` 错误。
+
+### ✅ 如何规避
+
+最简单且最可靠的方法是：**确保你在代码中使用的每一个 `process.env` 变量都在 `.env` 文件中有定义。**
+
+即便是某个变量暂时不需要值，也应该在 `.env` 文件中为其保留一个空条目。
+
+```txt
+# .env
+
+# 正确的做法
+API_URL=https://my-api.com
+EVENT_NAME=NewYearEvent
+
+# 即使暂时不用，也需要定义，否则代码中用到 process.env.DEBUG_FLAG 会报错
+DEBUG_FLAG=
+```
+
+遵循此规则可以完全避免 `ReferenceError`，确保你的代码在神岛平台上稳定运行。
 
 ## 📝 总结
 
