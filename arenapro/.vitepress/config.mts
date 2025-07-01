@@ -36,282 +36,291 @@ export default defineConfig({
     },
     sidebar: [
       {
-        text: "插件入门",
+        text: "快速开始",
         collapsed: false,
         items: [
           { text: "插件简介", link: "/index" },
+          { text: "安装插件", link: "/guide/two/start" },
+          { text: "创建项目", link: "/guide/two/createCodeProject" },
+          { text: "登录账号", link: "/guide/two/login" },
+          { text: "链接地图", link: "/guide/two/linkMap" },
+        ],
+      },
+      {
+        text: "基础教程",
+        collapsed: false,
+        items: [
           {
-            text: "Ⅰ、创建代码项目",
-            collapsed: true,
-            items: [
-              { text: "1.安装插件", link: "/guide/two/start" },
-              {
-                text: "2.创建地图代码项目",
-                link: "/guide/two/createCodeProject",
-              },
-              { text: "3.登录神岛账号", link: "/guide/two/login" },
-              { text: "4.链接扩展地图到项目", link: "/guide/two/linkMap" },
-            ],
-          },
-          {
-            text: "Ⅱ、HelloWorld 项目",
+            text: "HelloWorld 项目",
             collapsed: true,
             items: [
               {
-                text: "1.编写代码",
+                text: "编写代码",
                 collapsed: true,
                 items: [
-                  { text: "TypeScript编写", link: "/guide/three/one" },
-                  { text: "JavaScript编写", link: "/guide/three/one-js" },
+                  { text: "TypeScript 版本", link: "/guide/three/one" },
+                  { text: "JavaScript 版本", link: "/guide/three/one-js" },
                 ],
               },
-              { text: "2.Arena资源管理", link: "/guide/three/resources" },
-              { text: "3.打包上传", link: "/guide/three/two" },
-              { text: "4.运行测试", link: "/guide/three/three" },
-              { text: "5.导出至Arena", link: "/guide/three/toArena" },
-              {
-                text: "6.Arena资源同步",
-                link: "/guide/three/resourcesSynchronous",
-              },
+              { text: "资源管理", link: "/guide/three/resources" },
+              { text: "打包上传", link: "/guide/three/two" },
+              { text: "运行测试", link: "/guide/three/three" },
+              { text: "导出至Arena", link: "/guide/three/toArena" },
+              { text: "资源同步", link: "/guide/three/resourcesSynchronous" },
             ],
           },
           {
-            text: "Ⅲ、调试你的代码",
+            text: "代码调试",
             collapsed: true,
             items: [
-              { text: "1.代码开发模式", link: "/guide/four/debug" },
-              { text: "2.HMR服务器", link: "/guide/four/hmr" },
-              { text: "3.编译原理", link: "/guide/four/compilationPrinciple" },
-              { text: "4.debugger", link: "/guide/four/debugger" },
+              { text: "开发模式", link: "/guide/four/debug" },
+              { text: "热重载服务", link: "/guide/four/hmr" },
+              { text: "编译原理", link: "/guide/four/compilationPrinciple" },
+              { text: "断点调试", link: "/guide/four/debugger" },
             ],
           },
           {
-            text: "Ⅳ、双端共享代码",
+            text: "双端开发",
             collapsed: true,
             items: [
-              {
-                text: "1.通讯约定",
-                link: "/guide/five/communicationAgreement",
-              },
-              { text: "2.代码复用", link: "/guide/five/codeReuse" },
-            ],
-          },
-          {
-            text: "Ⅴ、进阶用法",
-            collapsed: true,
-            items: [
-              { text: "1.安装npm包", link: "/guide/six/npmPackage" },
-              { text: "2.导入JSON", link: "/guide/six/json" },
-              { text: "3.改变构建文件名及入口", link: "/guide/six/bulidName" },
-              { text: "4.跨项目引用", link: "/guide/six/projectReference" },
-              { text: "5.webpack插件", link: "/guide/six/webpackPlugins" },
-              { text: "6.文件依赖图", link: "/guide/six/nodeGraph" },
-              { text: "7.管理环境变量", link: "/guide/six/env" },
-            ],
-          },
-          {
-            text: "Ⅵ、神岛NPM包开发",
-            collapsed: true,
-            items: [
-              {
-                text: "1.部署组件库项目",
-                link: "/guide/seven/createNPMProject",
-              },
-              { text: "2.编写代码", link: "/guide/seven/code" },
-              { text: "3.投稿至dao3fun组织", link: "/guide/seven/dao3fun" },
+              { text: "通讯约定", link: "/guide/five/communicationAgreement" },
+              { text: "代码复用", link: "/guide/five/codeReuse" },
             ],
           },
         ],
       },
       {
-        text: "dao3Cfg配置",
+        text: "进阶功能",
         collapsed: false,
         items: [
-          { text: "脚手架架构", link: "/dao3Cfg/file" },
-          { text: "属性", link: "/dao3Cfg/attribute" },
+          { text: "安装 npm 包", link: "/guide/six/npmPackage" },
+          { text: "导入 JSON", link: "/guide/six/json" },
+          { text: "自定义构建", link: "/guide/six/bulidName" },
+          { text: "跨项目引用", link: "/guide/six/projectReference" },
+          { text: "webpack 插件", link: "/guide/six/webpackPlugins" },
+          { text: "文件依赖图", link: "/guide/six/nodeGraph" },
+          { text: "环境变量", link: "/guide/six/env" },
+          {
+            text: "NPM 包开发",
+            collapsed: true,
+            items: [
+              { text: "创建组件库", link: "/guide/seven/createNPMProject" },
+              { text: "编写代码", link: "/guide/seven/code" },
+              { text: "发布到社区", link: "/guide/seven/dao3fun" },
+            ],
+          },
         ],
       },
       {
-        text: "API差异",
-        collapsed: false,
-        items: [
-          { text: "地图资源路径", link: "/difference/resourcePath" },
-          { text: "自定义enity与player", link: "/difference/customizeEntity" },
-          { text: "dialog", link: "/difference/dialog" },
-          { text: "findChildByName", link: "/difference/findChildByName" },
-          { text: "GameDataStorage", link: "/difference/storage" },
-          { text: "RemoteChannel", link: "/difference/remoteChannel" },
-          { text: "GameVoxels", link: "/difference/voxel" },
-        ],
-      },
-      {
-        text: "MCP工具",
+        text: "开发框架",
         collapsed: false,
         items: [
           {
-            text: "插件MCP使用",
-            link: "/mcp/",
-          },
-          {
-            text: "神岛引擎OpenAPI",
-            link: "https://smithery.ai/server/@box3lab/engine-openapi-mcp",
-          },
-          {
-            text: "神岛作品数据分析",
-            link: "https://smithery.ai/server/@box3lab/statistics-mcp",
-          },
-        ],
-      },
-      {
-        text: "ECS架构",
-        collapsed: false,
-        items: [
-          { text: "组件介绍", link: "/package/component/componentGuide/index" },
-          {
-            text: "脚本指南",
+            text: "ECS 组件系统",
             collapsed: true,
             items: [
               {
-                text: "创建组件脚本",
-                link: "/package/component/componentGuide/setup",
+                text: "组件介绍",
+                link: "/package/component/componentGuide/index",
               },
               {
-                text: "组件和组件执行顺序",
-                link: "/package/component/componentGuide/component",
+                text: "开发指南",
+                collapsed: true,
+                items: [
+                  {
+                    text: "创建组件",
+                    link: "/package/component/componentGuide/setup",
+                  },
+                  {
+                    text: "组件执行",
+                    link: "/package/component/componentGuide/component",
+                  },
+                  {
+                    text: "装饰器",
+                    link: "/package/component/componentGuide/decorator",
+                  },
+                  {
+                    text: "生命周期",
+                    link: "/package/component/componentGuide/lifecycle",
+                  },
+                  {
+                    text: "节点管理",
+                    link: "/package/component/componentGuide/create-destroy",
+                  },
+                  {
+                    text: "访问组件",
+                    link: "/package/component/componentGuide/access-node-component",
+                  },
+                  {
+                    text: "基础接口",
+                    link: "/package/component/componentGuide/basic-node-api",
+                  },
+                  {
+                    text: "事件系统",
+                    link: "/package/component/componentGuide/event-node",
+                  },
+                  {
+                    text: "世界事件",
+                    link: "/package/component/componentGuide/event-world",
+                  },
+                  {
+                    text: "节点系统",
+                    link: "/package/component/componentGuide/system",
+                  },
+                  {
+                    text: "时间管理",
+                    link: "/package/component/componentGuide/time",
+                  },
+                  {
+                    text: "性能优化",
+                    link: "/package/component/componentGuide/performance",
+                  },
+                ],
               },
               {
-                text: "装饰器使用",
-                link: "/package/component/componentGuide/decorator",
+                text: "实战案例",
+                collapsed: true,
+                items: [
+                  {
+                    text: "时间回溯 - 入门",
+                    link: "/package/component/timeRewindSystem/timeRewindComponent",
+                  },
+                  {
+                    text: "时间回溯 - 进阶",
+                    link: "/package/component/timeRewindSystem/intermediateTopics",
+                  },
+                  {
+                    text: "时间回溯 - 高级",
+                    link: "/package/component/timeRewindSystem/advancedTopics",
+                  },
+                  { text: "更多示例", link: "/package/component/example" },
+                ],
               },
               {
-                text: "生命周期",
-                link: "/package/component/componentGuide/lifecycle",
-              },
-              {
-                text: "创建和销毁节点",
-                link: "/package/component/componentGuide/create-destroy",
-              },
-              {
-                text: "访问节点和组件",
-                link: "/package/component/componentGuide/access-node-component",
-              },
-              {
-                text: "常用节点和组件接口",
-                link: "/package/component/componentGuide/basic-node-api",
-              },
-              {
-                text: "节点事件系统",
-                link: "/package/component/componentGuide/event-node",
-              },
-              {
-                text: "服务端-游戏世界事件系统",
-                link: "/package/component/componentGuide/event-world",
-              },
-              {
-                text: "节点系统",
-                link: "/package/component/componentGuide/system",
-              },
-              {
-                text: "节点时间管理",
-                link: "/package/component/componentGuide/time",
-              },
-              {
-                text: "性能优化",
-                link: "/package/component/componentGuide/performance",
+                text: "API 文档",
+                collapsed: true,
+                items: [
+                  {
+                    text: "EventEmitter",
+                    link: "/package/component/api/EventEmitter",
+                  },
+                  {
+                    text: "EntityNode",
+                    link: "/package/component/api/EntityNode",
+                  },
+                  {
+                    text: "Component",
+                    link: "/package/component/api/Component",
+                  },
+                  {
+                    text: "NodeSystem",
+                    link: "/package/component/api/NodeSystem",
+                  },
+                  { text: "NodeTime", link: "/package/component/api/NodeTime" },
+                ],
               },
             ],
           },
           {
-            text: "组件实战-时间回溯",
+            text: "React UI 框架",
             collapsed: true,
             items: [
+              { text: "框架简介", link: "/package/react" },
               {
-                text: "入门：调用方式",
-                link: "/package/component/timeRewindSystem/timeRewindComponent",
+                text: "开发指南",
+                collapsed: true,
+                items: [
+                  { text: "创建脚本", link: "/package/react/reactGuide/setup" },
+                  { text: "XML 基础", link: "/package/react/reactGuide/xml" },
+                  { text: "DOM 树", link: "/package/react/reactGuide/domTree" },
+                  { text: "元素引用", link: "/package/react/reactGuide/refs" },
+                  {
+                    text: "类型定义",
+                    link: "/package/react/reactGuide/tsType",
+                  },
+                  {
+                    text: "多组件",
+                    link: "/package/react/reactGuide/multiComponent",
+                  },
+                  {
+                    text: "事件处理",
+                    link: "/package/react/reactGuide/eventHandlers",
+                  },
+                  { text: "钩子函数", link: "/package/react/reactGuide/hooks" },
+                  { text: "API 参考", link: "/package/react/reactGuide/api" },
+                ],
               },
+              { text: "实战示例", link: "/package/react/selectCode" },
               {
-                text: "进阶：接口解析",
-                link: "/package/component/timeRewindSystem/intermediateTopics",
+                text: "React 官方教程",
+                link: "https://zh-hans.react.dev/learn/describing-the-ui",
               },
-              {
-                text: "高级：源码解析",
-                link: "/package/component/timeRewindSystem/advancedTopics",
-              },
-            ],
-          },
-          { text: "代码示例", link: "/package/component/example" },
-          {
-            text: "API",
-            collapsed: false,
-            items: [
-              {
-                text: "EventEmitter",
-                link: "/package/component/api/EventEmitter",
-              },
-              { text: "EntityNode", link: "/package/component/api/EntityNode" },
-              { text: "Component", link: "/package/component/api/Component" },
-              { text: "NodeSystem", link: "/package/component/api/NodeSystem" },
-              { text: "NodeTime", link: "/package/component/api/NodeTime" },
             ],
           },
         ],
       },
       {
-        text: "React框架",
+        text: "工具与配置",
         collapsed: false,
         items: [
-          { text: "简介", link: "/package/react" },
           {
-            text: "脚本指南",
+            text: "项目配置",
             collapsed: true,
             items: [
-              { text: "创建脚本", link: "/package/react/reactGuide/setup" },
-              { text: "XML基础", link: "/package/react/reactGuide/xml" },
-              { text: "DOM树", link: "/package/react/reactGuide/domTree" },
+              { text: "脚手架架构", link: "/dao3Cfg/file" },
+              { text: "配置属性", link: "/dao3Cfg/attribute" },
+            ],
+          },
+          {
+            text: "前端工程化",
+            collapsed: true,
+            items: [
+              { text: "工具介绍", link: "/engineering/describes" },
+              { text: "ESLint", link: "/engineering/eslint" },
+              { text: "Prettier", link: "/engineering/prettier" },
+              { text: "Husky", link: "/engineering/husky" },
+            ],
+          },
+          {
+            text: "MCP 工具",
+            collapsed: true,
+            items: [
+              { text: "插件 MCP", link: "/mcp/" },
               {
-                text: "元素引用（ref）",
-                link: "/package/react/reactGuide/refs",
+                text: "神岛引擎 API",
+                link: "https://smithery.ai/server/@box3lab/engine-openapi-mcp",
               },
-              { text: "TS类型定义", link: "/package/react/reactGuide/tsType" },
               {
-                text: "多组件",
-                link: "/package/react/reactGuide/multiComponent",
-              },
-              {
-                text: "生命周期与事件处理器",
-                link: "/package/react/reactGuide/eventHandlers",
-              },
-              {
-                text: "钩子函数",
-                link: "/package/react/reactGuide/hooks",
-              },
-              {
-                text: "API",
-                link: "/package/react/reactGuide/api",
+                text: "数据分析",
+                link: "https://smithery.ai/server/@box3lab/statistics-mcp",
               },
             ],
           },
-          { text: "双向选择器示例", link: "/package/react/selectCode" },
-          {
-            text: "React官方教程",
-            link: "https://zh-hans.react.dev/learn/describing-the-ui",
-          },
         ],
       },
       {
-        text: "前端工程化",
+        text: "API 参考",
         collapsed: false,
         items: [
-          { text: "四大剑客介绍", link: "/engineering/describes" },
-          { text: "eslint用法", link: "/engineering/eslint" },
-          { text: "prettier用法", link: "/engineering/prettier" },
-          { text: "husky用法", link: "/engineering/husky" },
+          {
+            text: "API 差异说明",
+            collapsed: true,
+            items: [
+              { text: "资源路径", link: "/difference/resourcePath" },
+              { text: "自定义实体", link: "/difference/customizeEntity" },
+              { text: "对话框", link: "/difference/dialog" },
+              { text: "节点查找", link: "/difference/findChildByName" },
+              { text: "数据存储", link: "/difference/storage" },
+              { text: "远程通道", link: "/difference/remoteChannel" },
+              { text: "体素操作", link: "/difference/voxel" },
+            ],
+          },
+          {
+            text: "特殊权限",
+            collapsed: true,
+            items: [{ text: "数据空间", link: "/authority/storage" }],
+          },
         ],
-      },
-      {
-        text: "特殊权限",
-        collapsed: false,
-        items: [{ text: "数据空间", link: "/authority/storage" }],
       },
     ],
     editLink: {

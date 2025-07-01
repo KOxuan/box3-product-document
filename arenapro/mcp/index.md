@@ -33,6 +33,7 @@
 <p><strong>🔍 兼容工具：</strong> 目前已有多个主流开发工具完整支持 MCP 协议：</p>
 <ul>
   <li>VS Code</li>
+  <li>Trae</li>
   <li>Claude</li>
   <li>Cursor</li>
   <li>Windsurf</li>

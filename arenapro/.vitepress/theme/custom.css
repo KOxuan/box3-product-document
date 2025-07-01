@@ -1,0 +1,28 @@
+/**
+ * 自定义样式覆盖
+ * ----------------------------------------------------------------------------
+ */
+
+/* 你可以在这里添加自定义样式 */
+
+/* 示例：自定义颜色 */
+:root {
+  --vp-c-brand-1: #646cff;
+  --vp-c-brand-2: #747bff;
+}
+
+/* 示例：深色模式 */
+.dark {
+  --vp-c-brand-1: #c9cbff;
+  --vp-c-brand-2: #a6a9ff;
+}
+
+/* 自定义渐变按钮样式 */
+.custom-button {
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
