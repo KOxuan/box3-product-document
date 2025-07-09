@@ -40,10 +40,45 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: "插件简介", link: "/index" },
-          { text: "安装插件", link: "/guide/two/start" },
-          { text: "创建项目", link: "/guide/two/createCodeProject" },
-          { text: "登录账号", link: "/guide/two/login" },
-          { text: "链接地图", link: "/guide/two/linkMap" },
+          {
+            text: "核心技术概览",
+            link: "/guide/01-introduction/index",
+            collapsed: false,
+            items: [
+              {
+                text: "什么是 ArenaPro 插件？",
+                link: "/guide/01-introduction/WhatIsArenaPro",
+              },
+              {
+                text: "什么是 VSCode？",
+                link: "/guide/01-introduction/WhatVSCode",
+              },
+              {
+                text: "什么是 Node.js？",
+                link: "/guide/01-introduction/WhatNodeJs",
+              },
+              {
+                text: "什么是 TypeScript？",
+                link: "/guide/01-introduction/WhatTypeScript",
+              },
+              {
+                text: "什么是 Webpack？",
+                link: "/guide/01-introduction/WhatWebpack",
+              },
+            ],
+          },
+          {
+            text: "第一步：安装与配置",
+            link: "/guide/02-getting-started/01-install",
+          },
+          {
+            text: "第二步：创建你的第一个项目",
+            link: "/guide/02-getting-started/02-create-project",
+          },
+          {
+            text: "第三步：连接到云端进行调试",
+            link: "/guide/02-getting-started/03-connect-to-cloud",
+          },
         ],
       },
       {
@@ -51,62 +86,170 @@ export default defineConfig({
         collapsed: false,
         items: [
           {
-            text: "HelloWorld 项目",
+            text: "从零开始的 HelloWorld",
+            link: "/guide/03-basic-tutorial/01-hello-world-tutorial",
+          },
+          {
+            text: "🐞 代码调试工作流",
+            link: "/guide/04-development-workflow/debug",
+            items: [
+              {
+                text: "认识 Debug 与 Release 模式",
+                link: "/guide/04-development-workflow/debug",
+              },
+              {
+                text: "使用 HMR 实现代码热更新",
+                link: "/guide/04-development-workflow/hmr",
+              },
+              {
+                text: "使用 VS Code 进行断点调试",
+                link: "/guide/04-development-workflow/debugger",
+              },
+              {
+                text: "深入理解：两种构建模式的区别",
+                link: "/guide/04-development-workflow/compilationPrinciple",
+              },
+            ],
+          },
+          {
+            text: "🔃 客户端与服务端开发",
+            link: "/guide/05-best-practices/codeReuse",
+            items: [
+              {
+                text: "共享代码 (Single Source of Truth)",
+                link: "/guide/05-best-practices/codeReuse",
+              },
+              {
+                text: "共享数据结构 (Type-Safe Events)",
+                link: "/guide/05-best-practices/communicationAgreement",
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        text: "🚀 进阶指南",
+        collapsed: false,
+        items: [
+          {
+            text: "代码质量与数据管理",
             collapsed: true,
             items: [
               {
-                text: "编写代码",
-                collapsed: true,
+                text: "JS vs. TS: 如何选择？",
+                link: "/bestPractices/typescript-vs-javascript",
+              },
+              {
+                text: "专业地管理游戏数据 (JSON)",
+                link: "/guide/06-advanced-topics/json",
+              },
+              {
+                text: "可视化你的代码结构",
+                link: "/guide/06-advanced-topics/nodeGraph",
+              },
+            ],
+          },
+          {
+            text: "资源与构建",
+            collapsed: true,
+            items: [
+              {
+                text: "资源管理器",
+                link: "/guide/06-advanced-topics/resources",
+              },
+              {
+                text: "类型安全：同步游戏资源",
+                link: "/guide/06-advanced-topics/asset-synchronization",
+              },
+              { text: "管理环境变量", link: "/guide/06-advanced-topics/env" },
+              {
+                text: "管理多套代码入口 (分包)",
+                link: "/guide/06-advanced-topics/bulidName",
+              },
+              {
+                text: "自定义构建流程 (Webpack)",
+                link: "/guide/06-advanced-topics/webpackPlugins",
+              },
+            ],
+          },
+          {
+            text: "生态与分发",
+            collapsed: true,
+            items: [
+              {
+                text: "安全地使用外部 NPM 包",
+                link: "/guide/06-advanced-topics/npmPackage",
+              },
+              {
+                text: "创建本地共享包 (Monorepo)",
+                link: "/guide/06-advanced-topics/projectReference",
+              },
+              {
+                text: "📦 创建与发布 NPM 包",
+                link: "/guide/07-publishing/createNPMProject",
                 items: [
-                  { text: "TypeScript 版本", link: "/guide/three/one" },
-                  { text: "JavaScript 版本", link: "/guide/three/one-js" },
+                  {
+                    text: "第一步：创建项目",
+                    link: "/guide/07-publishing/createNPMProject",
+                  },
+                  {
+                    text: "第二步：编写与构建",
+                    link: "/guide/07-publishing/code",
+                  },
+                  {
+                    text: "第三步：发布与使用",
+                    link: "/guide/07-publishing/publish-and-use",
+                  },
+                  {
+                    text: "投稿社区：发布NPM包",
+                    link: "/guide/06-advanced-topics/contributing-to-dao3fun",
+                  },
                 ],
               },
-              { text: "资源管理", link: "/guide/three/resources" },
-              { text: "打包上传", link: "/guide/three/two" },
-              { text: "运行测试", link: "/guide/three/three" },
-              { text: "导出至Arena", link: "/guide/three/toArena" },
-              { text: "资源同步", link: "/guide/three/resourcesSynchronous" },
-            ],
-          },
-          {
-            text: "代码调试",
-            collapsed: true,
-            items: [
-              { text: "开发模式", link: "/guide/four/debug" },
-              { text: "热重载服务", link: "/guide/four/hmr" },
-              { text: "编译原理", link: "/guide/four/compilationPrinciple" },
-              { text: "断点调试", link: "/guide/four/debugger" },
-            ],
-          },
-          {
-            text: "双端开发",
-            collapsed: true,
-            items: [
-              { text: "通讯约定", link: "/guide/five/communicationAgreement" },
-              { text: "代码复用", link: "/guide/five/codeReuse" },
+              {
+                text: "导出代码到 Arena",
+                link: "/guide/06-advanced-topics/toArena",
+              },
             ],
           },
         ],
       },
       {
-        text: "进阶功能",
+        text: "工具与配置",
         collapsed: false,
         items: [
-          { text: "安装 npm 包", link: "/guide/six/npmPackage" },
-          { text: "导入 JSON", link: "/guide/six/json" },
-          { text: "自定义构建", link: "/guide/six/bulidName" },
-          { text: "跨项目引用", link: "/guide/six/projectReference" },
-          { text: "webpack 插件", link: "/guide/six/webpackPlugins" },
-          { text: "文件依赖图", link: "/guide/six/nodeGraph" },
-          { text: "环境变量", link: "/guide/six/env" },
           {
-            text: "NPM 包开发",
+            text: "项目配置",
             collapsed: true,
             items: [
-              { text: "创建组件库", link: "/guide/seven/createNPMProject" },
-              { text: "编写代码", link: "/guide/seven/code" },
-              { text: "发布到社区", link: "/guide/seven/dao3fun" },
+              { text: "脚手架架构", link: "/dao3Cfg/file" },
+              { text: "配置属性", link: "/dao3Cfg/attribute" },
+            ],
+          },
+          {
+            text: "前端工程化",
+            collapsed: true,
+            items: [
+              { text: "工具介绍", link: "/engineering/describes" },
+              { text: "ESLint", link: "/engineering/eslint" },
+              { text: "Prettier", link: "/engineering/prettier" },
+              { text: "Husky", link: "/engineering/husky" },
+            ],
+          },
+          {
+            text: "MCP 工具",
+            collapsed: true,
+            items: [
+              { text: "插件 MCP", link: "/mcp/" },
+              {
+                text: "神岛引擎 API",
+                link: "https://smithery.ai/server/@box3lab/engine-openapi-mcp",
+              },
+              {
+                text: "数据分析",
+                link: "https://smithery.ai/server/@box3lab/statistics-mcp",
+              },
             ],
           },
         ],
@@ -254,45 +397,6 @@ export default defineConfig({
               {
                 text: "React 官方教程",
                 link: "https://zh-hans.react.dev/learn/describing-the-ui",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        text: "工具与配置",
-        collapsed: false,
-        items: [
-          {
-            text: "项目配置",
-            collapsed: true,
-            items: [
-              { text: "脚手架架构", link: "/dao3Cfg/file" },
-              { text: "配置属性", link: "/dao3Cfg/attribute" },
-            ],
-          },
-          {
-            text: "前端工程化",
-            collapsed: true,
-            items: [
-              { text: "工具介绍", link: "/engineering/describes" },
-              { text: "ESLint", link: "/engineering/eslint" },
-              { text: "Prettier", link: "/engineering/prettier" },
-              { text: "Husky", link: "/engineering/husky" },
-            ],
-          },
-          {
-            text: "MCP 工具",
-            collapsed: true,
-            items: [
-              { text: "插件 MCP", link: "/mcp/" },
-              {
-                text: "神岛引擎 API",
-                link: "https://smithery.ai/server/@box3lab/engine-openapi-mcp",
-              },
-              {
-                text: "数据分析",
-                link: "https://smithery.ai/server/@box3lab/statistics-mcp",
               },
             ],
           },

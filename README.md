@@ -1,13 +1,10 @@
-# 🎉神岛产品手册文档 创作者共建
+# 🎉 神岛产品手册文档 创作者共建
 
 🌟 **携手共创，打造完美产品指南！** 🌟
 
+> 文档合集：[Arena 编辑器用户手册](https://docs.box3lab.com/arena/)，[Arena 编辑器 API 手册](https://docs.box3lab.com/api/)，[Voxa 编辑器用户手册](https://docs.box3lab.com/voxa/)，[ArenaPro 插件用户手册](https://docs.box3lab.com/arenapro/)
 
->文档合集：[Arena编辑器用户手册](https://docs.box3lab.com/arena/)，[Arena编辑器API手册](https://docs.box3lab.com/api/)，[Voxa编辑器用户手册](https://docs.box3lab.com/voxa/)，[ArenaPro插件用户手册](https://docs.box3lab.com/arenapro/)
-
----
-
-### 🚀 为什么我们需要这份文档？
+## # 🚀 为什么我们需要这份文档？
 
 官方因资源问题无法顾及到方方面面，难免会有疏漏与更新不及时之处。为了让每一位创作者都能获得最新、最详尽的产品指导，我们决定打破界限，**开放文档共建**！
 
@@ -27,8 +24,8 @@
 **第二步：修改与优化**  
 利用你的专业知识或个人体验，对文档进行补充、修正或优化。每一个字、每一句话，都可能成为他人解决问题的关键。
 
-**第三步：提交PR（Pull Request）**  
-完成修改后，通过Gitee提交PR，一旦通过文档审核，你的贡献将被永久收录，你也将荣登我们的贡献者名单！
+**第三步：提交 PR（Pull Request）**  
+完成修改后，通过 Gitee 提交 PR，一旦通过文档审核，你的贡献将被永久收录，你也将荣登我们的贡献者名单！
 
 ### 🏆 成为贡献者的荣耀
 

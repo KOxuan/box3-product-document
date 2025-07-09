@@ -14,29 +14,21 @@ import '/style.css'
 
 每个坐标轴的范围为 0-1。
 
----
-
-#### <font id="API" /><font id="ReadOnly">只读</font>position<font id="Type">: [Coord2](/ClientUI/maths/Coord2)</font> {#position}
+## ## <font id="API" /><font id="ReadOnly">只读</font>position<font id="Type">: [Coord2](/ClientUI/maths/Coord2)</font> {#position}
 
 节点的位置，相对于父节点的位置。
 
----
-
-#### <font id="API" /><font id="ReadOnly">只读</font>backgroundColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font> {#backgroundColor}
+## ## <font id="API" /><font id="ReadOnly">只读</font>backgroundColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font> {#backgroundColor}
 
 节点的背景颜色。
 
----
-
-#### <font id="API" />backgroundOpacity<font id="Type">: number</font>{#backgroundOpacity}
+## ## <font id="API" />backgroundOpacity<font id="Type">: number</font>{#backgroundOpacity}
 
 > 默认值：1
 
 节点的背景透明度。
 
----
-
-#### <font id="API" />rotation<font id="Type">: number</font>{#rotation}
+## ## <font id="API" />rotation<font id="Type">: number</font>{#rotation}
 
 > 默认值：0
 
@@ -46,39 +38,29 @@ import '/style.css'
 
 角度取值范围：-179 到 180
 
----
-
-#### <font id="API" /><font id="ReadOnly">只读</font>size<font id="Type">: [Coord2](/ClientUI/maths/Coord2)</font> {#size}
+## ## <font id="API" /><font id="ReadOnly">只读</font>size<font id="Type">: [Coord2](/ClientUI/maths/Coord2)</font> {#size}
 
 节点的尺寸。
 
----
-
-#### <font id="API" />zIndex<font id="Type">: number</font> {#zIndex}
+## ## <font id="API" />zIndex<font id="Type">: number</font> {#zIndex}
 
 > 默认值：1
 
 节点的层级，用于确定节点的渲染顺序。
 
----
-
-#### <font id="API" />autoResize<font id="Type">: 'NONE' | 'X' | 'Y' | 'XY'</font> {#autoResize}
+## ## <font id="API" />autoResize<font id="Type">: 'NONE' | 'X' | 'Y' | 'XY'</font> {#autoResize}
 
 > 默认值：'NONE'
 
 节点的自动调整尺寸的方式。
 
----
-
-#### <font id="API" />visible<font id="Type">: boolean</font>{#visible}
+## ## <font id="API" />visible<font id="Type">: boolean</font>{#visible}
 
 > 默认值：true
 
 节点的可见性。
 
----
-
-#### <font id="API" />pointerEventBehavior<font id="Type">: [PointerEventBehavior](./UiRenderable#PointerEventBehavior)</font> {#pointerEventBehavior}
+## ## <font id="API" />pointerEventBehavior<font id="Type">: [PointerEventBehavior](./UiRenderable#PointerEventBehavior)</font> {#pointerEventBehavior}
 
 > 默认值：PointerEventBehavior.ENABLE
 
