@@ -9,7 +9,7 @@
 
 我们**强烈推荐**你使用 TypeScript，因为它能提供无与伦比的代码自动补全和错误检查功能，极大地提升开发效率和代码质量。
 
-想了解更多？请查阅我们的 **[JavaScript vs. TypeScript 指南](/bestPractices/typescript-vs-javascript)**。
+想了解更多？请查阅我们的 **[JavaScript vs. TypeScript 指南](/guide/03-basic-tutorial/typescript-vs-javascript)**。
 
 :::
 

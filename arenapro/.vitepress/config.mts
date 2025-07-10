@@ -30,6 +30,9 @@ export default defineConfig({
         link: "https://qm.qq.com/cgi-bin/qm/qr?authKey=LteV6YzMX0xKmrQSp8%2BaNi6YUdonwyVMc44npCKlNymwnoWVZBmG5Y4S4N9RwxEP&k=JeZQYLLnherYW6pGlbODkErutSmbkzr-&noverify=0",
       },
     ],
+    search: {
+      provider: "local",
+    },
     outline: {
       level: [2, 3],
       label: "本页目录",
@@ -81,6 +84,7 @@ export default defineConfig({
           },
         ],
       },
+
       {
         text: "基础教程",
         collapsed: false,
@@ -88,6 +92,10 @@ export default defineConfig({
           {
             text: "从零开始的 HelloWorld",
             link: "/guide/03-basic-tutorial/01-hello-world-tutorial",
+          },
+          {
+            text: "JS vs. TS: 如何选择？",
+            link: "/guide/03-basic-tutorial/typescript-vs-javascript",
           },
           {
             text: "🐞 代码调试工作流",
@@ -133,16 +141,25 @@ export default defineConfig({
         collapsed: false,
         items: [
           {
-            text: "代码质量与数据管理",
-            collapsed: true,
+            text: "代码质量与工作流",
+            collapsed: false,
             items: [
               {
-                text: "JS vs. TS: 如何选择？",
-                link: "/bestPractices/typescript-vs-javascript",
+                text: "前端工程化",
+                link: "/engineering/describes",
+                items: [
+                  { text: "ESLint", link: "/engineering/eslint" },
+                  { text: "Prettier", link: "/engineering/prettier" },
+                  { text: "Husky", link: "/engineering/husky" },
+                ],
               },
               {
                 text: "专业地管理游戏数据 (JSON)",
                 link: "/guide/06-advanced-topics/json",
+              },
+              {
+                text: "你的代码健康吗？引入自动化测试",
+                link: "/guide/06-advanced-topics/automated-testing",
               },
               {
                 text: "可视化你的代码结构",
@@ -151,8 +168,27 @@ export default defineConfig({
             ],
           },
           {
-            text: "资源与构建",
-            collapsed: true,
+            text: "项目架构与构建",
+            collapsed: false,
+            items: [
+              {
+                text: "管理多套代码入口 (分包)",
+                link: "/guide/06-advanced-topics/bulidName",
+              },
+              {
+                text: "创建本地共享包 (Monorepo)",
+                link: "/guide/06-advanced-topics/projectReference",
+              },
+              { text: "管理环境变量", link: "/guide/06-advanced-topics/env" },
+              {
+                text: "自定义构建流程 (Webpack)",
+                link: "/guide/06-advanced-topics/webpackPlugins",
+              },
+            ],
+          },
+          {
+            text: "资源与生态系统",
+            collapsed: false,
             items: [
               {
                 text: "资源管理器",
@@ -162,28 +198,9 @@ export default defineConfig({
                 text: "类型安全：同步游戏资源",
                 link: "/guide/06-advanced-topics/asset-synchronization",
               },
-              { text: "管理环境变量", link: "/guide/06-advanced-topics/env" },
-              {
-                text: "管理多套代码入口 (分包)",
-                link: "/guide/06-advanced-topics/bulidName",
-              },
-              {
-                text: "自定义构建流程 (Webpack)",
-                link: "/guide/06-advanced-topics/webpackPlugins",
-              },
-            ],
-          },
-          {
-            text: "生态与分发",
-            collapsed: true,
-            items: [
               {
                 text: "安全地使用外部 NPM 包",
                 link: "/guide/06-advanced-topics/npmPackage",
-              },
-              {
-                text: "创建本地共享包 (Monorepo)",
-                link: "/guide/06-advanced-topics/projectReference",
               },
               {
                 text: "📦 创建与发布 NPM 包",
@@ -225,16 +242,6 @@ export default defineConfig({
             items: [
               { text: "脚手架架构", link: "/dao3Cfg/file" },
               { text: "配置属性", link: "/dao3Cfg/attribute" },
-            ],
-          },
-          {
-            text: "前端工程化",
-            collapsed: true,
-            items: [
-              { text: "工具介绍", link: "/engineering/describes" },
-              { text: "ESLint", link: "/engineering/eslint" },
-              { text: "Prettier", link: "/engineering/prettier" },
-              { text: "Husky", link: "/engineering/husky" },
             ],
           },
           {
@@ -423,6 +430,16 @@ export default defineConfig({
             text: "特殊权限",
             collapsed: true,
             items: [{ text: "数据空间", link: "/authority/storage" }],
+          },
+        ],
+      },
+      {
+        text: "社区与贡献",
+        collapsed: false,
+        items: [
+          {
+            text: "🌟 创作者激励计划",
+            link: "/community-rewards",
           },
         ],
       },
