@@ -137,6 +137,10 @@ export default defineConfig({
               },
             ],
           },
+          {
+            text: "Git 上手指南",
+            link: "https://liaoxuefeng.com/books/git/introduction/index.html",
+          },
         ],
       },
 
@@ -148,10 +152,6 @@ export default defineConfig({
             text: "代码质量与工作流",
             collapsed: false,
             items: [
-              {
-                text: "Git 上手指南",
-                link: "https://liaoxuefeng.com/books/git/introduction/index.html",
-              },
               {
                 text: "前端工程化",
                 link: "/engineering/describes",
