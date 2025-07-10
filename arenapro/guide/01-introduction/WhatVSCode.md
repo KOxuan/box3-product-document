@@ -54,7 +54,3 @@
 - [前往 VSCode 官网下载](https://code.visualstudio.com/Download)
 - [【可选】五分钟配置中文界面](/bestPractices/chineseVSCode)
 - [【B 站】VSCode 零基础视频教程](https://www.bilibili.com/video/BV1ty4y1S7mC)
-
-> **上一篇：[欢迎来到 ArenaPro 的世界！](./WhatIsArenaPro.md)**
->
-> **下一篇：[什么是 Node.js？](./WhatNodeJs.md)**

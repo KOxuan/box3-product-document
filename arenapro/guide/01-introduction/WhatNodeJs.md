@@ -42,7 +42,3 @@
 所以，在开始我们的旅程之前，请务必先安装好它！
 
 - [前往 Node.js 官网下载 (推荐 LTS 版本)](/bestPractices/nodejs)
-
-> **上一篇：[你的超级工具箱：VSCode](./WhatVSCode.md)**
->
-> **下一篇：[什么是 TypeScript？](./WhatTypeScript.md)**

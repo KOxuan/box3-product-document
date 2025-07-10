@@ -60,7 +60,3 @@
 - `Webpack`: 魔法打包机 (它其实也是被 Node.js 驱动的)
 
 所有基础概念已经铺垫完毕，让我们正式踏上激动人心的创造之旅吧！
-
-> **上一篇：[你的智能副驾：TypeScript](./WhatTypeScript.md)**
->
-> **下一站：[第一步：安装与配置](./../02-getting-started/01-install.md)**

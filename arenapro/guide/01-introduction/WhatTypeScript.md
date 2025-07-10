@@ -68,7 +68,3 @@ addHealth(myPlayer, "一百"); // 请注意，这里会立刻报错！
 
 - [TypeScript 官方文档 (中文)](https://www.typescriptlang.org/zh/docs/)
 - [【B 站】TypeScript 快速上手视频](https://www.bilibili.com/video/BV1gX4y177Kf)
-
-> **上一篇：[赋予 JS 超能力：Node.js](./WhatNodeJs.md)**
->
-> **下一篇：[什么是 Webpack？](./WhatWebpack.md)**
