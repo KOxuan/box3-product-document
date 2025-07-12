@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "@types/node": "^24.0.13",
+    "tsx": "^4.20.3",
     "vitepress": "^1.3.4"
   },
   "scripts": {
@@ -8,7 +10,7 @@
     "voxa:dev": "vitepress dev voxa",
     "voxa:build": "vitepress build voxa",
     "api:dev": "vitepress dev api",
-    "api:build": "vitepress build api",
+    "api:build": "vitepress build api && tsx scripts/build-api-llms-txt.ts",
     "arenapro:dev": "vitepress dev arenapro",
     "arenapro:build": "vitepress build arenapro"
   },
