@@ -1,4 +1,6 @@
 import { defineConfig } from "vitepress";
+import llmstxt from 'vitepress-plugin-llms'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "zh-cn",
@@ -351,5 +353,10 @@ export default defineConfig({
         timeStyle: "short",
       },
     },
+  },
+  vite: {
+    plugins: [llmstxt({
+      generateLLMFriendlyDocsForEachPage: false
+    })],
   },
 });
