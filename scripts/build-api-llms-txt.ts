@@ -27,7 +27,7 @@ function capitalizeDelimiter(str: string) {
 }
 
 async function generateLLMDocs() {
-  const outputListFile = path.resolve('api/public/llms.txt')
+  const outputListFile = path.resolve('api/.vitepress/dist/llms.txt')
 
   const optionalFiles = await glob('**/*.md', { cwd: docsDir })
 
@@ -36,13 +36,14 @@ async function generateLLMDocs() {
   for await (const file of optionalFiles) {
     const filePath=file.replaceAll("\\","/")
     optionals.push(
-      `- [${extractLabel(filePath)}](https://docs.box3lab.com/api/${sliceExt(filePath)}.html)`
-    )
+      `- [${extractLabel(filePath)}](https://docs.box3lab.com/api/${sliceExt(filePath)}.md)`
+    );
+    fs.copyFileSync(path.resolve(docsDir,file), path.resolve('api/.vitepress/dist', file));
   }
 
   fs.writeFileSync(
     outputListFile,
-    [
+    '\uFEFF' + [
       '# 神奇代码岛 API',
       '',
       '> 神奇代码岛是一个多人联机协作游戏引擎（平台），支持TypeScript/JavaScript语法编写游戏。引擎分为server（文档中以S-前缀）和client（文档中以C-前缀）两端，两端的api不通用，请留意。',
@@ -53,15 +54,15 @@ async function generateLLMDocs() {
       // TODO: 哪些用于Tiny版文档？
       // '- [Tiny Docs](https://docs.box3lab.com/api/llms-small.txt): Tiny documentation of 神奇代码岛. (includes only desciption of core)',
       '',
-      '## 文档入口：',
-      '',
+      '## 各个文档页面的入口',
+      '你可以使用Web抓取URL的方式阅读以下文档，它们都是markdown格式的。如果你需要提供html版本的给用户，请将.md后缀改为.html',
       ...optionals,
     ].join('\n'),
     'utf-8'
   )
   console.log(`< Output '${outputListFile}' `)
 
-  const outputFullFile = path.resolve('api/public/llms-full.txt')
+  const outputFullFile = path.resolve('api/.vitepress/dist/llms-full.txt')
   const files = await glob('**/*.md', { cwd: docsDir })
 
   const fullContent = await generateContent(
@@ -70,10 +71,10 @@ async function generateLLMDocs() {
     '<SYSTEM>This is the full developer documentation for 神奇代码岛.</SYSTEM>\n\n'
   )
 
-  fs.writeFileSync(outputFullFile, fullContent, 'utf-8')
+  fs.writeFileSync(outputFullFile, '\uFEFF' + fullContent, 'utf-8')
   console.log(`< Output '${outputFullFile}' `)
 
-  // const outputTinyFile = path.resolve('api/public/llms-small.txt')
+  // const outputTinyFile = path.resolve('api/.vitepress/dist/llms-small.txt')
 
   // const tinyExclude = [];
   // const tinyFiles = await glob('**/*.md', {
