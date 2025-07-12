@@ -1,0 +1,113 @@
+// modified from https://github.com/honojs/website/blob/main/scripts/build-llm-docs.ts
+import fs from 'node:fs'
+import path from 'node:path'
+import { glob } from 'node:fs/promises'
+
+const frontmatterRegex = /^\n*---(\n.+)*?\n---\n/
+
+const docsDir = path.resolve('api')
+
+const sliceExt = (file: string) => {
+  return file.split('.').slice(0, -1).join('.')
+}
+
+const extractLabel = (file: string) => {
+  // hono 原有的这种方式导致所有index.md都叫做index，应该选取第一个大标题最好
+  // return sliceExt(file.split('/').pop() || '')
+  const fileContent = fs.readFileSync(path.resolve(docsDir, file), 'utf-8')
+  const match = fileContent.match(/^# (.+)$/m)
+  return match ? match[1] : sliceExt(file.split('/').pop() || '')
+}
+
+function capitalizeDelimiter(str: string) {
+  return str
+    .split('-')
+    .map((s:string) => s.charAt(0).toUpperCase() + s.slice(1))
+    .join('-')
+}
+
+async function generateLLMDocs() {
+  const outputListFile = path.resolve('api/public/llms.txt')
+
+  const optionalFiles = await glob('**/*.md', { cwd: docsDir })
+
+  const optionals: string[] = []
+
+  for await (const file of optionalFiles) {
+    const filePath=file.replaceAll("\\","/")
+    optionals.push(
+      `- [${extractLabel(filePath)}](https://docs.box3lab.com/api/${sliceExt(filePath)}.html)`
+    )
+  }
+
+  fs.writeFileSync(
+    outputListFile,
+    [
+      '# 神奇代码岛 API',
+      '',
+      '> 神奇代码岛是一个多人联机协作游戏引擎（平台），支持TypeScript/JavaScript语法编写游戏。引擎分为server（文档中以S-前缀）和client（文档中以C-前缀）两端，两端的api不通用，请留意。',
+      '',
+      '## Docs 完整文档如下：',
+      '',
+      '- [Full Docs](https://docs.box3lab.com/api/llms-full.txt) Full documentation of 神奇代码岛. (without examples)',
+      // TODO: 哪些用于Tiny版文档？
+      // '- [Tiny Docs](https://docs.box3lab.com/api/llms-small.txt): Tiny documentation of 神奇代码岛. (includes only desciption of core)',
+      '',
+      '## 文档入口：',
+      '',
+      ...optionals,
+    ].join('\n'),
+    'utf-8'
+  )
+  console.log(`< Output '${outputListFile}' `)
+
+  const outputFullFile = path.resolve('api/public/llms-full.txt')
+  const files = await glob('**/*.md', { cwd: docsDir })
+
+  const fullContent = await generateContent(
+    files,
+    docsDir,
+    '<SYSTEM>This is the full developer documentation for 神奇代码岛.</SYSTEM>\n\n'
+  )
+
+  fs.writeFileSync(outputFullFile, fullContent, 'utf-8')
+  console.log(`< Output '${outputFullFile}' `)
+
+  // const outputTinyFile = path.resolve('api/public/llms-small.txt')
+
+  // const tinyExclude = [];
+  // const tinyFiles = await glob('**/*.md', {
+  //   cwd: docsDir,
+  //   exclude: (filename: string) => tinyExclude.includes(filename),
+  // })
+
+  // const tinyContent = await generateContent(
+  //   tinyFiles,
+  //   docsDir,
+  //   '<SYSTEM>This is the tiny developer documentation for 神奇代码岛.</SYSTEM>\n\n'
+  // )
+
+  // fs.writeFileSync(outputTinyFile, tinyContent, 'utf-8')
+  // console.log(`< Output '${outputTinyFile}' `)
+}
+
+async function generateContent(
+  files: NodeJS.AsyncIterator<string>,
+  docsDir: string,
+  header: string
+): Promise<string> {
+  let content = header + '# Start of 神奇代码岛 documentation\n'
+
+  for await (const file of files) {
+    console.log(`> Generating docs for '${file}' `)
+    const fileContent = fs.readFileSync(
+      path.resolve(docsDir, file),
+      'utf-8'
+    )
+    content += fileContent.replace(frontmatterRegex, '') + '\n\n'
+  }
+
+  return content
+}
+
+generateLLMDocs().catch(console.error)
