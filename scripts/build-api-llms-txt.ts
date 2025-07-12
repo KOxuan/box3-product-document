@@ -5,7 +5,8 @@ import { glob } from 'node:fs/promises'
 
 const frontmatterRegex = /^\n*---(\n.+)*?\n---\n/
 
-const docsDir = path.resolve('api')
+const docsDir = path.resolve('api');
+const docsUrl = process.argv.includes("--dev") ? 'http://localhost:4173' : 'https://docs.box3lab.com';
 
 const sliceExt = (file: string) => {
   return file.split('.').slice(0, -1).join('.')
@@ -36,7 +37,7 @@ async function generateLLMDocs() {
   for await (const file of optionalFiles) {
     const filePath=file.replaceAll("\\","/")
     optionals.push(
-      `- [${extractLabel(filePath)}](https://docs.box3lab.com/api/${sliceExt(filePath)}.md)`
+      `- [${extractLabel(filePath)}](${docsUrl}/api/${sliceExt(filePath)}.md)`
     );
     fs.copyFileSync(path.resolve(docsDir,file), path.resolve('api/.vitepress/dist', file));
   }
@@ -50,9 +51,9 @@ async function generateLLMDocs() {
       '',
       '## Docs 完整文档如下：',
       '',
-      '- [Full Docs](https://docs.box3lab.com/api/llms-full.txt) Full documentation of 神奇代码岛. (without examples)',
+      `- [完整文档](${docsUrl}/api/llms-full.txt) 神奇代码岛API完整文档`,
       // TODO: 哪些用于Tiny版文档？
-      // '- [Tiny Docs](https://docs.box3lab.com/api/llms-small.txt): Tiny documentation of 神奇代码岛. (includes only desciption of core)',
+      // '- [Tiny Docs](${docsUrl}/api/llms-small.txt): Tiny documentation of 神奇代码岛. (includes only desciption of core)',
       '',
       '## 各个文档页面的入口',
       '你可以使用Web抓取URL的方式阅读以下文档，它们都是markdown格式的。如果你需要提供html版本的给用户，请将.md后缀改为.html',
@@ -68,7 +69,7 @@ async function generateLLMDocs() {
   const fullContent = await generateContent(
     files,
     docsDir,
-    '<SYSTEM>This is the full developer documentation for 神奇代码岛.</SYSTEM>\n\n'
+    '<SYSTEM>这是神奇代码岛API的完整文档。</SYSTEM>\n\n'
   )
 
   fs.writeFileSync(outputFullFile, '\uFEFF' + fullContent, 'utf-8')
@@ -97,7 +98,7 @@ async function generateContent(
   docsDir: string,
   header: string
 ): Promise<string> {
-  let content = header + '# Start of 神奇代码岛 documentation\n'
+  let content = header + '# 神奇代码岛文档开头\n'
 
   for await (const file of files) {
     console.log(`> Generating docs for '${file}' `)
