@@ -94,11 +94,15 @@ export default defineConfig({
         collapsed: false,
         items: [
           {
-            text: "从零开始的 HelloWorld",
+            text: "Hello World 实战",
             link: "/guide/03-basic-tutorial/01-hello-world-tutorial",
           },
           {
-            text: "JS vs. TS: 如何选择？",
+            text: "ArenaPro 与 Arena 有何不同？",
+            link: "/guide/03-basic-tutorial/02-whats-different",
+          },
+          {
+            text: "TypeScript vs JavaScript",
             link: "/guide/03-basic-tutorial/typescript-vs-javascript",
           },
           {
@@ -445,10 +449,12 @@ export default defineConfig({
         text: "社区与贡献",
         collapsed: false,
         items: [
-          {
-            text: "🌟 创作者激励计划",
-            link: "/community-rewards",
-          },
+          { text: "社区贡献激励", link: "/community/community-rewards" },
+          { text: "🌟 创作者荣誉榜", link: "/community/creators-honor-roll" },
+          { text: "⚠️ 行为准则", link: "/community/CODE_OF_CONDUCT" },
+          { text: "🎉 AP 活动历史", link: "/community/events" },
+          { text: "🙏 特别鸣谢", link: "/community/special-thanks" },
+          { text: "更新日志", link: "/community/release-notes" },
         ],
       },
     ],

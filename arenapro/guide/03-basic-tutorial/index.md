@@ -1,16 +1,20 @@
-# 3. 基础教程
-
-完成了环境配置和项目创建，现在你已经准备好进入激动人心的编码环节了！
-
-本章将通过一个经典的 "Hello, World!" 示例，手把手带你走完 ArenaPro 的核心开发流程：**编写代码 -> 构建上传 -> 运行测试**。
-
-这是你作为创作者的真正起点。
-
-## 目录
-
-1.  [**HelloWorld: 你的第一个 ts 脚本**](./01-hello-world-tutorial.md)
-    - 学习当玩家进入地图时，如何向他们显示一条欢迎信息。
-
+---
+title: 基础教程
 ---
 
-让我们开始 **[第一个 ts 脚本](./01-hello-world-tutorial.md)** 的学习吧！
+# 基础教程
+
+欢迎来到 ArenaPro 的世界！
+
+在开始创造你的第一个作品之前，我们强烈建议你花上一点时间，了解一下 ArenaPro 的核心优势以及它与标准引擎的些许不同。这将帮助你更快地理解我们为你打造的这套现代化工作流。
+
+- **[ArenaPro 有何不同？](./02-whats-different.md)**
+
+  - `必读` 了解 ArenaPro 为何能提供更统一、更高效的开发体验。
+
+- **[Hello World 实战](./01-hello-world-tutorial.md)**
+
+  - 跟随本教程，一步步创建并运行你的第一个 ArenaPro 项目。
+
+- **[TypeScript vs JavaScript](./typescript-vs-javascript.md)**
+  - ArenaPro 全面拥抱 TypeScript。了解它的优势，写出更健壮、更易于维护的代码。
