@@ -44,35 +44,8 @@ export default defineConfig({
         items: [
           { text: "插件简介", link: "/index" },
           {
-            text: "核心技术概览",
-            link: "/guide/01-introduction/index",
-            collapsed: false,
-            items: [
-              {
-                text: "什么是 ArenaPro 插件？",
-                link: "/guide/01-introduction/WhatIsArenaPro",
-              },
-              {
-                text: "什么是 VSCode？",
-                link: "/guide/01-introduction/WhatVSCode",
-              },
-              {
-                text: "什么是 Node.js？",
-                link: "/guide/01-introduction/WhatNodeJs",
-              },
-              {
-                text: "什么是 TypeScript？",
-                link: "/guide/01-introduction/WhatTypeScript",
-              },
-              {
-                text: "什么是 Webpack？",
-                link: "/guide/01-introduction/WhatWebpack",
-              },
-              {
-                text: "什么是 Git？",
-                link: "/guide/01-introduction/WhatGit",
-              },
-            ],
+            text: "认识你的“创作者工具箱”",
+            link: "/guide/01-introduction/00-toolbox-introduction",
           },
           {
             text: "第一步：安装与配置",
@@ -88,9 +61,8 @@ export default defineConfig({
           },
         ],
       },
-
       {
-        text: "基础教程",
+        text: "核心开发工作流",
         collapsed: false,
         items: [
           {
@@ -98,19 +70,15 @@ export default defineConfig({
             link: "/guide/03-basic-tutorial/01-hello-world-tutorial",
           },
           {
-            text: "ArenaPro 与 Arena 有何不同？",
-            link: "/guide/03-basic-tutorial/02-whats-different",
-          },
-          {
-            text: "TypeScript vs JavaScript",
+            text: "深入理解 TypeScript",
             link: "/guide/03-basic-tutorial/typescript-vs-javascript",
           },
           {
-            text: "🐞 代码调试工作流",
-            link: "/guide/04-development-workflow/debug",
+            text: "代码调试",
+            collapsed: true,
             items: [
               {
-                text: "认识 Debug 与 Release 模式",
+                text: "Debug vs. Release 模式",
                 link: "/guide/04-development-workflow/debug",
               },
               {
@@ -128,8 +96,8 @@ export default defineConfig({
             ],
           },
           {
-            text: "🔃 客户端与服务端开发",
-            link: "/guide/05-best-practices/codeReuse",
+            text: "客户端与服务端开发",
+            collapsed: true,
             items: [
               {
                 text: "共享代码 (Single Source of Truth)",
@@ -142,141 +110,84 @@ export default defineConfig({
             ],
           },
           {
-            text: "Git 上手指南",
+            text: "Git 上手指南 (外部链接)",
             link: "https://liaoxuefeng.com/books/git/introduction/index.html",
           },
         ],
       },
-
       {
-        text: "🚀 进阶指南",
+        text: "功能指南",
         collapsed: false,
         items: [
           {
-            text: "代码质量与工作流",
-            collapsed: false,
-            items: [
-              {
-                text: "前端工程化",
-                link: "/engineering/describes",
-                items: [
-                  { text: "ESLint", link: "/engineering/eslint" },
-                  { text: "Prettier", link: "/engineering/prettier" },
-                  { text: "Husky", link: "/engineering/husky" },
-                ],
-              },
-              {
-                text: "专业地管理游戏数据 (JSON)",
-                link: "/guide/06-advanced-topics/json",
-              },
-              {
-                text: "你的代码健康吗？引入自动化测试",
-                link: "/guide/06-advanced-topics/automated-testing",
-              },
-              {
-                text: "可视化你的代码结构",
-                link: "/guide/06-advanced-topics/nodeGraph",
-              },
-            ],
+            text: "配置你的“代码管家”",
+            link: "/guide/06-advanced-topics/code-linting-and-formatting",
           },
           {
-            text: "项目架构与构建",
-            collapsed: false,
-            items: [
-              {
-                text: "管理多套代码入口 (分包)",
-                link: "/guide/06-advanced-topics/bulidName",
-              },
-              {
-                text: "创建本地共享包 (Monorepo)",
-                link: "/guide/06-advanced-topics/projectReference",
-              },
-              { text: "管理环境变量", link: "/guide/06-advanced-topics/env" },
-              {
-                text: "自定义构建流程 (Webpack)",
-                link: "/guide/06-advanced-topics/webpackPlugins",
-              },
-            ],
+            text: "专业地管理游戏数据 (JSON)",
+            link: "/guide/06-advanced-topics/json",
           },
           {
-            text: "资源与生态系统",
-            collapsed: false,
-            items: [
-              {
-                text: "资源管理器",
-                link: "/guide/06-advanced-topics/resources",
-              },
-              {
-                text: "类型安全：同步游戏资源",
-                link: "/guide/06-advanced-topics/asset-synchronization",
-              },
-              {
-                text: "安全地使用外部 NPM 包",
-                link: "/guide/06-advanced-topics/npmPackage",
-              },
-              {
-                text: "📦 创建与发布 NPM 包",
-                link: "/guide/07-publishing/createNPMProject",
-                items: [
-                  {
-                    text: "第一步：创建项目",
-                    link: "/guide/07-publishing/createNPMProject",
-                  },
-                  {
-                    text: "第二步：编写与构建",
-                    link: "/guide/07-publishing/code",
-                  },
-                  {
-                    text: "第三步：发布与使用",
-                    link: "/guide/07-publishing/publish-and-use",
-                  },
-                  {
-                    text: "投稿社区：发布NPM包",
-                    link: "/guide/06-advanced-topics/contributing-to-dao3fun",
-                  },
-                ],
-              },
-              {
-                text: "导出代码到 Arena",
-                link: "/guide/06-advanced-topics/toArena",
-              },
-            ],
+            text: "引入自动化测试",
+            link: "/guide/06-advanced-topics/automated-testing",
+          },
+          {
+            text: "可视化你的代码结构",
+            link: "/guide/06-advanced-topics/nodeGraph",
+          },
+          {
+            text: "管理资源",
+            link: "/guide/06-advanced-topics/resources",
+          },
+          {
+            text: "类型安全：同步游戏资源",
+            link: "/guide/06-advanced-topics/asset-synchronization",
           },
         ],
       },
       {
-        text: "工具与配置",
+        text: "项目与构建",
         collapsed: false,
         items: [
           {
-            text: "项目配置",
-            collapsed: true,
-            items: [
-              { text: "脚手架架构", link: "/dao3Cfg/file" },
-              { text: "配置属性", link: "/dao3Cfg/attribute" },
-            ],
+            text: "管理多套代码入口 (分包)",
+            link: "/guide/06-advanced-topics/bulidName",
           },
           {
-            text: "MCP 工具",
-            collapsed: true,
-            items: [
-              { text: "插件 MCP", link: "/mcp/" },
-              {
-                text: "神岛引擎 API",
-                link: "https://smithery.ai/server/@box3lab/engine-openapi-mcp",
-              },
-              {
-                text: "数据分析",
-                link: "https://smithery.ai/server/@box3lab/statistics-mcp",
-              },
-            ],
+            text: "高级工作流：使用 Monorepo",
+            link: "/guide/06-advanced-topics/monorepo-workflow",
+          },
+          { text: "管理环境变量", link: "/guide/06-advanced-topics/env" },
+          {
+            text: "自定义构建流程 (Webpack)",
+            link: "/guide/06-advanced-topics/webpackPlugins",
+          },
+          {
+            text: "安全地使用外部 NPM 包",
+            link: "/guide/06-advanced-topics/npmPackage",
+          },
+          {
+            text: "📦 发布你的第一个 NPM 包",
+            link: "/guide/07-publishing/createNPMProject",
+          },
+          {
+            text: "投稿社区：发布NPM包",
+            link: "/guide/06-advanced-topics/contributing-to-dao3fun",
+          },
+          {
+            text: "导出代码到 Arena",
+            link: "/guide/06-advanced-topics/toArena",
           },
         ],
       },
       {
-        text: "开发框架",
+        text: "框架与 API",
         collapsed: false,
         items: [
+          {
+            text: "ArenaPro 与 Arena 核心差异",
+            link: "/guide/03-basic-tutorial/02-whats-different",
+          },
           {
             text: "ECS 组件系统",
             collapsed: true,
@@ -419,12 +330,6 @@ export default defineConfig({
               },
             ],
           },
-        ],
-      },
-      {
-        text: "API 参考",
-        collapsed: false,
-        items: [
           {
             text: "API 差异说明",
             collapsed: true,
@@ -439,6 +344,14 @@ export default defineConfig({
             ],
           },
           {
+            text: "项目配置",
+            collapsed: true,
+            items: [
+              { text: "脚手架架构", link: "/dao3Cfg/file" },
+              { text: "配置属性", link: "/dao3Cfg/attribute" },
+            ],
+          },
+          {
             text: "特殊权限",
             collapsed: true,
             items: [{ text: "数据空间", link: "/authority/storage" }],
@@ -446,7 +359,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "社区与贡献",
+        text: "社区与产品",
         collapsed: false,
         items: [
           { text: "社区贡献激励", link: "/community/community-rewards" },

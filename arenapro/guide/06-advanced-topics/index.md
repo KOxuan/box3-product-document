@@ -22,7 +22,7 @@
 ### 生态与分发
 
 - [**安全地使用外部 NPM 包**](./npmPackage.md)
-- [**创建本地共享包 (Monorepo)**](./projectReference.md)
+- [**创建本地共享包 (Monorepo)**](./monorepo-workflow.md)
 - [**投稿社区：发布 NPM 包**](./contributing-to-dao3fun.md)
 - [**导出代码到 Arena**](./toArena.md)
 

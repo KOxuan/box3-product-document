@@ -30,5 +30,36 @@ title: AP 活动历史
     - 采用 TypeScript 并发挥其语言特性
 
 - **主要奖项**:
+
   - 活动设立了 **“最佳代码能力奖”**，专门表彰在游戏工程、数据结构和代码质量上表现卓越的创作者。
   - 获奖者可获得限定皮肤、头像框及小鱼干等丰厚奖励。
+
+- **“最佳代码能力奖”获奖名单**:
+
+  - **作者**: where (100338386)
+
+    - **作品**: [Dao3Star (地图 ID: 100338386)](https://dao3.fun/exp/experience/detail/100338386)
+    - **简介**: 一款即时战略+科幻+模拟游戏。玩家将扮演星际领袖，通过发展科技、建造舰船、探索恒星来发展自己的国家。
+    - **代码仓库**: [Gitee](https://gitee.com/wherelook/Dao3Star/tree/master/)
+
+  - **作者**: 陈.黯 (12986856)
+
+    - **作品**: [银河铁道之旅 (地图 ID: 100370261)](https://dao3.fun/exp/experience/detail/100370261)
+    - **简介**: 在遥远的未来，玩家将踏上贯穿银河的铁道列车，在不同星球间穿梭，寻找能实现自我价值的理想工作。
+    - **代码仓库**: [Gitee](https://gitee.com/hasonchen/spring_festival_create)
+
+  - **作者**: 音符魔狼 (13157876), 三角函数 (12722422), Plum-Steven (12902747)
+
+    - **作品**: [火星战线 (地图 ID: 100373342)](https://dao3.fun/exp/experience/detail/100373342)
+    - **简介**: 一款第三人称多人在线射击游戏。在与地球失联、资源匮乏的火星基地，两大阵营为生存展开殊死搏斗。
+    - **代码仓库**: [Gitee](https://gitee.com/mycatsoft/a-gun-battle)
+
+  - **作者**: 威武的树毛蛹乐乐 (283432282266940)
+
+    - **作品**: [Happy-Run (地图 ID: 100317146)](https://dao3.fun/exp/experience/detail/100317146)
+    - **代码仓库**: [GitCode](https://gitcode.com/shumaoyong-lele/Happy-Run)
+
+  - **作者**: 音符魔狼 (13157876)
+    - **作品**: [太空激斗 (地图 ID: 100341803)](https://dao3.fun/exp/experience/detail/100341803)
+    - **简介**: 一款主打飞船大战的外太空题材游戏。
+    - **代码仓库**: [Gitee](https://gitee.com/mrwolf660/space_fight)

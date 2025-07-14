@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /guide/01-introduction/index
+      link: /guide/01-introduction/00-toolbox-introduction
     - theme: alt
       text: API 手册
       link: https://docs.box3lab.com/apapi/

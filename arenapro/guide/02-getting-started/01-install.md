@@ -81,6 +81,6 @@ node -v
 
 ---
 
-> **上一篇：[返回上一章：简介](../01-introduction/index.md)**
+> **上一篇：[返回上一章：认识你的“创作者工具箱”](../01-introduction/00-toolbox-introduction.md)**
 >
 > **下一篇：[创建你的第一个 ArenaPro 项目](./02-create-project.md)**

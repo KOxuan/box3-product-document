@@ -92,7 +92,7 @@ const debouncedSkillHandler = debounce(onPlayerUseSkill, 2000, {
 
 ## 官方保障：`@dao3fun` 命名空间
 
-为了方便开发者，ArenaPro 官方也提供了一系列 NPM 包，它们都发布在 `@dao3fun` 这个命名空间下 (例如 `@dao3fun/arena-rich`)。
+为了方便创作者，ArenaPro 官方也提供了一系列 NPM 包，它们都发布在 `@dao3fun` 这个命名空间下 (例如 `@dao3fun/arena-rich`)。
 
 **所有 `@dao3fun` 下的包，都经过了测试和优化，100% 保证与 ArenaPro 环境兼容。**
 
@@ -102,4 +102,4 @@ const debouncedSkillHandler = debounce(onPlayerUseSkill, 2000, {
 
 > **上一篇：[自定义构建流程 (Webpack)](./webpackPlugins.md)**
 >
-> **下一篇：[创建本地共享包 (Monorepo)](./projectReference.md)**
+> **下一篇：[创建本地共享包 (Monorepo)](./monorepo-workflow.md)**

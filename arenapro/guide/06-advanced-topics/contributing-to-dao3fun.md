@@ -90,6 +90,6 @@ npm publish --access=public
 
 ---
 
-> **上一篇：[创建本地共享包 (Monorepo)](./projectReference.md)**
+> **上一篇：[高级工作流：使用 Monorepo](./monorepo-workflow.md)**
 >
 > **下一篇：[导出代码到 Arena](./toArena.md)**
