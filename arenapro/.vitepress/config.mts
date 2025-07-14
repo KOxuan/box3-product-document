@@ -2,399 +2,853 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "ArenaPro Creator",
-  head: [["link", { rel: "icon", href: "/icon.png" }]],
-  description: "支持VSCode与TypeScript的神岛游戏制作插件",
   base: "/arenapro/",
+  head: [["link", { rel: "icon", href: "/icon.png" }]],
   markdown: {
     lineNumbers: true,
     container: {
-      tipLabel: "提示",
-      warningLabel: "警告",
-      dangerLabel: "危险",
-      infoLabel: "信息",
-      detailsLabel: "详细信息",
-      noteLabel: "信息",
-      importantLabel: "重要",
-      cautionLabel: "注意",
+      tipLabel: "Tip",
+      warningLabel: "Warning",
+      dangerLabel: "Danger",
+      infoLabel: "Info",
+      detailsLabel: "Details",
+      noteLabel: "Note",
+      importantLabel: "Important",
+      cautionLabel: "Caution",
     },
   },
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    // This is shared theme config that will be merged with locale-specific theme config
     logo: "/icon.png",
-    nav: [
-      { text: "API手册", link: "https://docs.box3lab.com/apapi/" },
-      {
-        text: "创作者QQ群",
-        link: "https://qm.qq.com/cgi-bin/qm/qr?authKey=LteV6YzMX0xKmrQSp8%2BaNi6YUdonwyVMc44npCKlNymwnoWVZBmG5Y4S4N9RwxEP&k=JeZQYLLnherYW6pGlbODkErutSmbkzr-&noverify=0",
-      },
-    ],
     search: {
       provider: "local",
     },
-    outline: {
-      level: [2, 3],
-      label: "本页目录",
-    },
-    sidebar: [
-      {
-        text: "快速开始",
-        collapsed: false,
-        items: [
-          { text: "插件简介", link: "/index" },
-          {
-            text: "认识你的“创作者工具箱”",
-            link: "/guide/01-introduction/00-toolbox-introduction",
-          },
-          {
-            text: "第一步：安装与配置",
-            link: "/guide/02-getting-started/01-install",
-          },
-          {
-            text: "第二步：创建你的第一个项目",
-            link: "/guide/02-getting-started/02-create-project",
-          },
-          {
-            text: "第三步：连接到云端进行调试",
-            link: "/guide/02-getting-started/03-connect-to-cloud",
-          },
-        ],
-      },
-      {
-        text: "核心开发工作流",
-        collapsed: false,
-        items: [
-          {
-            text: "Hello World 实战",
-            link: "/guide/03-basic-tutorial/01-hello-world-tutorial",
-          },
-          {
-            text: "深入理解 TypeScript",
-            link: "/guide/03-basic-tutorial/typescript-vs-javascript",
-          },
-          {
-            text: "代码调试",
-            collapsed: true,
-            items: [
-              {
-                text: "Debug vs. Release 模式",
-                link: "/guide/04-development-workflow/debug",
-              },
-              {
-                text: "使用 HMR 实现代码热更新",
-                link: "/guide/04-development-workflow/hmr",
-              },
-              {
-                text: "使用 VS Code 进行断点调试",
-                link: "/guide/04-development-workflow/debugger",
-              },
-              {
-                text: "深入理解：两种构建模式的区别",
-                link: "/guide/04-development-workflow/compilationPrinciple",
-              },
-            ],
-          },
-          {
-            text: "客户端与服务端开发",
-            collapsed: true,
-            items: [
-              {
-                text: "共享代码 (Single Source of Truth)",
-                link: "/guide/05-best-practices/codeReuse",
-              },
-              {
-                text: "共享数据结构 (Type-Safe Events)",
-                link: "/guide/05-best-practices/communicationAgreement",
-              },
-            ],
-          },
-          {
-            text: "Git 上手指南 (外部链接)",
-            link: "https://liaoxuefeng.com/books/git/introduction/index.html",
-          },
-        ],
-      },
-      {
-        text: "功能指南",
-        collapsed: false,
-        items: [
-          {
-            text: "配置你的“代码管家”",
-            link: "/guide/06-advanced-topics/code-linting-and-formatting",
-          },
-          {
-            text: "专业地管理游戏数据 (JSON)",
-            link: "/guide/06-advanced-topics/json",
-          },
-          {
-            text: "引入自动化测试",
-            link: "/guide/06-advanced-topics/automated-testing",
-          },
-          {
-            text: "可视化你的代码结构",
-            link: "/guide/06-advanced-topics/nodeGraph",
-          },
-          {
-            text: "管理资源",
-            link: "/guide/06-advanced-topics/resources",
-          },
-          {
-            text: "类型安全：同步游戏资源",
-            link: "/guide/06-advanced-topics/asset-synchronization",
-          },
-        ],
-      },
-      {
-        text: "项目与构建",
-        collapsed: false,
-        items: [
-          {
-            text: "管理多套代码入口 (分包)",
-            link: "/guide/06-advanced-topics/bulidName",
-          },
-          {
-            text: "高级工作流：使用 Monorepo",
-            link: "/guide/06-advanced-topics/monorepo-workflow",
-          },
-          { text: "管理环境变量", link: "/guide/06-advanced-topics/env" },
-          {
-            text: "自定义构建流程 (Webpack)",
-            link: "/guide/06-advanced-topics/webpackPlugins",
-          },
-          {
-            text: "安全地使用外部 NPM 包",
-            link: "/guide/06-advanced-topics/npmPackage",
-          },
-          {
-            text: "📦 发布你的第一个 NPM 包",
-            link: "/guide/07-publishing/createNPMProject",
-          },
-          {
-            text: "投稿社区：发布NPM包",
-            link: "/guide/06-advanced-topics/contributing-to-dao3fun",
-          },
-          {
-            text: "导出代码到 Arena",
-            link: "/guide/06-advanced-topics/toArena",
-          },
-        ],
-      },
-      {
-        text: "框架与 API",
-        collapsed: false,
-        items: [
-          {
-            text: "ArenaPro 与 Arena 核心差异",
-            link: "/guide/03-basic-tutorial/02-whats-different",
-          },
-          {
-            text: "ECS 组件系统",
-            collapsed: true,
-            items: [
-              {
-                text: "组件介绍",
-                link: "/package/component/componentGuide/index",
-              },
-              {
-                text: "开发指南",
-                collapsed: true,
-                items: [
-                  {
-                    text: "创建组件",
-                    link: "/package/component/componentGuide/setup",
-                  },
-                  {
-                    text: "组件执行",
-                    link: "/package/component/componentGuide/component",
-                  },
-                  {
-                    text: "装饰器",
-                    link: "/package/component/componentGuide/decorator",
-                  },
-                  {
-                    text: "生命周期",
-                    link: "/package/component/componentGuide/lifecycle",
-                  },
-                  {
-                    text: "节点管理",
-                    link: "/package/component/componentGuide/create-destroy",
-                  },
-                  {
-                    text: "访问组件",
-                    link: "/package/component/componentGuide/access-node-component",
-                  },
-                  {
-                    text: "基础接口",
-                    link: "/package/component/componentGuide/basic-node-api",
-                  },
-                  {
-                    text: "事件系统",
-                    link: "/package/component/componentGuide/event-node",
-                  },
-                  {
-                    text: "世界事件",
-                    link: "/package/component/componentGuide/event-world",
-                  },
-                  {
-                    text: "节点系统",
-                    link: "/package/component/componentGuide/system",
-                  },
-                  {
-                    text: "时间管理",
-                    link: "/package/component/componentGuide/time",
-                  },
-                  {
-                    text: "性能优化",
-                    link: "/package/component/componentGuide/performance",
-                  },
-                ],
-              },
-              {
-                text: "实战案例",
-                collapsed: true,
-                items: [
-                  {
-                    text: "时间回溯 - 入门",
-                    link: "/package/component/timeRewindSystem/timeRewindComponent",
-                  },
-                  {
-                    text: "时间回溯 - 进阶",
-                    link: "/package/component/timeRewindSystem/intermediateTopics",
-                  },
-                  {
-                    text: "时间回溯 - 高级",
-                    link: "/package/component/timeRewindSystem/advancedTopics",
-                  },
-                  { text: "更多示例", link: "/package/component/example" },
-                ],
-              },
-              {
-                text: "API 文档",
-                collapsed: true,
-                items: [
-                  {
-                    text: "EventEmitter",
-                    link: "/package/component/api/EventEmitter",
-                  },
-                  {
-                    text: "EntityNode",
-                    link: "/package/component/api/EntityNode",
-                  },
-                  {
-                    text: "Component",
-                    link: "/package/component/api/Component",
-                  },
-                  {
-                    text: "NodeSystem",
-                    link: "/package/component/api/NodeSystem",
-                  },
-                  { text: "NodeTime", link: "/package/component/api/NodeTime" },
-                ],
-              },
-            ],
-          },
-          {
-            text: "React UI 框架",
-            collapsed: true,
-            items: [
-              { text: "框架简介", link: "/package/react" },
-              {
-                text: "开发指南",
-                collapsed: true,
-                items: [
-                  { text: "创建脚本", link: "/package/react/reactGuide/setup" },
-                  { text: "XML 基础", link: "/package/react/reactGuide/xml" },
-                  { text: "DOM 树", link: "/package/react/reactGuide/domTree" },
-                  { text: "元素引用", link: "/package/react/reactGuide/refs" },
-                  {
-                    text: "类型定义",
-                    link: "/package/react/reactGuide/tsType",
-                  },
-                  {
-                    text: "多组件",
-                    link: "/package/react/reactGuide/multiComponent",
-                  },
-                  {
-                    text: "事件处理",
-                    link: "/package/react/reactGuide/eventHandlers",
-                  },
-                  { text: "钩子函数", link: "/package/react/reactGuide/hooks" },
-                  { text: "API 参考", link: "/package/react/reactGuide/api" },
-                ],
-              },
-              { text: "实战示例", link: "/package/react/selectCode" },
-              {
-                text: "React 官方教程",
-                link: "https://zh-hans.react.dev/learn/describing-the-ui",
-              },
-            ],
-          },
-          {
-            text: "API 差异说明",
-            collapsed: true,
-            items: [
-              { text: "资源路径", link: "/difference/resourcePath" },
-              { text: "自定义实体", link: "/difference/customizeEntity" },
-              { text: "对话框", link: "/difference/dialog" },
-              { text: "节点查找", link: "/difference/findChildByName" },
-              { text: "数据存储", link: "/difference/storage" },
-              { text: "远程通道", link: "/difference/remoteChannel" },
-              { text: "体素操作", link: "/difference/voxel" },
-            ],
-          },
-          {
-            text: "项目配置",
-            collapsed: true,
-            items: [
-              { text: "脚手架架构", link: "/dao3Cfg/file" },
-              { text: "配置属性", link: "/dao3Cfg/attribute" },
-            ],
-          },
-          {
-            text: "特殊权限",
-            collapsed: true,
-            items: [{ text: "数据空间", link: "/authority/storage" }],
-          },
-        ],
-      },
-      {
-        text: "社区与产品",
-        collapsed: false,
-        items: [
-          { text: "社区贡献激励", link: "/community/community-rewards" },
-          { text: "🌟 创作者荣誉榜", link: "/community/creators-honor-roll" },
-          { text: "⚠️ 行为准则", link: "/community/CODE_OF_CONDUCT" },
-          { text: "🎉 AP 活动历史", link: "/community/events" },
-          { text: "🙏 特别鸣谢", link: "/community/special-thanks" },
-          { text: "更新日志", link: "/community/release-notes" },
-        ],
-      },
-    ],
-    editLink: {
-      pattern:
-        "https://gitee.com/box3lab/box3-product-document/blob/master/arenapro/:path",
-      text: "在 Gitee 上编辑此界面",
-    },
-    lastUpdated: {
-      text: "最后更新于",
-      formatOptions: {
-        dateStyle: "short",
-        timeStyle: "short",
-      },
-    },
-    docFooter: {
-      prev: "上一页",
-      next: "下一页",
-    },
-    externalLinkIcon: false,
     socialLinks: [
       {
-        link: "https://gitee.com/box3lab/box3-product-document",
-        icon: {
-          svg: '<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1726049913751" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1462" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M512 992C246.895625 992 32 777.104375 32 512S246.895625 32 512 32s480 214.895625 480 480-214.895625 480-480 480z m242.9521875-533.3278125h-272.56875a23.7121875 23.7121875 0 0 0-23.71125 23.7121875l-0.024375 59.255625c0 13.08 10.6078125 23.7121875 23.6878125 23.7121875h165.96c13.104375 0 23.7121875 10.6078125 23.7121875 23.6878125v11.855625a71.1121875 71.1121875 0 0 1-71.1121875 71.1121875h-225.215625a23.7121875 23.7121875 0 0 1-23.6878125-23.7121875V423.1278125a71.1121875 71.1121875 0 0 1 71.0878125-71.1121875h331.824375a23.7121875 23.7121875 0 0 0 23.6878125-23.71125l0.0721875-59.2565625a23.7121875 23.7121875 0 0 0-23.68875-23.7121875H423.08a177.76875 177.76875 0 0 0-177.76875 177.7921875V754.953125c0 13.1034375 10.60875 23.7121875 23.713125 23.7121875h349.63125a159.984375 159.984375 0 0 0 159.984375-159.984375V482.36a23.7121875 23.7121875 0 0 0-23.7121875-23.6878125z" fill="#C71D23" p-id="1463"></path></svg>',
-        },
+        icon: "github",
+        link: "https://github.com/Box3Lab/box3-editor-support-for-vscode",
       },
     ],
+    footer: {
+      message: "神岛实验室",
+      copyright: "Copyright © 2024-2025",
+    },
+  },
+
+  locales: {
+    root: {
+      label: "English",
+      lang: "en",
+      link: "/en/",
+      title: "ArenaPro Creator",
+      description:
+        "A Minecraft server plugin that supports VSCode and TypeScript for game development.",
+
+      themeConfig: {
+        nav: [
+          { text: "API Reference", link: "https://docs.box3lab.com/apapi/" },
+        ],
+        sidebar: [
+          {
+            text: "Getting Started",
+            collapsed: false,
+            items: [
+              { text: "Introduction", link: "/index" },
+              {
+                text: "Meet Your Creator's Toolbox",
+                link: "/en/guide/01-introduction/00-toolbox-introduction",
+              },
+              {
+                text: "Step 1: Installation and Configuration",
+                link: "/en/guide/02-getting-started/01-install",
+              },
+              {
+                text: "Step 2: Create Your First Project",
+                link: "/en/guide/02-getting-started/02-create-project",
+              },
+              {
+                text: "Step 3: Connect to the Cloud for Debugging",
+                link: "/en/guide/02-getting-started/03-connect-to-cloud",
+              },
+            ],
+          },
+          {
+            text: "Core Development Workflow",
+            collapsed: false,
+            items: [
+              {
+                text: "Code Debugging",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Debug vs. Release Mode",
+                    link: "/en/guide/04-development-workflow/debug",
+                  },
+                  {
+                    text: "Hot Module Replacement with HMR",
+                    link: "/en/guide/04-development-workflow/hmr",
+                  },
+                  {
+                    text: "In-depth: Differences Between Build Modes",
+                    link: "/en/guide/04-development-workflow/compilationPrinciple",
+                  },
+                ],
+              },
+              {
+                text: "Client and Server Development",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Shared Code (Single Source of Truth)",
+                    link: "/en/guide/05-best-practices/codeReuse",
+                  },
+                  {
+                    text: "Shared Data Structures (Type-Safe Events)",
+                    link: "/en/guide/05-best-practices/communicationAgreement",
+                  },
+                ],
+              },
+              {
+                text: "Git Getting Started Guide (External)",
+                link: "https://git-scm.com/book/en/v2",
+              },
+            ],
+          },
+          {
+            text: "Feature Guides",
+            collapsed: false,
+            items: [
+              {
+                text: "Configure Your 'Code Butler'",
+                link: "/en/guide/06-advanced-topics/code-linting-and-formatting",
+              },
+              {
+                text: "Manage Game Data with JSON",
+                link: "/en/guide/06-advanced-topics/json",
+              },
+              {
+                text: "Introduce Automated Testing",
+                link: "/en/guide/06-advanced-topics/automated-testing",
+              },
+              {
+                text: "Visualize Your Code with Dependency Graphs",
+                link: "/en/guide/06-advanced-topics/nodeGraph",
+              },
+              {
+                text: "Managing Resources",
+                link: "/en/guide/06-advanced-topics/resources",
+              },
+              {
+                text: "Type-Safe Asset Synchronization",
+                link: "/en/guide/06-advanced-topics/asset-synchronization",
+              },
+            ],
+          },
+          {
+            text: "Project and Build",
+            collapsed: false,
+            items: [
+              {
+                text: "Managing Multiple Build Entries",
+                link: "/en/guide/06-advanced-topics/buildName",
+              },
+              {
+                text: "Advanced Workflow: Using a Monorepo",
+                link: "/en/guide/06-advanced-topics/monorepo-workflow",
+              },
+              {
+                text: "Managing Environment Variables",
+                link: "/en/guide/06-advanced-topics/env",
+              },
+              {
+                text: "Customizing the Build Process (Webpack)",
+                link: "/en/guide/06-advanced-topics/webpackPlugins",
+              },
+              {
+                text: "Using External NPM Packages Safely",
+                link: "/en/guide/06-advanced-topics/npmPackage",
+              },
+              {
+                text: "📦 Publishing Your First NPM Package",
+                link: "/en/guide/07-publishing/createNPMProject",
+              },
+              {
+                text: "Contributing to the Community (dao3fun)",
+                link: "/en/guide/06-advanced-topics/contributing-to-dao3fun",
+              },
+              {
+                text: "Exporting Code to Arena",
+                link: "/en/guide/06-advanced-topics/toArena",
+              },
+            ],
+          },
+          {
+            text: "Frameworks and API",
+            collapsed: false,
+            items: [
+              {
+                text: "ECS Component System",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Component Introduction",
+                    link: "/en/package/component/componentGuide/index",
+                  },
+                  {
+                    text: "Development Guide",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "Creating Components",
+                        link: "/en/package/component/componentGuide/setup",
+                      },
+                      {
+                        text: "Component Execution",
+                        link: "/en/package/component/componentGuide/component",
+                      },
+                      {
+                        text: "Decorators",
+                        link: "/en/package/component/componentGuide/decorator",
+                      },
+                      {
+                        text: "Lifecycle",
+                        link: "/en/package/component/componentGuide/lifecycle",
+                      },
+                      {
+                        text: "Node Management",
+                        link: "/en/package/component/componentGuide/create-destroy",
+                      },
+                      {
+                        text: "Accessing Components",
+                        link: "/en/package/component/componentGuide/access-node-component",
+                      },
+                      {
+                        text: "Basic Node API",
+                        link: "/en/package/component/componentGuide/basic-node-api",
+                      },
+                      {
+                        text: "Event System",
+                        link: "/en/package/component/componentGuide/event-node",
+                      },
+                      {
+                        text: "World Events",
+                        link: "/en/package/component/componentGuide/event-world",
+                      },
+                      {
+                        text: "Node System",
+                        link: "/en/package/component/componentGuide/system",
+                      },
+                      {
+                        text: "Time Management",
+                        link: "/en/package/component/componentGuide/time",
+                      },
+                      {
+                        text: "Performance Optimization",
+                        link: "/en/package/component/componentGuide/performance",
+                      },
+                    ],
+                  },
+                  {
+                    text: "Time Rewind System",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "Time Rewind - Getting Started",
+                        link: "/en/package/component/timeRewindSystem/timeRewindComponent",
+                      },
+                      {
+                        text: "Time Rewind - Intermediate",
+                        link: "/en/package/component/timeRewindSystem/intermediateTopics",
+                      },
+                      {
+                        text: "Time Rewind - Advanced",
+                        link: "/en/package/component/timeRewindSystem/advancedTopics",
+                      },
+                      {
+                        text: "More Examples",
+                        link: "/en/package/component/example",
+                      },
+                    ],
+                  },
+                  {
+                    text: "API Reference",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "EventEmitter",
+                        link: "/en/package/component/api/EventEmitter",
+                      },
+                      {
+                        text: "EntityNode",
+                        link: "/en/package/component/api/EntityNode",
+                      },
+                      {
+                        text: "Component",
+                        link: "/en/package/component/api/Component",
+                      },
+                      {
+                        text: "NodeSystem",
+                        link: "/en/package/component/api/NodeSystem",
+                      },
+                      {
+                        text: "NodeTime",
+                        link: "/en/package/component/api/NodeTime",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                text: "React-driven UI",
+                collapsed: true,
+                items: [
+                  { text: "Framework Introduction", link: "/en/package/react" },
+                  {
+                    text: "Development Guide",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "Creating Scripts",
+                        link: "/en/package/react/reactGuide/setup",
+                      },
+                      {
+                        text: "XML Basics",
+                        link: "/en/package/react/reactGuide/xml",
+                      },
+                      {
+                        text: "DOM Tree",
+                        link: "/en/package/react/reactGuide/domTree",
+                      },
+                      {
+                        text: "Element References",
+                        link: "/en/package/react/reactGuide/refs",
+                      },
+                      {
+                        text: "Type Definitions",
+                        link: "/en/package/react/reactGuide/tsType",
+                      },
+                      {
+                        text: "Multiple Components",
+                        link: "/en/package/react/reactGuide/multiComponent",
+                      },
+                      {
+                        text: "Event Handling",
+                        link: "/en/package/react/reactGuide/eventHandlers",
+                      },
+                      {
+                        text: "Hooks",
+                        link: "/en/package/react/reactGuide/hooks",
+                      },
+                      {
+                        text: "API Reference",
+                        link: "/en/package/react/reactGuide/api",
+                      },
+                    ],
+                  },
+                  {
+                    text: "Practical Example",
+                    link: "/en/package/react/selectCode",
+                  },
+                  {
+                    text: "React Official Tutorial",
+                    link: "https://react.dev/learn",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            text: "Configuration and Permissions",
+            collapsed: false,
+            items: [
+              {
+                text: "Differences with Arena",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Resource Path",
+                    link: "/en/difference/resourcePath",
+                  },
+                  {
+                    text: "Custom Entity",
+                    link: "/en/difference/customizeEntity",
+                  },
+                  { text: "Dialog", link: "/en/difference/dialog" },
+                  {
+                    text: "Node Lookup",
+                    link: "/en/difference/findChildByName",
+                  },
+                  { text: "Data Storage", link: "/en/difference/storage" },
+                  {
+                    text: "Remote Channel",
+                    link: "/en/difference/remoteChannel",
+                  },
+                  { text: "Voxel Operations", link: "/en/difference/voxel" },
+                ],
+              },
+              {
+                text: "Project Configuration",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Scaffolding Architecture",
+                    link: "/en/dao3Cfg/file",
+                  },
+                  {
+                    text: "Configuration Properties",
+                    link: "/en/dao3Cfg/attribute",
+                  },
+                ],
+              },
+              {
+                text: "Special Permissions",
+                collapsed: true,
+                items: [{ text: "Data Space", link: "/en/authority/storage" }],
+              },
+            ],
+          },
+          {
+            text: "Introduction to MCP",
+            collapsed: false,
+            items: [{ text: "MCP Introduction", link: "/en/mcp/" }],
+          },
+          {
+            text: "Community",
+            collapsed: false,
+            items: [
+              {
+                text: "Community Rewards",
+                link: "/en/community/community-rewards",
+              },
+              {
+                text: "🌟 Creators' Honor Roll",
+                link: "/en/community/creators-honor-roll",
+              },
+              {
+                text: "⚠️ Code of Conduct",
+                link: "/en/community/CODE_OF_CONDUCT",
+              },
+              { text: "🎉 AP Event History", link: "/en/community/events" },
+              {
+                text: "🙏 Special Thanks",
+                link: "/en/community/special-thanks",
+              },
+              { text: "Release Notes", link: "/en/community/release-notes" },
+            ],
+          },
+        ],
+        outline: {
+          label: "On This Page",
+        },
+        docFooter: {
+          prev: "Previous page",
+          next: "Next page",
+        },
+      },
+    },
+    zh: {
+      label: "简体中文",
+      lang: "zh-CN",
+      link: "/zh/",
+      title: "ArenaPro Creator",
+      description: "支持VSCode与TypeScript的神岛游戏制作插件",
+
+      themeConfig: {
+        nav: [
+          { text: "API手册", link: "https://docs.box3lab.com/apapi/" },
+          {
+            text: "创作者QQ群",
+            link: "https://qm.qq.com/cgi-bin/qm/qr?authKey=LteV6YzMX0xKmrQSp8%2BaNi6YUdonwyVMc44npCKlNymwnoWVZBmG5Y4S4N9RwxEP&k=JeZQYLLnherYW6pGlbODkErutSmbkzr-&noverify=0",
+          },
+        ],
+        outline: {
+          level: [2, 3],
+          label: "本页目录",
+        },
+        sidebar: [
+          {
+            text: "快速开始",
+            collapsed: false,
+            items: [
+              { text: "插件简介", link: "/index" },
+              {
+                text: "认识你的“创作者工具箱”",
+                link: "/zh/guide/01-introduction/00-toolbox-introduction",
+              },
+              {
+                text: "第一步：安装与配置",
+                link: "/zh/guide/02-getting-started/01-install",
+              },
+              {
+                text: "第二步：创建你的第一个项目",
+                link: "/zh/guide/02-getting-started/02-create-project",
+              },
+              {
+                text: "第三步：连接到云端进行调试",
+                link: "/zh/guide/02-getting-started/03-connect-to-cloud",
+              },
+            ],
+          },
+          {
+            text: "核心开发工作流",
+            collapsed: false,
+            items: [
+              {
+                text: "Hello World 实战",
+                link: "/zh/guide/03-basic-tutorial/01-hello-world-tutorial",
+              },
+              {
+                text: "深入理解 TypeScript",
+                link: "/zh/guide/03-basic-tutorial/typescript-vs-javascript",
+              },
+              {
+                text: "代码调试",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Debug vs. Release 模式",
+                    link: "/zh/guide/04-development-workflow/debug",
+                  },
+                  {
+                    text: "使用 HMR 实现代码热更新",
+                    link: "/zh/guide/04-development-workflow/hmr",
+                  },
+                  {
+                    text: "使用 VS Code 进行断点调试",
+                    link: "/zh/guide/04-development-workflow/debugger",
+                  },
+                  {
+                    text: "深入理解：两种构建模式的区别",
+                    link: "/zh/guide/04-development-workflow/compilationPrinciple",
+                  },
+                ],
+              },
+              {
+                text: "客户端与服务端开发",
+                collapsed: true,
+                items: [
+                  {
+                    text: "共享代码 (Single Source of Truth)",
+                    link: "/zh/guide/05-best-practices/codeReuse",
+                  },
+                  {
+                    text: "共享数据结构 (Type-Safe Events)",
+                    link: "/zh/guide/05-best-practices/communicationAgreement",
+                  },
+                ],
+              },
+              {
+                text: "Git 上手指南 (外部链接)",
+                link: "https://liaoxuefeng.com/books/git/introduction/index.html",
+              },
+            ],
+          },
+          {
+            text: "功能指南",
+            collapsed: false,
+            items: [
+              {
+                text: "配置你的“代码管家”",
+                link: "/zh/guide/06-advanced-topics/code-linting-and-formatting",
+              },
+              {
+                text: "专业地管理游戏数据 (JSON)",
+                link: "/zh/guide/06-advanced-topics/json",
+              },
+              {
+                text: "引入自动化测试",
+                link: "/zh/guide/06-advanced-topics/automated-testing",
+              },
+              {
+                text: "可视化你的代码结构",
+                link: "/zh/guide/06-advanced-topics/nodeGraph",
+              },
+              {
+                text: "管理资源",
+                link: "/zh/guide/06-advanced-topics/resources",
+              },
+              {
+                text: "类型安全：同步游戏资源",
+                link: "/zh/guide/06-advanced-topics/asset-synchronization",
+              },
+            ],
+          },
+          {
+            text: "项目与构建",
+            collapsed: false,
+            items: [
+              {
+                text: "管理多套代码入口 (分包)",
+                link: "/zh/guide/06-advanced-topics/bulidName",
+              },
+              {
+                text: "高级工作流：使用 Monorepo",
+                link: "/zh/guide/06-advanced-topics/monorepo-workflow",
+              },
+              {
+                text: "管理环境变量",
+                link: "/zh/guide/06-advanced-topics/env",
+              },
+              {
+                text: "自定义构建流程 (Webpack)",
+                link: "/zh/guide/06-advanced-topics/webpackPlugins",
+              },
+              {
+                text: "安全地使用外部 NPM 包",
+                link: "/zh/guide/06-advanced-topics/npmPackage",
+              },
+              {
+                text: "📦 发布你的第一个 NPM 包",
+                link: "/zh/guide/07-publishing/createNPMProject",
+              },
+              {
+                text: "投稿社区：发布NPM包",
+                link: "/zh/guide/06-advanced-topics/contributing-to-dao3fun",
+              },
+              {
+                text: "导出代码到 Arena",
+                link: "/zh/guide/06-advanced-topics/toArena",
+              },
+            ],
+          },
+          {
+            text: "框架与 API",
+            collapsed: false,
+            items: [
+              {
+                text: "ArenaPro 与 Arena 核心差异",
+                link: "/zh/guide/03-basic-tutorial/02-whats-different",
+              },
+              {
+                text: "ECS 组件系统",
+                collapsed: true,
+                items: [
+                  {
+                    text: "组件介绍",
+                    link: "/zh/package/component/componentGuide/index",
+                  },
+                  {
+                    text: "开发指南",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "创建组件",
+                        link: "/zh/package/component/componentGuide/setup",
+                      },
+                      {
+                        text: "组件执行",
+                        link: "/zh/package/component/componentGuide/component",
+                      },
+                      {
+                        text: "装饰器",
+                        link: "/zh/package/component/componentGuide/decorator",
+                      },
+                      {
+                        text: "生命周期",
+                        link: "/zh/package/component/componentGuide/lifecycle",
+                      },
+                      {
+                        text: "节点管理",
+                        link: "/zh/package/component/componentGuide/create-destroy",
+                      },
+                      {
+                        text: "访问组件",
+                        link: "/zh/package/component/componentGuide/access-node-component",
+                      },
+                      {
+                        text: "基础接口",
+                        link: "/zh/package/component/componentGuide/basic-node-api",
+                      },
+                      {
+                        text: "事件系统",
+                        link: "/zh/package/component/componentGuide/event-node",
+                      },
+                      {
+                        text: "世界事件",
+                        link: "/zh/package/component/componentGuide/event-world",
+                      },
+                      {
+                        text: "节点系统",
+                        link: "/zh/package/component/componentGuide/system",
+                      },
+                      {
+                        text: "时间管理",
+                        link: "/zh/package/component/componentGuide/time",
+                      },
+                      {
+                        text: "性能优化",
+                        link: "/zh/package/component/componentGuide/performance",
+                      },
+                    ],
+                  },
+                  {
+                    text: "时间回溯系统",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "时间回溯 - 入门",
+                        link: "/zh/package/component/timeRewindSystem/timeRewindComponent",
+                      },
+                      {
+                        text: "时间回溯 - 进阶",
+                        link: "/zh/package/component/timeRewindSystem/intermediateTopics",
+                      },
+                      {
+                        text: "时间回溯 - 高级",
+                        link: "/zh/package/component/timeRewindSystem/advancedTopics",
+                      },
+                      {
+                        text: "更多示例",
+                        link: "/zh/package/component/example",
+                      },
+                    ],
+                  },
+                  {
+                    text: "API 参考",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "EventEmitter",
+                        link: "/zh/package/component/api/EventEmitter",
+                      },
+                      {
+                        text: "EntityNode",
+                        link: "/zh/package/component/api/EntityNode",
+                      },
+                      {
+                        text: "Component",
+                        link: "/zh/package/component/api/Component",
+                      },
+                      {
+                        text: "NodeSystem",
+                        link: "/zh/package/component/api/NodeSystem",
+                      },
+                      {
+                        text: "NodeTime",
+                        link: "/zh/package/component/api/NodeTime",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                text: "React 驱动的 UI",
+                collapsed: true,
+                items: [
+                  { text: "框架简介", link: "/zh/package/react" },
+                  {
+                    text: "开发指南",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "创建脚本",
+                        link: "/zh/package/react/reactGuide/setup",
+                      },
+                      {
+                        text: "XML 基础",
+                        link: "/zh/package/react/reactGuide/xml",
+                      },
+                      {
+                        text: "DOM 树",
+                        link: "/zh/package/react/reactGuide/domTree",
+                      },
+                      {
+                        text: "元素引用",
+                        link: "/zh/package/react/reactGuide/refs",
+                      },
+                      {
+                        text: "类型定义",
+                        link: "/zh/package/react/reactGuide/tsType",
+                      },
+                      {
+                        text: "多组件",
+                        link: "/zh/package/react/reactGuide/multiComponent",
+                      },
+                      {
+                        text: "事件处理",
+                        link: "/zh/package/react/reactGuide/eventHandlers",
+                      },
+                      {
+                        text: "钩子函数",
+                        link: "/zh/package/react/reactGuide/hooks",
+                      },
+                      {
+                        text: "API 参考",
+                        link: "/zh/package/react/reactGuide/api",
+                      },
+                    ],
+                  },
+                  { text: "实战示例", link: "/zh/package/react/selectCode" },
+                  {
+                    text: "React 官方教程",
+                    link: "https://react.dev/learn",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            text: "配置与权限",
+            collapsed: false,
+            items: [
+              {
+                text: "与 Arena 的差异",
+                collapsed: true,
+                items: [
+                  { text: "资源路径", link: "/zh/difference/resourcePath" },
+                  {
+                    text: "自定义实体",
+                    link: "/zh/difference/customizeEntity",
+                  },
+                  { text: "对话框", link: "/zh/difference/dialog" },
+                  { text: "节点查找", link: "/zh/difference/findChildByName" },
+                  { text: "数据存储", link: "/zh/difference/storage" },
+                  { text: "远程通道", link: "/zh/difference/remoteChannel" },
+                  { text: "体素操作", link: "/zh/difference/voxel" },
+                ],
+              },
+              {
+                text: "项目配置",
+                collapsed: true,
+                items: [
+                  { text: "脚手架架构", link: "/zh/dao3Cfg/file" },
+                  { text: "配置属性", link: "/zh/dao3Cfg/attribute" },
+                ],
+              },
+              {
+                text: "特殊权限",
+                collapsed: true,
+                items: [{ text: "数据空间", link: "/zh/authority/storage" }],
+              },
+            ],
+          },
+          {
+            text: "社区",
+            collapsed: false,
+            items: [
+              { text: "社区贡献激励", link: "/zh/community/community-rewards" },
+              {
+                text: "🌟 创作者荣誉榜",
+                link: "/zh/community/creators-honor-roll",
+              },
+              { text: "⚠️ 行为准则", link: "/zh/community/CODE_OF_CONDUCT" },
+              { text: "🎉 AP 活动历史", link: "/zh/community/events" },
+              { text: "🙏 特别鸣谢", link: "/zh/community/special-thanks" },
+              { text: "更新日志", link: "/zh/community/release-notes" },
+            ],
+          },
+          {
+            text: "深入 MCP",
+            collapsed: false,
+            items: [{ text: "MCP 介绍", link: "/zh/mcp/" }],
+          },
+        ],
+        docFooter: {
+          prev: "上一页",
+          next: "下一页",
+        },
+      },
+    },
   },
 });
