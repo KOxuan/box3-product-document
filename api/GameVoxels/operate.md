@@ -42,9 +42,7 @@ import '/style.css'
 
 当前世界地形最大尺寸。
 
----
-
-#### <font id="API" /><font id="ReadOnly">只读</font>VoxelTypes<font id="Type">: string[] </font>{#VoxelTypes}
+## ## <font id="API" /><font id="ReadOnly">只读</font>VoxelTypes<font id="Type">: string[] </font>{#VoxelTypes}
 
 > 默认值：方块数组
 
@@ -70,9 +68,7 @@ import '/style.css'
 | -------- | -------- |
 | number   | 方块 ID  |
 
----
-
-#### <font id="API" />name(<font id="Type">id:number</font>)<font id="Type">: string</font>{#name}
+## ## <font id="API" />name(<font id="Type">id:number</font>)<font id="Type">: string</font>{#name}
 
 将方块名称转换为方块 id
 
@@ -88,9 +84,7 @@ import '/style.css'
 | -------- | -------- |
 | string   | 方块名称 |
 
----
-
-### 放置方块
+## # 放置方块
 
 #### <font id="API" />setVoxel(<font id="Type">x:number,y:number,z:number,voxel:number | string,rotation?:number | string</font>)<font id="Type">: number</font>{#setVoxel}
 
@@ -336,9 +330,7 @@ createBoard(32, 9, 32, 19);
 | -------- | ----------- |
 | number   | 新的方块 id |
 
----
-
-### 获取方块
+## # 获取方块
 
 #### <font id="API" />getVoxel(<font id="Type">x:number,y:number,z:number</font>)<font id="Type">: number</font>{#getVoxel}
 
@@ -364,9 +356,7 @@ createBoard(32, 9, 32, 19);
 | -------- | --------------------------------------------- |
 | number   | 返回指定位置的方块 id，**不包含方块的旋转码** |
 
----
-
-#### <font id="API" />getVoxelId(<font id="Type">x:number,y:number,z:number</font>)<font id="Type">: number</font>{#getVoxelId}
+## ## <font id="API" />getVoxelId(<font id="Type">x:number,y:number,z:number</font>)<font id="Type">: number</font>{#getVoxelId}
 
 直接获取指定位置的方块 ID。
 ::: info
@@ -387,9 +377,7 @@ createBoard(32, 9, 32, 19);
 | -------- | --------------------- |
 | number   | 返回指定位置的方块 id |
 
----
-
-#### <font id="API" />getVoxelRotation(<font id="Type">x:number,y:number,z:number</font>)<font id="Type">: number</font>{#getVoxelRotation}
+## ## <font id="API" />getVoxelRotation(<font id="Type">x:number,y:number,z:number</font>)<font id="Type">: number</font>{#getVoxelRotation}
 
 获取某个坐标位置的方块旋转码
 

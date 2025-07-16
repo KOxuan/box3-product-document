@@ -16,17 +16,13 @@ import '/style.css'
 
 图片元素的内容，应为图片的路径或者 URL。
 
----
-
-#### <font id="API" />imageOpacity<font id="Type">: number</font>{#imageOpacity}
+## ## <font id="API" />imageOpacity<font id="Type">: number</font>{#imageOpacity}
 
 > 默认值：1
 
 图片元素的透明度。
 
----
-
-#### <font id="API" />imageDisplayMode<font id="Type">: [ImageDisplayMode](./UiImage#ImageDisplayMode)</font>{#imageDisplayMode}
+## ## <font id="API" />imageDisplayMode<font id="Type">: [ImageDisplayMode](./UiImage#ImageDisplayMode)</font>{#imageDisplayMode}
 
 > 默认值：ImageDisplayMode.Fill
 
@@ -34,9 +30,7 @@ import '/style.css'
 
 图片元素中的图片资源，不属于其子内容，所以只受到展示方式影响，不受裁剪&自适应作用
 
----
-
-#### <font id="API" /><font id="ReadOnly">只读</font>complete<font id="Type">: boolean</font>{#complete}
+## ## <font id="API" /><font id="ReadOnly">只读</font>complete<font id="Type">: boolean</font>{#complete}
 
 图片是否加载完毕。
 

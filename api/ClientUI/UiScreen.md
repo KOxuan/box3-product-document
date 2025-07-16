@@ -17,9 +17,7 @@ import '/style.css'
 
 屏幕是否可见。
 
----
-
-#### <font id="API" />zIndex<font id="Type">: number</font>{#zIndex}
+## ## <font id="API" />zIndex<font id="Type">: number</font>{#zIndex}
 
 > 默认值：1
 
@@ -37,9 +35,7 @@ import '/style.css'
 | -------- | ---------------------- |
 | UiScreen | 新建 UiScreen 屏幕实例 |
 
----
-
-#### <font id="API" />getAllScreen()<font id="Type">: UiScreen[]</font>{#getAllScreen}
+## ## <font id="API" />getAllScreen()<font id="Type">: UiScreen[]</font>{#getAllScreen}
 
 获取当前所有存在的屏幕实例。
 

@@ -35,17 +35,13 @@ const audio = new Audio(url);
 
 技巧：项目内的音频，请复制音频`Hash`，然后拼接在 `https://static.dao3.fun/block/{Hash}`
 
----
-
-#### <font id="API" />volume<font id="Type">: number</font>{#volume}
+## ## <font id="API" />volume<font id="Type">: number</font>{#volume}
 
 > 范围：0-1
 
 音频播放音量，但最终音量受玩家客户端整体音量控制。
 
----
-
-#### <font id="API" />error<font id="Type">: [MediaError](./mediaError) | null</font>{#error}
+## ## <font id="API" />error<font id="Type">: [MediaError](./mediaError) | null</font>{#error}
 
 音频播放错误码
 
@@ -55,15 +51,11 @@ const audio = new Audio(url);
 
 播放音频
 
----
-
-#### <font id="API" />pause()<font id="Type">: void</font>{#pause}
+## ## <font id="API" />pause()<font id="Type">: void</font>{#pause}
 
 暂停音频
 
----
-
-#### <font id="API" />load()<font id="Type">: void</font>{#load}
+## ## <font id="API" />load()<font id="Type">: void</font>{#load}
 
 预加载音频
 
@@ -73,15 +65,11 @@ const audio = new Audio(url);
 
 音频加载完成事件
 
----
-
-#### <font id="API" />ended<font id="Type">: [UiEvent](/ClientUI/UiEvent)‹Audio›</font>
+## ## <font id="API" />ended<font id="Type">: [UiEvent](/ClientUI/UiEvent)‹Audio›</font>
 
 音频播放结束事件
 
----
-
-#### <font id="API" />error<font id="Type">: [UiEvent](/ClientUI/UiEvent)‹Audio›</font>
+## ## <font id="API" />error<font id="Type">: [UiEvent](/ClientUI/UiEvent)‹Audio›</font>
 
 音频播放错误事件
 

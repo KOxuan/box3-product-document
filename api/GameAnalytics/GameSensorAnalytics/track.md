@@ -37,9 +37,7 @@ world.onPlayerJoin(({ entity }) => {
 | url      | 是       |            | string   | 数据接收地址，神策服务器的 URL |
 | timeout  |          | 30         | number   | 请求超时时间                   |
 
----
-
-#### <font id="API" />track(<font id="Type">distinctId:string,eventName:string,properties?:Record‹string, string | number | boolean›</font>)<font id="Type">: void</font>{#track}
+## ## <font id="API" />track(<font id="Type">distinctId:string,eventName:string,properties?:Record‹string, string | number | boolean›</font>)<font id="Type">: void</font>{#track}
 
 追踪数据事件方法
 

@@ -21,77 +21,57 @@ import '/style.css'
 - textXAlignment
 - textYAlignment
 
----
-
-#### <font id="API" />richText<font id="Type">: boolean</font>{#richText}
+## ## <font id="API" />richText<font id="Type">: boolean</font>{#richText}
 
 > 默认值：false
 
 文本元素的内容是否支持`富文本`。支持的 xml 语法请看：[富文本](/ClientUI/RichText)
 
----
-
-#### <font id="API" />textFontSize<font id="Type">: number</font>{#textFontSize}
+## ## <font id="API" />textFontSize<font id="Type">: number</font>{#textFontSize}
 
 > 默认值：14
 
 节点显示的文本的字体大小。
 
----
-
-#### <font id="API" /><font id="ReadOnly">只读</font>textColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font>{#textColor}
+## ## <font id="API" /><font id="ReadOnly">只读</font>textColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font>{#textColor}
 
 节点显示的文本的颜色。
 
----
-
-#### <font id="API" />textXAlignment<font id="Type">: 'Center' | 'Left' | 'Right'</font>{#textXAlignment}
+## ## <font id="API" />textXAlignment<font id="Type">: 'Center' | 'Left' | 'Right'</font>{#textXAlignment}
 
 > 默认值：'Center'
 
 节点显示的文本的水平对齐方式。
 
----
-
-#### <font id="API" />textYAlignment<font id="Type">: 'Center' | 'Top' | 'Bottom'</font>{#textYAlignment}
+## ## <font id="API" />textYAlignment<font id="Type">: 'Center' | 'Top' | 'Bottom'</font>{#textYAlignment}
 
 > 默认值：'Center'
 
 节点显示的文本的垂直对齐方式。
 
----
-
-#### <font id="API" />autoWordWrap<font id="Type">: boolean</font>{#autoWordWrap}
+## ## <font id="API" />autoWordWrap<font id="Type">: boolean</font>{#autoWordWrap}
 
 > 默认值：false
 
 是否开启自动换行。
 
----
-
-#### <font id="API" />textLineHeight<font id="Type">: number</font>{#textLineHeight}
+## ## <font id="API" />textLineHeight<font id="Type">: number</font>{#textLineHeight}
 
 > 默认值：1.2
 
 文本的行高。
 
----
-
-#### <font id="API" /><font id="ReadOnly">只读</font>textStrokeColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font>{#textStrokeColor}
+## ## <font id="API" /><font id="ReadOnly">只读</font>textStrokeColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font>{#textStrokeColor}
 
 文本的描边颜色。
 
----
-
-#### <font id="API" />textStrokeOpacity<font id="Type">: number</font>{#textStrokeOpacity}
+## ## <font id="API" />textStrokeOpacity<font id="Type">: number</font>{#textStrokeOpacity}
 
 > 默认值：1
 
 文本描边的不透明度。
 
----
-
-#### <font id="API" />textStrokeThickness<font id="Type">: number</font>{#textStrokeThickness}
+## ## <font id="API" />textStrokeThickness<font id="Type">: number</font>{#textStrokeThickness}
 
 > 默认值：0
 
@@ -99,9 +79,7 @@ import '/style.css'
 
 描边粗细效果不影响元素“尺寸”，即不会影响自适应、布局计算、以及交互热区，但是会受到[UIScale](/ClientUI/maths/UiScale)的影响
 
----
-
-#### <font id="API" />textFontFamily<font id="Type">: [UITextFontFamily](./UiText#UITextFontFamily)</font>{#textFontFamily}
+## ## <font id="API" />textFontFamily<font id="Type">: [UITextFontFamily](./UiText#UITextFontFamily)</font>{#textFontFamily}
 
 > 默认值：UITextFontFamily.Default
 

@@ -12,9 +12,7 @@ import '/style.css'
 
 是否允许实体进行互动。如果允许互动，走进互动范围之内，实体身上将会出现互动提示。
 
----
-
-#### <font id="API" />interactRadiu<font id="Type">: number</font>{#interactRadiu}
+## ## <font id="API" />interactRadius<font id="Type">: number</font>{#interactRadius}
 
 > 默认值：16
 
@@ -22,17 +20,13 @@ import '/style.css'
 
 范围有多个可互动实体，按下键盘'['或']'键，切换互动目标。
 
----
-
-#### <font id="API" />interactHint<font id="Type">: string</font>{#interactHint}
+## ## <font id="API" />interactHint<font id="Type">: string</font>{#interactHint}
 
 > 默认值：无
 
 进入实体互动范围时，实体身上出现的提示文本。
 
----
-
-#### <font id="API" />interactColor<font id="Type">: [GameRGBColor](/GameRGBColor/)</font>{#interactColor}
+## ## <font id="API" />interactColor<font id="Type">: [GameRGBColor](/GameRGBColor/)</font>{#interactColor}
 
 > 默认值：GameRGBColor(0, 1, 0)
 
@@ -89,7 +83,7 @@ setInterval(() => {
 }, 1000);
 ```
 
-## :::
+:::
 
 #### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameClickEvent](/GameWorld/input#GameClickEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onClick}
 
@@ -101,9 +95,7 @@ setInterval(() => {
 | -------- | -------- | ---------- | -------- | -------------------------- |
 | handler  | 是       |            | function | 监听到鼠标点击时的处理函数 |
 
----
-
-#### <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](/GameWorld/input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onInteract}
+## ## <font id="API" /><font id="Event">事件</font>onInteract(<font id="Type">handler:(event:[GameInteractEvent](/GameWorld/input#GameInteractEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onInteract}
 
 当实体进行互动时触发
 
@@ -113,9 +105,7 @@ setInterval(() => {
 | -------- | -------- | ---------- | -------- | ---------------------- |
 | handler  | 是       |            | function | 监听到互动时的处理函数 |
 
----
-
-#### <font id="API" /><font id="Event">事件</font>onEntityContact(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntityContact}
+## ## <font id="API" /><font id="Event">事件</font>onEntityContact(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntityContact}
 
 当实体触碰另一个实体时触发
 
@@ -125,9 +115,7 @@ setInterval(() => {
 | -------- | -------- | ---------- | -------- | ------------------------------ |
 | handler  | 是       |            | function | 监听到碰到另外的实体的处理函数 |
 
----
-
-#### <font id="API" /><font id="Event">事件</font>onEntitySeparate(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntitySeparate}
+## ## <font id="API" /><font id="Event">事件</font>onEntitySeparate(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntitySeparate}
 
 当实体停止触碰另一个实体时触发
 
@@ -137,9 +125,7 @@ setInterval(() => {
 | -------- | -------- | ---------- | -------- | ---------------------------------- |
 | handler  | 是       |            | function | 监听到停止碰到另外的实体的处理函数 |
 
----
-
-#### <font id="API" /><font id="Event">事件</font>onFluidEnter(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidEnter}
+## ## <font id="API" /><font id="Event">事件</font>onFluidEnter(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidEnter}
 
 当实体进入液体时触发
 
@@ -149,9 +135,7 @@ setInterval(() => {
 | -------- | -------- | ---------- | -------- | ------------------------------ |
 | handler  | 是       |            | function | 监听到进入液体的实体的处理函数 |
 
----
-
-#### <font id="API" /><font id="Event">事件</font>onFluidLeave(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidLeave}
+## ## <font id="API" /><font id="Event">事件</font>onFluidLeave(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidLeave}
 
 当实体离开液体时触发
 
@@ -161,9 +145,7 @@ setInterval(() => {
 | -------- | -------- | ---------- | -------- | ------------------------------ |
 | handler  | 是       |            | function | 监听到离开液体的实体的处理函数 |
 
----
-
-#### <font id="API" /><font id="Event">事件</font>onVoxelContact(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelContact}
+## ## <font id="API" /><font id="Event">事件</font>onVoxelContact(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelContact}
 
 当实体触碰方块时触发
 
@@ -173,9 +155,7 @@ setInterval(() => {
 | -------- | -------- | ---------- | -------- | ------------------------------ |
 | handler  | 是       |            | function | 监听到触碰方块的实体的处理函数 |
 
----
-
-#### <font id="API" /><font id="Event">事件</font>onVoxelSeparate(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelSeparate}
+## ## <font id="API" /><font id="Event">事件</font>onVoxelSeparate(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelSeparate}
 
 当实体停止触碰方块时触发
 
@@ -199,9 +179,7 @@ setInterval(() => {
 | tick     | number                       | 两个实体碰撞的时间                       |
 | force    | [GameVector3](/GameVector3/) | 碰撞所产生的力                           |
 
----
-
-#### <font id="API" />GameFluidContactEvent{#GameFluidContactEvent}
+## ## <font id="API" />GameFluidContactEvent{#GameFluidContactEvent}
 
 当实体进入或离开液体时触发的事件
 
@@ -211,9 +189,7 @@ setInterval(() => {
 | voxel    | number                     | 液体方块 id              |
 | tick     | number                     | 实体进入或离开液体的时间 |
 
----
-
-#### <font id="API" />GameVoxelContactEvent{#GameVoxelContactEvent}
+## ## <font id="API" />GameVoxelContactEvent{#GameVoxelContactEvent}
 
 当实体触碰方块时触发的事件
 

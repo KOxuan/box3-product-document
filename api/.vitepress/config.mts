@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "zh-cn",
@@ -27,7 +28,7 @@ export default defineConfig({
     },
     nav: [
       {
-        text: "本地部署神岛版Deepseek",
+        text: "本地部署神岛版AI",
         link: "./localAI",
       },
       { text: "Arena用户手册", link: "https://docs.box3lab.com/arena/" },
@@ -216,14 +217,14 @@ export default defineConfig({
               { text: "操作", link: "/GameRTC/operate" },
             ],
           },
-          {
-            text: "📊游戏数据分析",
-            link: "/GameAnalytics/index",
-            collapsed: false,
-            items: [
-              { text: "神策埋点", link: "/GameAnalytics/GameSensorAnalytics" },
-            ],
-          },
+          // {
+          //   text: "📊游戏数据分析",
+          //   link: "/GameAnalytics/index",
+          //   collapsed: false,
+          //   items: [
+          //     { text: "神策埋点", link: "/GameAnalytics/GameSensorAnalytics" },
+          //   ],
+          // },
           {
             text: "🟰游戏数学",
             collapsed: false,
