@@ -149,7 +149,7 @@ entity.player.onChat(({ entity, message }) => {
 | hasArrow  | boolean | 如果接下来还有新的对话，在当前对话框中是否显示箭头提示。仅在**文本对话框**中使用。 |
 | confirmText | string | 仅在**输入对话框**使用。确认按钮显示的文本。如果为空，按钮文本默认显示为 '确认 &#124; Confirm'. |
 | options  | string[] | 仅在**选项对话框**中使用。在对话框中提供一些可供玩家选择的对话选项。 |
-| placeholder | string | 使相机镜头朝向指定实体或坐标的位置。 |
+| placeholder | string | 占位文本内容，用于提示玩家输入内容。 |
 | lookTarget  | [GameVector3](/GameVector3/) &#124; [GameEntity](/GameEntity/) | 使相机镜头朝向指定实体或坐标的位置。 |
 | lookTargetOffset  | [GameVector3](/GameVector3/) | 如果相机指定了注视目标，可以设置基于目标位置的偏移。 |
 | lookUp  | [GameVector3](/GameVector3/) | 调整相机抬头向量。使画面上下左右颠倒。 |
