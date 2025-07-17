@@ -132,7 +132,3 @@ By following this "single source of truth" principle, you can write cleaner, mor
 ---
 
 In the next guide, we will explore how to make client-server communication just as robust by defining "type-safe" events.
-
-<br/>
-<br/>
-<br/>

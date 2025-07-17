@@ -63,11 +63,10 @@ myArenaProject/
 5. **`package-lock.json`** - 依赖版本锁定
 6. **`dao3.config.json`** - ArenaPro 核心配置
 7. **`.gitignore`** - Git 忽略配置
-8. **`dao3-ap.code-snippets`** - 代码片段
-9. **`webpack.config.js`** - 打包构建配置
-10. **`.prettierrc`** - 代码格式化规则
-11. **`.prettierignore`** - 格式化忽略规则
-12. **`eslint.config.mjs`** - 代码检查规则
+8. **`webpack.config.js`** - 打包构建配置
+9. **`.prettierrc`** - 代码格式化规则
+10. **`.prettierignore`** - 格式化忽略规则
+11. **`eslint.config.mjs`** - 代码检查规则
 
 </div>
 

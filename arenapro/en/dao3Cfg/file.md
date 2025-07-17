@@ -63,11 +63,10 @@ The following files **must not be moved or renamed**, as doing so may prevent th
 5.  **`package-lock.json`** - Dependency version locking
 6.  **`dao3.config.json`** - ArenaPro core configuration
 7.  **`.gitignore`** - Git ignore configuration
-8.  **`dao3-ap.code-snippets`** - Code snippets
-9.  **`webpack.config.js`** - Bundling and build configuration
-10. **`.prettierrc`** - Code formatting rules
-11. **`.prettierignore`** - Formatting ignore rules
-12. **`eslint.config.mjs`** - Code linting rules
+8.  **`webpack.config.js`** - Bundling and build configuration
+9.  **`.prettierrc`** - Code formatting rules
+10. **`.prettierignore`** - Formatting ignore rules
+11. **`eslint.config.mjs`** - Code linting rules
 
 </div>
 

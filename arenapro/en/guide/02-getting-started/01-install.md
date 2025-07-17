@@ -80,6 +80,3 @@ After the plugin is installed, it will automatically check if your Node.js versi
 Congratulations! You can now proceed to the next chapter to learn how to **[Create Your First ArenaPro Project](./02-create-project.md)**.
 
 Your development environment is now ready. In the next guide, we will create our first ArenaPro project together.
-<br/>
-<br/>
-<br/>

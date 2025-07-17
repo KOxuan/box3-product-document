@@ -15,8 +15,6 @@ Wouldn't it be great if there were a way for the build process to **automaticall
 
 The answer is: you can! By customizing the **Webpack** build process of your ArenaPro project, you can become a "build master" and automate many repetitive tasks.
 
----
-
 ## ⚠️ Before Becoming a "Master," Please Read This!
 
 :::danger
@@ -29,8 +27,6 @@ The answer is: you can! By customizing the **Webpack** build process of your Are
 
 If you are not sure what you are doing, we strongly recommend that you **do not** use this feature.
 :::
-
----
 
 ## Practical Example: Creating a "Version Info Auto-Injector"
 
@@ -118,8 +114,6 @@ Built on: 2025/6/26 10:30:00 AM
 ```
 
 From now on, you will no longer need to manage version information manually! The latest information will be automatically burned into your code with every build.
-
----
 
 ## Advanced Challenge: Protecting Your Code (Code Obfuscation)
 

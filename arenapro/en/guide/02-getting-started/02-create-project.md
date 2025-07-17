@@ -65,5 +65,3 @@ All of ArenaPro's powerful features (like code uploading, HMR hot reloading, bre
   :::
 
 Please continue reading: **[Step 3: Connect to the Cloud](./03-connect-to-cloud.md)**.
-
----

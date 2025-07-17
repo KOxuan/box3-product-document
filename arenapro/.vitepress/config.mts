@@ -143,6 +143,10 @@ export default defineConfig({
                 text: "Type-Safe Asset Synchronization",
                 link: "/en/guide/06-advanced-topics/asset-synchronization",
               },
+              {
+                text: "Internationalization Language",
+                link: "/en/guide/06-advanced-topics/i18n",
+              },
             ],
           },
           {
@@ -571,6 +575,10 @@ export default defineConfig({
               {
                 text: "类型安全：同步游戏资源",
                 link: "/zh/guide/06-advanced-topics/asset-synchronization",
+              },
+              {
+                text: "国际化语言",
+                link: "/zh/guide/06-advanced-topics/i18n",
               },
             ],
           },
