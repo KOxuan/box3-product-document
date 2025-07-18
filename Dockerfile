@@ -1,5 +1,5 @@
 # stage1 - 构建所有 VitePress 项目
-FROM node:22.17.1-bookworm AS builder
+FROM registry.cn-hangzhou.aliyuncs.com/box_base/node:22.17.1-bookworm AS builder
 
 USER root
 
@@ -21,7 +21,7 @@ COPY . ./
 RUN npm run build:all
 
 # stage2 - 生产环境运行时
-FROM node:22.17.1-bookworm
+FROM registry.cn-hangzhou.aliyuncs.com/box_base/node:22.17.1-bookworm
 
 USER root
 
