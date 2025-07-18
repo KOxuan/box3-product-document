@@ -481,6 +481,10 @@ export default defineConfig({
                 link: "/zh/guide/01-introduction/00-toolbox-introduction",
               },
               {
+                text: "ArenaPro 与 Arena 核心差异",
+                link: "/zh/guide/03-basic-tutorial/02-whats-different",
+              },
+              {
                 text: "第一步：安装与配置",
                 link: "/zh/guide/02-getting-started/01-install",
               },
@@ -624,10 +628,6 @@ export default defineConfig({
             text: "框架与 API",
             collapsed: false,
             items: [
-              {
-                text: "ArenaPro 与 Arena 核心差异",
-                link: "/zh/guide/03-basic-tutorial/02-whats-different",
-              },
               {
                 text: "ECS 组件系统",
                 collapsed: true,
