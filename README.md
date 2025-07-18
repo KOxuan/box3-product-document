@@ -37,4 +37,63 @@
 
 ---
 
+### 🛠️ 如何运行项目
+
+项目使用 [VitePress](https://vitepress.dev/) 构建，确保你的环境满足以下要求：
+
+- Node.js 版本 >= 18
+- npm 或 yarn 包管理器
+
+**安装依赖**
+
+```bash
+npm install
+# 或
+yarn
+```
+
+**本地开发**
+
+你可以选择运行不同产品的文档：
+
+- Arena 编辑器文档：
+
+  ```bash
+  npm run arena:dev
+  # 或 yarn arena:dev
+  ```
+
+- Voxa 编辑器文档：
+
+  ```bash
+  npm run voxa:dev
+  # 或 yarn voxa:dev
+  ```
+
+- API 文档：
+
+  ```bash
+  npm run api:dev
+  # 或 yarn api:dev
+  ```
+
+- ArenaPro 插件文档：
+  ```bash
+  npm run arenapro:dev
+  # 或 yarn arenapro:dev
+  ```
+
+**构建生产版本**
+
+构建对应的生产版本：
+
+- Arena 文档：`npm run arena:build`
+- Voxa 文档：`npm run voxa:build`
+- API 文档：`npm run api:build`
+- ArenaPro 文档：`npm run arenapro:build`
+
+构建后的文件将生成在对应目录的 `.vitepress/dist` 目录下。
+
+---
+
 **神岛产品手册文档，期待你的每一份精彩！**
