@@ -30,7 +30,7 @@ export default defineConfig({
     nav: [
       {
         text: "本地部署神岛版AI",
-        link: "./localAI",
+        link: "/localAI",
       },
       { text: "Arena用户手册", link: "https://docs.box3lab.com/arena/" },
       {
