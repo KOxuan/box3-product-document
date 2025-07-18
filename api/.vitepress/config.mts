@@ -7,6 +7,7 @@ export default defineConfig({
   head: [["link", { rel: "icon", href: "/arena.svg" }]],
   description: "为创作者所有✨ 由创作者共建⚖️ 因创作者而生🎉",
   base: "/api/",
+  outDir: "../dist/api",
   markdown: {
     lineNumbers: true,
     container: {

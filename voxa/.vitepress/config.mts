@@ -20,6 +20,7 @@ export default defineConfig({
     }
   },
   base: '/voxa/',
+  outDir: "../dist/voxa",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/voxa.svg',

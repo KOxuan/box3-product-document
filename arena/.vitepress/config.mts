@@ -20,6 +20,7 @@ export default defineConfig({
     },
   },
   base: "/arena/",
+  outDir: "../dist/arena",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/arena.svg",

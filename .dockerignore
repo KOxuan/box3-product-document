@@ -1,0 +1,21 @@
+node_modules
+.git
+.gitignore
+.DS_Store
+.vscode
+*.log
+npm-debug.log*
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 忽略已存在的构建输出，让 Docker 重新构建
+dist
+*/.vitepress/dist
+*/.vitepress/cache
+
+# 忽略开发文件
+README.md
+*.md

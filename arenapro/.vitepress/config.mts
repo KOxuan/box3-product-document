@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/arenapro/",
+  outDir: "../dist/arenapro",
   head: [["link", { rel: "icon", href: "/icon.png" }]],
   markdown: {
     lineNumbers: true,
