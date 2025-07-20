@@ -1,14 +1,15 @@
 // modified from https://github.com/honojs/website/blob/main/scripts/build-llm-docs.ts
 import fs from "node:fs";
 import path from "node:path";
-import { glob } from "node:fs/promises";
+import { glob } from "glob";
 
 const frontmatterRegex = /^\n*---(\n.+)*?\n---\n/;
 
-const docsDir = path.resolve("api");
+const apiOutDir = path.resolve(__dirname, "../dist/api");
+const docsDir = path.resolve(__dirname, "../api");
 const docsUrl = process.argv.includes("--dev")
   ? "http://localhost:4173"
-  : "https://docs.dao3.fun";
+  : "https://docs.box3lab.com";
 
 const sliceExt = (file: string) => {
   return file.split(".").slice(0, -1).join(".");
@@ -22,15 +23,8 @@ const extractLabel = (file: string) => {
   return match ? match[1] : sliceExt(file.split("/").pop() || "");
 };
 
-function capitalizeDelimiter(str: string) {
-  return str
-    .split("-")
-    .map((s: string) => s.charAt(0).toUpperCase() + s.slice(1))
-    .join("-");
-}
-
 async function generateLLMDocs() {
-  const outputListFile = path.resolve("api/.vitepress/dist/llms.txt");
+  const outputListFile = path.resolve(apiOutDir, "llms.txt");
 
   const optionalFiles = await glob("**/*.md", { cwd: docsDir });
 
@@ -41,10 +35,7 @@ async function generateLLMDocs() {
     optionals.push(
       `- [${extractLabel(filePath)}](${docsUrl}/api/${sliceExt(filePath)}.md)`
     );
-    fs.copyFileSync(
-      path.resolve(docsDir, file),
-      path.resolve("api/.vitepress/dist", file)
-    );
+    fs.copyFileSync(path.resolve(docsDir, file), path.resolve(apiOutDir, file));
   }
 
   fs.writeFileSync(
@@ -69,7 +60,7 @@ async function generateLLMDocs() {
   );
   console.log(`< Output '${outputListFile}' `);
 
-  const outputFullFile = path.resolve("api/.vitepress/dist/llms-full.txt");
+  const outputFullFile = path.resolve(__dirname, "../dist/api/llms-full.txt");
   const files = await glob("**/*.md", { cwd: docsDir });
 
   const fullContent = await generateContent(
