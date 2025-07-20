@@ -24,8 +24,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: "/arena.svg",
     nav: [
-      { text: "Voxa 用户手册", link: "https://docs.box3lab.com/voxa/" },
-      { text: "API手册", link: "https://docs.box3lab.com/api/" },
+      { text: "Voxa 用户手册", link: "https://docs.dao3.fun/voxa/" },
+      { text: "API手册", link: "https://docs.dao3.fun/api/" },
     ],
     search: {
       provider: "local",
@@ -224,7 +224,7 @@ export default defineConfig({
           },
           {
             text: "使用VSCode开发",
-            link: "https://docs.box3lab.com/arenapro",
+            link: "https://docs.dao3.fun/arenapro",
           },
         ],
       },
