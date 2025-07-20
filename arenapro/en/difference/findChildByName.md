@@ -1,7 +1,7 @@
 # findChildByName API Documentation
 
 :::warning
-Official API Documentation: [findChildByName](https://docs.box3lab.com/api/ClientUI/UiNode.html#findChildByName)
+Official API Documentation: [findChildByName](https://docs.dao3.fun/api/ClientUI/UiNode.html#findChildByName)
 :::
 
 :::tip

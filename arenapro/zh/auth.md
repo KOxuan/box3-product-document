@@ -1,6 +1,6 @@
 # ArenaPro 快速授权插件指南
 
-首先，你需要安装篡改猴(Tampermonkey)插件管理器。详细安装指南请参考：[篡改猴安装文档](https://docs.box3lab.com/arena/plugIns/tampermonkey.html)
+首先，你需要安装篡改猴(Tampermonkey)插件管理器。详细安装指南请参考：[篡改猴安装文档](https://docs.dao3.fun/arena/plugIns/tampermonkey.html)
 
 安装完成后，请通过以下链接安装 ArenaPro 快速授权插件：[ArenaPro 授权插件](https://static.pgaot.com/Assets/js/arenapro-auth.user.js)
 

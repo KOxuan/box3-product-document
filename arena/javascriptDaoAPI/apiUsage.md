@@ -1,12 +1,12 @@
-# 如何阅读API手册
+# 如何阅读 API 手册
 
 API（Application Programming Interface，应用程序编程接口）是不同软件应用程序之间的通信桥梁。
 
-在本章节中，将会把学到的JavaScript语言，并结合神岛API，共同踏上创作游戏的旅程。
+在本章节中，将会把学到的 JavaScript 语言，并结合神岛 API，共同踏上创作游戏的旅程。
 
-在正式启程之前，掌握如何有效阅读并理解API手册将是不可或缺的一课，它将为你的游戏开发之路奠定坚实的基础。
+在正式启程之前，掌握如何有效阅读并理解 API 手册将是不可或缺的一课，它将为你的游戏开发之路奠定坚实的基础。
 
-神岛API手册：[https://docs.box3lab.com/api/](https://docs.box3lab.com/api/)
+神岛 API 手册：[https://docs.dao3.fun/api/](https://docs.dao3.fun/api/)
 
 :::info
 手册运用了关于`TypeScript`语言的知识，我们将在下一章节介绍它，这属于进阶章节。
@@ -16,19 +16,21 @@ API（Application Programming Interface，应用程序编程接口）是不同�
 手册中 `declare`关键字，表示该变量或类是编译时定义的，而不是运行时定义的。
 :::
 
+我们接下来举个简单的例子，带你看懂 API 手册。
 
-我们接下来举个简单的例子，带你看懂API手册。
+## 🌏 游戏世界
 
-## 🌏游戏世界
-从[`🌏游戏世界`](https://docs.box3lab.com/api/GameWorld/)界面，我们可以得到以下信息：
+从[`🌏游戏世界`](https://docs.dao3.fun/api/GameWorld/)界面，我们可以得到以下信息：
+
 ```typescript
 declare const world: GameWorld;
 declare class GameWorld {
-    //...
+  //...
 }
 ```
 
 1. **`declare const world: GameWorld;`**：
+
    - 这行代码声明了一个名为`world`的常量，其类型为`GameWorld`。这意味着在脚本中已经存在了一个`GameWorld`类型的`world`常量。
 
 2. **`declare class GameWorld { ... }`**：
@@ -38,7 +40,7 @@ declare class GameWorld {
 
 ## 属性
 
-从[`projectName`](https://docs.box3lab.com/api/GameWorld/mapInfo.html#projectName)界面，我们可以得到以下信息：
+从[`projectName`](https://docs.dao3.fun/api/GameWorld/mapInfo.html#projectName)界面，我们可以得到以下信息：
 
 ![](/QQ20240925-143355.png)
 
@@ -46,8 +48,8 @@ declare class GameWorld {
 
 这意味着`projectName`是一个返回的数据是一个字符串。
 
-
 所以，我们通过`world.projectName`可以获取当前地图的名称。
+
 ```javascript
 console.log(world.projectName);
 ```
@@ -56,7 +58,7 @@ console.log(world.projectName);
 
 ## 方法
 
-从[`onPlayerJoin`](https://docs.box3lab.com/api/GameWorld/playerJL.html#onPlayerJoin)界面，我们可以得到以下信息：
+从[`onPlayerJoin`](https://docs.dao3.fun/api/GameWorld/playerJL.html#onPlayerJoin)界面，我们可以得到以下信息：
 
 ![](/QQ20240925-172033.png)
 
@@ -81,25 +83,26 @@ console.log(world.projectName);
 
 2. **tick**（类型：`number`）：这个属性表示事件发生的时间。在游戏开发中，`tick`通常指的是游戏循环中的某一时刻或帧数，它允许创作者知道事件是在游戏的哪个阶段发生的。这个信息对于调试、动画同步、时间管理等方面都非常有用。
 
-关于`GameEntity`类具体内容可以查看：[`👤游戏玩家`](https://docs.box3lab.com/api/GamePlayer/)
+关于`GameEntity`类具体内容可以查看：[`👤游戏玩家`](https://docs.dao3.fun/api/GamePlayer/)
 
 所以，我们通过`world.onPlayerJoin`设置当玩家加入时，执行的操作。
+
 ```javascript
 world.onPlayerJoin(({ entity }) => {
-  console.log(`你好，${entity.player.name}`)
+  console.log(`你好，${entity.player.name}`);
 });
 ```
 
 ![](/QQ20240925-173602.png)
 
-
 ## 枚举
 
-在从[`👤游戏玩家`](https://docs.box3lab.com/api/GamePlayer/)中，有一个[`cameraMode`](https://docs.box3lab.com/api/GamePlayer/camera.html#cameraMode)界面，我们可以得到以下信息：
+在从[`👤游戏玩家`](https://docs.dao3.fun/api/GamePlayer/)中，有一个[`cameraMode`](https://docs.dao3.fun/api/GamePlayer/camera.html#cameraMode)界面，我们可以得到以下信息：
 
 ![](/QQ20240925-183504.png)
 
 这段代码的含义是：
+
 - `cameraMode`：这是一个属性名，用于引用或存储与相机模式相关的信息。
 - `GameCameraMode`：这是一个枚举（Enum），它定义了游戏中相机可以处于的不同模式。
 
@@ -120,9 +123,10 @@ world.onPlayerJoin(({ entity }) => {
 - **RELATIVE**：这个成员表示相对于玩家位置的第三人称视角模式。在这种模式下，相机的位置可能会根据玩家的位置进行某种形式的动态调整。它用于在保持第三人称视角的同时，根据玩家的移动或朝向来调整相机的位置或角度。
 
 所以，我们通过`entity.player.cameraMode`设置玩家摄像机视角 。
+
 ```javascript
 world.onPlayerJoin(({ entity }) => {
-  // 当玩家加入地图时候，设置玩家摄像机为第一人称视角 
+  // 当玩家加入地图时候，设置玩家摄像机为第一人称视角
   entity.player.cameraMode = GameCameraMode.FPS;
 });
 ```

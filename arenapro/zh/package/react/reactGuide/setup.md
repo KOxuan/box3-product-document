@@ -66,7 +66,7 @@ npm install @dao3fun/react
 - `<box />` 对应 `UiBox`
 - `<text />` 对应 `UiText`
 
-UI 样式通过 `style` 属性设置，具体 API 请参考：[神岛 UI API 文档](https://docs.box3lab.com/api/ClientUI/)
+UI 样式通过 `style` 属性设置，具体 API 请参考：[神岛 UI API 文档](https://docs.dao3.fun/api/ClientUI/)
 
 让我们通过一个简单的示例来了解基本用法：
 

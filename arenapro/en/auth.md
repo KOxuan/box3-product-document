@@ -1,6 +1,6 @@
 # ArenaPro Quick Authorization Plugin Guide
 
-First, you need to install the Tampermonkey plugin manager. For detailed installation instructions, please refer to the [Tampermonkey Installation Documentation](https://docs.box3lab.com/arena/plugIns/tampermonkey.html).
+First, you need to install the Tampermonkey plugin manager. For detailed installation instructions, please refer to the [Tampermonkey Installation Documentation](https://docs.dao3.fun/arena/plugIns/tampermonkey.html).
 
 After installation, please install the ArenaPro Quick Authorization plugin via the following link: [ArenaPro Authorization Plugin](https://static.pgaot.com/Assets/js/arenapro-auth.user.js).
 
