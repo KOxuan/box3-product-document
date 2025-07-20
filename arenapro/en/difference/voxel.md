@@ -1,7 +1,7 @@
 # Voxels
 
 :::warning
-Official API Documentation: [GameVoxels](https://docs.box3lab.com/api/GameVoxels/operate.html)
+Official API Documentation: [GameVoxels](https://docs.dao3.fun/api/GameVoxels/operate.html)
 :::
 
 ## Improvement Details

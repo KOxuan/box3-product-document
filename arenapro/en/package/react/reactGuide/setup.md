@@ -64,7 +64,7 @@ The tag system of Box3 React is fully compatible with the Box3 UI API, for examp
 - `<box />` corresponds to `UiBox`
 - `<text />` corresponds to `UiText`
 
-UI styles are set through the `style` attribute. For specific APIs, please refer to the [Box3 UI API Documentation](https://docs.box3lab.com/api/ClientUI/).
+UI styles are set through the `style` attribute. For specific APIs, please refer to the [Box3 UI API Documentation](https://docs.dao3.fun/api/ClientUI/).
 
 Let's look at a simple example to understand the basic usage:
 

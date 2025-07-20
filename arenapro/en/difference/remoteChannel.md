@@ -1,9 +1,9 @@
 # Cross-End Data Communication
 
 :::warning
-Server-side API Documentation: [ServerRemoteChannel](https://docs.box3lab.com/api/RemoteChannel/Server/)
+Server-side API Documentation: [ServerRemoteChannel](https://docs.dao3.fun/api/RemoteChannel/Server/)
 
-Client-side API Documentation: [ClientRemoteChannel](https://docs.box3lab.com/api/RemoteChannel/Client/)
+Client-side API Documentation: [ClientRemoteChannel](https://docs.dao3.fun/api/RemoteChannel/Client/)
 :::
 
 ## Improvement Details

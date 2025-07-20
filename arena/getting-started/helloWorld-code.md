@@ -1,13 +1,12 @@
 # Hello World - 代码篇
 
-体验如何在控制台打印一个"Hello World"，并使用神岛API实现一个小案例，让玩家在进入游戏时接收到个性化的欢迎信息。
+体验如何在控制台打印一个"Hello World"，并使用神岛 API 实现一个小案例，让玩家在进入游戏时接收到个性化的欢迎信息。
 
-学习JavaScript语言，具体的内容请参考 [JavaScript语言基础](/javascriptEntry/first-step/hi)。
+学习 JavaScript 语言，具体的内容请参考 [JavaScript 语言基础](/javascriptEntry/first-step/hi)。
 
 #### 1. 进入代码编辑器
 
-在Arena地图编辑器中，寻找工具区的“代码”按钮，点击以进入代码编辑界面。
-
+在 Arena 地图编辑器中，寻找工具区的“代码”按钮，点击以进入代码编辑界面。
 
 ![](/QQ20240913-152031.png)
 
@@ -29,10 +28,9 @@ console.log("Hello World");
 
 ![](/QQ20240918-131047.png)
 
+#### 4. 使用神岛 API 向玩家发送信息
 
-#### 4. 使用神岛API向玩家发送信息
-
-接下来，我们将利用神岛API实现在玩家加入游戏时发送个性化欢迎信息的功能。
+接下来，我们将利用神岛 API 实现在玩家加入游戏时发送个性化欢迎信息的功能。
 
 在`index.js`文件中，添加以下代码段以在玩家加入游戏时发送一条欢迎私信：
 
@@ -46,11 +44,9 @@ world.onPlayerJoin(({entity}) => {
 
 这段代码将监听玩家加入事件，并使用`directMessage`方法向每位新加入的玩家发送一条包含其用户昵称的欢迎私信。
 
-> [!NOTE]
-> [**world.onPlayerJoin**](https://docs.box3lab.com/api/GameWorld/playerJL.html#onPlayerJoin)： 当玩家加入游戏时触发。
+> [!NOTE] > [**world.onPlayerJoin**](https://docs.dao3.fun/api/GameWorld/playerJL.html#onPlayerJoin)： 当玩家加入游戏时触发。
 >
-> [**entity.player.directMessage**](https://docs.box3lab.com/api/GamePlayer/chat.html#directMessage)： 向玩家发送一条消息。
-
+> [**entity.player.directMessage**](https://docs.dao3.fun/api/GamePlayer/chat.html#directMessage)： 向玩家发送一条消息。
 
 #### 5. 测试效果
 
@@ -58,6 +54,6 @@ world.onPlayerJoin(({entity}) => {
 
 重新运行地图，你将在游戏内收到包含用户昵称的个性化欢迎私信。
 
-这章中，我们不仅学会了如何使用js语言在控制台输出"Hello World"，还掌握了如何使用神岛API增强游戏的交互性和个性化体验。
+这章中，我们不仅学会了如何使用 js 语言在控制台输出"Hello World"，还掌握了如何使用神岛 API 增强游戏的交互性和个性化体验。
 
 希望这对你的神奇代码岛之旅有所帮助！
