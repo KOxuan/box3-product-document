@@ -23,6 +23,7 @@ declare class ClientNavigator {
 ### 客户端信息
 
 - [`userAgent`](./navigator#userAgent) : 获取客户端的用户代理字符串，用于识别客户端类型和版本
+- [`language`](./navigator#language) : 获取客户端的首选语言，通常是浏览器 UI 的语言。
 
 ## 方法列表
 
