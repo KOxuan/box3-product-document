@@ -47,7 +47,9 @@ export default defineConfig({
         "A Minecraft server plugin that supports VSCode and TypeScript for game development.",
 
       themeConfig: {
-        nav: [{ text: "API Reference", link: "https://docs.dao3.fun/apapi/" }],
+        nav: [
+          { text: "API Reference", link: "https://docs.box3lab.com/apapi/" },
+        ],
         sidebar: [
           {
             text: "Getting Started",
@@ -459,7 +461,7 @@ export default defineConfig({
 
       themeConfig: {
         nav: [
-          { text: "API手册", link: "https://docs.dao3.fun/apapi/" },
+          { text: "API手册", link: "https://docs.box3lab.com/apapi/" },
           {
             text: "创作者QQ群",
             link: "https://qm.qq.com/cgi-bin/qm/qr?authKey=LteV6YzMX0xKmrQSp8%2BaNi6YUdonwyVMc44npCKlNymwnoWVZBmG5Y4S4N9RwxEP&k=JeZQYLLnherYW6pGlbODkErutSmbkzr-&noverify=0",

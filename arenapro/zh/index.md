@@ -14,7 +14,7 @@ hero:
       link: /zh/guide/01-introduction/00-toolbox-introduction
     - theme: alt
       text: API 手册
-      link: https://docs.dao3.fun/apapi/
+      link: https://docs.box3lab.com/apapi/
 
 features:
   - title: "远不止是一个插件"

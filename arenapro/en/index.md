@@ -14,7 +14,7 @@ hero:
       link: /en/guide/01-introduction/00-toolbox-introduction
     - theme: alt
       text: API Reference
-      link: https://docs.dao3.fun/apapi/
+      link: https://docs.box3lab.com/apapi/
 
 features:
   - title: "More Than Just a Plugin"
