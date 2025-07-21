@@ -12,6 +12,14 @@ import '/style.css'
 
 值以及属性特性与浏览器本身的属性保持一致。
 
+#### <font id="API" /><font id="ReadOnly" >只读</font>language<font id="Type">: string</font>{#language}
+
+获取用户的首选语言，通常是浏览器 UI 的语言。
+
+有效的语言代码示例包括“en”、“zh-CN”、“fr”、“fr-FR”、“es-ES”等。
+
+值以及属性特性与浏览器本身的属性保持一致。
+
 ## 方法
 
 #### <font id="API" />getDeviceInfo()<font id="Type">: [DeviceInfo](./navigator#DeviceInfo)</font>{#getDeviceInfo}
