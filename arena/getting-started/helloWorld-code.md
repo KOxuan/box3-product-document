@@ -2,7 +2,7 @@
 
 体验如何在控制台打印一个"Hello World"，并使用神岛 API 实现一个小案例，让玩家在进入游戏时接收到个性化的欢迎信息。
 
-学习 JavaScript 语言，具体的内容请参考 [JavaScript 语言基础](/javascriptEntry/first-step/hi)。
+学习 JavaScript 语言，具体的内容请参考 [JavaScript 语言基础](/javascriptEntry/01-getting-started/01-what-is-javascript)。
 
 #### 1. 进入代码编辑器
 

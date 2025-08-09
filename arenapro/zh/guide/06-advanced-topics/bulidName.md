@@ -4,7 +4,7 @@
 
 > "游戏很棒，如果适配了英语那就更好了！" —— 英国玩家。
 > "太可惜了，我都玩不懂，适配俄语就好了。" —— 俄罗斯玩家。
-...
+> ...
 
 作为唯一的开发者，我慌了——难道要为每种语言都硬编码一套 UI？这时，我发现了 i18next 这个"游戏语言魔法师"...
 
@@ -183,8 +183,8 @@ i18n.t('ui:loot', { count: player.gems });
 // dialogue.json
 {
   "npcGreeting": "你好，{{title}}！",
-  "npcGreeting_male": "先生您好！",
-  "npcGreeting_female": "女士您好！"
+  "npcGreeting_male": "先生你好！",
+  "npcGreeting_female": "女士你好！"
 }
 ```
 

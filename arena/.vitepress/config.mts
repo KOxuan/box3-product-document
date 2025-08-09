@@ -60,6 +60,7 @@ export default defineConfig({
               { text: "代码编辑器", link: "/editor/code" },
             ],
           },
+          { text: "客户端与服务端", link: "/core/client-server-modules" },
         ],
       },
       {
@@ -133,69 +134,185 @@ export default defineConfig({
         ],
       },
       {
-        text: "JavaScript语言入门",
+        text: "JavaScript 入门",
         collapsed: false,
         items: [
-          { text: "认识JS语言", link: "/javascriptEntry/first-step/hi" },
           {
-            text: "你好，世界！",
-            link: "/javascriptEntry/first-step/helloWorld",
-          },
-          {
-            text: "第一章：变量与判断",
+            text: "1. 入门基础",
             collapsed: true,
             items: [
               {
-                text: "变量与数据类型",
-                link: "/javascriptEntry/first-step/variablesAndTypes",
+                text: "什么是 JavaScript？",
+                link: "/javascriptEntry/01-getting-started/01-what-is-javascript",
               },
               {
-                text: "操作符与表达式",
-                link: "/javascriptEntry/first-step/operator",
+                text: "Hello, World!",
+                link: "/javascriptEntry/01-getting-started/02-hello-world",
               },
-              { text: "条件判断", link: "/javascriptEntry/first-step/if" },
               {
-                text: "实践：抽奖游戏",
-                link: "/javascriptEntry/first-step/lottery",
+                text: "代码注释",
+                link: "/javascriptEntry/01-getting-started/03-code-comments",
               },
             ],
           },
           {
-            text: "第二章：循环与函数",
+            text: "2. 变量与数据类型",
             collapsed: true,
             items: [
-              { text: "循环", link: "/javascriptEntry/second-step/for" },
-              { text: "函数", link: "/javascriptEntry/second-step/function" },
-              { text: "数组", link: "/javascriptEntry/second-step/array" },
               {
-                text: "实践：多人抽奖游戏",
-                link: "/javascriptEntry/second-step/comprehensiveTest",
+                text: "变量",
+                link: "/javascriptEntry/02-variables-and-data-types/01-variables",
+              },
+              {
+                text: "数据类型",
+                link: "/javascriptEntry/02-variables-and-data-types/02-data-types",
+              },
+              {
+                text: "运算符",
+                link: "/javascriptEntry/02-variables-and-data-types/03-operators",
               },
             ],
           },
           {
-            text: "第三章：对象与类",
+            text: "3. 控制流",
             collapsed: true,
             items: [
               {
-                text: "JSON与对象",
-                link: "/javascriptEntry/third-step/jsonObj",
+                text: "条件语句",
+                link: "/javascriptEntry/03-control-flow/01-conditional-statements",
               },
               {
-                text: "常量与作用域",
-                link: "/javascriptEntry/third-step/variablesScope",
+                text: "循环",
+                link: "/javascriptEntry/03-control-flow/02-loops",
               },
-              { text: "类", link: "/javascriptEntry/third-step/class" },
             ],
           },
-          { text: "异步与同步", link: "/javascriptEntry/promise" },
-          { text: "章末总结", link: "/javascriptEntry/summary" },
+          {
+            text: "4. 函数",
+            collapsed: true,
+            items: [
+              {
+                text: "定义函数",
+                link: "/javascriptEntry/04-functions/01-defining-functions",
+              },
+              {
+                text: "参数和返回值",
+                link: "/javascriptEntry/04-functions/02-parameters-and-return-values",
+              },
+              {
+                text: "作用域",
+                link: "/javascriptEntry/04-functions/03-scope",
+              },
+            ],
+          },
+          {
+            text: "5. 数据结构",
+            collapsed: true,
+            items: [
+              {
+                text: "对象",
+                link: "/javascriptEntry/05-data-structures/01-objects",
+              },
+              {
+                text: "数组",
+                link: "/javascriptEntry/05-data-structures/02-arrays",
+              },
+            ],
+          },
+          {
+            text: "6. 高级主题",
+            collapsed: true,
+            items: [
+              {
+                text: "类",
+                link: "/javascriptEntry/06-advanced-topics/01-classes",
+              },
+              {
+                text: "异步 JavaScript",
+                link: "/javascriptEntry/06-advanced-topics/02-asynchronous-javascript",
+              },
+              {
+                text: "错误处理",
+                link: "/javascriptEntry/06-advanced-topics/03-error-handling",
+              },
+              {
+                text: "JSON 详解",
+                link: "/javascriptEntry/06-advanced-topics/04-json",
+              },
+              {
+                text: "更多 ES6+ 特性",
+                link: "/javascriptEntry/06-advanced-topics/05-es6-features",
+              },
+            ],
+          },
+          {
+            text: "7. 中级主题",
+            collapsed: true,
+            items: [
+              {
+                text: "`this` 关键字详解",
+                link: "/javascriptEntry/07-intermediate-topics/01-this-keyword",
+              },
+              {
+                text: "原型与原型链",
+                link: "/javascriptEntry/07-intermediate-topics/02-prototypes",
+              },
+              {
+                text: "闭包 (Closures)",
+                link: "/javascriptEntry/07-intermediate-topics/03-closures",
+              },
+              {
+                text: "高级数组方法",
+                link: "/javascriptEntry/07-intermediate-topics/04-advanced-array-methods",
+              },
+            ],
+          },
+          {
+            text: "8. 高级主题",
+            collapsed: true,
+            items: [
+              {
+                text: "异步编程深入",
+                link: "/javascriptEntry/08-advanced-topics/01-async-deep-dive",
+              },
+              {
+                text: "事件循环",
+                link: "/javascriptEntry/08-advanced-topics/02-event-loop",
+              },
+              {
+                text: "JavaScript 设计模式",
+                link: "/javascriptEntry/08-advanced-topics/03-design-patterns",
+              },
+              {
+                text: "内存管理",
+                link: "/javascriptEntry/08-advanced-topics/04-memory-management",
+              },
+            ],
+          },
         ],
       },
       {
         text: "JS×神岛API",
         collapsed: false,
-        items: [{ text: "如何阅读API", link: "/javascriptDaoAPI/apiUsage" }],
+        items: [
+          // { text: "如何阅读API", link: "/javascriptDaoAPI/apiUsage" },
+          {
+            text: "API 入门：编写你的第一个游戏脚本",
+            link: "/javascriptDaoAPI/02-getting-started",
+          },
+          {
+            text: "创建你的第一个实体",
+            link: "/javascriptDaoAPI/03-creating-entities",
+          },
+          {
+            text: "创建你的第一个 UI",
+            link: "/javascriptDaoAPI/04-creating-ui",
+          },
+          {
+            text: "客户端与服务器通信",
+            link: "/javascriptDaoAPI/05-client-server-communication",
+          },
+        ],
       },
       {
         text: "创作插件",
