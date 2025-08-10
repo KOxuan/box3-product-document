@@ -8,6 +8,7 @@ In the configuration file **dao3.config.json**, you can set the compilation and 
 {
   "ArenaPro": {
     "npmPackage": null,
+    "packageManager": "npm",
     "file": {
       "typescript": {
         "server": {
@@ -89,6 +90,7 @@ In the configuration file **dao3.config.json**, you can set the compilation and 
 
 ### Special Configuration
 
-| Attribute    | Required | Type                 | Default | Description                                                                                                                                         |
-| :----------- | :------: | :------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `npmPackage` |          | "server" \| "client" |         | Is the current project a Box3 component library (npm package)? If so, specify the end name to stop building the other end and speed up the process. |
+| Attribute        | Required | Type                              | Default | Description                                                                                                                                         |
+| :--------------- | :------: | :-------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npmPackage`     |          | "server" \| "client"              |         | Is the current project a Box3 component library (npm package)? If so, specify the end name to stop building the other end and speed up the process. |
+| `packageManager` |          | "npm" \| "yarn"\| "pnpm" \| "bun" | "npm"   | The recommended package manager for the current project                                                                                             |

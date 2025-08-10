@@ -9,7 +9,6 @@ myArenaProject/
 ├── Core Configuration Files
 │   ├── dao3.config.json      # Main project configuration file
 │   ├── package.json          # npm dependency management
-│   ├── package-lock.json     # npm dependency locking
 │   ├── .prettierrc           # Code formatting configuration
 │   ├── .prettierignore       # Formatting ignore configuration
 │   └── eslint.config.mjs     # Code linting configuration
@@ -60,13 +59,12 @@ The following files **must not be moved or renamed**, as doing so may prevent th
 2.  **`ClientAPI.d.ts`** - Client-side API type definitions
 3.  **`tsconfig.json`** - TypeScript compilation configuration
 4.  **`package.json`** - npm package management configuration
-5.  **`package-lock.json`** - Dependency version locking
-6.  **`dao3.config.json`** - ArenaPro core configuration
-7.  **`.gitignore`** - Git ignore configuration
-8.  **`webpack.config.js`** - Bundling and build configuration
-9.  **`.prettierrc`** - Code formatting rules
-10. **`.prettierignore`** - Formatting ignore rules
-11. **`eslint.config.mjs`** - Code linting rules
+5.  **`dao3.config.json`** - ArenaPro core configuration
+6.  **`.gitignore`** - Git ignore configuration
+7.  **`webpack.config.js`** - Bundling and build configuration
+8.  **`.prettierrc`** - Code formatting rules
+9.  **`.prettierignore`** - Formatting ignore rules
+10. **`eslint.config.mjs`** - Code linting rules
 
 </div>
 

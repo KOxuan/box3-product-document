@@ -9,7 +9,6 @@ myArenaProject/
 ├── 核心配置文件
 │   ├── dao3.config.json      # 项目主配置文件
 │   ├── package.json          # npm依赖管理
-│   ├── package-lock.json     # npm依赖锁定
 │   ├── .prettierrc           # 代码格式化配置
 │   ├── .prettierignore       # 格式化忽略配置
 │   └── eslint.config.mjs     # 代码检查配置
@@ -60,13 +59,12 @@ myArenaProject/
 2. **`ClientAPI.d.ts`** - 客户端 API 类型定义
 3. **`tsconfig.json`** - TypeScript 编译配置
 4. **`package.json`** - npm 包管理配置
-5. **`package-lock.json`** - 依赖版本锁定
-6. **`dao3.config.json`** - ArenaPro 核心配置
-7. **`.gitignore`** - Git 忽略配置
-8. **`webpack.config.js`** - 打包构建配置
-9. **`.prettierrc`** - 代码格式化规则
-10. **`.prettierignore`** - 格式化忽略规则
-11. **`eslint.config.mjs`** - 代码检查规则
+5. **`dao3.config.json`** - ArenaPro 核心配置
+6. **`.gitignore`** - Git 忽略配置
+7. **`webpack.config.js`** - 打包构建配置
+8. **`.prettierrc`** - 代码格式化规则
+9. **`.prettierignore`** - 格式化忽略规则
+10. **`eslint.config.mjs`** - 代码检查规则
 
 </div>
 
