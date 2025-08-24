@@ -74,7 +74,7 @@ z 轴坐标
 | y          | 是         |              | number     | y 轴坐标   |
 | z          | 是         |              | number     | z 轴坐标   |
 
-## ## <font id="API" />copy(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#copy}
+#### <font id="API" />copy(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#copy}
 
 将三维向量复制到当前三维向量中，返回当前向量
 
@@ -102,7 +102,7 @@ z 轴坐标
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | v          | 是         |              | GameVector3 | 三维向量   |
 
-## ## <font id="API" />sub(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#sub}
+#### <font id="API" />sub(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#sub}
 
 向量减法，返回新的向量
 
@@ -124,7 +124,7 @@ z 轴坐标
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | v          | 是         |              | GameVector3 | 三维向量   |
 
-## ## <font id="API" />div(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#div}
+#### <font id="API" />div(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#div}
 
 向量相除，返回新的向量
 
@@ -134,7 +134,7 @@ z 轴坐标
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | v          | 是         |              | GameVector3 | 三维向量   |
 
-## ## <font id="API" />addEq(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#addEq}
+#### <font id="API" />addEq(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#addEq}
 
 向量加法，并覆盖当前向量，返回当前向量
 
@@ -144,7 +144,7 @@ z 轴坐标
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | v          | 是         |              | GameVector3 | 三维向量   |
 
-## ## <font id="API" />subEq(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#subEq}
+#### <font id="API" />subEq(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#subEq}
 
 向量减法，并覆盖当前向量，返回当前向量
 
@@ -166,7 +166,7 @@ z 轴坐标
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | v          | 是         |              | GameVector3 | 三维向量   |
 
-## ## <font id="API" />divEq(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#divEq}
+#### <font id="API" />divEq(<font id="Type">v:GameVector3</font>)<font id="Type">: GameVector3</font>{#divEq}
 
 向量相除，并覆盖当前向量，返回当前向量
 
@@ -176,7 +176,7 @@ z 轴坐标
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | v          | 是         |              | GameVector3 | 三维向量   |
 
-## ## <font id="API" />dot(<font id="Type">v:GameVector3</font>)<font id="Type">: number</font>{#dot}
+#### <font id="API" />dot(<font id="Type">v:GameVector3</font>)<font id="Type">: number</font>{#dot}
 
 向量点积
 
@@ -198,7 +198,7 @@ z 轴坐标
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | v          | 是         |              | GameVector3 | 三维向量   |
 
-## ## <font id="API" />scale(<font id="Type">n: number</font>)<font id="Type">: GameVector3</font>{#scale}
+#### <font id="API" />scale(<font id="Type">n: number</font>)<font id="Type">: GameVector3</font>{#scale}
 
 向量数乘，返回新的向量
 
@@ -257,7 +257,7 @@ z 轴坐标
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | v          | 是         |              | GameVector3 | 三维向量   |
 
-## ## <font id="API" />distance(<font id="Type">v:GameVector3</font>)<font id="Type">: number</font>{#distance}
+#### <font id="API" />distance(<font id="Type">v:GameVector3</font>)<font id="Type">: number</font>{#distance}
 
 返回两个向量之间的距离
 

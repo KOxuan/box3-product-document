@@ -26,7 +26,7 @@ import '/style.css'
 
 错误码
 
-## ## <font id="API" />message<font id="Type">: string</font>{#message}
+#### <font id="API" />message<font id="Type">: string</font>{#message}
 
 错误信息
 

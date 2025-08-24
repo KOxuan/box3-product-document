@@ -20,7 +20,7 @@ import '/style.css'
 | ----------- | -------- | ---------- | -------- | -------------- |
 | currentTime | 是       |            | number   | 设定特定时间点 |
 
-## ## <font id="API" />resume(<font id="Type">currentTime?:number</font>)<font id="Type">: void</font>
+#### <font id="API" />resume(<font id="Type">currentTime?:number</font>)<font id="Type">: void</font>
 
 继续该音乐播放
 
@@ -30,10 +30,10 @@ import '/style.css'
 | ----------- | -------- | ---------- | -------- | -------------------- |
 | currentTime | 否       |            | number   | 从特定时间点继续播放 |
 
-## ## <font id="API" />pause()<font id="Type">: void</font>
+#### <font id="API" />pause()<font id="Type">: void</font>
 
 暂停该音乐的播放
 
-## ## <font id="API" />stop()<font id="Type">: void</font>
+#### <font id="API" />stop()<font id="Type">: void</font>
 
 终止该音乐的播放

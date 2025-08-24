@@ -144,7 +144,7 @@ world.onPlayerJoin(({ entity }) => {
 ---
 
 
-#### <font id="API" />particleColor<font id="Type">: [GameVector3](/GameVector3/)[]</font>{#particleColor}
+#### <font id="API" />particleColor<font id="Type">: [GameRGBColor](/GameRGBColor/)[]</font>{#particleColor}
 > 默认值：[ new GameRGBColor(1,1,1), new GameRGBColor(1,1,1), new GameRGBColor(1,1,1), new GameRGBColor(1,1,1), new GameRGBColor(1,1,1) ]
 
 类似 particleSize，该属性的值可以是一个长度为0至5的数组，数组里的每个值分别指定了粒子在各个阶段的颜色。类似地，可以通过该属性使粒子具有颜色渐变的效果

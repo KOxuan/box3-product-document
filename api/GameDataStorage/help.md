@@ -99,7 +99,7 @@ const userTable = storage.getDataStorage("userData");
 
 这里我把这张表格放在了一个叫 userTable 的变量里
 
-## # 获取全局（主副图互通）的数据存储空间
+### 获取全局（主副图互通）的数据存储空间
 
 ### <font id="API" />getGroupStorage(<font id="Type">key: string</font>)<font id="Type">: [GameDataStorage](./setSpace)</font>{#getGroupStorage}
 
@@ -206,7 +206,7 @@ userTable.set("吉吉喵", 100);
 | JSONValue[]               | JSONValue 数组 |
 | `{[x: string]:JSONValue}` | 键值对         |
 
-## # 获取键名称对应的数据
+### 获取键名称对应的数据
 
 ### <font id="API" />get(<font id="Type">key: string</font>)<font id="Type">: Promise‹[ReturnValue](./setSpace#ReturnValue)›</font> {#get}
 
@@ -263,7 +263,7 @@ console.log(ggm_data.createTime); // 打印出：1729302316362 这是一个时�
 console.log(ggm_data.version); // 打印出："01JAH76HEG1MERXN82PWTDBHM0"
 ```
 
-## # 更新表格数据
+### 更新表格数据
 
 ### <font id="API" />update(<font id="Type">key: string,handler:(prevValue:[ReturnValue](./setSpace#ReturnValue))=>[JSONValue](./setSpace#JSONValue)</font>)<font id="Type">: Promise‹void›</font> {#update}
 
@@ -291,7 +291,7 @@ await userTable.update("吉吉喵", () => {
 });
 ```
 
-## # 删除表格数据
+### 删除表格数据
 
 ### <font id="API" />remove(<font id="Type">key: string</font>)<font id="Type">: Promise‹[ReturnValue](./setSpace#ReturnValue)›</font> {#remove}
 
@@ -320,7 +320,7 @@ await userTable.update("吉吉喵", () => {
 await userTable.remove("吉吉喵");
 ```
 
-## # 把表格整理成一本书？
+### 把表格整理成一本书？
 
 #### <font id="API" />list(<font id="Type">options:Partial‹[ListPageOptions](./setSpace#ListPageOptions)›</font>)<font id="Type">: Promise‹[QueryList](./setSpace#QueryList)›</font> {#list}
 
@@ -377,7 +377,7 @@ const queryList = await userTable.list({
 
 其中 cursor 是必须传入的，从最开头获取数据时填 0 就好
 
-## # 那如何翻这本书？
+### 那如何翻这本书？
 
 #### <font id="API" />QueryList {#QueryList}
 

@@ -155,6 +155,7 @@ export default defineConfig({
               },
             ],
           },
+      
           {
             text: "2. 变量与数据类型",
             collapsed: true,
@@ -220,7 +221,33 @@ export default defineConfig({
             ],
           },
           {
-            text: "6. 高级主题",
+            text: "6. 核心基础",
+            collapsed: true,
+            items: [
+              {
+                text: "数字与数学",
+                link: "/javascriptEntry/02-core-fundamentals/01-numbers-and-math",
+              },
+              {
+                text: "日期与时间",
+                link: "/javascriptEntry/02-core-fundamentals/02-dates-and-time",
+              },
+              {
+                text: "数字格式化",
+                link: "/javascriptEntry/02-core-fundamentals/03-number-formatting",
+              },
+              {
+                text: "随机与可复现随机",
+                link: "/javascriptEntry/02-core-fundamentals/04-random-and-seeding",
+              },
+              {
+                text: "向量基础（游戏常用）",
+                link: "/javascriptEntry/02-core-fundamentals/05-vector-basics",
+              },
+            ],
+          },
+          {
+            text: "7. 高级主题",
             collapsed: true,
             items: [
               {
@@ -246,7 +273,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "7. 中级主题",
+            text: "8. 中级主题",
             collapsed: true,
             items: [
               {
@@ -268,7 +295,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "8. 高级主题",
+            text: "9. 高级主题",
             collapsed: true,
             items: [
               {

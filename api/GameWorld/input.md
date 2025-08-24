@@ -142,7 +142,7 @@ world.onRelease(({ button, position }) => {
 
 :::
 
-## ## <font id="API" /><font id="Event">事件</font> onEntityContact(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntityContact}
+#### <font id="API" /><font id="Event">事件</font> onEntityContact(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntityContact}
 
 当实体与实体发生碰撞时触发。
 
@@ -448,7 +448,7 @@ world.onFluidLeave(({ entity, voxel }) => {
 | position | number                                                       | 按下按钮瞬间，玩家的位置                    |
 | pressed  | boolean                                                      | 是否按下了按钮。若为 true，则为按下了按钮。 |
 
-## ## <font id="API" />GameClickEvent{#GameClickEvent}
+#### <font id="API" />GameClickEvent{#GameClickEvent}
 
 游戏点击事件
 
@@ -462,7 +462,7 @@ world.onFluidLeave(({ entity, voxel }) => {
 | clickerPosition | [GameVector3](/GameVector3/)                                 | 点击鼠标的瞬间玩家所在位置                 |
 | raycast         | [GameRaycastResult](./querySelectorEntity#gameraycastresult) | 按下按钮瞬间，从玩家视角投射的射线检测结果 |
 
-## ## <font id="API" />GameEntityContactEvent{#GameEntityContactEvent}
+#### <font id="API" />GameEntityContactEvent{#GameEntityContactEvent}
 
 当两个实体碰撞时触发的事件。
 

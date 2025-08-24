@@ -261,7 +261,7 @@ const wearablesOnHead = entity.player.wearables(GameBodyPart.HEAD);
 | rightLowerLeg | string &#124; undefined &#124; null | 右下腿   |
 | rightFoot     | string &#124; undefined &#124; null | 右脚     |
 
-## ## <font id="API" />GameSkinInvisible{#GameSkinInvisible}
+#### <font id="API" />GameSkinInvisible{#GameSkinInvisible}
 
 玩家身体部位
 

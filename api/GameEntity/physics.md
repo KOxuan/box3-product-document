@@ -12,41 +12,41 @@ import '/style.css'
 
 实体边界框的半径，沿着 x/y/z 方向，每帧都会重新计算
 
-## ## <font id="API" /><font id="ReadOnly">只读</font>entityContacts<font id="Type">: [GameEntityContact](./#GameEntityContact)[]</font>{#entityContacts}
+#### <font id="API" /><font id="ReadOnly">只读</font>entityContacts<font id="Type">: [GameEntityContact](./#GameEntityContact)[]</font>{#entityContacts}
 
 > 默认值：[]
 
 返回正在和玩家/实体发生碰撞的全部实体列表。
 
-## ## <font id="API" /><font id="ReadOnly">只读</font>voxelContacts<font id="Type">: [GameVoxelContact](./#GameVoxelContact)[]</font>{#voxelContacts}
+#### <font id="API" /><font id="ReadOnly">只读</font>voxelContacts<font id="Type">: [GameVoxelContact](./#GameVoxelContact)[]</font>{#voxelContacts}
 
 > 默认值：[]
 
 返回正在和玩家/实体发生碰撞的全部方块列表。
 
-## ## <font id="API" /><font id="ReadOnly">只读</font>fluidContacts<font id="Type">: [GameFluidContact](./#GameFluidContact)[]</font>{#fluidContacts}
+#### <font id="API" /><font id="ReadOnly">只读</font>fluidContacts<font id="Type">: [GameFluidContact](./#GameFluidContact)[]</font>{#fluidContacts}
 
 > 默认值：[]
 
 返回正在被玩家/实体触碰的全部液体方块列表。
 
-## ## <font id="API" />collides<font id="Type">: boolean</font>{#collides}
+#### <font id="API" />collides<font id="Type">: boolean</font>{#collides}
 
 > 默认值：true
 
 如果为假(false)，则实体不会碰撞
 
-## ## <font id="API" />fixed<font id="Type">: boolean</font>{#fixed}
+#### <font id="API" />fixed<font id="Type">: boolean</font>{#fixed}
 
 > 默认值：false
 
 如果为真(true)，则实体不会移动
 
-## ## <font id="API" />meshScale<font id="Type">: [GameVector3](/GameVector3/)</font>{#meshScale}
+#### <font id="API" />meshScale<font id="Type">: [GameVector3](/GameVector3/)</font>{#meshScale}
 
 实体的缩放比例。
 
-## ## <font id="API" />friction<font id="Type">: number </font>{#friction}
+#### <font id="API" />friction<font id="Type">: number </font>{#friction}
 
 > 默认值：0
 
@@ -54,19 +54,19 @@ import '/style.css'
 
 控制实体的粘性(0 = 滑，1 = 粘)
 
-## ## <font id="API" />gravity<font id="Type">: boolean</font>{#gravity}
+#### <font id="API" />gravity<font id="Type">: boolean</font>{#gravity}
 
 > 默认值：true
 
 如果为假(false)，则实体不会下落
 
-## ## <font id="API" />mass<font id="Type">: number </font>{#mass}
+#### <font id="API" />mass<font id="Type">: number </font>{#mass}
 
 > 默认值：1
 
 实体物理质量。
 
-## ## <font id="API" />restitution<font id="Type">: number</font>{#restitution}
+#### <font id="API" />restitution<font id="Type">: number</font>{#restitution}
 
 > 默认值：0
 
@@ -74,7 +74,7 @@ import '/style.css'
 
 控制实体的弹性(0 = 软, 1 = 弹)
 
-## ## <font id="API" />velocity<font id="Type">: [GameVector3](/GameVector3/)</font>{#velocity}
+#### <font id="API" />velocity<font id="Type">: [GameVector3](/GameVector3/)</font>{#velocity}
 
 > 默认值：GameVector3(0, 0, 0)
 
@@ -112,7 +112,7 @@ setInterval(() => {
 | force    | [GameVector3](/GameVector3/) | 接触力           |
 | axis     | [GameVector3](/GameVector3/) | 接触轴           |
 
-## ## <font id="API" />GameVoxelContact{#GameVoxelContact}
+#### <font id="API" />GameVoxelContact{#GameVoxelContact}
 
 活跃方块接触状态
 
@@ -125,7 +125,7 @@ setInterval(() => {
 | force    | [GameVector3](/GameVector3/) | 接触力        |
 | axis     | [GameVector3](/GameVector3/) | 接触轴        |
 
-## ## <font id="API" />GameFluidContact{#GameFluidContact}
+#### <font id="API" />GameFluidContact{#GameFluidContact}
 
 活跃流体接触
 

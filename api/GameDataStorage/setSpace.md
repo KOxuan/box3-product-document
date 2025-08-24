@@ -43,7 +43,7 @@ console.log(`storageName: ${storageName}`);
 | -------- | ------------------------------------------------------- |
 | number   | 异步返回递增后的值，当获取完成时 resolve，否则 reject。 |
 
-## ## <font id="API" />set(<font id="Type">key: string,value:[JSONValue](./setSpace#JSONValue)</font>)<font id="Type">: Promise‹void›</font> {#set}
+#### <font id="API" />set(<font id="Type">key: string,value:[JSONValue](./setSpace#JSONValue)</font>)<font id="Type">: Promise‹void›</font> {#set}
 
 传入指定键与值，无论该键是否存在，均将值设置到此键上。
 

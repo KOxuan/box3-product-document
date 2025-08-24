@@ -67,7 +67,7 @@ blue 颜色值，范围 0~1
 | g          | 是         |              | number(0-1) | green 颜色值 |
 | b          | 是         |              | number(0-1) | blue 颜色值  |
 
-## ## <font id="API" />copy(<font id="Type">c:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
+#### <font id="API" />copy(<font id="Type">c:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
 
 将颜色复制到当前颜色中，返回当前颜色
 
@@ -77,7 +77,7 @@ blue 颜色值，范围 0~1
 | ---------- | ---------- | ------------ | ------------ | ---------- |
 | c          | 是         |              | GameRGBColor | 颜色       |
 
-## ## <font id="API" />clone()<font id="Type">: GameRGBColor</font>
+#### <font id="API" />clone()<font id="Type">: GameRGBColor</font>
 
 克隆当前颜色，返回新的颜色
 
@@ -93,7 +93,7 @@ blue 颜色值，范围 0~1
 | ---------- | ---------- | ------------ | ------------ | ---------- |
 | rgb        | 是         |              | GameRGBColor | 颜色       |
 
-## ## <font id="API" />sub(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
+#### <font id="API" />sub(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
 
 颜色相减，返回新的颜色
 
@@ -139,7 +139,7 @@ blue 颜色值，范围 0~1
 | ---------- | ---------- | ------------ | ------------ | ---------- |
 | rgb        | 是         |              | GameRGBColor | 颜色       |
 
-## ## <font id="API" />subEq(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
+#### <font id="API" />subEq(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
 
 颜色相减，并覆盖当前颜色，返回当前颜色
 
@@ -186,7 +186,7 @@ blue 颜色值，范围 0~1
 | rgb        | 是         |              | GameRGBColor | 目标颜色   |
 | n          | 是         |              | number(0-1)  | 插值百分比 |
 
-## ## <font id="API" />equals(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: boolean</font>
+#### <font id="API" />equals(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: boolean</font>
 
 检测两颜色的值在容差内是否近似相等
 

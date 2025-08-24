@@ -60,7 +60,7 @@ import '/style.css'
 | hiy        | 是         |              | number     | 区域的高处顶点的 Y 坐标 |
 | hiz        | 是         |              | number     | 区域的高处顶点的 Z 坐标 |
 
-## ## <font id="API" />copy(<font id="Type">b:GameBounds3</font>)<font id="Type">: GameBounds3</font>
+#### <font id="API" />copy(<font id="Type">b:GameBounds3</font>)<font id="Type">: GameBounds3</font>
 
 将三维空间复制到当前三维空间中，返回当前三维空间
 
@@ -70,7 +70,7 @@ import '/style.css'
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | b          | 是         |              | GameBounds3 | 三维空间   |
 
-## ## <font id="API" />intersect(<font id="Type">b:GameBounds3</font>)<font id="Type">: GameBounds3</font>
+#### <font id="API" />intersect(<font id="Type">b:GameBounds3</font>)<font id="Type">: GameBounds3</font>
 
 计算与此包围盒相交的部分
 
