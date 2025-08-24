@@ -37,7 +37,7 @@ world.onPlayerJoin(({ entity }) => {
 
 玩家的用户 ID，个人中心昵称下方可见。
 
-## ## <font id="API" /><font id="ReadOnly">只读</font>boxId<font id="Type">: string</font> {#boxid}
+#### <font id="API" /><font id="ReadOnly">只读</font>boxId<font id="Type">: string</font> {#boxid}
 
 玩家的 Box ID(3-15 字符)。
 
@@ -97,7 +97,7 @@ world.onPlayerJoin(({ entity }) => {
 | ----------------- | -------------------- |
 | Promise‹number[]› | 异步返回玩家 ID 列表 |
 
-## ## <font id="API" />querySocialStatistic()<font id="Type">: Promise‹[SocialStatisticType](./info#SocialStatisticType)›</font>{#querySocialStatistic}
+#### <font id="API" />querySocialStatistic()<font id="Type">: Promise‹[SocialStatisticType](./info#SocialStatisticType)›</font>{#querySocialStatistic}
 
 查询当前玩家的社交统计信息，并返回具体的统计数
 
@@ -111,7 +111,7 @@ world.onPlayerJoin(({ entity }) => {
 | ---------------------------- | -------------------- |
 | Promise‹SocialStatisticType› | 异步返回数据统计信息 |
 
-## ## <font id="API" />openUserProfileDialog(<font id="Type">userId:number</font>)<font id="Type">: void</font>{#openUserProfileDialog}
+#### <font id="API" />openUserProfileDialog(<font id="Type">userId:number</font>)<font id="Type">: void</font>{#openUserProfileDialog}
 
 对当前玩家，调起指定 ID 玩家的个人主页。
 

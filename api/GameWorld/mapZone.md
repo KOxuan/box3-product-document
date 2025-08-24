@@ -28,10 +28,7 @@ import '/style.css'
 // 添加检测玩家进入或离开 x:48-64, y:8-20, z: 50-72 的区域
 const area = world.addZone({
   selector: "player",
-  bounds: {
-    lo: [48, 8, 50],
-    hi: [64, 20, 72],
-  },
+  bounds: new GameBounds3(new GameVector3(48, 8, 50), new GameVector3(64, 20, 72)),
 });
 
 // 有玩家进入区域
@@ -61,10 +58,7 @@ area.onLeave(({ entity }) => {});
 // 添加检测玩家进入或离开 x:0-64, y:0-20, z: 0-64 的区域
 const area = world.addZone({
   selector: "player",
-  bounds: {
-    lo: [40, 8, 40],
-    hi: [72, 20, 72],
-  },
+  bounds: new GameBounds3(new GameVector3(48, 8, 48), new GameVector3(72, 20, 72)),
 });
 
 // 删除区域'area'
@@ -146,7 +140,7 @@ allZones.forEach((zone) => {
 | snowSpinSpeed    | number                                                         | 雪花自旋速度                                                                                                 |
 | snowTexture      | string                                                         | 雪花纹理                                                                                                     |
 
-## ## <font id="API" />GameZone{#GameZone}
+#### <font id="API" />GameZone{#GameZone}
 
 用于区域的配置
 

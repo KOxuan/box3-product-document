@@ -4,7 +4,7 @@
 
 > 文档合集：[Arena 编辑器用户手册](https://docs.dao3.fun/arena/)，[Arena 编辑器 API 手册](https://docs.dao3.fun/api/)，[Voxa 编辑器用户手册](https://docs.dao3.fun/voxa/)，[ArenaPro 插件用户手册](https://docs.dao3.fun/arenapro/)
 
-## # 🚀 为什么我们需要这份文档？
+### 🚀 为什么我们需要这份文档？
 
 官方因资源问题无法顾及到方方面面，难免会有疏漏与更新不及时之处。为了让每一位创作者都能获得最新、最详尽的产品指导，我们决定打破界限，**开放文档共建**！
 

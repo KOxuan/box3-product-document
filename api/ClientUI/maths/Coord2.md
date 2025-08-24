@@ -18,7 +18,7 @@ declare class Coord2 {
 
 元素的相对偏移量。
 
-## ## <font id="API" /><font id="ReadOnly">只读</font>scale<font id="Type">: [Vec2](/ClientUI/maths/Vec2)</font>{#scale}
+#### <font id="API" /><font id="ReadOnly">只读</font>scale<font id="Type">: [Vec2](/ClientUI/maths/Vec2)</font>{#scale}
 
 元素的相对缩放量，每个坐标轴的范围为 0-1。
 

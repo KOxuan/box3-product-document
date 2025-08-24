@@ -19,17 +19,17 @@ import '/style.css'
 
 输入框的未输入时文本提示内容。
 
-## ## <font id="API" /><font id="ReadOnly">只读</font>placeholderColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font>{#placeholderColor}
+#### <font id="API" /><font id="ReadOnly">只读</font>placeholderColor<font id="Type">: [Vec3](/ClientUI/maths/Vec3)</font>{#placeholderColor}
 
 输入框显示的占位文本的颜色。
 
-## ## <font id="API" /><font id="ReadOnly">只读</font>placeholderOpacity<font id="Type">: number</font>{#placeholderOpacity}
+#### <font id="API" /><font id="ReadOnly">只读</font>placeholderOpacity<font id="Type">: number</font>{#placeholderOpacity}
 
 > 默认值：1
 
 输入框提示文本的不透明度。
 
-## ## <font id="API" /><font id="ReadOnly">只读</font>isFocus<font id="Type">: boolean</font>{#isFocus}
+#### <font id="API" /><font id="ReadOnly">只读</font>isFocus<font id="Type">: boolean</font>{#isFocus}
 
 输入框是否聚焦。
 
@@ -51,7 +51,7 @@ import '/style.css'
 
 使输入框聚焦。
 
-## ## <font id="API" />blur()<font id="Type">: string</font>{#blur}
+#### <font id="API" />blur()<font id="Type">: string</font>{#blur}
 
 使输入框失去焦点。
 
@@ -67,7 +67,7 @@ import '/style.css'
 
 使输入框聚焦。
 
-## ## <font id="API" />blur<font id="Type">: [UiEvent](/ClientUI/UiEvent)‹UiInput›</font>
+#### <font id="API" />blur<font id="Type">: [UiEvent](/ClientUI/UiEvent)‹UiInput›</font>
 
 使输入框失去焦点。
 

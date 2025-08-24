@@ -18,7 +18,7 @@ import '/style.css'
 
 当实体说话时，播放聊天音效。通过`say()`触发。
 
-## ## <font id="API" />hurtSound<font id="Type">: [GameSoundEffect](/GameWorld/music#GameSoundEffect)</font>{#hurtSound}
+#### <font id="API" />hurtSound<font id="Type">: [GameSoundEffect](/GameWorld/music#GameSoundEffect)</font>{#hurtSound}
 
 > 默认值：'audio/hurt.mp3'
 

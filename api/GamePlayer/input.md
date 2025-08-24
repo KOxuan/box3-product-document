@@ -124,7 +124,7 @@ import '/style.css'
 
 如果为假(false)，则不允许玩家跳跃
 
-## ## <font id="API" />enableDoubleJump<font id="Type">: boolean</font>{#enableDoubleJump}
+#### <font id="API" />enableDoubleJump<font id="Type">: boolean</font>{#enableDoubleJump}
 
 > 默认值：true
 
@@ -339,7 +339,7 @@ import '/style.css'
 | keyCode  | number   | 按下/松开按键的[keyCode](./input#keyCode) |
 | tick     | number   | 按下/松开按钮的时间                       |
 
-## ## <font id="API" />Gamepad{#Gamepad}
+#### <font id="API" />Gamepad{#Gamepad}
 
 虚拟按键背景图片配置
 

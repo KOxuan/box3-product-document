@@ -14,7 +14,7 @@ declare const input: InputSystem;
 
 用后在游戏界面显示鼠标指针。
 
-## ## <font id="API" />lockPointer()<font id="Type"> : void</font> {#lockPointer}
+#### <font id="API" />lockPointer()<font id="Type"> : void</font> {#lockPointer}
 
 调用后在游戏界面隐藏鼠标指针，由于浏览器限制，此操作可能会失败。
 
@@ -32,7 +32,7 @@ declare const input: InputSystem;
 
 表示鼠标指针是否隐藏。
 
-## ## <font id="API" />pointerlockerror<font id="Type"> : [UiEvent](/ClientUI/UiEvent)‹undefined›</font> {#pointerlockerror}
+#### <font id="API" />pointerlockerror<font id="Type"> : [UiEvent](/ClientUI/UiEvent)‹undefined›</font> {#pointerlockerror}
 
 当鼠标隐藏出错时触发，无事件对象
 
@@ -54,7 +54,7 @@ input.pointerLockEvents.add("pointerlockerror", () => {
 
 类似 Web 的 pointerdown 事件，会受到 `pointerEventBehavior` 的影响。
 
-## ## <font id="API" />pointerup<font id="Type">: [UiEvent](/ClientUI/UiEvent)‹this›</font> {#pointerup}
+#### <font id="API" />pointerup<font id="Type">: [UiEvent](/ClientUI/UiEvent)‹this›</font> {#pointerup}
 
 类似 Web 的 pointerup 事件，会受到 `pointerEventBehavior` 的影响。
 

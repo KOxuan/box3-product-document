@@ -50,11 +50,11 @@ world.querySelectorAll('*').forEach((e) => {
 
 :::
 
-## ## <font id="API" />anchorOffset<font id="Type">: [GameVector3](/GameVector3/)</font>{#anchorOffset}
+#### <font id="API" />anchorOffset<font id="Type">: [GameVector3](/GameVector3/)</font>{#anchorOffset}
 
 实体几何中心与锚点的偏移量
 
-## ## <font id="API" />meshOrientation<font id="Type">: [GameQuaternion](/GameQuaternion/)</font>{#meshOrientation}
+#### <font id="API" />meshOrientation<font id="Type">: [GameQuaternion](/GameQuaternion/)</font>{#meshOrientation}
 
 实体的旋转角度。
 
@@ -182,7 +182,7 @@ npc.customName = "Miss Miao"; // 显示自定义的名称
 | meshFacing     |          | Z          | "X" &#124; "Y" &#124; "Z" | 定义模型在未旋转状态下的参考方向，处理模型设计时未朝向 Z 轴时的情况： - 当取 X、Z 时，定义模型的正方向分别为 X、Z 轴正方向，上方向为 Y 轴正方向 - 当取 Y 时，定义模型的正方向为 Y 轴正方向，上方向为 Z 轴正方向 - 默认值为 Z，即模型设计时朝向 Z 轴正方向 |
 | up             |          |            | GameVector3               | 上向量，默认取 Y 轴正方向                                                                                                                                                                                                                                 |
 
-## ## <font id="API" />rotateLocal(<font id="Type">localPosition:[GameVector3](/GameVector3/),axis:"X" | "Y" | "Z",rad:number</font>)<font id="Type">: void</font>{#rotateLocal}
+#### <font id="API" />rotateLocal(<font id="Type">localPosition:[GameVector3](/GameVector3/),axis:"X" | "Y" | "Z",rad:number</font>)<font id="Type">: void</font>{#rotateLocal}
 
 围绕模型自身坐标系下的某个点进行旋转
 
@@ -194,7 +194,7 @@ npc.customName = "Miss Miao"; // 显示自定义的名称
 | axis          | 是       | Z          | "X" &#124; "Y" &#124; "Z" | 指定旋转轴                             |
 | rad           | 是       |            | number                    | 旋转的角度，以弧度为单位               |
 
-## ## <font id="API" />scaleLocal(<font id="Type">localPosition:[GameVector3](/GameVector3/),v:[GameVector3](/GameVector3/)</font>)<font id="Type">: void</font>{#scaleLocal}
+#### <font id="API" />scaleLocal(<font id="Type">localPosition:[GameVector3](/GameVector3/),v:[GameVector3](/GameVector3/)</font>)<font id="Type">: void</font>{#scaleLocal}
 
 参照模型自身坐标系下的某个点进行缩放
 

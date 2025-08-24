@@ -10,13 +10,13 @@ import '/style.css'
 
 本张地图名称，对应项目设置中的名称。
 
-## ## <font id="API" />serverId<font id="Type">: string</font> {#serverId}
+#### <font id="API" />serverId<font id="Type">: string</font> {#serverId}
 
 当前服务器 ID
 
 可通过[`teleport`](./teleport)生成服务器 ID。
 
-## ## <font id="API" /><font id="ReadOnly">只读</font>currentTick<font id="Type">: number</font> {#currentTick}
+#### <font id="API" /><font id="ReadOnly">只读</font>currentTick<font id="Type">: number</font> {#currentTick}
 
 > 默认值：0
 
@@ -28,7 +28,7 @@ import '/style.css'
 
 获取当前地图所在的 URL 链接地址。
 
----
+
 
 ## 方法
 

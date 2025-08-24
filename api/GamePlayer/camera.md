@@ -8,7 +8,7 @@ import '/style.css'
 
 #### <font id="API" />cameraMode<font id="Type">: [GameCameraMode](./camera#GameCameraMode)</font>{#cameraMode}
 
-> 默认值：GameCameraMode.FIXED
+> 默认值：GameCameraMode.FOLLOW
 
 视角模式
 
@@ -28,7 +28,7 @@ import '/style.css'
 
 固定视角(FIXED)和相对视角(RELATIVE)下，摄像机本身所处的位置
 
-## ## <font id="API" />cameraTarget<font id="Type">: [GameVector3](/GameVector3/)</font>{#cameraTarget}
+#### <font id="API" />cameraTarget<font id="Type">: [GameVector3](/GameVector3/)</font>{#cameraTarget}
 
 > 默认值：GameVector3(0, 0, 0)
 

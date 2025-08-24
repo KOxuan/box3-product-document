@@ -25,12 +25,12 @@ import '/style.css'
 
 停止播放录音音频。
 
-## ## <font id="API" />startRecording()<font id="Type">: Promise‹void›</font>{#startRecording}
+#### <font id="API" />startRecording()<font id="Type">: Promise‹void›</font>{#startRecording}
 
 开始录音。
 
 初次在本浏览器调用时，会弹出录音权限请求，只有通过权限确认，才能进行录音。
 
-## ## <font id="API" />stopRecording()<font id="Type">: Promise‹[Blob](https://developer.mozilla.org/zh-CN/docs/Web/API/Blob)›</font>{#stopRecording}
+#### <font id="API" />stopRecording()<font id="Type">: Promise‹[Blob](https://developer.mozilla.org/zh-CN/docs/Web/API/Blob)›</font>{#stopRecording}
 
 停止录音，并返回录音的音频 Blob 文件。

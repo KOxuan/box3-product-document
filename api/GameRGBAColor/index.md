@@ -81,11 +81,11 @@ alpha 透明值，范围 0~1
 | ---------- | ---------- | ------------ | ------------- | ---------- |
 | c          | 是         |              | GameRGBAColor | 透明颜色   |
 
-## ## <font id="API" />clone()<font id="Type">: GameRGBAColor</font>
+#### <font id="API" />clone()<font id="Type">: GameRGBAColor</font>
 
 克隆当前透明颜色，返回新的透明颜色
 
-## ## <font id="API" />add(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+#### <font id="API" />add(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
 
 颜色相加，返回新的透明颜色
 
@@ -95,7 +95,7 @@ alpha 透明值，范围 0~1
 | ---------- | ---------- | ------------ | ------------- | ---------- |
 | rgba       | 是         |              | GameRGBAColor | 透明颜色   |
 
-## ## <font id="API" />sub(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+#### <font id="API" />sub(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
 
 颜色相减，返回新的透明颜色
 
@@ -141,7 +141,7 @@ alpha 透明值，范围 0~1
 | ---------- | ---------- | ------------ | ------------- | ---------- |
 | rgba       | 是         |              | GameRGBAColor | 透明颜色   |
 
-## ## <font id="API" />subEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
+#### <font id="API" />subEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
 
 颜色相减，并覆盖当前颜色，返回当前透明颜色
 
@@ -202,7 +202,7 @@ alpha 透明值，范围 0~1
 | ---------- | ---------- | ------------ | ------------- | ---------- |
 | rgba       | 是         |              | GameRGBAColor | 透明颜色   |
 
-## ## <font id="API" />blendEq(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
+#### <font id="API" />blendEq(<font id="Type">rgb:GameRGBColor</font>)<font id="Type">: GameRGBColor</font>
 
 基于给定的参数颜色作为背景，返回该背景颜色与当前透明颜色叠加后的最终显示颜色。
 
