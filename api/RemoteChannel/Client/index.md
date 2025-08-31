@@ -26,9 +26,3 @@ declare class ClientRemoteChannel {
 ### 事件监听
 
 - [`onClientEvent`](/RemoteChannel/Client/clientToServer#onClientEvent) : 监听来自服务端的事件
-
-## 接口定义
-
-### 事件接口
-
-- [`ClientEvent`](/RemoteChannel/Client/clientToServer#ClientEvent) : 客户端发送至服务端的自定义事件接口

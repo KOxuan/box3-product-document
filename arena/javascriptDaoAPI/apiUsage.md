@@ -83,7 +83,7 @@ console.log(world.projectName);
 
 2. **tick**（类型：`number`）：这个属性表示事件发生的时间。在游戏开发中，`tick`通常指的是游戏循环中的某一时刻或帧数，它允许创作者知道事件是在游戏的哪个阶段发生的。这个信息对于调试、动画同步、时间管理等方面都非常有用。
 
-关于`GameEntity`类具体内容可以查看：[`👤游戏玩家`](https://docs.dao3.fun/api/GamePlayer/)
+关于`GameEntity`类具体内容可以查看：[`👤游戏玩家`](https://docs.dao3.fun/api/GamePlayerEntity/)
 
 所以，我们通过`world.onPlayerJoin`设置当玩家加入时，执行的操作。
 
@@ -97,7 +97,7 @@ world.onPlayerJoin(({ entity }) => {
 
 ## 枚举
 
-在从[`👤游戏玩家`](https://docs.dao3.fun/api/GamePlayer/)中，有一个[`cameraMode`](https://docs.dao3.fun/api/GamePlayer/camera.html#cameraMode)界面，我们可以得到以下信息：
+在从[`👤游戏玩家`](https://docs.dao3.fun/api/GamePlayerEntity/)中，有一个[`cameraMode`](https://docs.dao3.fun/api/GamePlayerEntity/camera.html#cameraMode)界面，我们可以得到以下信息：
 
 ![](/QQ20240925-183504.png)
 

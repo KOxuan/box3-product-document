@@ -58,7 +58,7 @@ world.onPlayerJoin(({ entity }) => {
 - `world.onPlayerJoin(...)`: 我们在 `world` 对象上注册了一个事件监听器。每当有新玩家连接到服务器，括号内的函数就会被执行一次。
 - `({ entity }) => { ... }`: `onPlayerJoin` 事件会提供一个包含 `entity` 属性的对象作为参数。这个 `entity` 就是刚刚加入的那个玩家的实体对象。
 - `entity.player.name`: 每个实体都有一个 `player` 属性，如果这个实体是玩家的话。通过 `player` 属性，我们可以访问到所有与玩家相关的信息和功能，比如用 `.name` 获取昵称。
-- `entity.player.directMessage(...)`: 这是 `GamePlayer` 对象的一个方法，用于向该玩家发送一条只有他自己能看到的聊天信息。
+- `entity.player.directMessage(...)`: 这是 `GamePlayerEntity` 对象的一个方法，用于向该玩家发送一条只有他自己能看到的聊天信息。
 
 现在，保存文件并启动游戏。当你进入地图时，检查你的聊天窗口，应该能看到服务器发来的欢迎语！
 

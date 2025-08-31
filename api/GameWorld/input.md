@@ -126,10 +126,10 @@ world.onPress(({ button, raycast }) => {
 :::info
 **💡 提示**
 
-提示：GameWorld 和 GamePlayer 都有触发点击/按下按钮的事件。他们的区别就是：
+提示：GameWorld 和 GamePlayerEntity 都有触发点击/按下按钮的事件。他们的区别就是：
 
 - **GameWorld** 会监听世界所有实体的事件
-- **GamePlayer** 只监听玩家本身的事件
+- **GamePlayerEntity** 只监听玩家本身的事件
   :::
 
 ::: details 点击查看示例代码

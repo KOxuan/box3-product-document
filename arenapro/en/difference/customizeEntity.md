@@ -1,6 +1,6 @@
-# Customizing GameEntity and GamePlayer Classes
+# Customizing GameEntity and GamePlayerEntity Classes
 
-In TypeScript development, directly extending or modifying global classes (such as `GameEntity` and `GamePlayer`) can introduce potential risks, especially when these global classes are provided by third-party libraries or frameworks. To avoid potential naming conflicts and compatibility issues in the future, it is recommended to extend these classes through inheritance.
+In TypeScript development, directly extending or modifying global classes (such as `GameEntity` and `GamePlayerEntity`) can introduce potential risks, especially when these global classes are provided by third-party libraries or frameworks. To avoid potential naming conflicts and compatibility issues in the future, it is recommended to extend these classes through inheritance.
 
 ## Implementation with Inheritance
 
@@ -17,11 +17,11 @@ declare interface GameEntity extends GameEntity {
 }
 ```
 
-### Extending the GamePlayer Class
+### Extending the GamePlayerEntity Class
 
 ```typescript
-// GamePlayer.d.ts
-declare interface GamePlayer extends GamePlayer {
+// GamePlayerEntity.d.ts
+declare interface GamePlayerEntity extends GamePlayerEntity {
   // Custom property
   customProperty: string;
 

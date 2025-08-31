@@ -20,7 +20,7 @@ myArenaProject/
 │   │   ├── types/            # Type definitions
 │   │   │   ├── GameAPI.d.ts  # Server-side API types
 │   │   │   ├── GameEntity.d.ts
-│   │   │   └── GamePlayer.d.ts
+│   │   │   └── GamePlayerEntity.d.ts
 │   │   └── src/
 │   │       └── App.ts        # Server-side entry point
 │   │
