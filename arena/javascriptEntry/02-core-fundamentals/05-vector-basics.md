@@ -40,4 +40,3 @@ function dir2(angleRad){ return { x: Math.cos(angleRad), y: Math.sin(angleRad) }
 
 ## 推荐阅读
 - MDN Math.hypot: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot
-- 线性代数入门（可汗学院）: https://www.khanacademy.org/math/linear-algebra

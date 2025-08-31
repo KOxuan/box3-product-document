@@ -46,7 +46,7 @@ world.onPlayerJoin(({entity}) => {
 
 > [**world.onPlayerJoin**](https://docs.dao3.fun/api/GameWorld/playerJL.html#onPlayerJoin)： 当玩家加入游戏时触发。
 >
-> [**entity.player.directMessage**](https://docs.dao3.fun/api/GamePlayer/chat.html#directMessage)： 向玩家发送一条消息。
+> [**entity.player.directMessage**](https://docs.dao3.fun/api/GamePlayerEntity/chat.html#directMessage)： 向玩家发送一条消息。
 
 #### 5. 测试效果
 

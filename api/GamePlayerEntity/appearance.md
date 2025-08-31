@@ -292,19 +292,19 @@ const wearablesOnHead = entity.player.wearables(GameBodyPart.HEAD);
 
 用于在玩家身体部位可穿戴配件物体的参数与函数
 
-| **参数**    | **类型**                                  | **说明**               |
-| ----------- | ----------------------------------------- | ---------------------- |
-| bodyPart    | [GameBodyPart](./appearance#GameBodyPart) | 穿戴配件在玩家上的部位 |
-| color       | GameRGBColor                              | 穿戴配件的颜色         |
-| emissive    | number                                    | 穿戴配件的发光度       |
-| mesh        | string                                    | 穿戴配件的形状数据     |
-| metalness   | number                                    | 穿戴配件的金属感       |
-| offset      | GameVector3                               | 穿戴配件的位移         |
-| orientation | GameQuaternion                            | 穿戴配件的旋转角度     |
-| player      | [GamePlayer](/GamePlayer/) &#124; null    | 穿戴配件的玩家         |
-| scale       | GameVector3                               | 穿戴配件的缩放比例     |
-| shininess   | number                                    | 穿戴配件的反光度       |
-| remove      | ()=>void                                  | 删除该已穿戴的配件     |
+| **参数**    | **类型**                                           | **说明**               |
+| ----------- | -------------------------------------------------- | ---------------------- |
+| bodyPart    | [GameBodyPart](./appearance#GameBodyPart)          | 穿戴配件在玩家上的部位 |
+| color       | GameRGBColor                                       | 穿戴配件的颜色         |
+| emissive    | number                                             | 穿戴配件的发光度       |
+| mesh        | string                                             | 穿戴配件的形状数据     |
+| metalness   | number                                             | 穿戴配件的金属感       |
+| offset      | GameVector3                                        | 穿戴配件的位移         |
+| orientation | GameQuaternion                                     | 穿戴配件的旋转角度     |
+| player      | [GamePlayerEntity](/GamePlayerEntity/) &#124; null | 穿戴配件的玩家         |
+| scale       | GameVector3                                        | 穿戴配件的缩放比例     |
+| shininess   | number                                             | 穿戴配件的反光度       |
+| remove      | ()=>void                                           | 删除该已穿戴的配件     |
 
 ## 枚举
 

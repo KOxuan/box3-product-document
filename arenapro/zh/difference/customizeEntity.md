@@ -1,6 +1,6 @@
-# 自定义 GameEntity 和 GamePlayer 类
+# 自定义 GameEntity 和 GamePlayerEntity 类
 
-在 TypeScript 开发中，直接扩展或修改全局类（如 `GameEntity` 和 `GamePlayer`）可能会带来潜在的风险，特别是当这些全局类由第三方库或框架提供时。为了避免未来可能出现的命名冲突和兼容性问题，建议通过继承的方式来扩展这些类。
+在 TypeScript 开发中，直接扩展或修改全局类（如 `GameEntity` 和 `GamePlayerEntity`）可能会带来潜在的风险，特别是当这些全局类由第三方库或框架提供时。为了避免未来可能出现的命名冲突和兼容性问题，建议通过继承的方式来扩展这些类。
 
 ## 继承实现
 
@@ -17,11 +17,11 @@ declare interface GameEntity extends GameEntity {
 }
 ```
 
-### GamePlayer 类扩展
+### GamePlayerEntity 类扩展
 
 ```typescript
-// GamePlayer.d.ts
-declare interface GamePlayer extends GamePlayer {
+// GamePlayerEntity.d.ts
+declare interface GamePlayerEntity extends GamePlayerEntity {
   // 自定义属性
   customProperty: string;
 

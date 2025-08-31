@@ -1,7 +1,7 @@
 # entity.player.dialog
 
 :::warning
-该 API 文档：[dialog](https://docs.dao3.fun/api/GamePlayer/chat.html#dialog)
+该 API 文档：[dialog](https://docs.dao3.fun/api/GamePlayerEntity/chat.html#dialog)
 :::
 
 :::tip

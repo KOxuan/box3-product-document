@@ -155,7 +155,7 @@ export default defineConfig({
               },
             ],
           },
-      
+
           {
             text: "2. 变量与数据类型",
             collapsed: true,
@@ -221,7 +221,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "6. 核心基础",
+            text: "6. 初步实践",
             collapsed: true,
             items: [
               {
@@ -247,7 +247,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "7. 高级主题",
+            text: "7. 初级主题",
             collapsed: true,
             items: [
               {
@@ -357,6 +357,15 @@ export default defineConfig({
           { text: "开发基础", link: "/plugIns/code/basic" },
           { text: "Core对象", link: "/plugIns/code/core" },
           { text: "实战", link: "/plugIns/code/practice" },
+        ],
+      },
+      {
+        text: "SEL联赛接入须知",
+        collapsed: false,
+        items: [
+          { text: "联赛介绍", link: "/SEL/map-Info" },
+          { text: "联赛赛制", link: "/SEL/sel-rules" },
+          { text: "赛事地图接入", link: "/SEL/map-integration" },
         ],
       },
       {

@@ -1,6 +1,6 @@
 # S-👤 游戏玩家
 
-**GamePlayer** 是整个游戏世界的可由玩家自主控制的实体，它提供了以下核心功能：
+**GamePlayerEntity** 是整个游戏世界的可由玩家自主控制的实体，它提供了以下核心功能：
 
 - 玩家信息：管理玩家的基本信息、社交关系和统计数据
 - 外观系统：控制玩家的外观、皮肤、穿戴物品等视觉效果
@@ -15,7 +15,7 @@
 ## 类定义
 
 ```typescript
-declare class GamePlayer {
+declare class GamePlayerEntity {
   //...
 }
 ```

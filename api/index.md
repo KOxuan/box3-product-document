@@ -43,9 +43,9 @@
 - **GameMotionController** 控制 Voxa 模型的动画
 - 支持动作加载、暂停、重播和默认动作设置
 
-### S-👤 [玩家](/GamePlayer/)
+### S-👤 [玩家](/GamePlayerEntity/)
 
-- **GamePlayer** 是特殊的实体类型，代表在线玩家
+- **GamePlayerEntity** 是特殊的实体类型，代表在线玩家
 - 提供玩家属性和操作的完整控制
 
 ### S-💾 [数据管理](/GameDataStorage/)

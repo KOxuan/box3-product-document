@@ -20,7 +20,7 @@ myArenaProject/
 │   │   ├── types/            # 类型定义
 │   │   │   ├── GameAPI.d.ts  # 服务端API类型
 │   │   │   ├── GameEntity.d.ts
-│   │   │   └── GamePlayer.d.ts
+│   │   │   └── GamePlayerEntity.d.ts
 │   │   └── src/
 │   │       └── App.ts        # 服务端入口
 │   │
