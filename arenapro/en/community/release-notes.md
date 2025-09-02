@@ -30,7 +30,32 @@ Here, you can see every step we've taken from public beta to the official releas
 - **AI Empowerment (V1.2.0, 2025-04-12):**
   Introduced the **MCP Tool** for the first time, exploring the deep application of AI in the game development workflow and ushering in an era of intelligent assisted creation.
 
+- **Dependency & Build Experience Refinement (V1.3.6 -> V1.3.8, 2025-08-15):**
+  Introduced `packageManager` to unify package manager selection, fixed compilation failures caused by paths containing spaces or special characters, and strengthened dependency check logic; also added Arena Store resources to enhance resource acquisition capabilities.
+
+- **UI Index Experience Upgrade (V1.4.0, 2025-09-02):**
+  Introduced client UI index generation. Retrieve a screen's UI index instance via ScreenName + NodeName, reducing the cost of UI querying and maintenance.
+
 ## 2025
+
+### September
+
+#### V1.4.0 (2025-09-02)
+
+- 🚀 **UI Index:** Added client UI index generation. Supports obtaining a screen's UI index instance by screen name + node name, without worrying about node paths.
+
+### August
+
+#### V1.3.6 -> V1.3.8 (2025-08-15)
+
+- 📦 **Dependencies:** Added the `packageManager` property to specify the package manager. During installation, the specified manager will be used automatically. Currently supports `npm`, `yarn`, `pnpm`, `bun`.
+- 📦 **Paths:** Fixed build failures when paths contain spaces or other special characters.
+- 📦 **Dependencies:** Fixed dependency check logic during full build and HMR startup.
+- 🌟 **Arena Store Resources:** Added map store resources to enhance resource acquisition.
+
+#### V1.3.5 (2025-08-01)
+
+- 📦 **Edit Hash:** Removed the exposure of edit hash to improve security.
 
 ### July
 
