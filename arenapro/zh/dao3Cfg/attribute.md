@@ -19,7 +19,8 @@
         "client": {
           "entry": "src/clientApp.ts",
           "ECS": false,
-          "development": true
+          "development": true,
+          "uiIndexPrefix": ""
         },
         "developmentAll": null,
         "jsUpdate": true
@@ -56,12 +57,13 @@
 
 ### 客户端配置
 
-| 属性                                 | 必填 | 类型    | 默认值       | 说明                                                            |
-| :----------------------------------- | :--: | :------ | :----------- | :-------------------------------------------------------------- |
-| `file.typescript.client`             |  ✓   | object  |              | Arena**客户端**项目配置                                         |
-| `file.typescript.client.entry`       |      | string  | clientApp.ts | Arena**客户端**项目入口文件                                     |
-| `file.typescript.client.ECS`         |      | boolean | false        | Arena**客户端**项目是否开启 ECS 架构                            |
-| `file.typescript.client.development` |      | boolean | true         | 客户端项目编译模式，默认为开发模式，优先级低于 `developmentAll` |
+| 属性                                   | 必填 | 类型    | 默认值       | 说明                                                            |
+| :------------------------------------- | :--: | :------ | :----------- | :-------------------------------------------------------------- |
+| `file.typescript.client`               |  ✓   | object  |              | Arena**客户端**项目配置                                         |
+| `file.typescript.client.entry`         |      | string  | clientApp.ts | Arena**客户端**项目入口文件                                     |
+| `file.typescript.client.ECS`           |      | boolean | false        | Arena**客户端**项目是否开启 ECS 架构                            |
+| `file.typescript.client.development`   |      | boolean | true         | 客户端项目编译模式，默认为开发模式，优先级低于 `developmentAll` |
+| `file.typescript.client.uiIndexPrefix` |      | string  | ""           | UI 索引前缀                                                     |
 
 ### 公共编译设置
 

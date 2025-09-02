@@ -4,9 +4,9 @@
 
 > 你在 UI 树里找节点，路径层级深、命名不统一、改了结构就全崩。每次都是：
 >
-> - “这个 `UiText` 的完整路径到底是啥？”
-> - “UI 改了层级，我的 UI 节点全失效了！”
-> - “我只想拿到元素，不想在层级里钻来钻去……”
+> - “这个 `UiText` 的完整路径好难一个个找"
+> - “UI 改了层级，我的 UI 节点全失效了！"
+> - “我只想拿到元素，不想在层级里钻来钻去……"
 
 从 V1.4.0 开始，ArenaPro 提供了“UI 索引”能力——像看“地图索引”一样，通过“屏幕名 + 节点名”直达目标元素，不再被路径困住。
 
@@ -22,9 +22,7 @@ UI 索引是对 UI 树的“强类型投影”。它会为每个屏幕生成一�
 | **🧩 命名冲突消解**     | 自动采用末级名/回退全路径/再追加序号，最大化获得“好用的属性名”。                   |
 | **✅ 类型即规范**       | 不存在的屏幕在类型上直接是 `never`，问题在编译期暴露；运行时缺失返回 `undefined`。 |
 
-:::tip
-💡 核心优势：UI 索引是由插件自动生成和维护的“强类型镜像”。你只需按“屏幕名”获取索引实例，剩下的交给类型系统与缓存机制。
-:::
+> 核心优势：UI 索引由插件自动生成和维护。你只需按“屏幕名”获取索引实例，剩下的交给类型系统与缓存机制。
 
 ## 如何获取并使用
 
@@ -53,8 +51,9 @@ import find from "@client/UiIndex";
 const idx = find("blackground");
 if (idx) {
   // 2) 直接通过强类型属性访问 UI 元素
-  idx.uiText_content1;
-  idx.uiImage_logo;
+  // 实际路径：blackground/box/unit/list/0/uiText_content1
+  idx.uiText_content1; // 只需要写 uiText_content1，就可以访问到
+  idx.uiImage_logo; // 同理
 }
 ```
 
@@ -64,6 +63,7 @@ if (idx) {
   - 在类型上存在的屏幕名 -> 返回该屏幕对应的 `UiIndex_xxx` 实例类型。
   - 不存在的屏幕名 -> 返回类型为 `never`（编译期立即暴露问题）。
 - 运行时如果确实未找到该屏幕，会返回 `undefined`，因此示例里有判空。
+- 性能：同一屏幕名的 `find(name)` 会被缓存，后续重复调用直接复用实例，不会重复构建。
 
 ### 常用操作清单
 
@@ -87,8 +87,8 @@ if (idx) {
 - 作用：通过屏幕名获取该屏幕对应的 UI 索引实例。
 - 类型：
   ```ts
-  export default function find<Name extends string>(
-    screenName: Name
+  export default function find<Name extends keyof typeof __UiIndexCtorMap>(
+    screenName: keyof typeof __UiIndexCtorMap
   ): Name extends keyof typeof __UiIndexCtorMap
     ? InstanceType<(typeof __UiIndexCtorMap)[Name]>
     : never;
@@ -130,24 +130,41 @@ if (idx) {
 - 基础命名使用“路径最后一段名”；若冲突，则回退为“完整路径”；若仍冲突，自动追加序号 `_2/_3/...`。
 - 支持中文/Unicode，非法字符将被替换为下划线，并确保首字符合法。
 
-## 最佳实践
+## uiIndexPrefix 配置与行为
 
-- 使用常量保存屏幕名，减少拼写错误：
-  ```ts
-  const SCREEN_HOME = "home" as const;
-  const home = find(SCREEN_HOME);
-  ```
-- 对 `find()` 的返回值做判空保护，便于在运行时屏幕未挂载时优雅降级。
+- **配置位置**：`dao3.config.json -> file.typescript.client.uiIndexPrefix`
+- **类型与默认值**：字符串，默认空字符串 `""`（不启用过滤）
+- **功能说明**：
+  - 若配置了前缀，例如 `"U_"`，则仅收集名称以该前缀开头的 UI 节点来生成索引。
+  - 生成的 getter 名会自动剥离该前缀，避免出现 `uiText_U_title` 这种冗余命名。
+  - 未配置或为空字符串时，行为与旧版本一致：对所有节点生成索引。
 
-## 常见问题
+示例配置：
 
-- Q: 我传入了一个屏幕名，编辑器报类型是 never？
+```json
+{
+  "file": {
+    "typescript": {
+      "client": {
+        "uiIndexPrefix": "U_"
+      }
+    }
+  }
+}
+```
 
-  - A: 该屏幕名不在类型映射表中，通常是生成缓存未更新或屏幕名写错。请确认屏幕名与生成是否最新。
+示例效果：
 
-- Q: 运行时返回 undefined？
+- 节点实际名称：`U_title`、`U_logo`、`desc`
+- 生成结果：
+  - `U_title` -> getter: `uiText_title`
+  - `U_logo` -> getter: `uiImage_logo`
+  - `desc` -> 不生成（未匹配前缀）
+- PATHS 中保留真实名称（如 `.../U_title`），仅 getter 名剥离前缀，运行时查找不受影响。
 
-  - A: 实例化时未找到该屏幕。请确认屏幕是否存在或已挂载；可在调用处添加判空逻辑。
+注意事项与最佳实践：
 
-- Q: 我想知道某个 getter 对应的真实路径？
-  - A: 打开对应的 `UiIndex_<Screen>.ts` 文件，查看 `static PATHS` 或 getter 注释中的 `@description`。
+- 仅支持单个前缀字符串。若需多个前缀或正则匹配，请提需求，我可扩展为数组/正则。
+- 建议统一给“需要暴露为索引”的节点加上前缀，以减少噪声和属性冲突。
+- 修改前缀后请重新同步资源，以更新索引文件。
+- 命名冲突处理仍生效：末级名冲突 -> 回退全路径 -> 再追加序号。
