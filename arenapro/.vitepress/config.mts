@@ -121,6 +121,10 @@ export default defineConfig({
             collapsed: false,
             items: [
               {
+                text: "UI Index Usage",
+                link: "/en/guide/06-advanced-topics/uiIndex-usage",
+              },
+              {
                 text: "Configure Your 'Code Butler'",
                 link: "/en/guide/06-advanced-topics/code-linting-and-formatting",
               },
@@ -554,6 +558,10 @@ export default defineConfig({
             text: "功能指南",
             collapsed: false,
             items: [
+              {
+                text: "UI 索引",
+                link: "/zh/guide/06-advanced-topics/uiIndex-usage",
+              },
               {
                 text: "配置你的“代码管家”",
                 link: "/zh/guide/06-advanced-topics/code-linting-and-formatting",
