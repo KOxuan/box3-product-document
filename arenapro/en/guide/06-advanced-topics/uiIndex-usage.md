@@ -58,6 +58,13 @@ if (idx) {
 }
 ```
 
+Key points:
+
+- The return type of `find(name)` depends on `name`:
+  - If the screen name exists in the type map -> returns the corresponding `UiIndex_xxx` instance type.
+  - If the screen name does not exist -> the return type is `never` (compile-time error surfaces immediately).
+- At runtime, if the screen is indeed missing, `find()` returns `undefined`; hence the null-check in the example.
+
 ### Common actions checklist
 
 - **Get index instance**: `const idx = find("home")` and add a null-check.

@@ -19,7 +19,8 @@ In the configuration file **dao3.config.json**, you can set the compilation and 
         "client": {
           "entry": "src/clientApp.ts",
           "ECS": false,
-          "development": true
+          "development": true,
+          "uiIndexPrefix": ""
         },
         "developmentAll": null,
         "jsUpdate": true
@@ -56,12 +57,13 @@ In the configuration file **dao3.config.json**, you can set the compilation and 
 
 ### Client-side Configuration
 
-| Attribute                            | Required | Type    | Default      | Description                                                                                                 |
-| :----------------------------------- | :------: | :------ | :----------- | :---------------------------------------------------------------------------------------------------------- |
-| `file.typescript.client`             |    ✓     | object  |              | Arena **client-side** project configuration                                                                 |
-| `file.typescript.client.entry`       |          | string  | clientApp.ts | Arena **client-side** project entry file                                                                    |
-| `file.typescript.client.ECS`         |          | boolean | false        | Whether to enable ECS architecture for the Arena **client-side** project                                    |
-| `file.typescript.client.development` |          | boolean | true         | Client-side project compilation mode, defaults to development mode, priority is lower than `developmentAll` |
+| Attribute                             | Required | Type    | Default      | Description                                                                                                 |
+| :------------------------------------ | :------: | :------ | :----------- | :---------------------------------------------------------------------------------------------------------- |
+| `file.typescript.client`              |    ✓     | object  |              | Arena **client-side** project configuration                                                                 |
+| `file.typescript.client.entry`        |          | string  | clientApp.ts | Arena **client-side** project entry file                                                                    |
+| `file.typescript.client.ECS`          |          | boolean | false        | Whether to enable ECS architecture for the Arena **client-side** project                                    |
+| `file.typescript.client.development`  |          | boolean | true         | Client-side project compilation mode, defaults to development mode, priority is lower than `developmentAll` |
+| `file.typescript.client.uiIndexPrefix`|          | string  | ""          | UI Index prefix                                                                                              |
 
 ### Common Compilation Settings
 
