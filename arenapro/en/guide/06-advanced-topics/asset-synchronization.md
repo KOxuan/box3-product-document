@@ -71,3 +71,49 @@ Bob just needs to press `Alt + Y` in VS Code. A second later, when he writes cod
 When he types the first quote, all the latest, correct asset paths will be listed for him to choose from. He can be 100% sure that he is using the real assets that exist in the editor.
 
 This simple habit can save you and your team from countless bugs caused by incorrect asset paths, greatly enhancing development happiness.
+
+---
+
+## Automatic Sync and Silent Mode
+
+To further reduce collaboration costs, ArenaPro adds an automatic synchronization capability:
+
+- Automatic sync (background interval)
+
+  - The extension periodically checks for asset changes in the background and updates `types/GameAssets.d.ts` when needed.
+  - The interval is controlled by the setting `nodeJsTool.GameAssetsSync` (unit: minutes).
+    - 0 or unset: disable automatic sync
+    - > 0: check at the specified minute interval
+  - Changes take effect immediately; no plugin reload is required.
+
+- Silent sync
+
+  - Only when a difference is detected and a local overwrite of `GameAssets.d.ts` is necessary will a single confirmation dialog be shown, avoiding accidental overwrites.
+
+- First-time generation
+  - If `types/GameAssets.d.ts` does not exist yet, automatic sync will generate it once assets are detected.
+
+---
+
+## FAQ
+
+- Q: I don’t want background automatic sync. What should I do?
+
+  - A: Set `nodeJsTool.GameAssetsSync` to 0 to disable it.
+
+- Q: Will automatic sync interrupt my coding?
+
+  - A: No. Background detection runs in silent mode—no progress or info popups; only when a local file needs to be overwritten will a single confirmation dialog appear.
+
+- Q: Why are differences sometimes detected but no update occurs?
+
+  - A: Differences such as comments or timestamps are ignored; they won’t trigger an update.
+
+- Q: How do I trigger an immediate manual sync?
+  - A: Use the shortcut `Alt + Y` or run “Sync Map Assets” from the command palette.
+
+---
+
+## Summary
+
+With one-click sync plus background automatic sync, you can “see” all editor assets directly in VS Code, enjoying path autocompletion and real-time error checks. Team collaboration becomes smoother and development more reassuring.
