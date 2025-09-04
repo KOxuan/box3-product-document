@@ -93,6 +93,33 @@ Key points:
 
 ---
 
+## UI Data
+
+- **Unified META (strongly typed)**
+
+  - Each screen class generates `static readonly META`, one-to-one with `PATHS`.
+  - `META[i].path` now references `PATHS[i]` instead of duplicating strings for a single source of truth.
+  - `META[i].type` is narrowed to the union: `'UiBox' | 'UiImage' | 'UiInput' | 'UiScrollBox' | 'UiText'`.
+
+- **findBy moved to base class with stronger types**
+
+  - Now located in `ClientUIWindow` and inherited by all screen classes.
+  - Supported call forms:
+    - `findBy(predicate)` – filter by predicate, where `el` is typed as `UiElement | undefined`.
+    - `findBy(kind, predicate?)` – first filter by kind; `el` will be narrowed according to `kind` (e.g., `UiImage | undefined`).
+  - Return value: when there are matches -> returns the hits array; when no matches -> `undefined`.
+  - Examples:
+    ```ts
+    const texts = idx?.findBy("UiText");
+    const imgs = idx?.findBy("UiImage", (meta, el) => el?.visible === true);
+    const hits = idx?.findBy((meta, el) => meta.name.includes("btn"));
+    ```
+
+- **Instance methods: getPaths / getMeta**
+
+  - `getPaths(): ReadonlyArray<string>` returns the current screen's `PATHS`.
+  - `getMeta(): ReadonlyArray<{ path: string; type: UiKind; name: string }>` returns `META` (handy for debugging/visualization).
+
 ## API Reference
 
 ### 1) Default export: find(screenName)
