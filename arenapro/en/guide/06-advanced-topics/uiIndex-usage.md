@@ -10,6 +10,29 @@
 
 Starting from V1.4.0, ArenaPro provides a “UI Index” feature—like a map index, reach target elements via “ScreenName + NodeName” and stop wrestling with paths.
 
+### Example
+
+```ts
+// Before (path hell): any hierarchy change forces manual string updates
+const el = UiScreen.getAllScreen()
+  .find((e) => e.name === "blackground")
+  .findChildByName("blackground")
+  .findChildByName("root")
+  .findChildByName("container")
+  .findChildByName("panel")
+  .findChildByName("box")
+  .findChildByName("unit")
+  .findChildByName("list")
+  .findChildByName("0")
+  .findChildByName("content")
+  .findChildByName("content1");
+console.log(el?.name);
+
+// Now (UI Index): strongly-typed direct access by "Screen + Node"
+const idx = find("blackground");
+console.log(idx?.uiText_content1.name); // type-safe, autocompletion; re-sync index after structure changes
+```
+
 ## What does UI Index bring?
 
 UI Index is a strongly-typed projection of your UI tree. For each screen, it generates a screen-specific index class and exposes a unified entry to retrieve index instances:
@@ -64,6 +87,7 @@ Key points:
   - If the screen name exists in the type map -> returns the corresponding `UiIndex_xxx` instance type.
   - If the screen name does not exist -> the return type is `never` (compile-time error surfaces immediately).
 - At runtime, if the screen is indeed missing, `find()` returns `undefined`; hence the null-check in the example.
+- Performance: `find(name)` is cached per screen; repeated calls reuse the same instance and do not reconstruct.
 
 ### Common actions checklist
 
@@ -171,6 +195,40 @@ Key points:
   - `UiInput` -> `uiInput_...`
 - Base naming uses the last path segment; on conflicts, fall back to full path; if still conflicting, append `_2/_3/...`.
 - Supports Chinese/Unicode; invalid characters are replaced with underscores while ensuring a valid first character.
+
+---
+
+## uiIndexPrefix configuration and behavior
+
+- Location: `dao3.config.json -> file.typescript.client.uiIndexPrefix`
+- Type and default: string, default empty `""` (filter disabled)
+- What it does:
+  - If set, e.g. `"U_"`, only UI nodes with names starting with this prefix will be collected to generate the index.
+  - The generated getter names will automatically strip this prefix to avoid `uiText_U_title` style names.
+  - When not set or empty, all nodes are indexed.
+
+Example config:
+
+```json
+{
+  "file": {
+    "typescript": {
+      "client": {
+        "uiIndexPrefix": "U_"
+      }
+    }
+  }
+}
+```
+
+Example effect:
+
+- Actual node names: `U_title`, `U_logo`, `desc`
+- Generated results:
+  - `U_title` -> getter: `uiText_title`
+  - `U_logo` -> getter: `uiImage_logo`
+  - `desc` -> not generated (prefix not matched)
+- `PATHS` keeps real names (e.g., `.../U_title`); only getter names strip the prefix; runtime lookups are unaffected.
 
 ---
 

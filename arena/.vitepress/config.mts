@@ -364,7 +364,6 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: "联赛介绍", link: "/SEL/map-Info" },
-          { text: "联赛赛制", link: "/SEL/sel-rules" },
           { text: "赛事地图接入", link: "/SEL/map-integration" },
         ],
       },
