@@ -37,8 +37,6 @@ world.onInteract(({ entity, targetEntity }) => {
 
 :::
 
----
-
 #### <font id="API" /><font id="Event">事件</font>onClick(<font id="Type">handler:(event:[GameClickEvent](./input#GameClickEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onClick}
 
 当玩家用鼠标点击实体时触发
@@ -431,8 +429,6 @@ world.onFluidLeave(({ entity, voxel }) => {
 | targetEntity | GameEntity       | 收到互动请求的实体 |
 | tick         | number           | 事件发生时间       |
 
----
-
 #### <font id="API" />GameInputEvent{#GameInputEvent}
 
 输入事件，在玩家按下或松开按钮时触发
@@ -474,8 +470,6 @@ world.onFluidLeave(({ entity, voxel }) => {
 | other    | [GameEntity](/GameEntity/)   | 碰撞中的第二个实体                       |
 | tick     | number                       | 两个实体碰撞的时间                       |
 
----
-
 #### <font id="API" />GameVoxelContactEvent{#GameVoxelContactEvent}
 
 当实体触碰方块时触发的事件。
@@ -490,8 +484,6 @@ world.onFluidLeave(({ entity, voxel }) => {
 | x        | number                       | 被触碰方块的 x 坐标  |
 | y        | number                       | 被触碰方块的 y 坐标  |
 | z        | number                       | 被触碰方块的 z 坐标  |
-
----
 
 #### <font id="API" />GameFluidContactEvent{#GameFluidContactEvent}
 

@@ -22,13 +22,9 @@ import '/style.css'
 
 世界当前的 Tick 计数。
 
----
-
 #### <font id="API" /><font id="ReadOnly">只读</font>url<font id="Type">: [URL](https://developer.mozilla.org/zh-CN/docs/Web/API/URL)</font>{#url}
 
 获取当前地图所在的 URL 链接地址。
-
-
 
 ## 方法
 

@@ -18,8 +18,6 @@ Automated testing is the "magic tool" that liberates you from this "primitive" w
 
 In this tutorial, we will use the industry's most popular testing framework, [Jest](https://jestjs.io/), to build a reliable quality "safety net" for the "pure logic" parts of your ArenaPro project, step by step.
 
----
-
 ### Step 1: Set Up Your "Code Health Check Center"
 
 First, we need to install the necessary equipment to set up the "health check center" for our project.
@@ -66,8 +64,6 @@ Finally, let's install a "master switch" in `package.json` so we can start all h
 ```
 
 With that, our "code health check center" is built!
-
----
 
 ### Step 2: Perform the First "Health Check"
 
@@ -197,8 +193,6 @@ describe("Health Check Package: Damage Calculation Function", () => {
 ```
 
 > **Core Idea**: A reliable unit test must be **predictable and repeatable**. By controlling the output of `Math.random` with `jest.spyOn`, we remove the uncertainty from the code, making the "health check" precise and reliable. This is a key technique in writing tests.
-
----
 
 ### Step 3: Run and Interpret the "Health Report"
 

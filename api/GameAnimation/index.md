@@ -18,15 +18,11 @@ Animation 动画，可对 World 世界、Entity 实体及 Player 玩家等对象
 
 动画的当前播放时间（多少动画帧）
 
----
-
 #### <font id="API" /><font id="ReadOnly">只读</font>playState<font id="Type">: [GameAnimationPlaybackState](./#GameAnimationPlaybackState)</font>
 
 > 默认值：GameAnimationPlaybackState.PENDING
 
 当前动画播放状态
-
----
 
 #### <font id="API" />playbackRate<font id="Type">: number </font>
 
@@ -34,15 +30,11 @@ Animation 动画，可对 World 世界、Entity 实体及 Player 玩家等对象
 
 每 tick 动画播放速度
 
----
-
 #### <font id="API" />startTime<font id="Type">: number </font>
 
 > 默认值：0
 
 动画开始的时间 tick
-
----
 
 #### <font id="API" /><font id="ReadOnly">只读</font>target<font id="Type">: [GameWorld](/GameWorld/) | [GameEntity](/GameEntity/) | [GamePlayerEntity](/GamePlayerEntity/)</font>
 
@@ -60,13 +52,9 @@ Animation 动画，可对 World 世界、Entity 实体及 Player 玩家等对象
 | -------- | -------- | ---------- | ------------------------------------ | ---------- |
 | playback | 否       |            | Partial‹GameAnimationPlaybackConfig› | 播放的参数 |
 
----
-
 #### <font id="API" />cancel()<font id="Type">: void</font>
 
 暂停动画的播放
-
----
 
 #### <font id="API" />keyframes()<font id="Type">: Partial‹KeyframeType›[]</font>
 
@@ -78,8 +66,6 @@ Animation 动画，可对 World 世界、Entity 实体及 Player 玩家等对象
 | ----------------------- | ---------------------- |
 | Partial‹KeyframeType›[] | 已配置的动画关键帧列表 |
 
----
-
 #### <font id="API" /><font id="Event" >事件</font>onFinish(<font id="Type">handler:(event:[GameAnimationEvent](./#GameAnimationEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>
 
 当动画结束播放时触发
@@ -89,8 +75,6 @@ Animation 动画，可对 World 世界、Entity 实体及 Player 玩家等对象
 | **参数** | **必填** | **默认值** | **类型** | **说明**                       |
 | -------- | -------- | ---------- | -------- | ------------------------------ |
 | handler  | 是       |            | function | 监听到动画播放完毕时的处理函数 |
-
----
 
 #### <font id="API" /><font id="Event" >事件</font>onReady(<font id="Type">handler:(event:[GameAnimationEvent](./#GameAnimationEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>
 
@@ -115,8 +99,6 @@ Animation 动画，可对 World 世界、Entity 实体及 Player 玩家等对象
 | cancelled | boolean       | 动画是否被取消     |
 | tick      | number        | 事件发生时间       |
 
----
-
 #### <font id="API" />GameAnimationPlaybackConfig{#GameAnimationPlaybackConfig}
 
 用于动画播放配置的参数组
@@ -130,8 +112,6 @@ Animation 动画，可对 World 世界、Entity 实体及 Player 玩家等对象
 | iterationStart | number                           | 反复播放开始时间 |
 | iterations     | number                           | 反复播放次数     |
 | startTick      | number                           | 开始时间         |
-
----
 
 #### <font id="API" />GameAnimationPlaybackState{#GameAnimationPlaybackState}
 

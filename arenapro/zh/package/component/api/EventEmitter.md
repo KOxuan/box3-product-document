@@ -120,8 +120,6 @@ export const GameWorldEvent = new GameEvent<GameEventChannel<any>>(world);
 | callback   | 是         |              | (...args: any[]) => void | 回调函数   |
 | target     |            | this         | any                      | 目标对象   |
 
----
-
 #### <font id="API" />once(<font id="Type">eventName: string, callback: (...args: any[]) => void, target?: any</font>)<font id="Type">: this</font>{#once}
 
 注册单次事件监听，触发后自动移除
@@ -133,8 +131,6 @@ export const GameWorldEvent = new GameEvent<GameEventChannel<any>>(world);
 | eventName  | 是         |              | string                   | 事件名称   |
 | callback   | 是         |              | (...args: any[]) => void | 回调函数   |
 | target     |            | this         | any                      | 目标对象   |
-
----
 
 #### <font id="API" />off(<font id="Type">eventName: string, callback: (...args: any[]) => void, target?: any</font>)<font id="Type">: this</font>{#off}
 
@@ -148,8 +144,6 @@ export const GameWorldEvent = new GameEvent<GameEventChannel<any>>(world);
 | callback   | 是         |              | (...args: any[]) => void | 回调函数   |
 | target     |            | this         | any                      | 目标对象   |
 
----
-
 #### <font id="API" />emit(<font id="Type">eventName: string, ...args: any[]</font>)<font id="Type">: this</font>{#emit}
 
 触发事件
@@ -160,8 +154,6 @@ export const GameWorldEvent = new GameEvent<GameEventChannel<any>>(world);
 | ---------- | ---------- | ------------ | ---------- | ---------- |
 | eventName  | 是         |              | string     | 事件名称   |
 | ...args    | 是         |              | any[]      | 参数列表   |
-
----
 
 #### <font id="API" />dispatchEvent(<font id="Type">event: IEvent</font>)<font id="Type">: this</font>{#dispatchEvent}
 
@@ -176,8 +168,6 @@ GameEventClass 类下无此方法。
 | IEvent.type      | 是         |              | string     | 事件类型，用于标识事件的种类                   |
 | IEvent.target    |            | this         | any        | 事件目标，可选属性，表示触发该事件的元素或对象 |
 | [x: string]: any |            |              | object     | 其他任意值                                     |
-
----
 
 #### <font id="API" />hasEventListener(<font id="Type">eventName: string</font>)<font id="Type">: boolean</font>{#hasEventListener}
 
@@ -195,13 +185,9 @@ GameEventClass 类下无此方法。
 | -------- | ------------ |
 | boolean  | 是否有监听者 |
 
----
-
 #### <font id="API" />removeAll()<font id="Type">: boolean</font>{#removeAll}
 
 移除所有事件监听
-
----
 
 #### <font id="API" />targetOff(<font id="Type">target: any</font>)<font id="Type">: this</font>{#targetOff}
 

@@ -300,7 +300,7 @@ Event handlers can be asynchronous, which is useful for operations like network 
 ```tsx
 async function handleSave() {
   try {
-    const response = await fetch("/api/save", {
+    const response = await http.fetch("/api/save", {
       /* ... */
     });
     const result = await response.json();

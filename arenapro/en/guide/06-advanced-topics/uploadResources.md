@@ -8,8 +8,6 @@ With this approach, you can completely decouple from the in-map file management 
 > - No dependency on the map resource library: you don’t need to write the index into the map or rely on map permissions—your code can discover and use assets by name immediately.
 > - Truly cross-map: the same set of indexes can be reused in different projects/maps. Share with your team and use it instantly (out of the box).
 
----
-
 ### Start Batch Upload
 
 1. Open VS Code and press `Ctrl + Shift + P` to open the Command Palette.
@@ -24,8 +22,6 @@ With this approach, you can completely decouple from the in-map file management 
 5. A summary notification will appear:
    - How many items were skipped due to duplicate identifier (key) or duplicate value.
 
----
-
 ### Output and File Locations
 
 - Output root: `client/UiIndex/assets/`
@@ -34,8 +30,6 @@ With this approach, you can completely decouple from the in-map file management 
   - Audio: `GameAudioUrl.ts` exports `export enum GameAudioUrl { ... }`
 
 File headers include a description and generation timestamp. Enum entries are sorted by key name, use two-space indentation, and end with a comma.
-
----
 
 ### Key Name Generation (Important)
 
@@ -49,8 +43,6 @@ File headers include a description and generation timestamp. Enum entries are so
 
 > Tip: Prefer clear English words, digits, `-`, or `_`. Avoid spaces and special characters to reduce surprises in generated keys.
 
----
-
 ### Deduplication and Notifications
 
 During `appendToEnumIndex()` the following checks are performed:
@@ -63,8 +55,6 @@ A notification summarizes:
 - Total skipped count, including sample items for “identifier duplicated” and “value duplicated”.
 
 If nothing was added but some were skipped, a warning with skip reasons is shown.
-
----
 
 ### Referencing Assets in Code
 
@@ -83,8 +73,6 @@ import { GameAudioUrl } from "@client/UiIndex/assets/GameAudioUrl";
 
 const clickSound = GameAudioUrl.UiClick; // assuming this key exists
 ```
-
----
 
 ### Pro Tip: Add JSDoc Comments for Hover Hints and Better IntelliSense
 
@@ -117,8 +105,6 @@ export enum GameAudioUrl {
 > Suggested team template for consistency (usage/location | size/duration | format | notes):
 > `/** Usage(Location) | Size/Duration | Format | Notes */`
 
----
-
 ### Helper: Preview Images Directly in the Editor
 
 With the VS Code extension [Gutter Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview), you can preview images in the editor gutter while coding, improving QA and asset checks.
@@ -128,8 +114,6 @@ With the VS Code extension [Gutter Preview](https://marketplace.visualstudio.com
 - Best for: quickly verifying assets in `GamePictureUrl`, UI configs, styles, or JSON.
 - Compatibility: common image formats and http/https, relative/absolute paths (see extension docs).
 - Performance: for very large images or slow networks, temporarily disable or limit preview size.
-
----
 
 ### FAQ
 

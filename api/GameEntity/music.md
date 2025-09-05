@@ -24,15 +24,11 @@ import '/style.css'
 
 当实体触发受伤事件时，播放受伤音效。通过`onTakeDamage()`触发
 
----
-
 #### <font id="API" />dieSound<font id="Type">: [GameSoundEffect](/GameWorld/music#GameSoundEffect)</font>{#dieSound}
 
 > 默认值：'audio/die.mp3'
 
 当实体触发死亡事件时，播放死亡音效。通过`onDie()`触发
-
----
 
 #### <font id="API" />interactSound<font id="Type">: [GameSoundEffect](/GameWorld/music#GameSoundEffect)</font>{#interactSound}
 

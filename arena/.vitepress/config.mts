@@ -246,8 +246,9 @@ export default defineConfig({
               },
             ],
           },
+
           {
-            text: "7. 初级主题",
+            text: "7. 中级主题",
             collapsed: true,
             items: [
               {
@@ -267,16 +268,6 @@ export default defineConfig({
                 link: "/javascriptEntry/06-advanced-topics/04-json",
               },
               {
-                text: "更多 ES6+ 特性",
-                link: "/javascriptEntry/06-advanced-topics/05-es6-features",
-              },
-            ],
-          },
-          {
-            text: "8. 中级主题",
-            collapsed: true,
-            items: [
-              {
                 text: "`this` 关键字详解",
                 link: "/javascriptEntry/07-intermediate-topics/01-this-keyword",
               },
@@ -295,7 +286,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "9. 高级主题",
+            text: "8. 高级主题",
             collapsed: true,
             items: [
               {
@@ -313,6 +304,92 @@ export default defineConfig({
               {
                 text: "内存管理",
                 link: "/javascriptEntry/08-advanced-topics/04-memory-management",
+              },
+              {
+                text: "更多 ES6+ 特性",
+                collapsed: true,
+                items: [
+                  {
+                    text: "箭头函数",
+                    link: "/javascriptEntry/06-advanced-topics/05-01-arrow-functions",
+                  },
+                  {
+                    text: "默认参数与参数解构",
+                    link: "/javascriptEntry/06-advanced-topics/05-02-default-params",
+                  },
+                  {
+                    text: "增强的对象字面量",
+                    link: "/javascriptEntry/06-advanced-topics/05-03-enhanced-object-literals",
+                  },
+                  {
+                    text: "Map 与 Set",
+                    link: "/javascriptEntry/06-advanced-topics/05-04-map-set",
+                  },
+                  {
+                    text: "Promise 基础",
+                    link: "/javascriptEntry/06-advanced-topics/05-05-promises-basics",
+                  },
+                  {
+                    text: "模块化：import / export",
+                    link: "/javascriptEntry/06-advanced-topics/05-06-modules",
+                  },
+                  {
+                    text: "可选链与空值合并",
+                    link: "/javascriptEntry/06-advanced-topics/05-07-optional-chaining-nullish",
+                  },
+                  {
+                    text: "常用 Array / Object 方法",
+                    link: "/javascriptEntry/06-advanced-topics/05-08-array-object-methods",
+                  },
+                  {
+                    text: "Symbol 与迭代协议",
+                    link: "/javascriptEntry/06-advanced-topics/05-09-symbol-iterator",
+                  },
+                  {
+                    text: "WeakMap 与 WeakSet",
+                    link: "/javascriptEntry/06-advanced-topics/05-10-weakmap-weakset",
+                  },
+                  {
+                    text: "字符串新方法补充",
+                    link: "/javascriptEntry/06-advanced-topics/05-11-string-methods",
+                  },
+                  {
+                    text: "Number/Math 与 BigInt",
+                    link: "/javascriptEntry/06-advanced-topics/05-12-number-math-bigint",
+                  },
+                  {
+                    text: "Intl 国际化基础",
+                    link: "/javascriptEntry/06-advanced-topics/05-13-intl-basics",
+                  },
+                  {
+                    text: "标签模板（Tagged Templates）",
+                    link: "/javascriptEntry/06-advanced-topics/05-14-tagged-templates",
+                  },
+                  {
+                    text: "Proxy 与 Reflect",
+                    link: "/javascriptEntry/06-advanced-topics/05-15-proxy-reflect",
+                  },
+                  {
+                    text: "RegExp 增强",
+                    link: "/javascriptEntry/06-advanced-topics/05-16-regexp-enhancements",
+                  },
+                  {
+                    text: "Promise 进阶",
+                    link: "/javascriptEntry/06-advanced-topics/05-17-promises-advanced",
+                  },
+                  {
+                    text: "逻辑赋值运算符",
+                    link: "/javascriptEntry/06-advanced-topics/05-19-logical-assignment",
+                  },
+                  {
+                    text: "Class 字段与私有字段",
+                    link: "/javascriptEntry/06-advanced-topics/05-21-class-fields-private",
+                  },
+                  {
+                    text: "生成器与 yield",
+                    link: "/javascriptEntry/06-advanced-topics/06-generators-and-yield",
+                  },
+                ],
               },
             ],
           },

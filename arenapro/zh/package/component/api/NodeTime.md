@@ -8,13 +8,9 @@ import '/style.css'
 
 启动时间系统，启用后全局节点开始参与刷新。
 
----
-
 #### <font id="API" />isRunning()<font id="Type">: boolean</font>{#isRunning}
 
 检查时间系统是否正在运行。
-
----
 
 #### <font id="API" />setTimeScale(<font id="Type">scale: number</font>)<font id="Type">: void</font>{#setTimeScale}
 
@@ -34,13 +30,9 @@ import '/style.css'
 | ---------- | ---------- | ------------ | ---------- | ------------ |
 | scale      | 是         |              | number     | 时间缩放因子 |
 
----
-
 #### <font id="API" />getTimeScale()<font id="Type">: number</font>{#getTimeScale}
 
 获取 dt 时间缩放因子
-
----
 
 #### <font id="API" />setTimeout(<font id="Type">callback: () => void, delay: number</font>)<font id="Type">: number</font>{#setTimeout}
 
@@ -59,8 +51,6 @@ import '/style.css'
 | -------- | -------- |
 | number   | 任务 ID  |
 
----
-
 #### <font id="API" />clearTimeout(<font id="Type">taskId: number</font>)<font id="Type">: boolean</font>{#clearTimeout}
 
 清除延时任务
@@ -71,13 +61,9 @@ import '/style.css'
 | ---------- | ---------- | ------------ | ---------- | ---------- |
 | taskId     | 是         |              | number     | 任务 ID    |
 
----
-
 #### <font id="API" />stop()<font id="Type">: void</font>{#stop}
 
 暂时停止时间系统
-
----
 
 #### <font id="API" />applyTimeWarp(<font id="Type">intensity: number, duration: number</font>)<font id="Type">: void</font>{#applyTimeWarp}
 

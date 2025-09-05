@@ -12,15 +12,11 @@ import '/style.css'
 
 玩家的颜色。
 
----
-
 #### <font id="API" />emissive<font id="Type">: number </font>{#emissive}
 
 > 默认值：0
 
 玩家的发光度。
-
----
 
 #### <font id="API" />invisible<font id="Type">: boolean</font> {#invisible}
 
@@ -28,15 +24,11 @@ import '/style.css'
 
 玩家是否隐身。
 
----
-
 #### <font id="API" />showName<font id="Type">: boolean</font>{#showName}
 
 > 默认值：true
 
 玩家名字是否显示。
-
----
 
 #### <font id="API" />showIndicator<font id="Type">: boolean</font> {#showIndicator}
 
@@ -44,15 +36,11 @@ import '/style.css'
 
 玩家标记否显示。
 
----
-
 #### <font id="API" />scale<font id="Type">: number </font>{#scale}
 
 > 默认值：1
 
 玩家的缩放比例。
-
----
 
 #### <font id="API" />metalness<font id="Type">: number </font>{#metalness}
 
@@ -60,15 +48,11 @@ import '/style.css'
 
 玩家的金属感。
 
----
-
 #### <font id="API" />shininess<font id="Type">: number </font>{#shininess}
 
 > 默认值：0
 
 玩家的反光度。
-
----
 
 #### <font id="API" />skin<font id="Type">: [GameSkin](./appearance#GameSkin)</font>{#skin}
 
@@ -124,19 +108,13 @@ world.onPlayerJoin(({ entity }) => {
 | -------- | -------- | ---------- | -------- | ------------------------------------------------------ |
 | skinName | 是       |            | string   | 指定要设置的皮肤名称，将玩家皮肤整体替换为对应的皮肤。 |
 
----
-
 #### <font id="API" />resetToDefaultSkin()<font id="Type">: void</font>{#resetToDefaultSkin}
 
 重置此玩家的皮肤配置为默认皮肤配置，效果同 `setSkinByName`传入了默认皮肤套装名称。
 
----
-
 #### <font id="API" />clearSkin()<font id="Type">: void</font>{#clearSkin}
 
 清除地图对此玩家应用的皮肤配置，将此玩家的皮肤配置为仅展示玩家自己的皮肤。
-
----
 
 #### <font id="API" />addWearable(<font id="Type">config:Partial‹[GameWearable](./appearance#GameWearable)›</font>)<font id="Type">: [GameWearable](./appearance#GameWearable)</font>{#addWearable}
 
@@ -285,8 +263,6 @@ const wearablesOnHead = entity.player.wearables(GameBodyPart.HEAD);
 | rightUpperLeg | boolean  | 右上腿   |
 | rightLowerLeg | boolean  | 右下腿   |
 | rightFoot     | boolean  | 右脚     |
-
----
 
 #### <font id="API" />GameWearable{#GameWearable}
 
