@@ -40,19 +40,13 @@ import '/style.css'
 
 获取该节点的 uuid。
 
----
-
 #### <font id="API" /><font id="ReadOnly" >只读</font>components<font id="Type">: Map‹string, Component‹T››</font> {#components}
 
 获取该节点下所有组件实例。
 
----
-
 #### <font id="API" /><font id="ReadOnly" >只读</font>entity<font id="Type">: entity‹T›</font> {#entity}
 
 获取关联的游戏实体。
-
----
 
 #### <font id="API" />enable<font id="Type">: boolean</font>{#enable}
 
@@ -85,8 +79,6 @@ import '/style.css'
 | componentConstructor | 是         |              | new (...args: any[]) => U            | 组件构造函数                   |
 | object               |            | {}           | Partial‹Omit‹U, keyof Component‹T››› | 组件初始化属性，默认不修改属性 |
 
----
-
 #### <font id="API" />addComponent(<font id="Type">componentName: string, object?: Record‹string, any›</font>)<font id="Type">: this</font>{#addComponentName}
 
 向该节点增加指定类型的组件。
@@ -102,8 +94,6 @@ import '/style.css'
 | componentName | 是         |              | string              | 组件名                         |
 | object        |            | {}           | Record<string, any> | 组件初始化属性，默认不修改属性 |
 
----
-
 #### <font id="API" />getComponent(<font id="Type">componentName: string</font>)<font id="Type">: U | undefined</font>{#getComponentName}
 
 获取该节点下指定类型的组件。
@@ -115,8 +105,6 @@ import '/style.css'
 | **_参数_**    | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | ------------- | ---------- | ------------ | ---------- | ---------- |
 | componentName | 是         |              | string     | 组件名     |
-
----
 
 #### <font id="API" />getComponent<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U</font>)<font id="Type">: U | undefined</font>{#getComponent}
 
@@ -130,8 +118,6 @@ import '/style.css'
 | -------------------- | ---------- | ------------ | ------------------------- | ------------ |
 | componentConstructor | 是         |              | new (...args: any[]) => U | 组件构造函数 |
 
----
-
 #### <font id="API" />getComponentPerformance(<font id="Type">componentName: string</font>)<font id="Type">: IBasePerformanceData | null</font>{#getComponentPerformanceName}
 
 获取该节点下指定的组件性能数据。
@@ -143,8 +129,6 @@ import '/style.css'
 | **_参数_**    | **_必填_** | **_默认值_** | **_类型_** | **_说明_** |
 | ------------- | ---------- | ------------ | ---------- | ---------- |
 | componentName | 是         |              | string     | 组件名     |
-
----
 
 #### <font id="API" />getComponentPerformance<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U</font>)<font id="Type">: IBasePerformanceData | null</font>{#getComponentPerformance}
 
@@ -158,13 +142,9 @@ import '/style.css'
 | -------------------- | ---------- | ------------ | ------------------------- | ------------ |
 | componentConstructor | 是         |              | new (...args: any[]) => U | 组件构造函数 |
 
----
-
 #### <font id="API" />getComponents()<font id="Type">: Map‹string, Component‹T››</font>{#getComponents}
 
 获取该节点下所有组件。
-
----
 
 #### <font id="API" />removeComponent(<font id="Type">componentName: string</font>)<font id="Type">: boolean</font>{#removeComponentnName}
 
@@ -178,8 +158,6 @@ import '/style.css'
 | ------------- | ---------- | ------------ | ---------- | ---------- |
 | componentName | 是         |              | string     | 组件名     |
 
----
-
 #### <font id="API" />removeComponent<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U</font>)<font id="Type">: boolean</font>{#removeComponent}
 
 移除节点下指定类型的组件。
@@ -192,13 +170,9 @@ import '/style.css'
 | -------------------- | ---------- | ------------ | ------------------------- | ------------ |
 | componentConstructor | 是         |              | new (...args: any[]) => U | 组件构造函数 |
 
----
-
 #### <font id="API" />removeComponentAll()<font id="Type">: void</font>{#removeComponentAll}
 
 移除节点下所有组件。
-
----
 
 #### <font id="API" />destroy()<font id="Type">: void</font>{#destroy}
 

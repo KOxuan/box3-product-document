@@ -45,8 +45,6 @@ world.onPlayerJoin(({ entity }) => {
 该属性已不推荐使用，建议使用 `entity.player.userId` 获取玩家 ID。
 :::
 
----
-
 #### <font id="API" /><font id="ReadOnly">只读</font>userKey<font id="Type">: string</font> {#userKey}
 
 玩家的唯一识别码(16 字符)，可以用于存储玩家信息到数据库，无法控制更改。
@@ -55,21 +53,15 @@ world.onPlayerJoin(({ entity }) => {
 该属性已不推荐使用，建议使用 `entity.player.userId` 获取玩家 ID。
 :::
 
----
-
 #### <font id="API" /><font id="ReadOnly">只读</font>avatar<font id="Type">: string</font> {#avatar}
 
 玩家的头像 url 直链。
-
----
 
 #### <font id="API" />movementBounds<font id="Type">:[GameBounds3](/GameBounds3/)</font>{#movementBounds}
 
 > 默认值：new GameBounds3(new GameVector3(-50, -50, -50), new GameVector3(178, 178, 178))
 
 玩家的活动范围限制，如超出此范围，则传回出生点
-
----
 
 #### <font id="API" />url<font id="Type">: [URL](https://developer.mozilla.org/zh-CN/docs/Web/API/URL)</font>{#url}
 

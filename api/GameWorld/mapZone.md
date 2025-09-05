@@ -28,7 +28,10 @@ import '/style.css'
 // 添加检测玩家进入或离开 x:48-64, y:8-20, z: 50-72 的区域
 const area = world.addZone({
   selector: "player",
-  bounds: new GameBounds3(new GameVector3(48, 8, 50), new GameVector3(64, 20, 72)),
+  bounds: new GameBounds3(
+    new GameVector3(48, 8, 50),
+    new GameVector3(64, 20, 72)
+  ),
 });
 
 // 有玩家进入区域
@@ -39,8 +42,6 @@ area.onLeave(({ entity }) => {});
 ```
 
 :::
-
----
 
 #### <font id="API" />removeZone(<font id="Type">trigger:[GameZone](./mapZone#GameZone)</font>)<font id="Type">: void</font> {#removeZone}
 
@@ -58,7 +59,10 @@ area.onLeave(({ entity }) => {});
 // 添加检测玩家进入或离开 x:0-64, y:0-20, z: 0-64 的区域
 const area = world.addZone({
   selector: "player",
-  bounds: new GameBounds3(new GameVector3(48, 8, 48), new GameVector3(72, 20, 72)),
+  bounds: new GameBounds3(
+    new GameVector3(48, 8, 48),
+    new GameVector3(72, 20, 72)
+  ),
 });
 
 // 删除区域'area'
@@ -66,8 +70,6 @@ world.removeZone(area);
 ```
 
 :::
-
----
 
 #### <font id="API" />zones()<font id="Type">: [GameZone](./mapZone#GameZone)[]</font>{#zones}
 
@@ -190,8 +192,6 @@ allZones.forEach((zone) => {
 | snowSizeLo                          | number                                                                                                                   | 雪花最小直径                                                                                                 |
 | snowSpinSpeed                       | number                                                                                                                   | 雪花自旋速度                                                                                                 |
 | snowTexture                         | string                                                                                                                   | 雪花纹理                                                                                                     |
-
----
 
 #### <font id="API" />GameTriggerEvent{#GameTriggerEvent}
 

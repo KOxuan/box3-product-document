@@ -72,8 +72,6 @@ When he types the first quote, all the latest, correct asset paths will be liste
 
 This simple habit can save you and your team from countless bugs caused by incorrect asset paths, greatly enhancing development happiness.
 
----
-
 ## Automatic Sync and Silent Mode
 
 To further reduce collaboration costs, ArenaPro adds an automatic synchronization capability:
@@ -93,8 +91,6 @@ To further reduce collaboration costs, ArenaPro adds an automatic synchronizatio
 - First-time generation
   - If `types/GameAssets.d.ts` does not exist yet, automatic sync will generate it once assets are detected.
 
----
-
 ## FAQ
 
 - Q: I don’t want background automatic sync. What should I do?
@@ -111,8 +107,6 @@ To further reduce collaboration costs, ArenaPro adds an automatic synchronizatio
 
 - Q: How do I trigger an immediate manual sync?
   - A: Use the shortcut `Alt + Y` or run “Sync Map Assets” from the command palette.
-
----
 
 ## Summary
 

@@ -25,8 +25,6 @@ import '/style.css'
 
 区域的高处顶点
 
----
-
 #### <font id="API" />lo<font id="Type">: GameVector3</font>
 
 区域的低处顶点
@@ -80,8 +78,6 @@ import '/style.css'
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | b          | 是         |              | GameBounds3 | 三维空间   |
 
----
-
 #### <font id="API" />intersects(<font id="Type">b:GameBounds3</font>)<font id="Type">: boolean</font>
 
 检测是否与此包围盒相交
@@ -91,8 +87,6 @@ import '/style.css'
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_**  | **_说明_** |
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | b          | 是         |              | GameBounds3 | 三维空间   |
-
----
 
 #### <font id="API" />contains(<font id="Type">b:GameVector3</font>)<font id="Type">: boolean</font>
 
@@ -104,8 +98,6 @@ import '/style.css'
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | b          | 是         |              | GameVector3 | 三维向量   |
 
----
-
 #### <font id="API" />containsBounds(<font id="Type">b:GameBounds3</font>)<font id="Type">: boolean</font>
 
 检测是否完全包围了此盒
@@ -115,8 +107,6 @@ import '/style.css'
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_**  | **_说明_** |
 | ---------- | ---------- | ------------ | ----------- | ---------- |
 | b          | 是         |              | GameBounds3 | 三维空间   |
-
----
 
 #### <font id="API" />toString()<font id="Type">: string</font>
 

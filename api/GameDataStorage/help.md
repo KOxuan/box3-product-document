@@ -123,8 +123,6 @@ const userTable = storage.getDataStorage("userData");
 
 如果你这希望张表格记录着的数据每一个副图包括主图都能访问到的话，记得要用这个 api 去要表格哦。
 
----
-
 ### 删除一个数据存储空间
 
 ### <font id="API" />destroy()<font id="Type">: Promise‹void›</font> {#destroy}

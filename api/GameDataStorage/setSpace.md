@@ -54,8 +54,6 @@ console.log(`storageName: ${storageName}`);
 | key      | 是       |            | string    | 需要设置的键 |
 | value    | 是       |            | JSONValue | 需要设置的值 |
 
----
-
 #### <font id="API" />get(<font id="Type">key: string</font>)<font id="Type">: Promise‹[ReturnValue](./setSpace#ReturnValue)›</font> {#get}
 
 获取指定键对应的值。
@@ -72,8 +70,6 @@ console.log(`storageName: ${storageName}`);
 | ----------- | ------------------------------------------------- |
 | ReturnValue | 异步返回数据，当获取完成时 resolve，否则 reject。 |
 
----
-
 #### <font id="API" />update(<font id="Type">key: string,handler:(prevValue:[ReturnValue](./setSpace#ReturnValue))=>[JSONValue](./setSpace#JSONValue)</font>)<font id="Type">: Promise‹void›</font> {#update}
 
 更新指定键对应的值。
@@ -84,8 +80,6 @@ console.log(`storageName: ${storageName}`);
 | -------- | -------- | ---------- | -------- | -------------------------------------------------------------- |
 | key      | 是       |            | string   | 指定的键                                                       |
 | handler  | 是       |            | function | 处理更新的方法，接受一个参数，为当前键的值，返回一个更新后的值 |
-
----
 
 #### <font id="API" />remove(<font id="Type">key: string</font>)<font id="Type">: Promise‹[ReturnValue](./setSpace#ReturnValue)›</font> {#remove}
 
@@ -103,8 +97,6 @@ console.log(`storageName: ${storageName}`);
 | ----------- | ------------------------------------------------- |
 | ReturnValue | 异步返回数据，当删除完成时 resolve，否则 reject。 |
 
----
-
 #### <font id="API" />list(<font id="Type">options:Partial‹[ListPageOptions](./setSpace#ListPageOptions)›</font>)<font id="Type">: Promise‹[QueryList](./setSpace#QueryList)›</font> {#list}
 
 批量获取键值对。
@@ -120,8 +112,6 @@ console.log(`storageName: ${storageName}`);
 | **类型**  | **说明**                                          |
 | --------- | ------------------------------------------------- |
 | QueryList | 异步返回数据，当获取完成时 resolve，否则 reject。 |
-
----
 
 #### <font id="API" />destroy()<font id="Type">: Promise‹void›</font> {#destroy}
 
@@ -141,8 +131,6 @@ console.log(`storageName: ${storageName}`);
 | JSONValue[]               | JSONValue 数组 |
 | `{[x: string]:JSONValue}` | 键值对         |
 
----
-
 #### <font id="API" />ReturnValue {#ReturnValue}
 
 表示一个键值对的内容。它可以是一个对象或者 `undefined`
@@ -154,8 +142,6 @@ console.log(`storageName: ${storageName}`);
 | updateTime | number    | key 最近更新时间 |
 | createTime | number    | key 创建时间     |
 | version    | string    | 更新版本号       |
-
----
 
 #### <font id="API" />ListPageOptions {#ListPageOptions}
 
@@ -169,8 +155,6 @@ console.log(`storageName: ${storageName}`);
 | ascending        | boolean  | 是否升序，设置为 true 时为升序，false 为降序，不传或传入 undefined 时不排序；                                                                                                                                                                                                                             |
 | max              | number   | 最大值，过滤返回对应值的最大值，超出或非数字则不返回该 Key，默认不过滤；                                                                                                                                                                                                                                  |
 | min              | number   | 最小值，同 max 类似。                                                                                                                                                                                                                                                                                     |
-
----
 
 #### <font id="API" />QueryList {#QueryList}
 

@@ -19,8 +19,6 @@ import '/style.css'
 | spec.blob  |            |              | Blob       | 音频内容     |
 | spec.gain  |            |              | number     | 音频声音增益 |
 
----
-
 #### <font id="API" />stopPlayAudio()<font id="Type">: void</font>{#stopPlayAudio}
 
 停止播放录音音频。

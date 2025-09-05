@@ -39,19 +39,13 @@ When enabled, the `Component.update` method of all components will be tracked by
 
 Gets the UUID of this node.
 
----
-
 #### <font id="API" /><font id="ReadOnly" >Read-only</font>components<font id="Type">: Map‹string, Component‹T››</font> {#components}
 
 Gets all component instances on this node.
 
----
-
 #### <font id="API" /><font id="ReadOnly" >Read-only</font>entity<font id="Type">: entity‹T›</font> {#entity}
 
 Gets the associated game entity.
-
----
 
 #### <font id="API" />enable<font id="Type">: boolean</font>{#enable}
 
@@ -84,8 +78,6 @@ Adds a component of the specified type to this node.
 | componentConstructor | Yes            |               | new (...args: any[]) => U            | The component constructor                                                   |
 | object               | No             | {}            | Partial‹Omit‹U, keyof Component‹T››› | Initial properties for the component, does not modify properties by default |
 
----
-
 #### <font id="API" />addComponent(<font id="Type">componentName: string, object?: Record‹string, any›</font>)<font id="Type">: this</font>{#addComponentName}
 
 Adds a component of the specified type to this node.
@@ -101,8 +93,6 @@ The child component class must have the `@apclass` decorator. Otherwise, the com
 | componentName   | Yes            |               | string              | The component name                                                          |
 | object          | No             | {}            | Record<string, any> | Initial properties for the component, does not modify properties by default |
 
----
-
 #### <font id="API" />getComponent(<font id="Type">componentName: string</font>)<font id="Type">: U | undefined</font>{#getComponentName}
 
 Gets a component of the specified type on this node.
@@ -114,8 +104,6 @@ Gets a component of the specified type on this node.
 | **_Parameter_** | **_Required_** | **_Default_** | **_Type_** | **_Description_**  |
 | --------------- | -------------- | ------------- | ---------- | ------------------ |
 | componentName   | Yes            |               | string     | The component name |
-
----
 
 #### <font id="API" />getComponent<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U</font>)<font id="Type">: U | undefined</font>{#getComponent}
 
@@ -129,8 +117,6 @@ Gets a component of the specified type on this node.
 | -------------------- | -------------- | ------------- | ------------------------- | ------------------------- |
 | componentConstructor | Yes            |               | new (...args: any[]) => U | The component constructor |
 
----
-
 #### <font id="API" />getComponentPerformance(<font id="Type">componentName: string</font>)<font id="Type">: IBasePerformanceData | null</font>{#getComponentPerformanceName}
 
 Gets the performance data for a specified component on this node.
@@ -142,8 +128,6 @@ Gets the performance data for a specified component on this node.
 | **_Parameter_** | **_Required_** | **_Default_** | **_Type_** | **_Description_**  |
 | --------------- | -------------- | ------------- | ---------- | ------------------ |
 | componentName   | Yes            |               | string     | The component name |
-
----
 
 #### <font id="API" />getComponentPerformance<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U</font>)<font id="Type">: IBasePerformanceData | null</font>{#getComponentPerformance}
 
@@ -157,13 +141,9 @@ Gets the performance data for a specified component on this node.
 | -------------------- | -------------- | ------------- | ------------------------- | ------------------------- |
 | componentConstructor | Yes            |               | new (...args: any[]) => U | The component constructor |
 
----
-
 #### <font id="API" />getComponents()<font id="Type">: Map‹string, Component‹T››</font>{#getComponents}
 
 Gets all components on this node.
-
----
 
 #### <font id="API" />removeComponent(<font id="Type">componentName: string</font>)<font id="Type">: boolean</font>{#removeComponentnName}
 
@@ -177,8 +157,6 @@ Removes a component of the specified type from the node.
 | --------------- | -------------- | ------------- | ---------- | ------------------ |
 | componentName   | Yes            |               | string     | The component name |
 
----
-
 #### <font id="API" />removeComponent<font id="Type">‹U extends Component‹T››</font>(<font id="Type">componentConstructor: new (...args: any[]) => U</font>)<font id="Type">: boolean</font>{#removeComponent}
 
 Removes a component of the specified type from the node.
@@ -191,13 +169,9 @@ Removes a component of the specified type from the node.
 | -------------------- | -------------- | ------------- | ------------------------- | ------------------------- |
 | componentConstructor | Yes            |               | new (...args: any[]) => U | The component constructor |
 
----
-
 #### <font id="API" />removeComponentAll()<font id="Type">: void</font>{#removeComponentAll}
 
 Removes all components from the node.
-
----
 
 #### <font id="API" />destroy()<font id="Type">: void</font>{#destroy}
 

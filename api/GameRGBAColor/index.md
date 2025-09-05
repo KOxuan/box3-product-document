@@ -36,19 +36,13 @@ let red = rgba(255, 0, 0, 1); // return GameRGBAColor(1, 0, 0, 1)
 
 red 颜色值，范围 0~1
 
----
-
 #### <font id="API" />g<font id="Type">: number</font>
 
 green 颜色值，范围 0~1
 
----
-
 #### <font id="API" />b<font id="Type">: number</font>
 
 blue 颜色值，范围 0~1
-
----
 
 #### <font id="API" />a<font id="Type">: number</font>
 
@@ -68,8 +62,6 @@ alpha 透明值，范围 0~1
 | g          | 是         |              | number(0-1) | green 颜色值 |
 | b          | 是         |              | number(0-1) | blue 颜色值  |
 | a          | 是         |              | number(0-1) | alpha 透明值 |
-
----
 
 #### <font id="API" />copy(<font id="Type">c:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
 
@@ -105,8 +97,6 @@ alpha 透明值，范围 0~1
 | ---------- | ---------- | ------------ | ------------- | ---------- |
 | rgba       | 是         |              | GameRGBAColor | 透明颜色   |
 
----
-
 #### <font id="API" />mul(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
 
 颜色相乘，返回新的透明颜色
@@ -117,8 +107,6 @@ alpha 透明值，范围 0~1
 | ---------- | ---------- | ------------ | ------------- | ---------- |
 | rgba       | 是         |              | GameRGBAColor | 透明颜色   |
 
----
-
 #### <font id="API" />div(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
 
 颜色相除，返回新的透明颜色
@@ -128,8 +116,6 @@ alpha 透明值，范围 0~1
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_**    | **_说明_** |
 | ---------- | ---------- | ------------ | ------------- | ---------- |
 | rgba       | 是         |              | GameRGBAColor | 透明颜色   |
-
----
 
 #### <font id="API" />addEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
 
@@ -151,8 +137,6 @@ alpha 透明值，范围 0~1
 | ---------- | ---------- | ------------ | ------------- | ---------- |
 | rgba       | 是         |              | GameRGBAColor | 透明颜色   |
 
----
-
 #### <font id="API" />mulEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
 
 颜色相乘，并覆盖当前颜色，返回当前透明颜色
@@ -162,8 +146,6 @@ alpha 透明值，范围 0~1
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_**    | **_说明_** |
 | ---------- | ---------- | ------------ | ------------- | ---------- |
 | rgba       | 是         |              | GameRGBAColor | 透明颜色   |
-
----
 
 #### <font id="API" />divEq(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: GameRGBAColor</font>
 
@@ -175,8 +157,6 @@ alpha 透明值，范围 0~1
 | ---------- | ---------- | ------------ | ------------- | ---------- |
 | rgba       | 是         |              | GameRGBAColor | 透明颜色   |
 
----
-
 #### <font id="API" />lerp(<font id="Type">rgba: GameRGBAColor, n: number</font>)<font id="Type">: GameRGBAColor</font>
 
 颜色插值，返回新的透明颜色
@@ -187,8 +167,6 @@ alpha 透明值，范围 0~1
 | ---------- | ---------- | ------------ | ------------- | ------------ |
 | rgba       | 是         |              | GameRGBAColor | 目标透明颜色 |
 | n          | 是         |              | number(0-1)   | 插值百分比   |
-
----
 
 #### <font id="API" />equals(<font id="Type">rgba:GameRGBAColor</font>)<font id="Type">: boolean</font>
 
@@ -211,8 +189,6 @@ alpha 透明值，范围 0~1
 | **_参数_** | **_必填_** | **_默认值_** | **_类型_**   | **_说明_** |
 | ---------- | ---------- | ------------ | ------------ | ---------- |
 | rgb        | 是         |              | GameRGBColor | 颜色       |
-
----
 
 #### <font id="API" />toString()<font id="Type">: string</font>
 

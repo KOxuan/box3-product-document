@@ -120,8 +120,6 @@ Registers an event listener.
 | callback        | Yes            |               | (...args: any[]) => void | Callback function |
 | target          | No             | this          | any                      | Target object     |
 
----
-
 #### <font id="API" />once(<font id="Type">eventName: string, callback: (...args: any[]) => void, target?: any</font>)<font id="Type">: this</font>{#once}
 
 Registers a one-time event listener, which is automatically removed after being triggered.
@@ -133,8 +131,6 @@ Registers a one-time event listener, which is automatically removed after being 
 | eventName       | Yes            |               | string                   | Event name        |
 | callback        | Yes            |               | (...args: any[]) => void | Callback function |
 | target          | No             | this          | any                      | Target object     |
-
----
 
 #### <font id="API" />off(<font id="Type">eventName: string, callback: (...args: any[]) => void, target?: any</font>)<font id="Type">: this</font>{#off}
 
@@ -148,8 +144,6 @@ Removes an event listener.
 | callback        | Yes            |               | (...args: any[]) => void | Callback function |
 | target          | No             | this          | any                      | Target object     |
 
----
-
 #### <font id="API" />emit(<font id="Type">eventName: string, ...args: any[]</font>)<font id="Type">: this</font>{#emit}
 
 Triggers an event.
@@ -160,8 +154,6 @@ Triggers an event.
 | --------------- | -------------- | ------------- | ---------- | ----------------- |
 | eventName       | Yes            |               | string     | Event name        |
 | ...args         | Yes            |               | any[]      | Argument list     |
-
----
 
 #### <font id="API" />dispatchEvent(<font id="Type">event: IEvent</font>)<font id="Type">: this</font>{#dispatchEvent}
 
@@ -176,8 +168,6 @@ This method is not available in the `GameEventClass` class.
 | IEvent.type      | Yes            |               | string     | Event type, used to identify the kind of event                                             |
 | IEvent.target    | No             | this          | any        | Event target, optional property, represents the element or object that triggered the event |
 | [x: string]: any | No             |               | object     | Other arbitrary values                                                                     |
-
----
 
 #### <font id="API" />hasEventListener(<font id="Type">eventName: string</font>)<font id="Type">: boolean</font>{#hasEventListener}
 
@@ -195,13 +185,9 @@ Checks if there are listeners for a specific event.
 | -------- | --------------------------- |
 | boolean  | Whether there are listeners |
 
----
-
 #### <font id="API" />removeAll()<font id="Type">: boolean</font>{#removeAll}
 
 Removes all event listeners.
-
----
 
 #### <font id="API" />targetOff(<font id="Type">target: any</font>)<font id="Type">: this</font>{#targetOff}
 

@@ -37,13 +37,13 @@ console.log(idx?.uiText_content1.name); // type-safe, autocompletion; re-sync in
 
 UI Index is a strongly-typed projection of your UI tree. For each screen, it generates a screen-specific index class and exposes a unified entry to retrieve index instances:
 
-| You’ll get…                   | Which means…                                                                 |
-| ----------------------------- | --------------------------------------------------------------------------- |
-| **🔎 Strongly-typed access**   | Access UI elements via properties with IDE autocomplete and visible types.  |
-| **🧭 Free from string paths**  | No more hardcoded paths; hierarchy changes won’t force mass string updates. |
-| **⚡ Warm up once, then fast** | Pre-warms a cache at construction using a path table; subsequent reads are O(1). |
-| **🧩 Naming conflict handling**| Uses leaf name first, then full path, then adds suffix numbers to ensure usable names. |
-| **✅ Types enforce contracts** | Nonexistent screen names are `never` at type level; runtime missing screens return `undefined`. |
+| You’ll get…                     | Which means…                                                                                    |
+| ------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **🔎 Strongly-typed access**    | Access UI elements via properties with IDE autocomplete and visible types.                      |
+| **🧭 Free from string paths**   | No more hardcoded paths; hierarchy changes won’t force mass string updates.                     |
+| **⚡ Warm up once, then fast**  | Pre-warms a cache at construction using a path table; subsequent reads are O(1).                |
+| **🧩 Naming conflict handling** | Uses leaf name first, then full path, then adds suffix numbers to ensure usable names.          |
+| **✅ Types enforce contracts**  | Nonexistent screen names are `never` at type level; runtime missing screens return `undefined`. |
 
 :::tip
 💡 Core advantage: The UI Index is an auto-generated, auto-maintained “strongly-typed mirror” of your UI. You fetch by screen name; the type system and cache do the rest.
@@ -96,8 +96,6 @@ Key points:
 - **Inspect real paths**: Open `UiIndex_<Screen>.ts` and check `static PATHS` or getter comments.
 - **After structure changes**: Re-sync resources to regenerate indexes and avoid path maintenance toil.
 
----
-
 ## Feature overview
 
 - Get a “screen index instance” by screen name, then access UI elements via strongly-typed properties.
@@ -106,16 +104,12 @@ Key points:
 - Cache warmup: on first construction, caches nodes according to a `PATHS` table; later reads don’t re-search.
 - Type safety: passing a nonexistent screen name returns `never` at the type level; runtime missing screens return `undefined`.
 
----
-
 ## How it’s generated
 
 - After sync or relevant commands, the extension scans the UI tree and generates the files above (automated flow).
 - The generated files are tool-managed; do not edit them directly. If you need changes (naming/output style), please file a request.
 
 > If you see imports like `@client/UiIndex`, it means an alias is configured in your project and can be used directly.
-
----
 
 ## UI Data
 
@@ -183,8 +177,6 @@ Key points:
   - `protected getByPath(path: string): UiScreen | UiElement | undefined`
   - `private __warmup(): void`
 
----
-
 ## Naming rules
 
 - Prefixes bound to types:
@@ -195,8 +187,6 @@ Key points:
   - `UiInput` -> `uiInput_...`
 - Base naming uses the last path segment; on conflicts, fall back to full path; if still conflicting, append `_2/_3/...`.
 - Supports Chinese/Unicode; invalid characters are replaced with underscores while ensuring a valid first character.
-
----
 
 ## uiIndexPrefix configuration and behavior
 
@@ -230,8 +220,6 @@ Example effect:
   - `desc` -> not generated (prefix not matched)
 - `PATHS` keeps real names (e.g., `.../U_title`); only getter names strip the prefix; runtime lookups are unaffected.
 
----
-
 ## Best practices
 
 - Store screen names in constants to avoid typos:
@@ -242,20 +230,18 @@ Example effect:
 - Add a null-check for `find()` returns to gracefully degrade when a screen is not mounted at runtime.
 - If you want to tweak generation style (comments, blank lines, indentation, export style), do it in the generator layer rather than editing generated outputs.
 
----
-
 ## FAQ
 
 - Q: I passed a screen name and the type is `never`?
+
   - A: The screen name is not in the type map—likely the cache hasn’t been regenerated or the name is misspelled. Please ensure the screen name and generated outputs are up to date.
 
 - Q: Runtime returns `undefined`?
+
   - A: The screen was not found at instantiation. Ensure the screen exists/is mounted; add null-checks at call sites.
 
 - Q: How to find the real path behind a getter?
   - A: Open the corresponding `UiIndex_<Screen>.ts` and inspect `static PATHS` or the `@description` in getter comments.
-
----
 
 ## Feedback
 

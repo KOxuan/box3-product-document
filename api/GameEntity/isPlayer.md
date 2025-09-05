@@ -21,8 +21,6 @@ declare type GamePlayerEntity = GameEntity & {
 
 如果为真，则实体为玩家。
 
----
-
 #### <font id="API" />player<font id="Type">: [GamePlayerEntity](/GamePlayerEntity/) | undefined</font>{#player}
 
 如果是玩家，可以访问此属性。索引与玩家相关的全部状态和方法

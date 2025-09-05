@@ -58,19 +58,13 @@ world.querySelectorAll('*').forEach((e) => {
 
 实体的旋转角度。
 
----
-
 #### <font id="API" />meshScale<font id="Type">: [GameVector3](/GameVector3/)</font>{#meshScale}
 
 实体的缩放比例。
 
----
-
 #### <font id="API" />meshColor<font id="Type">: [GameRGBAColor](/GameRGBAColor/)</font>{#meshColor}
 
 实体的颜色。
-
----
 
 #### <font id="API" />meshInvisible<font id="Type">: boolean</font>{#meshInvisible}
 
@@ -78,23 +72,17 @@ world.querySelectorAll('*').forEach((e) => {
 
 可控制实体隐形，当值设为 true 时，则实体隐形。
 
----
-
 #### <font id="API" />meshEmissive<font id="Type">: number </font>{#meshEmissive}
 
 > 默认值：0
 
 实体的发光度。
 
----
-
 #### <font id="API" />meshMetalness<font id="Type">: number</font>{#meshMetalness}
 
 > 默认值：0
 
 实体的金属感。
-
----
 
 #### <font id="API" />meshShininess<font id="Type">: number</font>{#meshShininess}
 
@@ -104,15 +92,11 @@ world.querySelectorAll('*').forEach((e) => {
 
 实体的反光度，设为 1 则为非常光滑。
 
----
-
 #### <font id="API" />meshOffset<font id="Type">: [GameVector3](/GameVector3/)</font>{#meshOffset}
 
 > 默认值：GameVector3(0, 0, 0)
 
 实体的位移。
-
----
 
 #### <font id="API" />showEntityName<font id="Type">: boolean</font>{#showEntityName}
 
@@ -122,23 +106,17 @@ world.querySelectorAll('*').forEach((e) => {
 
 如果通过`customName`自定义了需要展示的名称，则展示`customName`。
 
----
-
 #### <font id="API" />customName<font id="Type">: string</font>{#customName}
 
 > 默认值：''
 
 允许自定义需要展示的名称，默认为空。
 
----
-
 #### <font id="API" />nameRadius<font id="Type">: number</font>{#nameRadius}
 
 > 默认值：16
 
 名称展示范围，数值越小，则需要靠近实体才会出现名称。
-
----
 
 #### <font id="API" />nameColor<font id="Type">: [GameRGBColor](/GameRGBColor/)</font>{#nameColor}
 

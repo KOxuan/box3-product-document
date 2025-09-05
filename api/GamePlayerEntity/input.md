@@ -20,15 +20,11 @@ import '/style.css'
 
 禁用指定方向的摇杆输入偏移量，当横纵两个方向均被禁用时，将不显示此玩家的触屏虚拟摇杆。
 
----
-
 #### <font id="API" />enableAction0<font id="Type">: boolean</font>{#enableAction0}
 
 > 默认值：true
 
 启动鼠标左键/移动端虚拟按钮 A 键
-
----
 
 #### <font id="API" />enableAction1<font id="Type">: boolean</font>{#enableAction1}
 
@@ -36,15 +32,11 @@ import '/style.css'
 
 启动鼠标右键/移动端虚拟按钮 B 键
 
----
-
 #### <font id="API" />action0Button<font id="Type">: boolean</font>{#action0Button}
 
 > 默认值：false
 
 鼠标左键/移动端虚拟按钮 A 键
-
----
 
 #### <font id="API" />action1Button<font id="Type">: boolean</font>{#action1Button}
 
@@ -52,15 +44,11 @@ import '/style.css'
 
 鼠标右键/移动端虚拟按钮 B 键
 
----
-
 #### <font id="API" />jumpButton<font id="Type">: boolean</font>{#jumpButton}
 
 > 默认值：false
 
 跳跃按钮
-
----
 
 #### <font id="API" />walkButton<font id="Type">: boolean</font>{#walkButton}
 
@@ -84,15 +72,11 @@ import '/style.css'
 开启：w：右走，s：左走，a：后退，d：前进
 :::
 
----
-
 #### <font id="API" />reverseInputDirection<font id="Type">: [GameInputDirection](./input#GameInputDirection)</font>{#reverseInputDirection}
 
 > 默认值：GameInputDirection.NONE
 
 反转指定方向的摇杆
-
----
 
 #### <font id="API" />facingDirection<font id="Type">: [GameVector3](/GameVector3/)</font>{#facingDirection}
 
@@ -100,23 +84,17 @@ import '/style.css'
 
 玩家朝向
 
----
-
 #### <font id="API" />canFly<font id="Type">: boolean</font>{#canFly}
 
 > 默认值：false
 
 如果为真(true)，则允许玩家飞行
 
----
-
 #### <font id="API" />spectator<font id="Type">: boolean</font>{#spectator}
 
 > 默认值：false
 
 如果为真(true)，则玩家是一个幽灵，可以穿墙
-
----
 
 #### <font id="API" />enableJump<font id="Type">: boolean</font>{#enableJump}
 
@@ -130,15 +108,11 @@ import '/style.css'
 
 如果为假(false)，则不允许玩家二段跳跃
 
----
-
 #### <font id="API" />walkSpeed<font id="Type">: number</font>{#walkSpeed}
 
 > 默认值：0.22
 
 最大步行速度
-
----
 
 #### <font id="API" />runSpeed<font id="Type">: number</font>{#runSpeed}
 
@@ -146,15 +120,11 @@ import '/style.css'
 
 最大奔跑速度
 
----
-
 #### <font id="API" />runAcceleration<font id="Type">: number</font>{#runAcceleration}
 
 > 默认值：0.35
 
 奔跑加速度
-
----
 
 #### <font id="API" />jumpPower<font id="Type">: number</font>{#jumpPower}
 
@@ -162,15 +132,11 @@ import '/style.css'
 
 跳跃力度
 
----
-
 #### <font id="API" />jumpSpeedFactor<font id="Type">: number</font>{#jumpSpeedFactor}
 
 > 默认值：0.85
 
 跳跃速度
-
----
 
 #### <font id="API" />jumpAccelerationFactor<font id="Type">: number</font>{#jumpAccelerationFactor}
 
@@ -178,15 +144,11 @@ import '/style.css'
 
 跳跃加速率
 
----
-
 #### <font id="API" />doubleJumpPower<font id="Type">: number</font>{#doubleJumpPower}
 
 > 默认值：0.9
 
 二段跳力度
-
----
 
 #### <font id="API" />crouchSpeed<font id="Type">: number</font>{#crouchSpeed}
 
@@ -194,15 +156,11 @@ import '/style.css'
 
 蹲着走路的速度
 
----
-
 #### <font id="API" />crouchAcceleration<font id="Type">: number</font>{#crouchAcceleration}
 
 > 默认值：0.09
 
 蹲着走路的加速度
-
----
 
 #### <font id="API" />flySpeed<font id="Type">: number</font>{#flySpeed}
 
@@ -210,15 +168,11 @@ import '/style.css'
 
 最大飞行速度
 
----
-
 #### <font id="API" />flyAcceleration<font id="Type">: number</font>{#flyAcceleration}
 
 > 默认值：2
 
 飞行加速度
-
----
 
 #### <font id="API" />swimAcceleration<font id="Type">: number</font>{#swimAcceleration}
 
@@ -226,15 +180,11 @@ import '/style.css'
 
 游泳加速度
 
----
-
 #### <font id="API" />swimSpeed<font id="Type">: number</font>{#swimSpeed}
 
 > 默认值：0.4
 
 最大游泳速度
-
----
 
 #### <font id="API" />walkAcceleration<font id="Type">: number</font>{#walkAcceleration}
 
@@ -242,15 +192,11 @@ import '/style.css'
 
 步行加速度
 
----
-
 #### <font id="API" /><font id="ReadOnly">只读</font>moveState<font id="Type">: [GamePlayerMoveState](./input#GamePlayerMoveState)</font>{#moveState}
 
 > 默认值：GamePlayerMoveState.FALL
 
 玩家的运动状态
-
----
 
 #### <font id="API" /><font id="ReadOnly">只读</font>walkState<font id="Type">: [GamePlayerWalkState](./input#GamePlayerWalkState)</font>{#walkState}
 
@@ -258,15 +204,11 @@ import '/style.css'
 
 玩家的步行状态
 
----
-
 #### <font id="API" /><font id="ReadOnly">只读</font>cameraPitch<font id="Type">: number</font>{#cameraPitch}
 
 > 默认值：0
 
 玩家视角准心绕水平方向的旋转弧度
-
----
 
 #### <font id="API" /><font id="ReadOnly">只读</font>cameraYaw<font id="Type">: number</font>{#cameraYaw}
 
@@ -286,8 +228,6 @@ import '/style.css'
 | -------- | -------- | ---------- | -------- | ------------------------------ |
 | handler  | 是       |            | function | 监听到玩家按下按钮时的处理函数 |
 
----
-
 #### <font id="API" /><font id="Event">事件</font>onRelease(<font id="Type">handler:(event:[GameInputEvent](/GameWorld/input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onRelease}
 
 当玩家松开按钮时调用
@@ -297,8 +237,6 @@ import '/style.css'
 | **参数** | **必填** | **默认值** | **类型** | **说明**                       |
 | -------- | -------- | ---------- | -------- | ------------------------------ |
 | handler  | 是       |            | function | 监听到玩家松开按钮时的处理函数 |
-
----
 
 #### <font id="API" /><font id="Event">事件</font>onKeyDown(<font id="Type">handler:(event:[GameKeyBoardEvent](./input#GameKeyBoardEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onKeyDown}
 
@@ -310,8 +248,6 @@ import '/style.css'
 | -------- | -------- | ---------- | -------- | ------------------------------ |
 | handler  | 是       |            | function | 监听到玩家按下键盘时的处理函数 |
 
----
-
 #### <font id="API" /><font id="Event">事件</font>onKeyUp(<font id="Type">handler:(event:[GameKeyBoardEvent](./input#GameKeyBoardEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onKeyUp}
 
 当玩家松开键盘时调用
@@ -321,8 +257,6 @@ import '/style.css'
 | **参数** | **必填** | **默认值** | **类型** | **说明**                       |
 | -------- | -------- | ---------- | -------- | ------------------------------ |
 | handler  | 是       |            | function | 监听到玩家松开键盘时的处理函数 |
-
----
 
 #### <font id="API" />kick()<font id="Type">: void</font>{#kick}
 
@@ -370,8 +304,6 @@ import '/style.css'
 | JUMP        | 跳跃中   |
 | DOUBLE_JUMP | 二段跳中 |
 
----
-
 #### <font id="API" />GamePlayerWalkState {#GamePlayerWalkState}
 
 玩家的行走状态
@@ -382,8 +314,6 @@ import '/style.css'
 | CROUCH   | 下蹲行走 |
 | WALK     | 正常步行 |
 | RUN      | 奔跑     |
-
----
 
 #### <font id="API" />GameInputDirection{#GameInputDirection}
 
