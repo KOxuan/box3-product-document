@@ -4,7 +4,7 @@
 
 > 你在 UI 树里找节点，路径层级深、命名不统一、改了结构就全崩。每次都是：
 >
-> - “要拿到 `uiText_content1`，每次都得拼 `blackground/.../box/list/0/...` 这种长路径。”
+> - “要拿到 `content1`，每次都得拼 `blackground/.../box/list/0/...` 这种长路径。”
 > - “设计把 `panel` 挪进了 `container`，结果我所有字符串路径都要跟着改一遍。”
 > - “我只想直接拿到元素引用，不想维护深层级的字符串路径。”
 
@@ -25,7 +25,7 @@ const el = UiScreen.getAllScreen()
   .findChildByName("list")
   .findChildByName("0")
   .findChildByName("content")
-  .findChildByName("uiText_content1");
+  .findChildByName("content1");
 console.log(el?.name);
 
 // 现在（UI 索引）：按“屏幕名 + 节点名”强类型直达
@@ -88,7 +88,7 @@ import find from "@client/UiIndex";
 const idx = find("blackground");
 if (idx) {
   // 2) 直接通过强类型属性访问 UI 元素
-  // 实际路径：blackground/box/unit/list/0/uiText_content1
+  // 实际路径：blackground/box/unit/list/0/content1
   idx.uiText_content1; // 只需要写 uiText_content1，就可以访问到
   idx.uiImage_logo; // 同理
 }

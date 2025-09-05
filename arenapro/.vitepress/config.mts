@@ -145,6 +145,10 @@ export default defineConfig({
                 link: "/en/guide/06-advanced-topics/resources",
               },
               {
+                text: "Client Asset Management",
+                link: "/en/guide/06-advanced-topics/uploadResources",
+              },
+              {
                 text: "Type-Safe Asset Synchronization",
                 link: "/en/guide/06-advanced-topics/asset-synchronization",
               },
@@ -589,6 +593,10 @@ export default defineConfig({
               {
                 text: "国际化语言",
                 link: "/zh/guide/06-advanced-topics/i18n",
+              },
+              {
+                text: "客户端资源管理",
+                link: "/zh/guide/06-advanced-topics/uploadResources",
               },
             ],
           },
