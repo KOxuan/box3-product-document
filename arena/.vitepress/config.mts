@@ -426,16 +426,16 @@ export default defineConfig({
           { text: "【建筑方块】建筑师工具箱", link: "/plugIns/building" },
         ],
       },
-      {
-        text: "插件开发",
-        collapsed: false,
-        items: [
-          { text: "介绍", link: "/plugIns/code/introduction" },
-          { text: "开发基础", link: "/plugIns/code/basic" },
-          { text: "Core对象", link: "/plugIns/code/core" },
-          { text: "实战", link: "/plugIns/code/practice" },
-        ],
-      },
+      // {
+      //   text: "插件开发",
+      //   collapsed: false,
+      //   items: [
+      //     { text: "介绍", link: "/plugIns/code/introduction" },
+      //     { text: "开发基础", link: "/plugIns/code/basic" },
+      //     { text: "Core对象", link: "/plugIns/code/core" },
+      //     { text: "实战", link: "/plugIns/code/practice" },
+      //   ],
+      // },
       {
         text: "SEL联赛接入须知",
         collapsed: false,
@@ -453,7 +453,7 @@ export default defineConfig({
             link: "https://typescript.p6p.net/typescript-tutorial/intro.html",
           },
           {
-            text: "使用VSCode开发",
+            text: "使用VSCode开发游戏地图",
             link: "https://docs.dao3.fun/arenapro",
           },
         ],
