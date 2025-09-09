@@ -63,7 +63,7 @@ world.onPlayerJoin(({ entity }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" />getAnimations()<font id="Type">: [GameAnimation](/GameAnimation/)[]</font>{#getAnimations}
 

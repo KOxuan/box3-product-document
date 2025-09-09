@@ -57,7 +57,7 @@ world.onClick(({ entity }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" /><font id="Event">事件</font>onPress(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onPress}
 
@@ -109,7 +109,7 @@ world.onPress(({ button, raycast }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" /><font id="Event">事件</font>onRelease(<font id="Type">handler:(event:[GameInputEvent](./input#GameInputEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onRelease}
 
@@ -199,7 +199,7 @@ function fakeObject(player, object) {
 }
 ```
 
-## :::
+:::
 
 #### <font id="API" /><font id="Event">事件</font>onEntitySeparate(<font id="Type">handler:(event:[GameEntityContactEvent](./input#GameEntityContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onEntitySeparate}
 
@@ -263,7 +263,7 @@ world.onEntityContact(({ entity, other }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" /><font id="Event">事件</font>onVoxelContact(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelContact}
 
@@ -322,7 +322,7 @@ world.onEntityContact(({ entity, other }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" /><font id="Event">事件</font>onVoxelSeparate(<font id="Type">handler:(event:[GameVoxelContactEvent](./input#GameVoxelContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onVoxelSeparate}
 
@@ -354,7 +354,7 @@ world.onVoxelSeparate(({ entity, voxel }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" /><font id="Event">事件</font>onFluidEnter(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidEnter}
 
@@ -383,7 +383,7 @@ world.onFluidEnter(({ entity, voxel }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" /><font id="Event">事件</font>onFluidLeave(<font id="Type">handler:(event:[GameFluidContactEvent](./input#GameFluidContactEvent))=>void</font>)<font id="Type">: [GameEventHandlerToken](/GameEventHandlerToken/)</font>{#onFluidLeave}
 

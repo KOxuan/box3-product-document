@@ -31,7 +31,7 @@ world.onPlayerJoin(({ entity }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" /><font id="ReadOnly">只读</font>userId<font id="Type">: string</font> {#userId}
 

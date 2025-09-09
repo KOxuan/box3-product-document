@@ -306,7 +306,7 @@ function createBoard(originX, originY, originZ, size) {
 createBoard(32, 9, 32, 19);
 ```
 
-## :::
+:::
 
 #### <font id="API" />setVoxelId(<font id="Type">x:number,y:number,z:number,voxel:number</font>)<font id="Type">: number</font>{#setVoxelId}
 

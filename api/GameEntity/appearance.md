@@ -30,7 +30,7 @@ world.onPlayerJoin(async ({ entity }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" />position<font id="Type">: [GameVector3](/GameVector3/)</font>{#position}
 

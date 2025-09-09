@@ -75,7 +75,7 @@ world.onPlayerJoin(({ entity }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" />skinInvisible<font id="Type">: [GameSkinInvisible](./appearance#GameSkinInvisible)</font>{#skinInvisible}
 
@@ -146,7 +146,7 @@ world.onPlayerJoin(({ entity }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" />removeWearable(<font id="Type">config:[GameWearable](./appearance#GameWearable)</font>)<font id="Type">: void</font>{#removeWearable}
 
@@ -182,7 +182,7 @@ world.onFluidLeave(({ entity }) => {
 });
 ```
 
-## :::
+:::
 
 #### <font id="API" />wearables(<font id="Type">bodyPart:[GameBodyPart](./appearance#GameBodyPart)</font>)<font id="Type">: [GameWearable](./appearance#GameWearable)[]</font>{#wearables}
 
