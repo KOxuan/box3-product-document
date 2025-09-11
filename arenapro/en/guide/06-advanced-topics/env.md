@@ -44,19 +44,9 @@ This is because the ArenaPro server receives the `.js` file that was **"built" o
 
 The final uploaded code no longer contains references to `process.env`; it has been directly replaced with the actual value. This is the only correct way to use environment variables in ArenaPro.
 
-## Three Steps to Make Your Project "Smart"
+## Quick Start: Using `.env`
 
-#### Step 1: Install the "Build-Time" Environment Variable Tool
-
-This is a tool needed only during development, so we install it as a "dev dependency" (`--save-dev`).
-
-```bash
-npm install dotenv-webpack --save-dev
-```
-
-#### Step 2: Create Your "Secret Configuration File" `.env`
-
-In your project root directory (at the same level as `package.json`), create a file named `.env`. This file is specifically for storing your personal configurations and keys. **This file should never be committed to a Git repository**.
+In your project root (at the same level as `package.json`), there is a file named `.env`. This file stores your personal configuration and secrets. **This file should never be committed to a Git repository.**
 
 ```ini
 # .env file
@@ -65,31 +55,10 @@ ENABLE_CHRISTMAS_EVENT=true
 WEATHER_API_KEY="abc-123-xyz-a-very-secret-key"
 ```
 
-#### Step 3: Tell the "Build Tool" to Read This Secret Configuration
-
-If you don't already have a `webpack.config.js` file in your project root, create one. Then, add the tool we just installed, as shown below.
-
-```javascript
-// webpack.config.js
-const Dotenv = require("dotenv-webpack");
-
-module.exports = {
-  // ... you might have other webpack configurations ...
-  plugins: [
-    // Instantiate the plugin
-    new Dotenv({
-      // path tells the plugin where your .env file is
-      path: "./.env",
-    }),
-  ],
-  // ... other configurations ...
-};
-```
-
-After these three steps, your project is already "smart" and "secure" enough! Now, you can write your code like this:
+After setting up your `.env` file, your project is already "smart" and "secure" enough! Now, you can write your code like this:
 
 ```typescript
-// server/src/eventManager.ts
+// server/src/App.ts
 
 // Use the feature toggle
 if (process.env.ENABLE_CHRISTMAS_EVENT === "true") {
@@ -110,6 +79,24 @@ if (process.env.ENABLE_CHRISTMAS_EVENT === "true") {
 ```
 
 When you need to release a regular version **without** the Christmas event, you just need to change `ENABLE_CHRISTMAS_EVENT` to `false` in your `.env` file before release, then rebuild and upload. **You don't need to change any business logic code at all**. Your key will also never appear in the code or in a public repository.
+
+## Type Safety: Make Environment Variables and Flags Safer
+
+The simplest and most practical approach is to create an `env.d.ts` file at the project root and declare the environment variables you plan to use. This immediately provides editor IntelliSense, typo checking, and constrained value types.
+
+Note that environment variable values must be of type `string`. Do not annotate them as non-strings (e.g., do not write `readonly ENABLE_CHRISTMAS_EVENT: boolean`).
+
+```typescript
+// env.d.ts (at project root)
+interface ProcessEnv {
+  readonly WEATHER_API_KEY: string; // required, string type
+  readonly ENABLE_CHRISTMAS_EVENT: "true" | "false"; // only allow "true" | "false" strings
+  readonly EVENT_MODE?: "off" | "beta" | "on"; // optional, limited to three values
+  readonly ENABLE_NEW_TUTORIAL?: "true" | "false"; // optional, limited to "true" | "false"
+}
+```
+
+Important: `env.d.ts` only provides type hints and constraints at edit time. On ArenaPro, runtime code still relies on the framework's built-in build-time replacement. Make sure matching variables are defined in `.env`/`.env.example` to avoid `process is not defined` errors.
 
 ## 💥 **Security Notice**: How to Avoid the Fatal `process is not defined` Error
 

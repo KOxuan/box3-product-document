@@ -1,230 +1,149 @@
-# 国际化语言
+# 🔧 构建配置优化指南
 
-你的的游戏《星际矿工》在平台上意外走红——原本只是面向中国玩家的小众作品，却突然涌入了来自世界各地的玩家。很多人说：
+在神岛地图开发中，创作者经常需要为扩展地图的不同副图配置不同的代码文件。虽然部分代码可以复用，但每个副图可能有其独特的逻辑需求，因此需要为每个副图配置不同的入口文件。
 
-> "游戏很棒，如果适配了英语那就更好了！" —— 英国玩家。
-> "太可惜了，我都玩不懂，适配俄语就好了。" —— 俄罗斯玩家。
-> ...
+为了解决这一问题，我们开发了构建配置优化功能，允许创作者灵活地配置不同的入口文件和输出文件名。
 
-作为唯一的开发者，我慌了——难道要为每种语言都硬编码一套 UI？这时，我发现了 i18next 这个"游戏语言魔法师"...
+## ✨ 功能优势
 
-## 第 1 关：配置语言装备
+<table>
+  <tr>
+    <th width="150">优势</th>
+    <th>说明</th>
+  </tr>
+  <tr>
+    <td><b>🔄 灵活性</b></td>
+    <td>支持为不同副图配置独立的入口文件</td>
+  </tr>
+  <tr>
+    <td><b>📋 可维护性</b></td>
+    <td>清晰的构建配置结构，便于后期维护</td>
+  </tr>
+  <tr>
+    <td><b>⚡ 高效性</b></td>
+    <td>简化构建流程，提高开发效率</td>
+  </tr>
+</table>
 
-就像游戏角色需要装备一样，我们先给项目装上 i18next：
+## 📝 配置文件数据
 
-```typescript
-// 安装装备
-yarn add i18next i18next-http-backend
+在 `dao3.config.json` 文件中，有一个 `outputAndUpdate` 属性，它是一个数组，支持填写多个对象或字符串。
 
-// 游戏语言初始化装备
-import i18n from 'i18next';
-import Backend from 'i18next-http-backend';
+### 🔍 使用数组的好处
 
-i18n.use(Backend).init({
-  lng: navigator.language || 'en', // 自动检测玩家系统语言
-  fallbackLng: 'en',
-  ns: ['ui', 'dialogue', 'achievements'], // 游戏的不同文本模块
-  backend: {
-    loadPath: '/locales/{{lng}}/{{ns}}.json', // 语言包存放位置
-  }
-});
-```
+| 优势            | 说明                                                                         |
+| --------------- | ---------------------------------------------------------------------------- |
+| **📊 灵活性**   | 数组结构允许我们配置多个输出文件数据，为不同的构建需求提供存储空间           |
+| **🔄 可替换性** | 每次构建时，系统只会读取数组的第一项数据，便于创作者在需要时快速替换构建配置 |
 
-现在，游戏会根据玩家电脑的语言设置自动选择语言包，就像智能 NPC 能自动切换对话语言一样神奇！
+:::tip
+**💡 提示**：对数组顺序进行调整是切换不同构建配置的最简单方法。将需要使用的配置放在数组的第一位即可。
+:::
 
-## 第 2 关：设计多语言道具箱
-
-在`public/locales`目录下创建语言包，就像准备不同颜色的魔法符文：
-
-```
-/locales
-  /en
-    ui.json       # 英文UI文本
-    dialogue.json # 英文对话
-  /zh
-    ui.json       # 中文UI文本
-    dialogue.json # 中文对话
-  /ja
-    ui.json       # 日文UI文本
-    dialogue.json # 日文对话
-```
-
-示例中文 UI 文本 (`zh/ui.json`)：
+### 📋 支持的格式
 
 ```json
 {
-  "menu": {
-    "startGame": "开始采矿之旅",
-    "settings": "矿工设置",
-    "exit": "返回地球"
-  },
-  "hud": {
-    "oxygen": "氧气: {{value}}%",
-    "minerals": "矿物: {{count}}块"
-  }
-}
-```
-
-英文版 (`en/ui.json`) 保持相同结构但内容不同，就像不同语言的游戏手册。
-
-## 第 3 关：在游戏中使用翻译
-
-### 场景 1：主菜单本地化
-
-```typescript
-// 创建开始按钮
-const startBtn = document.createElement("button");
-startBtn.textContent = i18n.t("ui:menu.startGame");
-// 显示为"开始采矿之旅"或"Start Mining Journey"
-
-// 氧气显示更新
-function updateHUD() {
-  oxygenDisplay.textContent = i18n.t("ui:hud.oxygen", {
-    value: player.oxygenLevel,
-  });
-}
-```
-
-### 场景 2：剧情对话系统
-
-```typescript
-// 加载对话文本
-i18n.loadNamespaces("dialogue").then(() => {
-  showDialogue(
-    i18n.t("dialogue:chapter1.alien", {
-      playerName: saveData.name,
-      mineral: "氪晶矿",
-    })
-  );
-});
-```
-
-对应对话文件 (`zh/dialogue.json`)：
-
-```json
-{
-  "chapter1": {
-    "alien": "{{playerName}}！小心那些{{mineral}}会爆炸！",
-    "choices": {
-      "mineAnyway": "继续采矿（冒险）",
-      "runAway": "赶紧逃跑（明智）"
+  "ArenaPro": {
+    "file": {
+      "outputAndUpdate": [
+        "bundle.js", // 字符串格式，指定输出文件名称。构建时读取数组第一项作为当前构建的数据。【HMR编译不会读取字符串格式】
+        {
+          // 对象格式，可同时配置输出文件名称、文件入口、服务端入口、客户端入口及描述信息。
+          "name": "bundle2.js", // 输出文件名称
+          "serverEntry": "src/App2.ts", // 服务端入口文件
+          "clientEntry": "src/clientApp2.ts", // 客户端入口文件
+          "description": "第二个代码模块示例，可根据实际需求更改。" // 描述信息
+        }
+      ]
+      // 其他配置...
     }
   }
 }
 ```
 
-## 第 4 关：玩家语言切换功能
+## 🚀 完整编译构建效果
 
-在游戏设置中添加语言选择器，就像《赛博朋克 2077》的语音切换：
-
-```typescript
-// 语言切换按钮事件
-languageButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    i18n.changeLanguage(btn.dataset.lang).then(() => {
-      // 重载游戏界面文字
-      reloadGameText();
-      // 显示提示
-      showToast(i18n.t("ui:languageChanged"));
-    });
-  });
-});
-```
-
-对应的提示文本在所有语言包中都要存在：
+### 📘 配置示例一
 
 ```json
-// en/ui.json
 {
-  "languageChanged": "Language changed!"
-}
-
-// zh/ui.json
-{
-  "languageChanged": "语言已切换！"
+  "ArenaPro": {
+    "file": {
+      "outputAndUpdate": [
+        "bundle.js",
+        {
+          "name": "bundle2.js",
+          "serverEntry": "src/App2.ts",
+          "clientEntry": "src/clientApp2.ts",
+          "description": "第二个代码模块示例，可根据实际需求更改。"
+        }
+      ]
+      // 其他配置...
+    }
+  }
 }
 ```
 
-## 第 5 关：处理特殊游戏文本
+<div style="border-left: 4px solid #42b983; padding-left: 15px; margin: 15px 0;">
+<p><strong>📤 构建输出：</strong></p>
+<p>在此配置下，构建输出的文件名称为 <code>_server_bundle.js</code> 和 <code>_client_bundle.js</code>，并会上传到神岛编辑器中。</p>
+</div>
 
-### 复数系统 - 战利品统计
-
-```typescript
-// 英文需要复数形式
-// en/ui.json
-{
-  "loot": "You got {{count}} gem",
-  "loot_plural": "You got {{count}} gems"
-}
-
-// 中文不需要复数
-// zh/ui.json
-{
-  "loot": "获得了{{count}}块宝石"
-}
-
-// 使用方式
-i18n.t('ui:loot', { count: player.gems });
-```
-
-### 性别相关文本 - NPC 对话
+### 📙 配置示例二
 
 ```json
-// dialogue.json
 {
-  "npcGreeting": "你好，{{title}}！",
-  "npcGreeting_male": "先生你好！",
-  "npcGreeting_female": "女士你好！"
+  "ArenaPro": {
+    "file": {
+      "outputAndUpdate": [
+        {
+          "name": "bundle2.js",
+          "serverEntry": "src/App2.ts",
+          "clientEntry": "src/clientApp2.ts",
+          "description": "第二个代码模块示例，可根据实际需求更改。"
+        },
+        "bundle.js"
+      ]
+      // 其他配置...
+    }
+  }
 }
 ```
 
-```typescript
-i18n.t("dialogue:npcGreeting", {
-  title: "冒险者",
-  context: player.gender, // 'male' 或 'female'
-});
-```
+<div style="border-left: 4px solid #42b983; padding-left: 15px; margin: 15px 0;">
+<p><strong>📤 构建输出：</strong></p>
+<p>在此配置下，服务端入口文件变为 <code>src/App2.ts</code>，客户端入口文件变为 <code>src/clientApp2.ts</code>，因此构建输出的文件名称为 <code>_server_bundle2.js</code> 和 <code>_client_bundle2.js</code>，并会上传到神岛编辑器中。</p>
+</div>
 
-## 终极 Boss 战：动态内容本地化
+## 🔥 HMR 编译构建效果
 
-当玩家发现随机生成的外星遗迹时，我们需要组合多个翻译片段：
+<div style="padding: 15px;border-radius: 5px; margin: 15px 0;">
+<p><strong>📚 详细说明：</strong>请参考 <a href="/guide/four/hmr.html#%E4%BB%A3%E7%A0%81%E5%88%86%E7%A6%BB-%E5%A4%9A%E5%85%A5%E5%8F%A3%E6%96%87%E4%BB%B6">代码分离（多入口文件）</a> 章节了解更多关于热模块替换(HMR)编译构建的信息。</p>
+</div>
 
-```typescript
-// 生成如："你发现了远古[蜥蜴人]的[祭祀神殿]"
-const discoveryText = i18n.t('discovery.prefix') +
-  i18n.t(`species.${ruin.species}`) +
-  i18n.t('discovery.connector') +
-  i18n.t(`structure.${ruin.type}`);
+:::warning
+**⚠️ 注意**：HMR 编译不会读取字符串格式的配置，只会处理对象格式的配置项。确保在使用 HMR 功能时，你的配置采用对象格式。
+:::
 
-// 各语言文件需要保持相同结构但不同连接词
-// zh/discovery.json
-{
-  "prefix": "你发现了远古",
-  "connector": "的"
-}
+## 📋 使用说明
 
-// en/discovery.json
-{
-  "prefix": "You discovered an ancient ",
-  "connector": "'s "
-}
-```
+最后，创作者只需在不同副图下的 `index.js` 或 `clientIndex.js` 文件中引入对应的构建输出文件即可。这一功能极大地提高了开发过程中的灵活性和效率，使得代码管理更加清晰和有序。
 
-## 通关奖励：玩家好评如潮
+<div style="text-align: center; margin: 20px 0; padding: 10px; border-radius: 5px;">
+  <img src="/QQ20241130-103933.png" alt="构建配置使用示例" width="700" />
+  <p style="text-align: center; font-style: italic; margin-top: 10px;">图1: 在编辑器中使用构建输出文件</p>
+</div>
 
-多语言支持上线后，游戏评价变成了：
+## 📌 最佳实践
 
-> "现在可以愉快玩耍了！谢谢开发者！" —— 中文玩家  
-> "Спасибо за русский язык!" —— 俄罗斯玩家  
-> "日本語対応最高です！" —— 日本玩家
+| 场景              | 推荐做法                                                   |
+| ----------------- | ---------------------------------------------------------- |
+| **🗺️ 多副图开发** | 为每个副图创建独立的入口文件，并在配置中定义清晰的文件名称 |
+| **🔄 频繁切换**   | 通过调整数组顺序来切换活跃配置，而不是修改配置内容         |
+| **📝 团队协作**   | 为每个配置项添加详细的描述信息，便于团队成员理解           |
+| **🔍 调试优化**   | 在开发阶段使用 HMR 功能，提高调试效率                      |
 
-Steam 全球销量提升了 300%，而所有魔法般的多语言功能，只用了不到 200 行代码实现！
-
-## 开发者笔记：i18next 在游戏中的优势
-
-1. **按需加载**：不会一次性加载所有语言包拖慢游戏启动
-2. **热切换**：像更换游戏皮肤一样实时切换语言
-3. **结构清晰**：不同文本类型(UI/对话/成就)分命名空间管理
-4. **社区支持**：大部分翻译平台都支持 i18next 格式
-
-现在，你的游戏也准备好征服全球玩家了！记得在 Steam 语言支持列表里骄傲地写上："支持 20+语言" 🌍🎮
+:::tip
+**💡 技巧**：创建一个配置模板文件作为参考，可以帮助团队成员快速理解和应用正确的构建配置格式。
+:::
