@@ -18,10 +18,12 @@
 - [**管理环境变量**](./env.md)
 - [**管理多套代码入口 (分包)**](./bulidName.md)
 - [**自定义构建流程 (Webpack)**](./webpackPlugins.md)
+- [**在 VS Code 中使用工作区开发**](./vscode-workspace.md)
 
 ### 生态与分发
 
 - [**安全地使用外部 NPM 包**](./npmPackage.md)
+- [**在项目中使用本地 NPM 包**](./local-npm-package.md)
 - [**创建本地共享包 (Monorepo)**](./monorepo-workflow.md)
 - [**投稿社区：发布 NPM 包**](./contributing-to-dao3fun.md)
 - [**导出代码到 Arena**](./toArena.md)

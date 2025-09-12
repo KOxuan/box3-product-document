@@ -149,6 +149,10 @@ export default defineConfig({
                 link: "/en/guide/06-advanced-topics/uploadResources",
               },
               {
+                text: "Develop with VS Code Workspaces",
+                link: "/en/guide/06-advanced-topics/vscode-workspace",
+              },
+              {
                 text: "Type-Safe Asset Synchronization",
                 link: "/en/guide/06-advanced-topics/asset-synchronization",
               },
@@ -181,6 +185,10 @@ export default defineConfig({
               {
                 text: "Using External NPM Packages Safely",
                 link: "/en/guide/06-advanced-topics/npmPackage",
+              },
+              {
+                text: "Using Local Private NPM Packages in Your Team",
+                link: "/en/guide/06-advanced-topics/local-npm-package",
               },
               {
                 text: "📦 Publishing Your First NPM Package",
@@ -598,6 +606,10 @@ export default defineConfig({
                 text: "客户端资源管理",
                 link: "/zh/guide/06-advanced-topics/uploadResources",
               },
+              {
+                text: "在 VS Code 中使用工作区开发",
+                link: "/zh/guide/06-advanced-topics/vscode-workspace",
+              },
             ],
           },
           {
@@ -608,10 +620,10 @@ export default defineConfig({
                 text: "管理多套代码入口 (分包)",
                 link: "/zh/guide/06-advanced-topics/bulidName",
               },
-              {
-                text: "高级工作流：使用 Monorepo",
-                link: "/zh/guide/06-advanced-topics/monorepo-workflow",
-              },
+              // {
+              //   text: "高级工作流：使用 Monorepo",
+              //   link: "/zh/guide/06-advanced-topics/monorepo-workflow",
+              // },
               {
                 text: "管理环境变量",
                 link: "/zh/guide/06-advanced-topics/env",
@@ -620,9 +632,14 @@ export default defineConfig({
                 text: "自定义构建流程 (Webpack)",
                 link: "/zh/guide/06-advanced-topics/webpackPlugins",
               },
+
               {
                 text: "安全地使用外部 NPM 包",
                 link: "/zh/guide/06-advanced-topics/npmPackage",
+              },
+              {
+                text: "在团队中使用本地私有 NPM 包",
+                link: "/zh/guide/06-advanced-topics/local-npm-package",
               },
               {
                 text: "📦 发布你的第一个 NPM 包",
