@@ -1,46 +1,22 @@
 # 🔌 MCP Plugin Usage Guide
 
-**Model Context Protocol (MCP)** is a communication framework designed specifically for large language models to establish a standardized information exchange mechanism between the model and the external environment. It provides the following core functions:
+A quick story: you keep hopping between VS Code logs, pasting API keys, and authorizing in a browser—your flow breaks. After enabling MCP, the IDE agent “knows how to use tools”: it can read/write your project and talk to external services. Common steps (auth, build, upload, analytics) chain together as a single instruction and development feels smooth again.
 
-<table>
-  <tr>
-    <th width="180">Function</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td><b>🧠 Context Management</b></td>
-    <td>Efficiently manages and transmits the context information required by the model</td>
-  </tr>
-  <tr>
-    <td><b>🔄 Capability Expansion</b></td>
-    <td>Allows for flexible expansion of model capabilities through standardized interfaces</td>
-  </tr>
-  <tr>
-    <td><b>🔒 Consistency Guarantee</b></td>
-    <td>Ensures the reliability and stability of communication between the model and the external environment</td>
-  </tr>
-  <tr>
-    <td><b>🛠️ Tool Integration</b></td>
-    <td>Supports seamless integration with various development tools and services</td>
-  </tr>
-</table>
+What is MCP? In one sentence: a standard plug between LLMs and the outside world.
+
+- 🧠 Context management: feed task-critical context to AI precisely and safely.
+- 🔄 Capability expansion: attach new tools via a unified protocol anytime.
+- 🔒 Consistency: stable formats, error handling, and state management.
+- 🛠️ Tool integration: seamless with IDEs, analytics services, and open APIs.
 
 ## ⚙️ Configuration and Usage
 
 ### 🔧 Supported Development Tools
 
-<div style="border-left: 4px solid #3498db; padding-left: 15px; margin: 15px 0;">
-<p><strong>🔍 Compatible Tools:</strong> Several mainstream development tools now fully support the MCP protocol:</p>
-<ul>
-  <li>VS Code</li>
-  <li>Trae</li>
-  <li>Claude</li>
-  <li>Cursor</li>
-  <li>Windsurf</li>
-  <li>Cline</li>
-  <li>Cherry Studio, etc.</li>
-</ul>
-</div>
+Tools that support MCP include:
+- VS Code
+- Trae / Claude / Cursor
+- Windsurf / Cline / Cherry Studio, etc.
 
 ### 📝 VS Code Configuration Steps
 
@@ -70,14 +46,14 @@
 
 ### 🚀 Starting the Service
 
-After completing the configuration, the interface will be displayed as follows:
+After configuration, open the MCP panel and you should see a screen like this. Click the Run button above the configuration item and wait until it shows Running:
 
 <div style="text-align: center; margin: 20px 0; padding: 10px; border-radius: 5px;">
   <img src="/QQ20250412-221652.png" alt="MCP Configuration Interface" width="700" />
   <p style="text-align: center; font-style: italic; margin-top: 10px;">Figure 1: MCP Configuration Interface</p>
 </div>
 
-Click the run button above the configuration button and wait for the service to start before you can begin using it.
+Once the service is ready, you can invoke MCP tools directly inside the IDE.
 
 ## 💬 Feature Usage
 
@@ -193,7 +169,6 @@ Combined with the Box3 map data analysis tool, the following automated tasks can
       • Confirm firewall settings
     </td>
   </tr>
-  
 </table>
 
 :::warning
@@ -245,6 +220,10 @@ Combined with the Box3 map data analysis tool, the following automated tasks can
 | ------------------------------ | -------------------- |
 | `component_showComponentStats` | Show component stats |
 
-### 💬 Chat 吉 PT Tools
+### 💬 Chat Ji PT Tools
 
-| Command | Description |
+| Command                      | Description                            |
+| ---------------------------- | -------------------------------------- |
+| `chatjpt_onlyKnowledgeBase` | Query the Box3 API knowledge base only |
+
+For a dedicated UI and usage guide, see: [Only Knowledge Base Mode (onlyKnowledgeBase)](./chat-only-knowledgebase.md).

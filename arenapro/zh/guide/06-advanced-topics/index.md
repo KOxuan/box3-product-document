@@ -9,6 +9,7 @@
 ### 代码质量与数据管理
 
 - [**专业地管理游戏数据 (JSON)**](./json.md)
+- [**用 Zod 做运行时校验（NPM 示例）**](./npm-zod-runtime-validation.md)
 - [**可视化你的代码结构**](./nodeGraph.md)
 
 ### 资源与构建
@@ -23,6 +24,9 @@
 ### 生态与分发
 
 - [**安全地使用外部 NPM 包**](./npmPackage.md)
+- [**gl-matrix 向量/矩阵/四元数实战**](./gl-matrix.md)
+- [**simplex-noise 噪声在地形/资源生成中的实战**](./simplex-noise.md)
+- [**pathfinding + rbush：寻路与空间加速**](./pathfinding-rbush.md)
 - [**在项目中使用本地 NPM 包**](./local-npm-package.md)
 - [**创建本地共享包 (Monorepo)**](./monorepo-workflow.md)
 - [**投稿社区：发布 NPM 包**](./contributing-to-dao3fun.md)

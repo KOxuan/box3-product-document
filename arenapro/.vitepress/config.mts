@@ -430,9 +430,15 @@ export default defineConfig({
             ],
           },
           {
-            text: "Introduction to MCP",
+            text: "MCP Tools",
             collapsed: false,
-            items: [{ text: "MCP Introduction", link: "/en/mcp/" }],
+            items: [
+              { text: "MCP Introduction", link: "/en/mcp/" },
+              {
+                text: "Only Knowledge Base Mode",
+                link: "/en/mcp/chat-only-knowledgebase",
+              },
+            ],
           },
           {
             text: "Community",
@@ -566,6 +572,7 @@ export default defineConfig({
               },
             ],
           },
+
           {
             text: "功能指南",
             collapsed: false,
@@ -582,10 +589,7 @@ export default defineConfig({
                 text: "专业地管理游戏数据 (JSON)",
                 link: "/zh/guide/06-advanced-topics/json",
               },
-              {
-                text: "引入自动化测试",
-                link: "/zh/guide/06-advanced-topics/automated-testing",
-              },
+
               {
                 text: "可视化你的代码结构",
                 link: "/zh/guide/06-advanced-topics/nodeGraph",
@@ -632,7 +636,16 @@ export default defineConfig({
                 text: "自定义构建流程 (Webpack)",
                 link: "/zh/guide/06-advanced-topics/webpackPlugins",
               },
-
+              {
+                text: "导出代码到 Arena",
+                link: "/zh/guide/06-advanced-topics/toArena",
+              },
+            ],
+          },
+          {
+            text: "NPM包",
+            collapsed: false,
+            items: [
               {
                 text: "安全地使用外部 NPM 包",
                 link: "/zh/guide/06-advanced-topics/npmPackage",
@@ -641,17 +654,44 @@ export default defineConfig({
                 text: "在团队中使用本地私有 NPM 包",
                 link: "/zh/guide/06-advanced-topics/local-npm-package",
               },
+
               {
-                text: "📦 发布你的第一个 NPM 包",
-                link: "/zh/guide/07-publishing/createNPMProject",
+                text: "制作自己的NPM包",
+                collapsed: false,
+                items: [
+                  {
+                    text: "发布你的第一个 NPM 包",
+                    link: "/zh/guide/07-publishing/createNPMProject",
+                  },
+                  {
+                    text: "投稿社区：发布NPM包",
+                    link: "/zh/guide/06-advanced-topics/contributing-to-dao3fun",
+                  },
+                ],
               },
               {
-                text: "投稿社区：发布NPM包",
-                link: "/zh/guide/06-advanced-topics/contributing-to-dao3fun",
+                text: "用 Zod 做 JavaScript 运行时校验",
+                link: "/zh/guide/06-advanced-topics/npm-zod-runtime-validation",
               },
               {
-                text: "导出代码到 Arena",
-                link: "/zh/guide/06-advanced-topics/toArena",
+                text: "用 jest 引入自动化测试",
+                link: "/zh/guide/06-advanced-topics/automated-testing",
+              },
+              {
+                text: "使用 Remeda（类型友好的工具库）",
+                link: "/zh/guide/06-advanced-topics/remeda",
+              },
+              {
+                text: "gl-matrix 向量/矩阵/四元数实战",
+                link: "/zh/guide/06-advanced-topics/gl-matrix",
+              },
+              {
+                text: "simplex-noise 噪声在地形/资源生成中的实战",
+                link: "/zh/guide/06-advanced-topics/simplex-noise",
+              },
+              {
+                text: "pathfinding + rbush：寻路与空间加速",
+                link: "/zh/guide/06-advanced-topics/pathfinding-rbush",
               },
             ],
           },
@@ -875,9 +915,15 @@ export default defineConfig({
             ],
           },
           {
-            text: "深入 MCP",
+            text: "MCP工具",
             collapsed: false,
-            items: [{ text: "MCP 介绍", link: "/zh/mcp/" }],
+            items: [
+              { text: "插件MCP", link: "/zh/mcp/" },
+              {
+                text: "查询神岛知识库",
+                link: "/zh/mcp/chat-only-knowledgebase",
+              },
+            ],
           },
         ],
         docFooter: {

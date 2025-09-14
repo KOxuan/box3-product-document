@@ -1,48 +1,69 @@
 # 🔌 插件 MCP 使用指南
 
-**模型上下文协议** (Model Context Protocol, MCP) 是一种专为大型语言模型设计的通信框架，用于在模型与外部环境之间建立标准化的信息交换机制。它提供以下核心功能：
+一个小故事：你在 VS Code 里反复搜 log、粘 API Key、切浏览器做授权，来回切换打断思路。后来启用了 MCP：IDE 里的 Agent 直接“会用工具”，既能读写你的项目、也能跟外部服务对话，常用操作（查账号、构建、上传、看数据）一条指令串起来，开发节奏顺了很多。
 
-<table>
-  <tr>
-    <th width="180">功能</th>
-    <th>说明</th>
-  </tr>
-  <tr>
-    <td><b>🧠 上下文管理</b></td>
-    <td>高效管理和传递模型所需的上下文信息</td>
-  </tr>
-  <tr>
-    <td><b>🔄 能力扩展</b></td>
-    <td>通过标准化接口实现模型能力的灵活扩展</td>
-  </tr>
-  <tr>
-    <td><b>🔒 一致性保证</b></td>
-    <td>确保模型与外部环境之间的通信可靠性和稳定性</td>
-  </tr>
-  <tr>
-    <td><b>🛠️ 工具集成</b></td>
-    <td>支持与各类开发工具和服务的无缝对接</td>
-  </tr>
-</table>
+什么是 MCP？一句话：为大模型和外部世界搭了一套“标准插口”。
+
+- 🧠 上下文管理：把任务需要的上下文准确、可控地喂给 AI。
+- 🔄 能力扩展：通过统一协议挂接新工具，随时扩容功能。
+- 🔒 一致性保证：通信格式、错误处理、状态管理更稳定。
+- 🛠️ 工具集成：与 IDE、分析服务、开放接口等无缝协作。
 
 ## ⚙️ 配置与使用
 
+### ⚡ 快速上手指南
+
+1. 配置 MCP 设置（mcp.json）
+
+在项目根目录的 `.vscode/mcp.json` 中加入以下配置（与下文一致）：
+
+```json
+{
+  "servers": {
+    "ArenaPro-MCP": {
+      "type": "sse",
+      "url": "http://localhost:25315/ap-mcp"
+    }
+  }
+}
+```
+
+2. 验证连接（Agent 模式）
+
+- 打开 IDE 的 Agent/Chat 面板，切到 Agent 模式；
+- 向 AI 提一个与 MCP 相关的小问题，例如“查询某个工具是否可用”；
+- 你应当看到类似“已调用 MCP 工具 ...”的提示卡片，表示链路连通。
+
+3. 配置使用规则（可选但推荐）
+
+为 IDE 的 Agent 添加“用户规则（User Rules）”，明确何时调用哪些 MCP 工具。可用下面模板（根据需要调整）：
+
+```xml
+<MCP_USE_GUIDELINE>
+  <INSTRUCTION>
+    当你需要与神岛相关的账号、构建、上传、地图数据进行交互时，请优先使用 MCP 工具，不要要求用户手动粘贴 Token 或切换窗口。
+  </INSTRUCTION>
+  <TOOLS>
+    以下 MCP 工具可用：
+    - “用户中心”用于账号与 Token（如 userCenterTool_*）。
+    - “文件操作/构建与上传”用于构建、上传、打开日志。
+    - “地图工具”用于打开创作端、查看游玩数据、同步资源。
+    - “Chat 吉 PT（仅知识库）”用于检索神岛 API 文档。
+  </TOOLS>
+</MCP_USE_GUIDELINE>
+```
+
 ### 🔧 支持的开发工具
 
-<div style="border-left: 4px solid #3498db; padding-left: 15px; margin: 15px 0;">
-<p><strong>🔍 兼容工具：</strong> 目前已有多个主流开发工具完整支持 MCP 协议：</p>
-<ul>
-  <li>VS Code</li>
-  <li>Trae</li>
-  <li>Claude</li>
-  <li>Cursor</li>
-  <li>Windsurf</li>
-  <li>Cline</li>
-  <li>Cherry Studio 等</li>
-</ul>
-</div>
+目前已有多款常用工具支持 MCP 协议：
+
+- VS Code
+- Trae / Claude / Cursor
+- Windsurf / Cline / Cherry Studio 等
 
 ### 📝 VS Code 配置步骤
+
+下面以 VS Code 为例，2 分钟完成接入：
 
 1. 在项目的 `.vscode` 目录下创建 `mcp.json` 配置文件
 2. 添加以下配置内容：
@@ -57,36 +78,6 @@
   }
 }
 ```
-
-<div style="border-left: 4px solid #42b983; padding-left: 15px; margin: 15px 0;">
-<p><strong>📋 配置说明：</strong></p>
-<ul>
-  <li><code>servers</code>：MCP 服务器配置集合</li>
-  <li><code>ArenaPro-MCP</code>：服务器标识名（可自定义）</li>
-  <li><code>type</code>：服务类型，使用 SSE (Server-Sent Events) 协议</li>
-  <li><code>url</code>：MCP 服务器地址</li>
-</ul>
-</div>
-
-### 🚀 启动服务
-
-完成配置后，界面将显示如下：
-
-<div style="text-align: center; margin: 20px 0; padding: 10px; border-radius: 5px;">
-  <img src="/QQ20250412-221652.png" alt="MCP配置界面" width="700" />
-  <p style="text-align: center; font-style: italic; margin-top: 10px;">图1: MCP 配置界面</p>
-</div>
-
-点击配置按钮上方的运行按钮，等待服务启动完成即可开始使用。
-
-## 💬 功能使用
-
-### 🤖 AI Agent 交互
-
-<ol>
-  <li>启动 VS Code 内置的 Github Copilot</li>
-  <li>切换至代理（Agent）模式</li>
-</ol>
 
 <div style="text-align: center; margin: 20px 0; padding: 10px; border-radius: 5px;">
   <img src="/QQ20250412-222246.png" alt="Agent模式设置" width="700" />
@@ -211,6 +202,14 @@ AI 可通过 MCP 协助检查代码问题并自动部署到神岛：
 | `userCenterTool_accountsLogin`  | 账户登录                    |
 | `userCenterTool_accountsLogout` | 账户登出                    |
 
+### 💬 Chat 吉 PT 工具
+
+| 命令                        | 功能说明              |
+| --------------------------- | --------------------- |
+| `chatjpt_onlyKnowledgeBase` | 仅查询神岛 API 知识库 |
+
+想要更详细的界面与用法说明？请参见《[仅查询知识库模式（onlyKnowledgeBase）](./chat-only-knowledgebase.md)》。
+
 ### 📁 文件操作工具
 
 | 命令                    | 功能说明        |
@@ -244,12 +243,6 @@ AI 可通过 MCP 协助检查代码问题并自动部署到神岛：
 | 命令                           | 功能说明     |
 | ------------------------------ | ------------ |
 | `component_showComponentStats` | 显示组件统计 |
-
-### 💬 Chat 吉 PT 工具
-
-| 命令                        | 功能说明              |
-| --------------------------- | --------------------- |
-| `chatjpt_onlyKnowledgeBase` | 仅查询神岛 API 知识库 |
 
 :::tip
 **💡 提示**：更多 MCP 协议详情，请参考 [MCP 协议文档](https://modelcontextprotocol.io)。使用这些命令时无需记忆具体语法，AI 助手会自动帮助你正确调用。

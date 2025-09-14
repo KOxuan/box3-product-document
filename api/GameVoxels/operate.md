@@ -121,7 +121,7 @@ import '/style.css'
 for (let x = 0; x < 127; x++) {
   for (let z = 0; z < 127; z++) {
     for (let y = 9; y < 127; y++) {
-      setVoxel(x, y, z, "air");
+      voxels.setVoxel(x, y, z, "air");
     }
   }
 }
@@ -145,7 +145,7 @@ for (let x = 0; x < 127; x++) {
 for (let x = 0; x < 127; x++) {
   for (let z = 0; z < 127; z++) {
     for (let y = 9; y < 127; y++) {
-      setVoxel(x, y, z, "air");
+      voxels.setVoxel(x, y, z, "air");
     }
   }
 }
@@ -161,7 +161,7 @@ for (let x = 0; x < 127; x++) {
     if (!vox) continue; // 如果没有方块则跳过
     for (let y = 10; y < 10 + 5; y++) {
       // 从y=10的位置开始增长5格
-      setVoxel(x, y, z, vox);
+      voxels.setVoxel(x, y, z, vox);
     }
   }
 }
@@ -175,7 +175,7 @@ function voxelAlhpabet(str, x, y, z) {
   str = str.toUpperCase(); // 将字母转换为大写
   for (var i = 0; i < str.length; i++) {
     var char = str[i];
-    setVoxel(x + i, y, z, char);
+    voxels.setVoxel(x + i, y, z, char);
   }
 }
 
@@ -233,9 +233,9 @@ function voxelText(str, x, y, z) {
     var char = str[i].toUpperCase();
     var name = char_table[char];
     if (name) {
-      setVoxel(x + i, y, z, name);
+      voxels.setVoxel(x + i, y, z, name);
     } else {
-      setVoxel(x + i, y, z, char);
+      voxels.setVoxel(x + i, y, z, char);
     }
   }
 }
@@ -297,7 +297,7 @@ function createBoard(originX, originY, originZ, size) {
         p = B["T"] | R["N"];
       }
       // 放置方块
-      setVoxelId(x + originX, originY, z + originZ, p);
+      voxels.setVoxelId(x + originX, originY, z + originZ, p);
     }
   }
 }
